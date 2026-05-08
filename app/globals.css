@@ -1,0 +1,175 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ---------------------------------------------------------------------------
+ * Buzzards Soft v2 — design tokens
+ * Palette D1 (v2_ui_plan.md §3.1, Variant A): Slate + Emerald + Amber.
+ * Tailwind v4 CSS-first config: `@theme inline` exposes tokens as utilities.
+ * Site is dark-by-default — light values are kept only as a sane fallback.
+ * ------------------------------------------------------------------------- */
+
+@theme inline {
+  /* shadcn semantic tokens (mapped onto our palette below) */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* brand tokens — used directly via `bg-brand`, `text-cta`, etc. */
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-cta: var(--cta);
+  --color-cta-hover: var(--cta-hover);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-text-subtle: var(--text-subtle);
+
+  /* fonts (set as CSS vars on <html> by next/font in layout.tsx) */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-geist-sans);
+
+  /* radii — plan §3.3: 6/12/16, NO rounded-full headings */
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+
+  /* sidebar tokens (kept for shadcn defaults — unused in MVP) */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* :root carries the dark palette directly — site is dark-first.
+ * Hex equivalents for orientation:
+ *   bg            slate-950   #020617
+ *   surface       slate-900   #0f172a
+ *   border        slate-800   #1e293b
+ *   text-primary  white       #ffffff
+ *   text-muted    slate-400   #94a3b8
+ *   text-subtle   slate-500   #64748b
+ *   brand         emerald-500 #10b981
+ *   brand-soft    emerald-400 #34d399
+ *   cta           amber-500   #f59e0b
+ *   cta-hover     amber-400   #fbbf24
+ *   destructive   rose-500    #f43f5e
+ */
+:root {
+  --radius: 0.75rem;
+
+  --background: #020617;
+  --foreground: #ffffff;
+
+  --surface: #0f172a;
+  --surface-elevated: #1e293b;
+
+  --card: #0f172a;
+  --card-foreground: #ffffff;
+
+  --popover: #0f172a;
+  --popover-foreground: #ffffff;
+
+  --primary: #f59e0b;          /* CTA = amber, primary action */
+  --primary-foreground: #0c0a09;
+  --secondary: #1e293b;
+  --secondary-foreground: #ffffff;
+
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --text-subtle: #64748b;
+
+  --accent: #10b981;            /* brand emerald */
+  --accent-foreground: #022c22;
+
+  --brand: #10b981;
+  --brand-soft: #34d399;
+  --cta: #f59e0b;
+  --cta-hover: #fbbf24;
+
+  --destructive: #f43f5e;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #10b981;
+
+  /* shadcn sidebar (unused) — kept consistent for any default-styled bits */
+  --sidebar: #0f172a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #10b981;
+  --sidebar-primary-foreground: #022c22;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #1e293b;
+  --sidebar-ring: #10b981;
+}
+
+/* `.dark` mirrors :root — kept for shadcn primitives that gate styles on it. */
+.dark {
+  --background: #020617;
+  --foreground: #ffffff;
+  --card: #0f172a;
+  --card-foreground: #ffffff;
+  --popover: #0f172a;
+  --popover-foreground: #ffffff;
+  --primary: #f59e0b;
+  --primary-foreground: #0c0a09;
+  --secondary: #1e293b;
+  --secondary-foreground: #ffffff;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #10b981;
+  --accent-foreground: #022c22;
+  --destructive: #f43f5e;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #10b981;
+  --sidebar: #0f172a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #10b981;
+  --sidebar-primary-foreground: #022c22;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #1e293b;
+  --sidebar-ring: #10b981;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    background-color: color-mix(in oklab, var(--brand) 35%, transparent);
+    color: #ffffff;
+  }
+}

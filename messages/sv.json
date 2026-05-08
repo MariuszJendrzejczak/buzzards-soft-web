@@ -1,0 +1,539 @@
+{
+  "common": {
+    "skipToContent": "Hoppa till huvudinnehållet",
+    "ctaTalk": "Hör av dig",
+    "back": "Tillbaka till startsidan",
+    "contactCta": "Ta kontakt"
+  },
+  "nav": {
+    "mainAria": "Huvudnavigering",
+    "mobileAria": "Mobilnavigering",
+    "footerAria": "Sidfot — länkar",
+    "menuTitle": "Meny",
+    "menuDescription": "Navigering genom sidans avsnitt",
+    "openMenu": "Öppna meny",
+    "brandHomeAria": "Buzzards Soft — startsida",
+    "items": {
+      "howIWork": "Så jobbar jag",
+      "whatIDeliver": "Vad jag levererar",
+      "experience": "Erfarenhet",
+      "learning": "Vad jag lär mig",
+      "about": "Om mig",
+      "education": "Utbildning",
+      "contact": "Kontakt"
+    }
+  },
+  "language": {
+    "groupAria": "Språkväljare",
+    "polishAria": "Polski",
+    "englishAria": "English",
+    "swedishAria": "Svenska"
+  },
+  "hero": {
+    "badge": "AI-Augmented Developer",
+    "badgeSub": "4+ års kommersiell utveckling. Jag jobbar med AI-agenter varje dag.",
+    "headingLead": "Jag levererar mjukvara snabbare eftersom ",
+    "headingHighlight": "jag jobbar med AI varje dag",
+    "headingTrail": " — inte bara ibland.",
+    "sub": "Fyra och ett halvt år av kommersiell utveckling (Flutter, Unity, integrationer). Det senaste året har jag byggt om mitt arbetsflöde kring AI-agenter — Claude Code är mitt vardagsverktyg, med egna hooks, skills och konfiguration som jag använder i produktionsprojekt. Jag söker en roll / ett uppdrag där den här accelerationen spelar roll.",
+    "ctaPrimary": "Vi pratar om en roll eller ett projekt",
+    "ctaSecondary": "Se hur jag jobbar",
+    "trustAria": "Sammanfattning av erfarenhet",
+    "trust": {
+      "yearsCode": "4+ års produktionskod (Flutter / Dart, Unity / C#)",
+      "claudeDaily": "Dagligt arbete med Claude Code — egen config, hooks, skills",
+      "engineerEnglish": "Civilingenjör i datavetenskap · Teknisk engelska B2/C1"
+    }
+  },
+  "howIWork": {
+    "eyebrow": "Avsnitt 02 · Kärnan",
+    "title": "Så jobbar jag — AI i mitt dagliga arbetsflöde",
+    "intro": "Det senaste året har jag byggt om mitt sätt att arbeta kring AI-agenter. Det handlar inte om att klistra in frågor i en chatt — det handlar om en hel verktygslåda: agenter i loop, egna verktyg, hooks som upprätthåller projektets standarder, automatisering kring review och CI. Nedan följer fyra konkreta områden där jag gör detta.",
+    "practices": {
+      "21": {
+        "title": "AI-assisterad utveckling som vardagspraxis",
+        "bullets": {
+          "1": {
+            "lead": "Claude Code som vardagsverktyg",
+            "rest": " — jag använder det för de flesta programmeringsuppgifter: implementation, debugging, utforskning av okända kodbaser, refaktorering."
+          },
+          "2": {
+            "lead": "Egen konfiguration",
+            "rest": " — settings, permissions, custom slash commands, skills och subagenter anpassade till mina projekt."
+          },
+          "3": {
+            "lead": "Arbete med agenten i loop",
+            "rest": " — planering av uppgiften, delegering av utforskning till subagenter, verifiering av output, iteration. Inte \"chatt\" — ett kontrollerat arbetsflöde."
+          },
+          "4": {
+            "lead": "Medvetenhet om modellens begränsningar",
+            "rest": " — jag vet när en LLM har fel, hur jag upptäcker det och hur jag sätter upp processen så att fel inte läcker till produktion."
+          }
+        }
+      },
+      "22": {
+        "title": "Agenter och skript som stödjer SDLC",
+        "bullets": {
+          "1": {
+            "lead": "Specialiserade subagenter",
+            "rest": " — code reviewer, kodutforskare, planerare, testare. Var och en med egen system-prompt och eget verktygsomfång."
+          },
+          "2": {
+            "lead": "Projekt-hooks",
+            "rest": " — upprätthåller konventioner, blockerar riskabla operationer, automatisk formatering/linting före commits."
+          },
+          "3": {
+            "lead": "MCP (Model Context Protocol)",
+            "rest": " — användning av färdiga MCP-servrar för integration med teamets verktyg; jag kan API:et för att bygga egna."
+          },
+          "4": {
+            "lead": "Slash commands och skills",
+            "rest": " — de fångar repeterbara team-arbetsflöden (PR-review, generering av tester, förberedelse av release notes)."
+          }
+        }
+      },
+      "23": {
+        "title": "Automatiseringar kring build och CI/CD",
+        "bullets": {
+          "1": {
+            "lead": "Triage av fel och regressioner",
+            "rest": " — agenten läser CI-loggar, föreslår orsak, ibland förslår en fix."
+          },
+          "2": {
+            "lead": "Automatiska beskrivningar av ändringar",
+            "rest": " — generering av läsbara release notes / changelogs från diffar och commits."
+          },
+          "3": {
+            "lead": "AI-assisterad PR-review",
+            "rest": " — ett första lager av kontroller (stil, uppenbara fel, saknade tester) innan en människa ser det."
+          },
+          "4": {
+            "lead": "Automatisering av repetitiva repo-operationer",
+            "rest": " — bumpning av beroenden, generering av scaffolds, codemods, storskalig refaktorering med verifiering."
+          }
+        }
+      },
+      "24": {
+        "title": "Generering av kod och features end-to-end",
+        "bullets": {
+          "1": {
+            "lead": "Pipelinen \"brief → fungerande modul\"",
+            "rest": " — med ett tydligt verifieringssteg (tester, type checks, manuell review) före merge."
+          },
+          "2": {
+            "lead": "Generatorer för komponenter / widgets",
+            "rest": " — enligt projektets konventioner, inte i en \"hur som helst\"-stil."
+          },
+          "3": {
+            "lead": "Codemods och migrationer",
+            "rest": " — storskaliga kodändringar drivna av agenten, med tester som låser beteendet."
+          },
+          "4": {
+            "lead": "Disciplin",
+            "rest": " — agenten mergar inte själv; varje output går genom review och build-pipeline. AI accelererar, det ersätter inte ansvar."
+          }
+        }
+      }
+    }
+  },
+  "whatICanDeliver": {
+    "eyebrow": "Avsnitt 03 · Vad jag kan",
+    "title": "Vad jag kan leverera",
+    "intro": "Först det jag har dokumenterad erfarenhet av. AI-tooling och affärsprocesser — längre ner, med mindre självsäkerhet.",
+    "stackAria": "Stack — {section}",
+    "variantCore": "core",
+    "variantGrowing": "growing",
+    "sections": {
+      "31": {
+        "title": "Produktionsprogrammering",
+        "subBlocks": {
+          "mobile": {
+            "title": "Mobil utveckling — Flutter / Dart",
+            "bullets": {
+              "1": "mobilappar för Android + iOS från grunden och vidareutveckling av befintliga,",
+              "2": "responsivt och skalbart UI, egna widgets, optimering av tillgångar,",
+              "3": "state management med Riverpod, Freezed, Dependency Injection, Clean Architecture,",
+              "4": "integrationer mot REST API och Firebase, autentisering, sessioner, offline-first data,",
+              "5": "debugging på fysiska enheter, publicering på Google Play / App Store."
+            }
+          },
+          "unity": {
+            "title": "Interaktiva appar och spel — Unity / C#",
+            "bullets": {
+              "1": "spel och interaktiva verktyg, UI Toolkit / Canvas / responsivt UI,",
+              "2": "integrationer med Firebase, REST API, Unity IAP,",
+              "3": "designmönster: State Machine, Pooling, Scriptable Object,",
+              "4": "separation av MonoBehaviour från ren C#-logik, omsorg om läsbarhet och standarder,",
+              "5": "byggande av editor-verktyg och designer-verktyg."
+            }
+          },
+          "common": {
+            "title": "Gemensamt för båda stackarna",
+            "bullets": {
+              "1": "kodens läsbarhet, arkitekturens skalbarhet, långsiktig underhållbarhet,",
+              "2": "hela produktens livscykel: planering → implementation → tester → lansering → underhåll,",
+              "3": "samarbete med utvecklare, testare, projektledare, kunder."
+            }
+          }
+        }
+      },
+      "32": {
+        "title": "AI-tooling i utvecklarens arbetsflöde",
+        "bullets": {
+          "1": "Claude Code: settings, permissions, hooks, slash commands, skills, subagenter, plugins,",
+          "2": "MCP-servrar — användning av färdiga, grunder för att bygga egna,",
+          "3": "prompt engineering i ett kodsammanhang (structured output, function calling, tool use),",
+          "4": "arbete med LLM API:er (OpenAI, Anthropic) på applikationsintegrationsnivå,",
+          "5": "prompt caching och kostnadskontroll,",
+          "6": "utvärdering av outputkvalitet (var det är värt att lita på agenten, var verifiering krävs)."
+        },
+        "callout": "Jag skriver medvetet inte \"enterprise AI agents at scale\" här — jag jobbar med dessa verktyg dagligen och har konkreta artefakter, men jag låtsas inte att jag har produktionsutrullningar för externa kunder bakom mig."
+      },
+      "33": {
+        "title": "Soft skills",
+        "bullets": {
+          "1": "självgående och projektägarskap — från brief till underhåll,",
+          "2": "kommunikation med kund, team, projektledare,",
+          "3": "arbete under tidspress och med många parallella projekt,",
+          "4": "diagnos av svåra problem (tekniska och programmeringsmässiga),",
+          "5": "teknisk engelska B2/C1 — möten, dokumentation, code review."
+        }
+      },
+      "34": {
+        "title": "Områden jag aktivt växer inom",
+        "bullets": {
+          "1": "automatisering av affärsprocesser med ett LLM-lager (n8n, Make),",
+          "2": "agentic workflows utanför utveckling,",
+          "3": "RAG över kunskapsdatabaser, vector DB, embeddings."
+        },
+        "callout": "Medvetet listat här, inte högre upp. Det är en riktning jag växer in i, inte en tjänst jag säljer."
+      },
+      "35": {
+        "title": "Teknisk bakgrund",
+        "bullets": {
+          "1": "14 års tidigare arbete med svagströmsinstallationer, CCTV, larm, smart home,",
+          "2": "elbehörighet SEP E + D, körkort kat. B,",
+          "3": "användbart för projekt som kombinerar mjukvara med sensorer, styrenheter, installationer."
+        },
+        "callout": "Avsnittet ligger gömt under accordion. Jag tar upp det när projektet kräver det."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Avsnitt 04 · Track record",
+    "title": "Erfarenhet och artefakter",
+    "intro": "Kommersiella projekt där jag skrev kod, plus artefakter från mitt dagliga arbete med AI-agenter. Kortet längst ner — sidan du läser — är ett meta-projekt.",
+    "stackAria": "Stack — {project}",
+    "honeti": {
+      "eyebrow": "4.1 · Mobile",
+      "title": "Honeti — Mobile Developer (4+ år)",
+      "ctaLabel": "Se case study",
+      "bullets": {
+        "1": "mobilappar för Android + iOS byggda från grunden,",
+        "2": "vidareutveckling och underhåll av befintliga produkter,",
+        "3": "samarbete med ett team av utvecklare, testare och projektledare,",
+        "4": "hela livscykeln: planering → implementation → tester → lansering → underhåll,",
+        "5": "integrationer mot REST API och Firebase, autentisering, datasynkronisering, offline-mekanismer,",
+        "6": "förberedelse och publicering på Google Play / App Store,",
+        "7": "direkt arbete med kunder och anpassning av lösningar till verkliga affärsbehov."
+      }
+    },
+    "unity": {
+      "eyebrow": "4.2 · Unity",
+      "title": "Unity — interaktiva projekt",
+      "description": "Spel och interaktiva appar, editor-verktyg, egna designmönster (State Machine, Pooling, Scriptable Object). Jag separerar konsekvent MonoBehaviour från ren C#-logik så att koden förblir testbar och underhållbar. Integrationer med Firebase, REST API och Unity IAP behandlar jag som en standardkomponent i pipelinen."
+    },
+    "artifact": {
+      "eyebrow": "4.3 · Personlig artefakt",
+      "title": "Min egen AI-verkstad",
+      "bullets": {
+        "1": "Claude Code-konfiguration anpassad till mina projekt (settings, permissions, hooks),",
+        "2": "egna slash commands och skills för repeterbara uppgifter,",
+        "3": "konfiguration av subagenter (code reviewer, planerare, utforskare),",
+        "4": "MCP-integrationer i mitt dagliga arbetsflöde,",
+        "5": "praxis: verifiering av LLM-output, kostnadskontroll, agent i loop med manuell review."
+      },
+      "quote": "\"Om du anställer en utvecklare får du inte bara mig — du får mitt arbetsflöde. Jag kan visa det och överlämna det till teamet.\""
+    },
+    "meta": {
+      "eyebrow": "4.4 · Meta-projekt",
+      "description": "Sidan du läser är en av mina egna artefakter — byggd med aktivt stöd från AI-agenter. Hela processen ska vara ett exempel på hur jag jobbar."
+    }
+  },
+  "currentlyLearning": {
+    "eyebrow": "Avsnitt 05 · Riktning",
+    "title": "Vad jag lär mig just nu",
+    "intro": "En kort lista över ämnen jag aktivt fördjupar mig i — främst för att utöka min agentverktygslåda bortom ren produktionskod. Jag signalerar riktning, inte säljer det som en tjänst.",
+    "items": {
+      "agents": {
+        "lead": "Agenter specialiserade för specifika SDLC-processer",
+        "rest": "automatisk triage, generering av regressionstester, codemods i större skala."
+      },
+      "rag": {
+        "lead": "RAG-pipelines över slutna kunskapsbaser",
+        "rest": "främst inriktade på intern projektdokumentation."
+      },
+      "automation": {
+        "lead": "Automatisering av affärsprocesser med ett LLM-lager",
+        "rest": "n8n, Make.com, egna integrationer. Hittills mest experiment på egna projekt."
+      },
+      "mcp": {
+        "lead": "Bygga egna MCP-servrar",
+        "rest": "för att integrera agenter med teamets verktyg utöver vad färdiga lösningar erbjuder."
+      }
+    },
+    "closing": "En del testar jag i egna projekt. Om något av dessa områden finns på ditt teams karta — då har du kommit rätt."
+  },
+  "about": {
+    "eyebrow": "Avsnitt 06 · Om mig",
+    "title": "Om mig",
+    "short": "En utvecklare med 4+ års kommersiell erfarenhet (Flutter, Unity) som byggde om sitt arbetsflöde kring AI-agenter. Fokuserad på att leverera mjukvara — snabbare och renare tack vare verktyg jag själv konfigurerar. Tidigare 14 år inom tekniska installationer — användbart för projekt som broar mjukvara och hårdvara.",
+    "para1": "Jag har programmerat kommersiellt i över fyra år. Det mesta av tiden har jag spenderat på Flutter-mobilappar (Honeti) — från första kodraden, genom integrationer mot REST API och Firebase, autentisering, datasynkronisering och offline-arbete, hela vägen till butikslanseringar och underhåll. Jag har också jobbat i Unity med spel och interaktiva appar. I båda stackarna lägger jag stark vikt vid kodens läsbarhet, arkitekturens skalbarhet och att projektet ska gå att utveckla även efter ett år i produktion.",
+    "para2": "Det senaste året har mitt arbetsflöde gått igenom en märkbar förändring. Jag började behandla AI-agenter som ett verkstadsverktyg, inte en kuriositet. Claude Code blev mitt vardagsverktyg — med egen konfiguration, hooks, slash commands, subagenter och skills anpassade till mina projekt. Saker jag förr gjorde för hand (review, utforskning av främmande kodbaser, codemods, scaffold) sker idag snabbare, men fortfarande under min kontroll — agenten mergar inte själv, varje output går genom build och review.",
+    "notSpecialist": "Jag kallar mig inte \"AI Specialist\".",
+    "selfDefinition": "Jag kallar mig en utvecklare som medvetet använder AI i det dagliga arbetet — och som tack vare det levererar mer.",
+    "difference": "Det är skillnaden jag bryr mig om: mitt track record finns i att skriva produktionskod — AI är sättet som koden nu produceras snabbare på.",
+    "para4": "Innan jag började programmera professionellt jobbade jag i 14 år som elektriker och installatör av CCTV-, larm-, brandsäkerhets- och smart home-system. För de flesta mjukvaruprojekt är denna bakgrund neutral. I projekt som broar mjukvara och den fysiska världen — IoT, smarta byggnader, automation — ger den mig ett perspektiv som en ren utvecklare inte har.",
+    "para5": "Jag värderar end-to-end-arbete: från analys av problemet, genom implementation, till underhåll. Jag lämnar inte projekt i \"PoC\"-tillstånd. Jag lovar inte saker jag inte kan leverera."
+  },
+  "education": {
+    "eyebrow": "Avsnitt 07 · Utbildning",
+    "title": "Utbildning och certifikat",
+    "additionalLabel": "Ytterligare behörigheter",
+    "certificatesAria": "Certifikat och behörigheter",
+    "fields": {
+      "title": "Examen",
+      "field": "Inriktning",
+      "specialization": "Specialisering"
+    },
+    "wsb": {
+      "eyebrow": "7.1 · Civilingenjörsstudier",
+      "name": "Wyższa Szkoła Biznesu — National Louis University, Nowy Sącz",
+      "title": "Civilingenjör",
+      "field": "Datavetenskap",
+      "specialization": "Programmering av affärsapplikationer"
+    },
+    "zsee": {
+      "eyebrow": "7.2 · Kompletterande",
+      "name": "Zespół Szkół Elektryczno-Elektronicznych, Szczecin",
+      "title": "Tekniker",
+      "field": "Elektriker",
+      "specialization": "Kraftelektronik"
+    },
+    "certificates": {
+      "sep": "SEP E + D",
+      "drivingLicense": "Körkort kat. B",
+      "sailing": "Båtförarintyg"
+    }
+  },
+  "contact": {
+    "eyebrow": "Avsnitt 08 · Kontakt",
+    "title": "Öppen för uppdrag, fast anställning och intressanta projekt.",
+    "introLead": "Jag passar bäst där man söker ",
+    "introHighlight": "en utvecklare som redan har fungerande produkter bakom sig och kan jobba med AI i arbetsflödet",
+    "introTrail": ". Ett kort samtal (30 min, utan förpliktelser) räcker oftast för att jag ska bedöma matchningen. Om jag inte är rätt person — säger jag det direkt.",
+    "directLabel": "Direkt kontakt"
+  },
+  "contactForm": {
+    "requiredHintPrefix": "Fält markerade med ",
+    "requiredHintSuffix": " är obligatoriska",
+    "labels": {
+      "name": "För- och efternamn",
+      "email": "E-post",
+      "company": "Företag",
+      "message": "Vad gäller det?",
+      "source": "Hur hittade du mig?"
+    },
+    "optional": "valfritt",
+    "placeholders": {
+      "name": "Anna Andersson",
+      "email": "anna@foretag.se",
+      "company": "Företagsnamn",
+      "message": "roll / uppdrag / projekt / annat — kort, hur jag kan hjälpa till",
+      "source": "Välj (valfritt)"
+    },
+    "sources": {
+      "linkedin": "LinkedIn",
+      "referral": "Rekommendation",
+      "google": "Google",
+      "other": "Annat"
+    },
+    "submit": "Skicka meddelande",
+    "submitting": "Skickar…",
+    "validation": {
+      "required": "Fältet är obligatoriskt",
+      "minName": "Min. 2 tecken",
+      "maxName": "Max. 120 tecken",
+      "invalidEmail": "Ogiltig e-postadress",
+      "maxEmail": "Max. 160 tecken",
+      "maxCompany": "Max. 160 tecken",
+      "minMessage": "Min. 20 tecken — beskriv kort vad det gäller",
+      "maxMessage": "Max. 4000 tecken"
+    },
+    "toast": {
+      "success": "Tack, jag återkommer snart.",
+      "error": "Något gick fel, försök igen eller mejla dev.buzzardssoft@gmail.com"
+    }
+  },
+  "contactInfo": {
+    "labels": {
+      "email": "E-post",
+      "phone": "Telefon",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "copyAria": "Kopiera: {label}",
+    "copiedAria": "Kopierade {label}",
+    "copyToast": "Kopierade: {label}",
+    "copyUnsupported": "Din webbläsare stöder inte kopiering till urklipp.",
+    "copyFailed": "Kunde inte kopiera."
+  },
+  "footer": {
+    "tagline": "En utvecklare som byggde om sitt arbetsflöde kring AI-agenter. Öppen för roller och uppdrag.",
+    "linksHeading": "Sida",
+    "registryHeading": "Registeruppgifter",
+    "links": {
+      "privacy": "Integritetspolicy",
+      "contact": "Kontakt"
+    },
+    "copyright": "© Buzzards Soft {year}"
+  },
+  "portfolio": {
+    "breadcrumbBack": "Tillbaka till startsidan",
+    "eyebrow": "Case study · {slug}",
+    "metaRoleLabel": "Roll",
+    "metaPeriodLabel": "Period",
+    "stackAria": "Stack — {title}",
+    "scopeHeading": "Omfattning",
+    "stackHeading": "Teknisk stack",
+    "stackFullAria": "Teknisk stack — fullständig lista",
+    "appsHeading": "Utvalda releaser",
+    "appsIntro": "Produktionsappar jag arbetade med — detaljer kan jag dela i ett samtal.",
+    "metaTitleFallback": "Case study",
+    "metaDescription": "{role} · {period}. Arbetsomfattning, teknisk stack och utvalda releaser.",
+    "cases": {
+      "honeti": {
+        "title": "Honeti — Mobile Developer (4+ år)",
+        "role": "Mobile Developer",
+        "period": "2021 — pågående",
+        "scope": {
+          "1": "mobilappar för Android + iOS byggda från grunden,",
+          "2": "vidareutveckling och underhåll av befintliga produkter,",
+          "3": "samarbete med ett team av utvecklare, testare och projektledare,",
+          "4": "hela livscykeln: planering → implementation → tester → lansering → underhåll,",
+          "5": "integrationer mot REST API och Firebase, autentisering, datasynkronisering, offline-mekanismer,",
+          "6": "förberedelse och publicering på Google Play / App Store,",
+          "7": "direkt arbete med kunder och anpassning av lösningar till verkliga affärsbehov."
+        }
+      }
+    }
+  },
+  "privacyPolicy": {
+    "metaTitle": "Integritetspolicy",
+    "metaDescription": "Regler för behandling av personuppgifter för användare av buzzards-soft.com — i enlighet med GDPR.",
+    "breadcrumbBack": "Tillbaka till startsidan",
+    "documentBadge": "Dokument · GDPR",
+    "title": "Integritetspolicy",
+    "introPart1Pre": "Denna integritetspolicy fastställer reglerna för behandling och skydd av personuppgifter för användare som besöker webbplatsen på adressen ",
+    "introPart1Mid": " (\"Webbplatsen\"). Personuppgiftsansvarig är ",
+    "introPart1Post": " (\"Personuppgiftsansvarig\").",
+    "introPart2": "Personuppgiftsansvarig vidtar särskilda åtgärder för att skydda användarnas integritet och de behandlade personuppgifterna i enlighet med tillämplig lag, särskilt Europaparlamentets och rådets förordning (EU) 2016/679 (GDPR).",
+    "lastUpdatedLabel": "Senast uppdaterad",
+    "lastUpdatedValue": "8 maj 2026",
+    "contactLabel": "Frågor om personuppgifter",
+    "tocHeading": "Innehållsförteckning",
+    "adminContactHeading": "Kontakt med personuppgiftsansvarig",
+    "adminContactBody": "Buzzards Soft Mariusz Jendrzejczak, Pomorska 14/8, 74-300 Myślibórz, Polen.",
+    "sections": {
+      "1": {
+        "title": "Omfattning av insamlade uppgifter",
+        "intro": "Vid användning av Webbplatsen kan Personuppgiftsansvarig behandla följande uppgifter:",
+        "items": {
+          "1": "uppgifter som lämnats frivilligt av användaren (t.ex. via kontaktformuläret): för- och efternamn, e-postadress, meddelandets innehåll,",
+          "2": "tekniska uppgifter: IP-adress, webbläsartyp, operativsystem, statistisk information om användning av Webbplatsen."
+        },
+        "extra": "Webbplatsen samlar inte in känsliga uppgifter."
+      },
+      "2": {
+        "title": "Syften med behandling av uppgifter",
+        "intro": "Personuppgifter behandlas för följande syften:",
+        "items": {
+          "1": "hantering av förfrågningar som skickas via kontaktformuläret,",
+          "2": "kontakt med användaren,",
+          "3": "säkerställande av att Webbplatsen fungerar korrekt,",
+          "4": "statistiska och analytiska syften,",
+          "5": "uppfyllande av Personuppgiftsansvarigs juridiska skyldigheter."
+        }
+      },
+      "3": {
+        "title": "Rättslig grund för behandling",
+        "intro": "Personuppgifter behandlas på grundval av:",
+        "items": {
+          "1": "användarens samtycke (art. 6.1 a GDPR),",
+          "2": "Personuppgiftsansvarigs berättigade intresse (art. 6.1 f GDPR),",
+          "3": "skyldigheter som följer av lagen (art. 6.1 c GDPR)."
+        }
+      },
+      "4": {
+        "title": "Mottagare av uppgifter",
+        "p1": "Användarnas personuppgifter kan överföras till parter som samarbetar med Personuppgiftsansvarig endast i den utsträckning som är nödvändig för att uppnå behandlingens syften, särskilt: leverantörer av hostingtjänster, analysverktyg och IT-tjänster.",
+        "p2": "Uppgifterna säljs eller delas inte med tredje part i marknadsföringssyfte."
+      },
+      "5": {
+        "title": "Lagring av uppgifter",
+        "p1": "Personuppgifter lagras endast under den period som är nödvändig för att uppnå syftet med insamlingen, eller tills användaren återkallar samtycket, om inte vidare behandling krävs enligt lag."
+      },
+      "6": {
+        "title": "Användarens rättigheter",
+        "intro": "Användaren har rätt till:",
+        "items": {
+          "1": "tillgång till sina uppgifter,",
+          "2": "rättelse av dem,",
+          "3": "radering (\"rätten att bli glömd\"),",
+          "4": "begränsning av behandling,",
+          "5": "dataportabilitet,",
+          "6": "invändning mot behandling,",
+          "7": "återkallande av samtycke när som helst."
+        },
+        "extra": "För att utöva sina rättigheter kan användaren kontakta Personuppgiftsansvarig på adressen som anges i avsnitt 10."
+      },
+      "7": {
+        "title": "Cookies",
+        "intro": "Webbplatsen kan använda cookies för:",
+        "items": {
+          "1": "att säkerställa att Webbplatsen fungerar korrekt,",
+          "2": "statistiska och analytiska syften."
+        },
+        "extra": "Användaren kan när som helst ändra cookie-inställningarna i sin webbläsare."
+      },
+      "8": {
+        "title": "Säkerhet för uppgifter",
+        "p1": "Personuppgiftsansvarig tillämpar lämpliga tekniska och organisatoriska åtgärder för att skydda de behandlade personuppgifterna mot förlust, obehörig åtkomst eller obehörig ändring."
+      },
+      "9": {
+        "title": "Ändringar i integritetspolicyn",
+        "p1": "Personuppgiftsansvarig förbehåller sig rätten att göra ändringar i denna integritetspolicy. Den aktuella versionen är alltid tillgänglig på Webbplatsen, och datumet för senaste uppdatering visas i sidhuvudet."
+      },
+      "10": {
+        "title": "Kontakt",
+        "p1": "I frågor som rör skydd av personuppgifter ber vi dig kontakta oss via e-post. Vi svarar vanligtvis inom några arbetsdagar."
+      }
+    }
+  },
+  "notFound": {
+    "metaTitle": "Hittades inte — Buzzards Soft",
+    "metaDescription": "Den här sidan finns inte eller har flyttats. Gå tillbaka till Buzzards Soft startsida.",
+    "badge": "HTTP 404",
+    "code": "404",
+    "title": "Hittades inte",
+    "bodyPart1": "Den här sidan finns inte eller har flyttats. Om du kom hit från en länk som borde fungera — ",
+    "bodyHighlight": "hör av dig",
+    "bodyPart2": ", så fixar jag det.",
+    "back": "Tillbaka till startsidan",
+    "contactCta": "Hör av dig om det här är ett fel"
+  },
+  "rootMetadata": {
+    "title": "Buzzards Soft — AI-Augmented Developer",
+    "description": "En utvecklare (Flutter, Unity, 4+ år kommersiellt) som byggde om sitt arbetsflöde kring AI-agenter. Öppen för roller och uppdrag."
+  }
+}

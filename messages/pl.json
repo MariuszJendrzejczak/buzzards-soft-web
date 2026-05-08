@@ -1,0 +1,539 @@
+{
+  "common": {
+    "skipToContent": "Pomiń do głównej treści",
+    "ctaTalk": "Pogadajmy",
+    "back": "Wróć do strony głównej",
+    "contactCta": "Skontaktuj się"
+  },
+  "nav": {
+    "mainAria": "Nawigacja główna",
+    "mobileAria": "Nawigacja mobilna",
+    "footerAria": "Stopka — linki",
+    "menuTitle": "Menu",
+    "menuDescription": "Nawigacja po sekcjach strony",
+    "openMenu": "Otwórz menu",
+    "brandHomeAria": "Buzzards Soft — strona główna",
+    "items": {
+      "howIWork": "Jak pracuję",
+      "whatIDeliver": "Co dowożę",
+      "experience": "Doświadczenie",
+      "learning": "Czego się uczę",
+      "about": "O mnie",
+      "education": "Wykształcenie",
+      "contact": "Kontakt"
+    }
+  },
+  "language": {
+    "groupAria": "Wybór języka",
+    "polishAria": "Polski",
+    "englishAria": "English",
+    "swedishAria": "Svenska"
+  },
+  "hero": {
+    "badge": "AI-Augmented Developer",
+    "badgeSub": "4+ lata komercyjnego programowania. Pracuję z agentami AI codziennie.",
+    "headingLead": "Dostarczam software szybciej, bo ",
+    "headingHighlight": "pracuję z AI codziennie",
+    "headingTrail": " — nie od święta.",
+    "sub": "Cztery i pół roku komercyjnego programowania (Flutter, Unity, integracje). W ostatnim roku przebudowałem swój workflow wokół agentów AI — Claude Code jest moim codziennym narzędziem, mam własne hooki, skille i konfigurację, których używam na produkcyjnych projektach. Szukam roli / kontraktu, w którym to przyspieszenie ma znaczenie.",
+    "ctaPrimary": "Porozmawiajmy o roli lub projekcie",
+    "ctaSecondary": "Zobacz, jak pracuję",
+    "trustAria": "Skrót doświadczenia",
+    "trust": {
+      "yearsCode": "4+ lata produkcyjnego kodu (Flutter / Dart, Unity / C#)",
+      "claudeDaily": "Codzienna praca z Claude Code — własny config, hooki, skille",
+      "engineerEnglish": "Inżynier Informatyki · Angielski techniczny B2/C1"
+    }
+  },
+  "howIWork": {
+    "eyebrow": "Sekcja 02 · Sedno",
+    "title": "Jak pracuję — AI w codziennym workflow",
+    "intro": "W ostatnim roku przebudowałem swój sposób pracy wokół agentów AI. Nie chodzi o wklejanie pytań do czatu — chodzi o pełen warsztat: agenty w pętli, własne narzędzia, hooki egzekwujące standardy projektu, automatyzacje wokół review i CI. Niżej cztery konkretne obszary, w których to robię.",
+    "practices": {
+      "21": {
+        "title": "AI-assisted development jako codzienność",
+        "bullets": {
+          "1": {
+            "lead": "Claude Code jako daily driver",
+            "rest": " — używam go do większości zadań programistycznych: implementacji, debugowania, eksploracji obcych baz kodu, refaktoringu."
+          },
+          "2": {
+            "lead": "Własna konfiguracja",
+            "rest": " — settings, permissions, custom slash commands, skille i subagenty dopasowane do moich projektów."
+          },
+          "3": {
+            "lead": "Praca z agentem w pętli",
+            "rest": " — planowanie zadania, delegowanie eksploracji do subagentów, weryfikacja outputu, iteracja. Nie „czat\" — kontrolowany workflow."
+          },
+          "4": {
+            "lead": "Świadomość ograniczeń modeli",
+            "rest": " — wiem, kiedy LLM się myli, jak to wykryć i jak ustawić proces, żeby błędy nie przeciekały do produkcji."
+          }
+        }
+      },
+      "22": {
+        "title": "Agenty i skrypty wspierające SDLC",
+        "bullets": {
+          "1": {
+            "lead": "Subagenty wyspecjalizowane",
+            "rest": " — code reviewer, eksplorator kodu, planner, tester. Każdy z innym promptem systemowym i innym scopem narzędzi."
+          },
+          "2": {
+            "lead": "Hooki projektowe",
+            "rest": " — egzekwowanie konwencji, blokowanie ryzykownych operacji, automatyczne formatowanie/lint przed commitami."
+          },
+          "3": {
+            "lead": "MCP (Model Context Protocol)",
+            "rest": " — korzystanie z gotowych serwerów MCP do integracji z narzędziami zespołu; znajomość API do budowy własnych."
+          },
+          "4": {
+            "lead": "Slash commands i skille",
+            "rest": " — odzwierciedlają powtarzalne workflow'y zespołu (review PRa, generowanie testów, przygotowanie release notes)."
+          }
+        }
+      },
+      "23": {
+        "title": "Automatyzacje wokół buildu i CI/CD",
+        "bullets": {
+          "1": {
+            "lead": "Triage błędów i regresji",
+            "rest": " — agent czyta logi CI, sugeruje przyczynę, czasem proponuje fix."
+          },
+          "2": {
+            "lead": "Automatyczne opisy zmian",
+            "rest": " — generowanie czytelnych release notes / changelogów z diffów i commitów."
+          },
+          "3": {
+            "lead": "AI-assisted review PRów",
+            "rest": " — pierwsza warstwa sprawdzania (styl, oczywiste błędy, brakujące testy) zanim zobaczy go człowiek."
+          },
+          "4": {
+            "lead": "Automatyzacja powtarzalnych operacji repo",
+            "rest": " — bumpowanie zależności, generowanie scaffoldów, codemody, masowe refactory z weryfikacją."
+          }
+        }
+      },
+      "24": {
+        "title": "Generowanie kodu i feature'ów end-to-end",
+        "bullets": {
+          "1": {
+            "lead": "Pipeline „brief → działający moduł\"",
+            "rest": " — z jasnym etapem weryfikacji (testy, type checks, manualny review) przed merge'em."
+          },
+          "2": {
+            "lead": "Generatory komponentów / widgetów",
+            "rest": " — według konwencji projektu, nie w stylu „jakkolwiek\"."
+          },
+          "3": {
+            "lead": "Codemody i migracje",
+            "rest": " — masowe zmiany w kodzie egzekwowane przez agenta, z testami pinującymi zachowanie."
+          },
+          "4": {
+            "lead": "Dyscyplina",
+            "rest": " — agent nie merguje sam; każdy output przechodzi przez review i build pipeline. AI przyspiesza, nie zastępuje odpowiedzialności."
+          }
+        }
+      }
+    }
+  },
+  "whatICanDeliver": {
+    "eyebrow": "Sekcja 03 · Co umiem",
+    "title": "Co umiem dowieźć",
+    "intro": "Najpierw to, w czym mam udokumentowane doświadczenie. AI tooling i procesy biznesowe — niżej, z mniejszą śmiałością.",
+    "stackAria": "Stack — {section}",
+    "variantCore": "core",
+    "variantGrowing": "growing",
+    "sections": {
+      "31": {
+        "title": "Programowanie produkcyjne",
+        "subBlocks": {
+          "mobile": {
+            "title": "Mobile development — Flutter / Dart",
+            "bullets": {
+              "1": "aplikacje mobilne Android + iOS od zera i rozwój istniejących,",
+              "2": "responsywne i skalowalne UI, własne widgety, optymalizacja zasobów,",
+              "3": "zarządzanie stanem w Riverpod, Freezed, Dependency Injection, Clean Architecture,",
+              "4": "integracje REST API, Firebase, autoryzacja, sesje, dane offline-first,",
+              "5": "debugging na fizycznych urządzeniach, publikacja w Google Play / App Store."
+            }
+          },
+          "unity": {
+            "title": "Aplikacje interaktywne i gry — Unity / C#",
+            "bullets": {
+              "1": "gry i narzędzia interaktywne, UI Toolkit / Canvas / responsive UI,",
+              "2": "integracje Firebase, REST API, Unity IAP,",
+              "3": "wzorce projektowe: State Machine, Pooling, Scriptable Object,",
+              "4": "separacja MonoBehaviour od czystej logiki C#, dbałość o czytelność i standardy,",
+              "5": "tworzenie edytorów i narzędzi designerskich."
+            }
+          },
+          "common": {
+            "title": "Wspólne dla obu stacków",
+            "bullets": {
+              "1": "czytelność kodu, skalowalność architektury, długoterminowa utrzymywalność,",
+              "2": "pełen cykl życia produktu: planowanie → implementacja → testy → wdrożenie → utrzymanie,",
+              "3": "współpraca z developerami, testerami, project managerami, klientami."
+            }
+          }
+        }
+      },
+      "32": {
+        "title": "AI tooling w workflow developera",
+        "bullets": {
+          "1": "Claude Code: settings, permissions, hooki, slash commands, skille, subagenty, plugins,",
+          "2": "MCP servers — korzystanie z gotowych, podstawy budowy własnych,",
+          "3": "prompt engineering w kontekście kodu (structured output, function calling, tool use),",
+          "4": "praca z LLM API (OpenAI, Anthropic) na poziomie integracji w aplikacji,",
+          "5": "prompt caching i kontrola kosztów,",
+          "6": "ewaluacja jakości outputu (gdzie warto zaufać agentowi, gdzie wymagać weryfikacji)."
+        },
+        "callout": "Świadomie nie wpisuję tu „enterprise AI agents at scale\" — pracuję z tymi narzędziami codziennie i mam konkretne artefakty, ale nie udaję, że mam za sobą wdrożenia produkcyjne dla zewnętrznych klientów."
+      },
+      "33": {
+        "title": "Soft skills",
+        "bullets": {
+          "1": "samodzielność i ownership projektu — od briefu do utrzymania,",
+          "2": "komunikacja z klientem, zespołem, project managerem,",
+          "3": "praca pod presją czasu i przy wielu projektach równolegle,",
+          "4": "diagnoza trudnych problemów (technicznych i programistycznych),",
+          "5": "angielski techniczny B2/C1 — meetingi, dokumentacja, code review."
+        }
+      },
+      "34": {
+        "title": "Obszary, w których się aktywnie rozwijam",
+        "bullets": {
+          "1": "automatyzacja procesów biznesowych z warstwą LLM (n8n, Make),",
+          "2": "agentic workflows poza developmentem,",
+          "3": "RAG nad bazami wiedzy, vector DB, embeddingi."
+        },
+        "callout": "Świadomie wpisane tu, nie wyżej. To kierunek rozwoju, nie sprzedawana usługa."
+      },
+      "35": {
+        "title": "Background techniczny",
+        "bullets": {
+          "1": "14 lat wcześniejszej pracy w instalacjach niskoprądowych, CCTV, alarmach, smart home,",
+          "2": "uprawnienia elektryczne SEP E + D, prawo jazdy kat. B,",
+          "3": "przydatne przy projektach łączących oprogramowanie z czujnikami, sterownikami, instalacjami."
+        },
+        "callout": "Sekcja schowana pod akordeonem. Włączam ją, kiedy projekt tego wymaga."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Sekcja 04 · Track record",
+    "title": "Doświadczenie i artefakty",
+    "intro": "Komercyjne projekty, w których pisałem kod, oraz artefakty z mojej codziennej pracy z agentami AI. Karta na dole — strona, którą czytasz — jest meta-projektem.",
+    "stackAria": "Stack — {project}",
+    "honeti": {
+      "eyebrow": "4.1 · Mobile",
+      "title": "Honeti — Mobile Developer (4+ lata)",
+      "ctaLabel": "Zobacz case study",
+      "bullets": {
+        "1": "aplikacje mobilne Android + iOS budowane od zera,",
+        "2": "rozwój i utrzymanie istniejących produktów,",
+        "3": "współpraca z zespołem developerów, testerów i project managerów,",
+        "4": "pełen cykl życia: planowanie → implementacja → testy → publikacja → utrzymanie,",
+        "5": "integracje REST API i Firebase, autoryzacja, synchronizacja danych, mechanizmy offline,",
+        "6": "przygotowanie i publikacja w Google Play / App Store,",
+        "7": "bezpośrednia praca z klientami i dopasowywanie rozwiązań do realnych potrzeb biznesu."
+      }
+    },
+    "unity": {
+      "eyebrow": "4.2 · Unity",
+      "title": "Unity — projekty interaktywne",
+      "description": "Gry i aplikacje interaktywne, narzędzia edytora, własne wzorce projektowe (State Machine, Pooling, Scriptable Object). Konsekwentnie oddzielam MonoBehaviour od czystej logiki C#, żeby kod dało się testować i utrzymywać. Integracje z Firebase, REST API i Unity IAP traktuję jako standardową część pipeline'u."
+    },
+    "artifact": {
+      "eyebrow": "4.3 · Personal artifact",
+      "title": "Własny warsztat AI",
+      "bullets": {
+        "1": "konfiguracja Claude Code dopasowana do moich projektów (settings, permissions, hooks),",
+        "2": "własne slash commands i skille pod powtarzalne zadania,",
+        "3": "konfiguracja subagentów (code reviewer, planner, eksplorator),",
+        "4": "integracje MCP w codziennym workflow,",
+        "5": "praktyki: weryfikacja outputu LLM, kontrola kosztów, agent w pętli z manualnym review."
+      },
+      "quote": "„Jeśli zatrudniasz programistę, dostajesz nie tylko mnie — dostajesz mój workflow. Mogę go pokazać i przekazać zespołowi.\""
+    },
+    "meta": {
+      "eyebrow": "4.4 · Meta-projekt",
+      "description": "Strona, którą czytasz, jest moim własnym artefaktem — budowana z aktywną asystą agentów AI. Cały proces ma być przykładem tego, jak pracuję."
+    }
+  },
+  "currentlyLearning": {
+    "eyebrow": "Sekcja 05 · Kierunek",
+    "title": "Czego się aktualnie uczę",
+    "intro": "Krótka lista tematów, które aktywnie pogłębiam — głównie po to, żeby rozszerzać warsztat agentowy poza sam kod produkcyjny. Sygnalizuję kierunek, nie sprzedaję tego jako usługi.",
+    "items": {
+      "agents": {
+        "lead": "Agenty wyspecjalizowane pod konkretne procesy w SDLC",
+        "rest": "automatyczny triage, generowanie testów regresyjnych, codemody na większą skalę."
+      },
+      "rag": {
+        "lead": "Pipeline'y RAG nad zamkniętymi bazami wiedzy",
+        "rest": "głównie pod kątem wewnętrznej dokumentacji projektów."
+      },
+      "automation": {
+        "lead": "Automatyzacja procesów biznesowych z warstwą LLM",
+        "rest": "n8n, Make.com, własne integracje. Na razie głównie eksperymenty na własnych projektach."
+      },
+      "mcp": {
+        "lead": "Budowa własnych serwerów MCP",
+        "rest": "żeby integrować agentów z narzędziami zespołu poza tym, co dają gotowce."
+      }
+    },
+    "closing": "Część rzeczy testuję na własnych projektach. Jeśli w Twoim zespole któryś z tych obszarów jest na mapie — dobrze trafiłeś."
+  },
+  "about": {
+    "eyebrow": "Sekcja 06 · O mnie",
+    "title": "O mnie",
+    "short": "Programista z 4+ letnim doświadczeniem komercyjnym (Flutter, Unity), który przebudował swój workflow wokół agentów AI. Skupiony na dostarczaniu software'u — szybciej i czyściej dzięki narzędziom, które sam sobie konfiguruję. Wcześniej 14 lat w branży instalacji technicznych — przydaje się przy projektach łączących software z hardware'em.",
+    "para1": "Programuję komercyjnie od ponad czterech lat. Większość tego czasu spędziłem na aplikacjach mobilnych we Flutterze (Honeti) — od pierwszej linijki kodu, przez integracje z REST API i Firebase, autoryzację, synchronizację danych i pracę offline, po publikację w sklepach i utrzymanie. Pracowałem też w Unity nad grami i aplikacjami interaktywnymi. W obu stackach kładę duży nacisk na czytelność kodu, skalowalność architektury i to, żeby projekt po roku produkcji nadal dawał się rozwijać.",
+    "para2": "W ostatnim roku mój workflow przeszedł zauważalną zmianę. Zacząłem traktować agenty AI jak narzędzie warsztatowe, a nie ciekawostkę. Claude Code stał się moim daily driverem — z własną konfiguracją, hookami, slash commands, subagentami i skillami dopasowanymi do moich projektów. Część rzeczy, które wcześniej robiłem ręcznie (review, eksploracja obcych baz, codemody, scaffold), dzisiaj dzieje się szybciej, ale nadal pod moją kontrolą — agent nie merguje sam, każdy output przechodzi przez build i review.",
+    "notSpecialist": "Nie określam się jako „AI Specialist\".",
+    "selfDefinition": "Określam się jako programista, który świadomie używa AI w codziennej pracy — i który dzięki temu dostarcza więcej.",
+    "difference": "To jest różnica, na której mi zależy: track record mam w pisaniu produkcyjnego kodu — AI jest sposobem, w jaki ten kod powstaje teraz szybciej.",
+    "para4": "Zanim zacząłem programować zawodowo, przez 14 lat pracowałem jako elektryk i instalator systemów CCTV, alarmowych, p.poż. i smart home. Dla większości projektów programistycznych ten background jest neutralny. W projektach łączących software z fizycznym światem — IoT, smart buildings, automatyka — daje mi perspektywę, której nie ma czysty programista.",
+    "para5": "Cenię sobie pracę kompleksową: od analizy problemu, przez wdrożenie, po utrzymanie. Nie zostawiam projektów w stanie „PoC\". Nie obiecuję rzeczy, których nie umiem dowieźć."
+  },
+  "education": {
+    "eyebrow": "Sekcja 07 · Wykształcenie",
+    "title": "Wykształcenie i certyfikaty",
+    "additionalLabel": "Dodatkowe uprawnienia",
+    "certificatesAria": "Certyfikaty i uprawnienia",
+    "fields": {
+      "title": "Tytuł",
+      "field": "Kierunek",
+      "specialization": "Specjalizacja"
+    },
+    "wsb": {
+      "eyebrow": "7.1 · Studia inżynierskie",
+      "name": "Wyższa Szkoła Biznesu — National Louis University, Nowy Sącz",
+      "title": "Inżynier",
+      "field": "Informatyka",
+      "specialization": "Programowanie Aplikacji Biznesowych"
+    },
+    "zsee": {
+      "eyebrow": "7.2 · Uzupełniająco",
+      "name": "Zespół Szkół Elektryczno-Elektronicznych, Szczecin",
+      "title": "Technik",
+      "field": "Elektryk",
+      "specialization": "Energo-Elektronik"
+    },
+    "certificates": {
+      "sep": "SEP E + D",
+      "drivingLicense": "Prawo jazdy kat. B",
+      "sailing": "Patent żeglarski"
+    }
+  },
+  "contact": {
+    "eyebrow": "Sekcja 08 · Kontakt",
+    "title": "Otwarty na kontrakty, role full-time i ciekawe projekty.",
+    "introLead": "Najlepiej trafiam tam, gdzie szuka się ",
+    "introHighlight": "programisty, który już ma za sobą działające produkty i potrafi pracować z AI w workflow",
+    "introTrail": ". Krótka rozmowa (30 min, bez zobowiązań) zwykle wystarczy, żebym ocenił dopasowanie. Jeśli się nie nadaję — powiem od razu.",
+    "directLabel": "Dane bezpośrednie"
+  },
+  "contactForm": {
+    "requiredHintPrefix": "Pola oznaczone ",
+    "requiredHintSuffix": " są wymagane",
+    "labels": {
+      "name": "Imię i nazwisko",
+      "email": "Email",
+      "company": "Firma",
+      "message": "Czego dotyczy kontakt?",
+      "source": "Skąd o mnie wiesz?"
+    },
+    "optional": "opcjonalne",
+    "placeholders": {
+      "name": "Jan Kowalski",
+      "email": "jan@firma.pl",
+      "company": "Nazwa firmy",
+      "message": "rola / kontrakt / projekt / inne — krótko, czym mogę pomóc",
+      "source": "Wybierz (opcjonalnie)"
+    },
+    "sources": {
+      "linkedin": "LinkedIn",
+      "referral": "Polecenie",
+      "google": "Google",
+      "other": "Inne"
+    },
+    "submit": "Wyślij wiadomość",
+    "submitting": "Wysyłam…",
+    "validation": {
+      "required": "Pole wymagane",
+      "minName": "Min. 2 znaki",
+      "maxName": "Max. 120 znaków",
+      "invalidEmail": "Nieprawidłowy adres e-mail",
+      "maxEmail": "Max. 160 znaków",
+      "maxCompany": "Max. 160 znaków",
+      "minMessage": "Min. 20 znaków — opisz krótko, czego dotyczy kontakt",
+      "maxMessage": "Max. 4000 znaków"
+    },
+    "toast": {
+      "success": "Dziękuję, odezwę się wkrótce.",
+      "error": "Coś poszło nie tak, spróbuj ponownie lub mailem dev.buzzardssoft@gmail.com"
+    }
+  },
+  "contactInfo": {
+    "labels": {
+      "email": "Email",
+      "phone": "Telefon",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "copyAria": "Skopiuj: {label}",
+    "copiedAria": "Skopiowano {label}",
+    "copyToast": "Skopiowano: {label}",
+    "copyUnsupported": "Twoja przeglądarka nie wspiera kopiowania.",
+    "copyFailed": "Nie udało się skopiować."
+  },
+  "footer": {
+    "tagline": "Programista, który przebudował swój workflow wokół agentów AI. Otwarty na role i kontrakty.",
+    "linksHeading": "Strona",
+    "registryHeading": "Dane rejestrowe",
+    "links": {
+      "privacy": "Polityka prywatności",
+      "contact": "Kontakt"
+    },
+    "copyright": "© Buzzards Soft {year}"
+  },
+  "portfolio": {
+    "breadcrumbBack": "Wróć do strony głównej",
+    "eyebrow": "Case study · {slug}",
+    "metaRoleLabel": "Rola",
+    "metaPeriodLabel": "Okres",
+    "stackAria": "Stack — {title}",
+    "scopeHeading": "Zakres",
+    "stackHeading": "Stack technologiczny",
+    "stackFullAria": "Stack technologiczny — pełna lista",
+    "appsHeading": "Wybrane realizacje",
+    "appsIntro": "Aplikacje produkcyjne, przy których pracowałem — szczegóły do pokazania w rozmowie.",
+    "metaTitleFallback": "Case study",
+    "metaDescription": "{role} · {period}. Zakres prac, stack technologiczny i wybrane realizacje.",
+    "cases": {
+      "honeti": {
+        "title": "Honeti — Mobile Developer (4+ lata)",
+        "role": "Mobile Developer",
+        "period": "2021 — obecnie",
+        "scope": {
+          "1": "aplikacje mobilne Android + iOS budowane od zera,",
+          "2": "rozwój i utrzymanie istniejących produktów,",
+          "3": "współpraca z zespołem developerów, testerów i project managerów,",
+          "4": "pełen cykl życia: planowanie → implementacja → testy → publikacja → utrzymanie,",
+          "5": "integracje REST API i Firebase, autoryzacja, synchronizacja danych, mechanizmy offline,",
+          "6": "przygotowanie i publikacja w Google Play / App Store,",
+          "7": "bezpośrednia praca z klientami i dopasowywanie rozwiązań do realnych potrzeb biznesu."
+        }
+      }
+    }
+  },
+  "privacyPolicy": {
+    "metaTitle": "Polityka prywatności",
+    "metaDescription": "Zasady przetwarzania danych osobowych użytkowników strony buzzards-soft.com — zgodnie z RODO.",
+    "breadcrumbBack": "Wróć do strony głównej",
+    "documentBadge": "Dokument · RODO",
+    "title": "Polityka prywatności",
+    "introPart1Pre": "Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych użytkowników korzystających ze strony internetowej dostępnej pod adresem ",
+    "introPart1Mid": " (dalej: „Strona\"). Administratorem danych osobowych jest ",
+    "introPart1Post": " (dalej: „Administrator\").",
+    "introPart2": "Administrator dokłada szczególnej staranności w celu ochrony prywatności użytkowników oraz przetwarzanych danych osobowych zgodnie z obowiązującymi przepisami prawa, w szczególności z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).",
+    "lastUpdatedLabel": "Ostatnia aktualizacja",
+    "lastUpdatedValue": "8 maja 2026",
+    "contactLabel": "Kontakt w sprawie danych",
+    "tocHeading": "Spis treści",
+    "adminContactHeading": "Kontakt z Administratorem",
+    "adminContactBody": "Buzzards Soft Mariusz Jendrzejczak, Pomorska 14/8, 74-300 Myślibórz.",
+    "sections": {
+      "1": {
+        "title": "Zakres zbieranych danych",
+        "intro": "Podczas korzystania ze Strony Administrator może przetwarzać następujące dane:",
+        "items": {
+          "1": "dane podane dobrowolnie przez użytkownika (np. w formularzu kontaktowym): imię i nazwisko, adres e-mail, treść wiadomości,",
+          "2": "dane techniczne: adres IP, typ przeglądarki, system operacyjny, informacje statystyczne dotyczące korzystania ze Strony."
+        },
+        "extra": "Strona nie zbiera danych wrażliwych."
+      },
+      "2": {
+        "title": "Cele przetwarzania danych",
+        "intro": "Dane osobowe przetwarzane są w następujących celach:",
+        "items": {
+          "1": "obsługa zapytań przesyłanych przez formularz kontaktowy,",
+          "2": "kontakt z użytkownikiem,",
+          "3": "zapewnienie prawidłowego działania Strony,",
+          "4": "cele statystyczne i analityczne,",
+          "5": "realizacja obowiązków prawnych Administratora."
+        }
+      },
+      "3": {
+        "title": "Podstawa prawna przetwarzania danych",
+        "intro": "Dane osobowe są przetwarzane na podstawie:",
+        "items": {
+          "1": "zgody użytkownika (art. 6 ust. 1 lit. a RODO),",
+          "2": "realizacji prawnie uzasadnionego interesu Administratora (art. 6 ust. 1 lit. f RODO),",
+          "3": "obowiązków wynikających z przepisów prawa (art. 6 ust. 1 lit. c RODO)."
+        }
+      },
+      "4": {
+        "title": "Odbiorcy danych",
+        "p1": "Dane osobowe użytkowników mogą być przekazywane podmiotom współpracującym z Administratorem wyłącznie w zakresie niezbędnym do realizacji celów przetwarzania, w szczególności: dostawcom usług hostingowych, narzędzi analitycznych oraz usług IT.",
+        "p2": "Dane nie są sprzedawane ani udostępniane podmiotom trzecim w celach marketingowych."
+      },
+      "5": {
+        "title": "Przechowywanie danych",
+        "p1": "Dane osobowe są przechowywane wyłącznie przez okres niezbędny do realizacji celu, dla którego zostały zebrane, lub do momentu cofnięcia zgody przez użytkownika, o ile dalsze przetwarzanie nie wynika z przepisów prawa."
+      },
+      "6": {
+        "title": "Prawa użytkownika",
+        "intro": "Użytkownik ma prawo do:",
+        "items": {
+          "1": "dostępu do swoich danych,",
+          "2": "ich sprostowania,",
+          "3": "usunięcia („prawo do bycia zapomnianym\"),",
+          "4": "ograniczenia przetwarzania,",
+          "5": "przenoszenia danych,",
+          "6": "wniesienia sprzeciwu wobec przetwarzania,",
+          "7": "cofnięcia zgody w dowolnym momencie."
+        },
+        "extra": "W celu realizacji swoich praw użytkownik może skontaktować się z Administratorem pod adresem podanym w sekcji 10."
+      },
+      "7": {
+        "title": "Pliki cookies",
+        "intro": "Strona może wykorzystywać pliki cookies w celu:",
+        "items": {
+          "1": "zapewnienia prawidłowego działania Strony,",
+          "2": "celów statystycznych i analitycznych."
+        },
+        "extra": "Użytkownik może w każdej chwili zmienić ustawienia dotyczące cookies w swojej przeglądarce internetowej."
+      },
+      "8": {
+        "title": "Bezpieczeństwo danych",
+        "p1": "Administrator stosuje odpowiednie środki techniczne i organizacyjne zapewniające ochronę przetwarzanych danych osobowych przed ich utratą, nieuprawnionym dostępem lub nieuprawnioną modyfikacją."
+      },
+      "9": {
+        "title": "Zmiany w polityce prywatności",
+        "p1": "Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności. Aktualna wersja dokumentu jest zawsze dostępna na Stronie, a data ostatniej aktualizacji widoczna jest w nagłówku."
+      },
+      "10": {
+        "title": "Kontakt",
+        "p1": "W sprawach związanych z ochroną danych osobowych prosimy o kontakt mailowy. Odpowiadamy zwykle w ciągu kilku dni roboczych."
+      }
+    }
+  },
+  "notFound": {
+    "metaTitle": "Nie znaleziono — Buzzards Soft",
+    "metaDescription": "Ta strona nie istnieje albo została przeniesiona. Wróć do strony głównej Buzzards Soft.",
+    "badge": "HTTP 404",
+    "code": "404",
+    "title": "Nie znaleziono",
+    "bodyPart1": "Ta strona nie istnieje albo została przeniesiona. Jeśli trafiłeś tu z linka, który powinien działać — ",
+    "bodyHighlight": "daj znać",
+    "bodyPart2": ", naprawię to.",
+    "back": "Wróć do strony głównej",
+    "contactCta": "Skontaktuj się, jeśli to błąd"
+  },
+  "rootMetadata": {
+    "title": "Buzzards Soft — AI-Augmented Developer",
+    "description": "Programista (Flutter, Unity, 4+ lat komercyjnie), który przebudował swój workflow wokół agentów AI. Otwarty na role i kontrakty."
+  }
+}

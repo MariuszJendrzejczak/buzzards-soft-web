@@ -1,0 +1,225 @@
+"use client";
+
+import { Menu } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
+
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { LanguageToggle } from "@/components/layout/LanguageToggle";
+import { Link } from "@/i18n/routing";
+import { cn } from "@/lib/utils";
+
+const NAV_KEYS = [
+  { href: "#how-i-work", key: "howIWork" },
+  { href: "#what-i-deliver", key: "whatIDeliver" },
+  { href: "#experience", key: "experience" },
+  { href: "#learning", key: "learning" },
+  { href: "#about", key: "about" },
+  { href: "#education", key: "education" },
+  { href: "#contact", key: "contact" },
+] as const;
+
+type NavKey = (typeof NAV_KEYS)[number];
+
+export function Header() {
+  const tNav = useTranslations("nav");
+  const tCommon = useTranslations("common");
+  const { hidden, scrolled } = useHeaderScrollState();
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  return (
+    <>
+      <a
+        href="#main"
+        className="sr-only z-[60] focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:rounded-md focus:bg-brand focus:px-3 focus:py-2 focus:text-sm focus:font-medium focus:text-accent-foreground focus:outline-none"
+      >
+        {tCommon("skipToContent")}
+      </a>
+
+      <header
+        data-scrolled={scrolled || mobileOpen ? "true" : "false"}
+        className={cn(
+          "sticky top-0 z-50 w-full transition-all duration-300 will-change-transform",
+          "border-b border-transparent",
+          (scrolled || mobileOpen) &&
+            "border-border/60 bg-background/70 supports-[backdrop-filter]:backdrop-blur-md supports-[backdrop-filter]:bg-background/55",
+          hidden && !mobileOpen ? "-translate-y-full" : "translate-y-0",
+        )}
+      >
+        <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-6 sm:px-8">
+          <BrandMark ariaLabel={tNav("brandHomeAria")} />
+
+          <nav
+            aria-label={tNav("mainAria")}
+            className="hidden lg:flex lg:items-center lg:gap-1"
+          >
+            {NAV_KEYS.map((item) => (
+              <NavLink key={item.href} item={item} label={tNav(`items.${item.key}`)} />
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-2 sm:gap-3">
+            <LanguageToggle className="hidden sm:inline-flex" />
+
+            <Button
+              size="sm"
+              render={<a href="#contact" />}
+              className="hidden bg-cta px-3 text-primary-foreground hover:bg-cta-hover sm:inline-flex"
+            >
+              {tCommon("ctaTalk")}
+            </Button>
+
+            <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+              <SheetTrigger
+                render={
+                  <Button
+                    variant="ghost"
+                    size="icon-sm"
+                    aria-label={tNav("openMenu")}
+                    className="lg:hidden"
+                  />
+                }
+              >
+                <Menu />
+              </SheetTrigger>
+
+              <SheetContent
+                side="right"
+                className="w-full max-w-sm border-l border-border bg-background sm:max-w-sm"
+              >
+                <SheetHeader className="border-b border-border/60">
+                  <SheetTitle>{tNav("menuTitle")}</SheetTitle>
+                  <SheetDescription className="sr-only">
+                    {tNav("menuDescription")}
+                  </SheetDescription>
+                </SheetHeader>
+
+                <nav
+                  aria-label={tNav("mobileAria")}
+                  className="flex flex-1 flex-col gap-1 px-4 py-2"
+                >
+                  {NAV_KEYS.map((item) => (
+                    <SheetClose
+                      key={item.href}
+                      render={
+                        <a
+                          href={item.href}
+                          className="rounded-md px-3 py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring/50"
+                        >
+                          {tNav(`items.${item.key}`)}
+                        </a>
+                      }
+                    />
+                  ))}
+                </nav>
+
+                <div className="flex flex-col gap-3 border-t border-border/60 p-4">
+                  <LanguageToggle className="self-start sm:hidden" />
+                  <SheetClose
+                    render={
+                      <Button
+                        size="lg"
+                        render={<a href="#contact" />}
+                        className="h-11 w-full bg-cta text-primary-foreground hover:bg-cta-hover"
+                      >
+                        {tCommon("ctaTalk")}
+                      </Button>
+                    }
+                  />
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+        </div>
+      </header>
+    </>
+  );
+}
+
+function BrandMark({ ariaLabel }: { ariaLabel: string }) {
+  return (
+    <Link
+      href="/"
+      aria-label={ariaLabel}
+      className="group/brand inline-flex items-center gap-2.5 rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+    >
+      <span
+        aria-hidden
+        className="relative flex size-8 items-center justify-center rounded-md border border-brand/30 bg-brand/10 font-mono text-sm font-bold text-brand shadow-[0_0_0_1px_rgba(16,185,129,0.05)] transition-colors group-hover/brand:bg-brand/15"
+      >
+        BS
+      </span>
+      <span className="font-heading text-sm font-semibold tracking-tight text-foreground sm:text-base">
+        Buzzards Soft
+      </span>
+    </Link>
+  );
+}
+
+function NavLink({ item, label }: { item: NavKey; label: string }) {
+  return (
+    <a
+      href={item.href}
+      className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
+    >
+      {label}
+    </a>
+  );
+}
+
+/**
+ * Hide-on-scroll: header retracts when scrolling down past a small threshold,
+ * reappears immediately when scrolling up. Always visible at the top of the
+ * page. `scrolled` toggles the translucent backdrop once the user moves at all.
+ */
+function useHeaderScrollState() {
+  const [hidden, setHidden] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+    let frame = 0;
+    const REVEAL_THRESHOLD = 80;
+
+    const update = () => {
+      frame = 0;
+      const y = window.scrollY;
+      const delta = y - lastY;
+
+      setScrolled(y > 4);
+
+      if (y < REVEAL_THRESHOLD) {
+        setHidden(false);
+      } else if (delta > 6) {
+        setHidden(true);
+      } else if (delta < -6) {
+        setHidden(false);
+      }
+
+      lastY = y;
+    };
+
+    const onScroll = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, []);
+
+  return { hidden, scrolled };
+}
