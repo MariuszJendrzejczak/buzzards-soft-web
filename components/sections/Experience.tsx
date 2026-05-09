@@ -20,7 +20,7 @@ const HONETI_CHIPS = [
   "Clean Architecture",
 ];
 
-const HONETI_BULLET_KEYS = ["1", "2", "3", "4", "5", "6", "7"] as const;
+const HONETI_BULLET_KEYS = ["1", "2", "3", "4"] as const;
 
 const UNITY_CHIPS = ["Unity", "C#", "UI Toolkit", "Firebase", "Unity IAP"];
 
@@ -64,6 +64,9 @@ export async function Experience() {
           >
             <CardEyebrow label={t("honeti.eyebrow")} />
             <CardTitle>{t("honeti.title")}</CardTitle>
+            <span className="mt-2 block font-mono text-xs tracking-wide text-text-subtle">
+              {t("honeti.period")}
+            </span>
             <ChipCloud
               ariaLabel={t("stackAria", { project: "Honeti" })}
               className="mt-5"

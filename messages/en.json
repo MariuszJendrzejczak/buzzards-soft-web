@@ -35,20 +35,20 @@
     "headingLead": "I ship software faster because ",
     "headingHighlight": "I work with AI every day",
     "headingTrail": " — not just on holidays.",
-    "sub": "Four and a half years of commercial development (Flutter, Unity, integrations). Over the last year I rebuilt my workflow around AI agents — Claude Code is my daily driver, with my own hooks, skills, and configuration that I use on production projects. I'm looking for a role / contract where this acceleration matters.",
+    "sub": "I ship commercial code in Flutter and Unity. Over the last year I rebuilt my workflow around AI agents — Claude Code with my own configuration, hooks and skills sits in my projects every day. I'm looking for a role or contract where this acceleration matters.",
     "ctaPrimary": "Let's talk about a role or project",
     "ctaSecondary": "See how I work",
     "trustAria": "Experience summary",
     "trust": {
-      "yearsCode": "4+ years of production code (Flutter / Dart, Unity / C#)",
-      "claudeDaily": "Daily work with Claude Code — my own config, hooks, skills",
+      "yearsCode": "Production code in Flutter (Dart) and Unity (C#)",
+      "claudeDaily": "Claude Code: my own config, hooks, skills, subagents",
       "engineerEnglish": "BSc in Computer Science · Technical English B2/C1"
     }
   },
   "howIWork": {
     "eyebrow": "Section 02 · Core",
     "title": "How I work — AI in my daily workflow",
-    "intro": "Over the last year I rebuilt the way I work around AI agents. It's not about pasting questions into a chat — it's a full toolkit: agents in a loop, custom tools, hooks that enforce project standards, automations around review and CI. Below are four concrete areas where I do this.",
+    "intro": "Four concrete areas where AI sits in my daily toolkit. It's not about pasting questions into a chat — it's a full workshop: agents in a loop, custom tools, hooks that enforce project standards, automations around review and CI.",
     "practices": {
       "21": {
         "title": "AI-assisted development as a daily practice",
@@ -180,7 +180,7 @@
       "32": {
         "title": "AI tooling in the developer workflow",
         "bullets": {
-          "1": "Claude Code: settings, permissions, hooks, slash commands, skills, subagents, plugins,",
+          "1": "Claude Code: configuration, hooks, slash commands, skills, subagents,",
           "2": "MCP servers — using off-the-shelf servers,",
           "3": "prompt engineering in a code context (structured output, function calling, tool use),",
           "4": "working with LLM APIs (OpenAI, Anthropic) at the application integration level,",
@@ -220,20 +220,18 @@
   "experience": {
     "eyebrow": "Section 04 · Track record",
     "title": "Experience and artifacts",
-    "intro": "Commercial projects where I wrote code, plus artifacts from my daily work with AI agents. The card at the bottom — the site you're reading — is a meta-project.",
+    "intro": "Commercial projects where I wrote code, plus artifacts from my daily work with AI agents.",
     "stackAria": "Stack — {project}",
     "honeti": {
       "eyebrow": "4.1 · Mobile",
-      "title": "Honeti — Mobile Developer (4+ years)",
+      "title": "Honeti — Mobile Developer",
+      "period": "2021 — present",
       "ctaLabel": "See case study",
       "bullets": {
-        "1": "Android + iOS mobile apps built from scratch,",
-        "2": "growth and maintenance of existing products,",
-        "3": "collaboration with developers, testers, and project managers,",
-        "4": "full lifecycle: planning → implementation → testing → release → maintenance,",
-        "5": "REST API and Firebase integrations, auth, data sync, offline mechanisms,",
-        "6": "preparation and release on Google Play / App Store,",
-        "7": "direct work with clients and tailoring solutions to real business needs."
+        "1": "Android + iOS mobile apps — built from scratch and maintained over time,",
+        "2": "full lifecycle: planning → implementation → testing → release → maintenance,",
+        "3": "working with developers, testers, and project managers, and directly with clients,",
+        "4": "stack and scope details — see the \"What I can deliver\" section and the case study."
       }
     },
     "unity": {
@@ -281,9 +279,9 @@
   "about": {
     "eyebrow": "Section 06 · About",
     "title": "About me",
-    "short": "A developer with 4+ years of commercial experience (Flutter, Unity) who rebuilt his workflow around AI agents. Focused on shipping software — faster and cleaner thanks to tools I configure myself. Previously 14 years in technical installations — useful for projects that bridge software and hardware.",
-    "para1": "I've been programming commercially for over four years. Most of that time I spent on Flutter mobile apps (Honeti) — from the first line of code, through REST API and Firebase integrations, auth, data sync and offline work, all the way to store releases and maintenance. I've also worked in Unity on games and interactive apps. In both stacks I put strong emphasis on code readability, architectural scalability, and making sure the project still lends itself to development years in.",
-    "para2": "Over the last year my workflow has gone through a noticeable shift. I started treating AI agents as a workshop tool, not a curiosity. Claude Code became my daily driver — with custom configuration, hooks, slash commands, subagents and skills tailored to my projects. Things I used to do by hand (review, exploring unfamiliar codebases, codemods, scaffold) now happen faster, but still under my control — the agent doesn't merge on its own, every output goes through build and review.",
+    "short": "A developer with 4+ years of commercial experience (Flutter, Unity) for whom AI is a workshop, not a curiosity. Focused on shipping software — faster and cleaner thanks to tools I configure myself. Previously 14 years in technical installations — useful for projects that bridge software and hardware.",
+    "para1": "Most of my commercial work has been Flutter mobile apps (Honeti) — from the first line of code, through REST API and Firebase integrations, auth, data sync and offline work, all the way to store releases and maintenance. I've also worked in Unity on games and interactive apps. In both stacks I put strong emphasis on code readability, architectural scalability, and making sure the project still lends itself to development years in.",
+    "para2": "Over the last year my workflow has gone through a noticeable shift. I started treating AI agents as a workshop tool, not a curiosity. Claude Code became my daily driver — with configuration tailored to my projects. Things I used to do by hand (review, exploring unfamiliar codebases, codemods, scaffold) now happen faster, but still under my control — the agent doesn't merge on its own, every output goes through build and review.",
     "notSpecialist": "I don't call myself an \"AI Specialist\".",
     "selfDefinition": "I call myself a developer who deliberately uses AI in daily work — and who, thanks to that, ships more.",
     "difference": "That's the distinction I care about: my track record is in writing production code — AI is the way that code is now produced faster.",
@@ -384,7 +382,7 @@
     "copyFailed": "Failed to copy."
   },
   "footer": {
-    "tagline": "A developer who rebuilt his workflow around AI agents. Open to roles and contracts.",
+    "tagline": "Flutter · Unity · AI-Augmented Developer. Open to roles and contracts.",
     "linksHeading": "Site",
     "registryHeading": "Registry data",
     "links": {
@@ -408,7 +406,7 @@
     "metaDescription": "{role} · {period}. Scope of work, tech stack, and selected releases.",
     "cases": {
       "honeti": {
-        "title": "Honeti — Mobile Developer (4+ years)",
+        "title": "Honeti — Mobile Developer",
         "role": "Mobile Developer",
         "period": "2021 — present",
         "scope": {
@@ -529,6 +527,6 @@
   },
   "rootMetadata": {
     "title": "Buzzards Soft — AI-Augmented Developer",
-    "description": "A developer (Flutter, Unity, 4+ years commercial) who rebuilt his workflow around AI agents. Open to roles and contracts."
+    "description": "A developer (Flutter, Unity) who rebuilt his workflow around AI agents. Open to roles and contracts."
   }
 }
