@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
 
-const ITEM_KEYS = ["agents", "rag", "automation", "mcp"] as const;
+import { ScrollReveal } from "@/components/shared/ScrollReveal";
+
+const ITEM_KEYS = ["agents", "rag", "automation"] as const;
 
 export async function CurrentlyLearning() {
   const t = await getTranslations("currentlyLearning");
@@ -16,7 +18,7 @@ export async function CurrentlyLearning() {
       aria-labelledby="currently-learning-heading"
       className="relative isolate border-t border-border/60 bg-slate-900/50 py-20 sm:py-24"
     >
-      <div className="mx-auto w-full max-w-2xl px-6 sm:px-8">
+      <ScrollReveal className="mx-auto w-full max-w-2xl px-6 sm:px-8">
         <header>
           <span className="font-mono text-xs font-medium tracking-[0.18em] text-text-subtle uppercase">
             {t("eyebrow")}
@@ -50,7 +52,7 @@ export async function CurrentlyLearning() {
         <p className="mt-10 text-base leading-relaxed text-muted-foreground italic">
           {t("closing")}
         </p>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

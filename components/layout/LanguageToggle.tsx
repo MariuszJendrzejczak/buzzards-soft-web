@@ -49,7 +49,7 @@ export function LanguageToggle({ className }: LanguageToggleProps) {
           <LocaleButton
             locale={locale}
             active={active === locale}
-            ariaLabel={t(ARIA_KEY[locale])}
+            ariaLabel={`${locale.toUpperCase()} — ${t(ARIA_KEY[locale])}`}
             onSelect={switchTo}
             disabled={isPending}
           />

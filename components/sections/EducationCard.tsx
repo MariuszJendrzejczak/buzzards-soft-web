@@ -16,9 +16,10 @@ export type EducationCardProps = {
 };
 
 const VARIANT_CLASSES: Record<EducationCardVariant, string> = {
-  primary: "rounded-2xl border border-border bg-card p-7 shadow-sm sm:p-9",
+  primary:
+    "rounded-2xl border border-border bg-card p-7 shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-brand/40 hover:shadow-md sm:p-9",
   secondary:
-    "rounded-2xl border border-border/70 bg-surface/40 p-6 sm:p-7",
+    "rounded-2xl border border-border/70 bg-surface/40 p-6 transition-all duration-300 hover:scale-[1.02] hover:border-brand/30 sm:p-7",
 };
 
 export function EducationCard({

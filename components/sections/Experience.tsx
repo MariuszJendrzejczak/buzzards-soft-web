@@ -1,6 +1,12 @@
 import { Sparkles } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import {
+  ScrollReveal,
+  StaggerGroup,
+  StaggerItem,
+} from "@/components/shared/ScrollReveal";
+
 import { ChipCloud } from "./ChipCloud";
 import { ExperienceCard } from "./ExperienceCard";
 import { TechChip } from "./TechChip";
@@ -35,7 +41,7 @@ export async function Experience() {
       className="relative isolate border-t border-border/60 py-24 sm:py-32"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <header className="max-w-3xl">
+        <ScrollReveal as="header" className="max-w-3xl">
           <span className="font-mono text-xs font-medium tracking-[0.18em] text-brand uppercase">
             {t("eyebrow")}
           </span>
@@ -48,9 +54,10 @@ export async function Experience() {
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
             {t("intro")}
           </p>
-        </header>
+        </ScrollReveal>
 
-        <div className="mt-14 flex flex-col gap-8">
+        <StaggerGroup as="div" className="mt-14 flex flex-col gap-8">
+          <StaggerItem>
           <ExperienceCard
             href="/portfolio/honeti"
             ctaLabel={t("honeti.ctaLabel")}
@@ -67,44 +74,51 @@ export async function Experience() {
             </ChipCloud>
             <BulletList bullets={honetiBullets} className="mt-6" />
           </ExperienceCard>
+          </StaggerItem>
 
-          <ExperienceCard>
-            <CardEyebrow label={t("unity.eyebrow")} />
-            <CardTitle>{t("unity.title")}</CardTitle>
-            <ChipCloud
-              ariaLabel={t("stackAria", { project: "Unity" })}
-              className="mt-5"
-            >
-              {UNITY_CHIPS.map((chip) => (
-                <TechChip key={chip}>{chip}</TechChip>
-              ))}
-            </ChipCloud>
-            <p className="mt-6 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              {t("unity.description")}
-            </p>
-          </ExperienceCard>
+          <StaggerItem>
+            <ExperienceCard>
+              <CardEyebrow label={t("unity.eyebrow")} />
+              <CardTitle>{t("unity.title")}</CardTitle>
+              <ChipCloud
+                ariaLabel={t("stackAria", { project: "Unity" })}
+                className="mt-5"
+              >
+                {UNITY_CHIPS.map((chip) => (
+                  <TechChip key={chip}>{chip}</TechChip>
+                ))}
+              </ChipCloud>
+              <p className="mt-6 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                {t("unity.description")}
+              </p>
+            </ExperienceCard>
+          </StaggerItem>
 
-          <ExperienceCard variant="artifact">
-            <CardEyebrow label={t("artifact.eyebrow")} tone="artifact" />
-            <CardTitle>
-              <span className="inline-flex items-center gap-2">
-                {t("artifact.title")}
-                <Sparkles aria-hidden className="size-5 text-brand" />
-              </span>
-            </CardTitle>
-            <BulletList bullets={artifactBullets} className="mt-6" />
-            <blockquote className="mt-7 border-l-2 border-brand/60 pl-5 text-base leading-relaxed text-foreground/90 italic sm:text-lg">
-              {t("artifact.quote")}
-            </blockquote>
-          </ExperienceCard>
+          <StaggerItem>
+            <ExperienceCard variant="artifact">
+              <CardEyebrow label={t("artifact.eyebrow")} tone="artifact" />
+              <CardTitle>
+                <span className="inline-flex items-center gap-2">
+                  {t("artifact.title")}
+                  <Sparkles aria-hidden className="size-5 text-brand" />
+                </span>
+              </CardTitle>
+              <BulletList bullets={artifactBullets} className="mt-6" />
+              <blockquote className="mt-7 border-l-2 border-brand/60 pl-5 text-base leading-relaxed text-foreground/90 italic sm:text-lg">
+                {t("artifact.quote")}
+              </blockquote>
+            </ExperienceCard>
+          </StaggerItem>
 
-          <ExperienceCard variant="meta" className="lg:max-w-2xl">
-            <CardEyebrow label={t("meta.eyebrow")} tone="muted" />
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              {t("meta.description")}
-            </p>
-          </ExperienceCard>
-        </div>
+          <StaggerItem>
+            <ExperienceCard variant="meta" className="lg:max-w-2xl">
+              <CardEyebrow label={t("meta.eyebrow")} tone="muted" />
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                {t("meta.description")}
+              </p>
+            </ExperienceCard>
+          </StaggerItem>
+        </StaggerGroup>
       </div>
     </section>
   );

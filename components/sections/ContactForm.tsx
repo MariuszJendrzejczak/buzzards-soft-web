@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2, Send } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -35,18 +35,45 @@ export type ContactFormValues = {
   company?: string;
   message: string;
   source?: SourceValue;
+  // Honeypot: bots fill this, humans don't see it.
+  website?: string;
 };
 
 const SOURCE_KEYS: SourceValue[] = ["linkedin", "referral", "google", "other"];
 
-// TODO: replace with real Firebase Function call (separate task).
-async function submitContactForm(values: ContactFormValues): Promise<void> {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  void values;
+const CONTACT_ENDPOINT = "/api/contact";
+
+class ContactFormError extends Error {
+  constructor(public readonly code: string) {
+    super(code);
+  }
+}
+
+async function submitContactForm(
+  values: ContactFormValues,
+  locale: string,
+): Promise<void> {
+  const response = await fetch(CONTACT_ENDPOINT, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...values, locale }),
+  });
+
+  let body: { ok?: boolean; error?: string } | null = null;
+  try {
+    body = (await response.json()) as { ok?: boolean; error?: string };
+  } catch {
+    // non-JSON response — treat as transport failure
+  }
+
+  if (!response.ok || !body?.ok) {
+    throw new ContactFormError(body?.error ?? `http_${response.status}`);
+  }
 }
 
 export function ContactForm() {
   const t = useTranslations("contactForm");
+  const locale = useLocale();
   const [submitting, setSubmitting] = useState(false);
 
   const contactSchema = useMemo(
@@ -72,6 +99,8 @@ export function ContactForm() {
           .min(20, { error: t("validation.minMessage") })
           .max(4000, { error: t("validation.maxMessage") }),
         source: z.enum(["linkedin", "referral", "google", "other"]).optional(),
+        // Honeypot — hidden field that real users won't fill.
+        website: z.string().max(0).optional(),
       }),
     [t],
   );
@@ -84,6 +113,7 @@ export function ContactForm() {
       company: "",
       message: "",
       source: undefined,
+      website: "",
     },
     mode: "onTouched",
   });
@@ -91,11 +121,16 @@ export function ContactForm() {
   async function onSubmit(values: ContactFormValues) {
     setSubmitting(true);
     try {
-      await submitContactForm(values);
+      await submitContactForm(values, locale);
       toast.success(t("toast.success"));
       form.reset();
-    } catch {
-      toast.error(t("toast.error"));
+    } catch (err) {
+      const code = err instanceof ContactFormError ? err.code : "unknown";
+      const message =
+        code === "rate_limited"
+          ? t("toast.rateLimited")
+          : t("toast.error");
+      toast.error(message);
     } finally {
       setSubmitting(false);
     }
@@ -123,6 +158,16 @@ export function ContactForm() {
           <span className="text-cta">*</span>
           {t("requiredHintSuffix")}
         </p>
+
+        {/* Honeypot — hidden from users, bots fill it. */}
+        <input
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          {...form.register("website")}
+          className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden opacity-0"
+        />
 
         <FormField
           control={form.control}

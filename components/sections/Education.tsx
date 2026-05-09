@@ -1,5 +1,11 @@
 import { getTranslations } from "next-intl/server";
 
+import {
+  ScrollReveal,
+  StaggerGroup,
+  StaggerItem,
+} from "@/components/shared/ScrollReveal";
+
 import { ChipCloud } from "./ChipCloud";
 import { EducationCard, type EducationField } from "./EducationCard";
 import { TechChip } from "./TechChip";
@@ -28,7 +34,7 @@ export async function Education() {
       className="relative isolate border-t border-border/60 py-24 sm:py-32"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <header className="max-w-3xl">
+        <ScrollReveal as="header" className="max-w-3xl">
           <span className="font-mono text-xs font-medium tracking-[0.18em] text-brand uppercase">
             {t("eyebrow")}
           </span>
@@ -38,24 +44,31 @@ export async function Education() {
           >
             {t("title")}
           </h2>
-        </header>
+        </ScrollReveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
-          <EducationCard
-            variant="primary"
-            eyebrow={t("wsb.eyebrow")}
-            title={t("wsb.name")}
-            fields={wsbFields}
-          />
-          <EducationCard
-            variant="secondary"
-            eyebrow={t("zsee.eyebrow")}
-            title={t("zsee.name")}
-            fields={zseeFields}
-          />
-        </div>
+        <StaggerGroup
+          as="div"
+          className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8"
+        >
+          <StaggerItem>
+            <EducationCard
+              variant="primary"
+              eyebrow={t("wsb.eyebrow")}
+              title={t("wsb.name")}
+              fields={wsbFields}
+            />
+          </StaggerItem>
+          <StaggerItem>
+            <EducationCard
+              variant="secondary"
+              eyebrow={t("zsee.eyebrow")}
+              title={t("zsee.name")}
+              fields={zseeFields}
+            />
+          </StaggerItem>
+        </StaggerGroup>
 
-        <div className="mt-12">
+        <ScrollReveal className="mt-12">
           <h3 className="font-mono text-xs font-medium tracking-[0.18em] text-text-subtle uppercase">
             {t("additionalLabel")}
           </h3>
@@ -67,7 +80,7 @@ export async function Education() {
               <TechChip key={key}>{t(`certificates.${key}`)}</TechChip>
             ))}
           </ChipCloud>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -4,6 +4,8 @@ import { CASE_SLUGS } from "@/app/[locale]/portfolio/[slug]/cases";
 import { routing } from "@/i18n/routing";
 import { SITE_URL, hreflangFor } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 type Frequency = NonNullable<MetadataRoute.Sitemap[number]["changeFrequency"]>;
 
 type Route = {

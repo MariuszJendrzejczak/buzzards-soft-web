@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
+import { ScrollReveal } from "@/components/shared/ScrollReveal";
+
 import { ContactForm } from "./ContactForm";
 import { ContactInfo } from "./ContactInfo";
 
@@ -13,7 +15,7 @@ export async function Contact() {
       className="relative isolate border-t border-border/60 py-24 sm:py-32"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <header className="max-w-3xl">
+        <ScrollReveal as="header" className="max-w-3xl">
           <span className="font-mono text-xs font-medium tracking-[0.18em] text-brand uppercase">
             {t("eyebrow")}
           </span>
@@ -23,9 +25,9 @@ export async function Contact() {
           >
             {t("title")}
           </h2>
-        </header>
+        </ScrollReveal>
 
-        <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr] lg:gap-16">
+        <ScrollReveal className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr] lg:gap-16">
           <div className="order-2 flex flex-col gap-8 lg:order-1">
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
               {t("introLead")}
@@ -46,7 +48,7 @@ export async function Contact() {
           <div className="order-1 lg:order-2">
             <ContactForm />
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

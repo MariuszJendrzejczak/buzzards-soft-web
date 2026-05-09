@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import type { ComponentType, SVGProps } from "react";
 
 import { Link } from "@/i18n/routing";
@@ -38,20 +39,19 @@ type SocialLink = {
   icon: IconComponent;
 };
 
-// TODO: replace placeholders once final URLs / address are confirmed.
 const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: "https://www.linkedin.com/in/",
+    href: "https://www.linkedin.com/in/jendrzejczakmariusz/",
     label: "LinkedIn",
     icon: LinkedInIcon,
   },
   {
-    href: "https://github.com/",
+    href: "https://github.com/MariuszJendrzejczak",
     label: "GitHub",
     icon: GitHubIcon,
   },
   {
-    href: "mailto:hello@buzzards-soft.com",
+    href: "mailto:dev.buzzardssoft@gmail.com",
     label: "Email",
     icon: Mail,
   },
@@ -72,12 +72,14 @@ export async function Footer() {
       <div className="mx-auto grid w-full max-w-7xl gap-12 px-6 py-16 sm:px-8 md:grid-cols-12 md:gap-8">
         <div className="md:col-span-5">
           <div className="flex items-center gap-2.5">
-            <span
+            <Image
+              src="/brand-mark.png"
+              alt=""
+              width={28}
+              height={28}
               aria-hidden
-              className="flex size-7 items-center justify-center rounded-md border border-brand/30 bg-brand/10 font-mono text-xs font-bold text-brand"
-            >
-              BS
-            </span>
+              className="size-7"
+            />
             <span className="font-heading text-sm font-semibold text-foreground">
               Buzzards Soft
             </span>

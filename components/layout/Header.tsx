@@ -2,7 +2,8 @@
 
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import Image from "next/image";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -20,9 +21,9 @@ import { cn } from "@/lib/utils";
 
 const NAV_KEYS = [
   { href: "#how-i-work", key: "howIWork" },
-  { href: "#what-i-deliver", key: "whatIDeliver" },
+  { href: "#what-i-can-deliver", key: "whatIDeliver" },
   { href: "#experience", key: "experience" },
-  { href: "#learning", key: "learning" },
+  { href: "#currently-learning", key: "learning" },
   { href: "#about", key: "about" },
   { href: "#education", key: "education" },
   { href: "#contact", key: "contact" },
@@ -33,7 +34,7 @@ type NavKey = (typeof NAV_KEYS)[number];
 export function Header() {
   const tNav = useTranslations("nav");
   const tCommon = useTranslations("common");
-  const { hidden, scrolled } = useHeaderScrollState();
+  const { hidden, scrolled, hideHeader } = useHeaderScrollState();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -63,7 +64,12 @@ export function Header() {
             className="hidden lg:flex lg:items-center lg:gap-1"
           >
             {NAV_KEYS.map((item) => (
-              <NavLink key={item.href} item={item} label={tNav(`items.${item.key}`)} />
+              <NavLink
+                key={item.href}
+                item={item}
+                label={tNav(`items.${item.key}`)}
+                onNavigate={hideHeader}
+              />
             ))}
           </nav>
 
@@ -72,6 +78,7 @@ export function Header() {
 
             <Button
               size="sm"
+              nativeButton={false}
               render={<a href="#contact" />}
               className="hidden bg-cta px-3 text-primary-foreground hover:bg-cta-hover sm:inline-flex"
             >
@@ -113,6 +120,7 @@ export function Header() {
                       render={
                         <a
                           href={item.href}
+                          onClick={hideHeader}
                           className="rounded-md px-3 py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring/50"
                         >
                           {tNav(`items.${item.key}`)}
@@ -128,6 +136,7 @@ export function Header() {
                     render={
                       <Button
                         size="lg"
+                        nativeButton={false}
                         render={<a href="#contact" />}
                         className="h-11 w-full bg-cta text-primary-foreground hover:bg-cta-hover"
                       >
@@ -152,12 +161,15 @@ function BrandMark({ ariaLabel }: { ariaLabel: string }) {
       aria-label={ariaLabel}
       className="group/brand inline-flex items-center gap-2.5 rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
     >
-      <span
+      <Image
+        src="/brand-mark.png"
+        alt=""
+        width={32}
+        height={32}
+        priority
         aria-hidden
-        className="relative flex size-8 items-center justify-center rounded-md border border-brand/30 bg-brand/10 font-mono text-sm font-bold text-brand shadow-[0_0_0_1px_rgba(16,185,129,0.05)] transition-colors group-hover/brand:bg-brand/15"
-      >
-        BS
-      </span>
+        className="size-8 transition-transform group-hover/brand:scale-105"
+      />
       <span className="font-heading text-sm font-semibold tracking-tight text-foreground sm:text-base">
         Buzzards Soft
       </span>
@@ -165,10 +177,19 @@ function BrandMark({ ariaLabel }: { ariaLabel: string }) {
   );
 }
 
-function NavLink({ item, label }: { item: NavKey; label: string }) {
+function NavLink({
+  item,
+  label,
+  onNavigate,
+}: {
+  item: NavKey;
+  label: string;
+  onNavigate?: () => void;
+}) {
   return (
     <a
       href={item.href}
+      onClick={onNavigate}
       className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
     >
       {label}
@@ -180,10 +201,20 @@ function NavLink({ item, label }: { item: NavKey; label: string }) {
  * Hide-on-scroll: header retracts when scrolling down past a small threshold,
  * reappears immediately when scrolling up. Always visible at the top of the
  * page. `scrolled` toggles the translucent backdrop once the user moves at all.
+ *
+ * `hideHeader()` is intended for nav-link clicks: it forces the bar shut and
+ * suppresses the scroll listener for ~700ms so the in-flight programmatic
+ * scroll (which may go up or down) does not flip it back open.
  */
 function useHeaderScrollState() {
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const suppressUntilRef = useRef(0);
+
+  const hideHeader = useCallback(() => {
+    suppressUntilRef.current = Date.now() + 700;
+    setHidden(true);
+  }, []);
 
   useEffect(() => {
     let lastY = window.scrollY;
@@ -197,12 +228,15 @@ function useHeaderScrollState() {
 
       setScrolled(y > 4);
 
-      if (y < REVEAL_THRESHOLD) {
-        setHidden(false);
-      } else if (delta > 6) {
-        setHidden(true);
-      } else if (delta < -6) {
-        setHidden(false);
+      const suppressed = Date.now() < suppressUntilRef.current;
+      if (!suppressed) {
+        if (y < REVEAL_THRESHOLD) {
+          setHidden(false);
+        } else if (delta > 6) {
+          setHidden(true);
+        } else if (delta < -6) {
+          setHidden(false);
+        }
       }
 
       lastY = y;
@@ -221,5 +255,5 @@ function useHeaderScrollState() {
     };
   }, []);
 
-  return { hidden, scrolled };
+  return { hidden, scrolled, hideHeader };
 }

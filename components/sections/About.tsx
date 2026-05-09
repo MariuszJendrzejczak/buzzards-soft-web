@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
+import { ScrollReveal } from "@/components/shared/ScrollReveal";
+
 import { AboutGraphic } from "./AboutGraphic";
 
 export async function About() {
@@ -12,7 +14,7 @@ export async function About() {
       className="relative isolate border-t border-border/60 py-24 sm:py-32"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr] lg:gap-16">
+        <ScrollReveal className="grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr] lg:gap-16">
           <div className="order-1 lg:sticky lg:top-24 lg:self-start">
             <AboutGraphic />
           </div>
@@ -51,7 +53,7 @@ export async function About() {
               <p>{t("para5")}</p>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

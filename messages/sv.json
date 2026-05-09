@@ -17,7 +17,7 @@
       "howIWork": "Så jobbar jag",
       "whatIDeliver": "Vad jag levererar",
       "experience": "Erfarenhet",
-      "learning": "Vad jag lär mig",
+      "learning": "Utveckling",
       "about": "Om mig",
       "education": "Utbildning",
       "contact": "Kontakt"
@@ -84,7 +84,7 @@
           },
           "3": {
             "lead": "MCP (Model Context Protocol)",
-            "rest": " — användning av färdiga MCP-servrar för integration med teamets verktyg; jag kan API:et för att bygga egna."
+            "rest": " — användning av färdiga MCP-servrar för integration med teamets verktyg."
           },
           "4": {
             "lead": "Slash commands och skills",
@@ -139,7 +139,7 @@
   "whatICanDeliver": {
     "eyebrow": "Avsnitt 03 · Vad jag kan",
     "title": "Vad jag kan leverera",
-    "intro": "Först det jag har dokumenterad erfarenhet av. AI-tooling och affärsprocesser — längre ner, med mindre självsäkerhet.",
+    "intro": "Först det jag har dokumenterad erfarenhet av. AI-tooling och affärsprocesser — längre ner, som områden jag aktivt utvidgar.",
     "stackAria": "Stack — {section}",
     "variantCore": "core",
     "variantGrowing": "growing",
@@ -181,7 +181,7 @@
         "title": "AI-tooling i utvecklarens arbetsflöde",
         "bullets": {
           "1": "Claude Code: settings, permissions, hooks, slash commands, skills, subagenter, plugins,",
-          "2": "MCP-servrar — användning av färdiga, grunder för att bygga egna,",
+          "2": "MCP-servrar — användning av färdiga servrar,",
           "3": "prompt engineering i ett kodsammanhang (structured output, function calling, tool use),",
           "4": "arbete med LLM API:er (OpenAI, Anthropic) på applikationsintegrationsnivå,",
           "5": "prompt caching och kostnadskontroll,",
@@ -205,8 +205,7 @@
           "1": "automatisering av affärsprocesser med ett LLM-lager (n8n, Make),",
           "2": "agentic workflows utanför utveckling,",
           "3": "RAG över kunskapsdatabaser, vector DB, embeddings."
-        },
-        "callout": "Medvetet listat här, inte högre upp. Det är en riktning jag växer in i, inte en tjänst jag säljer."
+        }
       },
       "35": {
         "title": "Teknisk bakgrund",
@@ -214,8 +213,7 @@
           "1": "14 års tidigare arbete med svagströmsinstallationer, CCTV, larm, smart home,",
           "2": "elbehörighet SEP E + D, körkort kat. B,",
           "3": "användbart för projekt som kombinerar mjukvara med sensorer, styrenheter, installationer."
-        },
-        "callout": "Avsnittet ligger gömt under accordion. Jag tar upp det när projektet kräver det."
+        }
       }
     }
   },
@@ -262,7 +260,7 @@
   },
   "currentlyLearning": {
     "eyebrow": "Avsnitt 05 · Riktning",
-    "title": "Vad jag lär mig just nu",
+    "title": "Utveckling",
     "intro": "En kort lista över ämnen jag aktivt fördjupar mig i — främst för att utöka min agentverktygslåda bortom ren produktionskod. Jag signalerar riktning, inte säljer det som en tjänst.",
     "items": {
       "agents": {
@@ -275,11 +273,7 @@
       },
       "automation": {
         "lead": "Automatisering av affärsprocesser med ett LLM-lager",
-        "rest": "n8n, Make.com, egna integrationer. Hittills mest experiment på egna projekt."
-      },
-      "mcp": {
-        "lead": "Bygga egna MCP-servrar",
-        "rest": "för att integrera agenter med teamets verktyg utöver vad färdiga lösningar erbjuder."
+        "rest": "n8n, Make.com — jag känner till verktygen och håller precis på att börja utforska dem."
       }
     },
     "closing": "En del testar jag i egna projekt. Om något av dessa områden finns på ditt teams karta — då har du kommit rätt."
@@ -288,7 +282,7 @@
     "eyebrow": "Avsnitt 06 · Om mig",
     "title": "Om mig",
     "short": "En utvecklare med 4+ års kommersiell erfarenhet (Flutter, Unity) som byggde om sitt arbetsflöde kring AI-agenter. Fokuserad på att leverera mjukvara — snabbare och renare tack vare verktyg jag själv konfigurerar. Tidigare 14 år inom tekniska installationer — användbart för projekt som broar mjukvara och hårdvara.",
-    "para1": "Jag har programmerat kommersiellt i över fyra år. Det mesta av tiden har jag spenderat på Flutter-mobilappar (Honeti) — från första kodraden, genom integrationer mot REST API och Firebase, autentisering, datasynkronisering och offline-arbete, hela vägen till butikslanseringar och underhåll. Jag har också jobbat i Unity med spel och interaktiva appar. I båda stackarna lägger jag stark vikt vid kodens läsbarhet, arkitekturens skalbarhet och att projektet ska gå att utveckla även efter ett år i produktion.",
+    "para1": "Jag har programmerat kommersiellt i över fyra år. Det mesta av tiden har jag spenderat på Flutter-mobilappar (Honeti) — från första kodraden, genom integrationer mot REST API och Firebase, autentisering, datasynkronisering och offline-arbete, hela vägen till butikslanseringar och underhåll. Jag har också jobbat i Unity med spel och interaktiva appar. I båda stackarna lägger jag stark vikt vid kodens läsbarhet, arkitekturens skalbarhet och att projektet ska gå att utveckla även efter flera år.",
     "para2": "Det senaste året har mitt arbetsflöde gått igenom en märkbar förändring. Jag började behandla AI-agenter som ett verkstadsverktyg, inte en kuriositet. Claude Code blev mitt vardagsverktyg — med egen konfiguration, hooks, slash commands, subagenter och skills anpassade till mina projekt. Saker jag förr gjorde för hand (review, utforskning av främmande kodbaser, codemods, scaffold) sker idag snabbare, men fortfarande under min kontroll — agenten mergar inte själv, varje output går genom build och review.",
     "notSpecialist": "Jag kallar mig inte \"AI Specialist\".",
     "selfDefinition": "Jag kallar mig en utvecklare som medvetet använder AI i det dagliga arbetet — och som tack vare det levererar mer.",
@@ -331,7 +325,7 @@
     "title": "Öppen för uppdrag, fast anställning och intressanta projekt.",
     "introLead": "Jag passar bäst där man söker ",
     "introHighlight": "en utvecklare som redan har fungerande produkter bakom sig och kan jobba med AI i arbetsflödet",
-    "introTrail": ". Ett kort samtal (30 min, utan förpliktelser) räcker oftast för att jag ska bedöma matchningen. Om jag inte är rätt person — säger jag det direkt.",
+    "introTrail": ". Om den här profilen passar det du söker — hör av dig så går vi igenom detaljerna.",
     "directLabel": "Direkt kontakt"
   },
   "contactForm": {
@@ -372,7 +366,8 @@
     },
     "toast": {
       "success": "Tack, jag återkommer snart.",
-      "error": "Något gick fel, försök igen eller mejla dev.buzzardssoft@gmail.com"
+      "error": "Något gick fel, försök igen eller mejla dev.buzzardssoft@gmail.com",
+      "rateLimited": "För många försök på kort tid. Vänta en minut och försök igen."
     }
   },
   "contactInfo": {

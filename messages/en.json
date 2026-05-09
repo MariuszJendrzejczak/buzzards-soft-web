@@ -17,7 +17,7 @@
       "howIWork": "How I work",
       "whatIDeliver": "What I deliver",
       "experience": "Experience",
-      "learning": "What I'm learning",
+      "learning": "Growth",
       "about": "About",
       "education": "Education",
       "contact": "Contact"
@@ -84,7 +84,7 @@
           },
           "3": {
             "lead": "MCP (Model Context Protocol)",
-            "rest": " — using off-the-shelf MCP servers to integrate with team tools; I know the API for building my own."
+            "rest": " — using off-the-shelf MCP servers to integrate with team tools."
           },
           "4": {
             "lead": "Slash commands and skills",
@@ -139,7 +139,7 @@
   "whatICanDeliver": {
     "eyebrow": "Section 03 · What I can do",
     "title": "What I can deliver",
-    "intro": "First, what I have documented experience in. AI tooling and business processes — below, with less bravado.",
+    "intro": "First, what I have documented experience in. AI tooling and business processes — below, as areas I'm actively expanding into.",
     "stackAria": "Stack — {section}",
     "variantCore": "core",
     "variantGrowing": "growing",
@@ -181,7 +181,7 @@
         "title": "AI tooling in the developer workflow",
         "bullets": {
           "1": "Claude Code: settings, permissions, hooks, slash commands, skills, subagents, plugins,",
-          "2": "MCP servers — using existing ones, basics of building my own,",
+          "2": "MCP servers — using off-the-shelf servers,",
           "3": "prompt engineering in a code context (structured output, function calling, tool use),",
           "4": "working with LLM APIs (OpenAI, Anthropic) at the application integration level,",
           "5": "prompt caching and cost control,",
@@ -205,8 +205,7 @@
           "1": "business process automation with an LLM layer (n8n, Make),",
           "2": "agentic workflows beyond development,",
           "3": "RAG over knowledge bases, vector DB, embeddings."
-        },
-        "callout": "Deliberately listed here, not above. It's a direction I'm growing into, not a service I'm selling."
+        }
       },
       "35": {
         "title": "Technical background",
@@ -214,8 +213,7 @@
           "1": "14 years of prior work in low-voltage installations, CCTV, alarms, smart home,",
           "2": "electrical qualifications SEP E + D, driving license cat. B,",
           "3": "useful for projects that combine software with sensors, controllers, installations."
-        },
-        "callout": "Section hidden behind the accordion. I bring it up when the project calls for it."
+        }
       }
     }
   },
@@ -262,7 +260,7 @@
   },
   "currentlyLearning": {
     "eyebrow": "Section 05 · Direction",
-    "title": "What I'm currently learning",
+    "title": "Growth",
     "intro": "A short list of topics I'm actively going deeper on — mostly to extend my agent toolkit beyond pure production code. I'm signaling direction, not selling it as a service.",
     "items": {
       "agents": {
@@ -275,11 +273,7 @@
       },
       "automation": {
         "lead": "Business process automation with an LLM layer",
-        "rest": "n8n, Make.com, custom integrations. So far mostly experiments on my own projects."
-      },
-      "mcp": {
-        "lead": "Building my own MCP servers",
-        "rest": "to integrate agents with team tools beyond what off-the-shelf servers cover."
+        "rest": "n8n, Make.com — I know the tools by name and am just starting to explore them."
       }
     },
     "closing": "I test some of this on my own projects. If one of these areas is on your team's roadmap — you've come to the right place."
@@ -288,7 +282,7 @@
     "eyebrow": "Section 06 · About",
     "title": "About me",
     "short": "A developer with 4+ years of commercial experience (Flutter, Unity) who rebuilt his workflow around AI agents. Focused on shipping software — faster and cleaner thanks to tools I configure myself. Previously 14 years in technical installations — useful for projects that bridge software and hardware.",
-    "para1": "I've been programming commercially for over four years. Most of that time I spent on Flutter mobile apps (Honeti) — from the first line of code, through REST API and Firebase integrations, auth, data sync and offline work, all the way to store releases and maintenance. I've also worked in Unity on games and interactive apps. In both stacks I put strong emphasis on code readability, architectural scalability, and making sure the project still grows easily a year into production.",
+    "para1": "I've been programming commercially for over four years. Most of that time I spent on Flutter mobile apps (Honeti) — from the first line of code, through REST API and Firebase integrations, auth, data sync and offline work, all the way to store releases and maintenance. I've also worked in Unity on games and interactive apps. In both stacks I put strong emphasis on code readability, architectural scalability, and making sure the project still lends itself to development years in.",
     "para2": "Over the last year my workflow has gone through a noticeable shift. I started treating AI agents as a workshop tool, not a curiosity. Claude Code became my daily driver — with custom configuration, hooks, slash commands, subagents and skills tailored to my projects. Things I used to do by hand (review, exploring unfamiliar codebases, codemods, scaffold) now happen faster, but still under my control — the agent doesn't merge on its own, every output goes through build and review.",
     "notSpecialist": "I don't call myself an \"AI Specialist\".",
     "selfDefinition": "I call myself a developer who deliberately uses AI in daily work — and who, thanks to that, ships more.",
@@ -331,7 +325,7 @@
     "title": "Open to contracts, full-time roles, and interesting projects.",
     "introLead": "I'm the best fit where you're looking for ",
     "introHighlight": "a developer who already has working products under his belt and can work with AI in the workflow",
-    "introTrail": ". A short call (30 min, no commitment) is usually enough for me to gauge fit. If I'm not the right person — I'll say so right away.",
+    "introTrail": ". If this profile fits what you're looking for — get in touch and let's talk through the details.",
     "directLabel": "Direct contact"
   },
   "contactForm": {
@@ -372,7 +366,8 @@
     },
     "toast": {
       "success": "Thanks, I'll get back to you soon.",
-      "error": "Something went wrong, try again or email dev.buzzardssoft@gmail.com"
+      "error": "Something went wrong, try again or email dev.buzzardssoft@gmail.com",
+      "rateLimited": "Too many attempts in a short time. Please wait a minute and try again."
     }
   },
   "contactInfo": {
