@@ -1,0 +1,22 @@
+Copyright (c) 2026 Mariusz Jendrzejczak (Buzzards Soft).
+All rights reserved.
+
+This repository is published as a public work sample. The source code,
+design, copy, and assets are made viewable for portfolio and reference
+purposes only.
+
+No license — express or implied — is granted to:
+
+  * copy, fork, mirror, or redistribute this code or any portion of it,
+  * modify, adapt, or create derivative works,
+  * reuse the design, layout, copy, brand assets, or trade dress,
+  * incorporate this code or its parts into any product, service, or
+    repository, whether commercial or non-commercial,
+  * train machine-learning models on this content.
+
+Reading the code in a browser is welcome. Reusing it is not.
+
+Third-party dependencies listed in `package.json` and `functions/package.json`
+are governed by their own licenses; nothing in this notice overrides them.
+
+For licensing inquiries, contact: dev.buzzardssoft@gmail.com
