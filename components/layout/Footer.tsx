@@ -41,7 +41,7 @@ type SocialLink = {
 
 const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: "https://www.linkedin.com/in/jendrzejczakmariusz/",
+    href: "https://www.linkedin.com/in/mariusz-jendrzejczak/",
     label: "LinkedIn",
     icon: LinkedInIcon,
   },
