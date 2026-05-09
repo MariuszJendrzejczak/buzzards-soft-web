@@ -112,12 +112,12 @@ export async function Footer() {
               </Link>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 className="text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-ring/50"
               >
                 {t("links.contact")}
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
