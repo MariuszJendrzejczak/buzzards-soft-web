@@ -164,16 +164,15 @@
     @apply font-sans;
     color-scheme: dark;
   }
-  /* Pull anchored scroll up so the section header lands close to the sticky
-   * header bar (h-16 = 4rem) instead of leaving a ~100px gap below it.
-   * Negative scroll-margin shifts the snap point above the section's top
-   * edge, letting the section's own padding swallow the bar height. */
+  /* Offset anchored scroll by the sticky header height (h-14 mobile,
+   * h-16 ≥sm) so a section's eyebrow / heading lands flush below the
+   * bar instead of being hidden underneath it. */
   section[id] {
-    scroll-margin-top: -3rem;
+    scroll-margin-top: 3.5rem;
   }
   @media (min-width: 640px) {
     section[id] {
-      scroll-margin-top: -4rem;
+      scroll-margin-top: 4rem;
     }
   }
   body {

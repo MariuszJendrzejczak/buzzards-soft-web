@@ -44,9 +44,9 @@ const ITEMS: ContactItem[] = [
   },
   {
     id: "linkedin",
-    value: "linkedin.com/in/jendrzejczakmariusz",
-    copyValue: "https://www.linkedin.com/in/jendrzejczakmariusz/",
-    href: "https://www.linkedin.com/in/jendrzejczakmariusz/",
+    value: "linkedin.com/in/mariusz-jendrzejczak",
+    copyValue: "https://www.linkedin.com/in/mariusz-jendrzejczak/",
+    href: "https://www.linkedin.com/in/mariusz-jendrzejczak/",
     external: true,
     Icon: Briefcase,
   },
