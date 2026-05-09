@@ -35,20 +35,20 @@
     "headingLead": "Jag levererar mjukvara snabbare eftersom ",
     "headingHighlight": "jag jobbar med AI varje dag",
     "headingTrail": " — inte bara ibland.",
-    "sub": "Fyra och ett halvt år av kommersiell utveckling (Flutter, Unity, integrationer). Det senaste året har jag byggt om mitt arbetsflöde kring AI-agenter — Claude Code är mitt vardagsverktyg, med egna hooks, skills och konfiguration som jag använder i produktionsprojekt. Jag söker en roll / ett uppdrag där den här accelerationen spelar roll.",
+    "sub": "Jag programmerar kommersiellt i Flutter och Unity. Det senaste året har jag byggt om mitt arbetsflöde kring AI-agenter — Claude Code med egen konfiguration, hooks och skills sitter i mina projekt varje dag. Jag söker en roll eller ett uppdrag där den här accelerationen spelar roll.",
     "ctaPrimary": "Vi pratar om en roll eller ett projekt",
     "ctaSecondary": "Se hur jag jobbar",
     "trustAria": "Sammanfattning av erfarenhet",
     "trust": {
-      "yearsCode": "4+ års produktionskod (Flutter / Dart, Unity / C#)",
-      "claudeDaily": "Dagligt arbete med Claude Code — egen config, hooks, skills",
+      "yearsCode": "Produktionskod i Flutter (Dart) och Unity (C#)",
+      "claudeDaily": "Claude Code: egen config, hooks, skills, subagents",
       "engineerEnglish": "Civilingenjör i datavetenskap · Teknisk engelska B2/C1"
     }
   },
   "howIWork": {
     "eyebrow": "Avsnitt 02 · Kärnan",
     "title": "Så jobbar jag — AI i mitt dagliga arbetsflöde",
-    "intro": "Det senaste året har jag byggt om mitt sätt att arbeta kring AI-agenter. Det handlar inte om att klistra in frågor i en chatt — det handlar om en hel verktygslåda: agenter i loop, egna verktyg, hooks som upprätthåller projektets standarder, automatisering kring review och CI. Nedan följer fyra konkreta områden där jag gör detta.",
+    "intro": "Fyra konkreta områden där AI sitter i min dagliga verktygslåda. Det handlar inte om att klistra in frågor i en chatt — det handlar om en hel verkstad: agenter i loop, egna verktyg, hooks som upprätthåller projektets standarder, automatisering kring review och CI.",
     "practices": {
       "21": {
         "title": "AI-assisterad utveckling som vardagspraxis",
@@ -180,7 +180,7 @@
       "32": {
         "title": "AI-tooling i utvecklarens arbetsflöde",
         "bullets": {
-          "1": "Claude Code: settings, permissions, hooks, slash commands, skills, subagenter, plugins,",
+          "1": "Claude Code: konfiguration, hooks, slash commands, skills, subagenter,",
           "2": "MCP-servrar — användning av färdiga servrar,",
           "3": "prompt engineering i ett kodsammanhang (structured output, function calling, tool use),",
           "4": "arbete med LLM API:er (OpenAI, Anthropic) på applikationsintegrationsnivå,",
@@ -220,20 +220,18 @@
   "experience": {
     "eyebrow": "Avsnitt 04 · Track record",
     "title": "Erfarenhet och artefakter",
-    "intro": "Kommersiella projekt där jag skrev kod, plus artefakter från mitt dagliga arbete med AI-agenter. Kortet längst ner — sidan du läser — är ett meta-projekt.",
+    "intro": "Kommersiella projekt där jag skrev kod, plus artefakter från mitt dagliga arbete med AI-agenter.",
     "stackAria": "Stack — {project}",
     "honeti": {
       "eyebrow": "4.1 · Mobile",
-      "title": "Honeti — Mobile Developer (4+ år)",
+      "title": "Honeti — Mobile Developer",
+      "period": "2021 — nutid",
       "ctaLabel": "Se case study",
       "bullets": {
-        "1": "mobilappar för Android + iOS byggda från grunden,",
-        "2": "vidareutveckling och underhåll av befintliga produkter,",
-        "3": "samarbete med ett team av utvecklare, testare och projektledare,",
-        "4": "hela livscykeln: planering → implementation → tester → lansering → underhåll,",
-        "5": "integrationer mot REST API och Firebase, autentisering, datasynkronisering, offline-mekanismer,",
-        "6": "förberedelse och publicering på Google Play / App Store,",
-        "7": "direkt arbete med kunder och anpassning av lösningar till verkliga affärsbehov."
+        "1": "mobilappar för Android + iOS — byggda från grunden och underhållna över tid,",
+        "2": "hela livscykeln: planering → implementation → tester → lansering → underhåll,",
+        "3": "samarbete med utvecklare, testare och projektledare, och direkt med kunder,",
+        "4": "stack och detaljer om omfattning — se sektionen „Vad jag levererar\" och case study."
       }
     },
     "unity": {
@@ -281,9 +279,9 @@
   "about": {
     "eyebrow": "Avsnitt 06 · Om mig",
     "title": "Om mig",
-    "short": "En utvecklare med 4+ års kommersiell erfarenhet (Flutter, Unity) som byggde om sitt arbetsflöde kring AI-agenter. Fokuserad på att leverera mjukvara — snabbare och renare tack vare verktyg jag själv konfigurerar. Tidigare 14 år inom tekniska installationer — användbart för projekt som broar mjukvara och hårdvara.",
-    "para1": "Jag har programmerat kommersiellt i över fyra år. Det mesta av tiden har jag spenderat på Flutter-mobilappar (Honeti) — från första kodraden, genom integrationer mot REST API och Firebase, autentisering, datasynkronisering och offline-arbete, hela vägen till butikslanseringar och underhåll. Jag har också jobbat i Unity med spel och interaktiva appar. I båda stackarna lägger jag stark vikt vid kodens läsbarhet, arkitekturens skalbarhet och att projektet ska gå att utveckla även efter flera år.",
-    "para2": "Det senaste året har mitt arbetsflöde gått igenom en märkbar förändring. Jag började behandla AI-agenter som ett verkstadsverktyg, inte en kuriositet. Claude Code blev mitt vardagsverktyg — med egen konfiguration, hooks, slash commands, subagenter och skills anpassade till mina projekt. Saker jag förr gjorde för hand (review, utforskning av främmande kodbaser, codemods, scaffold) sker idag snabbare, men fortfarande under min kontroll — agenten mergar inte själv, varje output går genom build och review.",
+    "short": "En utvecklare med 4+ års kommersiell erfarenhet (Flutter, Unity) för vilken AI är en verkstad, inte en kuriositet. Fokuserad på att leverera mjukvara — snabbare och renare tack vare verktyg jag själv konfigurerar. Tidigare 14 år inom tekniska installationer — användbart för projekt som broar mjukvara och hårdvara.",
+    "para1": "Det mesta av mitt kommersiella arbete har varit Flutter-mobilappar (Honeti) — från första kodraden, genom integrationer mot REST API och Firebase, autentisering, datasynkronisering och offline-arbete, hela vägen till butikslanseringar och underhåll. Jag har också jobbat i Unity med spel och interaktiva appar. I båda stackarna lägger jag stark vikt vid kodens läsbarhet, arkitekturens skalbarhet och att projektet ska gå att utveckla även efter flera år.",
+    "para2": "Det senaste året har mitt arbetsflöde gått igenom en märkbar förändring. Jag började behandla AI-agenter som ett verkstadsverktyg, inte en kuriositet. Claude Code blev mitt vardagsverktyg — med konfiguration anpassad till mina projekt. Saker jag förr gjorde för hand (review, utforskning av främmande kodbaser, codemods, scaffold) sker idag snabbare, men fortfarande under min kontroll — agenten mergar inte själv, varje output går genom build och review.",
     "notSpecialist": "Jag kallar mig inte \"AI Specialist\".",
     "selfDefinition": "Jag kallar mig en utvecklare som medvetet använder AI i det dagliga arbetet — och som tack vare det levererar mer.",
     "difference": "Det är skillnaden jag bryr mig om: mitt track record finns i att skriva produktionskod — AI är sättet som koden nu produceras snabbare på.",
@@ -384,7 +382,7 @@
     "copyFailed": "Kunde inte kopiera."
   },
   "footer": {
-    "tagline": "En utvecklare som byggde om sitt arbetsflöde kring AI-agenter. Öppen för roller och uppdrag.",
+    "tagline": "Flutter · Unity · AI-Augmented Developer. Öppen för roller och uppdrag.",
     "linksHeading": "Sida",
     "registryHeading": "Registeruppgifter",
     "links": {
@@ -408,7 +406,7 @@
     "metaDescription": "{role} · {period}. Arbetsomfattning, teknisk stack och utvalda releaser.",
     "cases": {
       "honeti": {
-        "title": "Honeti — Mobile Developer (4+ år)",
+        "title": "Honeti — Mobile Developer",
         "role": "Mobile Developer",
         "period": "2021 — pågående",
         "scope": {
@@ -529,6 +527,6 @@
   },
   "rootMetadata": {
     "title": "Buzzards Soft — AI-Augmented Developer",
-    "description": "En utvecklare (Flutter, Unity, 4+ år kommersiellt) som byggde om sitt arbetsflöde kring AI-agenter. Öppen för roller och uppdrag."
+    "description": "En utvecklare (Flutter, Unity) som byggde om sitt arbetsflöde kring AI-agenter. Öppen för roller och uppdrag."
   }
 }
