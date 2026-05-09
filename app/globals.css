@@ -164,15 +164,20 @@
     @apply font-sans;
     color-scheme: dark;
   }
-  /* Offset anchored scroll by the sticky header height (h-14 mobile,
-   * h-16 ≥sm) so a section's eyebrow / heading lands flush below the
-   * bar instead of being hidden underneath it. */
+
+  /* Pull anchored scroll up so the section's own top padding (py-24 / py-32)
+   * absorbs the sticky header height — instead of the browser leaving a
+   * `header-tall` gap of empty space above the section. The header
+   * hides on scroll-down anyway; with a positive offset the gap stays
+   * visible after the bar retracts. Negative scroll-margin shifts the
+   * snap point above the section's top edge so the eyebrow lands close
+   * to the top of the viewport. */
   section[id] {
-    scroll-margin-top: 3.5rem;
+    scroll-margin-top: -3rem;
   }
   @media (min-width: 640px) {
     section[id] {
-      scroll-margin-top: 4rem;
+      scroll-margin-top: -4rem;
     }
   }
   body {

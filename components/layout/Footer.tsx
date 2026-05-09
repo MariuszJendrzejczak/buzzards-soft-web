@@ -1,9 +1,11 @@
+"use client";
+
 import { Mail } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import type { ComponentType, SVGProps } from "react";
 
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 
 type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
 
@@ -63,9 +65,11 @@ const COMPANY_REGISTRY = [
   { label: "DUNS", value: "427603771" },
 ];
 
-export async function Footer() {
-  const t = await getTranslations("footer");
-  const tNav = await getTranslations("nav");
+export function Footer() {
+  const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
+  const locale = useLocale();
+  const pathname = usePathname();
 
   return (
     <footer className="border-t border-border/60 bg-surface/40">
@@ -112,12 +116,13 @@ export async function Footer() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/#contact"
+              <ContactLink
+                onHome={pathname === "/"}
+                locale={locale}
                 className="text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-ring/50"
               >
                 {t("links.contact")}
-              </Link>
+              </ContactLink>
             </li>
           </ul>
         </nav>
@@ -163,5 +168,63 @@ export async function Footer() {
         </div>
       </div>
     </footer>
+  );
+}
+
+/**
+ * Two paths to the contact section depending on where we are:
+ *
+ * - On home (`pathname === '/'`) we use a same-page hash anchor. The browser
+ *   handles it natively, so the URL bar gets `#contact` and the page scrolls
+ *   without involving the Next.js router (which strips fragments on
+ *   in-app anchor clicks).
+ * - On a subpage (case study, privacy policy) we navigate to the home with
+ *   the hash. We need a full document load there so the browser performs its
+ *   own scroll-to-fragment after the new page renders. Using `<Link>` would
+ *   be a soft client-side navigation and the fragment wouldn't survive; a
+ *   plain `<a>` to a same-origin path is also intercepted by the App Router
+ *   in dev. The reliable workaround is to fall back to
+ *   `window.location.assign()` in `onClick`, which is a real navigation and
+ *   keeps the fragment intact. Modifier-clicks (Cmd/Ctrl/Shift, middle-click)
+ *   are passed through to the browser so opening in a new tab still works.
+ */
+function ContactLink({
+  onHome,
+  locale,
+  className,
+  children,
+}: {
+  onHome: boolean;
+  locale: string;
+  className: string;
+  children: React.ReactNode;
+}) {
+  if (onHome) {
+    return (
+      <a href="#contact" className={className}>
+        {children}
+      </a>
+    );
+  }
+  const href = `/${locale}#contact`;
+  return (
+    <a
+      href={href}
+      className={className}
+      onClick={(event) => {
+        if (
+          event.metaKey ||
+          event.ctrlKey ||
+          event.shiftKey ||
+          event.button !== 0
+        ) {
+          return;
+        }
+        event.preventDefault();
+        window.location.assign(href);
+      }}
+    >
+      {children}
+    </a>
   );
 }
