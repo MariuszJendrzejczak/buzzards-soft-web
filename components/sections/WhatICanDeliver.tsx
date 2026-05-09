@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
+import { ScrollReveal } from "@/components/shared/ScrollReveal";
 import {
   Accordion,
   AccordionContent,
@@ -114,7 +115,6 @@ const SECTION_SPECS: readonly SectionSpec[] = [
       "embeddings",
       "agentic workflows",
     ],
-    hasCallout: true,
   },
   {
     value: "3.5",
@@ -123,7 +123,6 @@ const SECTION_SPECS: readonly SectionSpec[] = [
     variant: "core",
     bulletKeys: ["1", "2", "3"],
     chips: ["SEP E+D", "CCTV", "smart home", "niskoprądowe instalacje"],
-    hasCallout: true,
   },
 ] as const;
 
@@ -143,7 +142,7 @@ export async function WhatICanDeliver() {
       className="relative isolate border-t border-border/60 py-24 sm:py-32"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <header className="max-w-3xl">
+        <ScrollReveal as="header" className="max-w-3xl">
           <span className="font-mono text-xs font-medium tracking-[0.18em] text-brand uppercase">
             {t("eyebrow")}
           </span>
@@ -156,11 +155,12 @@ export async function WhatICanDeliver() {
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
             {t("intro")}
           </p>
-        </header>
+        </ScrollReveal>
 
+        <ScrollReveal className="mt-12">
         <Accordion
           defaultValue={["3.1"]}
-          className="mt-12 flex w-full flex-col gap-3"
+          className="flex w-full flex-col gap-3"
         >
           {SECTION_SPECS.map((spec) => {
             const title = t(`sections.${spec.key}.title`);
@@ -204,6 +204,7 @@ export async function WhatICanDeliver() {
             );
           })}
         </Accordion>
+        </ScrollReveal>
       </div>
     </section>
   );

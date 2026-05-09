@@ -3,6 +3,8 @@ import { getTranslations } from "next-intl/server";
 
 import { Button } from "@/components/ui/button";
 
+import { HeroBackdrop } from "./HeroBackdrop";
+
 export async function Hero() {
   const t = await getTranslations("hero");
 
@@ -109,38 +111,6 @@ function TrustStrip({
         </li>
       ))}
     </ul>
-  );
-}
-
-/**
- * Page-wide hero backdrop — soft emerald glow + subtle grain.
- * Pure CSS, no JS, no external assets.
- */
-function HeroBackdrop() {
-  return (
-    <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-      <div
-        className="absolute inset-x-0 top-0 h-[42rem] opacity-60"
-        style={{
-          background:
-            "radial-gradient(60% 50% at 18% 12%, color-mix(in oklab, var(--brand) 22%, transparent) 0%, transparent 70%)",
-        }}
-      />
-      <div
-        className="absolute inset-x-0 top-0 h-[42rem] opacity-40"
-        style={{
-          background:
-            "radial-gradient(45% 40% at 85% 18%, color-mix(in oklab, var(--cta) 16%, transparent) 0%, transparent 75%)",
-        }}
-      />
-      <div
-        className="absolute inset-0 mix-blend-overlay opacity-[0.04]"
-        style={{
-          backgroundImage:
-            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
-        }}
-      />
-    </div>
   );
 }
 

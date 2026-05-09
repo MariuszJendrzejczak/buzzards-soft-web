@@ -23,7 +23,7 @@ const VARIANT_CLASSES: Record<ExperienceCardVariant, string> = {
 };
 
 const HOVER_CLASSES =
-  "transition-all duration-300 hover:border-brand/40 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+  "transition-all duration-300 hover:scale-[1.02] hover:border-brand/40 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
 
 export function ExperienceCard({
   variant = "default",

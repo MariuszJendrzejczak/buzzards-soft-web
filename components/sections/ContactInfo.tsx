@@ -44,19 +44,17 @@ const ITEMS: ContactItem[] = [
   },
   {
     id: "linkedin",
-    // TODO(content): replace with real profile URL once confirmed.
-    value: "linkedin.com/in/…",
-    copyValue: "https://www.linkedin.com/in/",
-    href: "https://www.linkedin.com/in/",
+    value: "linkedin.com/in/jendrzejczakmariusz",
+    copyValue: "https://www.linkedin.com/in/jendrzejczakmariusz/",
+    href: "https://www.linkedin.com/in/jendrzejczakmariusz/",
     external: true,
     Icon: Briefcase,
   },
   {
     id: "github",
-    // TODO(content): replace with real profile URL once confirmed.
-    value: "github.com/…",
-    copyValue: "https://github.com/",
-    href: "https://github.com/",
+    value: "github.com/MariuszJendrzejczak",
+    copyValue: "https://github.com/MariuszJendrzejczak",
+    href: "https://github.com/MariuszJendrzejczak",
     external: true,
     Icon: Code,
   },

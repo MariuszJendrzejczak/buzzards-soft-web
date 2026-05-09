@@ -7,6 +7,12 @@ import {
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import {
+  ScrollReveal,
+  StaggerGroup,
+  StaggerItem,
+} from "@/components/shared/ScrollReveal";
+
 type PracticeKey = "21" | "22" | "23" | "24";
 
 const PRACTICE_META: Array<{
@@ -46,7 +52,7 @@ export async function HowIWork() {
       />
 
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <header className="max-w-3xl">
+        <ScrollReveal as="header" className="max-w-3xl">
           <span className="font-mono text-xs font-medium tracking-[0.18em] text-brand uppercase">
             {t("eyebrow")}
           </span>
@@ -59,13 +65,18 @@ export async function HowIWork() {
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
             {t("intro")}
           </p>
-        </header>
+        </ScrollReveal>
 
-        <ul className="mt-14 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+        <StaggerGroup
+          as="ul"
+          className="mt-14 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6"
+        >
           {practices.map((practice) => (
-            <PracticeCard key={practice.number} practice={practice} />
+            <StaggerItem as="li" key={practice.number}>
+              <PracticeCard practice={practice} />
+            </StaggerItem>
           ))}
-        </ul>
+        </StaggerGroup>
       </div>
     </section>
   );
@@ -82,7 +93,7 @@ function PracticeCard({ practice }: { practice: Practice }) {
   const Icon = practice.icon;
 
   return (
-    <li className="group/practice relative flex flex-col gap-5 overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-sm transition-all duration-300 hover:border-brand/40 hover:shadow-md sm:p-8">
+    <div className="group/practice relative flex h-full flex-col gap-5 overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-brand/40 hover:shadow-md sm:p-8">
       {/* gradient frame on hover */}
       <span
         aria-hidden
@@ -121,6 +132,6 @@ function PracticeCard({ practice }: { practice: Practice }) {
           </li>
         ))}
       </ul>
-    </li>
+    </div>
   );
 }
