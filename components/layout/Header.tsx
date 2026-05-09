@@ -16,7 +16,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { LanguageToggle } from "@/components/layout/LanguageToggle";
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 const NAV_KEYS = [
@@ -36,6 +36,11 @@ export function Header() {
   const tCommon = useTranslations("common");
   const { hidden, scrolled, hideHeader } = useHeaderScrollState();
   const [mobileOpen, setMobileOpen] = useState(false);
+  // next-intl's usePathname strips the locale prefix, so the home page is "/"
+  // regardless of locale. Sub-pages (case studies, privacy) get their own
+  // back-button navigation and don't need the section nav.
+  const pathname = usePathname();
+  if (pathname !== "/") return null;
 
   return (
     <>
