@@ -46,3 +46,9 @@ next-env.d.ts
 # lighthouse audit reports
 lighthouse-*.json
 lighthouse-*.html
+
+# playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/.playwright/
