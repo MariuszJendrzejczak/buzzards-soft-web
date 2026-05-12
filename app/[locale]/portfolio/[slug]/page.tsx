@@ -5,8 +5,8 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { Button } from "@/components/ui/button";
-import { ChipCloud } from "@/components/sections/ChipCloud";
-import { TechChip } from "@/components/sections/TechChip";
+import { ChipCloud } from "@/components/shared/chip-cloud";
+import { TechChip } from "@/components/shared/tech-chip";
 import { Link, routing, type Locale } from "@/i18n/routing";
 import { buildAlternates, pageSocial } from "@/lib/seo";
 

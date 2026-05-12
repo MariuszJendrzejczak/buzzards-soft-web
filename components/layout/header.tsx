@@ -15,7 +15,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { LanguageToggle } from "@/components/layout/LanguageToggle";
+import { LanguageToggle } from "@/components/layout/language-toggle";
 import { Link, usePathname } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 

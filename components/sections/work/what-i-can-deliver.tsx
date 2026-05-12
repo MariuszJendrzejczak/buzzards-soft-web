@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
 
-import { ScrollReveal } from "@/components/shared/ScrollReveal";
+import { ScrollReveal } from "@/components/shared/scroll-reveal";
+import { ChipCloud } from "@/components/shared/chip-cloud";
+import { TechChip } from "@/components/shared/tech-chip";
 import {
   Accordion,
   AccordionContent,
@@ -9,9 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
-import { Callout } from "./Callout";
-import { ChipCloud } from "./ChipCloud";
-import { TechChip } from "./TechChip";
+import { Callout } from "./callout";
 
 type Variant = "core" | "growing";
 

@@ -5,11 +5,11 @@ import {
   ScrollReveal,
   StaggerGroup,
   StaggerItem,
-} from "@/components/shared/ScrollReveal";
+} from "@/components/shared/scroll-reveal";
+import { ChipCloud } from "@/components/shared/chip-cloud";
+import { TechChip } from "@/components/shared/tech-chip";
 
-import { ChipCloud } from "./ChipCloud";
-import { ExperienceCard } from "./ExperienceCard";
-import { TechChip } from "./TechChip";
+import { ExperienceCard } from "./experience-card";
 
 const HONETI_CHIPS = [
   "Flutter",

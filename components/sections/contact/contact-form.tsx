@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2, Send } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -41,18 +41,16 @@ export type ContactFormValues = {
 
 const SOURCE_KEYS: SourceValue[] = ["linkedin", "referral", "google", "other"];
 
+// Rewritten by firebase.json hosting rewrites to the `contact` Cloud Function
+// in europe-west1. See functions/src/index.ts and firebase.json:rewrites.
 const CONTACT_ENDPOINT = "/api/contact";
 
-class ContactFormError extends Error {
-  constructor(public readonly code: string) {
-    super(code);
-  }
-}
+type ContactSubmitResult = { ok: true } | { ok: false; code: string };
 
 async function submitContactForm(
   values: ContactFormValues,
   locale: string,
-): Promise<void> {
+): Promise<ContactSubmitResult> {
   const response = await fetch(CONTACT_ENDPOINT, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -67,15 +65,19 @@ async function submitContactForm(
   }
 
   if (!response.ok || !body?.ok) {
-    throw new ContactFormError(body?.error ?? `http_${response.status}`);
+    return { ok: false, code: body?.error ?? `http_${response.status}` };
   }
+  return { ok: true };
 }
 
 export function ContactForm() {
   const t = useTranslations("contactForm");
   const locale = useLocale();
-  const [submitting, setSubmitting] = useState(false);
 
+  // Keep field shape in sync with functions/src/index.ts:contactPayloadSchema.
+  // The two schemas live in physically separate deploy units (static front
+  // vs. Firebase Function) so a shared package is overkill — just verify
+  // parity on every change.
   const contactSchema = useMemo(
     () =>
       z.object({
@@ -119,22 +121,27 @@ export function ContactForm() {
   });
 
   async function onSubmit(values: ContactFormValues) {
-    setSubmitting(true);
+    let result: ContactSubmitResult;
     try {
-      await submitContactForm(values, locale);
+      result = await submitContactForm(values, locale);
+    } catch {
+      // Network failure / fetch threw — treat as generic error.
+      toast.error(t("toast.error"));
+      return;
+    }
+
+    if (result.ok) {
       toast.success(t("toast.success"));
       form.reset();
-    } catch (err) {
-      const code = err instanceof ContactFormError ? err.code : "unknown";
-      const message =
-        code === "rate_limited"
-          ? t("toast.rateLimited")
-          : t("toast.error");
-      toast.error(message);
-    } finally {
-      setSubmitting(false);
+      return;
     }
+
+    const message =
+      result.code === "rate_limited" ? t("toast.rateLimited") : t("toast.error");
+    toast.error(message);
   }
+
+  const isSubmitting = form.formState.isSubmitting;
 
   const requiredMark = (
     <span aria-hidden className="ml-0.5 text-cta">
@@ -184,7 +191,7 @@ export function ContactForm() {
                   type="text"
                   autoComplete="name"
                   placeholder={t("placeholders.name")}
-                  disabled={submitting}
+                  disabled={isSubmitting}
                   className="h-11"
                 />
               </FormControl>
@@ -209,7 +216,7 @@ export function ContactForm() {
                   autoComplete="email"
                   inputMode="email"
                   placeholder={t("placeholders.email")}
-                  disabled={submitting}
+                  disabled={isSubmitting}
                   className="h-11"
                 />
               </FormControl>
@@ -235,7 +242,7 @@ export function ContactForm() {
                   type="text"
                   autoComplete="organization"
                   placeholder={t("placeholders.company")}
-                  disabled={submitting}
+                  disabled={isSubmitting}
                   className="h-11"
                 />
               </FormControl>
@@ -258,7 +265,7 @@ export function ContactForm() {
                   {...field}
                   rows={5}
                   placeholder={t("placeholders.message")}
-                  disabled={submitting}
+                  disabled={isSubmitting}
                   className="min-h-32"
                 />
               </FormControl>
@@ -284,7 +291,7 @@ export function ContactForm() {
                   onValueChange={(value) => {
                     field.onChange(value === "" ? undefined : value);
                   }}
-                  disabled={submitting}
+                  disabled={isSubmitting}
                 >
                   <SelectTrigger
                     onBlur={field.onBlur}
@@ -310,11 +317,11 @@ export function ContactForm() {
         <Button
           type="submit"
           size="lg"
-          disabled={submitting}
-          aria-busy={submitting}
+          disabled={isSubmitting}
+          aria-busy={isSubmitting}
           className="mt-2 h-12 w-full gap-2 bg-cta px-6 text-base text-primary-foreground hover:bg-cta-hover sm:w-fit"
         >
-          {submitting ? (
+          {isSubmitting ? (
             <>
               <Loader2 className="size-4 animate-spin" aria-hidden />
               {t("submitting")}

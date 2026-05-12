@@ -6,9 +6,9 @@ import { notFound } from "next/navigation";
 
 import "../globals.css";
 
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
-import { JsonLd } from "@/components/seo/JsonLd";
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
+import { JsonLd } from "@/components/seo/json-ld";
 import { Toaster } from "@/components/ui/sonner";
 import { routing, type Locale } from "@/i18n/routing";
 import {

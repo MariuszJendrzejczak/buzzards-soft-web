@@ -1,8 +1,8 @@
 import { getTranslations } from "next-intl/server";
 
-import { ScrollReveal } from "@/components/shared/ScrollReveal";
+import { ScrollReveal } from "@/components/shared/scroll-reveal";
 
-import { AboutGraphic } from "./AboutGraphic";
+import { AboutGraphic } from "./about-graphic";
 
 export async function About() {
   const t = await getTranslations("about");
