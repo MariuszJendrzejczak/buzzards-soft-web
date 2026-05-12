@@ -4,11 +4,11 @@ import {
   ScrollReveal,
   StaggerGroup,
   StaggerItem,
-} from "@/components/shared/ScrollReveal";
+} from "@/components/shared/scroll-reveal";
+import { ChipCloud } from "@/components/shared/chip-cloud";
+import { TechChip } from "@/components/shared/tech-chip";
 
-import { ChipCloud } from "./ChipCloud";
-import { EducationCard, type EducationField } from "./EducationCard";
-import { TechChip } from "./TechChip";
+import { EducationCard, type EducationField } from "./education-card";
 
 const CERTIFICATE_KEYS = ["sep", "drivingLicense", "sailing"] as const;
 

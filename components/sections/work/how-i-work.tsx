@@ -11,7 +11,7 @@ import {
   ScrollReveal,
   StaggerGroup,
   StaggerItem,
-} from "@/components/shared/ScrollReveal";
+} from "@/components/shared/scroll-reveal";
 
 type PracticeKey = "21" | "22" | "23" | "24";
 

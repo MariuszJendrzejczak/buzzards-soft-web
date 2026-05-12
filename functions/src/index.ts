@@ -19,6 +19,8 @@ const ALLOWED_ORIGINS = new Set<string>([
 
 const STAGING_ORIGIN_REGEX = /^https:\/\/buzzards-soft-web--[a-z0-9-]+\.web\.app$/;
 
+// Keep field shape in sync with v2_react/components/sections/contact/
+// contact-form.tsx:contactSchema.
 const contactPayloadSchema = z.object({
   name: z.string().trim().min(2).max(120),
   email: z.email().max(160),
@@ -32,6 +34,9 @@ const contactPayloadSchema = z.object({
 
 type ContactPayload = z.infer<typeof contactPayloadSchema>;
 
+// Best-effort, per-instance counter. With maxInstances: 5 the effective
+// global limit is ~15 req/min, not 3. Acceptable for current traffic;
+// move to Firestore/Redis if abuse becomes an issue.
 type RateBucket = { count: number; resetAt: number };
 const rateBuckets = new Map<string, RateBucket>();
 const RATE_WINDOW_MS = 60_000;

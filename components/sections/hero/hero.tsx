@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import { Button } from "@/components/ui/button";
 
-import { HeroBackdrop } from "./HeroBackdrop";
+import { HeroBackdrop } from "./hero-backdrop";
 
 export async function Hero() {
   const t = await getTranslations("hero");

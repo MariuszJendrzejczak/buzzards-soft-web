@@ -1,9 +1,9 @@
 import { getTranslations } from "next-intl/server";
 
-import { ScrollReveal } from "@/components/shared/ScrollReveal";
+import { ScrollReveal } from "@/components/shared/scroll-reveal";
 
-import { ContactForm } from "./ContactForm";
-import { ContactInfo } from "./ContactInfo";
+import { ContactForm } from "./contact-form";
+import { ContactInfo } from "./contact-info";
 
 export async function Contact() {
   const t = await getTranslations("contact");
