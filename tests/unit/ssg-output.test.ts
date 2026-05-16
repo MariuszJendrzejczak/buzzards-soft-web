@@ -25,7 +25,7 @@ function loadHtml(locale: Locale): string {
   const p = honetiHtmlPath(locale);
   if (!existsSync(p)) {
     throw new Error(
-      `Missing SSG output: ${p}. Run \`npm run build\` from v2_react/ before this test.`,
+      `Missing SSG output: ${p}. Run \`npm run build\` from the repo root before this test.`,
     );
   }
   return readFileSync(p, "utf8");

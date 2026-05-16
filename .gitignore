@@ -54,3 +54,10 @@ lighthouse-*.html
 /playwright-report/
 /blob-report/
 /.playwright/
+/.playwright-mcp/
+
+# local-only sibling content (not part of the public repo)
+/v1_flutter/
+/doc-local/
+/sprint-portfolio-integration/
+/.claude/

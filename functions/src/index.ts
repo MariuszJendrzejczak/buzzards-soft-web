@@ -19,8 +19,8 @@ const ALLOWED_ORIGINS = new Set<string>([
 
 const STAGING_ORIGIN_REGEX = /^https:\/\/buzzards-soft-web--[a-z0-9-]+\.web\.app$/;
 
-// Keep field shape in sync with v2_react/components/sections/contact/
-// contact-form.tsx:contactSchema.
+// Keep field shape in sync with components/sections/contact/contact-form.tsx
+// (contactSchema).
 const contactPayloadSchema = z.object({
   name: z.string().trim().min(2).max(120),
   email: z.email().max(160),

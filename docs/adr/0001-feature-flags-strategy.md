@@ -6,7 +6,7 @@
 
 ## Context
 
-`v2_react/` is a Next.js App Router project configured for static export (`output: "export"` in `next.config.ts`). Production deployment is a pre-rendered bundle served from static hosting. There is no Node server at runtime, no edge runtime in front of the static files.
+This repository is a Next.js App Router project configured for static export (`output: "export"` in `next.config.ts`). Production deployment is a pre-rendered bundle served from static hosting. There is no Node server at runtime, no edge runtime in front of the static files.
 
 Section 4.2 ("Programowanie agentowe") must stay hidden from the public site until two independent gates land:
 
@@ -29,7 +29,7 @@ Sourcing per environment:
 
 | Env | Source | How to toggle |
 |---|---|---|
-| dev | `v2_react/.env.development.local` (gitignored) | edit the file, restart `next dev` |
+| dev | `.env.development.local` (gitignored) | edit the file, restart `next dev` |
 | staging | CI build env (e.g. Vercel / GitHub Actions secrets) prefixed `NEXT_PUBLIC_` | flip the secret, redeploy |
 | production | CI build env, same prefix | flip the secret, redeploy |
 
