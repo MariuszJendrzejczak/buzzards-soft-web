@@ -3,13 +3,9 @@ import { useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 
-// Hero chips render as plain-text labels in this sprint. Anchor hrefs land
-// after the Polilocale repo goes public — keys + labels are frozen, the
-// link wrapping is the only TODO remaining for the post-public pass.
-// TODO(post-polilocale-public): wrap each chip in <a href=...> to the artifact.
 const HERO_CHIP_KEYS = [
   "portfolio.warsztat.hero.chip.brief",
-  "portfolio.warsztat.hero.chip.sprintFile",
+  "portfolio.warsztat.hero.chip.claudeMd",
   "portfolio.warsztat.hero.chip.rules",
 ] as const;
 
@@ -29,7 +25,7 @@ export function WarsztatHeroTile({ className }: WarsztatHeroTileProps) {
         className,
       )}
     >
-      <div className="flex items-start gap-3">
+      <div className="flex items-center gap-3">
         <span
           aria-hidden
           className="flex size-12 shrink-0 items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-500/10 text-emerald-400"

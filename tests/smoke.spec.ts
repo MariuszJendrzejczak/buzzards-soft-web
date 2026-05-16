@@ -4,7 +4,7 @@ const SECTION_IDS = [
   "hero",
   "how-i-work",
   "what-i-can-deliver",
-  "experience",
+  "portfolio",
   "currently-learning",
   "about",
   "education",
@@ -36,10 +36,17 @@ test.describe("home page (pl)", () => {
   });
 });
 
-test("portfolio case study page renders", async ({ page }) => {
+test("portfolio honeti subpage renders", async ({ page }) => {
+  // Sprint 2 replaced the single-card case-study page with a collective view
+  // listing 15 apps grouped by stack/role. The legacy "zakres / scope /
+  // omfattning" section heading no longer exists; the new page has an H1
+  // ("Portfolio Honeti — …") and 4 group H2s starting with the Flutter
+  // group. We assert the H1 and at least one group heading is visible.
   await page.goto("/pl/portfolio/honeti");
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-  await expect(page.getByRole("heading", { name: /zakres|scope|omfattning/i })).toBeVisible();
+  await expect(
+    page.getByRole("heading", { level: 2, name: /Flutter/i }),
+  ).toBeVisible();
 });
 
 test.describe("contact form", () => {

@@ -16,7 +16,7 @@
     "items": {
       "howIWork": "Jak pracuję",
       "whatIDeliver": "Co umiem",
-      "experience": "Doświadczenie",
+      "portfolio": "Portfolio",
       "learning": "Rozwój",
       "about": "O mnie",
       "education": "Wykształcenie",
@@ -217,45 +217,6 @@
       }
     }
   },
-  "experience": {
-    "eyebrow": "Sekcja 04 · Track record",
-    "title": "Doświadczenie i artefakty",
-    "intro": "Komercyjne projekty, w których pisałem kod, oraz artefakty z mojej codziennej pracy z agentami AI.",
-    "stackAria": "Stack — {project}",
-    "honeti": {
-      "eyebrow": "4.1 · Mobile",
-      "title": "Honeti — Mobile Developer",
-      "period": "2021 — obecnie",
-      "ctaLabel": "Zobacz case study",
-      "bullets": {
-        "1": "aplikacje mobilne Android + iOS — od zera i utrzymanie istniejących produktów,",
-        "2": "pełen cykl życia: planowanie → implementacja → testy → publikacja → utrzymanie,",
-        "3": "współpraca z zespołem developerów, testerów i project managerów oraz bezpośrednio z klientami,",
-        "4": "stack i szczegóły zakresu — w sekcji „Co umiem\" oraz w case study."
-      }
-    },
-    "unity": {
-      "eyebrow": "4.2 · Unity",
-      "title": "Unity — projekty interaktywne",
-      "description": "Gry i aplikacje interaktywne, narzędzia edytora, własne wzorce projektowe (State Machine, Pooling, Scriptable Object). Konsekwentnie oddzielam MonoBehaviour od czystej logiki C#, żeby kod dało się testować i utrzymywać. Integracje z Firebase, REST API i Unity IAP traktuję jako standardową część pipeline'u."
-    },
-    "artifact": {
-      "eyebrow": "4.3 · Personal artifact",
-      "title": "Własny warsztat AI",
-      "bullets": {
-        "1": "konfiguracja Claude Code dopasowana do moich projektów (settings, permissions, hooks),",
-        "2": "własne slash commands i skille pod powtarzalne zadania,",
-        "3": "konfiguracja subagentów (code reviewer, planner, eksplorator),",
-        "4": "integracje MCP w codziennym workflow,",
-        "5": "praktyki: weryfikacja outputu LLM, kontrola kosztów, agent w pętli z manualnym review."
-      },
-      "quote": "„Jeśli zatrudniasz programistę, dostajesz nie tylko mnie — dostajesz mój workflow. Mogę go pokazać i przekazać zespołowi.\""
-    },
-    "meta": {
-      "eyebrow": "4.4 · Meta-projekt",
-      "description": "Strona, którą czytasz, jest moim własnym artefaktem — budowana z aktywną asystą agentów AI. Cały proces ma być przykładem tego, jak pracuję."
-    }
-  },
   "currentlyLearning": {
     "eyebrow": "Sekcja 05 · Kierunek",
     "title": "Rozwój",
@@ -392,57 +353,86 @@
     "copyright": "© Buzzards Soft {year}"
   },
   "portfolio": {
+    "eyebrow": "Sekcja 04 · Portfolio",
+    "title": "Portfolio",
+    "intro": "Trzy linie kompetencji: komercyjne aplikacje mobilne w Honeti, własne projekty z programowania agentowego oraz warsztat AI — metodologia, którą wnoszę do każdego zespołu.",
     "breadcrumbBack": "Wróć do strony głównej",
-    "eyebrow": "Case study · {slug}",
-    "metaRoleLabel": "Rola",
-    "metaPeriodLabel": "Okres",
-    "stackAria": "Stack — {title}",
-    "scopeHeading": "Zakres",
-    "stackHeading": "Stack technologiczny",
-    "stackFullAria": "Stack technologiczny — pełna lista",
-    "appsHeading": "Wybrane realizacje",
-    "appsIntro": "Aplikacje produkcyjne, przy których pracowałem — szczegóły do pokazania w rozmowie.",
-    "metaTitleFallback": "Case study",
-    "metaDescription": "{role} · {period}. Zakres prac, stack technologiczny i wybrane realizacje.",
     "role": {
-      "od-zera": "od zera",
-      "rozwoj-i-serwis": "rozwój i serwis",
-      "przejety-w-trakcie": "przejęty w trakcie"
+      "od-zera": "E2E",
+      "rozwoj-i-serwis": "rozwój i serwis"
     },
     "storeLink": {
       "googlePlay": "Google Play",
       "appStore": "App Store",
       "external": "Strona zewnętrzna"
     },
-    "cases": {
-      "honeti": {
-        "title": "Honeti — Mobile Developer",
-        "role": "Mobile Developer",
-        "period": "2021 — obecnie",
-        "scope": {
-          "1": "aplikacje mobilne Android + iOS budowane od zera,",
-          "2": "rozwój i utrzymanie istniejących produktów,",
-          "3": "współpraca z zespołem developerów, testerów i project managerów,",
-          "4": "pełen cykl życia: planowanie → implementacja → testy → publikacja → utrzymanie,",
-          "5": "integracje REST API i Firebase, autoryzacja, synchronizacja danych, mechanizmy offline,",
-          "6": "przygotowanie i publikacja w Google Play / App Store,",
-          "7": "bezpośrednia praca z klientami i dopasowywanie rozwiązań do realnych potrzeb biznesu."
+    "projectLink": {
+      "googlePlay": "Google Play",
+      "appStore": "App Store",
+      "github": "Repozytorium GitHub",
+      "homepage": "Strona projektu"
+    },
+    "honeti": {
+      "title": "Portfolio komercyjne —",
+      "honetiLinkAria": "HONETi (otwiera honeti.com w nowej karcie)",
+      "role-line": "Jako Mobile Developer w Honeti — pełen cykl od planowania, przez implementację, testy i publikację, po utrzymanie.",
+      "stack-aria": "Stack technologiczny — Portfolio Honeti",
+      "cta-full-list": "Zobacz pełne portfolio dla HONETi",
+      "subpage-title": "Portfolio dla Honeti",
+      "h1Main": "Portfolio",
+      "h1Connector": "wykonane dla",
+      "subpage-lead": "Praca w Honeti to dla mnie pełen flow developerski — warsztaty pomysłu i rozmowy z klientem, prototypowanie funkcjonalności, projekt UX/UI w zespole, implementacja, code review, testy, publikacja w sklepach i utrzymanie po wdrożeniu. Każdy z projektów poniżej powstał dokładnie w takim cyklu — od pierwszych spotkań po wersję trafiającą do użytkownika końcowego.",
+      "group": {
+        "flutter": "Flutter",
+        "unity": "Unity"
+      },
+      "flutterSeries": {
+        "title": "Aplikacje Mobilne — Android i iOS",
+        "description": "Projekty prowadzone end-to-end — od projektu i ustaleń z klientem, przez prototypowanie, implementację i testy, po publikację w sklepach i utrzymanie po wdrożeniu. Pełna odpowiedzialność za część mobilną.",
+        "appsLabel": "Apki w portfolio Flutter",
+        "contribution": {
+          "cleanArch": "Clean Architecture",
+          "mvc": "MVC",
+          "riverpod": "Riverpod (state management)",
+          "freezed": "Freezed",
+          "restApi": "REST API",
+          "firebase": "Firebase",
+          "offline": "offline-first",
+          "qr": "skaner QR i deep linki",
+          "signIn": "Sign in with Google i Sign in with Apple",
+          "pdf": "obsługa plików PDF",
+          "pos": "integracja z drukarkami POS",
+          "maps": "integracja z Google Maps"
+        }
+      },
+      "educationalSeries": {
+        "title": "Seria edukacyjna",
+        "description": "Seria edukacyjna dla dzieci na wspólnym silniku trybu nauki — 4 apki budowane od zera (Angielski — słówka i obrazki, Czasowniki nieregularne IQ, Der Die Das, Flagi) plus 3 przejęte do utrzymania (Tabliczka Mnożenia, Potęgi i Pierwiastki, Cyfry Rzymskie).",
+        "appsLabel": "Apki w serii",
+        "contribution": {
+          "engine": "wspólny silnik trybu nauki",
+          "iap": "In-App Purchases (IAP)",
+          "ads": "reklamy (Ads)",
+          "pooling": "Object Pooling",
+          "firebaseDb": "Firebase Realtime Database",
+          "analytics": "Firebase Analytics"
         }
       }
     },
-    "honeti": {
-      "title": "Portfolio Honeti — komercyjne (4+ lata)",
-      "role-line": "4+ lata jako Mobile Developer w Honeti — pełen cykl od planowania, przez implementację, testy i publikację, po utrzymanie.",
-      "stack-aria": "Stack technologiczny — Portfolio Honeti",
-      "unity-legacy-tag": "Unity (legacy)",
-      "cta-full-list": "Zobacz pełne portfolio Honeti",
-      "subpage-title": "Portfolio Honeti — 15 apek (5 Flutter + 10 Unity)",
-      "subpage-lead": "Pełna lista projektów z Honeti — 5 aplikacji Flutter budowanych od zera oraz 10 aplikacji Unity (od zera, rozwój i serwis, przejęte w trakcie). Dla każdej karty: rola, opis biznesowy, zakres mojej kontrybucji i linki do sklepów.",
-      "group": {
-        "flutter-od-zera": "Flutter — wszystkie od zera",
-        "unity-od-zera": "Unity — własna seria edukacyjna (od zera)",
-        "unity-rozwoj": "Unity — rozwój i serwis",
-        "unity-przejety": "Unity — projekt przejęty w połowie"
+    "agent": {
+      "title": "Programowanie agentowe — własne wdrożenia",
+      "intro": "AI jest częścią mojego procesu produkcji. Trzy żywe projekty, w których to widać.",
+      "homeStorage": {
+        "title": "Własna apka mobilna",
+        "description": "W końcowej fazie produkcji. Pełen pipeline CI/CD z udziałem agentów AI."
+      },
+      "polilocale": {
+        "title": "Własny OSS — narzędzie do lokalizacji",
+        "description": "Open-source w przygotowaniu publicznego release. Architektura format-faithful, AI translation przez własne klucze użytkownika."
+      },
+      "buzzards": {
+        "title": "buzzards-soft.com",
+        "description": "Strona, którą czytasz, zbudowana z aktywną asystą agentów AI. Cały proces jest publicznie udokumentowany."
       }
     },
     "warsztat": {
@@ -453,8 +443,8 @@
         "description": "Każda zmiana zaczyna się od trwałego kontekstu — BRIEF.md, sprint file albo ADR — a nie od świeżego promptu. Każda sesja z agentem ma typ (planner / implementer / tester / reviewer) i jeden zadeklarowany deliverable. Reviewer ma read-only — nie zmienia kodu, tylko spisuje listę zastrzeżeń. Efekt: szybciej, ale wciąż z dyscypliną — agent nie merguje sam.",
         "chipsAria": "Artefakty workflow",
         "chip": {
-          "brief": "BRIEF.md (post-Polilocale public)",
-          "sprintFile": "sprint files (this site)",
+          "brief": "BRIEF.md",
+          "claudeMd": "CLAUDE.md",
           "rules": "SPRINT_RULES.md"
         }
       },
@@ -472,12 +462,12 @@
         "3": {
           "title": "Custom slash commands i skille",
           "description": "Powtarzalne procesy SDLC zamknięte w polecenia, które uruchamia cały zespół, nie tylko ja — od planowania sprintu po review PR-ów.",
-          "example": "/sprint-run"
+          "example": "/sprint-run · /sprint-plan"
         },
         "4": {
           "title": "Integracje MCP w workflow",
-          "description": "context7 (żywa dokumentacja libów), Playwright / Claude in Chrome (weryfikacja UI), scheduled-tasks (cron). Agent ma realne narzędzia, nie tylko wiedzę.",
-          "example": "context7 · playwright · scheduled-tasks"
+          "description": "context7 (żywa dokumentacja libów), Playwright (weryfikacja UI w przeglądarce), Maestro (e2e dla mobile). Agent ma realne narzędzia w moim stacku, nie tylko wiedzę.",
+          "example": "context7 · playwright · maestro"
         },
         "5": {
           "title": "Persistent memory + bilingual rule",
@@ -485,9 +475,9 @@
           "example": "PL conversation · EN markdown"
         },
         "6": {
-          "title": "Kontrola kosztów + agent w pętli",
-          "description": "Limity i budżety tokenów, manualne potwierdzenia przed destrukcyjnymi operacjami, ADR-y zanim agent dotknie kodu. AI nie merguje sam — ja decyduję, co ląduje w main.",
-          "example": "manual review before merge"
+          "title": "Pełna kontrola workflow dla git",
+          "description": "Agent pracuje na worktree albo feature branch, nigdy bezpośrednio na main. PR otwiera tylko wtedy, gdy go o to poproszę. Zaplanowany podział uprawnień: co robi agent, co robię ja, jak wpina się to w CI/CD. Pełna kontrola nad tym, co ląduje w gicie.",
+          "example": "worktree · feature branch · PR on demand"
         }
       }
     }

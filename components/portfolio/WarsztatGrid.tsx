@@ -63,7 +63,7 @@ const TILES: readonly WarsztatTileSpec[] = [
     icon: Database,
   },
   {
-    id: "cost-control",
+    id: "git-workflow",
     titleKey: "portfolio.warsztat.tile.6.title",
     descriptionKey: "portfolio.warsztat.tile.6.description",
     exampleKey: "portfolio.warsztat.tile.6.example",
@@ -84,7 +84,7 @@ export function WarsztatGrid({ className }: WarsztatGridProps) {
       id="portfolio-warsztat"
       aria-labelledby="portfolio-warsztat-heading"
       className={cn(
-        "relative isolate border-t border-border/60 py-24 sm:py-32",
+        "relative isolate border-t border-emerald-500/20 py-24 sm:py-32",
         className,
       )}
     >

@@ -16,7 +16,7 @@
     "items": {
       "howIWork": "Så jobbar jag",
       "whatIDeliver": "Vad jag levererar",
-      "experience": "Erfarenhet",
+      "portfolio": "Portfolio",
       "learning": "Utveckling",
       "about": "Om mig",
       "education": "Utbildning",
@@ -217,45 +217,6 @@
       }
     }
   },
-  "experience": {
-    "eyebrow": "Avsnitt 04 · Track record",
-    "title": "Erfarenhet och artefakter",
-    "intro": "Kommersiella projekt där jag skrev kod, plus artefakter från mitt dagliga arbete med AI-agenter.",
-    "stackAria": "Stack — {project}",
-    "honeti": {
-      "eyebrow": "4.1 · Mobile",
-      "title": "Honeti — Mobile Developer",
-      "period": "2021 — nutid",
-      "ctaLabel": "Se case study",
-      "bullets": {
-        "1": "mobilappar för Android + iOS — byggda från grunden och underhållna över tid,",
-        "2": "hela livscykeln: planering → implementation → tester → lansering → underhåll,",
-        "3": "samarbete med utvecklare, testare och projektledare, och direkt med kunder,",
-        "4": "stack och detaljer om omfattning — se sektionen „Vad jag levererar\" och case study."
-      }
-    },
-    "unity": {
-      "eyebrow": "4.2 · Unity",
-      "title": "Unity — interaktiva projekt",
-      "description": "Spel och interaktiva appar, editor-verktyg, egna designmönster (State Machine, Pooling, Scriptable Object). Jag separerar konsekvent MonoBehaviour från ren C#-logik så att koden förblir testbar och underhållbar. Integrationer med Firebase, REST API och Unity IAP behandlar jag som en standardkomponent i pipelinen."
-    },
-    "artifact": {
-      "eyebrow": "4.3 · Personlig artefakt",
-      "title": "Min egen AI-verkstad",
-      "bullets": {
-        "1": "Claude Code-konfiguration anpassad till mina projekt (settings, permissions, hooks),",
-        "2": "egna slash commands och skills för repeterbara uppgifter,",
-        "3": "konfiguration av subagenter (code reviewer, planerare, utforskare),",
-        "4": "MCP-integrationer i mitt dagliga arbetsflöde,",
-        "5": "praxis: verifiering av LLM-output, kostnadskontroll, agent i loop med manuell review."
-      },
-      "quote": "\"Om du anställer en utvecklare får du inte bara mig — du får mitt arbetsflöde. Jag kan visa det och överlämna det till teamet.\""
-    },
-    "meta": {
-      "eyebrow": "4.4 · Meta-projekt",
-      "description": "Sidan du läser är en av mina egna artefakter — byggd med aktivt stöd från AI-agenter. Hela processen ska vara ett exempel på hur jag jobbar."
-    }
-  },
   "currentlyLearning": {
     "eyebrow": "Avsnitt 05 · Riktning",
     "title": "Utveckling",
@@ -392,57 +353,86 @@
     "copyright": "© Buzzards Soft {year}"
   },
   "portfolio": {
+    "eyebrow": "Avsnitt 04 · Portfolio",
+    "title": "Portfolio",
+    "intro": "Tre kompetensspår: kommersiella mobilappar byggda på Honeti, egna projekt inom agentisk programmering och en AI-verkstad — metodiken jag tar med mig till varje team.",
     "breadcrumbBack": "Tillbaka till startsidan",
-    "eyebrow": "Case study · {slug}",
-    "metaRoleLabel": "Roll",
-    "metaPeriodLabel": "Period",
-    "stackAria": "Stack — {title}",
-    "scopeHeading": "Omfattning",
-    "stackHeading": "Teknisk stack",
-    "stackFullAria": "Teknisk stack — fullständig lista",
-    "appsHeading": "Utvalda releaser",
-    "appsIntro": "Produktionsappar jag arbetade med — detaljer kan jag dela i ett samtal.",
-    "metaTitleFallback": "Case study",
-    "metaDescription": "{role} · {period}. Arbetsomfattning, teknisk stack och utvalda releaser.",
     "role": {
-      "od-zera": "från noll",
-      "rozwoj-i-serwis": "underhåll",
-      "przejety-w-trakcie": "övertogs i pågående utveckling"
+      "od-zera": "E2E",
+      "rozwoj-i-serwis": "underhåll"
     },
     "storeLink": {
       "googlePlay": "Google Play",
       "appStore": "App Store",
       "external": "Extern webbplats"
     },
-    "cases": {
-      "honeti": {
-        "title": "Honeti — Mobile Developer",
-        "role": "Mobile Developer",
-        "period": "2021 — pågående",
-        "scope": {
-          "1": "mobilappar för Android + iOS byggda från grunden,",
-          "2": "vidareutveckling och underhåll av befintliga produkter,",
-          "3": "samarbete med ett team av utvecklare, testare och projektledare,",
-          "4": "hela livscykeln: planering → implementation → tester → lansering → underhåll,",
-          "5": "integrationer mot REST API och Firebase, autentisering, datasynkronisering, offline-mekanismer,",
-          "6": "förberedelse och publicering på Google Play / App Store,",
-          "7": "direkt arbete med kunder och anpassning av lösningar till verkliga affärsbehov."
+    "projectLink": {
+      "googlePlay": "Google Play",
+      "appStore": "App Store",
+      "github": "GitHub-repository",
+      "homepage": "Projektets webbplats"
+    },
+    "honeti": {
+      "title": "Kommersiell portfölj —",
+      "honetiLinkAria": "HONETi (öppnar honeti.com i ny flik)",
+      "role-line": "Som Mobile Developer på Honeti — hela livscykeln från planering, genom implementation, tester och release, till underhåll.",
+      "stack-aria": "Teknisk stack — Honeti-portföljen",
+      "cta-full-list": "Se hela portföljen för HONETi",
+      "subpage-title": "Portfölj för Honeti",
+      "h1Main": "Portfölj",
+      "h1Connector": "levererad till",
+      "subpage-lead": "Tiden på Honeti var det fulla developer-flödet — discoveryworkshops och samtal med kunden, prototypning av funktioner, UX/UI-design i team, implementation, kodgranskning, tester, butikslanseringar och underhåll efter release. Varje projekt nedan gick genom exakt den cykeln — från de första mötena till versionen som nådde slutanvändaren.",
+      "group": {
+        "flutter": "Flutter",
+        "unity": "Unity"
+      },
+      "flutterSeries": {
+        "title": "Mobilappar — Android och iOS",
+        "description": "Projekt levererade end-to-end — från design och avstämning med kunden, genom prototypning, implementation och tester, till butikslanseringar och underhåll efter release. Fullt ansvar för mobildelen.",
+        "appsLabel": "Appar i Flutter-portföljen",
+        "contribution": {
+          "cleanArch": "Clean Architecture",
+          "mvc": "MVC",
+          "riverpod": "Riverpod (state management)",
+          "freezed": "Freezed",
+          "restApi": "REST API",
+          "firebase": "Firebase",
+          "offline": "offline-first",
+          "qr": "QR-skanner och deep links",
+          "signIn": "Sign in with Google och Sign in with Apple",
+          "pdf": "PDF-filhantering",
+          "pos": "POS-skrivarintegration",
+          "maps": "Google Maps-integration"
+        }
+      },
+      "educationalSeries": {
+        "title": "Utbildningsserie",
+        "description": "En utbildningsserie för barn byggd på en gemensam inlärningsmotor — 4 appar från grunden (Angielski — słówka i obrazki, Czasowniki nieregularne IQ, Der Die Das, Flagi) plus 3 övertagna för underhåll (Tabliczka Mnożenia, Potęgi i Pierwiastki, Cyfry Rzymskie).",
+        "appsLabel": "Appar i serien",
+        "contribution": {
+          "engine": "gemensam inlärningsmotor",
+          "iap": "In-App Purchases (IAP)",
+          "ads": "annonser (Ads)",
+          "pooling": "Object Pooling",
+          "firebaseDb": "Firebase Realtime Database",
+          "analytics": "Firebase Analytics"
         }
       }
     },
-    "honeti": {
-      "title": "Honeti-portföljen — kommersiellt (4+ år)",
-      "role-line": "4+ år som Mobile Developer på Honeti — hela livscykeln från planering, genom implementation, tester och release, till underhåll.",
-      "stack-aria": "Teknisk stack — Honeti-portföljen",
-      "unity-legacy-tag": "Unity (legacy)",
-      "cta-full-list": "Se hela Honeti-portföljen",
-      "subpage-title": "Honeti-portföljen — 15 appar (5 Flutter + 10 Unity)",
-      "subpage-lead": "Hela listan av projekt från Honeti — 5 Flutter-appar byggda från grunden och 10 Unity-appar (från grunden, underhåll, övertogs i pågående utveckling). Varje kort: roll, affärskontext, omfattningen av mitt bidrag och butikslänkar.",
-      "group": {
-        "flutter-od-zera": "Flutter — alla byggda från grunden",
-        "unity-od-zera": "Unity — egen utbildningsserie (från grunden)",
-        "unity-rozwoj": "Unity — underhåll och vidareutveckling",
-        "unity-przejety": "Unity — projekt övertaget i pågående utveckling"
+    "agent": {
+      "title": "Agentisk programmering — egna lanseringar",
+      "intro": "AI är en del av min produktionsprocess. Tre levande projekt där det syns i praktiken.",
+      "homeStorage": {
+        "title": "Egen mobilapp",
+        "description": "I slutfasen av produktionen. Fullständig CI/CD-pipeline med AI-agenter i loopen."
+      },
+      "polilocale": {
+        "title": "Egen OSS — lokaliseringsverktyg",
+        "description": "Open-source, förbereder en publik release. Format-trogen arkitektur, AI-översättning via användarens egna API-nycklar."
+      },
+      "buzzards": {
+        "title": "buzzards-soft.com",
+        "description": "Sidan du läser, byggd med aktivt stöd av AI-agenter. Hela processen är offentligt dokumenterad."
       }
     },
     "warsztat": {
@@ -453,8 +443,8 @@
         "description": "Varje förändring börjar i ett varaktigt kontextdokument — BRIEF.md, en sprintfil eller ett ADR — inte i en ny prompt. Varje agentsession har en typ (planner / implementer / tester / reviewer) och en deklarerad leverans. Reviewer-sessioner är read-only — de kan inte redigera kod, bara skriva en lista av invändningar. Resultatet: snabbare, men fortfarande disciplinerat — agenten mergar inte själv.",
         "chipsAria": "Workflow-artefakter",
         "chip": {
-          "brief": "BRIEF.md (post-Polilocale public)",
-          "sprintFile": "sprint files (this site)",
+          "brief": "BRIEF.md",
+          "claudeMd": "CLAUDE.md",
           "rules": "SPRINT_RULES.md"
         }
       },
@@ -472,12 +462,12 @@
         "3": {
           "title": "Custom slash commands och skills",
           "description": "Repeterbara SDLC-processer paketerade i kommandon som hela teamet kan köra — från sprintplanering till PR-review.",
-          "example": "/sprint-run"
+          "example": "/sprint-run · /sprint-plan"
         },
         "4": {
           "title": "MCP-integrationer i workflow",
-          "description": "context7 (levande bibliotekdokumentation), Playwright / Claude in Chrome (UI-verifiering), scheduled-tasks (cron). Agenten har riktiga verktyg, inte bara kunskap.",
-          "example": "context7 · playwright · scheduled-tasks"
+          "description": "context7 (levande bibliotekdokumentation), Playwright (UI-verifiering i webbläsare), Maestro (mobil e2e). Agenten har riktiga verktyg i min stack, inte bara kunskap.",
+          "example": "context7 · playwright · maestro"
         },
         "5": {
           "title": "Persistent memory + bilingual rule",
@@ -485,9 +475,9 @@
           "example": "PL conversation · EN markdown"
         },
         "6": {
-          "title": "Kostnadskontroll + agent i loopen",
-          "description": "Tokenbudgetar, manuella bekräftelser före destruktiva operationer, ADR:er innan agenten rör koden. AI mergar inte själv — jag bestämmer vad som hamnar i main.",
-          "example": "manual review before merge"
+          "title": "Full kontroll över git-workflow",
+          "description": "Agenten arbetar på en worktree eller en feature branch, aldrig direkt på main. PR öppnas bara när jag ber om det. Uppdelningen är planerad: vad agenten gör, vad jag gör, hur det kopplas till CI/CD. Full kontroll över vad som hamnar i git.",
+          "example": "worktree · feature branch · PR on demand"
         }
       }
     }

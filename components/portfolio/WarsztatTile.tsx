@@ -29,7 +29,7 @@ export function WarsztatTile({
         className,
       )}
     >
-      <div className="flex items-start gap-3">
+      <div className="flex items-center gap-3">
         <span
           aria-hidden
           className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-border/70 bg-surface/60 text-brand"

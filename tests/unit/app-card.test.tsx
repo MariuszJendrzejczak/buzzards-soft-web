@@ -9,17 +9,17 @@ import { renderWithIntl } from "./test-utils";
 
 // Representative apps covering all link variants encoded in the dataset:
 //   - googleLink + appleLink  -> Infoshare
-//   - googleLink only          -> Uprawnienia Budowlane
+//   - googleLink only          -> Gastro Ninja Kelner
 //   - external (no stores)     -> Gen / Oczami Dziecka
 //   - Unity stack variant      -> Gastro Ninja Klient
-//   - przejety-w-trakcie role  -> Soildata
+//   - rozwoj-i-serwis role     -> Soildata
 const infoshare = getHoneticApp("infoshare");
-const uprawnienia = getHoneticApp("uprawnienia-budowlane");
+const kelner = getHoneticApp("gastro-ninja-kelner");
 const gen = getHoneticApp("gen-oczami-dziecka");
 const gastro = getHoneticApp("gastro-ninja-klient");
 const soildata = getHoneticApp("soildata");
 
-if (!infoshare || !uprawnienia || !gen || !gastro || !soildata) {
+if (!infoshare || !kelner || !gen || !gastro || !soildata) {
   throw new Error(
     "test fixture: representative apps must exist in HONETI_APPS",
   );
@@ -71,11 +71,11 @@ describe("<AppCard>", () => {
     expect(stack?.className).toContain("purple");
   });
 
-  it("renders the przejety-w-trakcie role variant for Soildata", () => {
+  it("renders the rozwoj-i-serwis role variant for Soildata", () => {
     renderWithIntl(<AppCard app={soildata} />);
-    const role = document.querySelector(`[data-role='przejety-w-trakcie']`);
+    const role = document.querySelector(`[data-role='rozwoj-i-serwis']`);
     expect(role).not.toBeNull();
-    expect(role?.className).toContain("amber");
+    expect(role?.className).toContain("gray");
   });
 
   it("renders every contribution item as a list element under a <ul>", () => {
@@ -103,7 +103,7 @@ describe("<AppCard>", () => {
   });
 
   it("renders only the Google Play icon when appleLink is absent", () => {
-    renderWithIntl(<AppCard app={uprawnienia} />);
+    renderWithIntl(<AppCard app={kelner} />);
     expect(
       screen.getByLabelText(enMessages.portfolio.storeLink.googlePlay),
     ).toBeInTheDocument();
@@ -150,15 +150,12 @@ describe("<AppCard>", () => {
     expect(wrapper?.className).toContain("custom-card-class");
   });
 
-  it("renders an icon placeholder block (no Glob-discovered asset yet)", () => {
+  it("renders the app icon when iconSrc is set", () => {
     const { container } = renderWithIntl(<AppCard app={infoshare} />);
-    // Icon placeholder is aria-hidden so screen readers ignore it; identified
-    // by the size-12 + rounded-xl class signature used here and in the
-    // hero-app-mini-card placeholder.
-    const placeholder = container.querySelector(
-      "[aria-hidden].size-12.rounded-xl",
-    );
-    expect(placeholder).not.toBeNull();
+    const icon = container.querySelector("img[aria-hidden]");
+    expect(icon).not.toBeNull();
+    const src = decodeURIComponent(icon?.getAttribute("src") ?? "");
+    expect(src).toContain(infoshare.iconSrc ?? "");
   });
 
   it("does not produce nested <a> elements (HTML validity)", () => {

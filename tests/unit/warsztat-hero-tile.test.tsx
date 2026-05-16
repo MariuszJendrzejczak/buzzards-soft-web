@@ -27,14 +27,14 @@ describe("<WarsztatHeroTile>", () => {
     expect(chips).toHaveLength(3);
   });
 
-  it("chips contain BRIEF, sprint file and ADR labels from i18n", () => {
+  it("chips contain BRIEF.md, CLAUDE.md and SPRINT_RULES.md labels from i18n", () => {
     const { container } = renderWithIntl(<WarsztatHeroTile />);
     const labels = Array.from(
       container.querySelectorAll("[data-warsztat-hero-chip]"),
     ).map((el) => el.textContent);
     expect(labels).toContain(enMessages.portfolio.warsztat.hero.chip.brief);
     expect(labels).toContain(
-      enMessages.portfolio.warsztat.hero.chip.sprintFile,
+      enMessages.portfolio.warsztat.hero.chip.claudeMd,
     );
     expect(labels).toContain(enMessages.portfolio.warsztat.hero.chip.rules);
   });

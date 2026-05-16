@@ -1,3 +1,4 @@
+import { Workflow, Wrench, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { type Role, roleLabelKey } from "@/lib/portfolio/types";
@@ -8,8 +9,11 @@ const ROLE_VARIANT: Record<Role, string> = {
     "border-emerald-500/30 bg-emerald-500/10 text-emerald-300",
   "rozwoj-i-serwis":
     "border-gray-500/30 bg-gray-500/10 text-gray-300",
-  "przejety-w-trakcie":
-    "border-amber-500/30 bg-amber-500/10 text-amber-300",
+};
+
+const ROLE_ICON: Record<Role, LucideIcon> = {
+  "od-zera": Workflow,
+  "rozwoj-i-serwis": Wrench,
 };
 
 export type RoleBadgeProps = {
@@ -20,16 +24,18 @@ export type RoleBadgeProps = {
 export function RoleBadge({ role, className }: RoleBadgeProps) {
   const t = useTranslations();
   const label = t(roleLabelKey(role));
+  const Icon = ROLE_ICON[role];
 
   return (
     <span
       data-role={role}
       className={cn(
-        "inline-flex h-5 w-fit shrink-0 items-center rounded-4xl border px-2 py-0.5 text-xs font-medium whitespace-nowrap",
+        "inline-flex w-fit shrink-0 items-center gap-1.5 rounded-4xl border px-2.5 py-1 text-xs font-medium whitespace-nowrap",
         ROLE_VARIANT[role],
         className,
       )}
     >
+      <Icon aria-hidden className="size-4 shrink-0" />
       {label}
     </span>
   );

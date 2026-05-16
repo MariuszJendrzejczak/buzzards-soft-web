@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 
-import { CASE_SLUGS } from "@/app/[locale]/portfolio/[slug]/cases";
 import { routing } from "@/i18n/routing";
 import { SITE_URL, hreflangFor } from "@/lib/seo";
 
@@ -16,11 +15,7 @@ type Route = {
 
 const ROUTES: Route[] = [
   { path: "", changeFrequency: "monthly", priority: 1 },
-  ...CASE_SLUGS.map((slug) => ({
-    path: `/portfolio/${slug}`,
-    changeFrequency: "yearly" as Frequency,
-    priority: 0.8,
-  })),
+  { path: "/portfolio/honeti", changeFrequency: "monthly", priority: 0.9 },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
 ];
 

@@ -1,6 +1,9 @@
+import Image from "next/image";
+
 import { type HoneticApp } from "@/lib/portfolio/types";
 import { cn } from "@/lib/utils";
 
+import { CardDeviceLink } from "./CardDeviceLink";
 import { RoleBadge } from "./role-badge";
 import { StackChip } from "./stack-chip";
 import { StoreLink } from "./store-link";
@@ -18,21 +21,36 @@ export function AppCard({ app, className }: AppCardProps) {
       id={app.slug}
       data-slug={app.slug}
       className={cn(
-        "flex h-full scroll-mt-24 flex-col gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-colors",
+        "relative flex h-full scroll-mt-24 flex-col gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-colors",
         "hover:border-brand/40",
         "focus-within:outline-none focus-within:ring-2 focus-within:ring-brand/60 focus-within:ring-offset-2 focus-within:ring-offset-background",
         className,
       )}
     >
       <div className="flex items-start gap-3">
-        {/* Icon placeholder — public/icons/honeti/<slug>.{png,svg,webp} not shipped yet. */}
-        <div
-          aria-hidden
-          className="size-12 shrink-0 rounded-xl border border-border/70 bg-surface/60"
-        />
+        {app.iconSrc ? (
+          <Image
+            src={app.iconSrc}
+            alt=""
+            aria-hidden
+            width={48}
+            height={48}
+            className={cn(
+              "size-12 shrink-0 rounded-xl border border-border/70 object-contain",
+              app.iconBackground === "white" ? "bg-white" : "bg-surface/60",
+            )}
+          />
+        ) : (
+          <div
+            aria-hidden
+            className="size-12 shrink-0 rounded-xl border border-border/70 bg-surface/60"
+          />
+        )}
         <div className="flex min-w-0 flex-1 flex-col gap-1.5">
           <h3 className="font-heading text-lg leading-tight font-semibold tracking-tight text-foreground sm:text-xl">
-            {app.name}
+            {/* CardDeviceLink covers the whole article via the ::after
+                overlay; click resolves to device-appropriate store. */}
+            <CardDeviceLink app={app}>{app.name}</CardDeviceLink>
           </h3>
           <div className="flex flex-wrap items-center gap-2">
             <StackChip stack={app.stack} />
@@ -53,7 +71,11 @@ export function AppCard({ app, className }: AppCardProps) {
         </ul>
       ) : null}
 
-      <div className="mt-auto pt-2">
+      {/* relative + z-10 lifts store links above the CardDeviceLink's ::after
+          overlay so per-store icon clicks still reach those specific anchors
+          (override the device-default with an explicit Play/App Store/external
+          choice). */}
+      <div className="relative z-10 mt-auto pt-2">
         <StoreLink
           googleLink={app.googleLink}
           appleLink={app.appleLink}

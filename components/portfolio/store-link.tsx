@@ -1,4 +1,5 @@
-import { Apple, ExternalLink as ExternalIcon, Play } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { type ExternalLink } from "@/lib/portfolio/types";
@@ -29,21 +30,39 @@ export function StoreLink({
         <IconLink
           href={googleLink}
           ariaLabel={t("googlePlay")}
-          icon={<Play aria-hidden className="size-4" />}
+          icon={
+            <Image
+              src="/portfolio/stores/google-play.png"
+              alt=""
+              aria-hidden
+              width={20}
+              height={20}
+              className="size-5 object-contain"
+            />
+          }
         />
       ) : null}
       {appleLink ? (
         <IconLink
           href={appleLink}
           ariaLabel={t("appStore")}
-          icon={<Apple aria-hidden className="size-4" />}
+          icon={
+            <Image
+              src="/portfolio/stores/app-store.png"
+              alt=""
+              aria-hidden
+              width={20}
+              height={20}
+              className="size-5 object-contain"
+            />
+          }
         />
       ) : null}
       {external ? (
         <IconLink
           href={external.url}
           ariaLabel={external.label}
-          icon={<ExternalIcon aria-hidden className="size-4" />}
+          icon={<Sparkles aria-hidden className="size-4 text-brand" />}
         />
       ) : null}
     </span>

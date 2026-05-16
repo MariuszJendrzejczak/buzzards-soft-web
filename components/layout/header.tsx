@@ -22,7 +22,7 @@ import { cn } from "@/lib/utils";
 const NAV_KEYS = [
   { href: "#how-i-work", key: "howIWork" },
   { href: "#what-i-can-deliver", key: "whatIDeliver" },
-  { href: "#experience", key: "experience" },
+  { href: "#portfolio", key: "portfolio" },
   { href: "#currently-learning", key: "learning" },
   { href: "#about", key: "about" },
   { href: "#education", key: "education" },

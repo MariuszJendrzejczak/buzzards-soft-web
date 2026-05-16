@@ -27,10 +27,10 @@ import enMessages from "@/messages/en.json";
 import { renderWithIntl } from "./test-utils";
 
 const infoshare = getHoneticApp("infoshare");
-const uprawnienia = getHoneticApp("uprawnienia-budowlane");
+const kelner = getHoneticApp("gastro-ninja-kelner");
 const gastro = getHoneticApp("gastro-ninja-klient");
 
-if (!infoshare || !uprawnienia || !gastro) {
+if (!infoshare || !kelner || !gastro) {
   throw new Error("test fixture: hero apps must exist in HONETI_APPS");
 }
 
@@ -54,19 +54,28 @@ describe("<HeroAppMiniCard>", () => {
     expect(wrapper?.tagName).toBe("ARTICLE");
   });
 
-  it("title link points to /portfolio/honeti#<slug> (with locale prefix)", () => {
+  it("title link is device-aware: resolves to one of the app's store URLs (SSR fallback = Play Store)", () => {
     const { container } = renderWithIntl(<HeroAppMiniCard app={infoshare} />);
     const cardLink = container.querySelector(
       "[data-card-link]",
     ) as HTMLAnchorElement | null;
     expect(cardLink).not.toBeNull();
     expect(cardLink?.tagName).toBe("A");
-    expect(cardLink?.getAttribute("href")).toBe(
-      `/en/portfolio/honeti#${infoshare.slug}`,
-    );
     // The card link is exactly the app name; it's the focus target for
     // keyboard / SR users.
     expect(cardLink?.textContent).toBe(infoshare.name);
+    // The href must match one of the app's known URLs — the runtime picks
+    // googleLink / appleLink / external based on platform detection; under
+    // jsdom (UA contains "linux") the fallback is googleLink.
+    const acceptable = [
+      infoshare.googleLink,
+      infoshare.appleLink,
+      infoshare.external?.url,
+    ].filter(Boolean) as string[];
+    expect(acceptable).toContain(cardLink?.getAttribute("href"));
+    // Opens in new tab — store deep-links should leave the SPA in place.
+    expect(cardLink?.getAttribute("target")).toBe("_blank");
+    expect(cardLink?.getAttribute("rel")).toContain("noopener");
   });
 
   it("uses an `::after` overlay to extend the card's hit-area without nesting anchors", () => {
@@ -89,7 +98,7 @@ describe("<HeroAppMiniCard>", () => {
   });
 
   it("renders only the Google Play icon when appleLink is missing", () => {
-    renderWithIntl(<HeroAppMiniCard app={uprawnienia} />);
+    renderWithIntl(<HeroAppMiniCard app={kelner} />);
     expect(
       screen.getByLabelText(enMessages.portfolio.storeLink.googlePlay),
     ).toBeInTheDocument();
@@ -98,10 +107,10 @@ describe("<HeroAppMiniCard>", () => {
     ).toBeNull();
   });
 
-  it("truncates the description with line-clamp-2", () => {
+  it("renders the description without line-clamp truncation", () => {
     const { container } = renderWithIntl(<HeroAppMiniCard app={infoshare} />);
     const paragraph = container.querySelector("p");
-    expect(paragraph?.className).toContain("line-clamp-2");
+    expect(paragraph?.className).not.toContain("line-clamp");
   });
 
   it("renders the Unity stack variant for Unity apps (gastro-ninja-klient)", () => {

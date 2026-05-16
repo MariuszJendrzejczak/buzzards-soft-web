@@ -67,7 +67,7 @@ describe("<HoneticHero>", () => {
     expect(unityChips.length).toBeGreaterThanOrEqual(1);
   });
 
-  it("renders the inline technology tags Dart, Riverpod, REST API, Firebase, Clean Architecture", () => {
+  it("renders the inline technology tags Dart, Riverpod, REST API, Firebase, Clean Architecture, CI/CD", () => {
     renderWithIntl(<HoneticHero />);
     for (const tag of [
       "Dart",
@@ -75,16 +75,15 @@ describe("<HoneticHero>", () => {
       "REST API",
       "Firebase",
       "Clean Architecture",
+      "CI/CD",
     ]) {
       expect(screen.getByText(tag)).toBeInTheDocument();
     }
   });
 
-  it("renders the 'Unity (legacy)' muted note from i18n", () => {
+  it("does not render a 'Unity (legacy)' tag", () => {
     renderWithIntl(<HoneticHero />);
-    expect(
-      screen.getByText(enMessages.portfolio.honeti["unity-legacy-tag"]),
-    ).toBeInTheDocument();
+    expect(screen.queryByText(/Unity \(legacy\)/i)).toBeNull();
   });
 
   it("renders the CTA link pointing to /portfolio/honeti", () => {

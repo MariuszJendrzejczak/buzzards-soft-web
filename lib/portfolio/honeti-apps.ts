@@ -7,6 +7,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "infoshare",
     name: "Infoshare",
+    iconSrc: "/portfolio/icons/infoshare.png",
     stack: "Flutter",
     role: "od-zera",
     packageName: "com.infoshare.infoshareconference",
@@ -26,12 +27,14 @@ const HONETI_APPS_RAW = [
   {
     slug: "uprawnienia-budowlane",
     name: "Uprawnienia Budowlane",
+    iconSrc: "/portfolio/icons/uprawnienia-budowlane.png",
     stack: "Flutter",
     role: "od-zera",
     packageName: "com.investconstructions.uprawnieniabudowlane",
     googleLink: playUrl("com.investconstructions.uprawnieniabudowlane"),
+    appleLink: "https://apps.apple.com/pl/app/uprawnienia-budowlane-2026/id6593680389?l=pl",
     description:
-      "Aplikacja do nauki dla osób przygotowujących się do egzaminu na uprawnienia budowlane. Klient sprzedaje swoim użytkownikom subskrypcję dostępu do treści.",
+      "Aplikacja do nauki dla osób przygotowujących się do egzaminu na uprawnienia budowlane — testy, materiały, model subskrypcyjny dostępu do treści.",
     contribution: [
       "architektura MVC",
       "state management na Riverpodzie",
@@ -43,12 +46,14 @@ const HONETI_APPS_RAW = [
   {
     slug: "testy-prawnicze",
     name: "Testy Prawnicze",
+    iconSrc: "/portfolio/icons/testy-prawnicze.png",
     stack: "Flutter",
     role: "od-zera",
     packageName: "com.invest_constructions.uprawnienia_prawnicze",
     googleLink: playUrl("com.invest_constructions.uprawnienia_prawnicze"),
+    appleLink: "https://apps.apple.com/pl/app/testy-prawnicze/id6737805136?l=pl",
     description:
-      "Klon Uprawnień Budowlanych dla tego samego klienta — ten sam model (nauka pod egzamin + subskrypcja), inna domena prawnicza.",
+      "Aplikacja do nauki dla osób przygotowujących się do egzaminu prawniczego — ten sam model nauki przez testy i subskrypcji co Uprawnienia Budowlane, inna domena.",
     contribution: [
       "architektura MVC",
       "state management na Riverpodzie",
@@ -60,6 +65,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "gastro-ninja-kelner",
     name: "Gastro Ninja Kelner",
+    iconSrc: "/portfolio/icons/gastro-ninja-kelner.png",
     stack: "Flutter",
     role: "od-zera",
     packageName: "com.sayurisushi.gastroninjawaiter",
@@ -75,6 +81,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "gastro-ninja-kurier",
     name: "Gastro Ninja Kurier",
+    iconSrc: "/portfolio/icons/gastro-ninja-kurier.png",
     stack: "Flutter",
     role: "od-zera",
     packageName: "com.sayurisushi.gastroninjacourier.app_courier",
@@ -90,12 +97,14 @@ const HONETI_APPS_RAW = [
   {
     slug: "gastro-ninja-klient",
     name: "Gastro Ninja Klient",
+    iconSrc: "/portfolio/icons/gastro-ninja-klient.png",
     stack: "Unity",
     role: "rozwoj-i-serwis",
     packageName: "com.sayurisushi.gastroninjaapp",
     googleLink: playUrl("com.sayurisushi.gastroninjaapp"),
+    appleLink: "https://apps.apple.com/pl/app/gastroninja/id1542344916?l=pl",
     description:
-      "Aplikacja klienta końcowego w ekosystemie Gastro Ninja — platforma do zamawiania jedzenia, której właściciel używa we własnej restauracji i licencjonuje innym (model podobny do pyszne.pl / pizzaportal).",
+      "Aplikacja klienta końcowego w ekosystemie Gastro Ninja — platforma do zamawiania jedzenia na wynos i dostawę, w modelu podobnym do pyszne.pl / pizzaportal.",
     contribution: [
       "dodanie obsługi kodów promocyjnych",
       "odświeżanie i poprawki widoków",
@@ -105,12 +114,13 @@ const HONETI_APPS_RAW = [
   {
     slug: "soildata",
     name: "Soildata",
+    iconSrc: "/portfolio/icons/soildata.png",
     stack: "Unity",
-    role: "przejety-w-trakcie",
+    role: "rozwoj-i-serwis",
     packageName: "com.soildata.soildataapp",
     googleLink: playUrl("com.soildata.soildataapp"),
     description:
-      "Narzędzie dla geodetów — aplikacja niszowa zamówiona przez konkretnego klienta. Projekt przejęty w połowie implementacji i dopięty do stanu shipowalnego.",
+      "Narzędzie dla geodetów — niszowa aplikacja branżowa z mapami i danymi pomiarowymi. Projekt przejęty w połowie implementacji i dopięty do stanu shipowalnego.",
     contribution: [
       "integracja z Google Maps w środowisku Unity (nietrywialna)",
       "integracja REST API",
@@ -121,6 +131,8 @@ const HONETI_APPS_RAW = [
   {
     slug: "gen-oczami-dziecka",
     name: "Gen / Oczami Dziecka",
+    iconSrc: "/portfolio/icons/gen-oczami-dziecka.png",
+    iconBackground: "white",
     stack: "Unity",
     role: "rozwoj-i-serwis",
     description:
@@ -138,6 +150,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "words-en",
     name: "Angielski — słówka i obrazki",
+    iconSrc: "/portfolio/icons/words-en.png",
     stack: "Unity",
     role: "od-zera",
     packageName: "com.honeti.words_en",
@@ -154,6 +167,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "irregular-verbs",
     name: "Czasowniki nieregularne IQ",
+    iconSrc: "/portfolio/icons/irregular-verbs.png",
     stack: "Unity",
     role: "od-zera",
     packageName: "com.Honeti.IrregularVerbs",
@@ -170,6 +184,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "der-die-das",
     name: "Der Die Das",
+    iconSrc: "/portfolio/icons/der-die-das.png",
     stack: "Unity",
     role: "od-zera",
     packageName: "com.honeti.derdiedas",
@@ -186,6 +201,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "flags",
     name: "Flagi",
+    iconSrc: "/portfolio/icons/flags.png",
     stack: "Unity",
     role: "od-zera",
     packageName: "com.honeti.flags",
@@ -202,6 +218,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "multiplication",
     name: "Tabliczka Mnożenia",
+    iconSrc: "/portfolio/icons/multiplication.png",
     stack: "Unity",
     role: "rozwoj-i-serwis",
     packageName: "com.honeti.multiplication",
@@ -216,6 +233,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "exponents",
     name: "Potęgi i Pierwiastki",
+    iconSrc: "/portfolio/icons/exponents.png",
     stack: "Unity",
     role: "rozwoj-i-serwis",
     packageName: "com.honeti.exponents",
@@ -230,6 +248,7 @@ const HONETI_APPS_RAW = [
   {
     slug: "roman",
     name: "Cyfry Rzymskie",
+    iconSrc: "/portfolio/icons/roman.png",
     stack: "Unity",
     role: "rozwoj-i-serwis",
     packageName: "com.honeti.roman",
@@ -259,7 +278,6 @@ function groupByStackRole(
   const init = (): { readonly [R in Role]: HoneticApp[] } => ({
     "od-zera": [],
     "rozwoj-i-serwis": [],
-    "przejety-w-trakcie": [],
   });
 
   const grouped: { [S in Stack]: { [R in Role]: HoneticApp[] } } = {

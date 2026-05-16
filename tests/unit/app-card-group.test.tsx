@@ -15,12 +15,12 @@ describe("<AppCardGroup>", () => {
     renderWithIntl(
       <AppCardGroup
         groupId="flutter-od-zera"
-        titleKey="portfolio.honeti.group.flutter-od-zera"
+        titleKey="portfolio.honeti.group.flutter"
       />,
     );
     const heading = screen.getByRole("heading", { level: 2 });
     expect(heading.textContent).toBe(
-      enMessages.portfolio.honeti.group["flutter-od-zera"],
+      enMessages.portfolio.honeti.group["flutter"],
     );
   });
 
@@ -28,7 +28,7 @@ describe("<AppCardGroup>", () => {
     const { container } = renderWithIntl(
       <AppCardGroup
         groupId="flutter-od-zera"
-        titleKey="portfolio.honeti.group.flutter-od-zera"
+        titleKey="portfolio.honeti.group.flutter"
       />,
     );
     const section = container.querySelector("section");
@@ -43,19 +43,19 @@ describe("<AppCardGroup>", () => {
   it("uses `groupId` as a stable section anchor target", () => {
     const { container } = renderWithIntl(
       <AppCardGroup
-        groupId="unity-rozwoj"
-        titleKey="portfolio.honeti.group.unity-rozwoj"
+        groupId="unity"
+        titleKey="portfolio.honeti.group.unity"
       />,
     );
     const section = container.querySelector("section");
-    expect(section?.getAttribute("id")).toBe("unity-rozwoj");
+    expect(section?.getAttribute("id")).toBe("unity");
   });
 
   it("renders a placeholder stub when `placeholder` is true and no children given", () => {
     const { container } = renderWithIntl(
       <AppCardGroup
         groupId="flutter-od-zera"
-        titleKey="portfolio.honeti.group.flutter-od-zera"
+        titleKey="portfolio.honeti.group.flutter"
         placeholder
       />,
     );
@@ -70,7 +70,7 @@ describe("<AppCardGroup>", () => {
     const { container } = renderWithIntl(
       <AppCardGroup
         groupId="flutter-od-zera"
-        titleKey="portfolio.honeti.group.flutter-od-zera"
+        titleKey="portfolio.honeti.group.flutter"
         apps={flutterOdZera}
         placeholder
       />,
@@ -86,7 +86,7 @@ describe("<AppCardGroup>", () => {
     const { container } = renderWithIntl(
       <AppCardGroup
         groupId="flutter-od-zera"
-        titleKey="portfolio.honeti.group.flutter-od-zera"
+        titleKey="portfolio.honeti.group.flutter"
       >
         <div data-testid="child-card" />
         <div data-testid="child-card" />
@@ -103,7 +103,7 @@ describe("<AppCardGroup>", () => {
     const { container } = renderWithIntl(
       <AppCardGroup
         groupId="flutter-od-zera"
-        titleKey="portfolio.honeti.group.flutter-od-zera"
+        titleKey="portfolio.honeti.group.flutter"
       />,
     );
     const section = container.querySelector("section");
@@ -114,7 +114,7 @@ describe("<AppCardGroup>", () => {
     const { container } = renderWithIntl(
       <AppCardGroup
         groupId="flutter-od-zera"
-        titleKey="portfolio.honeti.group.flutter-od-zera"
+        titleKey="portfolio.honeti.group.flutter"
       />,
     );
     // Heading is still present, but no placeholder stub.
@@ -128,7 +128,7 @@ describe("<AppCardGroup>", () => {
     const { container } = renderWithIntl(
       <AppCardGroup
         groupId="flutter-od-zera"
-        titleKey="portfolio.honeti.group.flutter-od-zera"
+        titleKey="portfolio.honeti.group.flutter"
         className="custom-group-class"
       />,
     );
@@ -158,9 +158,9 @@ describe("<AppCardGroup>", () => {
     );
   });
 
-  it("Unity rozwoj-i-serwis group covers exactly 5 maintenance apps", () => {
+  it("Unity rozwoj-i-serwis group covers exactly 6 maintenance apps", () => {
     const apps = HONETI_APPS_BY_STACK_ROLE.Unity["rozwoj-i-serwis"];
-    expect(apps).toHaveLength(5);
+    expect(apps).toHaveLength(6);
     expect(apps.map((a) => a.slug).sort()).toEqual(
       [
         "gastro-ninja-klient",
@@ -168,31 +168,8 @@ describe("<AppCardGroup>", () => {
         "multiplication",
         "exponents",
         "roman",
+        "soildata",
       ].sort(),
     );
-  });
-
-  it("Unity przejety-w-trakcie group covers exactly the soildata app", () => {
-    const apps = HONETI_APPS_BY_STACK_ROLE.Unity["przejety-w-trakcie"];
-    expect(apps).toHaveLength(1);
-    expect(apps[0]?.slug).toBe("soildata");
-  });
-
-  it("placeholder stub indicates a singular app correctly", () => {
-    const single = getHoneticApp("soildata");
-    expect(single).toBeDefined();
-    const { container } = renderWithIntl(
-      <AppCardGroup
-        groupId="unity-przejety"
-        titleKey="portfolio.honeti.group.unity-przejety"
-        apps={[single!]}
-        placeholder
-      />,
-    );
-    const stub = container.querySelector(
-      "[data-group-placeholder='unity-przejety']",
-    );
-    expect(stub).not.toBeNull();
-    expect(stub?.textContent).toMatch(/1 app[^s]/);
   });
 });

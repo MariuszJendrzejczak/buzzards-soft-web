@@ -28,7 +28,7 @@ describe("HONETI_APPS — type & shape", () => {
   it("every role is one of the three allowed literals", () => {
     for (const app of HONETI_APPS) {
       expect(isRole(app.role), `app ${app.slug} has invalid role ${app.role}`).toBe(true);
-      expect(["od-zera", "rozwoj-i-serwis", "przejety-w-trakcie"]).toContain(app.role);
+      expect(["od-zera", "rozwoj-i-serwis"]).toContain(app.role);
     }
   });
 
@@ -90,10 +90,10 @@ describe("HONETI_APPS — counts per orchestrator override (15 = 5 Flutter + 10 
 });
 
 describe("HONETI_APPS — specific role assignments per planning doc", () => {
-  it("Soildata is taken over mid-way", () => {
+  it("Soildata is in development-and-maintenance", () => {
     const app = getHoneticApp("soildata");
     expect(app).toBeDefined();
-    expect(app?.role).toBe("przejety-w-trakcie");
+    expect(app?.role).toBe("rozwoj-i-serwis");
     expect(app?.stack).toBe("Unity");
   });
 
@@ -134,10 +134,16 @@ describe("HONETI_APPS — specific role assignments per planning doc", () => {
     },
   );
 
-  it("Infoshare is the only app with appleLink", () => {
-    const withApple = HONETI_APPS.filter((a) => a.appleLink !== undefined);
-    expect(withApple).toHaveLength(1);
-    expect(withApple[0].slug).toBe("infoshare");
+  it("apps with appleLink: infoshare, uprawnienia-budowlane, testy-prawnicze, gastro-ninja-klient", () => {
+    const slugs = HONETI_APPS.filter((a) => a.appleLink !== undefined)
+      .map((a) => a.slug)
+      .sort();
+    expect(slugs).toEqual([
+      "gastro-ninja-klient",
+      "infoshare",
+      "testy-prawnicze",
+      "uprawnienia-budowlane",
+    ]);
   });
 });
 
@@ -166,13 +172,11 @@ describe("HONETI_APPS_BY_STACK_ROLE — grouping integrity", () => {
   it("Flutter has no maintenance bucket entries (all five Flutter apps are od-zera)", () => {
     expect(HONETI_APPS_BY_STACK_ROLE.Flutter["od-zera"]).toHaveLength(5);
     expect(HONETI_APPS_BY_STACK_ROLE.Flutter["rozwoj-i-serwis"]).toHaveLength(0);
-    expect(HONETI_APPS_BY_STACK_ROLE.Flutter["przejety-w-trakcie"]).toHaveLength(0);
   });
 
-  it("Unity has the expected per-role split: 4 / 5 / 1", () => {
+  it("Unity has the expected per-role split: 4 / 6", () => {
     expect(HONETI_APPS_BY_STACK_ROLE.Unity["od-zera"]).toHaveLength(4);
-    expect(HONETI_APPS_BY_STACK_ROLE.Unity["rozwoj-i-serwis"]).toHaveLength(5);
-    expect(HONETI_APPS_BY_STACK_ROLE.Unity["przejety-w-trakcie"]).toHaveLength(1);
+    expect(HONETI_APPS_BY_STACK_ROLE.Unity["rozwoj-i-serwis"]).toHaveLength(6);
   });
 });
 
@@ -358,6 +362,5 @@ describe("type-level helpers in lib/portfolio/types", () => {
   it("roleLabelKey returns the expected i18n key shape", () => {
     expect(roleLabelKey("od-zera")).toBe("portfolio.role.od-zera");
     expect(roleLabelKey("rozwoj-i-serwis")).toBe("portfolio.role.rozwoj-i-serwis");
-    expect(roleLabelKey("przejety-w-trakcie")).toBe("portfolio.role.przejety-w-trakcie");
   });
 });

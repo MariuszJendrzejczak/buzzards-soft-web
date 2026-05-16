@@ -42,14 +42,13 @@ describe("SSG output — /portfolio/honeti per locale", () => {
     },
   );
 
-  it("pl/portfolio/honeti.html renders the localized PL H1 ('Portfolio Honeti — 15 apek (5 Flutter + 10 Unity)')", () => {
+  it("pl/portfolio/honeti.html renders the localized PL H1 ('Portfolio dla Honeti')", () => {
     const html = loadHtml("pl");
     expect(html).toContain(plMessages.portfolio.honeti["subpage-title"]);
-    // Loose check too: the planning doc's PL keyword "Portfolio Honeti".
-    expect(html).toMatch(/Portfolio Honeti/);
+    expect(html).toMatch(/Portfolio dla Honeti/);
   });
 
-  it("en/portfolio/honeti.html renders the EN H1 ('Honeti portfolio — 15 apps (5 Flutter + 10 Unity)')", () => {
+  it("en/portfolio/honeti.html renders the EN H1 ('Portfolio for Honeti')", () => {
     const html = loadHtml("en");
     expect(html).toContain(enMessages.portfolio.honeti["subpage-title"]);
   });
@@ -93,15 +92,10 @@ describe("SSG output — /portfolio/honeti per locale", () => {
   );
 
   it.each(LOCALES)(
-    "%s output exposes id anchors for all 4 group sections (flutter-od-zera, unity-od-zera, unity-rozwoj, unity-przejety)",
+    "%s output exposes id anchors for the 2 group sections (flutter, unity)",
     (locale) => {
       const html = loadHtml(locale);
-      for (const groupId of [
-        "flutter-od-zera",
-        "unity-od-zera",
-        "unity-rozwoj",
-        "unity-przejety",
-      ]) {
+      for (const groupId of ["flutter", "unity"]) {
         expect(
           html.includes(`id="${groupId}"`),
           `${locale}: missing group anchor id="${groupId}"`,

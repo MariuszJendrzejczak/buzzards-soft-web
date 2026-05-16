@@ -5,6 +5,11 @@ const BASE_URL = `http://localhost:${PORT}`;
 
 export default defineConfig({
   testDir: "./tests",
+  // Vitest unit suites live under `tests/unit/` and import `vitest` directly,
+  // which Playwright cannot evaluate. Restrict Playwright to e2e specs at the
+  // `tests/` root and skip the unit subtree.
+  testMatch: ["*.spec.ts"],
+  testIgnore: ["unit/**"],
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
