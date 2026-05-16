@@ -8,6 +8,8 @@ import { Experience } from "@/components/sections/experience/experience";
 import { Hero } from "@/components/sections/hero/hero";
 import { HowIWork } from "@/components/sections/work/how-i-work";
 import { WhatICanDeliver } from "@/components/sections/work/what-i-can-deliver";
+import { HoneticHero } from "@/components/portfolio/HoneticHero";
+import { WarsztatGrid } from "@/components/portfolio/WarsztatGrid";
 import { setRequestLocale } from "next-intl/server";
 import { TITLE_DEFAULT } from "@/lib/seo";
 
@@ -32,6 +34,8 @@ export default async function Home({
       <HowIWork />
       <WhatICanDeliver />
       <Experience />
+      <HoneticHero />
+      <WarsztatGrid />
       <CurrentlyLearning />
       <About />
       <Education />

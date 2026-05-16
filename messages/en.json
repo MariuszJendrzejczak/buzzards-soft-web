@@ -429,6 +429,67 @@
           "7": "direct work with clients and tailoring solutions to real business needs."
         }
       }
+    },
+    "honeti": {
+      "title": "Honeti portfolio — commercial work (4+ years)",
+      "role-line": "4+ years as a Mobile Developer at Honeti — full lifecycle from planning through implementation, testing, and release to long-term maintenance.",
+      "stack-aria": "Tech stack — Honeti portfolio",
+      "unity-legacy-tag": "Unity (legacy)",
+      "cta-full-list": "See the full Honeti portfolio",
+      "subpage-title": "Honeti portfolio — 15 apps (5 Flutter + 10 Unity)",
+      "subpage-lead": "The full list of projects from Honeti — 5 Flutter apps built from scratch and 10 Unity apps (from scratch, maintenance, taken over mid-way). Each card: role, business context, scope of my contribution, and store links.",
+      "group": {
+        "flutter-od-zera": "Flutter — all built from scratch",
+        "unity-od-zera": "Unity — proprietary educational series (from scratch)",
+        "unity-rozwoj": "Unity — maintenance and growth",
+        "unity-przejety": "Unity — project taken over mid-way"
+      }
+    },
+    "warsztat": {
+      "title": "AI workshop — methodology",
+      "intro": "What I bring to every team — independent of the project.",
+      "hero": {
+        "title": "Sprint-driven workflow with typed sessions",
+        "description": "Every change starts from durable context — BRIEF.md, a sprint file, or an ADR — not from a fresh prompt. Every agent session has a type (planner / implementer / tester / reviewer) and a single declared deliverable. Reviewer sessions are read-only — they cannot edit code, only write a list of concerns. The result: faster, but still disciplined — the agent does not merge on its own.",
+        "chipsAria": "Workflow artifacts",
+        "chip": {
+          "brief": "BRIEF.md (post-Polilocale public)",
+          "sprintFile": "sprint files (this site)",
+          "rules": "SPRINT_RULES.md"
+        }
+      },
+      "tile": {
+        "1": {
+          "title": "Claude Code configuration",
+          "description": "Per-project settings.json with permissions, custom keybindings, hookify rules with a concrete hook, custom status line / powerline.",
+          "example": ".claude/settings.json"
+        },
+        "2": {
+          "title": "Specialized sub-agents",
+          "description": "code-reviewer, sprint-implementer, sprint-tester, sprint-reviewer, codex-rescue. Each sub-agent has its own tools, prompt, and scope — not one universal agent that does everything.",
+          "example": "sprint-implementer / -tester / -reviewer"
+        },
+        "3": {
+          "title": "Custom slash commands and skills",
+          "description": "Repeatable SDLC processes packed into commands the whole team can run — from sprint planning to PR review.",
+          "example": "/sprint-run"
+        },
+        "4": {
+          "title": "MCP integrations in workflow",
+          "description": "context7 (live library docs), Playwright / Claude in Chrome (UI verification), scheduled-tasks (cron). The agent has real tools, not just knowledge.",
+          "example": "context7 · playwright · scheduled-tasks"
+        },
+        "5": {
+          "title": "Persistent memory + bilingual rule",
+          "description": "Memory system with types (user / feedback / project / reference) + a PL-conversation / EN-markdown meta-convention enforced by the workflow itself. Context does not vanish between sessions.",
+          "example": "PL conversation · EN markdown"
+        },
+        "6": {
+          "title": "Cost control + agent in the loop",
+          "description": "Token budgets, manual confirmations before destructive operations, ADRs before the agent touches code. AI does not merge on its own — I decide what lands in main.",
+          "example": "manual review before merge"
+        }
+      }
     }
   },
   "privacyPolicy": {

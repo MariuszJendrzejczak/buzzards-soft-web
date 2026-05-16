@@ -429,6 +429,67 @@
           "7": "direkt arbete med kunder och anpassning av lösningar till verkliga affärsbehov."
         }
       }
+    },
+    "honeti": {
+      "title": "Honeti-portföljen — kommersiellt (4+ år)",
+      "role-line": "4+ år som Mobile Developer på Honeti — hela livscykeln från planering, genom implementation, tester och release, till underhåll.",
+      "stack-aria": "Teknisk stack — Honeti-portföljen",
+      "unity-legacy-tag": "Unity (legacy)",
+      "cta-full-list": "Se hela Honeti-portföljen",
+      "subpage-title": "Honeti-portföljen — 15 appar (5 Flutter + 10 Unity)",
+      "subpage-lead": "Hela listan av projekt från Honeti — 5 Flutter-appar byggda från grunden och 10 Unity-appar (från grunden, underhåll, övertogs i pågående utveckling). Varje kort: roll, affärskontext, omfattningen av mitt bidrag och butikslänkar.",
+      "group": {
+        "flutter-od-zera": "Flutter — alla byggda från grunden",
+        "unity-od-zera": "Unity — egen utbildningsserie (från grunden)",
+        "unity-rozwoj": "Unity — underhåll och vidareutveckling",
+        "unity-przejety": "Unity — projekt övertaget i pågående utveckling"
+      }
+    },
+    "warsztat": {
+      "title": "AI-verkstad — metodik",
+      "intro": "Det jag tar med mig till varje team — oberoende av projekt.",
+      "hero": {
+        "title": "Sprint-driven workflow med typade sessioner",
+        "description": "Varje förändring börjar i ett varaktigt kontextdokument — BRIEF.md, en sprintfil eller ett ADR — inte i en ny prompt. Varje agentsession har en typ (planner / implementer / tester / reviewer) och en deklarerad leverans. Reviewer-sessioner är read-only — de kan inte redigera kod, bara skriva en lista av invändningar. Resultatet: snabbare, men fortfarande disciplinerat — agenten mergar inte själv.",
+        "chipsAria": "Workflow-artefakter",
+        "chip": {
+          "brief": "BRIEF.md (post-Polilocale public)",
+          "sprintFile": "sprint files (this site)",
+          "rules": "SPRINT_RULES.md"
+        }
+      },
+      "tile": {
+        "1": {
+          "title": "Claude Code-konfiguration",
+          "description": "Egen settings.json med permissions per projekt, custom keybindings, hookify rules med ett konkret hook, status line / powerline.",
+          "example": ".claude/settings.json"
+        },
+        "2": {
+          "title": "Specialiserade subagenter",
+          "description": "code-reviewer, sprint-implementer, sprint-tester, sprint-reviewer, codex-rescue. Varje subagent har egna verktyg, egen prompt och eget scope — inte en universell agent.",
+          "example": "sprint-implementer / -tester / -reviewer"
+        },
+        "3": {
+          "title": "Custom slash commands och skills",
+          "description": "Repeterbara SDLC-processer paketerade i kommandon som hela teamet kan köra — från sprintplanering till PR-review.",
+          "example": "/sprint-run"
+        },
+        "4": {
+          "title": "MCP-integrationer i workflow",
+          "description": "context7 (levande bibliotekdokumentation), Playwright / Claude in Chrome (UI-verifiering), scheduled-tasks (cron). Agenten har riktiga verktyg, inte bara kunskap.",
+          "example": "context7 · playwright · scheduled-tasks"
+        },
+        "5": {
+          "title": "Persistent memory + bilingual rule",
+          "description": "Minnessystem med typer (user / feedback / project / reference) + en meta-konvention PL-conversation / EN-markdown som workflow:t självt upprätthåller. Kontext försvinner inte mellan sessioner.",
+          "example": "PL conversation · EN markdown"
+        },
+        "6": {
+          "title": "Kostnadskontroll + agent i loopen",
+          "description": "Tokenbudgetar, manuella bekräftelser före destruktiva operationer, ADR:er innan agenten rör koden. AI mergar inte själv — jag bestämmer vad som hamnar i main.",
+          "example": "manual review before merge"
+        }
+      }
     }
   },
   "privacyPolicy": {
