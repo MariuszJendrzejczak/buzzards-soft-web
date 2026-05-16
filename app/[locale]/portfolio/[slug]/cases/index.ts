@@ -1,13 +1,13 @@
 import { getTranslations } from "next-intl/server";
 
-import { honetiCaseMeta } from "./honeti";
 import type { CaseStudy, CaseStudyMeta } from "./types";
 
 export type { CaseStudy, CaseStudyMeta };
 
-export const CASE_META: Record<string, CaseStudyMeta> = {
-  [honetiCaseMeta.slug]: honetiCaseMeta,
-};
+// The dynamic [slug] route stays in place for future flagship case studies
+// (per ADR 0002), but currently has no registered slugs — `/portfolio/honeti`
+// is served by the dedicated static route under `app/[locale]/portfolio/honeti/`.
+export const CASE_META: Record<string, CaseStudyMeta> = {};
 
 export const CASE_SLUGS = Object.keys(CASE_META);
 
