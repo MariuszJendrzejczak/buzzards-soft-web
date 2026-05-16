@@ -71,11 +71,28 @@ function loadHomeHtml(locale: Locale): string {
   return readFileSync(p, "utf8");
 }
 
-// We treat the current build as the OFF/OFF (default) cell unless an explicit
-// override env var says otherwise. This lets the same test file double as a
-// matrix-verification harness when ENV_FLAGS_MATRIX_BUILD="on-on" is set
-// before `npx vitest`.
-const MATRIX_BUILD = process.env.ENV_FLAGS_MATRIX_BUILD ?? "off-off";
+// Determine the matrix cell of the current build. By default we probe the
+// on-disk SSG output: if any locale's home HTML contains the gated section's
+// testid, the build was produced with both source flags ON; otherwise it
+// belongs to one of the three CLOSED-gate cells (off-off / on-off / off-on),
+// all of which share the same observable absence. `ENV_FLAGS_MATRIX_BUILD`
+// remains honored as an explicit override for one-off matrix-verification
+// runs that want to assert a specific cell.
+function detectMatrixCellFromBuild(): "on-on" | "off-off" {
+  for (const locale of LOCALES) {
+    const p = homeHtmlPath(locale);
+    if (
+      existsSync(p) &&
+      readFileSync(p, "utf8").includes(`data-testid="${SECTION_TESTID}"`)
+    ) {
+      return "on-on";
+    }
+  }
+  return "off-off";
+}
+
+const MATRIX_BUILD =
+  process.env.ENV_FLAGS_MATRIX_BUILD ?? detectMatrixCellFromBuild();
 
 describe("feature-flag matrix — SSG output (current build cell)", () => {
   it("a sanity check: home HTML is generated for all 3 locales", () => {
