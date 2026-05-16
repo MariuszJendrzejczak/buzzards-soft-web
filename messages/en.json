@@ -404,6 +404,16 @@
     "appsIntro": "Production apps I worked on — details I can share in a conversation.",
     "metaTitleFallback": "Case study",
     "metaDescription": "{role} · {period}. Scope of work, tech stack, and selected releases.",
+    "role": {
+      "od-zera": "from scratch",
+      "rozwoj-i-serwis": "maintenance",
+      "przejety-w-trakcie": "taken over mid-way"
+    },
+    "storeLink": {
+      "googlePlay": "Google Play",
+      "appStore": "App Store",
+      "external": "External website"
+    },
     "cases": {
       "honeti": {
         "title": "Honeti — Mobile Developer",
