@@ -13,7 +13,6 @@ describe("<RoleBadge>", () => {
     expect(badge).not.toBeNull();
     expect(badge?.textContent).toBe(enMessages.portfolio.role["od-zera"]);
     expect(badge?.className).toContain("emerald");
-    expect(badge?.className).not.toContain("amber");
     expect(badge?.className).not.toContain("gray");
   });
 
@@ -24,17 +23,6 @@ describe("<RoleBadge>", () => {
     expect(badge?.textContent).toBe(enMessages.portfolio.role["rozwoj-i-serwis"]);
     expect(badge?.className).toContain("gray");
     expect(badge?.className).not.toContain("emerald");
-    expect(badge?.className).not.toContain("amber");
-  });
-
-  it("renders the 'przejety-w-trakcie' label and amber variant classes", () => {
-    const { container } = renderWithIntl(<RoleBadge role="przejety-w-trakcie" />);
-    const badge = container.querySelector("[data-role='przejety-w-trakcie']") as HTMLElement | null;
-    expect(badge).not.toBeNull();
-    expect(badge?.textContent).toBe(enMessages.portfolio.role["przejety-w-trakcie"]);
-    expect(badge?.className).toContain("amber");
-    expect(badge?.className).not.toContain("emerald");
-    expect(badge?.className).not.toContain("gray");
   });
 
   it("merges a user-supplied className", () => {

@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/routing";
@@ -11,6 +12,7 @@ import { cn } from "@/lib/utils";
 
 import { HeroAppMiniCard } from "./HeroAppMiniCard";
 import { StackChip } from "./stack-chip";
+import { TechTag } from "./tech-tag";
 
 const HERO_SLUGS = [
   "infoshare",
@@ -24,6 +26,7 @@ const STACK_TAGS = [
   "REST API",
   "Firebase",
   "Clean Architecture",
+  "CI/CD",
 ] as const;
 
 export type HoneticHeroProps = {
@@ -48,7 +51,7 @@ export function HoneticHero({ className }: HoneticHeroProps) {
       id="portfolio-honeti"
       aria-labelledby="portfolio-honeti-heading"
       className={cn(
-        "relative isolate border-t border-border/60 py-24 sm:py-32",
+        "relative isolate border-t border-emerald-500/20 py-24 sm:py-32",
         className,
       )}
     >
@@ -56,9 +59,25 @@ export function HoneticHero({ className }: HoneticHeroProps) {
         <header className="max-w-3xl">
           <h3
             id="portfolio-honeti-heading"
-            className="font-heading text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl"
+            className="flex flex-wrap items-center gap-x-3 gap-y-2 font-heading text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl"
           >
-            {t("title")}
+            <span>{t("title")}</span>
+            <a
+              href="https://honeti.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={t("honetiLinkAria")}
+              className="inline-flex items-center rounded-md outline-none transition-opacity hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring/50"
+            >
+              <Image
+                src="/portfolio/honeti-logo.png"
+                alt="HONETi"
+                width={220}
+                height={68}
+                priority
+                className="h-7 w-auto sm:h-8 lg:h-9"
+              />
+            </a>
           </h3>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
             {t("role-line")}
@@ -78,9 +97,6 @@ export function HoneticHero({ className }: HoneticHeroProps) {
             ))}
             <li>
               <StackChip stack="Unity" />
-            </li>
-            <li>
-              <TechTag muted>{t("unity-legacy-tag")}</TechTag>
             </li>
           </ul>
         </header>
@@ -102,26 +118,5 @@ export function HoneticHero({ className }: HoneticHeroProps) {
         </div>
       </div>
     </section>
-  );
-}
-
-function TechTag({
-  children,
-  muted = false,
-}: {
-  children: React.ReactNode;
-  muted?: boolean;
-}) {
-  return (
-    <span
-      className={cn(
-        "inline-flex items-center rounded-md border px-2.5 py-1 font-mono text-xs leading-none whitespace-nowrap",
-        muted
-          ? "border-border/60 bg-surface/30 text-text-subtle"
-          : "border-border bg-surface/60 text-muted-foreground",
-      )}
-    >
-      {children}
-    </span>
   );
 }

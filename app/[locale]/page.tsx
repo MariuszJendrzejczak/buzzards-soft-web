@@ -4,12 +4,10 @@ import { About } from "@/components/sections/about/about";
 import { Contact } from "@/components/sections/contact/contact";
 import { CurrentlyLearning } from "@/components/sections/experience/currently-learning";
 import { Education } from "@/components/sections/education/education";
-import { Experience } from "@/components/sections/experience/experience";
 import { Hero } from "@/components/sections/hero/hero";
 import { HowIWork } from "@/components/sections/work/how-i-work";
 import { WhatICanDeliver } from "@/components/sections/work/what-i-can-deliver";
-import { HoneticHero } from "@/components/portfolio/HoneticHero";
-import { WarsztatGrid } from "@/components/portfolio/WarsztatGrid";
+import { PortfolioSection } from "@/components/portfolio/PortfolioSection";
 import { setRequestLocale } from "next-intl/server";
 import { TITLE_DEFAULT } from "@/lib/seo";
 
@@ -33,9 +31,7 @@ export default async function Home({
       <Hero />
       <HowIWork />
       <WhatICanDeliver />
-      <Experience />
-      <HoneticHero />
-      <WarsztatGrid />
+      <PortfolioSection id="portfolio" />
       <CurrentlyLearning />
       <About />
       <Education />

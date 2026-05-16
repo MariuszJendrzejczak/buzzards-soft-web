@@ -112,22 +112,25 @@ async function renderPage(locale: Locale = "en") {
 }
 
 describe("/portfolio/honeti — page integration (server component render)", () => {
-  it("renders the page-level H1 from portfolio.honeti.subpage-title", async () => {
+  it("renders the page-level H1 split into h1Main + h1Connector with HONETi logo", async () => {
     const { container } = await renderPage("en");
     const h1s = container.querySelectorAll("h1");
     expect(h1s).toHaveLength(1);
-    expect(h1s[0]?.textContent).toBe(
-      enMessages.portfolio.honeti["subpage-title"],
-    );
+    const text = h1s[0]?.textContent ?? "";
+    expect(text).toContain(enMessages.portfolio.honeti["h1Main"]);
+    expect(text).toContain(enMessages.portfolio.honeti["h1Connector"]);
+    // Logo link is rendered as <a> with the HONETi alt text on the inner Image.
+    const logo = h1s[0]?.querySelector("a[href='https://honeti.com/'] img");
+    expect(logo?.getAttribute("alt")).toBe("HONETi");
   });
 
-  it("renders exactly one breadcrumb link pointing back to /#experience", async () => {
+  it("renders exactly one breadcrumb link pointing back to /#portfolio (renamed from /#experience in Sprint 3 Session 2)", async () => {
     const { container } = await renderPage("en");
     const breadcrumb = container.querySelector(
       "nav[aria-label='Breadcrumb'] a",
     );
     expect(breadcrumb).not.toBeNull();
-    expect(breadcrumb?.getAttribute("href")).toBe("/#experience");
+    expect(breadcrumb?.getAttribute("href")).toBe("/#portfolio");
   });
 
   it("renders all 15 app names from HONETI_APPS — one assertion per app via a single loop", async () => {
@@ -145,19 +148,15 @@ describe("/portfolio/honeti — page integration (server component render)", () 
     for (const app of HONETI_APPS) {
       const card = container.querySelector(`#${CSS.escape(app.slug)}`);
       expect(card, `missing card with id="${app.slug}"`).not.toBeNull();
-      // The wrapper is the <AppCard> <article>.
-      expect(card?.tagName).toBe("ARTICLE");
+      // AppCard renders <article id={slug}>; the educational-series tile
+      // renders <li id={slug}> for the 7 apps inside it. Either is OK.
+      expect(["ARTICLE", "LI"]).toContain(card?.tagName);
     }
   });
 
-  it("renders exactly 4 <AppCardGroup> sections in the configured order", async () => {
+  it("renders exactly 2 <AppCardGroup> sections in the configured order (flutter, unity)", async () => {
     const { container } = await renderPage("en");
-    const expectedIds = [
-      "flutter-od-zera",
-      "unity-od-zera",
-      "unity-rozwoj",
-      "unity-przejety",
-    ];
+    const expectedIds = ["flutter", "unity"];
     const sections = expectedIds.map((id) => container.querySelector(`#${id}`));
     for (let i = 0; i < expectedIds.length; i += 1) {
       expect(
@@ -168,23 +167,20 @@ describe("/portfolio/honeti — page integration (server component render)", () 
     }
   });
 
-  it("renders exactly one <AppCard> per app — no duplication, no orphan card", async () => {
+  it("renders exactly one card-like element per app — no duplication, no orphan card", async () => {
     const { container } = await renderPage("en");
-    const cards = container.querySelectorAll("article[data-slug]");
+    // AppCard renders article[data-slug]; EducationalSeriesTile renders
+    // li[data-slug] for its 7 entries. Both count as "the card for this app".
+    const cards = container.querySelectorAll("[data-slug]");
     expect(cards).toHaveLength(HONETI_APPS.length);
     const slugs = Array.from(cards).map((c) => c.getAttribute("data-slug"));
     expect(new Set(slugs).size).toBe(HONETI_APPS.length);
   });
 
-  it("every <AppCard> lives under exactly one <AppCardGroup> (no card outside a group)", async () => {
+  it("every card-like element lives under one of the 2 group sections (no orphan card)", async () => {
     const { container } = await renderPage("en");
-    const groupIds = [
-      "flutter-od-zera",
-      "unity-od-zera",
-      "unity-rozwoj",
-      "unity-przejety",
-    ];
-    const cards = container.querySelectorAll("article[data-slug]");
+    const groupIds = ["flutter", "unity"];
+    const cards = container.querySelectorAll("[data-slug]");
     for (const card of cards) {
       const inGroup = groupIds.some((id) => {
         const section = container.querySelector(`#${id}`);
@@ -240,7 +236,7 @@ describe("/portfolio/honeti — page integration (server component render)", () 
     // We mocked getTranslations to walk pl.json by locale, so the H1 should
     // be the PL string.
     const h1 = container.querySelector("h1");
-    expect(h1?.textContent).toMatch(/Portfolio Honeti/);
+    expect(h1?.textContent).toMatch(/Portfolio.*wykonane dla/);
   });
 });
 
