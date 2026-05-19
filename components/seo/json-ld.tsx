@@ -40,7 +40,7 @@ export function JsonLd({ locale }: { locale: Locale }) {
       "@type": "Person",
       "@id": PERSON_ID,
       name: PERSON_NAME,
-      jobTitle: "AI-Augmented Developer",
+      jobTitle: "AI-Augmented Mobile Developer",
       description:
         "Software developer with 4+ years of commercial experience in Flutter and Unity, working with AI agents (Claude Code, MCP, custom tooling) as part of a daily development workflow.",
       url: homeUrl,

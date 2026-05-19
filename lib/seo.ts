@@ -6,12 +6,12 @@ import { routing } from "@/i18n/routing";
 export const SITE_URL = "https://buzzards-soft.com";
 export const SITE_NAME = "Buzzards Soft";
 export const TITLE_TEMPLATE = "%s | Buzzards Soft";
-export const TITLE_DEFAULT = "Buzzards Soft — AI-Augmented Developer";
+export const TITLE_DEFAULT = "Buzzards Soft — AI-Augmented Mobile Developer";
 export const OG_IMAGE = "/og-default.png";
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;
 export const OG_IMAGE_ALT =
-  "Buzzards Soft — AI-Augmented Developer · Flutter, Unity, AI tooling";
+  "Buzzards Soft — AI-Augmented Mobile Developer · Flutter, Unity, AI tooling";
 
 const HREFLANG: Record<Locale, string> = {
   pl: "pl-PL",

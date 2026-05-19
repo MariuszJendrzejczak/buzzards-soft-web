@@ -30,7 +30,7 @@
     "swedishAria": "Svenska"
   },
   "hero": {
-    "badge": "AI-Augmented Developer",
+    "badge": "AI-Augmented Mobile Developer",
     "badgeSub": "4+ lata komercyjnego programowania. Pracuję z agentami AI codziennie.",
     "headingLead": "Dostarczam software szybciej, bo ",
     "headingHighlight": "pracuję z AI codziennie",
@@ -343,7 +343,7 @@
     "copyFailed": "Nie udało się skopiować."
   },
   "footer": {
-    "tagline": "Flutter · Unity · AI-Augmented Developer. Otwarty na role i kontrakty.",
+    "tagline": "Flutter · Unity · AI-Augmented Mobile Developer. Otwarty na role i kontrakty.",
     "linksHeading": "Strona",
     "registryHeading": "Dane rejestrowe",
     "links": {
@@ -587,7 +587,7 @@
     "contactCta": "Skontaktuj się, jeśli to błąd"
   },
   "rootMetadata": {
-    "title": "Buzzards Soft — AI-Augmented Developer",
+    "title": "Buzzards Soft — AI-Augmented Mobile Developer",
     "description": "Programista (Flutter, Unity), który przebudował swój workflow wokół agentów AI. Otwarty na role i kontrakty."
   }
 }

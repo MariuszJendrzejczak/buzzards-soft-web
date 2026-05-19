@@ -30,7 +30,7 @@
     "swedishAria": "Svenska"
   },
   "hero": {
-    "badge": "AI-Augmented Developer",
+    "badge": "AI-Augmented Mobile Developer",
     "badgeSub": "4+ års kommersiell utveckling. Jag jobbar med AI-agenter varje dag.",
     "headingLead": "Jag levererar mjukvara snabbare eftersom ",
     "headingHighlight": "jag jobbar med AI varje dag",
@@ -343,7 +343,7 @@
     "copyFailed": "Kunde inte kopiera."
   },
   "footer": {
-    "tagline": "Flutter · Unity · AI-Augmented Developer. Öppen för roller och uppdrag.",
+    "tagline": "Flutter · Unity · AI-Augmented Mobile Developer. Öppen för roller och uppdrag.",
     "linksHeading": "Sida",
     "registryHeading": "Registeruppgifter",
     "links": {
@@ -587,7 +587,7 @@
     "contactCta": "Hör av dig om det här är ett fel"
   },
   "rootMetadata": {
-    "title": "Buzzards Soft — AI-Augmented Developer",
+    "title": "Buzzards Soft — AI-Augmented Mobile Developer",
     "description": "En utvecklare (Flutter, Unity) som byggde om sitt arbetsflöde kring AI-agenter. Öppen för roller och uppdrag."
   }
 }
