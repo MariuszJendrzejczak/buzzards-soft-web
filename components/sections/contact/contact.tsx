@@ -4,6 +4,7 @@ import { ScrollReveal } from "@/components/shared/scroll-reveal";
 
 import { ContactForm } from "./contact-form";
 import { ContactInfo } from "./contact-info";
+import { CvDownloads } from "./cv-downloads";
 
 export async function Contact() {
   const t = await getTranslations("contact");
@@ -43,6 +44,8 @@ export async function Contact() {
                 <ContactInfo />
               </div>
             </div>
+
+            <CvDownloads />
           </div>
 
           <div className="order-1 lg:order-2">

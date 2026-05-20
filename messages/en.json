@@ -285,7 +285,10 @@
     "introLead": "I'm the best fit where you're looking for ",
     "introHighlight": "a developer who already has working products under his belt and can work with AI in the workflow",
     "introTrail": ". If this profile fits what you're looking for — get in touch and let's talk through the details.",
-    "directLabel": "Direct contact"
+    "directLabel": "Direct contact",
+    "downloadsLabel": "Download CV",
+    "cvPolish": "Polish version (PDF)",
+    "cvEnglish": "English version (PDF)"
   },
   "contactForm": {
     "requiredHintPrefix": "Fields marked ",

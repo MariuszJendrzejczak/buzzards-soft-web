@@ -285,7 +285,10 @@
     "introLead": "Najlepiej trafiam tam, gdzie szuka się ",
     "introHighlight": "programisty, który już ma za sobą działające produkty i potrafi pracować z AI w workflow",
     "introTrail": ". Jeśli ten profil pasuje do tego, czego szukasz — odezwij się i omówmy szczegóły.",
-    "directLabel": "Dane bezpośrednie"
+    "directLabel": "Dane bezpośrednie",
+    "downloadsLabel": "Pobierz CV",
+    "cvPolish": "Wersja polska (PDF)",
+    "cvEnglish": "Wersja angielska (PDF)"
   },
   "contactForm": {
     "requiredHintPrefix": "Pola oznaczone ",

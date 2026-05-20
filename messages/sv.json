@@ -285,7 +285,10 @@
     "introLead": "Jag passar bäst där man söker ",
     "introHighlight": "en utvecklare som redan har fungerande produkter bakom sig och kan jobba med AI i arbetsflödet",
     "introTrail": ". Om den här profilen passar det du söker — hör av dig så går vi igenom detaljerna.",
-    "directLabel": "Direkt kontakt"
+    "directLabel": "Direkt kontakt",
+    "downloadsLabel": "Ladda ner CV",
+    "cvPolish": "Polsk version (PDF)",
+    "cvEnglish": "Engelsk version (PDF)"
   },
   "contactForm": {
     "requiredHintPrefix": "Fält markerade med ",
