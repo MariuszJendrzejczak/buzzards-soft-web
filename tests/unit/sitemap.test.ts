@@ -13,9 +13,9 @@ vi.mock("@/i18n/routing", () => ({
 import sitemap from "@/app/sitemap";
 
 describe("app/sitemap.ts — route set", () => {
-  it("emits exactly N routes × 3 locales (home + /portfolio/honeti + /privacy-policy = 9 entries)", () => {
+  it("emits exactly N routes × 3 locales (home + /portfolio/honeti + /web-pages-offer + /privacy-policy = 12 entries)", () => {
     const entries = sitemap();
-    expect(entries).toHaveLength(9);
+    expect(entries).toHaveLength(12);
   });
 
   it("advertises /portfolio/honeti in all 3 locales (folded-in sprint-002 reviewer MAJOR concern)", () => {

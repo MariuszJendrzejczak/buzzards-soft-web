@@ -1,7 +1,7 @@
 ---
 change-id: client-web-offer
 title: "Individual-client offer — AI+human landing pages & simple mobile apps"
-status: preparing
+status: implementing
 created: 2026-07-18
 updated: 2026-07-18
 ---

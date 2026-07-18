@@ -20,7 +20,8 @@
       "learning": "Growth",
       "about": "About",
       "education": "Education",
-      "contact": "Contact"
+      "contact": "Contact",
+      "offer": "Strony dla firm"
     }
   },
   "language": {
@@ -678,6 +679,47 @@
     "bodyPart2": ", I'll fix it.",
     "back": "Back to home",
     "contactCta": "Get in touch if this is a bug"
+  },
+  "offer": {
+    "meta": {
+      "title": "Strony internetowe dla firm i freelancerów",
+      "description": "Strona jak z agencji — bez ceny agencji. Robię indywidualne strony dla małych firm i freelancerów, szybciej i taniej dzięki AI, z człowiekiem na każdym kroku."
+    },
+    "breadcrumbBack": "Wróć do strony głównej",
+    "documentBadge": "Oferta · Strony internetowe",
+    "hero": {
+      "heading": "Strona jak z agencji — bez ceny agencji."
+    },
+    "threePaths": {
+      "heading": "Masz dziś dwie drogi — i obie mają haczyk."
+    },
+    "process": {
+      "heading": "Jak powstaje Twoja strona — 5 kroków"
+    },
+    "standard": {
+      "heading": "To dostajesz w każdej stronie"
+    },
+    "pricing": {
+      "heading": "Proste pakiety, jawne ceny"
+    },
+    "modules": {
+      "heading": "Rozbuduj o to, czego potrzebujesz"
+    },
+    "whyAi": {
+      "heading": "Używam AI — i mówię o tym wprost"
+    },
+    "limits": {
+      "heading": "Czego nie robię (i mówię to od razu)"
+    },
+    "ownership": {
+      "heading": "Strona jest Twoja — bez uwięzienia"
+    },
+    "faq": {
+      "heading": "Najczęstsze pytania"
+    },
+    "quote": {
+      "heading": "Opisz krótko, czego potrzebujesz — odezwę się z wyceną."
+    }
   },
   "rootMetadata": {
     "title": "Buzzards Soft — AI-Augmented Mobile Developer",

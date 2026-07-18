@@ -26,6 +26,7 @@ const NAV_KEYS = [
   // { href: "#currently-learning", key: "learning" }, // temporarily hidden with the "Rozwój" section
   { href: "#about", key: "about" },
   { href: "#education", key: "education" },
+  { href: "/web-pages-offer", key: "offer" },
   { href: "#contact", key: "contact" },
 ] as const;
 
@@ -119,20 +120,34 @@ export function Header() {
                   aria-label={tNav("mobileAria")}
                   className="flex flex-1 flex-col gap-1 px-4 py-2"
                 >
-                  {NAV_KEYS.map((item) => (
-                    <SheetClose
-                      key={item.href}
-                      render={
-                        <a
-                          href={item.href}
-                          onClick={hideHeader}
-                          className="rounded-md px-3 py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring/50"
-                        >
-                          {tNav(`items.${item.key}`)}
-                        </a>
-                      }
-                    />
-                  ))}
+                  {NAV_KEYS.map((item) => {
+                    const className =
+                      "rounded-md px-3 py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring/50";
+                    return (
+                      <SheetClose
+                        key={item.href}
+                        render={
+                          item.href.startsWith("/") ? (
+                            <Link
+                              href={item.href}
+                              onClick={hideHeader}
+                              className={className}
+                            >
+                              {tNav(`items.${item.key}`)}
+                            </Link>
+                          ) : (
+                            <a
+                              href={item.href}
+                              onClick={hideHeader}
+                              className={className}
+                            >
+                              {tNav(`items.${item.key}`)}
+                            </a>
+                          )
+                        }
+                      />
+                    );
+                  })}
                 </nav>
 
                 <div className="flex flex-col gap-3 border-t border-border/60 p-4">
@@ -191,12 +206,19 @@ function NavLink({
   label: string;
   onNavigate?: () => void;
 }) {
+  const className =
+    "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50";
+
+  if (item.href.startsWith("/")) {
+    return (
+      <Link href={item.href} onClick={onNavigate} className={className}>
+        {label}
+      </Link>
+    );
+  }
+
   return (
-    <a
-      href={item.href}
-      onClick={onNavigate}
-      className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
-    >
+    <a href={item.href} onClick={onNavigate} className={className}>
       {label}
     </a>
   );
