@@ -428,11 +428,11 @@ matches existing sections (no new perf surface). No images added beyond the shar
 
 #### Automated
 
-- [ ] 2.1 Build passes: `npm run build`
-- [ ] 2.2 Lint passes: `npm run lint`
-- [ ] 2.3 Tests pass: `npm run test`
-- [ ] 2.4 Pricing test asserts both tiers + struck base + promo + "end of August" note
-- [ ] 2.5 FAQ test asserts the expected Q&A set
+- [x] 2.1 Build passes: `npm run build` — fa0613a
+- [x] 2.2 Lint passes: `npm run lint` (delta-clean; pre-existing artifact noise only) — fa0613a
+- [x] 2.3 Tests pass: `npm run test` — fa0613a
+- [x] 2.4 Pricing test asserts both tiers + struck base + promo + "end of August" note — fa0613a
+- [x] 2.5 FAQ test asserts the expected Q&A set — fa0613a
 
 #### Manual
 
@@ -445,11 +445,11 @@ matches existing sections (no new perf surface). No images added beyond the shar
 
 #### Automated
 
-- [ ] 3.1 Build passes: `npm run build`
-- [ ] 3.2 Lint passes: `npm run lint`
-- [ ] 3.3 Tests pass: `npm run test`
-- [ ] 3.4 Existing contact-form tests still pass (backwards-compatible prop)
-- [ ] 3.5 Test asserts offer page renders form with offer-specific intro/placeholder
+- [x] 3.1 Build passes: `npm run build`
+- [x] 3.2 Lint passes: `npm run lint` (delta-clean; pre-existing artifact noise only)
+- [x] 3.3 Tests pass: `npm run test`
+- [x] 3.4 Existing contact-form tests still pass (backwards-compatible prop)
+- [x] 3.5 Test asserts offer page renders form with offer-specific intro/placeholder
 
 #### Manual
 

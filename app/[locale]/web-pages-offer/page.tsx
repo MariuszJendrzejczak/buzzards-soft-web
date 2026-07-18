@@ -15,6 +15,7 @@ import { OfferWhyAi } from "@/components/sections/offer/offer-why-ai";
 import { OfferLimits } from "@/components/sections/offer/offer-limits";
 import { OfferOwnership } from "@/components/sections/offer/offer-ownership";
 import { OfferFaq } from "@/components/sections/offer/offer-faq";
+import { OfferQuote } from "@/components/sections/offer/offer-quote";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -70,7 +71,7 @@ export default async function WebPagesOfferPage({
         </nav>
       </div>
 
-      {/* Ordered top→bottom per the locked slice plan. Quote/form is Phase 3. */}
+      {/* Ordered top→bottom per the locked slice plan. */}
       <OfferHero />
       <OfferThreePaths />
       <OfferProcess />
@@ -81,6 +82,7 @@ export default async function WebPagesOfferPage({
       <OfferLimits />
       <OfferOwnership />
       <OfferFaq />
+      <OfferQuote />
     </article>
   );
 }

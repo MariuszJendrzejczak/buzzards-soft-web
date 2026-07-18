@@ -898,7 +898,9 @@
       }
     },
     "quote": {
-      "heading": "Opisz krótko, czego potrzebujesz — odezwę się z wyceną."
+      "heading": "Opisz krótko, czego potrzebujesz — odezwę się z wyceną.",
+      "intro": "Bez zobowiązań. Napisz w kilku zdaniach, co robisz i czego potrzebujesz — odpiszę z wyceną i propozycją, jak to zrobić.",
+      "messagePlaceholder": "jaką firmę/usługę masz i czego potrzebujesz"
     }
   },
   "rootMetadata": {
