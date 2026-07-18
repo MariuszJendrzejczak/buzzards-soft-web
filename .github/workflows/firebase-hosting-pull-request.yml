@@ -34,11 +34,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Unit tests (vitest)
-        run: npm test
-
+      # Build BEFORE tests: the SSG-layer suites (feature-flag-matrix-ssg,
+      # ssg-output) assert on the static export under out/, so it must exist
+      # when vitest runs.
       - name: Build (next build + RSC payload copy)
         run: npm run build
+
+      - name: Unit tests (vitest)
+        run: npm test
 
       - name: Deploy to Firebase Hosting preview channel
         uses: FirebaseExtended/action-hosting-deploy@v0
