@@ -445,11 +445,11 @@ matches existing sections (no new perf surface). No images added beyond the shar
 
 #### Automated
 
-- [x] 3.1 Build passes: `npm run build`
-- [x] 3.2 Lint passes: `npm run lint` (delta-clean; pre-existing artifact noise only)
-- [x] 3.3 Tests pass: `npm run test`
-- [x] 3.4 Existing contact-form tests still pass (backwards-compatible prop)
-- [x] 3.5 Test asserts offer page renders form with offer-specific intro/placeholder
+- [x] 3.1 Build passes: `npm run build` — 8668b3c
+- [x] 3.2 Lint passes: `npm run lint` (delta-clean; pre-existing artifact noise only) — 8668b3c
+- [x] 3.3 Tests pass: `npm run test` — 8668b3c
+- [x] 3.4 Existing contact-form tests still pass (backwards-compatible prop) — 8668b3c
+- [x] 3.5 Test asserts offer page renders form with offer-specific intro/placeholder — 8668b3c
 
 #### Manual
 
@@ -460,10 +460,10 @@ matches existing sections (no new perf surface). No images added beyond the shar
 
 #### Automated
 
-- [ ] 4.1 Build passes: `npm run build`
-- [ ] 4.2 Lint passes: `npm run lint`
-- [ ] 4.3 Unit/integration tests pass: `npm run test`
-- [ ] 4.4 i18n-completeness confirms pl/en/sv `offer` parity
+- [x] 4.1 Build passes: `npm run build`
+- [x] 4.2 Lint passes: `npm run lint` (delta-clean; pre-existing artifact noise only)
+- [x] 4.3 Unit/integration tests pass: `npm run test`
+- [x] 4.4 i18n-completeness confirms pl/en/sv `offer` parity
 - [ ] 4.5 Playwright 3-locale spec passes: `npm run test:e2e`
 
 #### Manual

@@ -21,7 +21,7 @@
       "about": "About",
       "education": "Education",
       "contact": "Contact",
-      "offer": "Strony dla firm"
+      "offer": "Sites for businesses"
     }
   },
   "language": {
@@ -682,225 +682,225 @@
   },
   "offer": {
     "meta": {
-      "title": "Strony internetowe dla firm i freelancerów",
-      "description": "Strona jak z agencji — bez ceny agencji. Robię indywidualne strony dla małych firm i freelancerów, szybciej i taniej dzięki AI, z człowiekiem na każdym kroku."
+      "title": "Websites for businesses and freelancers",
+      "description": "An agency-grade website — without the agency price. I build custom websites for small businesses and freelancers, faster and cheaper thanks to AI, with a real person at every step."
     },
-    "breadcrumbBack": "Wróć do strony głównej",
-    "documentBadge": "Oferta · Strony internetowe",
+    "breadcrumbBack": "Back to the home page",
+    "documentBadge": "Offer · Websites",
     "hero": {
-      "eyebrow": "Strony internetowe · dla firm i freelancerów",
-      "heading": "Strona jak z agencji — bez ceny agencji.",
-      "subtitle": "Robię strony dla małych firm, freelancerów i osób, które chcą zaistnieć w sieci. Pracuję z AI — dzięki temu dostarczam szybciej i taniej to, za co agencje liczą 4–5 tys. zł. Ale to nie generator: na każdym kroku jest człowiek, z którym pogadasz.",
-      "ctaPrimary": "Wyceń swoją stronę",
-      "ctaSecondary": "Zobacz, jak to działa"
+      "eyebrow": "Websites · for businesses and freelancers",
+      "heading": "An agency-grade website — without the agency price.",
+      "subtitle": "I build websites for small businesses, freelancers and anyone who wants to show up online. I work with AI — which lets me deliver what agencies charge 4,000–5,000 zł for, faster and cheaper. But it's not a generator: at every step there's a real person you can talk to.",
+      "ctaPrimary": "Get a quote for your site",
+      "ctaSecondary": "See how it works"
     },
     "threePaths": {
-      "heading": "Masz dziś dwie drogi — i obie mają haczyk.",
-      "agencyTitle": "Agencja",
-      "agencyBody": "ładnie, ale 4–5 tys. zł i tygodnie czekania.",
-      "generatorTitle": "Generator AI",
-      "generatorBody": "kilka stówek, ale szablon jak u wszystkich, a stronę tracisz w dniu, w którym przestaniesz płacić abonament.",
-      "mineTitle": "Ja — trzecia droga.",
-      "mineBody": "Indywidualna strona robiona przez człowieka, w cenie bliżej generatora niż agencji, którą dostajesz na własność. Bez abonamentu, bez szablonu."
+      "heading": "Today you have two options — and both come with a catch.",
+      "agencyTitle": "Agency",
+      "agencyBody": "looks great, but 4,000–5,000 zł and weeks of waiting.",
+      "generatorTitle": "AI generator",
+      "generatorBody": "a few hundred, but a template like everyone else's — and you lose the site the day you stop paying the subscription.",
+      "mineTitle": "Me — the third option.",
+      "mineBody": "A custom website built by a real person, at a price closer to a generator than an agency, that you own. No subscription, no template."
     },
     "process": {
-      "heading": "Jak powstaje Twoja strona — 5 kroków",
+      "heading": "How your site comes together — 5 steps",
       "steps": {
         "talk": {
-          "title": "Rozmowa.",
-          "body": "Zaczynamy od zwykłej rozmowy — opowiadasz, co robisz, dla kogo i czego potrzebujesz. Rozmawiasz ze mną, nie z botem."
+          "title": "A conversation.",
+          "body": "We start with a normal conversation — you tell me what you do, who for, and what you need. You talk to me, not to a bot."
         },
         "content": {
-          "title": "Treść.",
-          "body": "Nie musisz nic pisać. Na podstawie krótkiego wywiadu generuję i sprawdzam teksty moim procesem — dostajesz gotowe do akceptacji. Wolisz swoje? Też dobrze — wtedy je dopracowuję."
+          "title": "Content.",
+          "body": "You don't have to write a thing. Based on a short interview I generate and check the copy with my process — you get it ready to approve. Prefer your own? That's fine too — then I polish it."
         },
         "design": {
-          "title": "Projekt.",
-          "body": "Projektuję stronę pod Ciebie (nie szablon), pokazuję, nanosimy uwagi."
+          "title": "Design.",
+          "body": "I design the site around you (not a template), show it to you, and we work through your notes."
         },
         "publish": {
-          "title": "Publikacja.",
-          "body": "Publikuję na Twoim hostingu i Twojej domenie — wszystko na Twoich kontach."
+          "title": "Launch.",
+          "body": "I publish on your hosting and your domain — everything on your own accounts."
         },
         "revisions": {
-          "title": "Poprawki.",
-          "body": "Po starcie masz jeszcze rundy zmian (2 przy Basic, 4 przy Full)."
+          "title": "Revisions.",
+          "body": "After launch you still get rounds of changes (2 with Basic, 4 with Full)."
         }
       },
-      "proofPrefix": "Chcesz zobaczyć mój proces pod maską?",
-      "proofLink": "Tak pracuję z AI →",
-      "proofSuffix": "— ten sam kontrolowany tor, na którym powstała ta strona."
+      "proofPrefix": "Want to see my process under the hood?",
+      "proofLink": "This is how I work with AI →",
+      "proofSuffix": "— the same controlled track this very site was built on."
     },
     "standard": {
-      "heading": "To dostajesz w każdej stronie",
+      "heading": "Here's what you get with every site",
       "items": {
-        "mobile": "Mobilna i szybka (bo większość Twoich klientów wejdzie z telefonu)",
-        "contact": "Formularz kontaktowy + „zadzwoń jednym kliknięciem”",
-        "seo": "Podstawy SEO — techniczny fundament, żeby Google Cię widział",
-        "hosting": "Darmowy hosting + Twoja własna domena + certyfikat SSL",
-        "gdpr": "Zgodność z RODO (baner cookies + polityka prywatności)",
-        "content": "Teksty przygotowane i sprawdzone (jeśli nie masz własnych)"
+        "mobile": "Mobile-friendly and fast (because most of your customers will visit from a phone)",
+        "contact": "Contact form + “call with one tap”",
+        "seo": "SEO basics — the technical foundation so Google can see you",
+        "hosting": "Free hosting + your own domain + SSL certificate",
+        "gdpr": "GDPR compliance (cookie banner + privacy policy)",
+        "content": "Copy prepared and checked (if you don't have your own)"
       }
     },
     "pricing": {
-      "heading": "Proste pakiety, jawne ceny",
-      "promoNote": "cena ważna do końca sierpnia",
-      "footnote": "Ceny netto. „Cena startowa” obowiązuje w okresie startu oferty.",
+      "heading": "Simple packages, transparent prices",
+      "promoNote": "price valid until the end of August",
+      "footnote": "Net prices. The “launch price” applies during the offer's launch period.",
       "rowLabels": {
-        "price": "Cena",
-        "audience": "Dla kogo",
-        "pages": "Strona",
-        "aiContent": "Treść z AI + weryfikacja",
-        "base": "Formularz + SEO techniczne + RODO + hosting + domena",
-        "googleBusiness": "Google Business (widoczność lokalna)",
-        "animations": "Animacje",
-        "themeToggle": "Tryb ciemny/jasny (przełącznik)",
-        "language": "1 język",
-        "revisions": "Rundy poprawek"
+        "price": "Price",
+        "audience": "Who it's for",
+        "pages": "Site",
+        "aiContent": "AI content + review",
+        "base": "Form + technical SEO + GDPR + hosting + domain",
+        "googleBusiness": "Google Business (local visibility)",
+        "animations": "Animations",
+        "themeToggle": "Dark/light mode (toggle)",
+        "language": "1 language",
+        "revisions": "Revision rounds"
       },
       "included": "✓",
-      "module": "moduł",
+      "module": "module",
       "basic": {
         "name": "Basic",
         "basePrice": "1299 zł",
         "promoPrice": "999 zł",
-        "priceTag": "cena startowa",
-        "audience": "wizytówka / prosta oferta",
-        "pages": "1 strona, do 5 sekcji",
-        "revisions": "2 / 7 dni",
-        "cta": "Wyceń Basic"
+        "priceTag": "launch price",
+        "audience": "business card / simple offer",
+        "pages": "1 page, up to 5 sections",
+        "revisions": "2 / 7 days",
+        "cta": "Quote Basic"
       },
       "full": {
         "name": "Full",
         "basePrice": "2499 zł",
         "promoPrice": "1999 zł",
-        "priceTag": "cena startowa",
-        "audience": "firma, która chce być widoczna i łapać kontakt",
-        "pages": "do 8 sekcji + 2 podstrony",
-        "revisions": "4 / 14 dni",
-        "cta": "Wyceń Full"
+        "priceTag": "launch price",
+        "audience": "a business that wants to be visible and capture leads",
+        "pages": "up to 8 sections + 2 subpages",
+        "revisions": "4 / 14 days",
+        "cta": "Quote Full"
       },
       "custom": {
-        "name": "Większy projekt",
-        "price": "Wycena indywidualna",
-        "audience": "sklep, custom od zera, złożone integracje",
-        "pages": "wg potrzeb",
-        "revisions": "ustalane",
-        "cta": "Porozmawiajmy"
+        "name": "Bigger project",
+        "price": "Custom quote",
+        "audience": "shop, custom build from scratch, complex integrations",
+        "pages": "as needed",
+        "revisions": "to be agreed",
+        "cta": "Let's talk"
       }
     },
     "modules": {
-      "heading": "Rozbuduj o to, czego potrzebujesz",
-      "colModule": "Moduł",
-      "colPrice": "Cena",
+      "heading": "Add on whatever you need",
+      "colModule": "Module",
+      "colPrice": "Price",
       "items": {
         "localVisibility": {
-          "name": "Widoczność lokalna (Google Business + Mapy + opinie)",
+          "name": "Local visibility (Google Business + Maps + reviews)",
           "price": "+250 zł"
         },
         "animations": {
-          "name": "Animacje / efekty",
+          "name": "Animations / effects",
           "price": "+400 zł"
         },
         "themeToggle": {
-          "name": "Tryb ciemny/jasny (przełącznik)",
+          "name": "Dark/light mode (toggle)",
           "price": "+400 zł"
         },
         "extraLanguage": {
-          "name": "Dodatkowy język",
-          "price": "+400 zł / język"
+          "name": "Additional language",
+          "price": "+400 zł / language"
         },
         "selfEdit": {
-          "name": "Samodzielna edycja treści (bez abonamentu)",
+          "name": "Edit content yourself (no subscription)",
           "price": "+700 zł"
         },
         "leads": {
-          "name": "Zbieranie leadów (lista mailingowa albo arkusz zgłoszeń)",
-          "price": "+400 zł (oba +550)"
+          "name": "Lead capture (mailing list or a submissions sheet)",
+          "price": "+400 zł (both +550)"
         },
         "booking": {
-          "name": "Rezerwacje / kalendarz",
+          "name": "Bookings / calendar",
           "price": "+350 zł"
         },
         "extraPage": {
-          "name": "Dodatkowa podstrona",
+          "name": "Additional subpage",
           "price": "+300 zł"
         },
         "blog": {
-          "name": "Blog / aktualności",
+          "name": "Blog / news",
           "price": "+700 zł"
         },
         "conversionTracking": {
-          "name": "Śledzenie konwersji (pod reklamy)",
+          "name": "Conversion tracking (for ads)",
           "price": "+250 zł"
         },
         "domainEmail": {
-          "name": "Konfiguracja domeny + firmowy e-mail",
+          "name": "Domain setup + business email",
           "price": "+150 zł"
         }
       }
     },
     "whyAi": {
-      "heading": "Używam AI — i mówię o tym wprost",
-      "body1": "Bo to uczciwe i bo dzięki temu jesteś do przodu: płacisz mniej i masz szybciej. Ale to nie jest „napisz mi stronę” wklejone do ChatGPT. Mam własny, dopracowany proces — wyspecjalizowane narzędzia i etapy sprawdzania — żeby to, co dostajesz, było dobre, a nie „jakieś”. AI daje prędkość i niższą cenę. Ja daję jakość, decyzje i odpowiedzialność.",
-      "proofPrefix": "Dowód? Ta strona i moje projekty powstały dokładnie w tym procesie — a cały mój warsztat jest",
-      "proofLink": "publicznie opisany →",
+      "heading": "I use AI — and I say so openly",
+      "body1": "Because it's honest, and because it puts you ahead: you pay less and get it faster. But this isn't “write me a website” pasted into ChatGPT. I have my own refined process — specialised tools and review stages — so what you get is good, not just “something”. AI brings the speed and the lower price. I bring the quality, the decisions and the accountability.",
+      "proofPrefix": "Proof? This site and my projects were built with exactly this process — and my whole workflow is",
+      "proofLink": "described publicly →",
       "proofSuffix": "."
     },
     "limits": {
-      "heading": "Czego nie robię (i mówię to od razu)",
+      "heading": "What I don't do (and I say it up front)",
       "items": {
         "seo": {
-          "lead": "Nie sprzedaję kampanii pozycjonujących ani gwarancji „1. miejsce w Google”",
-          "body": "— to osobna, ciągła usługa i nie udaję, że ją robię. Buduję solidny fundament techniczny pod SEO i widoczność lokalną (Google Business) — resztę uczciwie wskażę, komu zlecić."
+          "lead": "I don't sell ranking campaigns or “#1 on Google” guarantees",
+          "body": "— that's a separate, ongoing service and I won't pretend I do it. I build a solid technical foundation for SEO and local visibility (Google Business) — for the rest, I'll honestly point you to who to hire."
         },
         "commerce": {
-          "lead": "Sklepy, złożone integracje, realny system CRM",
-          "body": "— robię, ale w wycenie indywidualnej, nie w pakiecie."
+          "lead": "Shops, complex integrations, a real CRM system",
+          "body": "— I do these, but as a custom quote, not in a package."
         }
       }
     },
     "ownership": {
-      "heading": "Strona jest Twoja — bez uwięzienia",
-      "body": "Domena, hosting, kod, treści, konta — wszystko na Twoje nazwisko i Twoje konta. Bez abonamentu za stronę. Gdybyś kiedyś chciał przejść do kogoś innego — zabierasz całość i nic nie tracisz. U mnie nic nie jest „zakładnikiem”."
+      "heading": "The site is yours — no lock-in",
+      "body": "Domain, hosting, code, content, accounts — all in your name and on your accounts. No subscription for the site. If you ever wanted to move to someone else — you take the whole thing and lose nothing. Nothing here is held “hostage”."
     },
     "faq": {
-      "heading": "Najczęstsze pytania",
+      "heading": "Frequently asked questions",
       "items": {
         "duration": {
-          "question": "Ile to trwa?",
-          "answer": "Zwykle od kilku dni do ~2 tygodni, zależnie od pakietu."
+          "question": "How long does it take?",
+          "answer": "Usually from a few days to about 2 weeks, depending on the package."
         },
         "texts": {
-          "question": "Muszę mieć gotowe teksty?",
-          "answer": "Nie. Mogę je przygotować i sprawdzić na podstawie krótkiej rozmowy. Jeśli masz własne — tym lepiej, dopracuję."
+          "question": "Do I need to have the copy ready?",
+          "answer": "No. I can prepare and check it based on a short conversation. If you have your own — even better, I'll polish it."
         },
         "logo": {
-          "question": "Nie mam logo / zdjęć?",
-          "answer": "Grafiki i zdjęcia dostarczasz Ty. Jeśli ich nie masz, mamy proste opcje: darmowe zdjęcia stockowe albo grafiki z AI. Pełny branding czy zaprojektowanie logo od zera to osobna wycena indywidualna."
+          "question": "I don't have a logo / photos?",
+          "answer": "You provide the graphics and photos. If you don't have them, we have simple options: free stock photos or AI-generated graphics. Full branding or designing a logo from scratch is a separate custom quote."
         },
         "selfEdit": {
-          "question": "Czy sam będę mógł później edytować stronę?",
-          "answer": "Tak, jeśli dokupisz moduł samodzielnej edycji — i to bez abonamentu."
+          "question": "Will I be able to edit the site myself later?",
+          "answer": "Yes, if you add the self-editing module — and with no subscription."
         },
         "monthly": {
-          "question": "Czy płacę co miesiąc?",
-          "answer": "Nie. Za stronę płacisz raz. Jedyny stały koszt to Twoja domena (~50–90 zł/rok), którą płacisz rejestratorowi, nie mnie."
+          "question": "Do I pay monthly?",
+          "answer": "No. You pay for the site once. The only recurring cost is your domain (~50–90 zł/year), which you pay to the registrar, not to me."
         },
         "domain": {
-          "question": "Pomożesz z domeną?",
-          "answer": "Tak — zakup i konfiguracja są w cenie."
+          "question": "Will you help with the domain?",
+          "answer": "Yes — purchase and setup are included."
         },
         "gdpr": {
-          "question": "A RODO?",
-          "answer": "Baner cookies + polityka prywatności są w każdej stronie."
+          "question": "What about GDPR?",
+          "answer": "A cookie banner + privacy policy come with every site."
         }
       }
     },
     "quote": {
-      "heading": "Opisz krótko, czego potrzebujesz — odezwę się z wyceną.",
-      "intro": "Bez zobowiązań. Napisz w kilku zdaniach, co robisz i czego potrzebujesz — odpiszę z wyceną i propozycją, jak to zrobić.",
-      "messagePlaceholder": "jaką firmę/usługę masz i czego potrzebujesz"
+      "heading": "Tell me briefly what you need — I'll get back to you with a quote.",
+      "intro": "No commitment. Write a few sentences about what you do and what you need — I'll reply with a quote and a suggestion for how to do it.",
+      "messagePlaceholder": "what business/service you have and what you need"
     }
   },
   "rootMetadata": {

@@ -21,7 +21,7 @@
       "about": "Om mig",
       "education": "Utbildning",
       "contact": "Kontakt",
-      "offer": "Strony dla firm"
+      "offer": "Webbplatser för företag"
     }
   },
   "language": {
@@ -682,225 +682,225 @@
   },
   "offer": {
     "meta": {
-      "title": "Strony internetowe dla firm i freelancerów",
-      "description": "Strona jak z agencji — bez ceny agencji. Robię indywidualne strony dla małych firm i freelancerów, szybciej i taniej dzięki AI, z człowiekiem na każdym kroku."
+      "title": "Webbplatser för företag och frilansare",
+      "description": "En webbplats som från en byrå — utan byråpriset. Jag bygger skräddarsydda webbplatser för små företag och frilansare, snabbare och billigare tack vare AI, med en riktig människa i varje steg."
     },
-    "breadcrumbBack": "Wróć do strony głównej",
-    "documentBadge": "Oferta · Strony internetowe",
+    "breadcrumbBack": "Tillbaka till startsidan",
+    "documentBadge": "Erbjudande · Webbplatser",
     "hero": {
-      "eyebrow": "Strony internetowe · dla firm i freelancerów",
-      "heading": "Strona jak z agencji — bez ceny agencji.",
-      "subtitle": "Robię strony dla małych firm, freelancerów i osób, które chcą zaistnieć w sieci. Pracuję z AI — dzięki temu dostarczam szybciej i taniej to, za co agencje liczą 4–5 tys. zł. Ale to nie generator: na każdym kroku jest człowiek, z którym pogadasz.",
-      "ctaPrimary": "Wyceń swoją stronę",
-      "ctaSecondary": "Zobacz, jak to działa"
+      "eyebrow": "Webbplatser · för företag och frilansare",
+      "heading": "En webbplats som från en byrå — utan byråpriset.",
+      "subtitle": "Jag bygger webbplatser för små företag, frilansare och alla som vill synas på nätet. Jag arbetar med AI — det gör att jag levererar det byråer tar 4 000–5 000 zł för, snabbare och billigare. Men det är ingen generator: i varje steg finns en riktig människa som du kan prata med.",
+      "ctaPrimary": "Få en offert på din webbplats",
+      "ctaSecondary": "Se hur det fungerar"
     },
     "threePaths": {
-      "heading": "Masz dziś dwie drogi — i obie mają haczyk.",
-      "agencyTitle": "Agencja",
-      "agencyBody": "ładnie, ale 4–5 tys. zł i tygodnie czekania.",
-      "generatorTitle": "Generator AI",
-      "generatorBody": "kilka stówek, ale szablon jak u wszystkich, a stronę tracisz w dniu, w którym przestaniesz płacić abonament.",
-      "mineTitle": "Ja — trzecia droga.",
-      "mineBody": "Indywidualna strona robiona przez człowieka, w cenie bliżej generatora niż agencji, którą dostajesz na własność. Bez abonamentu, bez szablonu."
+      "heading": "Idag har du två vägar — och båda har en hake.",
+      "agencyTitle": "Byrå",
+      "agencyBody": "snyggt, men 4 000–5 000 zł och veckor av väntan.",
+      "generatorTitle": "AI-generator",
+      "generatorBody": "några hundralappar, men en mall som allas andra — och du förlorar webbplatsen samma dag du slutar betala abonnemanget.",
+      "mineTitle": "Jag — den tredje vägen.",
+      "mineBody": "En skräddarsydd webbplats byggd av en riktig människa, till ett pris närmare en generator än en byrå, som du äger. Inget abonnemang, ingen mall."
     },
     "process": {
-      "heading": "Jak powstaje Twoja strona — 5 kroków",
+      "heading": "Så växer din webbplats fram — 5 steg",
       "steps": {
         "talk": {
-          "title": "Rozmowa.",
-          "body": "Zaczynamy od zwykłej rozmowy — opowiadasz, co robisz, dla kogo i czego potrzebujesz. Rozmawiasz ze mną, nie z botem."
+          "title": "Ett samtal.",
+          "body": "Vi börjar med ett vanligt samtal — du berättar vad du gör, för vem och vad du behöver. Du pratar med mig, inte med en bot."
         },
         "content": {
-          "title": "Treść.",
-          "body": "Nie musisz nic pisać. Na podstawie krótkiego wywiadu generuję i sprawdzam teksty moim procesem — dostajesz gotowe do akceptacji. Wolisz swoje? Też dobrze — wtedy je dopracowuję."
+          "title": "Innehåll.",
+          "body": "Du behöver inte skriva något. Utifrån en kort intervju skapar och kontrollerar jag texterna med min process — du får dem klara att godkänna. Föredrar du egna? Det går också bra — då finslipar jag dem."
         },
         "design": {
-          "title": "Projekt.",
-          "body": "Projektuję stronę pod Ciebie (nie szablon), pokazuję, nanosimy uwagi."
+          "title": "Design.",
+          "body": "Jag formger webbplatsen efter dig (ingen mall), visar den och vi går igenom dina synpunkter."
         },
         "publish": {
-          "title": "Publikacja.",
-          "body": "Publikuję na Twoim hostingu i Twojej domenie — wszystko na Twoich kontach."
+          "title": "Publicering.",
+          "body": "Jag publicerar på ditt webbhotell och din domän — allt på dina egna konton."
         },
         "revisions": {
-          "title": "Poprawki.",
-          "body": "Po starcie masz jeszcze rundy zmian (2 przy Basic, 4 przy Full)."
+          "title": "Ändringar.",
+          "body": "Efter lanseringen får du fortfarande omgångar av ändringar (2 med Basic, 4 med Full)."
         }
       },
-      "proofPrefix": "Chcesz zobaczyć mój proces pod maską?",
-      "proofLink": "Tak pracuję z AI →",
-      "proofSuffix": "— ten sam kontrolowany tor, na którym powstała ta strona."
+      "proofPrefix": "Vill du se min process under huven?",
+      "proofLink": "Så här arbetar jag med AI →",
+      "proofSuffix": "— samma kontrollerade spår som den här webbplatsen byggdes på."
     },
     "standard": {
-      "heading": "To dostajesz w każdej stronie",
+      "heading": "Det här får du med varje webbplats",
       "items": {
-        "mobile": "Mobilna i szybka (bo większość Twoich klientów wejdzie z telefonu)",
-        "contact": "Formularz kontaktowy + „zadzwoń jednym kliknięciem”",
-        "seo": "Podstawy SEO — techniczny fundament, żeby Google Cię widział",
-        "hosting": "Darmowy hosting + Twoja własna domena + certyfikat SSL",
-        "gdpr": "Zgodność z RODO (baner cookies + polityka prywatności)",
-        "content": "Teksty przygotowane i sprawdzone (jeśli nie masz własnych)"
+        "mobile": "Mobilanpassad och snabb (eftersom de flesta av dina kunder besöker dig från mobilen)",
+        "contact": "Kontaktformulär + ”ring med ett tryck”",
+        "seo": "SEO-grunder — den tekniska grunden så att Google ser dig",
+        "hosting": "Gratis webbhotell + din egen domän + SSL-certifikat",
+        "gdpr": "GDPR-efterlevnad (cookiebanner + integritetspolicy)",
+        "content": "Texter förberedda och kontrollerade (om du inte har egna)"
       }
     },
     "pricing": {
-      "heading": "Proste pakiety, jawne ceny",
-      "promoNote": "cena ważna do końca sierpnia",
-      "footnote": "Ceny netto. „Cena startowa” obowiązuje w okresie startu oferty.",
+      "heading": "Enkla paket, öppna priser",
+      "promoNote": "priset gäller till slutet av augusti",
+      "footnote": "Priser exkl. moms. ”Lanseringspriset” gäller under erbjudandets lanseringsperiod.",
       "rowLabels": {
-        "price": "Cena",
-        "audience": "Dla kogo",
-        "pages": "Strona",
-        "aiContent": "Treść z AI + weryfikacja",
-        "base": "Formularz + SEO techniczne + RODO + hosting + domena",
-        "googleBusiness": "Google Business (widoczność lokalna)",
-        "animations": "Animacje",
-        "themeToggle": "Tryb ciemny/jasny (przełącznik)",
-        "language": "1 język",
-        "revisions": "Rundy poprawek"
+        "price": "Pris",
+        "audience": "För vem",
+        "pages": "Webbplats",
+        "aiContent": "AI-innehåll + granskning",
+        "base": "Formulär + teknisk SEO + GDPR + webbhotell + domän",
+        "googleBusiness": "Google Business (lokal synlighet)",
+        "animations": "Animationer",
+        "themeToggle": "Mörkt/ljust läge (växlare)",
+        "language": "1 språk",
+        "revisions": "Ändringsomgångar"
       },
       "included": "✓",
-      "module": "moduł",
+      "module": "modul",
       "basic": {
         "name": "Basic",
         "basePrice": "1299 zł",
         "promoPrice": "999 zł",
-        "priceTag": "cena startowa",
-        "audience": "wizytówka / prosta oferta",
-        "pages": "1 strona, do 5 sekcji",
-        "revisions": "2 / 7 dni",
-        "cta": "Wyceń Basic"
+        "priceTag": "lanseringspris",
+        "audience": "visitkort / enkelt erbjudande",
+        "pages": "1 sida, upp till 5 sektioner",
+        "revisions": "2 / 7 dagar",
+        "cta": "Offert Basic"
       },
       "full": {
         "name": "Full",
         "basePrice": "2499 zł",
         "promoPrice": "1999 zł",
-        "priceTag": "cena startowa",
-        "audience": "firma, która chce być widoczna i łapać kontakt",
-        "pages": "do 8 sekcji + 2 podstrony",
-        "revisions": "4 / 14 dni",
-        "cta": "Wyceń Full"
+        "priceTag": "lanseringspris",
+        "audience": "ett företag som vill synas och fånga upp kontakter",
+        "pages": "upp till 8 sektioner + 2 undersidor",
+        "revisions": "4 / 14 dagar",
+        "cta": "Offert Full"
       },
       "custom": {
-        "name": "Większy projekt",
-        "price": "Wycena indywidualna",
-        "audience": "sklep, custom od zera, złożone integracje",
-        "pages": "wg potrzeb",
-        "revisions": "ustalane",
-        "cta": "Porozmawiajmy"
+        "name": "Större projekt",
+        "price": "Individuell offert",
+        "audience": "butik, skräddarsytt från grunden, komplexa integrationer",
+        "pages": "efter behov",
+        "revisions": "överenskommes",
+        "cta": "Låt oss prata"
       }
     },
     "modules": {
-      "heading": "Rozbuduj o to, czego potrzebujesz",
-      "colModule": "Moduł",
-      "colPrice": "Cena",
+      "heading": "Bygg ut med det du behöver",
+      "colModule": "Modul",
+      "colPrice": "Pris",
       "items": {
         "localVisibility": {
-          "name": "Widoczność lokalna (Google Business + Mapy + opinie)",
+          "name": "Lokal synlighet (Google Business + Kartor + recensioner)",
           "price": "+250 zł"
         },
         "animations": {
-          "name": "Animacje / efekty",
+          "name": "Animationer / effekter",
           "price": "+400 zł"
         },
         "themeToggle": {
-          "name": "Tryb ciemny/jasny (przełącznik)",
+          "name": "Mörkt/ljust läge (växlare)",
           "price": "+400 zł"
         },
         "extraLanguage": {
-          "name": "Dodatkowy język",
-          "price": "+400 zł / język"
+          "name": "Ytterligare språk",
+          "price": "+400 zł / språk"
         },
         "selfEdit": {
-          "name": "Samodzielna edycja treści (bez abonamentu)",
+          "name": "Redigera innehållet själv (utan abonnemang)",
           "price": "+700 zł"
         },
         "leads": {
-          "name": "Zbieranie leadów (lista mailingowa albo arkusz zgłoszeń)",
-          "price": "+400 zł (oba +550)"
+          "name": "Insamling av leads (e-postlista eller ett anmälningsark)",
+          "price": "+400 zł (båda +550)"
         },
         "booking": {
-          "name": "Rezerwacje / kalendarz",
+          "name": "Bokningar / kalender",
           "price": "+350 zł"
         },
         "extraPage": {
-          "name": "Dodatkowa podstrona",
+          "name": "Ytterligare undersida",
           "price": "+300 zł"
         },
         "blog": {
-          "name": "Blog / aktualności",
+          "name": "Blogg / nyheter",
           "price": "+700 zł"
         },
         "conversionTracking": {
-          "name": "Śledzenie konwersji (pod reklamy)",
+          "name": "Konverteringsspårning (för annonser)",
           "price": "+250 zł"
         },
         "domainEmail": {
-          "name": "Konfiguracja domeny + firmowy e-mail",
+          "name": "Domänkonfiguration + företagsmejl",
           "price": "+150 zł"
         }
       }
     },
     "whyAi": {
-      "heading": "Używam AI — i mówię o tym wprost",
-      "body1": "Bo to uczciwe i bo dzięki temu jesteś do przodu: płacisz mniej i masz szybciej. Ale to nie jest „napisz mi stronę” wklejone do ChatGPT. Mam własny, dopracowany proces — wyspecjalizowane narzędzia i etapy sprawdzania — żeby to, co dostajesz, było dobre, a nie „jakieś”. AI daje prędkość i niższą cenę. Ja daję jakość, decyzje i odpowiedzialność.",
-      "proofPrefix": "Dowód? Ta strona i moje projekty powstały dokładnie w tym procesie — a cały mój warsztat jest",
-      "proofLink": "publicznie opisany →",
+      "heading": "Jag använder AI — och säger det rakt ut",
+      "body1": "För att det är ärligt och för att det ger dig ett försprång: du betalar mindre och får det snabbare. Men det här är inte ”skriv en webbplats åt mig” inklistrat i ChatGPT. Jag har min egen finslipade process — specialiserade verktyg och kontrollsteg — så att det du får är bra, inte bara ”något”. AI ger farten och det lägre priset. Jag ger kvaliteten, besluten och ansvaret.",
+      "proofPrefix": "Bevis? Den här webbplatsen och mina projekt byggdes med exakt den här processen — och hela mitt arbetssätt är",
+      "proofLink": "beskrivet offentligt →",
       "proofSuffix": "."
     },
     "limits": {
-      "heading": "Czego nie robię (i mówię to od razu)",
+      "heading": "Vad jag inte gör (och jag säger det direkt)",
       "items": {
         "seo": {
-          "lead": "Nie sprzedaję kampanii pozycjonujących ani gwarancji „1. miejsce w Google”",
-          "body": "— to osobna, ciągła usługa i nie udaję, że ją robię. Buduję solidny fundament techniczny pod SEO i widoczność lokalną (Google Business) — resztę uczciwie wskażę, komu zlecić."
+          "lead": "Jag säljer inga rankningskampanjer eller garantier om ”förstaplats på Google”",
+          "body": "— det är en separat, löpande tjänst och jag låtsas inte att jag gör den. Jag bygger en solid teknisk grund för SEO och lokal synlighet (Google Business) — för resten hänvisar jag ärligt till vem du bör anlita."
         },
         "commerce": {
-          "lead": "Sklepy, złożone integracje, realny system CRM",
-          "body": "— robię, ale w wycenie indywidualnej, nie w pakiecie."
+          "lead": "Butiker, komplexa integrationer, ett riktigt CRM-system",
+          "body": "— dessa gör jag, men som individuell offert, inte i ett paket."
         }
       }
     },
     "ownership": {
-      "heading": "Strona jest Twoja — bez uwięzienia",
-      "body": "Domena, hosting, kod, treści, konta — wszystko na Twoje nazwisko i Twoje konta. Bez abonamentu za stronę. Gdybyś kiedyś chciał przejść do kogoś innego — zabierasz całość i nic nie tracisz. U mnie nic nie jest „zakładnikiem”."
+      "heading": "Webbplatsen är din — ingen inlåsning",
+      "body": "Domän, webbhotell, kod, innehåll, konton — allt i ditt namn och på dina konton. Inget abonnemang för webbplatsen. Om du någon gång vill byta till någon annan — tar du med dig alltihop och förlorar ingenting. Hos mig hålls inget som ”gisslan”."
     },
     "faq": {
-      "heading": "Najczęstsze pytania",
+      "heading": "Vanliga frågor",
       "items": {
         "duration": {
-          "question": "Ile to trwa?",
-          "answer": "Zwykle od kilku dni do ~2 tygodni, zależnie od pakietu."
+          "question": "Hur lång tid tar det?",
+          "answer": "Vanligtvis från några dagar till ungefär 2 veckor, beroende på paket."
         },
         "texts": {
-          "question": "Muszę mieć gotowe teksty?",
-          "answer": "Nie. Mogę je przygotować i sprawdzić na podstawie krótkiej rozmowy. Jeśli masz własne — tym lepiej, dopracuję."
+          "question": "Måste jag ha texterna färdiga?",
+          "answer": "Nej. Jag kan förbereda och kontrollera dem utifrån ett kort samtal. Har du egna — desto bättre, då finslipar jag dem."
         },
         "logo": {
-          "question": "Nie mam logo / zdjęć?",
-          "answer": "Grafiki i zdjęcia dostarczasz Ty. Jeśli ich nie masz, mamy proste opcje: darmowe zdjęcia stockowe albo grafiki z AI. Pełny branding czy zaprojektowanie logo od zera to osobna wycena indywidualna."
+          "question": "Jag har ingen logotyp / inga bilder?",
+          "answer": "Du tillhandahåller grafik och bilder. Om du inte har dem har vi enkla alternativ: gratis stockbilder eller AI-genererad grafik. Full branding eller att formge en logotyp från grunden är en separat individuell offert."
         },
         "selfEdit": {
-          "question": "Czy sam będę mógł później edytować stronę?",
-          "answer": "Tak, jeśli dokupisz moduł samodzielnej edycji — i to bez abonamentu."
+          "question": "Kan jag redigera webbplatsen själv senare?",
+          "answer": "Ja, om du lägger till modulen för egen redigering — och det utan abonnemang."
         },
         "monthly": {
-          "question": "Czy płacę co miesiąc?",
-          "answer": "Nie. Za stronę płacisz raz. Jedyny stały koszt to Twoja domena (~50–90 zł/rok), którą płacisz rejestratorowi, nie mnie."
+          "question": "Betalar jag varje månad?",
+          "answer": "Nej. Du betalar för webbplatsen en gång. Den enda löpande kostnaden är din domän (~50–90 zł/år), som du betalar till registraren, inte till mig."
         },
         "domain": {
-          "question": "Pomożesz z domeną?",
-          "answer": "Tak — zakup i konfiguracja są w cenie."
+          "question": "Hjälper du till med domänen?",
+          "answer": "Ja — köp och konfiguration ingår."
         },
         "gdpr": {
-          "question": "A RODO?",
-          "answer": "Baner cookies + polityka prywatności są w każdej stronie."
+          "question": "Och GDPR?",
+          "answer": "En cookiebanner + integritetspolicy ingår i varje webbplats."
         }
       }
     },
     "quote": {
-      "heading": "Opisz krótko, czego potrzebujesz — odezwę się z wyceną.",
-      "intro": "Bez zobowiązań. Napisz w kilku zdaniach, co robisz i czego potrzebujesz — odpiszę z wyceną i propozycją, jak to zrobić.",
-      "messagePlaceholder": "jaką firmę/usługę masz i czego potrzebujesz"
+      "heading": "Beskriv kort vad du behöver — jag hör av mig med en offert.",
+      "intro": "Utan förbindelser. Skriv några meningar om vad du gör och vad du behöver — jag svarar med en offert och ett förslag på hur det kan göras.",
+      "messagePlaceholder": "vilket företag/vilken tjänst du har och vad du behöver"
     }
   },
   "rootMetadata": {
