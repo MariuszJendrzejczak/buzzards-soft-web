@@ -460,11 +460,11 @@ matches existing sections (no new perf surface). No images added beyond the shar
 
 #### Automated
 
-- [x] 4.1 Build passes: `npm run build`
-- [x] 4.2 Lint passes: `npm run lint` (delta-clean; pre-existing artifact noise only)
-- [x] 4.3 Unit/integration tests pass: `npm run test`
-- [x] 4.4 i18n-completeness confirms pl/en/sv `offer` parity
-- [ ] 4.5 Playwright 3-locale spec passes: `npm run test:e2e`
+- [x] 4.1 Build passes: `npm run build` — fce5c44
+- [x] 4.2 Lint passes: `npm run lint` (delta-clean; pre-existing artifact noise only) — fce5c44
+- [x] 4.3 Unit/integration tests pass: `npm run test` — fce5c44
+- [x] 4.4 i18n-completeness confirms pl/en/sv `offer` parity — fce5c44
+- [x] 4.5 Playwright 3-locale spec passes: `npm run test:e2e`
 
 #### Manual
 
