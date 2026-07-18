@@ -12,8 +12,8 @@ import {
 } from "@/lib/portfolio/types";
 
 describe("AGENT_PROJECTS — dataset shape", () => {
-  it("contains exactly 3 projects per A1/B1/C2 release-gating decisions", () => {
-    expect(AGENT_PROJECTS).toHaveLength(3);
+  it("contains exactly 4 live projects", () => {
+    expect(AGENT_PROJECTS).toHaveLength(4);
   });
 
   it("every entry satisfies the AgentProject type guard", () => {
@@ -25,9 +25,14 @@ describe("AGENT_PROJECTS — dataset shape", () => {
     }
   });
 
-  it("includes the three expected project ids", () => {
+  it("includes the four expected project ids in order", () => {
     const ids = AGENT_PROJECTS.map((p) => p.id);
-    expect(ids).toEqual(["home-storage", "polilocale", "buzzards-soft"]);
+    expect(ids).toEqual([
+      "home-storage",
+      "neatu-dashboard",
+      "polilocale",
+      "buzzards-soft",
+    ]);
   });
 
   it("every titleKey points under portfolio.agent.* namespace", () => {
@@ -47,22 +52,33 @@ describe("AGENT_PROJECTS — dataset shape", () => {
     }
   });
 
-  it("home-storage has no links — anonymous placeholder until MVP ships", () => {
+  it("home-storage links to both app stores (Google Play + App Store)", () => {
     const homeStorage = getAgentProject("home-storage");
     expect(homeStorage).toBeDefined();
-    expect(homeStorage!.links).toHaveLength(0);
+    expect(homeStorage!.links.map((l) => l.kind)).toEqual(["google", "apple"]);
   });
 
-  it("polilocale has no links — anonymous placeholder until repo is public", () => {
+  it("neatu-dashboard links to its homepage (neatu.app)", () => {
+    const dashboard = getAgentProject("neatu-dashboard");
+    expect(dashboard).toBeDefined();
+    expect(dashboard!.links.map((l) => l.kind)).toEqual(["homepage"]);
+  });
+
+  it("polilocale links to its public GitHub repo", () => {
     const polilocale = getAgentProject("polilocale");
     expect(polilocale).toBeDefined();
-    expect(polilocale!.links).toHaveLength(0);
+    expect(polilocale!.links.map((l) => l.kind)).toEqual(["github"]);
   });
 
   it("buzzards-soft ships with no links (no /process subpage yet)", () => {
     const site = getAgentProject("buzzards-soft");
     expect(site).toBeDefined();
     expect(site!.links).toHaveLength(0);
+  });
+
+  it("mobile + dashboard projects carry an iconSrc asset", () => {
+    expect(getAgentProject("home-storage")!.iconSrc).toBeTruthy();
+    expect(getAgentProject("neatu-dashboard")!.iconSrc).toBeTruthy();
   });
 
   it("every link.kind is one of the 4 allowed literals", () => {

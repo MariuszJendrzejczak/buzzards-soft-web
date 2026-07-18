@@ -73,13 +73,17 @@ describe("<AgentProjectCard>", () => {
     expect(screen.getByText("Web")).toBeInTheDocument();
   });
 
-  it("renders no <ProjectLink> when project.links is empty (Home Storage placeholder)", () => {
+  it("renders store links when the project ships (Home Storage → Google Play + App Store)", () => {
     const { container } = renderWithIntl(
       <AgentProjectCard project={homeStorage} />,
     );
-    // No anchors should be present — the placeholder card has no links.
-    const anchors = container.querySelectorAll("a");
-    expect(anchors).toHaveLength(0);
+    // Home Storage ships: the card exposes anchors (whole-card link + store icons).
+    const hrefs = Array.from(container.querySelectorAll("a")).map((a) =>
+      a.getAttribute("href"),
+    );
+    expect(hrefs.length).toBeGreaterThan(0);
+    expect(hrefs.some((h) => h?.includes("play.google.com"))).toBe(true);
+    expect(hrefs.some((h) => h?.includes("apps.apple.com"))).toBe(true);
   });
 
   it("renders no <ProjectLink> when project.links is empty (buzzards-soft)", () => {
