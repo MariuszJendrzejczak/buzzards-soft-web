@@ -8,31 +8,47 @@ import type { AgentProject } from "@/lib/portfolio/types";
 // HOME_STORAGE_MVP_LIVE && POLILOCALE_REPO_PUBLIC are true.
 
 const AGENT_PROJECTS_RAW = [
-  // TODO(user): replace after gate release — swap to real Home Storage data
-  // (name, Play link, App Store link, App icon) once HOME_STORAGE_MVP_LIVE
-  // is the gate trigger and the MVP has shipped.
+  // Neatu Storage — public mobile app (Google Play + App Store). Icon from Play.
   {
     id: "home-storage",
     titleKey: "portfolio.agent.homeStorage.title",
     descriptionKey: "portfolio.agent.homeStorage.description",
-    badges: ["Flutter", "Firebase", "CI/CD"],
-    links: [],
+    iconSrc: "/portfolio/icons/neatu-storage.png",
+    badges: ["Flutter", "Firebase", "CI/CD", "E2E"],
+    links: [
+      {
+        kind: "google",
+        url: "https://play.google.com/store/apps/details?id=com.buzzards_soft.home_storage",
+      },
+      { kind: "apple", url: "https://apps.apple.com/app/id6769555021" },
+    ],
   },
-  // TODO(user): replace after gate release — swap to "Polilocale" name +
-  // GitHub link once POLILOCALE_REPO_PUBLIC is the gate trigger and the
-  // repository has been opened (AGPL-3.0).
+  // Neatu Dashboard — public web companion (neatu.app). Icon: Neatu "U" brand
+  // mark with a 2x2 dot grid (dashboard motif), rendered full-bleed to match Storage.
+  {
+    id: "neatu-dashboard",
+    titleKey: "portfolio.agent.neatuDashboard.title",
+    descriptionKey: "portfolio.agent.neatuDashboard.description",
+    iconSrc: "/portfolio/icons/neatu-dashboard.png",
+    badges: ["Web", "E2E"],
+    links: [{ kind: "homepage", url: "https://neatu.app" }],
+  },
+  // Polylocale — public OSS (AGPL-3.0). Note: internal id/keys keep the older
+  // "polilocale" spelling; the product name is "Polylocale" (with a y).
   {
     id: "polilocale",
     titleKey: "portfolio.agent.polilocale.title",
     descriptionKey: "portfolio.agent.polilocale.description",
-    badges: ["TypeScript", "AGPL-3.0", "Web"],
-    links: [],
+    badges: ["TypeScript", "AGPL-3.0", "Web", "E2E"],
+    links: [
+      { kind: "github", url: "https://github.com/MariuszJendrzejczak/polylocale" },
+    ],
   },
   {
     id: "buzzards-soft",
     titleKey: "portfolio.agent.buzzards.title",
     descriptionKey: "portfolio.agent.buzzards.description",
-    badges: ["Next.js", "React", "i18n"],
+    badges: ["Next.js", "React", "i18n", "E2E"],
     links: [],
   },
 ] as const satisfies readonly AgentProject[];

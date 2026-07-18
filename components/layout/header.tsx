@@ -23,7 +23,7 @@ const NAV_KEYS = [
   { href: "#how-i-work", key: "howIWork" },
   { href: "#what-i-can-deliver", key: "whatIDeliver" },
   { href: "#portfolio", key: "portfolio" },
-  { href: "#currently-learning", key: "learning" },
+  // { href: "#currently-learning", key: "learning" }, // temporarily hidden with the "Rozwój" section
   { href: "#about", key: "about" },
   { href: "#education", key: "education" },
   { href: "#contact", key: "contact" },

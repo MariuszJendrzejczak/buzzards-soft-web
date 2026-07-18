@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 
 import { About } from "@/components/sections/about/about";
 import { Contact } from "@/components/sections/contact/contact";
-import { CurrentlyLearning } from "@/components/sections/experience/currently-learning";
+// Temporarily hidden — the "Rozwój" (currently-learning) section is parked while
+// the offer is reworked in another context. Restore this import + its render below.
+// import { CurrentlyLearning } from "@/components/sections/experience/currently-learning";
 import { Education } from "@/components/sections/education/education";
 import { Hero } from "@/components/sections/hero/hero";
 import { HowIWork } from "@/components/sections/work/how-i-work";
@@ -32,7 +34,7 @@ export default async function Home({
       <HowIWork />
       <WhatICanDeliver />
       <PortfolioSection id="portfolio" />
-      <CurrentlyLearning />
+      {/* <CurrentlyLearning /> — temporarily hidden (see import note above) */}
       <About />
       <Education />
       <Contact />

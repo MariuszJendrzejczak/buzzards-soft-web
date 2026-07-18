@@ -91,6 +91,7 @@ export type AgentProject = {
   id: string;
   titleKey: string;
   descriptionKey: string;
+  iconSrc?: string;
   badges: readonly string[];
   links: readonly AgentProjectLink[];
 };
@@ -129,6 +130,8 @@ export function isAgentProject(value: unknown): value is AgentProject {
   if (typeof v.titleKey !== "string" || v.titleKey.length === 0) return false;
   if (typeof v.descriptionKey !== "string" || v.descriptionKey.length === 0)
     return false;
+
+  if (v.iconSrc !== undefined && typeof v.iconSrc !== "string") return false;
 
   if (!Array.isArray(v.badges)) return false;
   if (!v.badges.every((b) => typeof b === "string" && b.length > 0))

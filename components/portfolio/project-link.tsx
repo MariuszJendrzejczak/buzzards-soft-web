@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 const IMAGE_SRC_MAP: Partial<Record<AgentProjectLinkKind, string>> = {
   google: "/portfolio/stores/google-play.png",
   apple: "/portfolio/stores/app-store.png",
-  github: "/portfolio/stores/github.png",
+  github: "/portfolio/stores/github-mark.png",
 };
 
 const ARIA_KEY_MAP: Record<AgentProjectLinkKind, string> = {

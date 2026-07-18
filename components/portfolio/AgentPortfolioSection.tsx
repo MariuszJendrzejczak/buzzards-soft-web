@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 
-import { FeatureGate } from "@/components/FeatureGate";
 import { AGENT_PROJECTS } from "@/lib/portfolio/agent-projects";
 import { cn } from "@/lib/utils";
 
@@ -10,15 +9,10 @@ export type AgentPortfolioSectionProps = {
   className?: string;
 };
 
+// Always rendered — the release gate (AGENT_PORTFOLIO_SECTION_LIVE) was retired;
+// the section is now a permanent part of the portfolio. See ADR 0001 (to be
+// superseded) + the feature-flag cleanup follow-up.
 export function AgentPortfolioSection({ className }: AgentPortfolioSectionProps) {
-  return (
-    <FeatureGate flag="AGENT_PORTFOLIO_SECTION_LIVE">
-      <AgentPortfolioSectionInner className={className} />
-    </FeatureGate>
-  );
-}
-
-function AgentPortfolioSectionInner({ className }: AgentPortfolioSectionProps) {
   const t = useTranslations("portfolio.agent");
 
   return (
