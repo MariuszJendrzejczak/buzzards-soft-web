@@ -688,34 +688,214 @@
     "breadcrumbBack": "Wróć do strony głównej",
     "documentBadge": "Oferta · Strony internetowe",
     "hero": {
-      "heading": "Strona jak z agencji — bez ceny agencji."
+      "eyebrow": "Strony internetowe · dla firm i freelancerów",
+      "heading": "Strona jak z agencji — bez ceny agencji.",
+      "subtitle": "Robię strony dla małych firm, freelancerów i osób, które chcą zaistnieć w sieci. Pracuję z AI — dzięki temu dostarczam szybciej i taniej to, za co agencje liczą 4–5 tys. zł. Ale to nie generator: na każdym kroku jest człowiek, z którym pogadasz.",
+      "ctaPrimary": "Wyceń swoją stronę",
+      "ctaSecondary": "Zobacz, jak to działa"
     },
     "threePaths": {
-      "heading": "Masz dziś dwie drogi — i obie mają haczyk."
+      "heading": "Masz dziś dwie drogi — i obie mają haczyk.",
+      "agencyTitle": "Agencja",
+      "agencyBody": "ładnie, ale 4–5 tys. zł i tygodnie czekania.",
+      "generatorTitle": "Generator AI",
+      "generatorBody": "kilka stówek, ale szablon jak u wszystkich, a stronę tracisz w dniu, w którym przestaniesz płacić abonament.",
+      "mineTitle": "Ja — trzecia droga.",
+      "mineBody": "Indywidualna strona robiona przez człowieka, w cenie bliżej generatora niż agencji, którą dostajesz na własność. Bez abonamentu, bez szablonu."
     },
     "process": {
-      "heading": "Jak powstaje Twoja strona — 5 kroków"
+      "heading": "Jak powstaje Twoja strona — 5 kroków",
+      "steps": {
+        "talk": {
+          "title": "Rozmowa.",
+          "body": "Zaczynamy od zwykłej rozmowy — opowiadasz, co robisz, dla kogo i czego potrzebujesz. Rozmawiasz ze mną, nie z botem."
+        },
+        "content": {
+          "title": "Treść.",
+          "body": "Nie musisz nic pisać. Na podstawie krótkiego wywiadu generuję i sprawdzam teksty moim procesem — dostajesz gotowe do akceptacji. Wolisz swoje? Też dobrze — wtedy je dopracowuję."
+        },
+        "design": {
+          "title": "Projekt.",
+          "body": "Projektuję stronę pod Ciebie (nie szablon), pokazuję, nanosimy uwagi."
+        },
+        "publish": {
+          "title": "Publikacja.",
+          "body": "Publikuję na Twoim hostingu i Twojej domenie — wszystko na Twoich kontach."
+        },
+        "revisions": {
+          "title": "Poprawki.",
+          "body": "Po starcie masz jeszcze rundy zmian (2 przy Basic, 4 przy Full)."
+        }
+      },
+      "proofPrefix": "Chcesz zobaczyć mój proces pod maską?",
+      "proofLink": "Tak pracuję z AI →",
+      "proofSuffix": "— ten sam kontrolowany tor, na którym powstała ta strona."
     },
     "standard": {
-      "heading": "To dostajesz w każdej stronie"
+      "heading": "To dostajesz w każdej stronie",
+      "items": {
+        "mobile": "Mobilna i szybka (bo większość Twoich klientów wejdzie z telefonu)",
+        "contact": "Formularz kontaktowy + „zadzwoń jednym kliknięciem”",
+        "seo": "Podstawy SEO — techniczny fundament, żeby Google Cię widział",
+        "hosting": "Darmowy hosting + Twoja własna domena + certyfikat SSL",
+        "gdpr": "Zgodność z RODO (baner cookies + polityka prywatności)",
+        "content": "Teksty przygotowane i sprawdzone (jeśli nie masz własnych)"
+      }
     },
     "pricing": {
-      "heading": "Proste pakiety, jawne ceny"
+      "heading": "Proste pakiety, jawne ceny",
+      "promoNote": "cena ważna do końca sierpnia",
+      "footnote": "Ceny netto. „Cena startowa” obowiązuje w okresie startu oferty.",
+      "rowLabels": {
+        "price": "Cena",
+        "audience": "Dla kogo",
+        "pages": "Strona",
+        "aiContent": "Treść z AI + weryfikacja",
+        "base": "Formularz + SEO techniczne + RODO + hosting + domena",
+        "googleBusiness": "Google Business (widoczność lokalna)",
+        "animations": "Animacje",
+        "themeToggle": "Tryb ciemny/jasny (przełącznik)",
+        "language": "1 język",
+        "revisions": "Rundy poprawek"
+      },
+      "included": "✓",
+      "module": "moduł",
+      "basic": {
+        "name": "Basic",
+        "basePrice": "1299 zł",
+        "promoPrice": "999 zł",
+        "priceTag": "cena startowa",
+        "audience": "wizytówka / prosta oferta",
+        "pages": "1 strona, do 5 sekcji",
+        "revisions": "2 / 7 dni",
+        "cta": "Wyceń Basic"
+      },
+      "full": {
+        "name": "Full",
+        "basePrice": "2499 zł",
+        "promoPrice": "1999 zł",
+        "priceTag": "cena startowa",
+        "audience": "firma, która chce być widoczna i łapać kontakt",
+        "pages": "do 8 sekcji + 2 podstrony",
+        "revisions": "4 / 14 dni",
+        "cta": "Wyceń Full"
+      },
+      "custom": {
+        "name": "Większy projekt",
+        "price": "Wycena indywidualna",
+        "audience": "sklep, custom od zera, złożone integracje",
+        "pages": "wg potrzeb",
+        "revisions": "ustalane",
+        "cta": "Porozmawiajmy"
+      }
     },
     "modules": {
-      "heading": "Rozbuduj o to, czego potrzebujesz"
+      "heading": "Rozbuduj o to, czego potrzebujesz",
+      "colModule": "Moduł",
+      "colPrice": "Cena",
+      "items": {
+        "localVisibility": {
+          "name": "Widoczność lokalna (Google Business + Mapy + opinie)",
+          "price": "+250 zł"
+        },
+        "animations": {
+          "name": "Animacje / efekty",
+          "price": "+400 zł"
+        },
+        "themeToggle": {
+          "name": "Tryb ciemny/jasny (przełącznik)",
+          "price": "+400 zł"
+        },
+        "extraLanguage": {
+          "name": "Dodatkowy język",
+          "price": "+400 zł / język"
+        },
+        "selfEdit": {
+          "name": "Samodzielna edycja treści (bez abonamentu)",
+          "price": "+700 zł"
+        },
+        "leads": {
+          "name": "Zbieranie leadów (lista mailingowa albo arkusz zgłoszeń)",
+          "price": "+400 zł (oba +550)"
+        },
+        "booking": {
+          "name": "Rezerwacje / kalendarz",
+          "price": "+350 zł"
+        },
+        "extraPage": {
+          "name": "Dodatkowa podstrona",
+          "price": "+300 zł"
+        },
+        "blog": {
+          "name": "Blog / aktualności",
+          "price": "+700 zł"
+        },
+        "conversionTracking": {
+          "name": "Śledzenie konwersji (pod reklamy)",
+          "price": "+250 zł"
+        },
+        "domainEmail": {
+          "name": "Konfiguracja domeny + firmowy e-mail",
+          "price": "+150 zł"
+        }
+      }
     },
     "whyAi": {
-      "heading": "Używam AI — i mówię o tym wprost"
+      "heading": "Używam AI — i mówię o tym wprost",
+      "body1": "Bo to uczciwe i bo dzięki temu jesteś do przodu: płacisz mniej i masz szybciej. Ale to nie jest „napisz mi stronę” wklejone do ChatGPT. Mam własny, dopracowany proces — wyspecjalizowane narzędzia i etapy sprawdzania — żeby to, co dostajesz, było dobre, a nie „jakieś”. AI daje prędkość i niższą cenę. Ja daję jakość, decyzje i odpowiedzialność.",
+      "proofPrefix": "Dowód? Ta strona i moje projekty powstały dokładnie w tym procesie — a cały mój warsztat jest",
+      "proofLink": "publicznie opisany →",
+      "proofSuffix": "."
     },
     "limits": {
-      "heading": "Czego nie robię (i mówię to od razu)"
+      "heading": "Czego nie robię (i mówię to od razu)",
+      "items": {
+        "seo": {
+          "lead": "Nie sprzedaję kampanii pozycjonujących ani gwarancji „1. miejsce w Google”",
+          "body": "— to osobna, ciągła usługa i nie udaję, że ją robię. Buduję solidny fundament techniczny pod SEO i widoczność lokalną (Google Business) — resztę uczciwie wskażę, komu zlecić."
+        },
+        "commerce": {
+          "lead": "Sklepy, złożone integracje, realny system CRM",
+          "body": "— robię, ale w wycenie indywidualnej, nie w pakiecie."
+        }
+      }
     },
     "ownership": {
-      "heading": "Strona jest Twoja — bez uwięzienia"
+      "heading": "Strona jest Twoja — bez uwięzienia",
+      "body": "Domena, hosting, kod, treści, konta — wszystko na Twoje nazwisko i Twoje konta. Bez abonamentu za stronę. Gdybyś kiedyś chciał przejść do kogoś innego — zabierasz całość i nic nie tracisz. U mnie nic nie jest „zakładnikiem”."
     },
     "faq": {
-      "heading": "Najczęstsze pytania"
+      "heading": "Najczęstsze pytania",
+      "items": {
+        "duration": {
+          "question": "Ile to trwa?",
+          "answer": "Zwykle od kilku dni do ~2 tygodni, zależnie od pakietu."
+        },
+        "texts": {
+          "question": "Muszę mieć gotowe teksty?",
+          "answer": "Nie. Mogę je przygotować i sprawdzić na podstawie krótkiej rozmowy. Jeśli masz własne — tym lepiej, dopracuję."
+        },
+        "logo": {
+          "question": "Nie mam logo / zdjęć?",
+          "answer": "Grafiki i zdjęcia dostarczasz Ty. Jeśli ich nie masz, mamy proste opcje: darmowe zdjęcia stockowe albo grafiki z AI. Pełny branding czy zaprojektowanie logo od zera to osobna wycena indywidualna."
+        },
+        "selfEdit": {
+          "question": "Czy sam będę mógł później edytować stronę?",
+          "answer": "Tak, jeśli dokupisz moduł samodzielnej edycji — i to bez abonamentu."
+        },
+        "monthly": {
+          "question": "Czy płacę co miesiąc?",
+          "answer": "Nie. Za stronę płacisz raz. Jedyny stały koszt to Twoja domena (~50–90 zł/rok), którą płacisz rejestratorowi, nie mnie."
+        },
+        "domain": {
+          "question": "Pomożesz z domeną?",
+          "answer": "Tak — zakup i konfiguracja są w cenie."
+        },
+        "gdpr": {
+          "question": "A RODO?",
+          "answer": "Baner cookies + polityka prywatności są w każdej stronie."
+        }
+      }
     },
     "quote": {
       "heading": "Opisz krótko, czego potrzebujesz — odezwę się z wyceną."

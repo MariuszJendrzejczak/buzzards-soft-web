@@ -411,12 +411,12 @@ matches existing sections (no new perf surface). No images added beyond the shar
 
 #### Automated
 
-- [x] 1.1 Build (static export) passes, route emitted for all locales: `npm run build`
-- [x] 1.2 Lint passes: `npm run lint` (no new problems from this phase; pre-existing v1_flutter/build + out/ noise unchanged vs clean tree)
-- [x] 1.3 Unit/integration tests pass: `npm run test`
-- [x] 1.4 Sitemap test asserts `/web-pages-offer` present for all 3 locales
-- [x] 1.5 Nav test asserts offer menu item resolves to a locale-aware route link
-- [x] 1.6 i18n-completeness test asserts `offer` + `nav.items.offer` parity across pl/en/sv
+- [x] 1.1 Build (static export) passes, route emitted for all locales: `npm run build` — 2a26686
+- [x] 1.2 Lint passes: `npm run lint` (no new problems from this phase; pre-existing v1_flutter/build + out/ noise unchanged vs clean tree) — 2a26686
+- [x] 1.3 Unit/integration tests pass: `npm run test` — 2a26686
+- [x] 1.4 Sitemap test asserts `/web-pages-offer` present for all 3 locales — 2a26686
+- [x] 1.5 Nav test asserts offer menu item resolves to a locale-aware route link — 2a26686
+- [x] 1.6 i18n-completeness test asserts `offer` + `nav.items.offer` parity across pl/en/sv — 2a26686
 
 #### Manual
 

@@ -5,6 +5,16 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { Link, routing, type Locale } from "@/i18n/routing";
 import { buildAlternates, pageSocial } from "@/lib/seo";
+import { OfferHero } from "@/components/sections/offer/offer-hero";
+import { OfferThreePaths } from "@/components/sections/offer/offer-three-paths";
+import { OfferProcess } from "@/components/sections/offer/offer-process";
+import { OfferStandard } from "@/components/sections/offer/offer-standard";
+import { OfferPricing } from "@/components/sections/offer/offer-pricing";
+import { OfferModules } from "@/components/sections/offer/offer-modules";
+import { OfferWhyAi } from "@/components/sections/offer/offer-why-ai";
+import { OfferLimits } from "@/components/sections/offer/offer-limits";
+import { OfferOwnership } from "@/components/sections/offer/offer-ownership";
+import { OfferFaq } from "@/components/sections/offer/offer-faq";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -48,8 +58,8 @@ export default async function WebPagesOfferPage({
 
   return (
     <article className="relative isolate">
-      <div className="mx-auto w-full max-w-7xl px-6 pt-12 pb-24 sm:px-8 sm:pt-16 sm:pb-32">
-        <nav aria-label="Breadcrumb" className="mb-10">
+      <div className="mx-auto w-full max-w-7xl px-6 pt-12 sm:px-8 sm:pt-16">
+        <nav aria-label="Breadcrumb">
           <Link
             href="/"
             className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
@@ -58,20 +68,19 @@ export default async function WebPagesOfferPage({
             {t("breadcrumbBack")}
           </Link>
         </nav>
-
-        <header className="rounded-2xl border border-border bg-card p-7 shadow-sm sm:p-10">
-          <span className="font-mono text-xs font-medium tracking-[0.2em] text-brand uppercase">
-            {t("documentBadge")}
-          </span>
-          <h1 className="mt-3 font-heading text-3xl leading-tight font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            {t("hero.heading")}
-          </h1>
-        </header>
-
-        {/* Section slots filled in Phase 2:
-            Hero → ThreePaths → Process → Standard → Pricing → Modules →
-            WhyAi → Limits → Ownership → FAQ → Quote/form (Phase 3). */}
       </div>
+
+      {/* Ordered top→bottom per the locked slice plan. Quote/form is Phase 3. */}
+      <OfferHero />
+      <OfferThreePaths />
+      <OfferProcess />
+      <OfferStandard />
+      <OfferPricing />
+      <OfferModules />
+      <OfferWhyAi />
+      <OfferLimits />
+      <OfferOwnership />
+      <OfferFaq />
     </article>
   );
 }
