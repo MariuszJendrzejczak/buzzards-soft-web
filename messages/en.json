@@ -424,14 +424,18 @@
     },
     "agent": {
       "title": "Agentic programming — first-party deployments",
-      "intro": "AI is part of my production process. Three live projects where you can see it in practice.",
+      "intro": "AI is part of my production process. Four live projects where you can see it in practice.",
       "homeStorage": {
-        "title": "Personal mobile app",
-        "description": "In the final stage of production. Full CI/CD pipeline with AI agents in the loop."
+        "title": "Neatu Storage",
+        "description": "A mobile app for managing home inventory: it tracks items by storage location (pantry, fridge, freezer), monitors stock levels, scans barcodes, and builds shopping lists from what's running low."
+      },
+      "neatuDashboard": {
+        "title": "Neatu Dashboard",
+        "description": "The web companion of the Neatu ecosystem (neatu.app) — reach your inventory from the browser, alongside the mobile app."
       },
       "polilocale": {
-        "title": "Personal OSS — localization tool",
-        "description": "Open-source, preparing a public release. Format-faithful architecture, AI translation via the user's own API keys."
+        "title": "Polylocale",
+        "description": "My open-source localization tool. Format-faithful architecture, AI translation through the user's own API keys."
       },
       "buzzards": {
         "title": "buzzards-soft.com",
@@ -439,8 +443,94 @@
       }
     },
     "warsztat": {
-      "title": "AI workshop — methodology",
-      "intro": "What I bring to every team — independent of the project.",
+      "eyebrow": "How I work with AI",
+      "title": "AI Native Development Workflow",
+      "intro": "The same controlled track from idea to deployment — with a clear split between what we do together, what the agent does on its own, and where a human decides.",
+      "flow": {
+        "flowLabel": "Flow · idea → deployment",
+        "legend": {
+          "both": "shared work",
+          "human": "mostly human",
+          "agent": "agent, unsupervised"
+        },
+        "start": "Idea · start",
+        "done": "Deployed",
+        "loopback": "If the review catches something — we go back to \"Context and plan\" for new decisions.",
+        "owner": {
+          "human": "human",
+          "both": "human + AI"
+        },
+        "stage": {
+          "plan": {
+            "title": "Context and plan",
+            "desc": "Together we settle the full scope of the change: the goal, the area in the code, dependencies, and the order of steps. Project context — conventions, decisions, architecture — is written down and fed to the agent. A concrete plan with clear scope boundaries emerges."
+          },
+          "accept": {
+            "title": "Plan approval",
+            "desc": "The agent presents the finished plan and I go through it point by point — approving each step or correcting the scope. Code only starts after my approval."
+          },
+          "agent": {
+            "label": "Agent at work · unsupervised",
+            "loop": "build ⇄ test ⇄ check · until everything passes",
+            "build": {
+              "title": "Build",
+              "desc": "The agent writes code and unit tests."
+            },
+            "test": {
+              "title": "Tests",
+              "desc": "The agent adds integration tests."
+            },
+            "review": {
+              "title": "Automated check",
+              "desc": "The agent reviews the whole thing and writes up a list of remarks."
+            }
+          },
+          "humanReview": {
+            "title": "Assessment and decision",
+            "desc": "I read the collected remarks and the summary from the automated check, then decide: approve the work, order fixes, or reject it. The judgment of quality and fit to the plan stays with the human."
+          },
+          "live": {
+            "title": "Live testing",
+            "desc": "I check the look and behavior on a real device — catching what only shows up in the finished product. Fixes and polish we do together, until everything works and looks the way it should ship."
+          },
+          "deploy": {
+            "title": "Deployment",
+            "desc": "Shared work built on CI/CD. The agent prepares the change description, saves it on a separate branch, and opens a pull request. An autonomous agent wired into the repository reviews the changes on its own. The final approval, merge, and deployment are done by me."
+          }
+        }
+      },
+      "toolkit": {
+        "eyebrow": "Under the hood",
+        "lead": "What stands behind this track — the methodical foundation and the concrete tools that keep the pace without losing control.",
+        "pillar": {
+          "spec": {
+            "title": "Spec-Driven Development",
+            "desc": "Nothing is built before a written, approved specification. The plan is the contract, and design decisions are recorded ahead of time — before any code exists."
+          },
+          "context": {
+            "title": "Context-Driven Development",
+            "desc": "The agent works from durable, versioned project context — conventions, decisions, and memory from earlier sessions. Every task starts from the same, agreed foundation."
+          }
+        },
+        "enabler": {
+          "sessions": {
+            "title": "Specialized agent sessions",
+            "desc": "A separate session for planning, building, testing, and review — each with its own tools, prompt, and a single task to deliver."
+          },
+          "tools": {
+            "title": "Real tools in the stack",
+            "desc": "Live library documentation, checking the look in the browser, end-to-end tests on a mobile device. The agent works with real tools in my stack."
+          },
+          "commands": {
+            "title": "Repeatable processes as commands",
+            "desc": "Software-development steps wrapped into ready commands the whole team runs — from planning to reviewing changes."
+          },
+          "git": {
+            "title": "Control over what lands in the repository",
+            "desc": "The agent works on a separate branch and opens a pull request at my request. A clear split: what the agent does, what I do, and how it ties into CI/CD."
+          }
+        }
+      },
       "hero": {
         "title": "Sprint-driven workflow with typed sessions",
         "description": "Every change starts from durable context — BRIEF.md, a sprint file, or an ADR — not from a fresh prompt. Every agent session has a type (planner / implementer / tester / reviewer) and a single declared deliverable. Reviewer sessions are read-only — they cannot edit code, only write a list of concerns. The result: faster, but still disciplined — the agent does not merge on its own.",

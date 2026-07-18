@@ -424,14 +424,18 @@
     },
     "agent": {
       "title": "Agentisk programmering — egna lanseringar",
-      "intro": "AI är en del av min produktionsprocess. Tre levande projekt där det syns i praktiken.",
+      "intro": "AI är en del av min produktionsprocess. Fyra levande projekt där det syns i praktiken.",
       "homeStorage": {
-        "title": "Egen mobilapp",
-        "description": "I slutfasen av produktionen. Fullständig CI/CD-pipeline med AI-agenter i loopen."
+        "title": "Neatu Storage",
+        "description": "En mobilapp för att hantera hemmets förråd: den spårar varor efter förvaringsplats (skafferi, kylskåp, frys), håller koll på lagersaldo, skannar streckkoder och skapar inköpslistor utifrån det som håller på att ta slut."
+      },
+      "neatuDashboard": {
+        "title": "Neatu Dashboard",
+        "description": "Webbpanelen i Neatu-ekosystemet (neatu.app) — nå ditt förråd från webbläsaren, som ett komplement till mobilappen."
       },
       "polilocale": {
-        "title": "Egen OSS — lokaliseringsverktyg",
-        "description": "Open-source, förbereder en publik release. Format-trogen arkitektur, AI-översättning via användarens egna API-nycklar."
+        "title": "Polylocale",
+        "description": "Mitt open source-verktyg för lokalisering. Format-trogen arkitektur, AI-översättning via användarens egna API-nycklar."
       },
       "buzzards": {
         "title": "buzzards-soft.com",
@@ -439,8 +443,94 @@
       }
     },
     "warsztat": {
-      "title": "AI-verkstad — metodik",
-      "intro": "Det jag tar med mig till varje team — oberoende av projekt.",
+      "eyebrow": "Så arbetar jag med AI",
+      "title": "AI Native Development Workflow",
+      "intro": "Samma kontrollerade spår från idé till lansering — med en tydlig uppdelning mellan vad vi gör tillsammans, vad agenten gör på egen hand och var en människa bestämmer.",
+      "flow": {
+        "flowLabel": "Flöde · idé → lansering",
+        "legend": {
+          "both": "gemensamt arbete",
+          "human": "mestadels människa",
+          "agent": "agent, utan tillsyn"
+        },
+        "start": "Idé · start",
+        "done": "Lanserat",
+        "loopback": "Om bedömningen fångar upp något — går vi tillbaka till \"Kontext och plan\" för nya beslut.",
+        "owner": {
+          "human": "människa",
+          "both": "människa + AI"
+        },
+        "stage": {
+          "plan": {
+            "title": "Kontext och plan",
+            "desc": "Tillsammans fastställer vi hela omfattningen av ändringen: målet, området i koden, beroenden och stegens ordning. Projektkontexten — konventioner, beslut, arkitektur — skrivs ner och ges till agenten. En konkret plan med tydliga scope-gränser växer fram."
+          },
+          "accept": {
+            "title": "Godkännande av planen",
+            "desc": "Agenten presenterar den färdiga planen och jag går igenom den punkt för punkt — godkänner varje steg eller justerar omfattningen. Koden startar först efter mitt godkännande."
+          },
+          "agent": {
+            "label": "Agenten arbetar · utan tillsyn",
+            "loop": "bygg ⇄ testa ⇄ kontrollera · tills allt går igenom",
+            "build": {
+              "title": "Bygge",
+              "desc": "Agenten skriver kod och enhetstester."
+            },
+            "test": {
+              "title": "Tester",
+              "desc": "Agenten lägger till integrationstester."
+            },
+            "review": {
+              "title": "Automatisk kontroll",
+              "desc": "Agenten granskar helheten och skriver ner en lista med anmärkningar."
+            }
+          },
+          "humanReview": {
+            "title": "Bedömning och beslut",
+            "desc": "Jag går igenom de samlade anmärkningarna och sammanfattningen från den automatiska kontrollen och beslutar sedan: godkänner arbetet, beställer rättelser eller avvisar det. Bedömningen av kvalitet och överensstämmelse med planen ligger kvar hos människan."
+          },
+          "live": {
+            "title": "Live-testning",
+            "desc": "Jag kontrollerar utseende och funktion på en riktig enhet — vi fångar det som syns först i den färdiga produkten. Rättelser och finslipning gör vi tillsammans, tills allt fungerar och ser ut som det ska när det lanseras."
+          },
+          "deploy": {
+            "title": "Lansering",
+            "desc": "Gemensamt arbete byggt på CI/CD. Agenten förbereder beskrivningen av ändringarna, sparar dem på en separat gren och öppnar en pull request. En autonom agent kopplad till repot granskar ändringarna på egen hand. Det slutliga godkännandet, mergen och lanseringen gör jag."
+          }
+        }
+      },
+      "toolkit": {
+        "eyebrow": "Under huven",
+        "lead": "Det som står bakom detta spår — den metodiska grunden och de konkreta verktygen som håller tempot utan att tappa kontrollen.",
+        "pillar": {
+          "spec": {
+            "title": "Spec-Driven Development",
+            "desc": "Inget byggs innan en nedskriven, godkänd specifikation. Planen är kontraktet, och designbeslut skrivs ner i förväg — innan någon kod finns."
+          },
+          "context": {
+            "title": "Context-Driven Development",
+            "desc": "Agenten arbetar utifrån en varaktig, versionshanterad projektkontext — konventioner, beslut och minne från tidigare sessioner. Varje uppgift startar från samma, överenskomna grund."
+          }
+        },
+        "enabler": {
+          "sessions": {
+            "title": "Specialiserade agentsessioner",
+            "desc": "En separat session för planering, bygge, testning och bedömning — var och en med egna verktyg, egen prompt och en enda uppgift att leverera."
+          },
+          "tools": {
+            "title": "Riktiga verktyg i stacken",
+            "desc": "Levande bibliotekdokumentation, kontroll av utseendet i webbläsaren, end-to-end-tester på en mobil enhet. Agenten arbetar med riktiga verktyg i min stack."
+          },
+          "commands": {
+            "title": "Repeterbara processer som kommandon",
+            "desc": "Steg i mjukvaruutvecklingen paketerade i färdiga kommandon som hela teamet kör — från planering till granskning av ändringar."
+          },
+          "git": {
+            "title": "Kontroll över vad som hamnar i repot",
+            "desc": "Agenten arbetar på en separat gren och öppnar en pull request på min begäran. En tydlig uppdelning: vad agenten gör, vad jag gör och hur det kopplas till CI/CD."
+          }
+        }
+      },
       "hero": {
         "title": "Sprint-driven workflow med typade sessioner",
         "description": "Varje förändring börjar i ett varaktigt kontextdokument — BRIEF.md, en sprintfil eller ett ADR — inte i en ny prompt. Varje agentsession har en typ (planner / implementer / tester / reviewer) och en deklarerad leverans. Reviewer-sessioner är read-only — de kan inte redigera kod, bara skriva en lista av invändningar. Resultatet: snabbare, men fortfarande disciplinerat — agenten mergar inte själv.",
