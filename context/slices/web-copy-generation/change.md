@@ -74,3 +74,19 @@ revision before approval. Decisions on the six Open Questions:
 - **For the reviewer:** confirm the logo-answer guard change matches the HC1 Q5 decision
   (developer-not-designer + cost-on-client), and that the guard phrases pin the intended policy.
 
+### 2026-07-19 · Session 2 · Phase 5 — contained
+- **Plan assumed:** Phase 4 lands "interim real strings" for EN/SV; the **final** transcreated
+  EN and translated SV land in Phase 5.
+- **Actually found:** Phase 4 (`ecaa861`) already landed EN as a full native-reading
+  transcreation and SV as a complete model-produced translation for the frozen 126-leaf SB7
+  map — not rough interim drafts. `messages/en.json` / `messages/sv.json` had no working-tree
+  diff in this session.
+- **What I did:** authored the missing deliverable — the EN transcreation skill
+  (`~/.claude/skills/transcreate-copy-en/`, user-scope) + EN-only rules — then reviewed the
+  already-landed EN against the new EN AI-tell ban-list + calque rules (clean) and SV for
+  parity/coherence (complete, non-placeholder). No `messages/*` re-write warranted (re-landing
+  identical-quality copy would be churn). All three verification gates green.
+- **For the reviewer:** confirm comfort that final EN+SV landed in Phase 4 rather than Phase 5
+  (copy quality unchanged; manual sign-off rows 5.4–5.6 still apply). The new EN skill/rules
+  are user-scope and were not exercised to (re)generate the landed copy.
+

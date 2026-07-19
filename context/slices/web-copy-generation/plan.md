@@ -576,9 +576,9 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [x] 4.1 npm run build passes
-- [x] 4.2 npm run test passes (i18n-offer-completeness + route smoke)
-- [x] 4.3 npm run lint passes
+- [x] 4.1 npm run build passes — ecaa861
+- [x] 4.2 npm run test passes (i18n-offer-completeness + route smoke) — ecaa861
+- [x] 4.3 npm run lint passes — ecaa861
 
 #### Manual
 
@@ -590,9 +590,9 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [ ] 5.1 npm run build passes
-- [ ] 5.2 npm run test passes (i18n-offer-completeness green for all 3 locales)
-- [ ] 5.3 npm run lint passes
+- [x] 5.1 npm run build passes
+- [x] 5.2 npm run test passes (i18n-offer-completeness green for all 3 locales)
+- [x] 5.3 npm run lint passes
 
 #### Manual
 
