@@ -493,8 +493,8 @@ whole in Phase 2 before any component re-point so nothing renders against half-m
 
 #### Automated
 
-- [x] 3.1 `design-web` skill + `designer` agent files exist
-- [x] 3.2 After hero landing, `npm run build && npm run test` pass; changed hero file lints clean (project-wide lint red on pre-existing debt only — see row 2.3)
+- [x] 3.1 `design-web` skill + `designer` agent files exist — a8c6b39
+- [x] 3.2 After hero landing, `npm run build && npm run test` pass; changed hero file lints clean (project-wide lint red on pre-existing debt only — see row 2.3) — a8c6b39
 
 #### Manual
 

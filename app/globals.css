@@ -123,6 +123,14 @@
   --sidebar-accent-foreground: oklch(0.22 0.02 255);
   --sidebar-border: oklch(0.88 0.008 90);
   --sidebar-ring: oklch(0.58 0.15 162);
+
+  /* WarsztatFlow schematic connector strokes — theme-flipping SVG stroke colors
+   * read via var() in the component (a sanctioned raw-color exception, like the
+   * panel glow). LIGHT: darker emerald/amber/slate so each ≥3:1 on the off-white
+   * board (token-contract §5 non-text floor). */
+  --flow-stroke-neutral: rgba(100, 116, 139, 0.7);
+  --flow-stroke-agent: rgba(5, 150, 105, 0.9);
+  --flow-stroke-human: rgba(180, 83, 9, 0.9);
 }
 
 /* --- DARK theme (default; warmed slate migrated from the original hex) --- */
@@ -169,6 +177,12 @@
   --sidebar-accent-foreground: oklch(0.99 0 0);
   --sidebar-border: oklch(0.31 0.030 255);
   --sidebar-ring: oklch(0.72 0.16 162);
+
+  /* WarsztatFlow schematic connector strokes — DARK keeps today's brighter
+   * emerald/amber/slate on the deep-slate schematic. */
+  --flow-stroke-neutral: rgba(148, 163, 184, 0.5);
+  --flow-stroke-agent: rgba(52, 211, 153, 0.65);
+  --flow-stroke-human: rgba(251, 191, 36, 0.65);
 }
 
 @layer base {

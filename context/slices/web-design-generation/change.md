@@ -67,3 +67,25 @@ in the live site and cited external design sources.
   in Phase 5 / Sprint 005, or the concurrent agent picks it up.
 - **Toggle aria-labels hardcoded English** — `messages/*.json` is owned by the concurrent
   workstream; localizing the toggle labels is a small follow-up.
+
+### 2026-07-19 · Closing gate (HC1) · light-theme regression fix — WarsztatFlow theme-aware
+- **Found on-screen (HC1 eyeball):** the "AI Native Development Workflow" panel
+  (`components/portfolio/WarsztatFlow.tsx`) was a HARDCODED dark schematic
+  (`bg-[…linear-gradient(180deg,#0b1220,#060a13)]`). The light theme this sprint shipped made
+  its `text-foreground` tokens invert to dark-on-dark → text invisible; white-alpha overlays +
+  raw emerald/amber-500 accents had no light story (emerald-500 2.27:1, amber-500 1.92:1 on the
+  off-white surface).
+- **Decision:** developer chose the FULL theme-aware fix (panel flips to a light schematic in
+  light mode) over the quick pin-text-light option. Treated as a light-theme regression fix on
+  this sprint's own deliverable, not net-new Sprint 005 scope.
+- **What I did:** ran the `designer` agent (the capability this sprint built) → art-direction
+  artifact `pilot-warsztat.md` (all-5-dimensions-MATCHED Design-Gap-Test, contrast genuinely
+  computed) → LANDED it: panel bg via `dark:` variant (light warm-off-white board + low-opacity
+  glow / dark schematic gated to `.dark`); `white/x`→`foreground/x` neutral overlays; emerald/
+  amber accents given explicit `light dark:` pairs (emerald-700 / amber-800 small text ≥4.5:1,
+  emerald-600 / amber-700 icons ≥3:1); connector SVG strokes via new `--flow-stroke-*` vars in
+  `globals.css` (per-theme). Information design (stages, connectors, i18n keys) unchanged.
+  `npm run build` + `npm run test` green; `WarsztatFlow.tsx` lints clean.
+- **For the reviewer / closing gate:** eyeball the panel in `dev-live-chrome` both themes (glow
+  warmth vs washout, every accent label legible, focus rings visible, 320px/200% reflow) per the
+  `pilot-warsztat.md` TODO — the gap-test ran static-heuristic (no live Chrome in the agent run).
