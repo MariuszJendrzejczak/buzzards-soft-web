@@ -191,7 +191,9 @@ function BrandMark({ ariaLabel }: { ariaLabel: string }) {
         height={32}
         priority
         aria-hidden
-        className="size-8 transition-transform group-hover/brand:scale-105"
+        // White monochrome mark — ink it black in light (matching the wordmark),
+        // keep white in dark.
+        className="size-8 brightness-0 transition-transform group-hover/brand:scale-105 dark:brightness-100"
       />
       <span className="font-heading text-sm font-semibold tracking-tight text-foreground sm:text-base">
         Buzzards Soft

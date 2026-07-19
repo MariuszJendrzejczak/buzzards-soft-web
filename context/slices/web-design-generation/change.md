@@ -132,3 +132,15 @@ in the live site and cited external design sources.
 - **For the closing gate:** eyeball both logos in light — pure-black is the no-extra-asset default;
   if the brand wants a specific dark/colored HONETi or Unity asset, swapping the PNG is the
   higher-fidelity alternative. `npm run build` + `npm run test` green; changed files lint clean.
+
+### 2026-07-19 · Closing gate (HC1) · white-asset audit + site brand-mark fix
+- **Proactive asset audit** for the same white-logo class: enumerated every `<Image>`/logo/SVG-fill
+  across `components/**` + `app/**`. **Result:** the SITE brand mark `/brand-mark.png` (a white
+  monochrome line-art hexagon, used in `header.tsx` + `footer.tsx`) had the bug — invisible on light.
+  The store badges (`google-play.png`, `app-store.png`) are full-colour → fine both themes; the
+  Flutter icon is full-colour → fine; no other monochrome-white assets found.
+- **Fixed** the brand mark with `brightness-0 dark:brightness-100` in header + footer (black in
+  light next to the `text-foreground` wordmark, white in dark). `npm run build` + `npm run test`
+  green; header/footer lint clean.
+- **White-asset audit now complete:** HONETi logo, Unity icon, and the site brand mark are the
+  only monochrome-white assets; all three fixed. Everything else is full-colour or token-driven.
