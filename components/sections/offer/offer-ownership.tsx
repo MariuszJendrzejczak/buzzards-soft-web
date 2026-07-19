@@ -1,6 +1,12 @@
 import { getTranslations } from "next-intl/server";
 
-import { ScrollReveal } from "@/components/shared/scroll-reveal";
+import {
+  ScrollReveal,
+  StaggerGroup,
+  StaggerItem,
+} from "@/components/shared/scroll-reveal";
+
+const LIMIT_KEYS = ["seo", "commerce"] as const;
 
 export async function OfferOwnership() {
   const t = await getTranslations("offer.ownership");
@@ -26,6 +32,25 @@ export async function OfferOwnership() {
             {t("body")}
           </p>
         </ScrollReveal>
+
+        <ScrollReveal className="mt-10">
+          <h3 className="font-heading text-lg font-semibold text-foreground sm:text-xl">
+            {t("limitsHeading")}
+          </h3>
+        </ScrollReveal>
+
+        <StaggerGroup as="ul" className="mt-5 flex flex-col gap-4">
+          {LIMIT_KEYS.map((key) => (
+            <StaggerItem as="li" key={key}>
+              <p className="rounded-2xl border-l-2 border-border bg-card/40 px-5 py-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                <span className="font-medium text-foreground">
+                  {t(`limits.${key}.lead`)}
+                </span>{" "}
+                {t(`limits.${key}.body`)}
+              </p>
+            </StaggerItem>
+          ))}
+        </StaggerGroup>
       </div>
     </section>
   );

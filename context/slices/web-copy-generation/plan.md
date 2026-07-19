@@ -576,9 +576,9 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [ ] 4.1 npm run build passes
-- [ ] 4.2 npm run test passes (i18n-offer-completeness + route smoke)
-- [ ] 4.3 npm run lint passes
+- [x] 4.1 npm run build passes
+- [x] 4.2 npm run test passes (i18n-offer-completeness + route smoke)
+- [x] 4.3 npm run lint passes
 
 #### Manual
 

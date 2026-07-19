@@ -682,80 +682,80 @@
   },
   "offer": {
     "meta": {
-      "title": "Websites for businesses and freelancers",
-      "description": "An agency-grade website — without the agency price. I build custom websites for small businesses and freelancers, faster and cheaper thanks to AI, with a real person at every step."
+      "title": "Websites for businesses and freelancers — Buzzards Soft",
+      "description": "A professional website designed around your business and handed over to you: the code, the content and the accounts are all in your name. I work with AI, so you get a finished site faster and cheaper, while a real person watches over every step and stands behind the quality."
     },
     "breadcrumbBack": "Back to the home page",
     "documentBadge": "Offer · Websites",
     "hero": {
-      "eyebrow": "Websites · for businesses and freelancers",
-      "heading": "An agency-grade website — without the agency price.",
-      "subtitle": "I build websites for small businesses, freelancers and anyone who wants to show up online. I work with AI — which lets me deliver what agencies charge 4,000–5,000 zł for, faster and cheaper. But it's not a generator: at every step there's a real person you can talk to.",
+      "eyebrow": "Websites for small businesses and freelancers",
+      "heading": "A professional website designed around your business — and it's yours to own.",
+      "subheading": "I design it around your business and hand it over to you: the code, the content and the accounts are all in your name. I work with AI, so you get a finished site faster and cheaper, while a real person watches over every step, stands behind the quality and guides you all the way to launch.",
       "ctaPrimary": "Get a quote for your site",
-      "ctaSecondary": "See how it works"
+      "ctaSecondary": "See how I work"
     },
-    "threePaths": {
-      "heading": "Today you have two options — and both come with a catch.",
+    "problem": {
+      "heading": "Today you have two paths to a website — and each has its cost.",
       "agencyTitle": "Agency",
-      "agencyBody": "looks great, but 4,000–5,000 zł and weeks of waiting.",
+      "agencyBody": "Looks great and made just for you, but it runs 4,000–5,000 zł and keeps you waiting for weeks.",
       "generatorTitle": "AI generator",
-      "generatorBody": "a few hundred, but a template like everyone else's — and you lose the site the day you stop paying the subscription.",
-      "mineTitle": "Me — the third option.",
-      "mineBody": "A custom website built by a real person, at a price closer to a generator than an agency, that you own. No subscription, no template."
+      "generatorBody": "Costs a few hundred, but hands you a template like a thousand other businesses — and you only keep the site while you keep paying the subscription.",
+      "mineTitle": "The third path",
+      "mineBody": "A website designed around your business by a real person, at a price closer to a generator than an agency, that you own outright."
     },
-    "process": {
-      "heading": "How your site comes together — 5 steps",
-      "steps": {
-        "talk": {
-          "title": "A conversation.",
-          "body": "We start with a normal conversation — you tell me what you do, who for, and what you need. You talk to me, not to a bot."
-        },
-        "content": {
-          "title": "Content.",
-          "body": "You don't have to write a thing. Based on a short interview I generate and check the copy with my process — you get it ready to approve. Prefer your own? That's fine too — then I polish it."
-        },
-        "design": {
-          "title": "Design.",
-          "body": "I design the site around you (not a template), show it to you, and we work through your notes."
-        },
-        "publish": {
-          "title": "Launch.",
-          "body": "I publish on your hosting and your domain — everything on your own accounts."
-        },
-        "revisions": {
-          "title": "Revisions.",
-          "body": "After launch you still get rounds of changes (2 with Basic, 4 with Full)."
-        }
+    "guide": {
+      "heading": "I work with AI and I say so openly — because it puts you ahead.",
+      "body1": "I understand why you need a site: you want to look credible and be easy to find, without paying agency rates and without months of waiting. That's exactly why I work with AI — you pay less and get it sooner.",
+      "body2": "But this is more than typing “write me a website” into ChatGPT. I run my own process with specialised tools and review stages, so what you get holds a standard. AI brings the speed and the lower price. I bring the quality, the decisions and the accountability — because at every step a real person knows what they're doing.",
+      "proofPrefix": "Want to see my workshop under the hood? The whole process is",
+      "proofLink": "documented publicly →",
+      "proofSuffix": "— and this very site was built on that same track."
+    },
+    "plan": {
+      "heading": "How your site comes together — in three steps",
+      "step1": {
+        "title": "A conversation",
+        "body": "We start with a normal conversation: you tell me what you do, who for, and what you need. You talk to me, a real person."
       },
-      "proofPrefix": "Want to see my process under the hood?",
-      "proofLink": "This is how I work with AI →",
-      "proofSuffix": "— the same controlled track this very site was built on."
+      "step2": {
+        "title": "Content and design",
+        "body": "I prepare the copy (if you don't have your own) and design the site around your business. I show it to you ready to approve, and we work through your notes in rounds of revisions."
+      },
+      "step3": {
+        "title": "Launch",
+        "body": "I publish the site on your hosting and your domain, on your accounts. From that day the site works for you, and you have full access to it."
+      }
     },
-    "standard": {
+    "proof": {
+      "heading": "The best proof is right in front of you.",
+      "body": "This site you're reading right now was built with exactly the process I sell — the same person, the same tools, the same review stages. Want to look deeper? I describe the whole workshop step by step.",
+      "link": "See how I work →"
+    },
+    "includes": {
       "heading": "Here's what you get with every site",
       "items": {
-        "mobile": "Mobile-friendly and fast (because most of your customers will visit from a phone)",
-        "contact": "Contact form + “call with one tap”",
-        "seo": "SEO basics — the technical foundation so Google can see you",
-        "hosting": "Free hosting + your own domain + SSL certificate",
-        "gdpr": "GDPR compliance (cookie banner + privacy policy)",
-        "content": "Copy prepared and checked (if you don't have your own)"
+        "mobile": "A fast site that works on every phone — and that's where most of your customers will come from.",
+        "contact": "A contact form and one-tap phone call, so customers reach out right away.",
+        "seo": "A technical SEO foundation, so Google sees you from day one.",
+        "hosting": "Free hosting, your own domain and an SSL certificate — everything ready to launch.",
+        "gdpr": "GDPR compliance: a cookie banner and privacy policy, so you can operate with peace of mind.",
+        "content": "Copy prepared and checked with my process, if you don't have your own."
       }
     },
     "pricing": {
       "heading": "Simple packages, transparent prices",
       "promoNote": "price valid until the end of August",
-      "footnote": "Net prices. The “launch price” applies during the offer's launch period.",
+      "footnote": "Net prices. The promotional price applies until the end of August.",
       "rowLabels": {
         "price": "Price",
         "audience": "Who it's for",
-        "pages": "Site",
-        "aiContent": "AI content + review",
-        "base": "Form + technical SEO + GDPR + hosting + domain",
-        "googleBusiness": "Google Business (local visibility)",
+        "pages": "Site scope",
+        "aiContent": "AI copy, checked with my process",
+        "base": "Form, technical SEO, GDPR, hosting and domain",
+        "googleBusiness": "Local visibility (Google Business)",
         "animations": "Animations",
-        "themeToggle": "Dark/light mode (toggle)",
-        "language": "1 language",
+        "themeToggle": "Dark and light mode (toggle)",
+        "language": "One language",
         "revisions": "Revision rounds"
       },
       "included": "✓",
@@ -764,20 +764,20 @@
         "name": "Basic",
         "basePrice": "1299 zł",
         "promoPrice": "999 zł",
-        "priceTag": "launch price",
-        "audience": "business card / simple offer",
+        "priceTag": "promotional price",
+        "audience": "business card or simple offer",
         "pages": "1 page, up to 5 sections",
-        "revisions": "2 / 7 days",
+        "revisions": "2 rounds / 7 days",
         "cta": "Quote Basic"
       },
       "full": {
         "name": "Full",
         "basePrice": "2499 zł",
         "promoPrice": "1999 zł",
-        "priceTag": "launch price",
-        "audience": "a business that wants to be visible and capture leads",
-        "pages": "up to 8 sections + 2 subpages",
-        "revisions": "4 / 14 days",
+        "priceTag": "promotional price",
+        "audience": "a business that wants to be visible and win leads",
+        "pages": "up to 8 sections and 2 subpages",
+        "revisions": "4 rounds / 14 days",
         "cta": "Quote Full"
       },
       "custom": {
@@ -790,20 +790,20 @@
       }
     },
     "modules": {
-      "heading": "Add on whatever you need",
+      "heading": "Extend your site with what you need",
       "colModule": "Module",
       "colPrice": "Price",
       "items": {
         "localVisibility": {
-          "name": "Local visibility (Google Business + Maps + reviews)",
+          "name": "Local visibility (Google Business, Maps, reviews)",
           "price": "+250 zł"
         },
         "animations": {
-          "name": "Animations / effects",
+          "name": "Animations and effects",
           "price": "+400 zł"
         },
         "themeToggle": {
-          "name": "Dark/light mode (toggle)",
+          "name": "Dark and light mode (toggle)",
           "price": "+400 zł"
         },
         "extraLanguage": {
@@ -811,7 +811,7 @@
           "price": "+400 zł / language"
         },
         "selfEdit": {
-          "name": "Edit content yourself (no subscription)",
+          "name": "Edit content yourself, paid once",
           "price": "+700 zł"
         },
         "leads": {
@@ -819,7 +819,7 @@
           "price": "+400 zł (both +550)"
         },
         "booking": {
-          "name": "Bookings / calendar",
+          "name": "Bookings and calendar",
           "price": "+350 zł"
         },
         "extraPage": {
@@ -827,42 +827,33 @@
           "price": "+300 zł"
         },
         "blog": {
-          "name": "Blog / news",
+          "name": "Blog and news",
           "price": "+700 zł"
         },
         "conversionTracking": {
-          "name": "Conversion tracking (for ads)",
+          "name": "Conversion tracking for ads",
           "price": "+250 zł"
         },
         "domainEmail": {
-          "name": "Domain setup + business email",
+          "name": "Domain and business email setup",
           "price": "+150 zł"
         }
       }
     },
-    "whyAi": {
-      "heading": "I use AI — and I say so openly",
-      "body1": "Because it's honest, and because it puts you ahead: you pay less and get it faster. But this isn't “write me a website” pasted into ChatGPT. I have my own refined process — specialised tools and review stages — so what you get is good, not just “something”. AI brings the speed and the lower price. I bring the quality, the decisions and the accountability.",
-      "proofPrefix": "Proof? This site and my projects were built with exactly this process — and my whole workflow is",
-      "proofLink": "described publicly →",
-      "proofSuffix": "."
-    },
-    "limits": {
-      "heading": "What I don't do (and I say it up front)",
-      "items": {
+    "ownership": {
+      "heading": "The site is yours to own",
+      "body": "I put the domain, hosting, code, content and accounts in your name and on your accounts. You pay once — the only recurring cost is your own domain (around 50–90 zł a year, paid to the registrar). If you ever wanted to move to someone else, you take the whole thing and carry on.",
+      "limitsHeading": "I stand behind all of this — and I tell you where the limits are",
+      "limits": {
         "seo": {
-          "lead": "I don't sell ranking campaigns or “#1 on Google” guarantees",
-          "body": "— that's a separate, ongoing service and I won't pretend I do it. I build a solid technical foundation for SEO and local visibility (Google Business) — for the rest, I'll honestly point you to who to hire."
+          "lead": "I build a solid technical foundation for SEO and local visibility.",
+          "body": "I don't run ongoing ranking campaigns or guarantee first place on Google — that's a separate, continuous service, and I'll honestly point you to who to hire for it."
         },
         "commerce": {
-          "lead": "Shops, complex integrations, a real CRM system",
-          "body": "— I do these, but as a custom quote, not in a package."
+          "lead": "Shops, complex integrations and a real CRM system I handle as a custom quote.",
+          "body": "They don't fit into the Basic or Full package, so I price them separately, for the specific project."
         }
       }
-    },
-    "ownership": {
-      "heading": "The site is yours — no lock-in",
-      "body": "Domain, hosting, code, content, accounts — all in your name and on your accounts. No subscription for the site. If you ever wanted to move to someone else — you take the whole thing and lose nothing. Nothing here is held “hostage”."
     },
     "faq": {
       "heading": "Frequently asked questions",
@@ -873,34 +864,34 @@
         },
         "texts": {
           "question": "Do I need to have the copy ready?",
-          "answer": "No. I can prepare and check it based on a short conversation. If you have your own — even better, I'll polish it."
+          "answer": "You don't. I can prepare and check it based on a short conversation. Have your own? Even better — then I'll polish it."
         },
         "logo": {
-          "question": "I don't have a logo / photos?",
-          "answer": "You provide the graphics and photos. If you don't have them, we have simple options: free stock photos or AI-generated graphics. Full branding or designing a logo from scratch is a separate custom quote."
+          "question": "What about a logo and photos?",
+          "answer": "Graphics aren't my field — I'm a developer, not a designer, so a logo and photos aren't part of building the site. But I won't leave you on your own with it: I'll advise you on how to get good ones. You have three paths: an AI design, paid stock photos, or a recommended designer. Each is a cost on your side, and I'll help you choose the one that fits your budget."
         },
         "selfEdit": {
           "question": "Will I be able to edit the site myself later?",
-          "answer": "Yes, if you add the self-editing module — and with no subscription."
+          "answer": "Yes, if you add the self-editing module — paid once, with no monthly subscription."
         },
         "monthly": {
           "question": "Do I pay monthly?",
-          "answer": "No. You pay for the site once. The only recurring cost is your domain (~50–90 zł/year), which you pay to the registrar, not to me."
+          "answer": "You pay for the site once. The only recurring cost is your domain (around 50–90 zł a year), which you pay to the registrar, not to me."
         },
         "domain": {
           "question": "Will you help with the domain?",
-          "answer": "Yes — purchase and setup are included."
+          "answer": "Yes — buying and setting up the domain are included."
         },
         "gdpr": {
           "question": "What about GDPR?",
-          "answer": "A cookie banner + privacy policy come with every site."
+          "answer": "A cookie banner and privacy policy come with every site."
         }
       }
     },
     "quote": {
-      "heading": "Tell me briefly what you need — I'll get back to you with a quote.",
-      "intro": "No commitment. Write a few sentences about what you do and what you need — I'll reply with a quote and a suggestion for how to do it.",
-      "messagePlaceholder": "what business/service you have and what you need"
+      "heading": "Tell me briefly what you need, and I'll get back to you with a quote.",
+      "intro": "No commitment. Write a few sentences about what you do and what you need, and I'll reply with a quote and a suggestion for how to do it.",
+      "messagePlaceholder": "what business or service you have and what you need"
     }
   },
   "rootMetadata": {

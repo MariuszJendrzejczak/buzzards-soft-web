@@ -5,30 +5,22 @@ import {
   StaggerGroup,
   StaggerItem,
 } from "@/components/shared/scroll-reveal";
-import { Callout } from "@/components/sections/work/callout";
-import { Link } from "@/i18n/routing";
 
-const STEP_KEYS = [
-  "talk",
-  "content",
-  "design",
-  "publish",
-  "revisions",
-] as const;
+const STEP_KEYS = ["step1", "step2", "step3"] as const;
 
-export async function OfferProcess() {
-  const t = await getTranslations("offer.process");
+export async function OfferPlan() {
+  const t = await getTranslations("offer.plan");
 
   return (
     <section
-      id="offer-process"
-      aria-labelledby="offer-process-heading"
+      id="offer-plan"
+      aria-labelledby="offer-plan-heading"
       className="relative isolate border-t border-border/60 py-20 sm:py-28"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
         <ScrollReveal as="header" className="max-w-3xl">
           <h2
-            id="offer-process-heading"
+            id="offer-plan-heading"
             className="font-heading text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl"
           >
             {t("heading")}
@@ -47,29 +39,16 @@ export async function OfferProcess() {
                 </span>
                 <div className="flex flex-col gap-1.5">
                   <h3 className="font-heading text-base font-semibold text-foreground">
-                    {t(`steps.${key}.title`)}
+                    {t(`${key}.title`)}
                   </h3>
                   <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
-                    {t(`steps.${key}.body`)}
+                    {t(`${key}.body`)}
                   </p>
                 </div>
               </div>
             </StaggerItem>
           ))}
         </StaggerGroup>
-
-        <ScrollReveal className="mt-8">
-          <Callout>
-            {t("proofPrefix")}{" "}
-            <Link
-              href="/#warsztat"
-              className="font-medium text-brand underline underline-offset-4 not-italic hover:text-foreground"
-            >
-              {t("proofLink")}
-            </Link>{" "}
-            {t("proofSuffix")}
-          </Callout>
-        </ScrollReveal>
       </div>
     </section>
   );

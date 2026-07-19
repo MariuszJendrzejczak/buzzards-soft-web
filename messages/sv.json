@@ -682,80 +682,80 @@
   },
   "offer": {
     "meta": {
-      "title": "Webbplatser för företag och frilansare",
-      "description": "En webbplats som från en byrå — utan byråpriset. Jag bygger skräddarsydda webbplatser för små företag och frilansare, snabbare och billigare tack vare AI, med en riktig människa i varje steg."
+      "title": "Webbplatser för företag och frilansare — Buzzards Soft",
+      "description": "En professionell webbplats som formges efter ditt företag och överlämnas till dig: kod, innehåll och konton står i ditt namn. Jag arbetar med AI, så du får en färdig webbplats snabbare och billigare, medan en riktig människa vakar över varje steg och står för kvaliteten."
     },
     "breadcrumbBack": "Tillbaka till startsidan",
     "documentBadge": "Erbjudande · Webbplatser",
     "hero": {
-      "eyebrow": "Webbplatser · för företag och frilansare",
-      "heading": "En webbplats som från en byrå — utan byråpriset.",
-      "subtitle": "Jag bygger webbplatser för små företag, frilansare och alla som vill synas på nätet. Jag arbetar med AI — det gör att jag levererar det byråer tar 4 000–5 000 zł för, snabbare och billigare. Men det är ingen generator: i varje steg finns en riktig människa som du kan prata med.",
+      "eyebrow": "Webbplatser för små företag och frilansare",
+      "heading": "En professionell webbplats formgiven efter ditt företag — och den är din att äga.",
+      "subheading": "Jag formger den efter ditt företag och överlämnar den till dig: kod, innehåll och konton står i ditt namn. Jag arbetar med AI, så du får en färdig webbplats snabbare och billigare, medan en riktig människa vakar över varje steg, står för kvaliteten och leder dig ända fram till lansering.",
       "ctaPrimary": "Få en offert på din webbplats",
-      "ctaSecondary": "Se hur det fungerar"
+      "ctaSecondary": "Se hur jag arbetar"
     },
-    "threePaths": {
-      "heading": "Idag har du två vägar — och båda har en hake.",
+    "problem": {
+      "heading": "Idag har du två vägar till en webbplats — och var och en har sin kostnad.",
       "agencyTitle": "Byrå",
-      "agencyBody": "snyggt, men 4 000–5 000 zł och veckor av väntan.",
+      "agencyBody": "Gör det snyggt och individuellt, men tar 4 000–5 000 zł och låter dig vänta i veckor.",
       "generatorTitle": "AI-generator",
-      "generatorBody": "några hundralappar, men en mall som allas andra — och du förlorar webbplatsen samma dag du slutar betala abonnemanget.",
-      "mineTitle": "Jag — den tredje vägen.",
-      "mineBody": "En skräddarsydd webbplats byggd av en riktig människa, till ett pris närmare en generator än en byrå, som du äger. Inget abonnemang, ingen mall."
+      "generatorBody": "Kostar några hundralappar, men ger dig en mall som tusen andra företag — och du behåller bara webbplatsen så länge du betalar abonnemanget.",
+      "mineTitle": "Den tredje vägen",
+      "mineBody": "En webbplats formgiven efter ditt företag av en riktig människa, till ett pris närmare en generator än en byrå, som du äger fullt ut."
     },
-    "process": {
-      "heading": "Så växer din webbplats fram — 5 steg",
-      "steps": {
-        "talk": {
-          "title": "Ett samtal.",
-          "body": "Vi börjar med ett vanligt samtal — du berättar vad du gör, för vem och vad du behöver. Du pratar med mig, inte med en bot."
-        },
-        "content": {
-          "title": "Innehåll.",
-          "body": "Du behöver inte skriva något. Utifrån en kort intervju skapar och kontrollerar jag texterna med min process — du får dem klara att godkänna. Föredrar du egna? Det går också bra — då finslipar jag dem."
-        },
-        "design": {
-          "title": "Design.",
-          "body": "Jag formger webbplatsen efter dig (ingen mall), visar den och vi går igenom dina synpunkter."
-        },
-        "publish": {
-          "title": "Publicering.",
-          "body": "Jag publicerar på ditt webbhotell och din domän — allt på dina egna konton."
-        },
-        "revisions": {
-          "title": "Ändringar.",
-          "body": "Efter lanseringen får du fortfarande omgångar av ändringar (2 med Basic, 4 med Full)."
-        }
+    "guide": {
+      "heading": "Jag arbetar med AI och säger det rakt ut — för att det ger dig ett försprång.",
+      "body1": "Jag förstår varför du behöver en webbplats: du vill se trovärdig ut och vara lätt att hitta, utan att betala byråpriser och utan månader av väntan. Det är just därför jag arbetar med AI — du betalar mindre och får det snabbare.",
+      "body2": "Men det här är mer än att skriva ”gör en webbplats åt mig” i ChatGPT. Jag driver min egen process med specialiserade verktyg och kontrollsteg, så att det du får håller en standard. AI ger farten och det lägre priset. Jag ger kvaliteten, besluten och ansvaret — för i varje steg vet en riktig människa vad den gör.",
+      "proofPrefix": "Vill du se min verkstad under huven? Hela processen är",
+      "proofLink": "beskriven offentligt →",
+      "proofSuffix": "— och den här webbplatsen byggdes på samma spår."
+    },
+    "plan": {
+      "heading": "Så växer din webbplats fram — i tre steg",
+      "step1": {
+        "title": "Ett samtal",
+        "body": "Vi börjar med ett vanligt samtal: du berättar vad du gör, för vem och vad du behöver. Du pratar med mig, en riktig människa."
       },
-      "proofPrefix": "Vill du se min process under huven?",
-      "proofLink": "Så här arbetar jag med AI →",
-      "proofSuffix": "— samma kontrollerade spår som den här webbplatsen byggdes på."
+      "step2": {
+        "title": "Innehåll och design",
+        "body": "Jag förbereder texterna (om du inte har egna) och formger webbplatsen efter ditt företag. Jag visar den klar att godkänna, och vi går igenom dina synpunkter i omgångar av ändringar."
+      },
+      "step3": {
+        "title": "Publicering",
+        "body": "Jag publicerar webbplatsen på ditt webbhotell och din domän, på dina konton. Från den dagen arbetar webbplatsen för dig, och du har full tillgång till den."
+      }
     },
-    "standard": {
+    "proof": {
+      "heading": "Det bästa beviset har du framför ögonen.",
+      "body": "Den här webbplatsen du läser just nu byggdes med exakt den process jag säljer — samma människa, samma verktyg, samma kontrollsteg. Vill du titta djupare? Jag beskriver hela verkstaden steg för steg.",
+      "link": "Se hur jag arbetar →"
+    },
+    "includes": {
       "heading": "Det här får du med varje webbplats",
       "items": {
-        "mobile": "Mobilanpassad och snabb (eftersom de flesta av dina kunder besöker dig från mobilen)",
-        "contact": "Kontaktformulär + ”ring med ett tryck”",
-        "seo": "SEO-grunder — den tekniska grunden så att Google ser dig",
-        "hosting": "Gratis webbhotell + din egen domän + SSL-certifikat",
-        "gdpr": "GDPR-efterlevnad (cookiebanner + integritetspolicy)",
-        "content": "Texter förberedda och kontrollerade (om du inte har egna)"
+        "mobile": "En snabb webbplats som fungerar på varje mobil — och därifrån kommer de flesta av dina kunder.",
+        "contact": "Ett kontaktformulär och ett telefonsamtal med ett tryck, så att kunden hör av sig direkt.",
+        "seo": "En teknisk SEO-grund, tack vare vilken Google ser dig från första dagen.",
+        "hosting": "Gratis webbhotell, din egen domän och ett SSL-certifikat — allt klart för start.",
+        "gdpr": "GDPR-efterlevnad: en cookiebanner och integritetspolicy, så att du kan arbeta i lugn och ro.",
+        "content": "Texter förberedda och kontrollerade med min process, om du inte har egna."
       }
     },
     "pricing": {
       "heading": "Enkla paket, öppna priser",
       "promoNote": "priset gäller till slutet av augusti",
-      "footnote": "Priser exkl. moms. ”Lanseringspriset” gäller under erbjudandets lanseringsperiod.",
+      "footnote": "Priser exkl. moms. Kampanjpriset gäller till slutet av augusti.",
       "rowLabels": {
         "price": "Pris",
         "audience": "För vem",
-        "pages": "Webbplats",
-        "aiContent": "AI-innehåll + granskning",
-        "base": "Formulär + teknisk SEO + GDPR + webbhotell + domän",
-        "googleBusiness": "Google Business (lokal synlighet)",
+        "pages": "Webbplatsens omfattning",
+        "aiContent": "AI-texter, kontrollerade med min process",
+        "base": "Formulär, teknisk SEO, GDPR, webbhotell och domän",
+        "googleBusiness": "Lokal synlighet (Google Business)",
         "animations": "Animationer",
-        "themeToggle": "Mörkt/ljust läge (växlare)",
-        "language": "1 språk",
+        "themeToggle": "Mörkt och ljust läge (växlare)",
+        "language": "Ett språk",
         "revisions": "Ändringsomgångar"
       },
       "included": "✓",
@@ -764,20 +764,20 @@
         "name": "Basic",
         "basePrice": "1299 zł",
         "promoPrice": "999 zł",
-        "priceTag": "lanseringspris",
-        "audience": "visitkort / enkelt erbjudande",
+        "priceTag": "kampanjpris",
+        "audience": "visitkort eller enkelt erbjudande",
         "pages": "1 sida, upp till 5 sektioner",
-        "revisions": "2 / 7 dagar",
+        "revisions": "2 omgångar / 7 dagar",
         "cta": "Offert Basic"
       },
       "full": {
         "name": "Full",
         "basePrice": "2499 zł",
         "promoPrice": "1999 zł",
-        "priceTag": "lanseringspris",
-        "audience": "ett företag som vill synas och fånga upp kontakter",
-        "pages": "upp till 8 sektioner + 2 undersidor",
-        "revisions": "4 / 14 dagar",
+        "priceTag": "kampanjpris",
+        "audience": "ett företag som vill synas och vinna kontakter",
+        "pages": "upp till 8 sektioner och 2 undersidor",
+        "revisions": "4 omgångar / 14 dagar",
         "cta": "Offert Full"
       },
       "custom": {
@@ -790,20 +790,20 @@
       }
     },
     "modules": {
-      "heading": "Bygg ut med det du behöver",
+      "heading": "Bygg ut din webbplats med det du behöver",
       "colModule": "Modul",
       "colPrice": "Pris",
       "items": {
         "localVisibility": {
-          "name": "Lokal synlighet (Google Business + Kartor + recensioner)",
+          "name": "Lokal synlighet (Google Business, Kartor, recensioner)",
           "price": "+250 zł"
         },
         "animations": {
-          "name": "Animationer / effekter",
+          "name": "Animationer och effekter",
           "price": "+400 zł"
         },
         "themeToggle": {
-          "name": "Mörkt/ljust läge (växlare)",
+          "name": "Mörkt och ljust läge (växlare)",
           "price": "+400 zł"
         },
         "extraLanguage": {
@@ -811,7 +811,7 @@
           "price": "+400 zł / språk"
         },
         "selfEdit": {
-          "name": "Redigera innehållet själv (utan abonnemang)",
+          "name": "Redigera innehållet själv, betalas en gång",
           "price": "+700 zł"
         },
         "leads": {
@@ -819,7 +819,7 @@
           "price": "+400 zł (båda +550)"
         },
         "booking": {
-          "name": "Bokningar / kalender",
+          "name": "Bokningar och kalender",
           "price": "+350 zł"
         },
         "extraPage": {
@@ -827,42 +827,33 @@
           "price": "+300 zł"
         },
         "blog": {
-          "name": "Blogg / nyheter",
+          "name": "Blogg och nyheter",
           "price": "+700 zł"
         },
         "conversionTracking": {
-          "name": "Konverteringsspårning (för annonser)",
+          "name": "Konverteringsspårning för annonser",
           "price": "+250 zł"
         },
         "domainEmail": {
-          "name": "Domänkonfiguration + företagsmejl",
+          "name": "Konfiguration av domän och företagsmejl",
           "price": "+150 zł"
         }
       }
     },
-    "whyAi": {
-      "heading": "Jag använder AI — och säger det rakt ut",
-      "body1": "För att det är ärligt och för att det ger dig ett försprång: du betalar mindre och får det snabbare. Men det här är inte ”skriv en webbplats åt mig” inklistrat i ChatGPT. Jag har min egen finslipade process — specialiserade verktyg och kontrollsteg — så att det du får är bra, inte bara ”något”. AI ger farten och det lägre priset. Jag ger kvaliteten, besluten och ansvaret.",
-      "proofPrefix": "Bevis? Den här webbplatsen och mina projekt byggdes med exakt den här processen — och hela mitt arbetssätt är",
-      "proofLink": "beskrivet offentligt →",
-      "proofSuffix": "."
-    },
-    "limits": {
-      "heading": "Vad jag inte gör (och jag säger det direkt)",
-      "items": {
+    "ownership": {
+      "heading": "Webbplatsen är din, att äga",
+      "body": "Jag skriver domän, webbhotell, kod, innehåll och konton i ditt namn och på dina konton. Du betalar en gång — den enda löpande kostnaden är din egen domän (omkring 50–90 zł per år, som du betalar till registraren). Om du någon gång vill byta till någon annan tar du med dig alltihop och arbetar vidare.",
+      "limitsHeading": "Jag tar ansvar för allt detta — och säger var gränserna går",
+      "limits": {
         "seo": {
-          "lead": "Jag säljer inga rankningskampanjer eller garantier om ”förstaplats på Google”",
-          "body": "— det är en separat, löpande tjänst och jag låtsas inte att jag gör den. Jag bygger en solid teknisk grund för SEO och lokal synlighet (Google Business) — för resten hänvisar jag ärligt till vem du bör anlita."
+          "lead": "Jag bygger en solid teknisk grund för SEO och lokal synlighet.",
+          "body": "Löpande rankningskampanjer eller garantier om förstaplats på Google gör jag inte — det är en separat, löpande tjänst, som jag ärligt hänvisar dig till vem du bör anlita för."
         },
         "commerce": {
-          "lead": "Butiker, komplexa integrationer, ett riktigt CRM-system",
-          "body": "— dessa gör jag, men som individuell offert, inte i ett paket."
+          "lead": "Butiker, komplexa integrationer och ett riktigt CRM-system tar jag som en individuell offert.",
+          "body": "De ryms inte i paketet Basic eller Full, så jag prissätter dem separat, för det specifika projektet."
         }
       }
-    },
-    "ownership": {
-      "heading": "Webbplatsen är din — ingen inlåsning",
-      "body": "Domän, webbhotell, kod, innehåll, konton — allt i ditt namn och på dina konton. Inget abonnemang för webbplatsen. Om du någon gång vill byta till någon annan — tar du med dig alltihop och förlorar ingenting. Hos mig hålls inget som ”gisslan”."
     },
     "faq": {
       "heading": "Vanliga frågor",
@@ -873,34 +864,34 @@
         },
         "texts": {
           "question": "Måste jag ha texterna färdiga?",
-          "answer": "Nej. Jag kan förbereda och kontrollera dem utifrån ett kort samtal. Har du egna — desto bättre, då finslipar jag dem."
+          "answer": "Det måste du inte. Jag kan förbereda och kontrollera dem utifrån ett kort samtal. Har du egna? Desto bättre — då finslipar jag dem."
         },
         "logo": {
-          "question": "Jag har ingen logotyp / inga bilder?",
-          "answer": "Du tillhandahåller grafik och bilder. Om du inte har dem har vi enkla alternativ: gratis stockbilder eller AI-genererad grafik. Full branding eller att formge en logotyp från grunden är en separat individuell offert."
+          "question": "Och logotyp och bilder?",
+          "answer": "Grafik är inte mitt område — jag är utvecklare, inte formgivare, så en logotyp och bilder ingår inte i bygget av webbplatsen. Men jag lämnar dig inte ensam med det: jag ger råd om hur du får tag på bra sådana. Du har tre vägar: en AI-design, betalda stockbilder eller en rekommenderad formgivare. Var och en är en kostnad på din sida, och jag hjälper dig att välja den som passar din budget."
         },
         "selfEdit": {
           "question": "Kan jag redigera webbplatsen själv senare?",
-          "answer": "Ja, om du lägger till modulen för egen redigering — och det utan abonnemang."
+          "answer": "Ja, om du lägger till modulen för egen redigering — betalas en gång, utan månadsabonnemang."
         },
         "monthly": {
           "question": "Betalar jag varje månad?",
-          "answer": "Nej. Du betalar för webbplatsen en gång. Den enda löpande kostnaden är din domän (~50–90 zł/år), som du betalar till registraren, inte till mig."
+          "answer": "För webbplatsen betalar du en gång. Den enda löpande kostnaden är din domän (omkring 50–90 zł per år), som du betalar till registraren, inte till mig."
         },
         "domain": {
           "question": "Hjälper du till med domänen?",
-          "answer": "Ja — köp och konfiguration ingår."
+          "answer": "Ja — köp och konfiguration av domänen ingår."
         },
         "gdpr": {
           "question": "Och GDPR?",
-          "answer": "En cookiebanner + integritetspolicy ingår i varje webbplats."
+          "answer": "En cookiebanner och integritetspolicy ingår i varje webbplats."
         }
       }
     },
     "quote": {
-      "heading": "Beskriv kort vad du behöver — jag hör av mig med en offert.",
-      "intro": "Utan förbindelser. Skriv några meningar om vad du gör och vad du behöver — jag svarar med en offert och ett förslag på hur det kan göras.",
-      "messagePlaceholder": "vilket företag/vilken tjänst du har och vad du behöver"
+      "heading": "Beskriv kort vad du behöver, så hör jag av mig med en offert.",
+      "intro": "Utan förbindelser. Skriv några meningar om vad du gör och vad du behöver, så svarar jag med en offert och ett förslag på hur det kan göras.",
+      "messagePlaceholder": "vilket företag eller vilken tjänst du har och vad du behöver"
     }
   },
   "rootMetadata": {

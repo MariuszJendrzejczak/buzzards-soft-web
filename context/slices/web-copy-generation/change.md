@@ -58,3 +58,19 @@ revision before approval. Decisions on the six Open Questions:
    price from *"cena startowa"* → *"cena promocyjna"*; reword `pricing.footnote` to state
    the promo-on-base-price-until-end-August framing without any launch-window wording.
 
+## Deviations
+
+### 2026-07-19 · Session 1 · Phase 4 — contained
+- **Plan assumed:** only two offer-coupled tests need touching
+  (`web-pages-offer-3-locales.spec.ts`, `offer-quote.test.tsx`); both read pinned keys
+  dynamically, so neither needs content edits.
+- **Actually found:** a third coupled test, `tests/unit/offer-faq.test.tsx`, hard-pins the
+  *old* logo-answer content (`dostarczasz Ty` / `wycena indywidualna`) as string guards. The
+  HC1-approved Phase-3 rewrite (`offer-rewrite-pl.md`, Open Question Q5 — RESOLVED) replaced
+  that answer with the developer-not-designer / cost-on-client policy, so the guards went red.
+- **What I did:** re-pointed the two guard substrings to the new locked decision's
+  load-bearing content (`nie grafikiem`, `koszt po Twojej stronie`); oracle = the approved
+  rewrite artifact, not the implementation.
+- **For the reviewer:** confirm the logo-answer guard change matches the HC1 Q5 decision
+  (developer-not-designer + cost-on-client), and that the guard phrases pin the intended policy.
+

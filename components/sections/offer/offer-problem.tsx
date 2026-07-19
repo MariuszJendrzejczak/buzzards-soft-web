@@ -13,19 +13,19 @@ const PATHS = [
   { key: "mine", highlight: true },
 ] as const;
 
-export async function OfferThreePaths() {
-  const t = await getTranslations("offer.threePaths");
+export async function OfferProblem() {
+  const t = await getTranslations("offer.problem");
 
   return (
     <section
-      id="offer-three-paths"
-      aria-labelledby="offer-three-paths-heading"
+      id="offer-problem"
+      aria-labelledby="offer-problem-heading"
       className="relative isolate border-t border-border/60 py-20 sm:py-28"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
         <ScrollReveal as="header" className="max-w-3xl">
           <h2
-            id="offer-three-paths-heading"
+            id="offer-problem-heading"
             className="font-heading text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl"
           >
             {t("heading")}

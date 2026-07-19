@@ -16,19 +16,19 @@ const ITEM_KEYS = [
   "content",
 ] as const;
 
-export async function OfferStandard() {
-  const t = await getTranslations("offer.standard");
+export async function OfferIncludes() {
+  const t = await getTranslations("offer.includes");
 
   return (
     <section
-      id="offer-standard"
-      aria-labelledby="offer-standard-heading"
+      id="offer-includes"
+      aria-labelledby="offer-includes-heading"
       className="relative isolate border-t border-border/60 py-20 sm:py-28"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
         <ScrollReveal as="header" className="max-w-3xl">
           <h2
-            id="offer-standard-heading"
+            id="offer-includes-heading"
             className="font-heading text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl"
           >
             {t("heading")}

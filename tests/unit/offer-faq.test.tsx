@@ -84,12 +84,15 @@ describe("<OfferFaq>", () => {
     }
   });
 
-  it("includes the locked 'no logo / photos' answer (client provides; simple options; branding = quote)", async () => {
+  it("includes the locked 'logo & photos' answer (developer not a designer; three options; cost on the client's side)", async () => {
     const { container } = await renderFaq();
     const logoAnswer = faq.items.logo.answer;
     expect(container.textContent).toContain(logoAnswer);
-    // Guard the load-bearing content of the locked decision.
-    expect(logoAnswer).toContain("dostarczasz Ty");
-    expect(logoAnswer).toContain("wycena indywidualna");
+    // Guard the load-bearing content of the HC1-locked decision (Q5, recorded in
+    // offer-rewrite-pl.md): graphics are out of scope because Buzzards is a
+    // developer, not a designer; the client is pointed at options, at a cost on
+    // their side. The oracle is the approved rewrite artifact, not the component.
+    expect(logoAnswer).toContain("nie grafikiem");
+    expect(logoAnswer).toContain("koszt po Twojej stronie");
   });
 });

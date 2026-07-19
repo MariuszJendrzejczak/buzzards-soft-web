@@ -6,13 +6,13 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link, routing, type Locale } from "@/i18n/routing";
 import { buildAlternates, pageSocial } from "@/lib/seo";
 import { OfferHero } from "@/components/sections/offer/offer-hero";
-import { OfferThreePaths } from "@/components/sections/offer/offer-three-paths";
-import { OfferProcess } from "@/components/sections/offer/offer-process";
-import { OfferStandard } from "@/components/sections/offer/offer-standard";
+import { OfferProblem } from "@/components/sections/offer/offer-problem";
+import { OfferGuide } from "@/components/sections/offer/offer-guide";
+import { OfferPlan } from "@/components/sections/offer/offer-plan";
+import { OfferProof } from "@/components/sections/offer/offer-proof";
+import { OfferIncludes } from "@/components/sections/offer/offer-includes";
 import { OfferPricing } from "@/components/sections/offer/offer-pricing";
 import { OfferModules } from "@/components/sections/offer/offer-modules";
-import { OfferWhyAi } from "@/components/sections/offer/offer-why-ai";
-import { OfferLimits } from "@/components/sections/offer/offer-limits";
 import { OfferOwnership } from "@/components/sections/offer/offer-ownership";
 import { OfferFaq } from "@/components/sections/offer/offer-faq";
 import { OfferQuote } from "@/components/sections/offer/offer-quote";
@@ -71,15 +71,15 @@ export default async function WebPagesOfferPage({
         </nav>
       </div>
 
-      {/* Ordered top→bottom per the locked slice plan. */}
+      {/* Ordered top→bottom on the SB7 spine per the locked slice plan. */}
       <OfferHero />
-      <OfferThreePaths />
-      <OfferProcess />
-      <OfferStandard />
+      <OfferProblem />
+      <OfferGuide />
+      <OfferPlan />
+      <OfferProof />
+      <OfferIncludes />
       <OfferPricing />
       <OfferModules />
-      <OfferWhyAi />
-      <OfferLimits />
       <OfferOwnership />
       <OfferFaq />
       <OfferQuote />
