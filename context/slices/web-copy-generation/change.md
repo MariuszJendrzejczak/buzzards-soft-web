@@ -22,6 +22,32 @@ standard, grounded in the current offer copy and live external sources.
 
 ## Notes
 
+### 2026-07-19 · Phase 6 · `copywriter` agent authored + validation check
+
+Authored the sprint-callable `copywriter` agent at `~/.claude/agents/copywriter.md`
+(user scope — outside this repo, so it does not appear in the repo diff). Valid,
+parseable frontmatter (`name: copywriter`, `description`, `model: opus`,
+`tools: Read, Glob, Grep, Write, Edit, Agent`). Its system prompt points at the same
+five shared `~/.claude/copy-standard/` contracts as the PL/EN skills and encodes the
+self-contained **generate → verify (Voice-Gap-Test) → fix** loop, the ≤800-word
+per-section window discipline (rules restated at the tail), an optional sub-agent
+fan-out for independent sections, and the hard boundaries (returns copy only — never
+writes `messages/*.json`, never lands/commits/merges; autonomous — banks gaps in
+`## Open Questions` instead of asking).
+
+**Validation (Progress row 6.1 / manual 6.2 evidence):** dispatched the agent's
+contract on the `offer.hero` brief (`context/slices/client-web-offer/offer-page.md` §1).
+It ran its own autonomous loop and converged the hero to **all ten Voice-Gap-Test
+dimensions MATCHED in 3 trials** (Trial 1 misses: affirmative-phrasing hook-hedge +
+AI-stance erased + Rule-of-One scope-creep into the `problem`/`ownership` beats; Trials
+2–3 regenerated only the missed spans to all-MATCHED). Output quality is comparable to
+the Phase 2 skill pilot (`pilot-hero.md`) — same affirmative, half-formal tech-flow
+register, zero ban-list hits, one pause-dash, AI framed as expertise-with-a-tool. Four
+missing-fact gaps (delivery-time claim vs FAQ, "kilkaset złotych" vs 999 zł promo floor,
+segment-lead choice, eyebrow audience scope) were **banked in Open Questions, none
+invented**; nothing was written to `messages/*.json`. Confirms the agent is sprint-ready
+(final human sign-off = row 6.2, Manual).
+
 ### 2026-07-19 · Sprint 002 closing gate (HC1) — PL copy APPROVED for landing
 
 The developer approved the revised PL copy and the locked `offer.*` key map (126 leaves,

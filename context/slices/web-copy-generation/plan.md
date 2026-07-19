@@ -590,9 +590,9 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [x] 5.1 npm run build passes
-- [x] 5.2 npm run test passes (i18n-offer-completeness green for all 3 locales)
-- [x] 5.3 npm run lint passes
+- [x] 5.1 npm run build passes — c1a610a
+- [x] 5.2 npm run test passes (i18n-offer-completeness green for all 3 locales) — c1a610a
+- [x] 5.3 npm run lint passes — c1a610a
 
 #### Manual
 
@@ -604,7 +604,7 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [ ] 6.1 copywriter.md exists with valid parseable frontmatter
+- [x] 6.1 copywriter.md exists with valid parseable frontmatter
 
 #### Manual
 
