@@ -551,7 +551,7 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [x] 2.1 SKILL.md exists with valid parseable frontmatter
+- [x] 2.1 SKILL.md exists with valid parseable frontmatter — e8e6760
 
 #### Manual
 
@@ -563,7 +563,7 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [ ] 3.1 Rewrite artifact and finalized namespace contract exist, cover every target leaf
+- [x] 3.1 Rewrite artifact and finalized namespace contract exist, cover every target leaf
 
 #### Manual
 
