@@ -1,10 +1,10 @@
 ---
 change_id: mobile-design-generation
 title: "Professional mobile-design generation — reusable Flutter art-direction capability"
-status: implemented
+status: archived
 created: 2026-07-19
 updated: 2026-07-19
-archived_at: null
+archived_at: 2026-07-19T15:25:07Z
 ---
 
 ## Notes
