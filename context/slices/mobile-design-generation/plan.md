@@ -378,17 +378,17 @@ the `designer` agent's web-authored version, both tracked in `reconciliation-che
 
 #### Automated
 
-- [x] 2.1 Skill exists + frontmatter parses
+- [x] 2.1 Skill exists + frontmatter parses — 95e331b
 
 #### Manual
 
-- [ ] 2.2 Developer reviews skill (both modes, platform-flow param, reads shared home, never lands code)
+- [x] 2.2 Developer reviews skill (both modes, platform-flow param, reads shared home, never lands code) — 95e331b
 
 ### Phase 3: designer agent mobile branch + reconciliation checklist
 
 #### Automated
 
-- [ ] 3.1 Reconciliation checklist exists
+- [x] 3.1 Reconciliation checklist exists
 
 #### Manual
 
