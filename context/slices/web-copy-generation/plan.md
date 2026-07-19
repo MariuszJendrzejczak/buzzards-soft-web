@@ -539,7 +539,7 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [x] 1.1 All five reference files exist and are non-empty
+- [x] 1.1 All five reference files exist and are non-empty — ead0d98
 
 #### Manual
 
@@ -551,7 +551,7 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [ ] 2.1 SKILL.md exists with valid parseable frontmatter
+- [x] 2.1 SKILL.md exists with valid parseable frontmatter
 
 #### Manual
 
