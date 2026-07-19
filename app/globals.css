@@ -44,7 +44,9 @@
   /* fonts (set as CSS vars on <html> by next/font in layout.tsx) */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-geist-sans);
+  /* display voice: heading font is Space Grotesk (--font-display), distinct
+   * from the body sans (token-contract §4). */
+  --font-heading: var(--font-display);
 
   /* radii — plan §3.3: 6/12/16, NO rounded-full headings */
   --radius-sm: calc(var(--radius) * 0.6);
@@ -64,96 +66,109 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* :root carries the dark palette directly — site is dark-first.
- * Hex equivalents for orientation:
- *   bg            slate-950   #020617
- *   surface       slate-900   #0f172a
- *   border        slate-800   #1e293b
- *   text-primary  white       #ffffff
- *   text-muted    slate-400   #94a3b8
- *   text-subtle   slate-500   #64748b
- *   brand         emerald-500 #10b981
- *   brand-soft    emerald-400 #34d399
- *   cta           amber-500   #f59e0b
- *   cta-hover     amber-400   #fbbf24
- *   destructive   rose-500    #f43f5e
- */
+/* Token values follow the shadcn v4 convention: LIGHT in `:root`, DARK in
+ * `.dark`, values in `oklch()`. Default theme is dark (next-themes
+ * `defaultTheme="dark"`), so the shipped look is preserved while the light
+ * theme is the new addition. Locked target from
+ * `~/.claude/design-standard/web/token-contract.md` §2 (warm off-white light
+ * palette + warmed-slate dark migration); the contrast machine gate is the
+ * acceptance oracle. Radius scale is theme-agnostic and stays in `:root`. */
 :root {
   --radius: 0.75rem;
 
-  --background: #020617;
-  --foreground: #ffffff;
+  /* --- LIGHT theme (warm off-white; the higher contrast risk) --- */
+  --background: oklch(0.985 0.004 90);
+  --foreground: oklch(0.22 0.02 255);
 
-  --surface: #0f172a;
-  --surface-elevated: #1e293b;
+  --surface: oklch(0.965 0.006 90);
+  --surface-elevated: oklch(0.93 0.008 90);
 
-  --card: #0f172a;
-  --card-foreground: #ffffff;
+  --card: oklch(0.965 0.006 90);
+  --card-foreground: oklch(0.22 0.02 255);
 
-  --popover: #0f172a;
-  --popover-foreground: #ffffff;
+  --popover: oklch(0.965 0.006 90);
+  --popover-foreground: oklch(0.22 0.02 255);
 
-  --primary: #f59e0b;          /* CTA = amber, primary action */
-  --primary-foreground: #0c0a09;
-  --secondary: #1e293b;
-  --secondary-foreground: #ffffff;
+  --primary: oklch(0.70 0.17 62);           /* CTA = amber, primary action */
+  --primary-foreground: oklch(0.20 0.03 60);
+  --secondary: oklch(0.93 0.008 90);
+  --secondary-foreground: oklch(0.22 0.02 255);
 
-  --muted: #1e293b;
-  --muted-foreground: #94a3b8;
-  --text-subtle: #7e8da3;     /* slate-450 (custom) — keeps tier vs muted-foreground while clearing AA on small text */
+  --muted: oklch(0.93 0.008 90);
+  --muted-foreground: oklch(0.44 0.02 255);
+  --text-subtle: oklch(0.50 0.02 255);
 
-  --accent: #10b981;            /* brand emerald */
-  --accent-foreground: #022c22;
+  --accent: oklch(0.58 0.15 162);           /* brand emerald (darkened for text-on-light) */
+  /* deep-emerald label on the emerald fill: clears WCAG 4.5:1 (the contrast
+   * gate proved a near-white label at 3.67:1 fails). Mirrors the dark theme's
+   * deep-emerald-on-brand idiom. */
+  --accent-foreground: oklch(0.20 0.06 162);
 
-  --brand: #10b981;
-  --brand-soft: #34d399;
-  --cta: #f59e0b;
-  --cta-hover: #fbbf24;
+  --brand: oklch(0.58 0.15 162);
+  --brand-soft: oklch(0.66 0.15 162);
+  --cta: oklch(0.70 0.17 62);
+  --cta-hover: oklch(0.65 0.17 60);
 
-  --destructive: #f43f5e;
-  --border: #1e293b;
-  --input: #1e293b;
-  --ring: #10b981;
+  --destructive: oklch(0.55 0.22 20);
+  --border: oklch(0.88 0.008 90);
+  --input: oklch(0.93 0.008 90);
+  --ring: oklch(0.58 0.15 162);
 
-  /* shadcn sidebar (unused) — kept consistent for any default-styled bits */
-  --sidebar: #0f172a;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #10b981;
-  --sidebar-primary-foreground: #022c22;
-  --sidebar-accent: #1e293b;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #1e293b;
-  --sidebar-ring: #10b981;
+  /* shadcn sidebar (unused) — mirror surface/brand/border */
+  --sidebar: oklch(0.965 0.006 90);
+  --sidebar-foreground: oklch(0.22 0.02 255);
+  --sidebar-primary: oklch(0.58 0.15 162);
+  --sidebar-primary-foreground: oklch(0.20 0.06 162);
+  --sidebar-accent: oklch(0.93 0.008 90);
+  --sidebar-accent-foreground: oklch(0.22 0.02 255);
+  --sidebar-border: oklch(0.88 0.008 90);
+  --sidebar-ring: oklch(0.58 0.15 162);
 }
 
-/* `.dark` mirrors :root — kept for shadcn primitives that gate styles on it. */
+/* --- DARK theme (default; warmed slate migrated from the original hex) --- */
 .dark {
-  --background: #020617;
-  --foreground: #ffffff;
-  --card: #0f172a;
-  --card-foreground: #ffffff;
-  --popover: #0f172a;
-  --popover-foreground: #ffffff;
-  --primary: #f59e0b;
-  --primary-foreground: #0c0a09;
-  --secondary: #1e293b;
-  --secondary-foreground: #ffffff;
-  --muted: #1e293b;
-  --muted-foreground: #94a3b8;
-  --accent: #10b981;
-  --accent-foreground: #022c22;
-  --destructive: #f43f5e;
-  --border: #1e293b;
-  --input: #1e293b;
-  --ring: #10b981;
-  --sidebar: #0f172a;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #10b981;
-  --sidebar-primary-foreground: #022c22;
-  --sidebar-accent: #1e293b;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #1e293b;
-  --sidebar-ring: #10b981;
+  --background: oklch(0.16 0.022 255);
+  --foreground: oklch(0.99 0 0);
+
+  --surface: oklch(0.24 0.028 255);
+  --surface-elevated: oklch(0.31 0.030 255);
+
+  --card: oklch(0.24 0.028 255);
+  --card-foreground: oklch(0.99 0 0);
+
+  --popover: oklch(0.24 0.028 255);
+  --popover-foreground: oklch(0.99 0 0);
+
+  --primary: oklch(0.77 0.16 70);
+  --primary-foreground: oklch(0.20 0.02 60);
+  --secondary: oklch(0.31 0.030 255);
+  --secondary-foreground: oklch(0.99 0 0);
+
+  --muted: oklch(0.31 0.030 255);
+  --muted-foreground: oklch(0.72 0.028 255);
+  --text-subtle: oklch(0.64 0.028 255);
+
+  --accent: oklch(0.72 0.16 162);
+  --accent-foreground: oklch(0.28 0.06 162);
+
+  --brand: oklch(0.72 0.16 162);
+  --brand-soft: oklch(0.79 0.15 162);
+  --cta: oklch(0.77 0.16 70);
+  --cta-hover: oklch(0.83 0.15 78);
+
+  --destructive: oklch(0.66 0.22 12);
+  --border: oklch(0.31 0.030 255);
+  --input: oklch(0.31 0.030 255);
+  --ring: oklch(0.72 0.16 162);
+
+  --sidebar: oklch(0.24 0.028 255);
+  --sidebar-foreground: oklch(0.99 0 0);
+  --sidebar-primary: oklch(0.72 0.16 162);
+  --sidebar-primary-foreground: oklch(0.28 0.06 162);
+  --sidebar-accent: oklch(0.31 0.030 255);
+  --sidebar-accent-foreground: oklch(0.99 0 0);
+  --sidebar-border: oklch(0.31 0.030 255);
+  --sidebar-ring: oklch(0.72 0.16 162);
 }
 
 @layer base {
@@ -162,7 +177,7 @@
   }
   html {
     @apply font-sans;
-    color-scheme: dark;
+    /* color-scheme is managed per-theme by next-themes (enableColorScheme). */
   }
 
   /* Pull anchored scroll up so the section's own top padding (py-24 / py-32)

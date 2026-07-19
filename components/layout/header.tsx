@@ -16,6 +16,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { LanguageToggle } from "@/components/layout/language-toggle";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Link, usePathname } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
@@ -80,6 +81,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2 sm:gap-3">
+            <ThemeToggle className="hidden sm:inline-flex" />
             <LanguageToggle className="hidden sm:inline-flex" />
 
             <Button
@@ -151,6 +153,7 @@ export function Header() {
                 </nav>
 
                 <div className="flex flex-col gap-3 border-t border-border/60 p-4">
+                  <ThemeToggle className="self-start" />
                   <LanguageToggle className="self-start sm:hidden" />
                   <SheetClose
                     render={

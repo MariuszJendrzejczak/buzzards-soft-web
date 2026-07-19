@@ -468,8 +468,8 @@ whole in Phase 2 before any component re-point so nothing renders against half-m
 
 #### Automated
 
-- [x] 1.1 Standard files exist under `~/.claude/design-standard/_core/` + `web/`
-- [x] 1.2 DNA profile artifact exists
+- [x] 1.1 Standard files exist under `~/.claude/design-standard/_core/` + `web/` — 74f3d09
+- [x] 1.2 DNA profile artifact exists — 74f3d09
 
 #### Manual
 
@@ -480,9 +480,9 @@ whole in Phase 2 before any component re-point so nothing renders against half-m
 
 #### Automated
 
-- [ ] 2.1 `npm run build` passes
-- [ ] 2.2 `npm run test` passes incl. new contrast + token-conformance tests
-- [ ] 2.3 `npm run lint` passes
+- [x] 2.1 `npm run build` passes
+- [x] 2.2 `npm run test` passes incl. new contrast + token-conformance tests
+- [ ] 2.3 `npm run lint` passes — Phase-2 footprint lints clean (exit 0); project-wide `npm run lint` red on PRE-EXISTING debt only (ESLint walks nested generated `out/**`/`build/**` bundles → ~22.7k problems; plus prior `react-hooks/set-state-in-effect` errors in `components/portfolio/{AgentCardLink,CardDeviceLink}.tsx`). Outside this phase's footprint; recommend a separate `chore(lint)` to fix the flat-config ignores. Flagged for closing gate.
 
 #### Manual
 
