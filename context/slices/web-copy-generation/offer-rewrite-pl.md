@@ -12,9 +12,15 @@
 > honest/AI-transparency voice). Every price / module / number here is copied from
 > those sources — nothing invented. Gaps → `## Open Questions`.
 >
-> **The hero section reuses the approved pilot** (`pilot-hero.md`, Phase 2) verbatim
-> — it already passed the Voice-Gap-Test; it is restated here so the artifact covers
-> every leaf of the locked map in one place.
+> **The hero section SUPERSEDES the approved pilot's price-anchored H1** (HC1
+> decision Q1, 2026-07-19). The Phase-2 pilot (`pilot-hero.md`) anchored the hero on
+> *"w cenie kilkuset złotych"*; the developer requested that anchor dropped and the
+> hero reframed on the value proposition (a professional site designed for the firm,
+> owned by the client, human-led AI process). The revised `hero.heading`,
+> `hero.subheading`, and `meta.description` below are the authoritative versions and
+> replace the pilot's price-anchored copy. `pilot-hero.md` itself is left untouched as
+> the Phase-2 validation record. The revised sections are re-scored with the
+> Voice-Gap-Test below (all dimensions MATCHED, affirmative, ban-list-clean).
 
 ---
 
@@ -73,7 +79,7 @@ Strony internetowe dla firm i freelancerów — Buzzards Soft
 
 ### `offer.meta.description`
 
-Profesjonalna strona zaprojektowana pod Twoją firmę, w cenie kilkuset złotych. Dostajesz ją na własność: kod, treści i konta zapisane na Ciebie. Pracuję z AI, więc oddaję gotową stronę szybciej i taniej — a nad każdym krokiem czuwa człowiek.
+Profesjonalna strona zaprojektowana pod Twoją firmę i oddana Ci na własność: kod, treści i konta zapisane na Ciebie. Pracuję z AI, więc dostajesz gotową stronę szybciej i taniej, a nad każdym krokiem czuwa człowiek, który odpowiada za jakość.
 
 ### `offer.breadcrumbBack`
 
@@ -91,11 +97,11 @@ Strony internetowe dla małych firm i freelancerów
 
 ### `offer.hero.heading`
 
-Profesjonalna strona Twojej firmy, w cenie kilkuset złotych.
+Profesjonalna strona zaprojektowana pod Twoją firmę, którą dostajesz na własność.
 
 ### `offer.hero.subheading`
 
-Projektuję ją pod Twoją firmę i oddaję na własność — kod, treści i konta zapisane na Ciebie. Pracuję z AI, więc dostajesz gotową stronę szybciej i taniej, a nad każdym krokiem czuwa człowiek, który odpowiada za jakość i prowadzi Cię aż do publikacji.
+Projektuję ją pod Twoją firmę i oddaję na własność: kod, treści i konta zapisane na Ciebie. Pracuję z AI, więc dostajesz gotową stronę szybciej i taniej, a nad każdym krokiem czuwa człowiek, który odpowiada za jakość i prowadzi Cię aż do publikacji.
 
 ### `offer.hero.ctaPrimary`
 
@@ -247,7 +253,7 @@ cena ważna do końca sierpnia
 
 ### `offer.pricing.footnote`
 
-Ceny netto. Cena startowa obowiązuje w oknie startu oferty.
+Ceny netto. Cena promocyjna obowiązuje do końca sierpnia.
 
 ### `offer.pricing.rowLabels.price`
 
@@ -311,7 +317,7 @@ Basic
 
 ### `offer.pricing.basic.priceTag`
 
-cena startowa
+cena promocyjna
 
 ### `offer.pricing.basic.audience`
 
@@ -343,7 +349,7 @@ Full
 
 ### `offer.pricing.full.priceTag`
 
-cena startowa
+cena promocyjna
 
 ### `offer.pricing.full.audience`
 
@@ -541,11 +547,11 @@ Nie musisz. Mogę je przygotować i sprawdzić na podstawie krótkiej rozmowy. M
 
 ### `offer.faq.items.logo.question`
 
-Nie mam logo ani zdjęć?
+A co z logo i zdjęciami?
 
 ### `offer.faq.items.logo.answer`
 
-Grafiki i zdjęcia dostarczasz Ty. Jeśli ich nie masz, doradzę, skąd je wziąć, albo wycenimy przygotowanie osobno.
+Grafika to nie moja działka — jestem programistą, nie grafikiem, więc logo i zdjęcia nie wchodzą w budowę strony. Nie zostawiam Cię jednak z tym samego: podpowiem, jak zdobyć dobre. Masz trzy drogi: projekt z AI, płatne zdjęcia stockowe albo polecony grafik. Każda z nich to koszt po Twojej stronie, a ja pomogę Ci wybrać tę, która pasuje do Twojego budżetu.
 
 ### `offer.faq.items.selfEdit.question`
 
@@ -603,12 +609,28 @@ prose voice are scored; the data-only leaf groups (`meta`, `pricing` rows/values
 `modules` rows, chrome) are checked against the ban-list + register floor but have
 no headline/structure argument to score, so they get a single combined line.
 
-### `offer.hero` (reused from approved pilot — all MATCHED)
+### `offer.hero` (REVISED at HC1 — price anchor dropped, re-scored)
 
-All ten dimensions MATCHED in `pilot-hero.md` (Phase 2, converged in 2 passes).
-Not re-litigated here. Headline hits 3/4 U's (*Useful · Unique · Ultra-specific*;
-Urgent honestly absent). Ownership is introduced as the hero **headline promise**
-and is **not** re-pitched later except where `ownership` owns the full claim.
+The Phase-2 pilot passed all ten dimensions, but its H1 anchored on *"w cenie
+kilkuset złotych"*. HC1 decision Q1 dropped that anchor and reframed the hero on the
+value proposition (designed for your firm · owned by you · human-led AI). The revised
+`heading` / `subheading` / `meta.description` are re-scored below.
+
+| # | Dimension | Score | Evidence |
+|---|---|---|---|
+| 1 | Confident, never cocky | MATCHED | *"Profesjonalna strona zaprojektowana pod Twoją firmę, którą dostajesz na własność."* — states capability (individually designed, owned), no superlative. |
+| 2 | Direct, never blunt | MATCHED | The subheading names exactly what the reader gets (*"kod, treści i konta zapisane na Ciebie"*) and why it's fast/cheap (*"Pracuję z AI"*); nothing curt. |
+| 3 | Warm, never chummy | MATCHED | Informal *ty* throughout (*dostajesz*, *Twoją firmę*, *prowadzi Cię*); no slang. |
+| 4 | Affirmative phrasing | MATCHED | Entirely affirmative — *"którą dostajesz na własność"*, *"dostajesz gotową stronę szybciej i taniej"*; no *bez abonamentu / bez szablonu* leading negatives. |
+| 5 | Register floor | MATCHED | Active voice (*Projektuję*, *oddaję*, *dostajesz*, *czuwa*), plain words, ~grade-7, no dev jargon. |
+| 6 | AI-transparency stance | MATCHED | *"Pracuję z AI, więc dostajesz gotową stronę szybciej i taniej, a nad każdym krokiem czuwa człowiek, który odpowiada za jakość"* — AI as expertise-with-a-tool + paired human-craft proof, never "made by AI". |
+| 7 | Lexical hygiene | MATCHED | Zero AI-tells; the em-dashes from the pilot subheading + meta.description replaced with a colon/comma (≤1 pause-dash; ban-list §E); no scare-quotes; the *kilkuset złotych* anchor gone. |
+| 8 | Structure / Rule of One | MATCHED | Hero owns the third-way promise + the ownership *headline* only; the full ownership claim is owned by `ownership`, the AI proof by `guide` — neither re-pitched here. |
+| 9 | Headline (4 U's) | MATCHED | *"Profesjonalna strona zaprojektowana pod Twoją firmę, którą dostajesz na własność."* — Useful (a site that works for you), Unique (designed-for-you + owned, vs generator template), Ultra-specific (names the two concrete guarantees). Urgent honestly absent. 3/4. |
+| 10 | Section QA (4 C's) | MATCHED | Clear·Concise·Compelling (leads on the value, not a price number)·Credible (every claim — designed-for-you, owned, AI-fast, human-checked — is a real deliverable from concept.md / offer-page.md). |
+
+Ownership is introduced as the hero **headline promise** and is **not** re-pitched
+later except where `ownership` owns the full claim.
 
 ### `offer.problem`
 
@@ -713,6 +735,26 @@ and is **not** re-pitched later except where `ownership` owns the full claim.
 | 9 | Headline (4 U's) | MATCHED | *"Najczęstsze pytania"* — a section label; not a persuasion headline, exempt from 4-U scoring (framework §6 applies to persuasion headlines). |
 | 10 | Section QA (4 C's) | MATCHED | Clear·Concise·Compelling·Credible (every answer is a real fact from offer-page.md §10 / concept.md). |
 
+#### `offer.faq.items.logo` (REVISED at HC1 — re-scored)
+
+HC1 decision Q5 rewrote the logo answer to the developer's confirmed policy:
+Buzzards is a developer, not a graphic designer, so graphics/logos/photos are not
+part of the build — but the client is pointed at options (AI design, paid stock, or a
+recommended human designer), any extra cost on the client's side.
+
+| # | Dimension | Score | Evidence |
+|---|---|---|---|
+| 1 | Confident, never cocky | MATCHED | *"jestem programistą, nie grafikiem"* — states the scope boundary plainly, owns the craft it does have; no false claim to be a designer, no superlative. |
+| 2 | Direct, never blunt | MATCHED | Names the limit, then immediately helps: *"Nie zostawiam Cię jednak z tym samego: podpowiem, jak zdobyć dobre."* — the human is not stripped out. |
+| 3 | Warm, never chummy | MATCHED | *"Grafika to nie moja działka"* — plain-spoken, warm, informal *ty*; no slang, no backslapping. |
+| 4 | Affirmative phrasing | MATCHED | Framed as help, not a demand: *"podpowiem, jak zdobyć dobre. Masz trzy drogi: projekt z AI, płatne zdjęcia stockowe albo polecony grafik."* — leads with what the reader *can* do; the one boundary negative (*nie wchodzą w budowę*) is charter §2 case 1 (honest limit named after the affirmative craft frame). |
+| 5 | Register floor | MATCHED | Active, plain words (*działka*, *zdobyć*, *pasuje do Twojego budżetu*), ~grade-7, no jargon. |
+| 6 | AI-transparency stance | MATCHED | AI named as one honest option for the client (*"projekt z AI"*), consistent with the page's expertise-with-a-tool framing; not overpromised. |
+| 7 | Lexical hygiene | MATCHED | The one pause-dash (*"nie moja działka — jestem programistą"*) is the single allowed pause-dash for the answer (≤1/section, ban-list §E); no AI-tells, no scare-quotes, no *"To nie X, to Y"*. |
+| 8 | Structure / Rule of One | MATCHED | Owns the graphics-scope objection once; does not re-pitch content/texts (that is `includes.content` + `faq.texts`). |
+| 9 | Headline (4 U's) | n/a | FAQ question is a label, not a persuasion headline (framework §6). |
+| 10 | Section QA (4 C's) | MATCHED | Clear (three named options)·Concise·Compelling (turns a "no" into practical help)·Credible (the cost-on-your-side is stated honestly, no hidden promise). |
+
 ### `offer.quote` (CTA — pinned keys)
 
 | # | Dimension | Score | Evidence |
@@ -735,6 +777,14 @@ floor only**: the em-dash tics and scare-quotes removed (e.g. *"Formularz + SEO
 techniczne + RODO + hosting + domena"* → *"Formularz, techniczne SEO, RODO, hosting
 i domena"*; *"Samodzielna edycja treści (bez abonamentu)"* → *"Samodzielna edycja
 treści, płatna raz"* — affirmative). No prices/modules changed. MATCHED on hygiene.
+
+**HC1 promo-framing revision (Q6) — re-scored:** all "offer window" language removed.
+`pricing.footnote` reworded *"Cena startowa obowiązuje w oknie startu oferty."* →
+*"Cena promocyjna obowiązuje do końca sierpnia."* (no window/launch wording; a firm,
+visible end date per Q3). `pricing.basic.priceTag` / `pricing.full.priceTag` retagged
+*"cena startowa"* → *"cena promocyjna"* (a promo on the base price, not a launch-window
+start price). The struck base-price + promo-price two-value structure and every number
+(999 / 1299 / 1999 / 2499 zł) are unchanged. MATCHED on hygiene + affirmative framing.
 
 ---
 
@@ -762,31 +812,40 @@ reads as a re-pitch.
 
 ## Open Questions
 
-1. **Hero price anchor** (carried from `pilot-hero.md` Q1) — the H1 anchors on
-   *"w cenie kilkuset złotych"*, honest for Basic (999) but low against Full (1999).
-   Confirm: anchor on the entry price, or switch to *"od kilkuset złotych"*? A
-   pricing/positioning call, not a copy invention.
-2. **Secondary CTA + proof link target** — `hero.ctaSecondary` (*Zobacz, jak
-   pracuję*), `guide.proofLink`, and `proof.link` all point at the process proof.
-   Confirm each destination: the offer page's own `guide`/`plan`/`proof` section vs.
-   the parent site's `/#warsztat` anchor. The copy assumes `/#warsztat` for the
-   `guide`/`proof` "publicznie opisany" links (matching offer-page.md §3/§7) and the
-   on-page proof section for `hero.ctaSecondary`. Confirm before landing so labels
-   match destinations.
-3. **Promo end date** — `pricing.promoNote` keeps the shipped *"cena ważna do końca
-   sierpnia"*. `offer-page.md` §5 + `concept.md` v5 flag the promo window
-   (1–3 months) + end condition as still-open. Confirm the date/condition before it
-   ships as a firm claim.
-4. **`meta.title` brand suffix** — added *"— Buzzards Soft"* to the title (SEO
-   convention). Confirm the brand suffix format matches the rest of the site's
-   `meta.title` pattern (check `lib/seo.ts` at landing).
-5. **FAQ `logo` answer** — `offer-page.md` §10 left *"Nie mam logo / zdjęć?"* as an
-   open question (*co dostarcza klient, co jest modułem*). The shipped `pl.json` had
-   resolved it (*"Grafiki i zdjęcia dostarczasz Ty..."*); this rewrite keeps that
-   resolution, lightly reworded. Confirm the scope answer is final.
-6. **`pricing.footnote` promo wording** — reworded *"obowiązuje w okresie startu
-   oferty"* → *"obowiązuje w oknie startu oferty"* for register; confirm it still
-   reads right alongside the concrete end-date in `promoNote`.
+> All six questions were resolved at the **HC1 closing gate (2026-07-19)** — decisions
+> recorded verbatim in `change.md` → `## Notes`. This block records the resolution
+> taken and the resulting edit. No copy-blocking question remains open; the single
+> deferred item (Q4) is a landing-time separator normalization, not a copy decision.
+
+1. **Hero price anchor — RESOLVED (drop the anchor).** The *"w cenie kilkuset
+   złotych"* anchor is removed from `hero.heading`, `hero.subheading`, and
+   `meta.description`. The hero is reframed on the value proposition (professional
+   site designed for your firm · owned by you · human-led AI process), affirmative and
+   ban-list-clean. This artifact's hero **supersedes** the pilot's price-anchored H1
+   (`pilot-hero.md` left untouched as the Phase-2 record). Re-scored above — all
+   dimensions MATCHED.
+2. **Proof/CTA link target — RESOLVED (no copy change).** `/#warsztat` is confirmed
+   for the proof links (`guide.proofLink`, `proof.link`) and the secondary CTA. Copy
+   already assumes it; nothing to change.
+3. **Promo end date — RESOLVED (firm & visible).** The promo runs until end of August
+   (may be extended later). `pricing.promoNote` = *"cena ważna do końca sierpnia"*
+   stays as a firm, visible claim; `pricing.footnote` now states
+   *"Cena promocyjna obowiązuje do końca sierpnia."*.
+4. **`meta.title` brand suffix — RESOLVED (keep; normalize at landing).** *"— Buzzards
+   Soft"* is kept. Separator normalization to the site's `lib/seo.ts` convention is
+   deferred to Sprint 003 landing — a landing-time formatting task, not a copy change.
+5. **FAQ `logo` answer — RESOLVED (rewritten).** Confirmed policy: Buzzards is a
+   developer, not a graphic designer, so graphics/logos/photos are not part of the
+   build; the client is pointed at options (AI design · paid stock · recommended
+   designer), any extra cost on the client's side. Question + answer rewritten
+   affirmatively in-voice. Re-scored above — all dimensions MATCHED.
+6. **Promo framing / "offer window" language — RESOLVED (removed everywhere).** The
+   offer is one fixed, permanent offer; the promo applies to the base price and runs
+   until end of August. All *okno / start oferty / cena startowa* framing removed:
+   `pricing.footnote` reworded to *"Cena promocyjna obowiązuje do końca sierpnia."*;
+   `pricing.basic.priceTag` / `pricing.full.priceTag` retagged *"cena startowa"* →
+   *"cena promocyjna"*. The struck-base-price + promo-price two-value structure and
+   all numbers are unchanged.
 
 ---
 
