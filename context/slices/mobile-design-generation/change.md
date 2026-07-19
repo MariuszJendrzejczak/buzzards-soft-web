@@ -39,3 +39,14 @@ in the house Flutter conventions and cited external design sources.
 - **Sequencing:** the WEB sibling is planned FIRST; this mobile slice is planned AFTER the web
   pattern is validated (mobile needs a named Flutter corpus, e.g. home_storage_mobile, and a
   device/emulator visual gate — heavier than web).
+
+## Deviations
+
+- **2026-07-19 (Phase 2) — `design-mobile` authored directly, not via `/skill-creator`.**
+  The plan's Implementation Approach names `/skill-creator` as the authoring method. Since the
+  validated web sibling `~/.claude/skills/design-web/SKILL.md` exists as an exact shape to mirror
+  1:1 (dual-mode generate/review, reads `_core/` + platform delta, never lands production code),
+  the skill was authored directly against that template with Flutter swaps + the platform-flow
+  parameter. This is a **method** deviation only — the deliverable (a well-formed dual-mode
+  SKILL.md) is identical, and mirroring the sibling gives tighter cross-skill consistency than a
+  fresh scaffold. Frontmatter validated (YAML parses; `name`/`description`/16 allowed-tools).

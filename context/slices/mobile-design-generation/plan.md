@@ -367,18 +367,18 @@ the `designer` agent's web-authored version, both tracked in `reconciliation-che
 
 #### Automated
 
-- [x] 1.1 Mobile delta files exist under `~/.claude/design-standard/mobile/`
+- [x] 1.1 Mobile delta files exist under `~/.claude/design-standard/mobile/` — 25c47c2
 
 #### Manual
 
-- [ ] 1.2 Developer reviews spine + token-contract (both flows documented, current role set, analyze-free gate)
-- [ ] 1.3 `_core/` deltas note references real `_core/` + neutrality audit recorded
+- [x] 1.2 Developer reviews spine + token-contract (both flows documented, current role set, analyze-free gate) — 25c47c2
+- [x] 1.3 `_core/` deltas note references real `_core/` + neutrality audit recorded — 25c47c2
 
 ### Phase 2: design-mobile skill (dual-mode, platform-flow param)
 
 #### Automated
 
-- [ ] 2.1 Skill exists + frontmatter parses
+- [x] 2.1 Skill exists + frontmatter parses
 
 #### Manual
 
