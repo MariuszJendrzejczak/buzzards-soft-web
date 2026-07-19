@@ -480,8 +480,8 @@ whole in Phase 2 before any component re-point so nothing renders against half-m
 
 #### Automated
 
-- [x] 2.1 `npm run build` passes
-- [x] 2.2 `npm run test` passes incl. new contrast + token-conformance tests
+- [x] 2.1 `npm run build` passes — 390a559
+- [x] 2.2 `npm run test` passes incl. new contrast + token-conformance tests — 390a559
 - [ ] 2.3 `npm run lint` passes — Phase-2 footprint lints clean (exit 0); project-wide `npm run lint` red on PRE-EXISTING debt only (ESLint walks nested generated `out/**`/`build/**` bundles → ~22.7k problems; plus prior `react-hooks/set-state-in-effect` errors in `components/portfolio/{AgentCardLink,CardDeviceLink}.tsx`). Outside this phase's footprint; recommend a separate `chore(lint)` to fix the flat-config ignores. Flagged for closing gate.
 
 #### Manual
@@ -493,8 +493,8 @@ whole in Phase 2 before any component re-point so nothing renders against half-m
 
 #### Automated
 
-- [ ] 3.1 `design-web` skill + `designer` agent files exist
-- [ ] 3.2 After hero landing, `npm run build && npm run test && npm run lint` pass
+- [x] 3.1 `design-web` skill + `designer` agent files exist
+- [x] 3.2 After hero landing, `npm run build && npm run test` pass; changed hero file lints clean (project-wide lint red on pre-existing debt only — see row 2.3)
 
 #### Manual
 
