@@ -563,7 +563,7 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [x] 3.1 Rewrite artifact and finalized namespace contract exist, cover every target leaf
+- [x] 3.1 Rewrite artifact and finalized namespace contract exist, cover every target leaf — 0ca1e07
 
 #### Manual
 
