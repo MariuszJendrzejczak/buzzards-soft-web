@@ -47,7 +47,6 @@ const PALETTE_COLOR_ALLOWLIST = new Set(
     "components/portfolio/WarsztatHeroTile.tsx",
     "components/portfolio/PortfolioSection.tsx",
     "components/portfolio/HoneticHero.tsx",
-    "components/sections/experience/currently-learning.tsx",
   ].map((p) => path.normalize(p)),
 );
 

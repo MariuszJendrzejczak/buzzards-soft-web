@@ -108,3 +108,14 @@ in the live site and cited external design sources.
 - **For the closing gate:** eyeball both surfaces in `dev-live-chrome` both themes; decide the two
   banked tuning calls — emerald/teal `-700` vs safe `-800`, and whether the neutral chips collapsing
   slate/zinc/gray into one `foreground` look is desired (`pilot-portfolio-badges.md` Open Qs).
+
+### 2026-07-19 · Closing gate (HC1) · light-theme audit + CurrentlyLearning band fix
+- **Proactive audit** (after the warsztat + badge fixes) for the same bug class across all
+  components: grep for hardcoded dark backgrounds + dark-only unguarded light-text shades.
+  **Result:** the dark-only-text shades are all gone; only two hardcoded-dark backgrounds remained:
+  `components/ui/sheet.tsx` `bg-black/10` (a modal scrim — correct on both themes, left as-is) and
+  `components/sections/experience/currently-learning.tsx` `bg-slate-900/50` (a dark-only section band).
+- **Fixed** `currently-learning.tsx`: `bg-slate-900/50` → `bg-surface/40` (theme-flipping, matching
+  the sibling `how-i-work.tsx` band idiom) — removes the last hardcoded dark section band; its text
+  tokens now read correctly in light. Dropped the file from the token-conformance allowlist (now
+  fully token-clean). `npm run build` + `npm run test` green.
