@@ -119,3 +119,16 @@ in the live site and cited external design sources.
   the sibling `how-i-work.tsx` band idiom) — removes the last hardcoded dark section band; its text
   tokens now read correctly in light. Dropped the file from the token-conformance allowlist (now
   fully token-clean). `npm run build` + `npm run test` green.
+
+### 2026-07-19 · Closing gate (HC1) · light-theme regression fix — white logo assets
+- **Found on-screen:** the HONETi logo and the Unity stack icon are **white monochrome PNG assets**
+  (`/portfolio/honeti-logo.png`, `/portfolio/icons/unity.png`) — invisible on light surfaces. This
+  is an image-asset problem, not a CSS-color one; we have no dark/colored variant.
+- **Fixed** with a theme-aware CSS filter `brightness-0 dark:brightness-100` (ink the white asset
+  black in light, keep white in dark) at all usages: HONETi logo in `HoneticHero.tsx`,
+  `AppCardGroup.tsx`, `app/[locale]/portfolio/honeti/page.tsx`; Unity icon (conditionally, NOT the
+  full-colour Flutter icon) in `stack-chip.tsx` + `AppCardGroup.tsx`. All sit on theme-flipping
+  surfaces, so black-in-light is correct everywhere.
+- **For the closing gate:** eyeball both logos in light — pure-black is the no-extra-asset default;
+  if the brand wants a specific dark/colored HONETi or Unity asset, swapping the PNG is the
+  higher-fidelity alternative. `npm run build` + `npm run test` green; changed files lint clean.

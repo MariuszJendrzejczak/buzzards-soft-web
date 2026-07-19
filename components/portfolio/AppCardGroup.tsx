@@ -64,7 +64,12 @@ export function AppCardGroup({
             aria-hidden
             width={48}
             height={48}
-            className="size-7 shrink-0 object-contain sm:size-8 lg:size-9"
+            // Unity's logo is a white monochrome PNG — ink it black in light,
+            // white in dark. Flutter's icon is full-colour and left untouched.
+            className={cn(
+              "size-7 shrink-0 object-contain sm:size-8 lg:size-9",
+              stackIcon === "Unity" && "brightness-0 dark:brightness-100",
+            )}
           />
         ) : null}
         <span>{t(titleKey)}</span>
@@ -81,7 +86,8 @@ export function AppCardGroup({
               alt="HONETi"
               width={220}
               height={68}
-              className="h-6 w-auto sm:h-7 lg:h-8"
+              // White monochrome logo asset — ink it black in light, white in dark.
+              className="h-6 w-auto object-contain brightness-0 sm:h-7 lg:h-8 dark:brightness-100"
             />
           </a>
         ) : null}

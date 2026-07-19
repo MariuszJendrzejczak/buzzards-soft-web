@@ -37,7 +37,13 @@ export function StackChip({ stack, className }: StackChipProps) {
         aria-hidden
         width={16}
         height={16}
-        className="size-4 shrink-0 object-contain"
+        // Unity's logo asset is a white monochrome PNG — invisible on the light
+        // chip. Ink it black in light, keep white in dark. Flutter's icon is
+        // full-colour, so it's left untouched.
+        className={cn(
+          "size-4 shrink-0 object-contain",
+          stack === "Unity" && "brightness-0 dark:brightness-100",
+        )}
       />
       {stack}
     </span>
