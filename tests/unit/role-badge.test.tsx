@@ -16,12 +16,15 @@ describe("<RoleBadge>", () => {
     expect(badge?.className).not.toContain("gray");
   });
 
-  it("renders the 'rozwoj-i-serwis' label and gray variant classes", () => {
+  it("renders the 'rozwoj-i-serwis' label with the neutral (foreground-token) variant", () => {
     const { container } = renderWithIntl(<RoleBadge role="rozwoj-i-serwis" />);
     const badge = container.querySelector("[data-role='rozwoj-i-serwis']") as HTMLElement | null;
     expect(badge).not.toBeNull();
     expect(badge?.textContent).toBe(enMessages.portfolio.role["rozwoj-i-serwis"]);
-    expect(badge?.className).toContain("gray");
+    // Neutral role → semantic foreground tokens (theme-aware), distinct from the
+    // emerald `od-zera` role. (Was raw `gray-*`; moved to tokens for light-theme
+    // legibility — see pilot-portfolio-badges.md.)
+    expect(badge?.className).toContain("text-foreground/70");
     expect(badge?.className).not.toContain("emerald");
   });
 

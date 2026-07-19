@@ -89,3 +89,22 @@ in the live site and cited external design sources.
 - **For the reviewer / closing gate:** eyeball the panel in `dev-live-chrome` both themes (glow
   warmth vs washout, every accent label legible, focus rings visible, 320px/200% reflow) per the
   `pilot-warsztat.md` TODO — the gap-test ran static-heuristic (no live Chrome in the agent run).
+
+### 2026-07-19 · Closing gate (HC1) · light-theme regression fix — portfolio + honeti badges
+- **Found on-screen (HC1 eyeball):** portfolio (home `#portfolio`) + HONETi page badges/chips/tags
+  illegible in light theme — every badge was `border-{c}-500/30 bg-{c}-500/10 text-{c}-300` and the
+  dark-optimized `text-{c}-300/200` shades measure ~1.3:1 on the off-white surface.
+- **Fixed via the `designer` agent** (artifact `pilot-portfolio-badges.md`, all-MATCHED gap-test,
+  per-hue contrast computed). Only 4 files carried the bug (everything else already used flipping
+  tokens): `tech-badge.tsx` (11 hues), `role-badge.tsx` (2), `stack-chip.tsx` (2),
+  `WarsztatHeroTile.tsx` (emerald chip+icon). Fix: each coloured chip gets a `light dark:` pair
+  keeping its hue identity — light shade `-700` (amber+cyan forced `-800`; emerald+teal a thin
+  `-700` pass, flagged for eyeball), dark keeps `-300/-200/-400`; tinted `-500/10` fills unchanged;
+  borders bumped `-500/30`→`-600/40` for definition. **Genuinely-neutral chips (AGPL/slate,
+  Next.js/zinc, rozwoj-i-serwis/gray) moved to `foreground` semantic tokens** (flip for free) —
+  updated two change-detector tests (`role-badge.test.tsx`, `app-card.test.tsx`) that pinned the
+  literal `gray`, preserving the meaningful "distinct from the emerald role" check.
+- **Verify:** `npm run build` + `npm run test` (510/510) green; the 4 components + 2 tests lint clean.
+- **For the closing gate:** eyeball both surfaces in `dev-live-chrome` both themes; decide the two
+  banked tuning calls — emerald/teal `-700` vs safe `-800`, and whether the neutral chips collapsing
+  slate/zinc/gray into one `foreground` look is desired (`pilot-portfolio-badges.md` Open Qs).

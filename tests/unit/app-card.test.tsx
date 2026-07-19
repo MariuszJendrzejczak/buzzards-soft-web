@@ -75,7 +75,10 @@ describe("<AppCard>", () => {
     renderWithIntl(<AppCard app={soildata} />);
     const role = document.querySelector(`[data-role='rozwoj-i-serwis']`);
     expect(role).not.toBeNull();
-    expect(role?.className).toContain("gray");
+    // Neutral role → semantic foreground token (was raw `gray-*`; moved for
+    // light-theme legibility — see pilot-portfolio-badges.md).
+    expect(role?.className).toContain("text-foreground/70");
+    expect(role?.className).not.toContain("emerald");
   });
 
   it("renders every contribution item as a list element under a <ul>", () => {

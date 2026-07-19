@@ -20,7 +20,7 @@ export function WarsztatHeroTile({ className }: WarsztatHeroTileProps) {
     <article
       data-warsztat-hero
       className={cn(
-        "flex h-full flex-col gap-4 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-6 shadow-sm",
+        "flex h-full flex-col gap-4 rounded-2xl border border-emerald-600/40 bg-emerald-500/5 p-6 shadow-sm dark:border-emerald-500/30",
         "lg:col-span-2",
         className,
       )}
@@ -28,7 +28,7 @@ export function WarsztatHeroTile({ className }: WarsztatHeroTileProps) {
       <div className="flex items-center gap-3">
         <span
           aria-hidden
-          className="flex size-12 shrink-0 items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-500/10 text-emerald-400"
+          className="flex size-12 shrink-0 items-center justify-center rounded-xl border border-emerald-600/30 bg-emerald-500/10 text-emerald-700 dark:border-emerald-500/30 dark:text-emerald-400"
         >
           <Workflow className="size-6" aria-hidden />
         </span>
@@ -49,7 +49,7 @@ export function WarsztatHeroTile({ className }: WarsztatHeroTileProps) {
           <li key={key}>
             <span
               data-warsztat-hero-chip
-              className="inline-flex items-center rounded-md border border-emerald-500/40 bg-emerald-500/10 px-2.5 py-1 font-mono text-xs leading-none whitespace-nowrap text-emerald-300"
+              className="inline-flex items-center rounded-md border border-emerald-600/40 bg-emerald-500/10 px-2.5 py-1 font-mono text-xs leading-none whitespace-nowrap text-emerald-700 dark:border-emerald-500/40 dark:text-emerald-300"
             >
               {t(key)}
             </span>

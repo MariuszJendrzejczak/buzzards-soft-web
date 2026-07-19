@@ -3,9 +3,12 @@ import Image from "next/image";
 import { type Stack } from "@/lib/portfolio/types";
 import { cn } from "@/lib/utils";
 
+// Theme-aware: light-theme ink darkens (`light dark:` pairs) so the chip label
+// clears WCAG 4.5:1 on the off-white surface; hue identity kept (Flutter=blue,
+// Unity=purple). See `context/slices/web-design-generation/pilot-portfolio-badges.md`.
 const STACK_VARIANT: Record<Stack, string> = {
-  Flutter: "border-blue-500/30 bg-blue-500/10 text-blue-300",
-  Unity: "border-purple-500/30 bg-purple-500/10 text-purple-300",
+  Flutter: "border-blue-600/40 bg-blue-500/10 text-blue-700 dark:border-blue-500/30 dark:text-blue-300",
+  Unity: "border-purple-600/40 bg-purple-500/10 text-purple-700 dark:border-purple-500/30 dark:text-purple-300",
 };
 
 const STACK_ICON: Record<Stack, string> = {
