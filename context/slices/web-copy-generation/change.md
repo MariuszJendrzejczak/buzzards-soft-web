@@ -22,6 +22,14 @@ standard, grounded in the current offer copy and live external sources.
 
 ## Notes
 
+### 2026-07-19 · Sprint 002 closing gate (HC1) — PL copy APPROVED for landing
+
+The developer approved the revised PL copy and the locked `offer.*` key map (126 leaves,
+frozen in `~/.claude/copy-standard/namespace-contract.md` §6, with the `offer.hero.heading`
++ `offer.quote.*` F2 pins preserved) after the Phase 3 revision (`b86790b`) applied all six
+gate decisions. Sprint 003 (landing) is unblocked. Slice stays `implementing` — Phases 4–6
+(land PL, restructure page, EN/SV, agent) remain.
+
 ### 2026-07-19 · Sprint 002 closing gate (HC1) — PL copy NOT yet approved; loop back to Phase 3
 
 The developer reviewed `offer-rewrite-pl.md` at the HC1 gate and requested a Phase 3
