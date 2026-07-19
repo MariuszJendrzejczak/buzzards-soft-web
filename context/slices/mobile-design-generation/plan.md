@@ -388,10 +388,10 @@ the `designer` agent's web-authored version, both tracked in `reconciliation-che
 
 #### Automated
 
-- [x] 3.1 Reconciliation checklist exists
+- [x] 3.1 Reconciliation checklist exists — d08cadc
 
 #### Manual
 
-- [ ] 3.2 Designer state correct (mobile branch if designer.md exists; spec in checklist if absent; mobile never creates)
-- [ ] 3.3 Developer reviews designer mobile branch / spec (platform-param, reads home, never lands)
-- [ ] 3.4 Reconciliation checklist captures deferred agent + home_storage work
+- [x] 3.2 Designer state correct (mobile branch if designer.md exists; spec in checklist if absent; mobile never creates) — d08cadc
+- [x] 3.3 Developer reviews designer mobile branch / spec (platform-param, reads home, never lands) — d08cadc
+- [x] 3.4 Reconciliation checklist captures deferred agent + home_storage work — d08cadc
