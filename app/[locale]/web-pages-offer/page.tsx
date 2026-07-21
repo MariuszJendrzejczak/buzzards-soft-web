@@ -8,8 +8,6 @@ import { buildAlternates, pageSocial } from "@/lib/seo";
 import { OfferHero } from "@/components/sections/offer/offer-hero";
 import { OfferProblem } from "@/components/sections/offer/offer-problem";
 import { OfferGuide } from "@/components/sections/offer/offer-guide";
-import { OfferPlan } from "@/components/sections/offer/offer-plan";
-import { OfferProof } from "@/components/sections/offer/offer-proof";
 import { OfferIncludes } from "@/components/sections/offer/offer-includes";
 import { OfferPricing } from "@/components/sections/offer/offer-pricing";
 import { OfferModules } from "@/components/sections/offer/offer-modules";
@@ -75,8 +73,6 @@ export default async function WebPagesOfferPage({
       <OfferHero />
       <OfferProblem />
       <OfferGuide />
-      <OfferPlan />
-      <OfferProof />
       <OfferIncludes />
       <OfferPricing />
       <OfferModules />

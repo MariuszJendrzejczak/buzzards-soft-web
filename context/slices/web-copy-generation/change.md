@@ -1,7 +1,7 @@
 ---
 change-id: web-copy-generation
 title: "Professional web-copy generation — reusable copywriting capability + offer-page rewrite"
-status: implementing
+status: impl_reviewed
 created: 2026-07-18
 updated: 2026-07-19
 ---

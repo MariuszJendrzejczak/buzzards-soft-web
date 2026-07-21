@@ -3,7 +3,8 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 // Server Component reading `getTranslations`; stub next-intl/server to walk the
 // PL bundle. Oracle for the FAQ set = offer-page.md §10 + the locked
-// "no logo / photos" decision, both captured in pl.json.
+// materials decision (texts + logo/photos merged into one "Jakie materiały
+// muszę przygotować?" question, 2026-07-21), both captured in pl.json.
 vi.mock("next-intl/server", async () => {
   const pl = (await import("@/messages/pl.json")).default as Record<
     string,
@@ -40,16 +41,16 @@ import { OfferFaq, OFFER_FAQ_KEYS } from "@/components/sections/offer/offer-faq"
 
 const faq = plMessages.offer.faq;
 
-// The expected FAQ set from offer-page.md §10 (7 questions incl. the locked
-// "no logo / photos" answer). This list is the independent oracle — if a
+// The expected FAQ set (5 questions). Live owner review 2026-07-21: texts +
+// logo/photos merged into one "materials" question; monthly + domain removed
+// (both redundant with the ownership section — pay-once + domain cost); a
+// "security" question added. This list is the independent oracle — if a
 // component drops or duplicates a question, the count assertion goes red.
 const EXPECTED_FAQ_KEYS = [
   "duration",
-  "texts",
-  "logo",
+  "materials",
   "selfEdit",
-  "monthly",
-  "domain",
+  "security",
   "gdpr",
 ] as const;
 
@@ -63,7 +64,7 @@ async function renderFaq() {
 }
 
 describe("<OfferFaq>", () => {
-  it("renders exactly the expected number of Q&A entries (7 from §10)", async () => {
+  it("renders exactly the expected number of Q&A entries (5)", async () => {
     const { container } = await renderFaq();
     const items = container.querySelectorAll("[data-slot='accordion-item']");
     expect(items).toHaveLength(EXPECTED_FAQ_KEYS.length);
@@ -84,15 +85,16 @@ describe("<OfferFaq>", () => {
     }
   });
 
-  it("includes the locked 'logo & photos' answer (developer not a designer; three options; cost on the client's side)", async () => {
+  it("includes the merged 'materials' answer (client supplies materials; graphics are a separate field with three options; cost on the client's side)", async () => {
     const { container } = await renderFaq();
-    const logoAnswer = faq.items.logo.answer;
-    expect(container.textContent).toContain(logoAnswer);
-    // Guard the load-bearing content of the HC1-locked decision (Q5, recorded in
-    // offer-rewrite-pl.md): graphics are out of scope because Buzzards is a
-    // developer, not a designer; the client is pointed at options, at a cost on
-    // their side. The oracle is the approved rewrite artifact, not the component.
-    expect(logoAnswer).toContain("nie grafikiem");
-    expect(logoAnswer).toContain("koszt po Twojej stronie");
+    const materialsAnswer = faq.items.materials.answer;
+    expect(container.textContent).toContain(materialsAnswer);
+    // Guard the load-bearing content of the merged decision (texts + logo/photos,
+    // 2026-07-21): materials are the client's by default, graphics are a separate
+    // field the client sources three ways, each at a cost on their side. Framed
+    // affirmatively (owner hard rule) — no "nie grafikiem" negation.
+    expect(materialsAnswer).toContain("dostarczasz Ty");
+    expect(materialsAnswer).toContain("osobna dziedzina");
+    expect(materialsAnswer).toContain("koszt po Twojej stronie");
   });
 });

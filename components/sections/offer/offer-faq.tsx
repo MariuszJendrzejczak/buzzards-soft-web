@@ -10,11 +10,9 @@ import {
 
 export const OFFER_FAQ_KEYS = [
   "duration",
-  "texts",
-  "logo",
+  "materials",
   "selfEdit",
-  "monthly",
-  "domain",
+  "security",
   "gdpr",
 ] as const;
 

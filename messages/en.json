@@ -292,6 +292,7 @@
     "cvEnglish": "English version (PDF)"
   },
   "contactForm": {
+    "orderPrefill": "Hello, I'm interested in the {package} package. Please get in touch about the details and a quote.",
     "requiredHintPrefix": "Fields marked ",
     "requiredHintSuffix": " are required",
     "labels": {
@@ -695,35 +696,39 @@
       "ctaSecondary": "See how I work"
     },
     "problem": {
-      "heading": "Today you have two paths to a website — and each has its cost.",
-      "agencyTitle": "Agency",
-      "agencyBody": "Looks great and made just for you, but it runs 4,000–5,000 zł and keeps you waiting for weeks.",
-      "generatorTitle": "AI generator",
-      "generatorBody": "Costs a few hundred, but hands you a template like a thousand other businesses — and you only keep the site while you keep paying the subscription.",
-      "mineTitle": "The third path",
-      "mineBody": "A website designed around your business by a real person, at a price closer to a generator than an agency, that you own outright."
+      "heading": "Who this offer is for",
+      "body1": "This offer is mainly for small and micro-businesses, freelancers, and private individuals or institutions who want a clean, simple website on a sensible budget. If that sounds like you, you're in the right place.",
+      "body2": "I bring two worlds together here. You're in direct contact with me, so at every step you know what's happening, can ask questions and request changes. At the same time I use AI tools that speed up my work and let me keep the price friendly.",
+      "body3": "My goal is to deliver a good, well-finished website to every client, whatever the scale of the project. Experience with this technology lets me do that for businesses that, before the AI era, often couldn't afford a build like this."
     },
     "guide": {
-      "heading": "I work with AI and I say so openly — because it puts you ahead.",
-      "body1": "I understand why you need a site: you want to look credible and be easy to find, without paying agency rates and without months of waiting. That's exactly why I work with AI — you pay less and get it sooner.",
-      "body2": "But this is more than typing “write me a website” into ChatGPT. I run my own process with specialised tools and review stages, so what you get holds a standard. AI brings the speed and the lower price. I bring the quality, the decisions and the accountability — because at every step a real person knows what they're doing.",
-      "proofPrefix": "Want to see my workshop under the hood? The whole process is",
-      "proofLink": "documented publicly →",
-      "proofSuffix": "— and this very site was built on that same track."
-    },
-    "plan": {
-      "heading": "How your site comes together — in three steps",
-      "step1": {
-        "title": "A conversation",
-        "body": "We start with a normal conversation: you tell me what you do, who for, and what you need. You talk to me, a real person."
-      },
-      "step2": {
-        "title": "Content and design",
-        "body": "I prepare the copy (if you don't have your own) and design the site around your business. I show it to you ready to approve, and we work through your notes in rounds of revisions."
-      },
-      "step3": {
-        "title": "Launch",
-        "body": "I publish the site on your hosting and your domain, on your accounts. From that day the site works for you, and you have full access to it."
+      "heading": "How I work on your website",
+      "intro": "I work with AI and I say so openly. The tools speed up part of the work, but I lead the whole thing and I'm accountable for the result — at every stage you know what's happening and have a real say in what gets built. Here's the full path from idea to finished site:",
+      "steps": {
+        "conversation": {
+          "title": "Conversation",
+          "body": "We start with a plain, human conversation in everyday language. You tell me what you do and what the site should give you. Together we settle the scope, the style and a rough timeline, and we split the tasks: what you provide and what I take on. You leave that conversation with a clear picture of what will be built and what it costs."
+        },
+        "mockup": {
+          "title": "Live mockup",
+          "body": "I build the mockup straight away as a real, clickable page on sample content. You view the actual layout in your browser like a finished product: section placement, colours, spacing, proportions. That way you see something concrete right from the start and can react while a change of direction is still easy and quick. I apply your notes before we move into the real content."
+        },
+        "content": {
+          "title": "Content and materials",
+          "body": "We gather content in parallel with the mockup. Copy, logo and photos are, as a rule, yours to provide — it's your company and your voice. If something is missing, we work through it together and find the best route: from help polishing the copy, through AI graphics and stock, to a trusted designer or UX designer when you need your own logo or a look designed from scratch. That last option is a separate, paid service with a specialist, and I pull it all together into one coherent site."
+        },
+        "build": {
+          "title": "Build and testing",
+          "body": "Once the layout and content are approved, I take the whole thing to the finish and polish every detail. I mind the details that decide quality: loading speed and correct display on phone, tablet and computer. I test everything so the site looks good and runs reliably."
+        },
+        "review": {
+          "title": "Review and refinement",
+          "body": "I hand the finished site over for you to look at. You click, read, check it on your own phone and tell me plainly what fits and what to refine. The number of rounds depends on the package (usually two to four), so you know up front how much room you have for changes and when the site is done. Those rounds are part of the service — that's where we refine the site."
+        },
+        "publish": {
+          "title": "Hosting, domain and launch",
+          "body": "Finally I handle the whole technical side. I configure hosting, connect the domain (and if you need one, I help you choose and buy it) and publish the site online, on your accounts. From that moment the site is live and starts working for your business."
+        }
       }
     },
     "proof": {
@@ -733,19 +738,24 @@
     },
     "includes": {
       "heading": "Here's what you get with every site",
+      "intro": "Whichever package and scope you choose, you get the same solid set of essentials:",
       "items": {
         "mobile": "A fast site that works on every phone — and that's where most of your customers will come from.",
         "contact": "A contact form and one-tap phone call, so customers reach out right away.",
         "seo": "A technical SEO foundation, so Google sees you from day one.",
         "hosting": "Free hosting, your own domain and an SSL certificate — everything ready to launch.",
         "gdpr": "GDPR compliance: a cookie banner and privacy policy, so you can operate with peace of mind.",
-        "content": "Copy prepared and checked with my process, if you don't have your own."
+        "content": "Copy prepared and checked with my process, if you don't have your own.",
+        "support": "Care and consultation at every stage of the build. I'm available throughout: you ask, I advise, and we make decisions together, so you always know where things stand. I guide you through the process in plain language, so every choice is yours and fully informed.",
+        "security": "A secure, encrypted connection (SSL) and hosting on Google's infrastructure. Data between your site and your visitors travels encrypted, and the browser shows the padlock that builds instant trust. Your site runs on the same proven backend the big services rely on."
       }
     },
     "pricing": {
       "heading": "Simple packages, transparent prices",
       "promoNote": "price valid until the end of August",
       "footnote": "Net prices. The promotional price applies until the end of August.",
+      "baseReference": "+ everything in “What every site includes”",
+      "extrasLabel": "Also included",
       "rowLabels": {
         "price": "Price",
         "audience": "Who it's for",
@@ -778,6 +788,8 @@
         "audience": "a business that wants to be visible and win leads",
         "pages": "up to 8 sections and 2 subpages",
         "revisions": "4 rounds / 14 days",
+        "extras": "Local visibility (Google Business), Animations, Dark and light mode",
+        "extrasValue": "Separately these modules would be +1050 zł",
         "cta": "Quote Full"
       },
       "custom": {
@@ -862,25 +874,17 @@
           "question": "How long does it take?",
           "answer": "Usually from a few days to about 2 weeks, depending on the package."
         },
-        "texts": {
-          "question": "Do I need to have the copy ready?",
-          "answer": "You don't. I can prepare and check it based on a short conversation. Have your own? Even better — then I'll polish it."
-        },
-        "logo": {
-          "question": "What about a logo and photos?",
-          "answer": "Graphics aren't my field — I'm a developer, not a designer, so a logo and photos aren't part of building the site. But I won't leave you on your own with it: I'll advise you on how to get good ones. You have three paths: an AI design, paid stock photos, or a recommended designer. Each is a cost on your side, and I'll help you choose the one that fits your budget."
+        "materials": {
+          "question": "What materials do I need to prepare?",
+          "answer": "As a rule, the materials (copy, logo and photos) are yours to provide, since it's your company and your brand. If something is missing, we find a solution together. I'll tidy up and polish your copy so it reads professionally. Graphics are a separate field, so you can source a logo and photos three ways: an AI design, paid stock photos, or commissioning a trusted specialist as an add-on service. Each path is a cost on your side, and I'll help you choose the one that fits your budget."
         },
         "selfEdit": {
           "question": "Will I be able to edit the site myself later?",
           "answer": "Yes, if you add the self-editing module — paid once, with no monthly subscription."
         },
-        "monthly": {
-          "question": "Do I pay monthly?",
-          "answer": "You pay for the site once. The only recurring cost is your domain (around 50–90 zł a year), which you pay to the registrar, not to me."
-        },
-        "domain": {
-          "question": "Will you help with the domain?",
-          "answer": "Yes — buying and setting up the domain are included."
+        "security": {
+          "question": "Is my site secure?",
+          "answer": "Yes. The site runs over an encrypted HTTPS connection, so form data and visitor traffic are protected, and the browser shows a padlock in the address bar. Hosting sits on Google's infrastructure — the same backend that powers large sites."
         },
         "gdpr": {
           "question": "What about GDPR?",

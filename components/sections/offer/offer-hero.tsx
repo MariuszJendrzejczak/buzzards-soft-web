@@ -25,20 +25,6 @@ export async function OfferHero() {
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
             {t("subheading")}
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a
-              href="#offer-quote"
-              className="inline-flex h-11 items-center justify-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
-            >
-              {t("ctaPrimary")}
-            </a>
-            <a
-              href="#offer-guide"
-              className="inline-flex h-11 items-center justify-center rounded-lg border border-border bg-background px-6 text-sm font-medium text-foreground transition-colors hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
-            >
-              {t("ctaSecondary")}
-            </a>
-          </div>
         </ScrollReveal>
       </div>
     </section>

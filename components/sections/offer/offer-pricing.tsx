@@ -1,15 +1,15 @@
+import { Check } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import { OrderButton } from "@/components/sections/offer/order-button";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 import { cn } from "@/lib/utils";
 
-type Cell = string;
-
 type FeatureRow = {
   labelKey: string;
-  basic: Cell;
-  full: Cell;
-  custom: Cell;
+  basic: string;
+  full: string;
+  custom: string;
 };
 
 const TIERS = ["basic", "full", "custom"] as const;
@@ -17,48 +17,16 @@ const TIERS = ["basic", "full", "custom"] as const;
 export async function OfferPricing() {
   const t = await getTranslations("offer.pricing");
 
-  const included = t("included");
-  const moduleLabel = t("module");
-
+  // Cards show only what DIFFERS between packages (scope + revision rounds).
+  // The shared base is one reference line ("+ cała baza z…"); Full's bundled
+  // extras get their own highlighted line. Modules live in the modules section.
   const rows: FeatureRow[] = [
-    {
-      labelKey: "audience",
-      basic: t("basic.audience"),
-      full: t("full.audience"),
-      custom: t("custom.audience"),
-    },
     {
       labelKey: "pages",
       basic: t("basic.pages"),
       full: t("full.pages"),
       custom: t("custom.pages"),
     },
-    {
-      labelKey: "aiContent",
-      basic: included,
-      full: included,
-      custom: included,
-    },
-    { labelKey: "base", basic: included, full: included, custom: included },
-    {
-      labelKey: "googleBusiness",
-      basic: moduleLabel,
-      full: included,
-      custom: included,
-    },
-    {
-      labelKey: "animations",
-      basic: moduleLabel,
-      full: included,
-      custom: included,
-    },
-    {
-      labelKey: "themeToggle",
-      basic: moduleLabel,
-      full: included,
-      custom: included,
-    },
-    { labelKey: "language", basic: included, full: included, custom: included },
     {
       labelKey: "revisions",
       basic: t("basic.revisions"),
@@ -118,18 +86,40 @@ export async function OfferPricing() {
                 ))}
               </dl>
 
+              {tier === "full" ? (
+                <div className="flex flex-col gap-2 border-t border-border/50 pt-4">
+                  <p className="text-sm font-semibold text-foreground">
+                    {t("extrasLabel")}
+                  </p>
+                  <ul className="flex flex-col gap-1.5">
+                    {t("full.extras")
+                      .split(", ")
+                      .map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2 text-sm text-foreground"
+                        >
+                          <Check
+                            aria-hidden
+                            className="mt-0.5 size-4 shrink-0 text-brand"
+                          />
+                          {item}
+                        </li>
+                      ))}
+                  </ul>
+                </div>
+              ) : null}
+
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {t("baseReference")}
+              </p>
+
               <div className="mt-auto pt-2">
-                <a
-                  href="#offer-quote"
-                  className={cn(
-                    "inline-flex h-10 w-full items-center justify-center rounded-lg px-4 text-sm font-medium transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
-                    tier === "full"
-                      ? "bg-primary text-primary-foreground hover:bg-primary/80"
-                      : "border border-border bg-background text-foreground hover:bg-muted",
-                  )}
-                >
-                  {t(`${tier}.cta`)}
-                </a>
+                <OrderButton
+                  pkg={t(`${tier}.name`)}
+                  label={t(`${tier}.cta`)}
+                  variant={tier === "full" ? "primary" : "secondary"}
+                />
               </div>
             </div>
           ))}

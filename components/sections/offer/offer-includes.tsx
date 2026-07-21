@@ -9,11 +9,13 @@ import {
 
 const ITEM_KEYS = [
   "mobile",
-  "contact",
   "seo",
-  "hosting",
-  "gdpr",
+  "contact",
+  "support",
   "content",
+  "hosting",
+  "security",
+  "gdpr",
 ] as const;
 
 export async function OfferIncludes() {
@@ -33,6 +35,9 @@ export async function OfferIncludes() {
           >
             {t("heading")}
           </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            {t("intro")}
+          </p>
         </ScrollReveal>
 
         <StaggerGroup

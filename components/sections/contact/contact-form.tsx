@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2, Send } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -140,6 +140,22 @@ export function ContactForm({
     },
     mode: "onTouched",
   });
+
+  // Pricing "Zamów …" buttons dispatch `offer:order` with the package name;
+  // prefill the message field with a ready lead-in so the client lands on a
+  // form that already says what they want. Harmless on pages without the event.
+  useEffect(() => {
+    function handleOrder(event: Event) {
+      const pkg = (event as CustomEvent<{ pkg?: string }>).detail?.pkg;
+      if (!pkg) return;
+      form.setValue("message", t("orderPrefill", { package: pkg }), {
+        shouldValidate: true,
+        shouldDirty: true,
+      });
+    }
+    window.addEventListener("offer:order", handleOrder);
+    return () => window.removeEventListener("offer:order", handleOrder);
+  }, [form, t]);
 
   async function onSubmit(values: ContactFormValues) {
     let result: ContactSubmitResult;

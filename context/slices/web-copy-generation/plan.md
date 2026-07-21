@@ -604,7 +604,7 @@ intermediate state. Old keys are fully replaced, not deprecated in place.
 
 #### Automated
 
-- [x] 6.1 copywriter.md exists with valid parseable frontmatter
+- [x] 6.1 copywriter.md exists with valid parseable frontmatter — f07eeac
 
 #### Manual
 
