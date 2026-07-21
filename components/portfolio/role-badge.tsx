@@ -4,11 +4,14 @@ import { useTranslations } from "next-intl";
 import { type Role, roleLabelKey } from "@/lib/portfolio/types";
 import { cn } from "@/lib/utils";
 
+// Theme-aware: light-theme ink darkens for legibility on the off-white surface;
+// the neutral "rozwoj-i-serwis" role moves to `foreground` tokens (flips for
+// free). See `context/slices/web-design-generation/pilot-portfolio-badges.md`.
 const ROLE_VARIANT: Record<Role, string> = {
   "od-zera":
-    "border-emerald-500/30 bg-emerald-500/10 text-emerald-300",
+    "border-emerald-600/40 bg-emerald-500/10 text-emerald-700 dark:border-emerald-500/30 dark:text-emerald-300",
   "rozwoj-i-serwis":
-    "border-gray-500/30 bg-gray-500/10 text-gray-300",
+    "border-border bg-foreground/[0.06] text-foreground/70",
 };
 
 const ROLE_ICON: Record<Role, LucideIcon> = {

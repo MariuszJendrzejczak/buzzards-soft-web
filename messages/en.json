@@ -20,7 +20,8 @@
       "learning": "Growth",
       "about": "About",
       "education": "Education",
-      "contact": "Contact"
+      "contact": "Contact",
+      "offer": "Sites for businesses"
     }
   },
   "language": {
@@ -291,6 +292,7 @@
     "cvEnglish": "English version (PDF)"
   },
   "contactForm": {
+    "orderPrefill": "Hello, I'm interested in the {package} package. Please get in touch about the details and a quote.",
     "requiredHintPrefix": "Fields marked ",
     "requiredHintSuffix": " are required",
     "labels": {
@@ -678,6 +680,223 @@
     "bodyPart2": ", I'll fix it.",
     "back": "Back to home",
     "contactCta": "Get in touch if this is a bug"
+  },
+  "offer": {
+    "meta": {
+      "title": "Websites for businesses and freelancers — Buzzards Soft",
+      "description": "A professional website designed around your business and handed over to you: the code, the content and the accounts are all in your name. I work with AI, so you get a finished site faster and cheaper, while a real person watches over every step and stands behind the quality."
+    },
+    "breadcrumbBack": "Back to the home page",
+    "documentBadge": "Offer · Websites",
+    "hero": {
+      "eyebrow": "Websites for small businesses and freelancers",
+      "heading": "A professional website designed around your business — and it's yours to own.",
+      "subheading": "I design it around your business and hand it over to you: the code, the content and the accounts are all in your name. I work with AI, so you get a finished site faster and cheaper, while a real person watches over every step, stands behind the quality and guides you all the way to launch.",
+      "ctaPrimary": "Get a quote for your site",
+      "ctaSecondary": "See how I work"
+    },
+    "problem": {
+      "heading": "Who this offer is for",
+      "body1": "This offer is mainly for small and micro-businesses, freelancers, and private individuals or institutions who want a clean, simple website on a sensible budget. If that sounds like you, you're in the right place.",
+      "body2": "I bring two worlds together here. You're in direct contact with me, so at every step you know what's happening, can ask questions and request changes. At the same time I use AI tools that speed up my work and let me keep the price friendly.",
+      "body3": "My goal is to deliver a good, well-finished website to every client, whatever the scale of the project. Experience with this technology lets me do that for businesses that, before the AI era, often couldn't afford a build like this."
+    },
+    "guide": {
+      "heading": "How I work on your website",
+      "intro": "I work with AI and I say so openly. The tools speed up part of the work, but I lead the whole thing and I'm accountable for the result — at every stage you know what's happening and have a real say in what gets built. Here's the full path from idea to finished site:",
+      "steps": {
+        "conversation": {
+          "title": "Conversation",
+          "body": "We start with a plain, human conversation in everyday language. You tell me what you do and what the site should give you. Together we settle the scope, the style and a rough timeline, and we split the tasks: what you provide and what I take on. You leave that conversation with a clear picture of what will be built and what it costs."
+        },
+        "mockup": {
+          "title": "Live mockup",
+          "body": "I build the mockup straight away as a real, clickable page on sample content. You view the actual layout in your browser like a finished product: section placement, colours, spacing, proportions. That way you see something concrete right from the start and can react while a change of direction is still easy and quick. I apply your notes before we move into the real content."
+        },
+        "content": {
+          "title": "Content and materials",
+          "body": "We gather content in parallel with the mockup. Copy, logo and photos are, as a rule, yours to provide — it's your company and your voice. If something is missing, we work through it together and find the best route: from help polishing the copy, through AI graphics and stock, to a trusted designer or UX designer when you need your own logo or a look designed from scratch. That last option is a separate, paid service with a specialist, and I pull it all together into one coherent site."
+        },
+        "build": {
+          "title": "Build and testing",
+          "body": "Once the layout and content are approved, I take the whole thing to the finish and polish every detail. I mind the details that decide quality: loading speed and correct display on phone, tablet and computer. I test everything so the site looks good and runs reliably."
+        },
+        "review": {
+          "title": "Review and refinement",
+          "body": "I hand the finished site over for you to look at. You click, read, check it on your own phone and tell me plainly what fits and what to refine. The number of rounds depends on the package (usually two to four), so you know up front how much room you have for changes and when the site is done. Those rounds are part of the service — that's where we refine the site."
+        },
+        "publish": {
+          "title": "Hosting, domain and launch",
+          "body": "Finally I handle the whole technical side. I configure hosting, connect the domain (and if you need one, I help you choose and buy it) and publish the site online, on your accounts. From that moment the site is live and starts working for your business."
+        }
+      }
+    },
+    "proof": {
+      "heading": "The best proof is right in front of you.",
+      "body": "This site you're reading right now was built with exactly the process I sell — the same person, the same tools, the same review stages. Want to look deeper? I describe the whole workshop step by step.",
+      "link": "See how I work →"
+    },
+    "includes": {
+      "heading": "Here's what you get with every site",
+      "intro": "Whichever package and scope you choose, you get the same solid set of essentials:",
+      "items": {
+        "mobile": "A fast site that works on every phone — and that's where most of your customers will come from.",
+        "contact": "A contact form and one-tap phone call, so customers reach out right away.",
+        "seo": "A technical SEO foundation, so Google sees you from day one.",
+        "hosting": "Free hosting, your own domain and an SSL certificate — everything ready to launch.",
+        "gdpr": "GDPR compliance: a cookie banner and privacy policy, so you can operate with peace of mind.",
+        "content": "Copy prepared and checked with my process, if you don't have your own.",
+        "support": "Care and consultation at every stage of the build. I'm available throughout: you ask, I advise, and we make decisions together, so you always know where things stand. I guide you through the process in plain language, so every choice is yours and fully informed.",
+        "security": "A secure, encrypted connection (SSL) and hosting on Google's infrastructure. Data between your site and your visitors travels encrypted, and the browser shows the padlock that builds instant trust. Your site runs on the same proven backend the big services rely on."
+      }
+    },
+    "pricing": {
+      "heading": "Simple packages, transparent prices",
+      "promoNote": "price valid until the end of August",
+      "footnote": "Net prices. The promotional price applies until the end of August.",
+      "baseReference": "+ everything in “What every site includes”",
+      "extrasLabel": "Also included",
+      "rowLabels": {
+        "price": "Price",
+        "audience": "Who it's for",
+        "pages": "Site scope",
+        "aiContent": "AI copy, checked with my process",
+        "base": "Form, technical SEO, GDPR, hosting and domain",
+        "googleBusiness": "Local visibility (Google Business)",
+        "animations": "Animations",
+        "themeToggle": "Dark and light mode (toggle)",
+        "language": "One language",
+        "revisions": "Revision rounds"
+      },
+      "included": "✓",
+      "module": "module",
+      "basic": {
+        "name": "Basic",
+        "basePrice": "1299 zł",
+        "promoPrice": "999 zł",
+        "priceTag": "promotional price",
+        "audience": "business card or simple offer",
+        "pages": "1 page, up to 5 sections",
+        "revisions": "2 rounds / 7 days",
+        "cta": "Quote Basic"
+      },
+      "full": {
+        "name": "Full",
+        "basePrice": "2499 zł",
+        "promoPrice": "1999 zł",
+        "priceTag": "promotional price",
+        "audience": "a business that wants to be visible and win leads",
+        "pages": "up to 8 sections and 2 subpages",
+        "revisions": "4 rounds / 14 days",
+        "extras": "Local visibility (Google Business), Animations, Dark and light mode",
+        "extrasValue": "Separately these modules would be +1050 zł",
+        "cta": "Quote Full"
+      },
+      "custom": {
+        "name": "Bigger project",
+        "price": "Custom quote",
+        "audience": "shop, custom build from scratch, complex integrations",
+        "pages": "as needed",
+        "revisions": "to be agreed",
+        "cta": "Let's talk"
+      }
+    },
+    "modules": {
+      "heading": "Extend your site with what you need",
+      "colModule": "Module",
+      "colPrice": "Price",
+      "items": {
+        "localVisibility": {
+          "name": "Local visibility (Google Business, Maps, reviews)",
+          "price": "+250 zł"
+        },
+        "animations": {
+          "name": "Animations and effects",
+          "price": "+400 zł"
+        },
+        "themeToggle": {
+          "name": "Dark and light mode (toggle)",
+          "price": "+400 zł"
+        },
+        "extraLanguage": {
+          "name": "Additional language",
+          "price": "+400 zł / language"
+        },
+        "selfEdit": {
+          "name": "Edit content yourself, paid once",
+          "price": "+700 zł"
+        },
+        "leads": {
+          "name": "Lead capture (mailing list or a submissions sheet)",
+          "price": "+400 zł (both +550)"
+        },
+        "booking": {
+          "name": "Bookings and calendar",
+          "price": "+350 zł"
+        },
+        "extraPage": {
+          "name": "Additional subpage",
+          "price": "+300 zł"
+        },
+        "blog": {
+          "name": "Blog and news",
+          "price": "+700 zł"
+        },
+        "conversionTracking": {
+          "name": "Conversion tracking for ads",
+          "price": "+250 zł"
+        },
+        "domainEmail": {
+          "name": "Domain and business email setup",
+          "price": "+150 zł"
+        }
+      }
+    },
+    "ownership": {
+      "heading": "The site is yours to own",
+      "body": "I put the domain, hosting, code, content and accounts in your name and on your accounts. You pay once — the only recurring cost is your own domain (around 50–90 zł a year, paid to the registrar). If you ever wanted to move to someone else, you take the whole thing and carry on.",
+      "limitsHeading": "I stand behind all of this — and I tell you where the limits are",
+      "limits": {
+        "seo": {
+          "lead": "I build a solid technical foundation for SEO and local visibility.",
+          "body": "I don't run ongoing ranking campaigns or guarantee first place on Google — that's a separate, continuous service, and I'll honestly point you to who to hire for it."
+        },
+        "commerce": {
+          "lead": "Shops, complex integrations and a real CRM system I handle as a custom quote.",
+          "body": "They don't fit into the Basic or Full package, so I price them separately, for the specific project."
+        }
+      }
+    },
+    "faq": {
+      "heading": "Frequently asked questions",
+      "items": {
+        "duration": {
+          "question": "How long does it take?",
+          "answer": "Usually from a few days to about 2 weeks, depending on the package."
+        },
+        "materials": {
+          "question": "What materials do I need to prepare?",
+          "answer": "As a rule, the materials (copy, logo and photos) are yours to provide, since it's your company and your brand. If something is missing, we find a solution together. I'll tidy up and polish your copy so it reads professionally. Graphics are a separate field, so you can source a logo and photos three ways: an AI design, paid stock photos, or commissioning a trusted specialist as an add-on service. Each path is a cost on your side, and I'll help you choose the one that fits your budget."
+        },
+        "selfEdit": {
+          "question": "Will I be able to edit the site myself later?",
+          "answer": "Yes, if you add the self-editing module — paid once, with no monthly subscription."
+        },
+        "security": {
+          "question": "Is my site secure?",
+          "answer": "Yes. The site runs over an encrypted HTTPS connection, so form data and visitor traffic are protected, and the browser shows a padlock in the address bar. Hosting sits on Google's infrastructure — the same backend that powers large sites."
+        },
+        "gdpr": {
+          "question": "What about GDPR?",
+          "answer": "A cookie banner and privacy policy come with every site."
+        }
+      }
+    },
+    "quote": {
+      "heading": "Tell me briefly what you need, and I'll get back to you with a quote.",
+      "intro": "No commitment. Write a few sentences about what you do and what you need, and I'll reply with a quote and a suggestion for how to do it.",
+      "messagePlaceholder": "what business or service you have and what you need"
+    }
   },
   "rootMetadata": {
     "title": "Buzzards Soft — AI-Augmented Mobile Developer",

@@ -16,6 +16,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { LanguageToggle } from "@/components/layout/language-toggle";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Link, usePathname } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
@@ -26,6 +27,7 @@ const NAV_KEYS = [
   // { href: "#currently-learning", key: "learning" }, // temporarily hidden with the "Rozwój" section
   { href: "#about", key: "about" },
   { href: "#education", key: "education" },
+  { href: "/web-pages-offer", key: "offer" },
   { href: "#contact", key: "contact" },
 ] as const;
 
@@ -79,6 +81,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2 sm:gap-3">
+            <ThemeToggle className="hidden sm:inline-flex" />
             <LanguageToggle className="hidden sm:inline-flex" />
 
             <Button
@@ -119,23 +122,38 @@ export function Header() {
                   aria-label={tNav("mobileAria")}
                   className="flex flex-1 flex-col gap-1 px-4 py-2"
                 >
-                  {NAV_KEYS.map((item) => (
-                    <SheetClose
-                      key={item.href}
-                      render={
-                        <a
-                          href={item.href}
-                          onClick={hideHeader}
-                          className="rounded-md px-3 py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring/50"
-                        >
-                          {tNav(`items.${item.key}`)}
-                        </a>
-                      }
-                    />
-                  ))}
+                  {NAV_KEYS.map((item) => {
+                    const className =
+                      "rounded-md px-3 py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring/50";
+                    return (
+                      <SheetClose
+                        key={item.href}
+                        render={
+                          item.href.startsWith("/") ? (
+                            <Link
+                              href={item.href}
+                              onClick={hideHeader}
+                              className={className}
+                            >
+                              {tNav(`items.${item.key}`)}
+                            </Link>
+                          ) : (
+                            <a
+                              href={item.href}
+                              onClick={hideHeader}
+                              className={className}
+                            >
+                              {tNav(`items.${item.key}`)}
+                            </a>
+                          )
+                        }
+                      />
+                    );
+                  })}
                 </nav>
 
                 <div className="flex flex-col gap-3 border-t border-border/60 p-4">
+                  <ThemeToggle className="self-start" />
                   <LanguageToggle className="self-start sm:hidden" />
                   <SheetClose
                     render={
@@ -173,7 +191,9 @@ function BrandMark({ ariaLabel }: { ariaLabel: string }) {
         height={32}
         priority
         aria-hidden
-        className="size-8 transition-transform group-hover/brand:scale-105"
+        // White monochrome mark — ink it black in light (matching the wordmark),
+        // keep white in dark.
+        className="size-8 brightness-0 transition-transform group-hover/brand:scale-105 dark:brightness-100"
       />
       <span className="font-heading text-sm font-semibold tracking-tight text-foreground sm:text-base">
         Buzzards Soft
@@ -191,12 +211,19 @@ function NavLink({
   label: string;
   onNavigate?: () => void;
 }) {
+  const className =
+    "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50";
+
+  if (item.href.startsWith("/")) {
+    return (
+      <Link href={item.href} onClick={onNavigate} className={className}>
+        {label}
+      </Link>
+    );
+  }
+
   return (
-    <a
-      href={item.href}
-      onClick={onNavigate}
-      className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
-    >
+    <a href={item.href} onClick={onNavigate} className={className}>
       {label}
     </a>
   );

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workflow — slice pipeline (referencja)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<style>
+  * { box-sizing: border-box; }
+  .bz { margin:0; background:#FBFAF7; color:#14120F; font-family:'IBM Plex Sans',system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  @keyframes bzPulse { 0%,100%{ box-shadow:0 0 0 0 rgba(232,137,74,.5); } 50%{ box-shadow:0 0 0 7px rgba(232,137,74,0); } }
+  @keyframes bzFloat { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-3px); } }
+  @keyframes bzGlow { 0%,100%{ opacity:.5; } 50%{ opacity:1; } }
+  .bz a { color:#C4562B; text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="bz" style="width:100%;padding:96px 32px;">
+  <div style="max-width:1180px;margin:0 auto;">
+
+    <!-- ===== Header ===== -->
+    
+    <header style="max-width:760px;margin-bottom:52px;">
+      <div style="display:inline-flex;align-items:center;gap:9px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#C4562B;font-weight:600;margin-bottom:22px;">
+        <span style="width:22px;height:1px;background:#C4562B;display:inline-block;"></span>Jak pracuję z AI
+      </div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(34px,5.2vw,58px);line-height:1.0;letter-spacing:-.03em;margin:0 0 22px;">Kontrolowany pipeline,<br>nie „vibe-coding".</h2>
+      <p style="font-size:clamp(16px,1.7vw,19px);line-height:1.6;color:#5A554C;margin:0;">AI przyspiesza każdy etap wytwarzania — ale nic nie trafia dalej bez mojej decyzji. Ten sam tor za każdym razem, z wyraźnym podziałem: co robimy razem, co robi agent sam, a gdzie decyduje człowiek.</p>
+    </header>
+    
+
+    <!-- ===== DARK SCHEMATIC PANEL ===== -->
+    <div style="position:relative;border-radius:30px;padding:clamp(26px,3vw,44px);border:1px solid rgba(20,18,15,.08);background:radial-gradient(80% 40% at 50% -6%,rgba(232,137,74,.20),transparent 62%),radial-gradient(120% 130% at 15% 0%,#251E18 0%,#151210 55%,#100D0B 100%);box-shadow:0 40px 90px -50px rgba(20,15,10,.7);overflow:hidden;">
+      <div style="position:absolute;inset:0;background:radial-gradient(46% 40% at 88% 100%,rgba(120,110,220,.16),transparent 60%);pointer-events:none;"></div>
+
+      <div style="position:relative;">
+        <!-- Legend: three kinds of work -->
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:32px;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,241,234,.5);font-weight:500;">Flow · pomysł → wdrożenie</div>
+          <div style="display:flex;align-items:center;gap:22px;flex-wrap:wrap;">
+            <div style="display:flex;align-items:center;gap:9px;"><span style="width:18px;height:15px;border-radius:5px;background:linear-gradient(180deg,rgba(255,255,255,.15),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.28);flex:none;"></span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(245,241,234,.75);">praca wspólna</span></div>
+            <div style="display:flex;align-items:center;gap:9px;"><span style="width:18px;height:15px;border-radius:5px;background:linear-gradient(180deg,#F7F0E6,#EBE0CF);border:1px solid rgba(20,15,10,.18);flex:none;"></span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(245,241,234,.75);">głównie człowiek</span></div>
+            <div style="display:flex;align-items:center;gap:9px;"><span style="width:14px;height:14px;border-radius:50%;background:rgba(140,205,165,.9);border:1px solid rgba(120,190,150,.6);flex:none;"></span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(245,241,234,.75);">agent (AFK)</span></div>
+          </div>
+        </div>
+
+        <!-- vertical flow column -->
+        <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;align-items:stretch;">
+
+          <!-- START -->
+          <div style="display:flex;align-items:center;gap:14px;align-self:center;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.24);border-radius:99px;padding:10px 22px 10px 14px;">
+            <span style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(245,241,234,.7)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l10 6-10 6z"></path></svg></span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,241,234,.62);">Pomysł · start</span>
+          </div>
+
+          <!-- connector -->
+          <div style="height:24px;padding:0 2px;"><div style="width:100%;height:24px;background:linear-gradient(180deg,rgba(255,255,255,.20),rgba(255,255,255,.08));clip-path:polygon(0 0,100% 0,50% 100%);"></div></div>
+
+          <!-- TILE · plan (wspólna) -->
+          <div style="display:flex;align-items:center;gap:22px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:22px 26px;box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 26px 46px -34px rgba(0,0,0,.8);">
+            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:rgba(232,137,74,.14);border:1px solid rgba(232,137,74,.3);display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E8894A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11l5 5v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"></path><path d="M14 4v5h5"></path><path d="M8 13h8M8 17h5"></path></svg></span>
+            <div style="flex:1;min-width:0;">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#F6F2EB;margin-bottom:5px;">Kontekst i plan</div>
+              <p style="margin:0;font-size:14px;line-height:1.55;color:rgba(245,241,234,.62);">Wspólnie ustalam pełny zakres zmiany: cel, obszar w kodzie, zależności i kolejność kroków. Kontekst projektu — konwencje, decyzje, architektura — jest już zapisany i podawany agentowi. Powstaje konkretny plan z jasno wyznaczonymi granicami tego, co wchodzi w zakres.</p>
+            </div>
+            <span style="flex:none;align-self:flex-start;display:inline-flex;align-items:center;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(245,241,234,.75);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:99px;padding:5px 11px;"><span style="display:inline-flex;gap:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#E8894A;"></span><span style="width:6px;height:6px;border-radius:50%;background:#67C7C0;"></span></span>człowiek + AI</span>
+          </div>
+
+          <div style="height:24px;padding:0 2px;"><div style="width:100%;height:24px;background:linear-gradient(180deg,rgba(232,137,74,.55),rgba(232,137,74,.3));clip-path:polygon(0 0,100% 0,50% 100%);"></div></div>
+
+          <!-- TILE · akceptacja (człowiek) -->
+          <div style="display: flex; align-items: center; gap: 22px; background: linear-gradient(180deg,#F7F0E6,#ECE1D0); border: 1px solid rgba(20,15,10,.1); border-radius: 20px; padding: 22px 26px; box-shadow: 0 18px 34px -22px rgba(0,0,0,.6); position: relative">
+            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:#F3E3D2;border:1px solid rgba(180,86,43,.28);display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B4562B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9"></path><path d="m8.5 12 2.5 2.5L21 5"></path></svg></span>
+            <div style="flex:1;min-width:0;">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#241C15;margin-bottom:5px;">Akceptacja planu</div>
+              <p style="margin:0;font-size:14px;line-height:1.55;color:#6A5E4E;">Agent przedstawia gotowy plan, a ja przechodzę go punkt po punkcie — zatwierdzam kolejne kroki albo koryguję zakres. Jeśli na tym etapie coś się nie zgadza, wracamy do „Kontekst i plan" po nowe ustalenia. Kod rusza dopiero po akceptacji.</p>
+              
+            </div>
+            <span style="flex:none;align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#8A4A2A;background:#F1DECB;border:1px solid rgba(180,86,43,.25);border-radius:99px;padding:5px 11px;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#B4562B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path></svg>człowiek</span>
+          </div>
+
+          <div style="height:24px;padding:0 2px;"><div style="width:100%;height:24px;background:linear-gradient(180deg,rgba(232,137,74,.5),rgba(120,190,150,.4));clip-path:polygon(0 0,100% 0,50% 100%);"></div></div>
+
+          <!-- AGENT ZONE + feedback loop wrapper -->
+          <div style="position:relative;">
+
+            <!-- AGENT ZONE (AFK) -->
+            <div style="border:1px dashed rgba(120,190,150,.42);border-radius:22px;padding:20px;background:rgba(90,170,120,.08);">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:16px;">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(150,210,175,.92);font-weight:600;">Praca agenta · AFK</span>
+                <span style="display:inline-flex;align-items:center;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(150,210,175,.85);"><span style="animation:bzGlow 1.8s ease-in-out infinite;">↻</span>buduj ⇄ testuj ⇄ recenzuj · aż zielone</span>
+              </div>
+              <div style="display:flex;align-items:stretch;gap:10px;">
+                <!-- Budowa -->
+                <div style="flex:1;display:flex;flex-direction:column;gap:11px;background:rgba(90,170,120,.10);border:1px solid rgba(120,190,150,.32);border-radius:16px;padding:18px 16px;">
+                  <span style="width:44px;height:44px;border-radius:12px;background:rgba(90,170,120,.16);border:1px solid rgba(120,190,150,.42);display:flex;align-items:center;justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#A6DEBE" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4"></path><path d="M16 8l4 4-4 4"></path><path d="M13 6l-2 12"></path></svg></span>
+                  <div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#E7F4EC;margin-bottom:3px;">Budowa</div><p style="margin:0;font-size:12px;line-height:1.5;color:rgba(231,244,236,.62);">Builder pisze kod i testy jednostkowe.</p></div>
+                </div>
+                <div style="flex:none;display:flex;align-items:center;color:#A6DEBE;font-size:16px;">→</div>
+                <!-- Testy -->
+                <div style="flex:1;display:flex;flex-direction:column;gap:11px;background:rgba(90,170,120,.10);border:1px solid rgba(120,190,150,.32);border-radius:16px;padding:18px 16px;">
+                  <span style="width:44px;height:44px;border-radius:12px;background:rgba(90,170,120,.16);border:1px solid rgba(120,190,150,.42);display:flex;align-items:center;justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#A6DEBE" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"></path><path d="M10 3v6l-4.5 8.5A2 2 0 0 0 7.3 21h9.4a2 2 0 0 0 1.8-3.5L14 9V3"></path><path d="M7 15h10"></path></svg></span>
+                  <div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#E7F4EC;margin-bottom:3px;">Testy</div><p style="margin:0;font-size:12px;line-height:1.5;color:rgba(231,244,236,.62);">Tester dokłada testy integracyjne.</p></div>
+                </div>
+                <div style="flex:none;display:flex;align-items:center;color:#A6DEBE;font-size:16px;">→</div>
+                <!-- Auto review -->
+                <div style="flex:1;display:flex;flex-direction:column;gap:11px;background:rgba(90,170,120,.10);border:1px solid rgba(120,190,150,.32);border-radius:16px;padding:18px 16px;">
+                  <span style="width:44px;height:44px;border-radius:12px;background:rgba(90,170,120,.16);border:1px solid rgba(120,190,150,.42);display:flex;align-items:center;justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#A6DEBE" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.2-3.2"></path><path d="m8.5 11 1.8 1.8 3.2-3.4"></path></svg></span>
+                  <div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#E7F4EC;margin-bottom:3px;">Auto review</div><p style="margin:0;font-size:12px;line-height:1.5;color:rgba(231,244,236,.62);">Reviewer sprawdza całość i wystawia findingi.</p></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="height:24px;padding:0 2px;"><div style="width:100%;height:24px;background:linear-gradient(180deg,rgba(120,190,150,.5),rgba(232,137,74,.4));clip-path:polygon(0 0,100% 0,50% 100%);"></div></div>
+
+            <!-- TILE · decyzja po findingach (człowiek) -->
+            <div style="display:flex;align-items:center;gap:22px;background:linear-gradient(180deg,#F7F0E6,#ECE1D0);border:1px solid rgba(20,15,10,.1);border-radius:20px;padding:22px 26px;box-shadow:0 18px 34px -22px rgba(0,0,0,.6);">
+              <span style="flex:none;width:52px;height:52px;border-radius:14px;background:#F3E3D2;border:1px solid rgba(180,86,43,.28);display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B4562B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h11M8 12h11M8 18h7"></path><path d="M3.5 6h.01M3.5 12h.01M3.5 18h.01"></path></svg></span>
+              <div style="flex:1;min-width:0;">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#241C15;margin-bottom:5px;">Human review</div>
+                <p style="margin:0;font-size:14px;line-height:1.55;color:#6A5E4E;">Przeglądam listę findingów i opinię reviewera, po czym podejmuję decyzję: zatwierdzam pracę, zlecam poprawki albo ją odrzucam. Ocena jakości i zgodności z planem pozostaje po stronie człowieka.</p>
+              </div>
+              <span style="flex:none;align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#8A4A2A;background:#F1DECB;border:1px solid rgba(180,86,43,.25);border-radius:99px;padding:5px 11px;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#B4562B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path></svg>człowiek</span>
+            </div>
+
+            <!-- feedback loop: branch back up to agent zone -->
+            
+          </div>
+
+          <div style="height:24px;padding:0 2px;"><div style="width:100%;height:24px;background:linear-gradient(180deg,rgba(232,137,74,.5),rgba(255,255,255,.14));clip-path:polygon(0 0,100% 0,50% 100%);"></div></div>
+
+          <!-- TILE · weryfikacja (wspólna) -->
+          <div style="display:flex;align-items:center;gap:22px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:22px 26px;box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 26px 46px -34px rgba(0,0,0,.8);">
+            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:rgba(232,137,74,.14);border:1px solid rgba(232,137,74,.3);display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E8894A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"></rect><path d="M11 18h2"></path></svg></span>
+            <div style="flex:1;min-width:0;">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#F6F2EB;margin-bottom:5px;">Live testy manualne</div>
+              <p style="margin:0;font-size:14px;line-height:1.55;color:rgba(245,241,234,.62);">Weryfikacja UI i UX na realnym urządzeniu — wychwytujemy to, czego agent nie oceni z samego kodu. Poprawki i polishing robimy wspólnie, aż całość działa i wygląda tak, jak ma trafić do wydania.</p>
+              
+            </div>
+            <span style="flex:none;align-self:flex-start;display:inline-flex;align-items:center;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(245,241,234,.75);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:99px;padding:5px 11px;"><span style="display:inline-flex;gap:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#E8894A;"></span><span style="width:6px;height:6px;border-radius:50%;background:#67C7C0;"></span></span>człowiek + AI</span>
+          </div>
+
+          <div style="height:24px;padding:0 2px;"><div style="width:100%;height:24px;background:linear-gradient(180deg,rgba(232,137,74,.55),rgba(232,137,74,.3));clip-path:polygon(0 0,100% 0,50% 100%);"></div></div>
+
+          <!-- TILE · wdrożenie (praca wspólna · CI/CD) -->
+          <div style="display:flex;align-items:center;gap:22px;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:22px 26px;box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 26px 46px -34px rgba(0,0,0,.8);">
+            <span style="flex:none;width:52px;height:52px;border-radius:14px;background:rgba(232,137,74,.14);border:1px solid rgba(232,137,74,.3);display:flex;align-items:center;justify-content:center;animation:bzFloat 3.4s ease-in-out infinite;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E8894A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.5 2 5 5.5 5 9 0 2-.7 3.7-2 5H9c-1.3-1.3-2-3-2-5 0-3.5 1.5-7 5-9z"></path><circle cx="12" cy="9.5" r="1.6"></circle><path d="M9 19l-2 2M15 19l2 2"></path></svg></span>
+            <div style="flex:1;min-width:0;">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;color:#F6F2EB;margin-bottom:5px;">Wdrożenie</div>
+              <p style="margin:0;font-size:14px;line-height:1.55;color:rgba(245,241,234,.62);">Praca wspólna oparta o CI/CD. Agent przygotowuje opis zmian i treść commita, wypycha gałąź <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#F0BF9A;">feature</span> i otwiera PR. W PR autonomiczny agent wpięty w GitHub robi niezależny review na podstawie diffa. Finalną akceptację, merge i uruchomienie deploymentu wykonuję ja.</p>
+            </div>
+            <span style="flex:none;align-self:flex-start;display:inline-flex;align-items:center;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:rgba(245,241,234,.75);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:99px;padding:5px 11px;"><span style="display:inline-flex;gap:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#E8894A;"></span><span style="width:6px;height:6px;border-radius:50%;background:#67C7C0;"></span></span>człowiek + AI</span>
+          </div>
+
+          <div style="height:24px;padding:0 2px;"><div style="width:100%;height:24px;background:linear-gradient(180deg,rgba(232,137,74,.6),rgba(232,137,74,.9));clip-path:polygon(0 0,100% 0,50% 100%);"></div></div>
+
+          <!-- DONE -->
+          <div style="display:flex;align-items:center;gap:14px;align-self:center;background:rgba(232,137,74,.14);border:1px solid rgba(232,137,74,.44);border-radius:99px;padding:10px 24px 10px 14px;box-shadow:0 0 26px -6px rgba(232,137,74,.5);">
+            <span style="width:34px;height:34px;border-radius:50%;background:rgba(232,137,74,.24);border:1px solid rgba(232,137,74,.5);display:flex;align-items:center;justify-content:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FDE7D2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"></path></svg></span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#F0BF9A;">Wdrożone</span>
+          </div>
+
+        </div>
+      </div>
+      <svg viewBox="0 0 1180 1431" preserveAspectRatio="xMidYMid meet" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;">
+        <g fill="none" stroke="#E8894A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M992 268 V1049" stroke-dasharray="1.5 7"></path>
+          <path d="M950 462 H992" stroke-dasharray="1.5 7"></path>
+          <path d="M950 884 H992" stroke-dasharray="1.5 7"></path>
+          <path d="M950 1049 H992" stroke-dasharray="1.5 7"></path>
+          <path d="M992 268 H958"></path>
+        </g>
+        <polygon points="958,261 945,268 958,275" fill="#E8894A"></polygon>
+        <circle cx="950" cy="462" r="3.2" fill="#E8894A"></circle>
+        <circle cx="950" cy="884" r="3.2" fill="#E8894A"></circle>
+        <circle cx="950" cy="1049" r="3.2" fill="#E8894A"></circle>
+        <text x="1012" y="628" transform="rotate(90 1012 628)" font-family="'IBM Plex Mono',monospace" font-size="11.5" letter-spacing="1.5" fill="rgba(232,137,74,.85)">powrót do „Kontekst i plan"</text>
+      </svg>
+    </div>
+
+    <!-- ===== Toolkit under the hood ===== -->
+    <div style="margin-top:64px;">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:26px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#C4562B;font-weight:600;">Warsztat pod maską</div>
+        <p style="margin:0;font-size:15px;color:#8A857A;line-height:1.5;">Trzy rzeczy, które sprawiają, że ten tor jest szybki <em>i</em> zdyscyplinowany.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:16px;">
+        <div style="background:#FFFFFF;border:1px solid #ECE7DD;border-radius:18px;padding:24px 22px;box-shadow:0 1px 2px rgba(20,15,10,.04),0 22px 44px -38px rgba(20,15,10,.5);">
+          <div style="width:38px;height:38px;border-radius:11px;background:#FBEDE4;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4562B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"></circle><circle cx="17" cy="8" r="3"></circle><path d="M2.5 20a5.5 5.5 0 0 1 11 0M13 20a5.5 5.5 0 0 1 8.5-4.6"></path></svg></div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16.5px;margin-bottom:8px;">Wyspecjalizowane sesje agentów</div>
+          <p style="margin:0;font-size:13.5px;line-height:1.55;color:#6A655B;">Osobny agent do planowania, budowy, testów i review — każdy z własnym zakresem i jednym deliverable. Nie jeden uniwersalny czat.</p>
+        </div>
+        <div style="background:#FFFFFF;border:1px solid #ECE7DD;border-radius:18px;padding:24px 22px;box-shadow:0 1px 2px rgba(20,15,10,.04),0 22px 44px -38px rgba(20,15,10,.5);">
+          <div style="width:38px;height:38px;border-radius:11px;background:#FBEDE4;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4562B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.5"></circle><circle cx="5" cy="6" r="2"></circle><circle cx="19" cy="6" r="2"></circle><circle cx="19" cy="18" r="2"></circle><path d="M7 7l3 3.5M17 7l-3 3.5M17 17l-3-3"></path></svg></div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16.5px;margin-bottom:8px;">Realne narzędzia w stacku</div>
+          <p style="margin:0;font-size:13.5px;line-height:1.55;color:#6A655B;">Żywa dokumentacja bibliotek, weryfikacja UI w przeglądarce, testy e2e na mobile — agent ma dostęp do narzędzi, nie tylko do wiedzy.</p>
+        </div>
+        <div style="background:#FFFFFF;border:1px solid #ECE7DD;border-radius:18px;padding:24px 22px;box-shadow:0 1px 2px rgba(20,15,10,.04),0 22px 44px -38px rgba(20,15,10,.5);">
+          <div style="width:38px;height:38px;border-radius:11px;background:#FBEDE4;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4562B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a4 4 0 0 0-4 4 3.5 3.5 0 0 0-1 6.8V17a3 3 0 0 0 5 2.2A3 3 0 0 0 17 17v-3.2A3.5 3.5 0 0 0 16 7a4 4 0 0 0-4-4z"></path><path d="M12 7v12"></path></svg></div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16.5px;margin-bottom:8px;">Pamięć między sesjami</div>
+          <p style="margin:0;font-size:13.5px;line-height:1.55;color:#6A655B;">Kontekst projektu, decyzje i konwencje trwają dłużej niż jeden prompt — praca nie zaczyna się od zera każdego dnia.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Principles ===== -->
+    
+    <div style="margin-top:64px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#C4562B;font-weight:600;margin-bottom:26px;">Trzy zasady, na których stoi cały tor</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;">
+      <div style="background:#FFFFFF;border:1px solid #ECE7DD;border-radius:18px;padding:26px 24px;box-shadow:0 1px 2px rgba(20,15,10,.04),0 22px 44px -36px rgba(20,15,10,.5);">
+        <div style="width:38px;height:38px;border-radius:11px;background:#FBEDE4;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4562B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 21v-4M3 12h4M21 12h-4"></path><circle cx="12" cy="12" r="3.2"></circle></svg></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;margin-bottom:8px;">Człowiek w pętli</div>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:#6A655B;">Agent nie przekracza granicy plan → kod ani nie scala kodu bez mojej zgody.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #ECE7DD;border-radius:18px;padding:26px 24px;box-shadow:0 1px 2px rgba(20,15,10,.04),0 22px 44px -36px rgba(20,15,10,.5);">
+        <div style="width:38px;height:38px;border-radius:11px;background:#FBEDE4;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4562B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"></path><path d="M12 12v9M12 12 4 7.5M12 12l8-4.5"></path></svg></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;margin-bottom:8px;">Jedno źródło prawdy</div>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:#6A655B;">Status pracy żyje w jednym miejscu; reszta widoku jest tylko jego lustrem.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid #ECE7DD;border-radius:18px;padding:26px 24px;box-shadow:0 1px 2px rgba(20,15,10,.04),0 22px 44px -36px rgba(20,15,10,.5);">
+        <div style="width:38px;height:38px;border-radius:11px;background:#FBEDE4;display:flex;align-items:center;justify-content:center;margin-bottom:16px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4562B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 4v5h-5"></path></svg></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;margin-bottom:8px;">Pętla, nie chaos</div>
+        <p style="margin:0;font-size:14px;line-height:1.55;color:#6A655B;">Regresje domykają ten sam tor, zamiast rozsypywać pracę na równoległe wątki.</p>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+</body>
+</html>

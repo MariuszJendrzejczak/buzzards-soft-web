@@ -75,7 +75,8 @@ export function HoneticHero({ className }: HoneticHeroProps) {
                 width={220}
                 height={68}
                 priority
-                className="h-7 w-auto sm:h-8 lg:h-9"
+                // White monochrome logo asset — ink it black in light, white in dark.
+                className="h-7 w-auto object-contain brightness-0 sm:h-8 lg:h-9 dark:brightness-100"
               />
             </a>
           </h3>

@@ -8,6 +8,7 @@ import { AppCard } from "@/components/portfolio/AppCard";
 import { AppCardGroup } from "@/components/portfolio/AppCardGroup";
 import { PortfolioSeriesTile } from "@/components/portfolio/PortfolioSeriesTile";
 import { StackChip } from "@/components/portfolio/stack-chip";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Link, routing, type Locale } from "@/i18n/routing";
 import { HONETI_APPS, HONETI_APPS_BY_STACK_ROLE } from "@/lib/portfolio/honeti-apps";
 import { buildAlternates, pageSocial } from "@/lib/seo";
@@ -102,15 +103,18 @@ export default async function HoneticPortfolioPage({
   return (
     <article className="relative isolate border-t border-emerald-500/20 bg-emerald-500/5">
       <div className="mx-auto w-full max-w-6xl px-6 pt-12 pb-24 sm:px-8 sm:pt-16 sm:pb-32">
-        <nav aria-label="Breadcrumb" className="mb-10">
-          <Link
-            href="/#portfolio"
-            className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
-          >
-            <ArrowLeft aria-hidden className="size-4" />
-            {t("breadcrumbBack")}
-          </Link>
-        </nav>
+        <div className="mb-10 flex items-center justify-between gap-4">
+          <nav aria-label="Breadcrumb">
+            <Link
+              href="/#portfolio"
+              className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
+            >
+              <ArrowLeft aria-hidden className="size-4" />
+              {t("breadcrumbBack")}
+            </Link>
+          </nav>
+          <ThemeToggle />
+        </div>
 
         <header className="rounded-2xl border border-border bg-card p-7 shadow-sm sm:p-10">
           <h1 className="font-heading text-3xl leading-tight font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
@@ -129,7 +133,8 @@ export default async function HoneticPortfolioPage({
                   alt="HONETi"
                   width={220}
                   height={68}
-                  className="h-7 w-auto sm:h-8 lg:h-9"
+                  // White monochrome logo asset — ink it black in light, white in dark.
+                  className="h-7 w-auto object-contain brightness-0 sm:h-8 lg:h-9 dark:brightness-100"
                 />
               </a>
             </span>

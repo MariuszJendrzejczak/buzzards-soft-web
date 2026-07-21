@@ -82,7 +82,9 @@ export function Footer() {
               width={28}
               height={28}
               aria-hidden
-              className="size-7"
+              // White monochrome mark — ink it black in light (matching the
+              // wordmark), keep white in dark.
+              className="size-7 brightness-0 dark:brightness-100"
             />
             <span className="font-heading text-sm font-semibold text-foreground">
               Buzzards Soft

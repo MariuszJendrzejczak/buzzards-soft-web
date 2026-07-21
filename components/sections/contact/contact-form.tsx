@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2, Send } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -50,11 +50,16 @@ type ContactSubmitResult = { ok: true } | { ok: false; code: string };
 async function submitContactForm(
   values: ContactFormValues,
   locale: string,
+  context?: string,
 ): Promise<ContactSubmitResult> {
   const response = await fetch(CONTACT_ENDPOINT, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ ...values, locale }),
+    body: JSON.stringify({
+      ...values,
+      locale,
+      ...(context ? { context } : {}),
+    }),
   });
 
   let body: { ok?: boolean; error?: string } | null = null;
@@ -70,7 +75,23 @@ async function submitContactForm(
   return { ok: true };
 }
 
-export function ContactForm() {
+export type ContactFormProps = {
+  // Offer-page variant: an offer-specific lead-in shown above the form and a
+  // message-field placeholder tuned to the web-pages offer. Both optional — when
+  // omitted the form is identical to the home contact section.
+  intro?: string;
+  messagePlaceholder?: string;
+  // Marker forwarded to the Cloud Function so replies can tell offer leads from
+  // recruiter contacts. Purely additive to the payload — the function ignores
+  // unknown fields.
+  context?: string;
+};
+
+export function ContactForm({
+  intro,
+  messagePlaceholder,
+  context,
+}: ContactFormProps = {}) {
   const t = useTranslations("contactForm");
   const locale = useLocale();
 
@@ -120,10 +141,26 @@ export function ContactForm() {
     mode: "onTouched",
   });
 
+  // Pricing "Zamów …" buttons dispatch `offer:order` with the package name;
+  // prefill the message field with a ready lead-in so the client lands on a
+  // form that already says what they want. Harmless on pages without the event.
+  useEffect(() => {
+    function handleOrder(event: Event) {
+      const pkg = (event as CustomEvent<{ pkg?: string }>).detail?.pkg;
+      if (!pkg) return;
+      form.setValue("message", t("orderPrefill", { package: pkg }), {
+        shouldValidate: true,
+        shouldDirty: true,
+      });
+    }
+    window.addEventListener("offer:order", handleOrder);
+    return () => window.removeEventListener("offer:order", handleOrder);
+  }, [form, t]);
+
   async function onSubmit(values: ContactFormValues) {
     let result: ContactSubmitResult;
     try {
-      result = await submitContactForm(values, locale);
+      result = await submitContactForm(values, locale, context);
     } catch {
       // Network failure / fetch threw — treat as generic error.
       toast.error(t("toast.error"));
@@ -157,6 +194,12 @@ export function ContactForm() {
         aria-describedby="contact-form-required-hint"
         className="flex flex-col gap-5 rounded-2xl border border-border/60 bg-card/40 p-6 sm:p-8"
       >
+        {intro ? (
+          <p className="text-base leading-relaxed text-muted-foreground">
+            {intro}
+          </p>
+        ) : null}
+
         <p
           id="contact-form-required-hint"
           className="font-mono text-[11px] tracking-[0.18em] text-text-subtle uppercase"
@@ -264,7 +307,7 @@ export function ContactForm() {
                 <Textarea
                   {...field}
                   rows={5}
-                  placeholder={t("placeholders.message")}
+                  placeholder={messagePlaceholder ?? t("placeholders.message")}
                   disabled={isSubmitting}
                   className="min-h-32"
                 />

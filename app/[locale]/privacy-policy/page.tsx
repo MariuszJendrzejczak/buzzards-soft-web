@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Mail } from "lucide-react";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Link, routing, type Locale } from "@/i18n/routing";
 import { buildAlternates, pageSocial } from "@/lib/seo";
@@ -151,15 +152,18 @@ export default async function PrivacyPolicyPage({
   return (
     <article className="relative isolate">
       <div className="mx-auto w-full max-w-3xl px-6 pt-12 pb-24 sm:px-8 sm:pt-16 sm:pb-32">
-        <nav aria-label="Breadcrumb" className="mb-10">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
-          >
-            <ArrowLeft aria-hidden className="size-4" />
-            {t("breadcrumbBack")}
-          </Link>
-        </nav>
+        <div className="mb-10 flex items-center justify-between gap-4">
+          <nav aria-label="Breadcrumb">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
+            >
+              <ArrowLeft aria-hidden className="size-4" />
+              {t("breadcrumbBack")}
+            </Link>
+          </nav>
+          <ThemeToggle />
+        </div>
 
         <header className="rounded-2xl border border-border bg-card p-7 shadow-sm sm:p-10">
           <span className="font-mono text-xs font-medium tracking-[0.2em] text-brand uppercase">

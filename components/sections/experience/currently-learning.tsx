@@ -16,7 +16,7 @@ export async function CurrentlyLearning() {
     <section
       id="currently-learning"
       aria-labelledby="currently-learning-heading"
-      className="relative isolate border-t border-border/60 bg-slate-900/50 py-20 sm:py-24"
+      className="relative isolate border-t border-border/60 bg-surface/40 py-20 sm:py-24"
     >
       <ScrollReveal className="mx-auto w-full max-w-2xl px-6 sm:px-8">
         <header>

@@ -20,7 +20,8 @@
       "learning": "Utveckling",
       "about": "Om mig",
       "education": "Utbildning",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "offer": "Webbplatser för företag"
     }
   },
   "language": {
@@ -291,6 +292,7 @@
     "cvEnglish": "Engelsk version (PDF)"
   },
   "contactForm": {
+    "orderPrefill": "Hej, jag är intresserad av paketet {package}. Hör gärna av dig med detaljer och en offert.",
     "requiredHintPrefix": "Fält markerade med ",
     "requiredHintSuffix": " är obligatoriska",
     "labels": {
@@ -678,6 +680,223 @@
     "bodyPart2": ", så fixar jag det.",
     "back": "Tillbaka till startsidan",
     "contactCta": "Hör av dig om det här är ett fel"
+  },
+  "offer": {
+    "meta": {
+      "title": "Webbplatser för företag och frilansare — Buzzards Soft",
+      "description": "En professionell webbplats som formges efter ditt företag och överlämnas till dig: kod, innehåll och konton står i ditt namn. Jag arbetar med AI, så du får en färdig webbplats snabbare och billigare, medan en riktig människa vakar över varje steg och står för kvaliteten."
+    },
+    "breadcrumbBack": "Tillbaka till startsidan",
+    "documentBadge": "Erbjudande · Webbplatser",
+    "hero": {
+      "eyebrow": "Webbplatser för små företag och frilansare",
+      "heading": "En professionell webbplats formgiven efter ditt företag — och den är din att äga.",
+      "subheading": "Jag formger den efter ditt företag och överlämnar den till dig: kod, innehåll och konton står i ditt namn. Jag arbetar med AI, så du får en färdig webbplats snabbare och billigare, medan en riktig människa vakar över varje steg, står för kvaliteten och leder dig ända fram till lansering.",
+      "ctaPrimary": "Få en offert på din webbplats",
+      "ctaSecondary": "Se hur jag arbetar"
+    },
+    "problem": {
+      "heading": "Vem det här erbjudandet är för",
+      "body1": "Det här erbjudandet är främst för små och mikroföretag, frilansare samt privatpersoner och institutioner som vill ha en prydlig, enkel webbplats till en rimlig budget. Om det låter som du är du på rätt plats.",
+      "body2": "Jag förenar två världar här. Du har direktkontakt med mig, så i varje steg vet du vad som händer, kan fråga och begära ändringar. Samtidigt använder jag AI-verktyg som effektiviserar mitt arbete och låter mig hålla priset vänligt.",
+      "body3": "Mitt mål är att leverera en bra, genomarbetad webbplats till varje kund, oavsett projektets storlek. Erfarenhet av att arbeta med den här tekniken låter mig göra det för företag som före AI-eran ofta inte hade råd med ett sådant bygge."
+    },
+    "guide": {
+      "heading": "Så arbetar jag med din webbplats",
+      "intro": "Jag arbetar med AI och säger det rakt ut. Verktygen snabbar upp en del av arbetet, men jag leder helheten och ansvarar för resultatet — i varje steg vet du vad som händer och har verkligt inflytande över det som byggs. Här är hela vägen från idé till färdig webbplats:",
+      "steps": {
+        "conversation": {
+          "title": "Samtal",
+          "body": "Vi börjar med ett vanligt, mänskligt samtal på enkelt språk. Du berättar vad du gör och vad webbplatsen ska ge dig. Tillsammans fastställer vi omfattning, stil och en ungefärlig tidsram, och vi delar upp uppgifterna: vad du levererar och vad jag tar på mig. Du lämnar samtalet med en tydlig bild av vad som ska byggas och vad det kostar."
+        },
+        "mockup": {
+          "title": "Live-skiss",
+          "body": "Skissen gör jag direkt som en riktig, klickbar sida på exempelinnehåll. Du ser den verkliga layouten i webbläsaren som en färdig produkt: sektionernas placering, färger, marginaler, proportioner. På så sätt ser du något konkret redan från start och reagerar medan en riktningsändring fortfarande är enkel och snabb. Dina synpunkter för jag in innan vi går in i det riktiga innehållet."
+        },
+        "content": {
+          "title": "Innehåll och material",
+          "body": "Innehållet samlar vi in parallellt med skissen. Texter, logotyp och bilder står du som regel för — det är ditt företag och din röst. Om något saknas tar vi itu med det tillsammans och hittar den bästa vägen: från hjälp med att finslipa texten, via AI-grafik och färdiga stockbilder, till en betrodd formgivare eller UX-designer när du behöver en egen logotyp eller ett utseende formgivet från grunden. Det sista alternativet är en separat, betald tjänst hos en specialist, och jag fogar samman allt till en enhetlig webbplats."
+        },
+        "build": {
+          "title": "Bygge och tester",
+          "body": "När layout och innehåll är godkända för jag helheten i mål och finslipar varje detalj. Jag ser till detaljerna som avgör kvaliteten: laddningshastighet och korrekt visning på telefon, surfplatta och dator. Jag testar allt så att webbplatsen ser bra ut och fungerar säkert."
+        },
+        "review": {
+          "title": "Granskning och finslipning",
+          "body": "Den färdiga webbplatsen lämnar jag över för dig att titta på. Du klickar, läser, kollar den på din egen telefon och säger rakt ut vad som passar och vad som ska finslipas. Antalet rundor beror på paketet (vanligtvis två till fyra), så du vet på förhand hur mycket utrymme du har för ändringar och när webbplatsen är klar. De rundorna är en del av tjänsten — det är i dem vi finslipar webbplatsen."
+        },
+        "publish": {
+          "title": "Hosting, domän och publicering",
+          "body": "Till sist tar jag hand om hela den tekniska delen. Jag konfigurerar hosting, kopplar domänen (och om du behöver en hjälper jag dig välja och köpa den) och publicerar webbplatsen på nätet, på dina konton. Från det ögonblicket är webbplatsen online och börjar arbeta för ditt företag."
+        }
+      }
+    },
+    "proof": {
+      "heading": "Det bästa beviset har du framför ögonen.",
+      "body": "Den här webbplatsen du läser just nu byggdes med exakt den process jag säljer — samma människa, samma verktyg, samma kontrollsteg. Vill du titta djupare? Jag beskriver hela verkstaden steg för steg.",
+      "link": "Se hur jag arbetar →"
+    },
+    "includes": {
+      "heading": "Det här får du med varje webbplats",
+      "intro": "Oavsett vilket paket och omfattning du väljer får du samma gedigna uppsättning grunder:",
+      "items": {
+        "mobile": "En snabb webbplats som fungerar på varje mobil — och därifrån kommer de flesta av dina kunder.",
+        "contact": "Ett kontaktformulär och ett telefonsamtal med ett tryck, så att kunden hör av sig direkt.",
+        "seo": "En teknisk SEO-grund, tack vare vilken Google ser dig från första dagen.",
+        "hosting": "Gratis webbhotell, din egen domän och ett SSL-certifikat — allt klart för start.",
+        "gdpr": "GDPR-efterlevnad: en cookiebanner och integritetspolicy, så att du kan arbeta i lugn och ro.",
+        "content": "Texter förberedda och kontrollerade med min process, om du inte har egna.",
+        "support": "Omsorg och rådgivning i varje steg av bygget. Jag finns tillgänglig hela vägen: du frågar, jag ger råd och vi fattar besluten tillsammans, så att du alltid vet var saker står. Jag guidar dig genom processen på ett enkelt språk, så att varje val är ditt och välgrundat.",
+        "security": "En säker, krypterad anslutning (SSL) och hosting på Googles infrastruktur. Data mellan din webbplats och besökaren skickas krypterad, och webbläsaren visar hänglåset som direkt bygger förtroende. Din webbplats står på samma beprövade grund som de stora tjänsterna använder."
+      }
+    },
+    "pricing": {
+      "heading": "Enkla paket, öppna priser",
+      "promoNote": "priset gäller till slutet av augusti",
+      "footnote": "Priser exkl. moms. Kampanjpriset gäller till slutet av augusti.",
+      "baseReference": "+ allt i ”Det här får du med varje webbplats”",
+      "extrasLabel": "Ingår även",
+      "rowLabels": {
+        "price": "Pris",
+        "audience": "För vem",
+        "pages": "Webbplatsens omfattning",
+        "aiContent": "AI-texter, kontrollerade med min process",
+        "base": "Formulär, teknisk SEO, GDPR, webbhotell och domän",
+        "googleBusiness": "Lokal synlighet (Google Business)",
+        "animations": "Animationer",
+        "themeToggle": "Mörkt och ljust läge (växlare)",
+        "language": "Ett språk",
+        "revisions": "Ändringsomgångar"
+      },
+      "included": "✓",
+      "module": "modul",
+      "basic": {
+        "name": "Basic",
+        "basePrice": "1299 zł",
+        "promoPrice": "999 zł",
+        "priceTag": "kampanjpris",
+        "audience": "visitkort eller enkelt erbjudande",
+        "pages": "1 sida, upp till 5 sektioner",
+        "revisions": "2 omgångar / 7 dagar",
+        "cta": "Offert Basic"
+      },
+      "full": {
+        "name": "Full",
+        "basePrice": "2499 zł",
+        "promoPrice": "1999 zł",
+        "priceTag": "kampanjpris",
+        "audience": "ett företag som vill synas och vinna kontakter",
+        "pages": "upp till 8 sektioner och 2 undersidor",
+        "revisions": "4 omgångar / 14 dagar",
+        "extras": "Lokal synlighet (Google Business), Animationer, Mörkt och ljust läge",
+        "extrasValue": "Separat skulle dessa moduler kosta +1050 zł",
+        "cta": "Offert Full"
+      },
+      "custom": {
+        "name": "Större projekt",
+        "price": "Individuell offert",
+        "audience": "butik, skräddarsytt från grunden, komplexa integrationer",
+        "pages": "efter behov",
+        "revisions": "överenskommes",
+        "cta": "Låt oss prata"
+      }
+    },
+    "modules": {
+      "heading": "Bygg ut din webbplats med det du behöver",
+      "colModule": "Modul",
+      "colPrice": "Pris",
+      "items": {
+        "localVisibility": {
+          "name": "Lokal synlighet (Google Business, Kartor, recensioner)",
+          "price": "+250 zł"
+        },
+        "animations": {
+          "name": "Animationer och effekter",
+          "price": "+400 zł"
+        },
+        "themeToggle": {
+          "name": "Mörkt och ljust läge (växlare)",
+          "price": "+400 zł"
+        },
+        "extraLanguage": {
+          "name": "Ytterligare språk",
+          "price": "+400 zł / språk"
+        },
+        "selfEdit": {
+          "name": "Redigera innehållet själv, betalas en gång",
+          "price": "+700 zł"
+        },
+        "leads": {
+          "name": "Insamling av leads (e-postlista eller ett anmälningsark)",
+          "price": "+400 zł (båda +550)"
+        },
+        "booking": {
+          "name": "Bokningar och kalender",
+          "price": "+350 zł"
+        },
+        "extraPage": {
+          "name": "Ytterligare undersida",
+          "price": "+300 zł"
+        },
+        "blog": {
+          "name": "Blogg och nyheter",
+          "price": "+700 zł"
+        },
+        "conversionTracking": {
+          "name": "Konverteringsspårning för annonser",
+          "price": "+250 zł"
+        },
+        "domainEmail": {
+          "name": "Konfiguration av domän och företagsmejl",
+          "price": "+150 zł"
+        }
+      }
+    },
+    "ownership": {
+      "heading": "Webbplatsen är din, att äga",
+      "body": "Jag skriver domän, webbhotell, kod, innehåll och konton i ditt namn och på dina konton. Du betalar en gång — den enda löpande kostnaden är din egen domän (omkring 50–90 zł per år, som du betalar till registraren). Om du någon gång vill byta till någon annan tar du med dig alltihop och arbetar vidare.",
+      "limitsHeading": "Jag tar ansvar för allt detta — och säger var gränserna går",
+      "limits": {
+        "seo": {
+          "lead": "Jag bygger en solid teknisk grund för SEO och lokal synlighet.",
+          "body": "Löpande rankningskampanjer eller garantier om förstaplats på Google gör jag inte — det är en separat, löpande tjänst, som jag ärligt hänvisar dig till vem du bör anlita för."
+        },
+        "commerce": {
+          "lead": "Butiker, komplexa integrationer och ett riktigt CRM-system tar jag som en individuell offert.",
+          "body": "De ryms inte i paketet Basic eller Full, så jag prissätter dem separat, för det specifika projektet."
+        }
+      }
+    },
+    "faq": {
+      "heading": "Vanliga frågor",
+      "items": {
+        "duration": {
+          "question": "Hur lång tid tar det?",
+          "answer": "Vanligtvis från några dagar till ungefär 2 veckor, beroende på paket."
+        },
+        "materials": {
+          "question": "Vilket material behöver jag förbereda?",
+          "answer": "Som regel står du för materialet (texter, logotyp och bilder), eftersom det är ditt företag och ditt varumärke. Om något saknas hittar vi en lösning tillsammans. Dina texter putsar och finslipar jag så att de låter professionella. Grafik är ett separat område, så logotyp och bilder kan du skaffa på tre sätt: en AI-design, betalda stockbilder eller en beställning hos en betrodd specialist som en tilläggstjänst. Var och en av vägarna är en kostnad på din sida, och jag hjälper dig att välja den som passar din budget."
+        },
+        "selfEdit": {
+          "question": "Kan jag redigera webbplatsen själv senare?",
+          "answer": "Ja, om du lägger till modulen för egen redigering — betalas en gång, utan månadsabonnemang."
+        },
+        "security": {
+          "question": "Är min webbplats säker?",
+          "answer": "Ja. Webbplatsen körs över en krypterad HTTPS-anslutning, så formulärdata och besökstrafik skyddas, och webbläsaren visar ett hänglås i adressfältet. Hostingen ligger på Googles infrastruktur — samma servermiljö som driver stora webbplatser."
+        },
+        "gdpr": {
+          "question": "Och GDPR?",
+          "answer": "En cookiebanner och integritetspolicy ingår i varje webbplats."
+        }
+      }
+    },
+    "quote": {
+      "heading": "Beskriv kort vad du behöver, så hör jag av mig med en offert.",
+      "intro": "Utan förbindelser. Skriv några meningar om vad du gör och vad du behöver, så svarar jag med en offert och ett förslag på hur det kan göras.",
+      "messagePlaceholder": "vilket företag eller vilken tjänst du har och vad du behöver"
+    }
   },
   "rootMetadata": {
     "title": "Buzzards Soft — AI-Augmented Mobile Developer",

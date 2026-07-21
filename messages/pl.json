@@ -20,7 +20,8 @@
       "learning": "Rozwój",
       "about": "O mnie",
       "education": "Wykształcenie",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "offer": "Strony dla firm"
     }
   },
   "language": {
@@ -291,6 +292,7 @@
     "cvEnglish": "Wersja angielska (PDF)"
   },
   "contactForm": {
+    "orderPrefill": "Dzień dobry, jestem zainteresowany pakietem {package}. Proszę o kontakt w sprawie szczegółów i wyceny.",
     "requiredHintPrefix": "Pola oznaczone ",
     "requiredHintSuffix": " są wymagane",
     "labels": {
@@ -678,6 +680,223 @@
     "bodyPart2": ", naprawię to.",
     "back": "Wróć do strony głównej",
     "contactCta": "Skontaktuj się, jeśli to błąd"
+  },
+  "offer": {
+    "meta": {
+      "title": "Strony internetowe dla firm i freelancerów — Buzzards Soft",
+      "description": "Profesjonalna strona zaprojektowana pod Twoją firmę i zapisana na Ciebie. Pracuję z AI, więc dostajesz gotową stronę szybciej i taniej, a nad jakością każdego kroku czuwa człowiek."
+    },
+    "breadcrumbBack": "Wróć do strony głównej",
+    "documentBadge": "Oferta · Strony internetowe",
+    "hero": {
+      "eyebrow": "Strony internetowe dla małych firm i freelancerów",
+      "heading": "Profesjonalna strona zaprojektowana dla Twojej firmy",
+      "subheading": "Tworzę dla Ciebie profesjonalną stronę, która będzie Twoją wizytówką. W trakcie pracy wspomagam się AI, ale Ty masz kontakt ze mną. Wszystko zaczyna się od rozmowy i pomysłu.",
+      "ctaPrimary": "Wyceń swoją stronę",
+      "ctaSecondary": "Zobacz, jak pracuję"
+    },
+    "problem": {
+      "heading": "Dla kogo skierowana jest ta oferta",
+      "body1": "Ta oferta jest przede wszystkim dla małych i mikrofirm, freelancerów oraz osób prywatnych i instytucji, którym zależy na schludnej, prostej stronie w rozsądnym budżecie. Jeśli to brzmi jak Twój przypadek, trafiłeś dobrze.",
+      "body2": "Łączę tu dwa światy. Masz bezpośredni kontakt ze mną, więc na każdym kroku wiesz, co się dzieje, możesz dopytać i nanosić poprawki. A jednocześnie korzystam z narzędzi AI, które usprawniają moją pracę i pozwalają mi trzymać cenę na przyjaznym poziomie.",
+      "body3": "Moim celem jest dostarczać dobrą, dopracowaną stronę każdemu klientowi, niezależnie od skali projektu. Doświadczenie w pracy z tą technologią pozwala mi robić to dla firm, które przed erą AI często nie mogły sobie pozwolić na taką realizację."
+    },
+    "guide": {
+      "heading": "Jak pracuję nad Twoją stroną",
+      "intro": "Pracuję z AI i mówię o tym wprost. Narzędzia przyspieszają część zadań, ale to ja prowadzę całość i odpowiadam za efekt — na każdym etapie wiesz, co się dzieje, i masz realny wpływ na to, co powstaje. Oto cała droga od pomysłu do gotowej strony:",
+      "steps": {
+        "conversation": {
+          "title": "Rozmowa",
+          "body": "Zaczynamy od zwykłej, ludzkiej rozmowy prostym językiem. Opowiadasz, czym się zajmujesz i co ma Ci dać strona. Wspólnie ustalamy zakres, styl i przybliżony termin, a także dzielimy się zadaniami: co dostarczasz Ty, a co biorę na siebie. Wychodzisz z tej rozmowy z jasnym obrazem tego, co powstanie i ile to kosztuje."
+        },
+        "mockup": {
+          "title": "Makieta na żywo",
+          "body": "Makietę robię od razu jako prawdziwą, klikalną stronę na przykładowych treściach. Oglądasz realny układ w przeglądarce jak gotowy produkt: rozmieszczenie sekcji, kolory, odstępy, proporcje. Dzięki temu widzisz konkret już na starcie i reagujesz, kiedy zmiana kierunku jest jeszcze łatwa i szybka. Twoje uwagi nanoszę, zanim wejdziemy w właściwą treść."
+        },
+        "content": {
+          "title": "Treść i materiały",
+          "body": "Treści zbieramy równolegle z makietą. Teksty, logo i zdjęcia co do zasady dostarczasz Ty — to Twoja firma i Twój głos. Jeśli czegoś brakuje, wchodzimy w to razem i szukamy najlepszej drogi: od pomocy w dopracowaniu tekstu, przez grafikę AI i gotowe stocki, po zaufanego grafika lub UX designera, gdy potrzebujesz własnego logo albo wyglądu projektowanego od zera. Ta ostatnia opcja to osobna, dodatkowo płatna usługa u specjalisty, a ja spinam całość w spójną stronę."
+        },
+        "build": {
+          "title": "Budowa i testy",
+          "body": "Kiedy układ i treść są zaakceptowane, doprowadzam całość do końca i dopieszczam każdy detal. Dbam o szczegóły, które decydują o jakości: szybkość ładowania i poprawne wyświetlanie na telefonie, tablecie i komputerze. Wszystko testuję, żeby strona dobrze wyglądała i pewnie działała."
+        },
+        "review": {
+          "title": "Odbiór i dopracowanie",
+          "body": "Gotową stronę oddaję Ci do obejrzenia. Klikasz, czytasz, sprawdzasz ją na własnym telefonie i mówisz wprost, co pasuje, a co dopracować. Liczba rund zależy od pakietu (zwykle od dwóch do czterech), więc z góry wiesz, ile masz przestrzeni na zmiany i kiedy strona jest gotowa. Te rundy są częścią usługi — szlifujemy w nich stronę."
+        },
+        "publish": {
+          "title": "Hosting, domena i publikacja",
+          "body": "Na koniec zajmuję się całą częścią techniczną. Konfiguruję hosting, podłączam domenę (a jeśli jej potrzebujesz, pomagam ją wybrać i kupić) i publikuję stronę w internecie, na Twoich kontach. Od tego momentu strona jest online i zaczyna pracować dla Twojej firmy."
+        }
+      }
+    },
+    "proof": {
+      "heading": "Najlepszy dowód masz przed oczami.",
+      "body": "Ta strona, którą właśnie czytasz, powstała dokładnie w procesie, który sprzedaję — ten sam człowiek, te same narzędzia, te same etapy sprawdzania. Chcesz zajrzeć głębiej? Cały warsztat opisuję krok po kroku.",
+      "link": "Zobacz, jak pracuję →"
+    },
+    "includes": {
+      "heading": "W cenie każdej strony",
+      "intro": "Niezależnie od wybranego pakietu i zakresu prac dostajesz ten sam, solidny zestaw podstaw:",
+      "items": {
+        "mobile": "Szybką, mobilną stronę, która świetnie wygląda na telefonie, tablecie i komputerze. Większość Twoich klientów wejdzie na nią z telefonu, dlatego dbam, żeby ładowała się błyskawicznie i wygodnie obsługiwała się kciukiem. Płynne działanie to dziś podstawa zaufania do firmy.",
+        "seo": "Techniczny fundament pod Google: czysty kod, poprawną strukturę i szybkość, które wyszukiwarka lubi. Dzięki temu Google widzi Twoją stronę od pierwszego dnia i pokazuje ją osobom, które szukają tego, co oferujesz. To solidny start pod dalsze pozycjonowanie.",
+        "contact": "Wyraźne punkty kontaktu: formularz i numer telefonu pod jednym kliknięciem. Klient, który właśnie się zainteresował, odzywa się do Ciebie od razu, zanim jego uwaga zdąży uciec. Każde zapytanie trafia prosto na Twoją skrzynkę.",
+        "support": "Opiekę i konsultacje na każdym etapie realizacji. Masz mnie do dyspozycji: pytasz, doradzam, wspólnie podejmujemy decyzje, a Ty przez cały czas wiesz, na czym stoisz. Prowadzę Cię przez proces prostym językiem, żeby każdy wybór był Twój i świadomy.",
+        "content": "Spójny, estetyczny wygląd dopasowany do Twojej marki: kolory, typografia i układ, które grają razem. Strona wygląda tak, jak chcesz być odbierany, i od pierwszej sekundy buduje profesjonalny obraz Twojej firmy.",
+        "hosting": "Gotowy do startu hosting na Twoim koncie i podpięcie Twojej domeny. Całą stronę techniczną konfiguruję za Ciebie, żeby wszystko ruszyło od ręki. Hosting działa na darmowym pakiecie, który spokojnie obsługuje stronę-wizytówkę i kilka tysięcy odwiedzin miesięcznie.",
+        "security": "Bezpieczne, szyfrowane połączenie (SSL) i hosting na infrastrukturze Google. Dane między Twoją stroną a odwiedzającym płyną zaszyfrowane, a przeglądarka pokazuje kłódkę, która od razu buduje zaufanie. Twoja strona stoi na tym samym, sprawdzonym zapleczu, z którego korzystają duże serwisy.",
+        "gdpr": "Zgodność z RODO od pierwszego dnia: baner zgód na cookies i politykę prywatności dopasowaną do Twojej strony. Odwiedzający wie, że jego dane są u Ciebie w dobrych rękach, a Ty masz spokój od strony formalnej."
+      }
+    },
+    "pricing": {
+      "heading": "Cennik",
+      "promoNote": "cena ważna do końca sierpnia",
+      "footnote": "Ceny netto. Cena promocyjna obowiązuje do końca sierpnia.",
+      "baseReference": "+ cała baza z sekcji „W cenie każdej strony”",
+      "extrasLabel": "W cenie dodatkowo",
+      "rowLabels": {
+        "price": "Cena",
+        "audience": "Dla kogo",
+        "pages": "Zakres strony",
+        "aiContent": "Pomoc z tekstami, jeśli nie masz swoich",
+        "base": "Formularz, techniczne SEO, RODO, hosting i konfiguracja domeny",
+        "googleBusiness": "Widoczność lokalna (Google Business)",
+        "animations": "Animacje",
+        "themeToggle": "Tryb ciemny i jasny (przełącznik)",
+        "language": "Jeden język",
+        "revisions": "Dopracowanie"
+      },
+      "included": "✓",
+      "module": "moduł",
+      "basic": {
+        "name": "Basic",
+        "basePrice": "1299 zł",
+        "promoPrice": "999 zł",
+        "priceTag": "cena promocyjna",
+        "audience": "wizytówka lub prosta oferta",
+        "pages": "Jedna strona (wizytówka)",
+        "revisions": "2 rundy / 7 dni",
+        "cta": "Zamów Basic"
+      },
+      "full": {
+        "name": "Full",
+        "basePrice": "2499 zł",
+        "promoPrice": "1999 zł",
+        "priceTag": "cena promocyjna",
+        "audience": "firma, która chce być widoczna i pozyskiwać kontakt",
+        "pages": "Strona główna + do 2 podstron",
+        "revisions": "4 rundy / 14 dni",
+        "extras": "Widoczność lokalna (Google Business), Animacje, Tryb ciemny i jasny",
+        "extrasValue": "Osobno te moduły to +1050 zł",
+        "cta": "Zamów Full"
+      },
+      "custom": {
+        "name": "Większy projekt",
+        "price": "Wycena indywidualna",
+        "audience": "sklep, custom od zera, złożone integracje",
+        "pages": "Ustalany indywidualnie",
+        "revisions": "ustalane",
+        "cta": "Porozmawiajmy"
+      }
+    },
+    "modules": {
+      "heading": "Rozbuduj stronę o to, czego potrzebujesz",
+      "colModule": "Moduł",
+      "colPrice": "Cena",
+      "items": {
+        "localVisibility": {
+          "name": "Widoczność lokalna (Google Business, Mapy, opinie)",
+          "price": "+250 zł"
+        },
+        "animations": {
+          "name": "Animacje i efekty",
+          "price": "+400 zł"
+        },
+        "themeToggle": {
+          "name": "Tryb ciemny i jasny (przełącznik)",
+          "price": "+400 zł"
+        },
+        "extraLanguage": {
+          "name": "Dodatkowy język",
+          "price": "+400 zł / język"
+        },
+        "selfEdit": {
+          "name": "Samodzielna edycja treści, płatna raz",
+          "price": "+700 zł"
+        },
+        "leads": {
+          "name": "Zbieranie leadów (lista mailingowa albo arkusz zgłoszeń)",
+          "price": "+400 zł (oba +550)"
+        },
+        "booking": {
+          "name": "Rezerwacje i kalendarz",
+          "price": "+350 zł"
+        },
+        "extraPage": {
+          "name": "Dodatkowa podstrona",
+          "price": "+300 zł"
+        },
+        "blog": {
+          "name": "Blog i aktualności",
+          "price": "+700 zł"
+        },
+        "conversionTracking": {
+          "name": "Śledzenie konwersji pod reklamy",
+          "price": "+250 zł"
+        },
+        "domainEmail": {
+          "name": "Firmowa poczta na Twojej domenie",
+          "price": "+150 zł"
+        }
+      }
+    },
+    "ownership": {
+      "heading": "Własność i koszty",
+      "body": "Cała strona jest Twoją własnością: kod, treści, konta i konfigurację przypisuję do Ciebie. Płacisz raz. Jedyny stały wydatek to domena, zwykle od 50 do 200 zł rocznie zależnie od końcówki (.pl, .com i podobne), którą opłacasz bezpośrednio rejestratorowi.",
+      "limitsHeading": "Granice oferty",
+      "limits": {
+        "seo": {
+          "lead": "Twoją stronę buduję tak, żeby Google od pierwszego dnia ją widział i rozumiał, co się na niej znajduje.",
+          "body": "Wspinaczka na sam szczyt wyników i stałe pozycjonowanie to już osobna, ciągła usługa — poza tym, czym się zajmuję."
+        },
+        "commerce": {
+          "lead": "Sklepy internetowe, złożone integracje i systemy CRM wyceniam indywidualnie.",
+          "body": "To większe wdrożenia, które wykraczają poza pakiety Basic i Full, więc buduję je od zera pod Twoje wymagania. Ich koszt zależy od zakresu: potrzebnych funkcji, integracji i skali projektu."
+        }
+      }
+    },
+    "faq": {
+      "heading": "Najczęstsze pytania",
+      "items": {
+        "duration": {
+          "question": "Ile to trwa?",
+          "answer": "Realizacja pakietu Basic zajmuje zwykle od kilku dni do około tygodnia. Full to około jeden do dwóch tygodni, a większe wdrożenia ustalamy osobno. Sam start prac zależy od mojego bieżącego obłożenia — jeśli mam już zlecenia w kolejce, początek może się przesunąć. Szacowany czas realizacji podaję na pierwszym spotkaniu."
+        },
+        "materials": {
+          "question": "Jakie materiały muszę przygotować?",
+          "answer": "Co do zasady materiały (teksty, logo i zdjęcia) dostarczasz Ty, bo to Twoja firma i Twoja marka. Jeśli czegoś brakuje, znajdujemy rozwiązanie razem. Twoje treści uporządkuję i dopracuję, żeby brzmiały profesjonalnie. Sama grafika to osobna dziedzina, więc logo i fotografie zdobędziesz na trzy sposoby: projekt z AI, płatne zdjęcia stockowe albo zamówienie u sprawdzonego specjalisty jako dodatkowa usługa. Każda z tych dróg to koszt po Twojej stronie, a ja pomogę Ci wybrać tę, która pasuje do budżetu."
+        },
+        "selfEdit": {
+          "question": "A co z późniejszymi zmianami na stronie?",
+          "answer": "W trakcie pracy nad stroną masz wliczone rundy dopracowania. Zmiany, które wprowadzam później, są już usługą płatną, wycenianą według zakresu. Możesz też jednorazowo dokupić dostęp do panelu CMS, w którym samodzielnie edytujesz wszystkie treści na stronie, w dowolnym momencie."
+        },
+        "security": {
+          "question": "Czy moja strona jest bezpieczna?",
+          "answer": "Tak. Strona działa przez szyfrowane połączenie HTTPS, więc dane z formularza i ruch odwiedzających są chronione, a w pasku adresu widać kłódkę. Hosting opiera się na infrastrukturze Google, czyli tym samym zapleczu, na którym stoją duże serwisy."
+        },
+        "gdpr": {
+          "question": "Czy strona jest zgodna z RODO?",
+          "answer": "Tak. W każdej stronie dostajesz baner zgód na cookies oraz politykę prywatności dopasowaną do danych, które faktycznie zbierasz. To pokrywa standardowe wymogi RODO dla wizytówki z formularzem kontaktowym."
+        }
+      }
+    },
+    "quote": {
+      "heading": "Napisz do mnie, czego potrzebujesz.",
+      "intro": "Wystarczy kilka zdań o Twojej firmie i o tym, co ma robić strona. Odezwę się, żeby umówić krótką rozmowę telefoniczną albo spotkanie online, poznać Twój pomysł i doradzić optymalne rozwiązanie.",
+      "messagePlaceholder": "krótko o firmie i o tym, czego oczekujesz od strony"
+    }
   },
   "rootMetadata": {
     "title": "Buzzards Soft — AI-Augmented Mobile Developer",
