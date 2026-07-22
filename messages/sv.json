@@ -28,7 +28,7 @@
   "certification": {
     "eyebrow": "Avsnitt 02 · Verkstad",
     "title": "En AI-verkstad, styrkt med 10xDevs-certifikatet",
-    "intro": "Jag har gått den kohortbaserade 10xDevs-kursen — ett intensivt program om att bygga mjukvara med AI-agenter, lett av Przemek Smyrdek och Marcin Czarkowski. Nedan: certifikatet, de märken jag tog och de fem områden som kursen täckte.",
+    "intro": "Jag har gått den kohortbaserade 10xDevs-kursen, ledd av Przemek Smyrdek och Marcin Czarkowski — ett intensivt program om mjukvaruutveckling med AI-agenter genom hela utvecklingscykeln, från idé och plan till tester och driftsättning. Kursen byggde på praktik: varje modul avslutades med ett konkret, fungerande resultat byggt på ett riktigt projekt. Certifikatet, de fyra märken jag tog och de fem områden som kursen täckte hittar du nedan.",
     "credential": {
       "courseName": "10xDevs — kohortkurs",
       "issuer": "BRAVE / 10xDEVS · Przemek Smyrdek och Marcin Czarkowski",
@@ -39,41 +39,41 @@
     "badges": {
       "builder": {
         "name": "10xBuilder",
-        "caption": "För att ha byggt en fungerande lösning under kursen."
+        "caption": "För att ha levererat en komplett MVP — från databas och API, via frontend och affärslogik, till tester och driftsättning i produktion. Den obligatoriska tröskeln för att slutföra kursen."
       },
       "architect": {
         "name": "10xArchitect",
-        "caption": "För att ha designat arkitektur anpassad för arbete med AI-agenter."
+        "caption": "För att ha designat arkitektur för större system och mönster för AI-integration i stor skala, tillsammans med modernisering av befintlig kod. En utmärkelse för en extra utmaning utöver det obligatoriska projektet."
       },
       "champion": {
         "name": "10xChampion",
-        "caption": "En utmärkelse för aktivitet och resultat i hela kohorten."
+        "caption": "För en fullt fungerande agent i CI/CD på GitHub, redo för lagarbete: den granskar diffen i en pull request och lämnar en kommentar som bedömer ändringen. En av kohortens extra utmaningar, utöver det obligatoriska omfånget."
       },
       "bestProject": {
         "name": "Best Project",
-        "caption": "En utmärkelse för slutprojektet."
+        "caption": "En utmärkelse för slutprojektet. Mitt var en plattformsoberoende app (Android, iOS, webb) i ett multi-repo-upplägg, på en egen stack och med många egna lösningar."
       }
     },
     "areas": {
       "1": {
         "title": "Agentic Environment",
-        "desc": "Att sätta upp miljön för arbete med AI-agenter: verktyg, behörigheter och regler som håller agenten inom projektets ramar."
+        "desc": "Att sätta upp miljön för arbete med AI-agenter: en egen verktygsuppsättning, projektminne och regler som håller agenten inom uppgiftens ramar. Det är här agenten får kontexten och ramarna där den levererar ett upprepbart resultat."
       },
       "2": {
         "title": "10xDevs Workflow",
-        "desc": "Ett upprepbart spår från brief till fungerande kod — med en tydlig uppdelning mellan vad agenten gör och var människan beslutar."
+        "desc": "Ett upprepbart spår från brief till fungerande kod: planering, granskning och implementation som separata steg, med en tydlig uppdelning mellan vad agenten gör och var människan beslutar. Vid större uppgifter arbetar flera agenter parallellt, och varje ändring avslutas med en kodgranskning."
       },
       "3": {
         "title": "AI Development Quality & Maintenance",
-        "desc": "Kvalitet och underhåll av AI-byggd kod: tester, granskningar och standarder som håller ett projekt i god form i åratal."
+        "desc": "Kvalitet och underhåll av kod skriven med AI: en testplan, en egen QA-agent, E2E-tester och felrapportering inkopplade i en upprepbar process. Standarder som håller ett projekt i god form långt efter den första lanseringen."
       },
       "4": {
         "title": "Innovation med generativ AI",
-        "desc": "Att använda generativ AI för att bygga nya funktioner och verktyg som verkligen snabbar upp arbetet."
+        "desc": "Att använda generativ AI för att bygga nya funktioner och verktyg som verkligen snabbar upp arbetet. Färska tekniker som övas direkt på ett fungerande projekt, så att de landar rakt in i produkten."
       },
       "5": {
         "title": "Stora och äldre projekt",
-        "desc": "Arbete med AI i stora kodbaser och äldre projekt: att göra ändringar tryggt där insatserna är höga."
+        "desc": "Arbete med AI i stora kodbaser och äldre projekt: att kartlägga repot, skala kontexten och modernisera legacy i DDD-anda. Att införa ändringar tryggt där insatserna är höga, med en moderniseringsplan och dokumentation som genereras längs vägen."
       }
     },
     "thumbnail": {
