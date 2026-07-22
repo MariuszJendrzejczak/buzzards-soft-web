@@ -22,58 +22,58 @@
       "about": "O mnie",
       "education": "Wykształcenie",
       "contact": "Kontakt",
-      "offer": "Strony dla firm"
+      "offer": "Twoja Strona"
     }
   },
   "certification": {
     "eyebrow": "Sekcja 02 · Warsztat",
     "title": "Warsztat AI, potwierdzony certyfikatem 10xDevs",
-    "intro": "Ukończyłem kohortowy kurs 10xDevs — intensywny program o budowaniu software'u z agentami AI, prowadzony przez Przemka Smyrdka i Marcina Czarkowskiego. Poniżej certyfikat, zdobyte odznaki i pięć obszarów, które kurs objął.",
+    "intro": "Ukończyłem kohortowy kurs 10xDevs prowadzony przez Przemka Smyrdka i Marcina Czarkowskiego — intensywny program o inżynierii oprogramowania z agentami AI w całym cyklu wytwórczym, od pomysłu i planu po testy i wdrożenie. Kurs stawiał na praktykę: każdy moduł domykał konkretny, działający efekt zbudowany na realnym projekcie. Certyfikat, cztery zdobyte odznaki i pięć obszarów, które kurs objął, masz poniżej.",
     "credential": {
       "courseName": "10xDevs — kurs kohortowy",
       "issuer": "BRAVE / 10xDEVS · Przemek Smyrdek i Marcin Czarkowski",
       "date": "20 lipca 2026",
       "instructors": "Przemek Smyrdek i Marcin Czarkowski",
-      "facts": "Prework i 25 lekcji w 5 modułach, 6 sesji na żywo (kick-off, 4× Live Q&A, celebracja) oraz cotygodniowe office hours. Projekt końcowy: własny agent AI i wewnętrzne narzędzia zbudowane end-to-end."
+      "facts": "Prework i 25 lekcji w 5 modułach, 6 sesji na żywo (kick-off, 4× Live Q&A, celebracja) oraz cotygodniowe konsultacje. Projekt końcowy zbudowany end-to-end: własny agent AI i wewnętrzne narzędzia postawione na działającym kodzie."
     },
     "badges": {
       "builder": {
         "name": "10xBuilder",
-        "caption": "Za zbudowanie działającego rozwiązania w toku kursu."
+        "caption": "Za dostarczenie pełnego produktu MVP od bazy danych i API, przez frontend i logikę biznesową, po testy i wdrożenie na produkcję. Obowiązkowy próg ukończenia kursu."
       },
       "architect": {
         "name": "10xArchitect",
-        "caption": "Za projektowanie architektury pod pracę z agentami AI."
+        "caption": "Za projektowanie architektury pod większe systemy i wzorce integracji AI na skalę, wraz z modernizacją zastanego kodu. Wyróżnienie za dodatkowe wyzwanie ponad obowiązkowy projekt."
       },
       "champion": {
         "name": "10xChampion",
-        "caption": "Wyróżnienie za aktywność i wyniki w całej kohorcie."
+        "caption": "Za w pełni działającego agenta w CI/CD na GitHubie, gotowego do pracy w zespole: sprawdza diff na pull requeście i wystawia komentarz z oceną zmiany. Jedno z dodatkowych wyzwań kohorty, ponad obowiązkowy zakres."
       },
       "bestProject": {
         "name": "Best Project",
-        "caption": "Wyróżnienie dla projektu końcowego."
+        "caption": "Wyróżnienie dla projektu końcowego. Mój był aplikacją wieloplatformową (Android, iOS, web) w układzie multi-repo, na własnym stacku i z wieloma autorskimi rozwiązaniami."
       }
     },
     "areas": {
       "1": {
         "title": "Agentic Environment",
-        "desc": "Konfiguracja środowiska pod pracę z agentami AI: narzędzia, uprawnienia i reguły, które trzymają agenta w ryzach projektu."
+        "desc": "Konfiguracja środowiska pod pracę z agentami AI: własny zestaw narzędzi, pamięć projektu i reguły, które utrzymują agenta w granicach zadania. To tutaj agent dostaje kontekst i ramy, w których dowozi powtarzalny wynik."
       },
       "2": {
         "title": "10xDevs Workflow",
-        "desc": "Powtarzalny tor od briefu do działającego kodu — z jasnym podziałem na to, co robi agent, a gdzie decyduje człowiek."
+        "desc": "Powtarzalny tor od briefu do działającego kodu: plan, review i implementacja jako osobne etapy, z jasnym podziałem na to, co robi agent, a gdzie decyduje człowiek. Przy większych zadaniach kilka agentów pracuje równolegle, a każdą zmianę zamyka przegląd kodu."
       },
       "3": {
         "title": "AI Development Quality & Maintenance",
-        "desc": "Jakość i utrzymanie kodu tworzonego z AI: testy, przeglądy i standardy, które utrzymują projekt w dobrej formie na lata."
+        "desc": "Jakość i utrzymanie kodu pisanego z AI: plan testów, własny agent QA, testy E2E i raportowanie błędów wpięte w powtarzalny proces. Standardy, dzięki którym projekt zostaje w dobrej formie długo po pierwszym wdrożeniu."
       },
       "4": {
         "title": "Innowacje z generatywnym AI",
-        "desc": "Wykorzystanie generatywnego AI do budowania nowych funkcji i narzędzi, które realnie przyspieszają pracę."
+        "desc": "Wykorzystanie generatywnego AI do budowania nowych funkcji i narzędzi, które realnie przyspieszają pracę. Świeże techniki ćwiczone od razu na działającym projekcie, żeby trafiały prosto do produktu."
       },
       "5": {
         "title": "Duże i zastane projekty",
-        "desc": "Praca z AI w dużych bazach kodu i projektach zastanych: bezpieczne wprowadzanie zmian tam, gdzie stawka jest wysoka."
+        "desc": "Praca z AI w dużych bazach kodu i projektach zastanych: mapowanie repozytorium, skalowanie kontekstu i modernizacja legacy w duchu DDD. Bezpieczne wprowadzanie zmian tam, gdzie stawka jest wysoka, z planem modernizacji i dokumentacją generowaną po drodze."
       }
     },
     "thumbnail": {

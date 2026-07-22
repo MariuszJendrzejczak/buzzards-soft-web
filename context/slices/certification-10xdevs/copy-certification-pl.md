@@ -135,3 +135,79 @@ re-pitch either; it substantiates them. The eyebrow `Sekcja 02 · Warsztat` take
    wants mirrored (e.g. "July 20, 2026" or "2026-07-20"), swap the string. The underlying
    date is verbatim from the certificate.
 ```
+
+---
+
+## Revision 2026-07-22 — expanded copy (owner brief: "teksty bardziej rozbudowane")
+
+> **Why this revision.** The v1 copy above shipped correct but **too terse** — the intro
+> was two sentences, badge captions one line each, area descriptions one line. The owner
+> asked (2026-07-22) for a **substantially more built-out** version, enriched with the
+> concrete meanings of the badges/modules from the live **10xdevs.pl/#program** page,
+> while keeping the certificate as the facts oracle and the five area *names* unchanged.
+> Per the append rule, v1 stays intact above; the strings below **supersede** v1 for the
+> keys they cover. Keys **not** listed here (eyebrow, title, credential.courseName/issuer/
+> date/instructors, thumbnail.*, lightbox.*) are unchanged from v1.
+>
+> **Enrichment source trace** — the live program page gives the official meaning of each
+> distinction, used to make the captions concrete (all consistent with, not contradicting,
+> the certificate): **10xBuilder** = mandatory full-stack MVP delivered end-to-end (DB →
+> API → frontend → business logic → tests → production deploy); **10xArchitect** = optional
+> challenge: legacy modernization/refactor + large-scale AI-integration patterns;
+> **10xChampion** = optional challenge: AI-native teamwork / org-level practices;
+> **Best Project** = distinction for the final project. Module deliverables (project memory,
+> MCP, plan/review/implement pipeline, multi-agent orchestration, QA agent, E2E, DDD legacy
+> modernization, repo mapping, context scaling) feed the five `areas.*` descriptions.
+
+### Copy (superseding leaves, `certification.*`)
+
+```
+certification.intro = Ukończyłem kohortowy kurs 10xDevs prowadzony przez Przemka Smyrdka i Marcina Czarkowskiego — intensywny program o inżynierii oprogramowania z agentami AI w całym cyklu wytwórczym, od pomysłu i planu po testy i wdrożenie. Kurs stawiał na praktykę: każdy moduł domykał konkretny, działający efekt zbudowany na realnym projekcie. Certyfikat, cztery zdobyte odznaki i pięć obszarów, które kurs objął, masz poniżej.
+
+certification.credential.facts = Prework i 25 lekcji w 5 modułach, 6 sesji na żywo (kick-off, 4× Live Q&A, celebracja) oraz cotygodniowe konsultacje. Projekt końcowy zbudowany end-to-end: własny agent AI i wewnętrzne narzędzia postawione na działającym kodzie.
+
+certification.badges.builder.caption = Za dostarczenie pełnego produktu MVP od bazy danych i API, przez frontend i logikę biznesową, po testy i wdrożenie na produkcję. Obowiązkowy próg ukończenia kursu.
+certification.badges.architect.caption = Za projektowanie architektury pod większe systemy i wzorce integracji AI na skalę, wraz z modernizacją zastanego kodu. Wyróżnienie za dodatkowe wyzwanie ponad obowiązkowy projekt.
+certification.badges.champion.caption = Za w pełni działającego agenta w CI/CD na GitHubie, gotowego do pracy w zespole: sprawdza diff na pull requeście i wystawia komentarz z oceną zmiany. Jedno z dodatkowych wyzwań kohorty, ponad obowiązkowy zakres.
+certification.badges.bestProject.caption = Wyróżnienie dla projektu końcowego. Mój był aplikacją wieloplatformową (Android, iOS, web) w układzie multi-repo, na własnym stacku i z wieloma autorskimi rozwiązaniami.
+
+certification.areas.1.desc = Konfiguracja środowiska pod pracę z agentami AI: własny zestaw narzędzi, pamięć projektu i reguły, które utrzymują agenta w granicach zadania. To tutaj agent dostaje kontekst i ramy, w których dowozi powtarzalny wynik.
+certification.areas.2.desc = Powtarzalny tor od briefu do działającego kodu: plan, review i implementacja jako osobne etapy, z jasnym podziałem na to, co robi agent, a gdzie decyduje człowiek. Przy większych zadaniach kilka agentów pracuje równolegle, a każdą zmianę zamyka przegląd kodu.
+certification.areas.3.desc = Jakość i utrzymanie kodu pisanego z AI: plan testów, własny agent QA, testy E2E i raportowanie błędów wpięte w powtarzalny proces. Standardy, dzięki którym projekt zostaje w dobrej formie długo po pierwszym wdrożeniu.
+certification.areas.4.desc = Wykorzystanie generatywnego AI do budowania nowych funkcji i narzędzi, które realnie przyspieszają pracę. Świeże techniki ćwiczone od razu na działającym projekcie, żeby trafiały prosto do produktu.
+certification.areas.5.desc = Praca z AI w dużych bazach kodu i projektach zastanych: mapowanie repozytorium, skalowanie kontekstu i modernizacja legacy w duchu DDD. Bezpieczne wprowadzanie zmian tam, gdzie stawka jest wysoka, z planem modernizacji i dokumentacją generowaną po drodze.
+```
+
+### Voice-Gap-Test report (expanded copy)
+
+| # | Dimension | Score | Evidence (cited phrase) |
+|---|---|---|---|
+| 1 | Confident, never cocky | MATCHED | "Wyróżnienie dla projektu końcowego. Mój był aplikacją wieloplatformową (Android, iOS, web)…" — neutral distinction carried by concrete, checkable facts, not a self-rating; the cohort-wide "najlepszy" claim was dropped per the owner. |
+| 2 | Direct, never blunt | MATCHED | "Certyfikat, cztery zdobyte odznaki i pięć obszarów, które kurs objął, masz poniżej." — plainly states what the reader sees next, no throat-clearing. |
+| 3 | Warm, never chummy | MATCHED | "Ukończyłem kohortowy kurs 10xDevs" first-person; "masz poniżej" informal *ty*; no slang (`ziomek`/`pogadasz`), no `Pan/Pani`. |
+| 4 | Affirmative phrasing | MATCHED | Every string states what the credential *proves* ("Za dostarczenie pełnego produktu MVP…", "Za wdrożenie praktyk AI-native…"). Negation sweep (`nie `, `bez `, `zamiast`, `, a nie`, `tylko`) → **zero hits**. |
+| 5 | Register floor | MATCHED | Active voice, first-person, concrete: "każdy moduł domykał konkretny, działający efekt". Technical terms (agent QA, E2E, DDD, MVP) match this page's register (cf. `howIWork`), which the brief scopes as OK for this proof/CV section. |
+| 6 | AI-transparency stance | MATCHED | "z jasnym podziałem na to, co robi agent, a gdzie decyduje człowiek" — AI as expertise-with-a-tool + human accountability, never "zrobione przez AI". |
+| 7 | Lexical hygiene | MATCHED | No `kluczowy`/`kompleksowe`/`synergia`/`W dzisiejszych czasach`/`„To nie X, to Y"`. Pause-dashes: ≤1 per string (only `intro`: "Czarkowskiego — intensywny"; `bestProject` dash removed → two sentences). `AI-native`, `end-to-end`, `4×` use hyphen/× correctly. No scare-quotes. |
+| 8 | Structure / Rule of One | MATCHED | Each block owns a distinct job: `intro`=narrative, `credential.facts`=counts, `badges.*`=what each distinction certifies, `areas.*`=course scope. Final-project deploy lives once (builder badge); facts card frames the project as agent+tooling, avoiding a re-pitch. |
+| 9 | Headline (4 U's) | MATCHED | Title unchanged from v1 ("Warsztat AI, potwierdzony certyfikatem 10xDevs") — Useful/Unique/Ultra-specific ≥3; this revision touches body copy, not the H2. |
+| 10 | Section QA (4 C's) | MATCHED | Clear (recruiter reads once), Concise (expansion is concrete deliverables, no filler), Compelling (25 lekcji, 6 sesji, DB→deploy, DDD), Credible (every number/scope traces to the certificate + live program page). |
+| 11 | Claim precision | MATCHED | No "w cenie/za darmo" claims. "Obowiązkowy próg ukończenia kursu" (builder) + "ponad obowiązkowy projekt/zakres" (architect/champion) trace to the mandatory-vs-optional split; champion's "sprawdza diff na pull requeście i wystawia komentarz z oceną" + Best Project's cross-platform/multi-repo detail trace to the owner's own account (2026-07-22); no cohort-ranking claim asserted. |
+| 12 | Adjacent-repetition (micro) | MATCHED | Parallel "dodatkowe wyzwanie" (architect) vs "dodatkowych wyzwań… poza obowiązkowym zakresem" (champion) sit in *separate* badge captions with varied constructions, not adjacent sentences. `w ryzach/w granicach` split between intro and area 1 to avoid a root echo. |
+
+**Drift diagnosis:** The one risk this expansion invited was **length-driven repetition** — the final project surfaces in `credential.facts`, the `builder` badge, and area 2, so the same "built a full app end-to-end" idea could echo three times. It's held to one home by giving each block a different angle (facts = *agent + internal tooling*; builder badge = *full-stack MVP DB→deploy*; area 2 = *the plan/review/implement workflow*). The second latent risk on a credential beat is over-claiming from a badge into "expert/best programmer"; the copy keeps confident-not-cocky by letting the verifiable award ("najlepszy projekt w kohorcie", tied to the Best Project mark) carry the weight instead of a self-rating. Negation sweep clean, so the section stays fully affirmative and does not inherit the neighbouring `howIWork` "Nie chodzi o…" pattern.
+
+### Open Questions (expanded copy)
+
+1. ~~**10xChampion meaning.**~~ **RESOLVED 2026-07-22 (owner).** Earned for a **fully working
+   CI/CD agent on GitHub, team-ready** — it checks the PR diff and posts a review comment with
+   an assessment of the change. Caption rewritten to this concrete build (supersedes both v1's
+   "aktywność w kohorcie" and the generic live-program "org-level practices" framing).
+2. ~~**"Best Project — w kohorcie" scope.**~~ **RESOLVED 2026-07-22 (owner).** It's a
+   **distinction, not a verified cohort-wide "best"** (owner doesn't know how many projects
+   received it). Dropped the ranking claim; caption is now neutral "wyróżnienie dla projektu
+   końcowego" enriched with the real project facts: a **cross-platform app (Android, iOS, web),
+   multi-repo, on its own stack with many custom solutions** — beyond the course's default stack.
+3. **`credential.facts` module/session counts** (Prework + 25 lekcji, 6 sesji, cotygodniowe
+   konsultacje) are carried verbatim from v1's facts-oracle trace. Unchanged — flagged only so
+   the counts get one more human eyeball before landing.

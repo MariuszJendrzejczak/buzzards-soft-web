@@ -97,29 +97,6 @@ export async function Certification() {
             <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
               {t("credential.facts")}
             </p>
-
-            <ul className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-              {badges.map((badge) => (
-                <li
-                  key={badge.key}
-                  className="flex flex-col items-center gap-2 text-center"
-                >
-                  <Image
-                    src={badge.src}
-                    alt={badge.name}
-                    width={96}
-                    height={96}
-                    className="size-16 sm:size-20"
-                  />
-                  <span className="font-heading text-sm font-semibold text-foreground">
-                    {badge.name}
-                  </span>
-                  <span className="text-xs leading-snug text-muted-foreground">
-                    {badge.caption}
-                  </span>
-                </li>
-              ))}
-            </ul>
           </ScrollReveal>
 
           <ScrollReveal className="flex flex-col gap-4">
@@ -138,7 +115,42 @@ export async function Certification() {
 
         <StaggerGroup
           as="ul"
-          className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6"
+          className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-4 sm:gap-6 lg:gap-8"
+        >
+          {badges.map((badge) => {
+            const isBest = badge.key === "bestProject";
+
+            return (
+              <StaggerItem
+                as="li"
+                key={badge.key}
+                className="flex flex-col items-center gap-3 text-center"
+              >
+                <div className="flex h-24 items-end justify-center sm:h-28">
+                  <Image
+                    src={badge.src}
+                    alt={badge.name}
+                    width={isBest ? 128 : 112}
+                    height={isBest ? 128 : 112}
+                    className={
+                      isBest ? "size-24 sm:size-28" : "size-20 sm:size-24"
+                    }
+                  />
+                </div>
+                <span className="font-heading text-base font-semibold text-foreground">
+                  {badge.name}
+                </span>
+                <span className="text-sm leading-relaxed text-muted-foreground">
+                  {badge.caption}
+                </span>
+              </StaggerItem>
+            );
+          })}
+        </StaggerGroup>
+
+        <StaggerGroup
+          as="ul"
+          className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6"
         >
           {areas.map((area) => (
             <StaggerItem as="li" key={area.key}>
