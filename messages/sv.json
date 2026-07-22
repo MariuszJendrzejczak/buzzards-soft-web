@@ -93,7 +93,11 @@
     "swedishAria": "Svenska"
   },
   "hero": {
-    "badge": "AI-Augmented Mobile Developer",
+    "badges": {
+      "aiNative": "AI-Native Developer",
+      "mobile": "Mobile Developer",
+      "web": "Web Fullstack Developer"
+    },
     "badgeSub": "4+ års kommersiell utveckling. Jag jobbar med AI-agenter varje dag.",
     "headingLead": "Jag levererar mjukvara snabbare eftersom ",
     "headingHighlight": "jag jobbar med AI varje dag",
