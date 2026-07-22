@@ -28,7 +28,7 @@
   "certification": {
     "eyebrow": "Section 02 · Workshop",
     "title": "An AI workshop, backed by the 10xDevs certificate",
-    "intro": "I completed the cohort-based 10xDevs course — an intensive program on building software with AI agents, led by Przemek Smyrdek and Marcin Czarkowski. Below: the certificate, the badges I earned, and the five areas the course covered.",
+    "intro": "I completed the cohort-based 10xDevs course led by Przemek Smyrdek and Marcin Czarkowski — an intensive program on software engineering with AI agents across the whole development cycle, from idea and plan through testing and deployment. The course was built around practice: every module closed with a concrete, working result built on a real project. The certificate, the four badges I earned, and the five areas the course covered are below.",
     "credential": {
       "courseName": "10xDevs — cohort course",
       "issuer": "BRAVE / 10xDEVS · Przemek Smyrdek and Marcin Czarkowski",
@@ -39,41 +39,41 @@
     "badges": {
       "builder": {
         "name": "10xBuilder",
-        "caption": "For building a working solution during the course."
+        "caption": "For delivering a complete MVP — from database and API, through the frontend and business logic, to tests and production deployment. The mandatory bar for completing the course."
       },
       "architect": {
         "name": "10xArchitect",
-        "caption": "For designing architecture geared to working with AI agents."
+        "caption": "For designing architecture for larger systems and AI integration patterns at scale, together with modernizing existing code. A distinction for an extra challenge beyond the mandatory project."
       },
       "champion": {
         "name": "10xChampion",
-        "caption": "A distinction for activity and results across the whole cohort."
+        "caption": "For a fully working agent in CI/CD on GitHub, ready for teamwork: it reviews the diff on a pull request and posts a comment assessing the change. One of the cohort's extra challenges, beyond the mandatory scope."
       },
       "bestProject": {
         "name": "Best Project",
-        "caption": "A distinction for the final project."
+        "caption": "A distinction for the final project. Mine was a cross-platform app (Android, iOS, web) in a multi-repo setup, on a custom stack and with many original solutions."
       }
     },
     "areas": {
       "1": {
         "title": "Agentic Environment",
-        "desc": "Setting up the environment for working with AI agents: tools, permissions and rules that keep the agent within the bounds of the project."
+        "desc": "Setting up the environment for working with AI agents: a custom toolset, project memory, and rules that keep the agent within the bounds of the task. This is where the agent gets the context and the frame in which it delivers a repeatable result."
       },
       "2": {
         "title": "10xDevs Workflow",
-        "desc": "A repeatable track from brief to working code — with a clear split between what the agent does and where the human decides."
+        "desc": "A repeatable track from brief to working code: planning, review, and implementation as separate stages, with a clear split between what the agent does and where the human decides. On larger tasks several agents work in parallel, and every change is closed by a code review."
       },
       "3": {
         "title": "AI Development Quality & Maintenance",
-        "desc": "Quality and maintenance of AI-built code: tests, reviews and standards that keep a project in good shape for years."
+        "desc": "Quality and maintenance of AI-written code: a test plan, a custom QA agent, E2E tests, and bug reporting wired into a repeatable process. The standards that keep a project in good shape long after the first release."
       },
       "4": {
         "title": "Innovation with generative AI",
-        "desc": "Using generative AI to build new features and tools that genuinely speed up the work."
+        "desc": "Using generative AI to build new features and tools that genuinely speed up the work. Fresh techniques practiced right away on a working project, so they land straight in the product."
       },
       "5": {
         "title": "Large and legacy projects",
-        "desc": "Working with AI in large codebases and legacy projects: making changes safely where the stakes are high."
+        "desc": "Working with AI in large codebases and legacy projects: mapping the repository, scaling context, and modernizing legacy in the spirit of DDD. Introducing changes safely where the stakes are high, with a modernization plan and documentation generated along the way."
       }
     },
     "thumbnail": {
@@ -93,7 +93,11 @@
     "swedishAria": "Svenska"
   },
   "hero": {
-    "badge": "AI-Augmented Mobile Developer",
+    "badges": {
+      "aiNative": "AI-Native Developer",
+      "mobile": "Mobile Developer",
+      "web": "Web Fullstack Developer"
+    },
     "badgeSub": "4+ years of commercial development. I work with AI agents every day.",
     "headingLead": "I ship software faster because ",
     "headingHighlight": "I work with AI every day",
