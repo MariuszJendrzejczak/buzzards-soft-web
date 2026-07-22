@@ -1,7 +1,7 @@
 ---
 change_id: certification-10xdevs
 title: "Warsztat AI — 10xDevs certificate section (replaces the HowIWork slot 02)"
-status: implementing
+status: impl_reviewed
 created: 2026-07-22
 updated: 2026-07-22
 archived_at: null

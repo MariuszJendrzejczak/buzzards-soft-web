@@ -443,9 +443,9 @@ restore.
 
 #### Automated
 
-- [x] 4.1 `npm run build` passes
-- [x] 4.2 `npm run test` passes (unit + SSG)
-- [x] 4.3 `npm run lint` passes
+- [x] 4.1 `npm run build` passes — 8741243
+- [x] 4.2 `npm run test` passes (unit + SSG) — 8741243
+- [x] 4.3 `npm run lint` passes — 8741243
 
 #### Manual
 
