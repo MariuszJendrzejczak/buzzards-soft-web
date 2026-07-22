@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu } from "lucide-react";
+import { LayoutTemplate, Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -70,14 +70,26 @@ export function Header() {
             aria-label={tNav("mainAria")}
             className="hidden lg:flex lg:items-center lg:gap-1"
           >
-            {NAV_KEYS.map((item) => (
-              <NavLink
-                key={item.href}
-                item={item}
-                label={tNav(`items.${item.key}`)}
-                onNavigate={hideHeader}
-              />
-            ))}
+            {NAV_KEYS.map((item) =>
+              item.key === "offer" ? (
+                <Button
+                  key={item.href}
+                  size="sm"
+                  nativeButton={false}
+                  render={<Link href={item.href} onClick={hideHeader} />}
+                  className="bg-cta px-3 text-primary-foreground hover:bg-cta-hover"
+                >
+                  {tNav(`items.${item.key}`)}
+                </Button>
+              ) : (
+                <NavLink
+                  key={item.href}
+                  item={item}
+                  label={tNav(`items.${item.key}`)}
+                  onNavigate={hideHeader}
+                />
+              ),
+            )}
           </nav>
 
           <div className="flex items-center gap-2 sm:gap-3">
@@ -173,7 +185,49 @@ export function Header() {
           </div>
         </div>
       </header>
+
+      <FloatingOfferButton
+        href="/web-pages-offer"
+        label={tNav("items.offer")}
+        visible={hidden && !mobileOpen}
+      />
     </>
+  );
+}
+
+/**
+ * A Flutter-style floating action button that surfaces the offer CTA once the
+ * sticky header has retracted on scroll-down, so "Twoja Strona" stays reachable
+ * while the bar is hidden. It fades/slides out (and leaves the tab order) the
+ * moment the header returns.
+ */
+function FloatingOfferButton({
+  href,
+  label,
+  visible,
+}: {
+  href: string;
+  label: string;
+  visible: boolean;
+}) {
+  return (
+    <Link
+      href={href}
+      aria-hidden={!visible}
+      tabIndex={visible ? undefined : -1}
+      className={cn(
+        "fixed right-5 bottom-5 z-40 inline-flex items-center gap-2 rounded-full bg-cta px-5 py-3",
+        "text-sm font-semibold text-primary-foreground shadow-lg outline-none",
+        "transition-all duration-300 hover:bg-cta-hover focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+        "motion-reduce:transition-none sm:right-8 sm:bottom-8",
+        visible
+          ? "translate-y-0 opacity-100"
+          : "pointer-events-none translate-y-4 opacity-0",
+      )}
+    >
+      <LayoutTemplate className="size-4" aria-hidden />
+      {label}
+    </Link>
   );
 }
 
