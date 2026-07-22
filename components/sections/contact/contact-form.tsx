@@ -181,7 +181,7 @@ export function ContactForm({
   const isSubmitting = form.formState.isSubmitting;
 
   const requiredMark = (
-    <span aria-hidden className="ml-0.5 text-cta">
+    <span aria-hidden className="ml-0.5 text-destructive">
       *
     </span>
   );
@@ -192,7 +192,7 @@ export function ContactForm({
         noValidate
         onSubmit={form.handleSubmit(onSubmit)}
         aria-describedby="contact-form-required-hint"
-        className="flex flex-col gap-5 rounded-2xl border border-border/60 bg-card/40 p-6 sm:p-8"
+        className="flex flex-col gap-5 rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8"
       >
         {intro ? (
           <p className="text-base leading-relaxed text-muted-foreground">
@@ -205,7 +205,7 @@ export function ContactForm({
           className="font-mono text-[11px] tracking-[0.18em] text-text-subtle uppercase"
         >
           {t("requiredHintPrefix")}
-          <span className="text-cta">*</span>
+          <span className="text-destructive">*</span>
           {t("requiredHintSuffix")}
         </p>
 

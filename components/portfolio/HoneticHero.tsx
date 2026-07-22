@@ -56,7 +56,7 @@ export function HoneticHero({ className }: HoneticHeroProps) {
       )}
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <header className="max-w-3xl">
+        <header className="max-w-3xl rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8">
           <h3
             id="portfolio-honeti-heading"
             className="flex flex-wrap items-center gap-x-3 gap-y-2 font-heading text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl"
@@ -67,7 +67,7 @@ export function HoneticHero({ className }: HoneticHeroProps) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t("honetiLinkAria")}
-              className="inline-flex items-center rounded-md outline-none transition-opacity hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring/50"
+              className="inline-flex items-center rounded-md outline-none transition-opacity hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring"
             >
               <Image
                 src="/portfolio/honeti-logo.png"
@@ -111,7 +111,7 @@ export function HoneticHero({ className }: HoneticHeroProps) {
         <div className="mt-10 flex">
           <Link
             href="/portfolio/honeti"
-            className="inline-flex items-center gap-2 rounded-md font-mono text-sm font-medium text-brand outline-none transition-colors hover:text-brand-soft focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="inline-flex items-center gap-2 rounded-md font-mono text-sm font-medium text-brand outline-none transition-colors hover:text-brand-soft focus-visible:ring-2 focus-visible:ring-ring"
           >
             {t("cta-full-list")}
             <ArrowRight aria-hidden className="size-4" />

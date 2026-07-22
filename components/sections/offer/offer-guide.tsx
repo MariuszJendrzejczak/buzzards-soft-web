@@ -35,6 +35,7 @@ export async function OfferGuide() {
       className="relative isolate border-t border-border/60 py-20 sm:py-28"
     >
       <div className="mx-auto w-full max-w-3xl px-6 sm:px-8">
+        <div className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8 lg:p-10">
         <ScrollReveal as="header">
           <h2
             id="offer-guide-heading"
@@ -80,6 +81,7 @@ export async function OfferGuide() {
             );
           })}
         </StaggerGroup>
+        </div>
       </div>
     </section>
   );

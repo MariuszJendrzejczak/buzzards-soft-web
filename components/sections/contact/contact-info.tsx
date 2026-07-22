@@ -95,7 +95,7 @@ function ContactRow({ item }: { item: ContactItem }) {
             href={item.href}
             target={item.external ? "_blank" : undefined}
             rel={item.external ? "noreferrer" : undefined}
-            className="mt-0.5 inline-flex max-w-full items-center gap-1.5 truncate rounded-sm text-sm font-medium text-foreground outline-none hover:text-brand focus-visible:ring-2 focus-visible:ring-ring/50 sm:text-base"
+            className="mt-0.5 inline-flex max-w-full items-center gap-1.5 truncate rounded-sm text-sm font-medium text-foreground outline-none hover:text-brand focus-visible:ring-2 focus-visible:ring-ring sm:text-base"
           >
             <span className="truncate">{item.value}</span>
             {item.external ? (

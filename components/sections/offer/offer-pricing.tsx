@@ -42,7 +42,10 @@ export async function OfferPricing() {
       className="relative isolate border-t border-border/60 py-20 sm:py-28"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <ScrollReveal as="header" className="max-w-3xl">
+        <ScrollReveal
+          as="header"
+          className="max-w-3xl rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8"
+        >
           <h2
             id="offer-pricing-heading"
             className="font-heading text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl"
@@ -59,8 +62,8 @@ export async function OfferPricing() {
               className={cn(
                 "flex h-full flex-col gap-5 rounded-2xl p-6",
                 tier === "full"
-                  ? "border border-brand/40 bg-brand/5"
-                  : "border border-border/60 bg-card/40",
+                  ? "border border-brand/40 bg-card"
+                  : "border border-border/60 bg-card",
               )}
             >
               <div className="flex flex-col gap-2">
@@ -125,7 +128,7 @@ export async function OfferPricing() {
           ))}
         </ScrollReveal>
 
-        <ScrollReveal className="mt-6">
+        <ScrollReveal className="mt-6 max-w-3xl rounded-xl border border-border/60 bg-card px-5 py-4 shadow-sm">
           <p className="text-xs leading-relaxed text-text-subtle italic">
             {t("footnote")}
           </p>

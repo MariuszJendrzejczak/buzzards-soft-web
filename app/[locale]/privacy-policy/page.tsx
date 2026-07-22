@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
+import { PhotoBand } from "@/components/shared/photo-band";
 import { Link, routing, type Locale } from "@/i18n/routing";
 import { buildAlternates, pageSocial } from "@/lib/seo";
 
@@ -151,12 +152,20 @@ export default async function PrivacyPolicyPage({
 
   return (
     <article className="relative isolate">
+      {/* Single ambient backdrop for the whole legal document — a calm office
+          interior (web-visual-elevation), pinned behind the page. Content rides
+          on opaque panels so the legal text stays readable over it. */}
+      <PhotoBand
+        src="/images/privacy-office.webp"
+        scrimClassName="bg-white/45 dark:bg-black/42"
+        photoClassName="bg-center dark:brightness-115"
+      >
       <div className="mx-auto w-full max-w-3xl px-6 pt-12 pb-24 sm:px-8 sm:pt-16 sm:pb-32">
-        <div className="mb-10 flex items-center justify-between gap-4">
+        <div className="mb-10 flex items-center justify-between gap-4 rounded-xl border border-border/60 bg-card px-4 py-3 shadow-sm">
           <nav aria-label="Breadcrumb">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
+              className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
             >
               <ArrowLeft aria-hidden className="size-4" />
               {t("breadcrumbBack")}
@@ -190,7 +199,7 @@ export default async function PrivacyPolicyPage({
             <MetaRow label={t("contactLabel")}>
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="rounded-sm outline-none hover:text-brand focus-visible:ring-2 focus-visible:ring-ring/50"
+                className="rounded-sm outline-none hover:text-brand focus-visible:ring-2 focus-visible:ring-ring"
               >
                 {CONTACT_EMAIL}
               </a>
@@ -200,7 +209,7 @@ export default async function PrivacyPolicyPage({
 
         <nav
           aria-label={t("tocHeading")}
-          className="mt-10 rounded-xl border border-border/60 bg-surface/40 p-5 sm:p-6"
+          className="mt-10 rounded-xl border border-border/60 bg-surface p-5 shadow-sm sm:p-6"
         >
           <h2 className="font-mono text-xs font-medium tracking-[0.18em] text-text-subtle uppercase">
             {t("tocHeading")}
@@ -210,7 +219,7 @@ export default async function PrivacyPolicyPage({
               <li key={section.id}>
                 <a
                   href={`#${section.id}`}
-                  className="group/toc inline-flex items-baseline gap-3 rounded-sm text-sm text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
+                  className="group/toc inline-flex items-baseline gap-3 rounded-sm text-sm text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   <span className="font-mono text-[11px] tracking-[0.18em] text-text-subtle group-hover/toc:text-brand">
                     {section.number}
@@ -229,7 +238,7 @@ export default async function PrivacyPolicyPage({
 
           <section
             aria-labelledby="kontakt-details-heading"
-            className="rounded-2xl border border-border bg-surface/40 p-6 sm:p-8"
+            className="rounded-2xl border border-border bg-surface p-6 shadow-sm sm:p-8"
           >
             <div className="flex items-start gap-4">
               <span
@@ -250,7 +259,7 @@ export default async function PrivacyPolicyPage({
                 </p>
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
-                  className="rounded-sm text-sm font-medium text-foreground outline-none hover:text-brand focus-visible:ring-2 focus-visible:ring-ring/50"
+                  className="rounded-sm text-sm font-medium text-foreground outline-none hover:text-brand focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   {CONTACT_EMAIL}
                 </a>
@@ -259,7 +268,7 @@ export default async function PrivacyPolicyPage({
           </section>
         </div>
 
-        <div className="mt-16 flex flex-col gap-3 border-t border-border/60 pt-10 sm:flex-row sm:items-center sm:gap-4">
+        <div className="mt-16 flex flex-col gap-3 rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:flex-row sm:items-center sm:gap-4">
           <Button
             size="lg"
             render={<Link href="/" />}
@@ -279,6 +288,7 @@ export default async function PrivacyPolicyPage({
           </Button>
         </div>
       </div>
+      </PhotoBand>
     </article>
   );
 }
@@ -292,7 +302,7 @@ async function PolicySection({ section }: { section: SectionSpec }) {
     <section
       id={section.id}
       aria-labelledby={headingId}
-      className="scroll-mt-24"
+      className="scroll-mt-24 rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8"
     >
       <div className="flex items-baseline gap-4">
         <span

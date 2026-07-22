@@ -127,9 +127,9 @@ const SECTION_SPECS: readonly SectionSpec[] = [
 ] as const;
 
 const ITEM_VARIANT_CLASSES: Record<Variant, string> = {
-  core: "border border-brand/40 bg-card/40",
-  growing:
-    "border border-dashed border-text-subtle/50 bg-card/30 opacity-90",
+  // Opaque tiles — fully cover the ambient photo behind this reveal section.
+  core: "border border-brand/40 bg-card",
+  growing: "border border-dashed border-text-subtle/50 bg-card",
 };
 
 export async function WhatICanDeliver() {
@@ -142,7 +142,10 @@ export async function WhatICanDeliver() {
       className="relative isolate border-t border-border/60 py-24 sm:py-32"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <ScrollReveal as="header" className="max-w-3xl">
+        <ScrollReveal
+          as="header"
+          className="max-w-3xl rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8"
+        >
           <span className="font-mono text-xs font-medium tracking-[0.18em] text-brand uppercase">
             {t("eyebrow")}
           </span>
@@ -275,7 +278,7 @@ function SubBlockView({
   stackAria: string;
 }) {
   return (
-    <div className="flex flex-col gap-3 rounded-xl border border-border/60 bg-surface/40 p-5">
+    <div className="flex flex-col gap-3 rounded-xl border border-border/60 bg-surface p-5">
       <h4 className="font-heading text-base font-semibold text-foreground">
         {title}
       </h4>

@@ -12,7 +12,10 @@ export async function OfferHero() {
       className="relative isolate py-20 sm:py-28"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <ScrollReveal as="header" className="max-w-3xl">
+        <ScrollReveal
+          as="header"
+          className="max-w-3xl rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8"
+        >
           <span className="font-mono text-xs font-medium tracking-[0.18em] text-brand uppercase">
             {t("eyebrow")}
           </span>

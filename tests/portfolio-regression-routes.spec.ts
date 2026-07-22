@@ -58,7 +58,7 @@ for (const { locale, messages } of LOCALE_DATA) {
       await page.goto(`/${locale}`);
       const expectedAnchors = [
         "hero",
-        "how-i-work",
+        "certification",
         "what-i-can-deliver",
         "portfolio",
         "currently-learning",

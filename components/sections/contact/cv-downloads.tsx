@@ -34,7 +34,7 @@ export async function CvDownloads() {
             <a
               href={item.href}
               download={item.downloadAs}
-              className="group flex items-center gap-3 rounded-xl border border-border/60 bg-surface/40 px-3 py-2.5 outline-none transition-colors hover:border-brand/40 hover:bg-surface/70 focus-visible:ring-2 focus-visible:ring-ring/50"
+              className="group flex items-center gap-3 rounded-xl border border-border/60 bg-surface/40 px-3 py-2.5 outline-none transition-colors hover:border-brand/40 hover:bg-surface/70 focus-visible:ring-2 focus-visible:ring-ring"
             >
               <span
                 aria-hidden

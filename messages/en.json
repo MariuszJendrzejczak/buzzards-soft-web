@@ -15,13 +15,75 @@
     "brandHomeAria": "Buzzards Soft — home",
     "items": {
       "howIWork": "How I work",
+      "certification": "AI Workshop",
       "whatIDeliver": "What I deliver",
       "portfolio": "Portfolio",
       "learning": "Growth",
       "about": "About",
       "education": "Education",
       "contact": "Contact",
-      "offer": "Sites for businesses"
+      "offer": "Your Website"
+    }
+  },
+  "certification": {
+    "eyebrow": "Section 02 · Workshop",
+    "title": "An AI workshop, backed by the 10xDevs certificate",
+    "intro": "I completed the cohort-based 10xDevs course — an intensive program on building software with AI agents, led by Przemek Smyrdek and Marcin Czarkowski. Below: the certificate, the badges I earned, and the five areas the course covered.",
+    "credential": {
+      "courseName": "10xDevs — cohort course",
+      "issuer": "BRAVE / 10xDEVS · Przemek Smyrdek and Marcin Czarkowski",
+      "date": "20 July 2026",
+      "instructors": "Przemek Smyrdek and Marcin Czarkowski",
+      "facts": "Prework and 25 lessons across 5 modules, 6 live sessions (kick-off, 4× Live Q&A, celebration) plus weekly office hours. Final project: a custom AI agent and internal tooling built end-to-end."
+    },
+    "badges": {
+      "builder": {
+        "name": "10xBuilder",
+        "caption": "For building a working solution during the course."
+      },
+      "architect": {
+        "name": "10xArchitect",
+        "caption": "For designing architecture geared to working with AI agents."
+      },
+      "champion": {
+        "name": "10xChampion",
+        "caption": "A distinction for activity and results across the whole cohort."
+      },
+      "bestProject": {
+        "name": "Best Project",
+        "caption": "A distinction for the final project."
+      }
+    },
+    "areas": {
+      "1": {
+        "title": "Agentic Environment",
+        "desc": "Setting up the environment for working with AI agents: tools, permissions and rules that keep the agent within the bounds of the project."
+      },
+      "2": {
+        "title": "10xDevs Workflow",
+        "desc": "A repeatable track from brief to working code — with a clear split between what the agent does and where the human decides."
+      },
+      "3": {
+        "title": "AI Development Quality & Maintenance",
+        "desc": "Quality and maintenance of AI-built code: tests, reviews and standards that keep a project in good shape for years."
+      },
+      "4": {
+        "title": "Innovation with generative AI",
+        "desc": "Using generative AI to build new features and tools that genuinely speed up the work."
+      },
+      "5": {
+        "title": "Large and legacy projects",
+        "desc": "Working with AI in large codebases and legacy projects: making changes safely where the stakes are high."
+      }
+    },
+    "thumbnail": {
+      "alt": "10xDevs course completion certificate",
+      "openLabel": "Enlarge the 10xDevs certificate"
+    },
+    "lightbox": {
+      "title": "10xDevs certificate",
+      "closeLabel": "Close preview",
+      "imageAlt": "10xDevs course completion certificate, issued 20 July 2026"
     }
   },
   "language": {
@@ -743,6 +805,7 @@
         "mobile": "A fast site that works on every phone — and that's where most of your customers will come from.",
         "contact": "A contact form and one-tap phone call, so customers reach out right away.",
         "seo": "A technical SEO foundation, so Google sees you from day one.",
+        "editing": "A simple panel to update your content — texts and images — yourself, anytime, while I keep the look polished and consistent.",
         "hosting": "Free hosting, your own domain and an SSL certificate — everything ready to launch.",
         "gdpr": "GDPR compliance: a cookie banner and privacy policy, so you can operate with peace of mind.",
         "content": "Copy prepared and checked with my process, if you don't have your own.",
@@ -772,8 +835,8 @@
       "module": "module",
       "basic": {
         "name": "Basic",
-        "basePrice": "1299 zł",
-        "promoPrice": "999 zł",
+        "basePrice": "1999 zł",
+        "promoPrice": "1699 zł",
         "priceTag": "promotional price",
         "audience": "business card or simple offer",
         "pages": "1 page, up to 5 sections",
@@ -782,8 +845,8 @@
       },
       "full": {
         "name": "Full",
-        "basePrice": "2499 zł",
-        "promoPrice": "1999 zł",
+        "basePrice": "2999 zł",
+        "promoPrice": "2499 zł",
         "priceTag": "promotional price",
         "audience": "a business that wants to be visible and win leads",
         "pages": "up to 8 sections and 2 subpages",
@@ -821,10 +884,6 @@
         "extraLanguage": {
           "name": "Additional language",
           "price": "+400 zł / language"
-        },
-        "selfEdit": {
-          "name": "Edit content yourself, paid once",
-          "price": "+700 zł"
         },
         "leads": {
           "name": "Lead capture (mailing list or a submissions sheet)",
@@ -880,7 +939,7 @@
         },
         "selfEdit": {
           "question": "Will I be able to edit the site myself later?",
-          "answer": "Yes, if you add the self-editing module — paid once, with no monthly subscription."
+          "answer": "During the build you have revision rounds included. After launch you update your content — texts and images — yourself, anytime, in the panel that comes with every site. Larger changes beyond content, like new subpages or features, I price by scope."
         },
         "security": {
           "question": "Is my site secure?",

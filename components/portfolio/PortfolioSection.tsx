@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
+import { PhotoBand } from "@/components/shared/photo-band";
 
 import { AgentPortfolioSection } from "./AgentPortfolioSection";
 import { HoneticHero } from "./HoneticHero";
@@ -10,11 +11,16 @@ export type PortfolioSectionProps = {
   // Stable anchor id — drives the header-nav `/#portfolio` link.
   id?: string;
   className?: string;
+  // Ambient-backdrop prototype (web-visual-elevation): when set, the HONETi +
+  // agent sub-sections REVEAL this photo behind their content, while the intro
+  // header and the AI-Native workflow stay opaque and COVER it.
+  backdropSrc?: string;
 };
 
 export function PortfolioSection({
   id = "portfolio",
   className,
+  backdropSrc,
 }: PortfolioSectionProps) {
   const t = useTranslations("portfolio");
 
@@ -45,8 +51,21 @@ export function PortfolioSection({
         </header>
       </div>
 
-      <HoneticHero />
-      <AgentPortfolioSection />
+      {backdropSrc ? (
+        <PhotoBand
+          src={backdropSrc}
+          scrimClassName="bg-white/45 dark:bg-black/42"
+          photoClassName="bg-center dark:brightness-120"
+        >
+          <HoneticHero />
+          <AgentPortfolioSection />
+        </PhotoBand>
+      ) : (
+        <>
+          <HoneticHero />
+          <AgentPortfolioSection />
+        </>
+      )}
       <WarsztatGrid />
     </section>
   );

@@ -16,7 +16,10 @@ export async function Contact() {
       className="relative isolate border-t border-border/60 py-24 sm:py-32"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <ScrollReveal as="header" className="max-w-3xl">
+        <ScrollReveal
+          as="header"
+          className="max-w-3xl rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8"
+        >
           <span className="font-mono text-xs font-medium tracking-[0.18em] text-brand uppercase">
             {t("eyebrow")}
           </span>
@@ -29,7 +32,7 @@ export async function Contact() {
         </ScrollReveal>
 
         <ScrollReveal className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[2fr_3fr] lg:gap-16">
-          <div className="order-2 flex flex-col gap-8 lg:order-1">
+          <div className="order-2 flex flex-col gap-8 rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8 lg:order-1">
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
               {t("introLead")}
               <span className="text-foreground">{t("introHighlight")}</span>

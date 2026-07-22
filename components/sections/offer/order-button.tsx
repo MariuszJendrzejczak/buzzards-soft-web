@@ -25,7 +25,7 @@ export function OrderButton({
         window.dispatchEvent(new CustomEvent("offer:order", { detail: { pkg } }));
       }}
       className={cn(
-        "inline-flex h-10 w-full items-center justify-center rounded-lg px-4 text-sm font-medium transition-colors focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none",
+        "inline-flex h-10 w-full items-center justify-center rounded-lg px-4 text-sm font-medium transition-colors focus-visible:ring-3 focus-visible:ring-ring focus-visible:outline-none",
         variant === "primary"
           ? "bg-primary text-primary-foreground hover:bg-primary/80"
           : "border border-border bg-background text-foreground hover:bg-muted",

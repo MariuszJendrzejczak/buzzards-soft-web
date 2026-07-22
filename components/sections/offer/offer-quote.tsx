@@ -13,7 +13,10 @@ export async function OfferQuote() {
       className="relative isolate border-t border-border/60 py-20 sm:py-28"
     >
       <div className="mx-auto w-full max-w-3xl px-6 sm:px-8">
-        <ScrollReveal as="header">
+        <ScrollReveal
+          as="header"
+          className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8"
+        >
           <h2
             id="offer-quote-heading"
             className="font-heading text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl"

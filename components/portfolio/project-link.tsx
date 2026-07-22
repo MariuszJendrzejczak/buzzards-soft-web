@@ -47,7 +47,7 @@ export function ProjectLink({ links, className }: ProjectLinkProps) {
             target={isInternal ? undefined : "_blank"}
             rel={isInternal ? undefined : "noopener noreferrer"}
             aria-label={ariaLabel}
-            className="inline-flex size-8 items-center justify-center rounded-md border border-border/70 bg-surface/40 text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="inline-flex size-8 items-center justify-center rounded-md border border-border/70 bg-surface/40 text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
           >
             {imageSrc ? (
               <Image
