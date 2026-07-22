@@ -104,8 +104,12 @@
    * deep-emerald-on-brand idiom. */
   --accent-foreground: oklch(0.20 0.06 162);
 
-  --brand: oklch(0.58 0.15 162);
-  --brand-soft: oklch(0.66 0.15 162);
+  /* darkened for text-on-light: emerald small text (eyebrows, links, prices)
+   * now clears WCAG 4.5:1 on background (5.16:1) and surface (4.87:1).
+   * (Was 0.58 → 3.71:1, a light-theme readability blocker.) Fills/borders
+   * (bg-brand/10, border-brand/30) ride the same token and stay on-brand. */
+  --brand: oklch(0.50 0.14 162);
+  --brand-soft: oklch(0.60 0.15 162);
   --cta: oklch(0.70 0.17 62);
   --cta-hover: oklch(0.65 0.17 60);
 
@@ -135,26 +139,30 @@
 
 /* --- DARK theme (default; warmed slate migrated from the original hex) --- */
 .dark {
-  --background: oklch(0.16 0.022 255);
+  /* Dark neutrals: DEEP emerald-leaning green (hue 178) with moderate chroma —
+   * depth is what makes it read rich, not washed; lifting the base flattened it,
+   * so the base is deep again. The green stays in the UI; the photos are tinted
+   * neutrally (see PhotoBand), not green. (web-visual-elevation dark-palette.) */
+  --background: oklch(0.15 0.018 178);
   --foreground: oklch(0.99 0 0);
 
-  --surface: oklch(0.24 0.028 255);
-  --surface-elevated: oklch(0.31 0.030 255);
+  --surface: oklch(0.22 0.022 178);
+  --surface-elevated: oklch(0.285 0.024 178);
 
-  --card: oklch(0.24 0.028 255);
+  --card: oklch(0.22 0.022 178);
   --card-foreground: oklch(0.99 0 0);
 
-  --popover: oklch(0.24 0.028 255);
+  --popover: oklch(0.22 0.022 178);
   --popover-foreground: oklch(0.99 0 0);
 
   --primary: oklch(0.77 0.16 70);
   --primary-foreground: oklch(0.20 0.02 60);
-  --secondary: oklch(0.31 0.030 255);
+  --secondary: oklch(0.285 0.024 178);
   --secondary-foreground: oklch(0.99 0 0);
 
-  --muted: oklch(0.31 0.030 255);
-  --muted-foreground: oklch(0.72 0.028 255);
-  --text-subtle: oklch(0.64 0.028 255);
+  --muted: oklch(0.285 0.024 178);
+  --muted-foreground: oklch(0.73 0.020 178);
+  --text-subtle: oklch(0.65 0.020 178);
 
   --accent: oklch(0.72 0.16 162);
   --accent-foreground: oklch(0.28 0.06 162);
@@ -165,11 +173,11 @@
   --cta-hover: oklch(0.83 0.15 78);
 
   --destructive: oklch(0.66 0.22 12);
-  --border: oklch(0.31 0.030 255);
-  --input: oklch(0.31 0.030 255);
+  --border: oklch(0.30 0.022 178);
+  --input: oklch(0.30 0.022 178);
   --ring: oklch(0.72 0.16 162);
 
-  --sidebar: oklch(0.24 0.028 255);
+  --sidebar: oklch(0.22 0.022 178);
   --sidebar-foreground: oklch(0.99 0 0);
   --sidebar-primary: oklch(0.72 0.16 162);
   --sidebar-primary-foreground: oklch(0.28 0.06 162);
@@ -178,16 +186,16 @@
   --sidebar-border: oklch(0.31 0.030 255);
   --sidebar-ring: oklch(0.72 0.16 162);
 
-  /* WarsztatFlow schematic connector strokes — DARK keeps today's brighter
-   * emerald/amber/slate on the deep-slate schematic. */
-  --flow-stroke-neutral: rgba(148, 163, 184, 0.5);
+  /* WarsztatFlow schematic connector strokes — DARK: emerald/amber accents on
+   * the deep green-slate schematic (neutral nudged off blue toward green-grey). */
+  --flow-stroke-neutral: rgba(130, 150, 140, 0.5);
   --flow-stroke-agent: rgba(52, 211, 153, 0.65);
   --flow-stroke-human: rgba(251, 191, 36, 0.65);
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring;
   }
   html {
     @apply font-sans;

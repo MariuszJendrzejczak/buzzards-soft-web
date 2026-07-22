@@ -174,7 +174,7 @@ export function WarsztatFlow({ className }: WarsztatFlowProps) {
       {/* theme-aware schematic panel: warm off-white inset board in light, the
        * deep-slate schematic in dark (both with the emerald-top / amber-bottom
        * glow). The gradient stops are the sanctioned raw-color exception. */}
-      <div className="relative overflow-hidden rounded-3xl border border-foreground/10 bg-[radial-gradient(90%_45%_at_50%_-8%,rgba(5,150,105,.05),transparent_62%),radial-gradient(70%_60%_at_88%_108%,rgba(180,83,9,.05),transparent_60%),linear-gradient(180deg,oklch(0.965_0.006_90),oklch(0.945_0.008_90))] p-5 shadow-[0_30px_70px_-45px_rgba(23,23,23,.25)] sm:p-8 dark:bg-[radial-gradient(90%_45%_at_50%_-8%,rgba(16,185,129,.14),transparent_62%),radial-gradient(70%_60%_at_88%_108%,rgba(245,158,11,.12),transparent_60%),linear-gradient(180deg,#0b1220,#060a13)] dark:shadow-[0_40px_90px_-50px_rgba(0,0,0,.8)]">
+      <div className="relative overflow-hidden rounded-3xl border border-foreground/10 bg-[radial-gradient(90%_45%_at_50%_-8%,rgba(5,150,105,.05),transparent_62%),radial-gradient(70%_60%_at_88%_108%,rgba(180,83,9,.05),transparent_60%),linear-gradient(180deg,oklch(0.965_0.006_90),oklch(0.945_0.008_90))] p-5 shadow-[0_30px_70px_-45px_rgba(23,23,23,.25)] sm:p-8 dark:bg-[radial-gradient(90%_45%_at_50%_-8%,rgba(16,185,129,.14),transparent_62%),radial-gradient(70%_60%_at_88%_108%,rgba(245,158,11,.12),transparent_60%),linear-gradient(180deg,var(--surface),var(--background))] dark:shadow-[0_40px_90px_-50px_rgba(0,0,0,.8)]">
         {/* legend */}
         <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
           <span className="font-mono text-[11px] font-medium tracking-[0.16em] text-foreground/60 uppercase">

@@ -26,7 +26,7 @@ export function AgentPortfolioSection({ className }: AgentPortfolioSectionProps)
       )}
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <header className="max-w-4xl">
+        <header className="max-w-4xl rounded-2xl border border-border/60 bg-card p-6 shadow-sm sm:p-8">
           <h3
             id="portfolio-agent-heading"
             className="font-heading text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl"

@@ -112,7 +112,7 @@ export function Footer() {
             <li>
               <Link
                 href="/privacy-policy"
-                className="text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-ring/50"
+                className="text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-ring"
               >
                 {t("links.privacy")}
               </Link>
@@ -121,7 +121,7 @@ export function Footer() {
               <ContactLink
                 onHome={pathname === "/"}
                 locale={locale}
-                className="text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-ring/50"
+                className="text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-ring"
               >
                 {t("links.contact")}
               </ContactLink>
@@ -160,7 +160,7 @@ export function Footer() {
                   aria-label={link.label}
                   rel={link.href.startsWith("mailto:") ? undefined : "noreferrer"}
                   target={link.href.startsWith("mailto:") ? undefined : "_blank"}
-                  className="inline-flex size-8 items-center justify-center rounded-md text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
+                  className="inline-flex size-8 items-center justify-center rounded-md text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   <link.icon className="size-4" aria-hidden />
                 </a>

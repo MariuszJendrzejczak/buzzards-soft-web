@@ -3,8 +3,10 @@ import { ArrowLeft } from "lucide-react";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Link, routing, type Locale } from "@/i18n/routing";
 import { buildAlternates, pageSocial } from "@/lib/seo";
+import { PhotoBand } from "@/components/shared/photo-band";
 import { OfferHero } from "@/components/sections/offer/offer-hero";
 import { OfferProblem } from "@/components/sections/offer/offer-problem";
 import { OfferGuide } from "@/components/sections/offer/offer-guide";
@@ -58,27 +60,64 @@ export default async function WebPagesOfferPage({
   return (
     <article className="relative isolate">
       <div className="mx-auto w-full max-w-7xl px-6 pt-12 sm:px-8 sm:pt-16">
-        <nav aria-label="Breadcrumb">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
-          >
-            <ArrowLeft aria-hidden className="size-4" />
-            {t("breadcrumbBack")}
-          </Link>
-        </nav>
+        <div className="flex items-center justify-between gap-4 rounded-xl border border-border/60 bg-card px-4 py-3 shadow-sm">
+          <nav aria-label="Breadcrumb">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              <ArrowLeft aria-hidden className="size-4" />
+              {t("breadcrumbBack")}
+            </Link>
+          </nav>
+          <ThemeToggle />
+        </div>
       </div>
 
-      {/* Ordered top→bottom on the SB7 spine per the locked slice plan. */}
-      <OfferHero />
+      {/* Ordered top→bottom on the SB7 spine per the locked slice plan. Ambient
+          photo backdrops mirror the home page (web-visual-elevation): reveal
+          sections (Hero, Guide, Pricing, Quote) carry a pinned photo behind
+          panelised content; the prose-heavy sections between them stay opaque
+          and cover it. Reuses the home's curated set (no personal about shot). */}
+      <PhotoBand
+        src="/images/hero.webp"
+        scrimClassName="bg-white/35 dark:bg-black/30"
+        photoClassName="bg-center dark:brightness-125"
+      >
+        <OfferHero />
+      </PhotoBand>
       <OfferProblem />
-      <OfferGuide />
+      <PhotoBand
+        src="/images/guide-tech.webp"
+        scrimClassName="bg-white/45 dark:bg-black/42"
+        photoClassName="bg-center dark:brightness-145"
+      >
+        <OfferGuide />
+      </PhotoBand>
       <OfferIncludes />
-      <OfferPricing />
+      <PhotoBand
+        src="/images/portfolio.webp"
+        scrimClassName="bg-white/45 dark:bg-black/42"
+        photoClassName="bg-center dark:brightness-120"
+      >
+        <OfferPricing />
+      </PhotoBand>
       <OfferModules />
-      <OfferOwnership />
+      <PhotoBand
+        src="/images/ownership.webp"
+        scrimClassName="bg-white/45 dark:bg-black/42"
+        photoClassName="bg-center dark:brightness-115"
+      >
+        <OfferOwnership />
+      </PhotoBand>
       <OfferFaq />
-      <OfferQuote />
+      <PhotoBand
+        src="/images/contact.webp"
+        scrimClassName="bg-white/45 dark:bg-black/42"
+        photoClassName="bg-center dark:brightness-115"
+      >
+        <OfferQuote />
+      </PhotoBand>
     </article>
   );
 }

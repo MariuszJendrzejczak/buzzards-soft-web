@@ -81,7 +81,7 @@ function LocaleButton({
       disabled={disabled}
       className={cn(
         "rounded-full px-2.5 py-1 outline-none transition-colors disabled:opacity-60",
-        "focus-visible:ring-2 focus-visible:ring-ring/50",
+        "focus-visible:ring-2 focus-visible:ring-ring",
         active
           ? "bg-brand/15 text-brand"
           : "text-muted-foreground hover:text-foreground",

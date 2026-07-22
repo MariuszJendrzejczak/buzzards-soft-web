@@ -124,7 +124,7 @@ export function Header() {
                 >
                   {NAV_KEYS.map((item) => {
                     const className =
-                      "rounded-md px-3 py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring/50";
+                      "rounded-md px-3 py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring";
                     return (
                       <SheetClose
                         key={item.href}
@@ -182,7 +182,7 @@ function BrandMark({ ariaLabel }: { ariaLabel: string }) {
     <Link
       href="/"
       aria-label={ariaLabel}
-      className="group/brand inline-flex items-center gap-2.5 rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+      className="group/brand inline-flex items-center gap-2.5 rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring"
     >
       <Image
         src="/brand-mark.png"
@@ -212,7 +212,7 @@ function NavLink({
   onNavigate?: () => void;
 }) {
   const className =
-    "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50";
+    "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring";
 
   if (item.href.startsWith("/")) {
     return (

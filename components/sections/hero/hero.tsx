@@ -3,8 +3,6 @@ import { getTranslations } from "next-intl/server";
 
 import { Button } from "@/components/ui/button";
 
-import { HeroBackdrop } from "./hero-backdrop";
-
 export async function Hero() {
   const t = await getTranslations("hero");
 
@@ -14,10 +12,9 @@ export async function Hero() {
       aria-labelledby="hero-heading"
       className="relative isolate overflow-hidden"
     >
-      <HeroBackdrop />
-
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 px-6 pt-24 pb-20 sm:px-8 md:pt-32 md:pb-28 lg:grid-cols-[3fr_2fr] lg:gap-16 lg:pt-40 lg:pb-36">
         <div className="flex flex-col justify-center">
+          <div className="rounded-3xl border border-border/50 bg-background/72 p-8 backdrop-blur-md sm:p-10">
           <RoleBadge badge={t("badge")} sub={t("badgeSub")} />
 
           <h1
@@ -62,6 +59,7 @@ export async function Hero() {
               t("trust.engineerEnglish"),
             ]}
           />
+          </div>
         </div>
 
         <div className="hidden lg:block">

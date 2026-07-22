@@ -60,7 +60,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
             onClick={() => setTheme(option.value)}
             className={cn(
               "inline-flex items-center justify-center rounded-full p-1.5 outline-none transition-colors",
-              "focus-visible:ring-2 focus-visible:ring-ring/50",
+              "focus-visible:ring-2 focus-visible:ring-ring",
               active
                 ? "bg-brand/15 text-brand"
                 : "text-muted-foreground hover:text-foreground",

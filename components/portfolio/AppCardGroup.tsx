@@ -79,7 +79,7 @@ export function AppCardGroup({
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t("portfolio.honeti.honetiLinkAria")}
-            className="inline-flex items-center rounded-md outline-none transition-opacity hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="inline-flex items-center rounded-md outline-none transition-opacity hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring"
           >
             <Image
               src="/portfolio/honeti-logo.png"

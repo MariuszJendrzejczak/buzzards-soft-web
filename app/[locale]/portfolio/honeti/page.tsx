@@ -107,7 +107,7 @@ export default async function HoneticPortfolioPage({
           <nav aria-label="Breadcrumb">
             <Link
               href="/#portfolio"
-              className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50"
+              className="inline-flex items-center gap-2 rounded-md font-mono text-xs font-medium tracking-[0.18em] text-muted-foreground uppercase outline-none transition-colors hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
             >
               <ArrowLeft aria-hidden className="size-4" />
               {t("breadcrumbBack")}
@@ -126,7 +126,7 @@ export default async function HoneticPortfolioPage({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={tHoneti("honetiLinkAria")}
-                className="inline-flex items-center rounded-md outline-none transition-opacity hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring/50"
+                className="inline-flex items-center rounded-md outline-none transition-opacity hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <Image
                   src="/portfolio/honeti-logo.png"
