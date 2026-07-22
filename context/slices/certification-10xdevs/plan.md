@@ -404,8 +404,8 @@ restore.
 
 #### Automated
 
-- [x] 1.1 All six webp files exist in `public/images/` (cert, thumb, four badges)
-- [x] 1.2 `npm run build` still succeeds
+- [x] 1.1 All six webp files exist in `public/images/` (cert, thumb, four badges) — 14a964e
+- [x] 1.2 `npm run build` still succeeds — 14a964e
 
 #### Manual
 
