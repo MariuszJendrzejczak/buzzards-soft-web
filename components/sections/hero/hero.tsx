@@ -15,7 +15,10 @@ export async function Hero() {
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 px-6 pt-24 pb-20 sm:px-8 md:pt-32 md:pb-28 lg:grid-cols-[3fr_2fr] lg:gap-16 lg:pt-40 lg:pb-36">
         <div className="flex flex-col justify-center">
           <div className="rounded-3xl border border-border/50 bg-background/72 p-8 backdrop-blur-md sm:p-10">
-          <RoleBadge badge={t("badge")} sub={t("badgeSub")} />
+          <RoleBadge
+            badges={[t("badges.aiNative"), t("badges.mobile"), t("badges.web")]}
+            sub={t("badgeSub")}
+          />
 
           <h1
             id="hero-heading"
@@ -77,18 +80,23 @@ export async function Hero() {
   );
 }
 
-function RoleBadge({ badge, sub }: { badge: string; sub: string }) {
+function RoleBadge({ badges, sub }: { badges: string[]; sub: string }) {
   return (
-    <div className="inline-flex w-fit flex-col gap-1.5">
-      <span
-        className="inline-flex w-fit items-center gap-2 rounded-md border border-brand/30 bg-brand/10 px-3 py-1 font-mono text-xs font-medium tracking-wide text-brand uppercase"
-      >
-        <span
-          aria-hidden
-          className="size-1.5 rounded-full bg-brand shadow-[0_0_8px_var(--brand)]"
-        />
-        {badge}
-      </span>
+    <div className="flex w-fit flex-col gap-2">
+      <div className="flex flex-wrap gap-2">
+        {badges.map((badge) => (
+          <span
+            key={badge}
+            className="inline-flex w-fit items-center gap-2 rounded-md border border-brand/30 bg-brand/10 px-3 py-1 font-mono text-xs font-medium tracking-wide text-brand uppercase"
+          >
+            <span
+              aria-hidden
+              className="size-1.5 rounded-full bg-brand shadow-[0_0_8px_var(--brand)]"
+            />
+            {badge}
+          </span>
+        ))}
+      </div>
       <span className="text-sm text-text-subtle">{sub}</span>
     </div>
   );
