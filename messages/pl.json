@@ -15,6 +15,7 @@
     "brandHomeAria": "Buzzards Soft — strona główna",
     "items": {
       "howIWork": "Jak pracuję",
+      "certification": "Warsztat AI",
       "whatIDeliver": "Co umiem",
       "portfolio": "Portfolio",
       "learning": "Rozwój",
@@ -22,6 +23,67 @@
       "education": "Wykształcenie",
       "contact": "Kontakt",
       "offer": "Strony dla firm"
+    }
+  },
+  "certification": {
+    "eyebrow": "Sekcja 02 · Warsztat",
+    "title": "Warsztat AI, potwierdzony certyfikatem 10xDevs",
+    "intro": "Ukończyłem kohortowy kurs 10xDevs — intensywny program o budowaniu software'u z agentami AI, prowadzony przez Przemka Smyrdka i Marcina Czarkowskiego. Poniżej certyfikat, zdobyte odznaki i pięć obszarów, które kurs objął.",
+    "credential": {
+      "courseName": "10xDevs — kurs kohortowy",
+      "issuer": "BRAVE / 10xDEVS · Przemek Smyrdek i Marcin Czarkowski",
+      "date": "20 lipca 2026",
+      "instructors": "Przemek Smyrdek i Marcin Czarkowski",
+      "facts": "Prework i 25 lekcji w 5 modułach, 6 sesji na żywo (kick-off, 4× Live Q&A, celebracja) oraz cotygodniowe office hours. Projekt końcowy: własny agent AI i wewnętrzne narzędzia zbudowane end-to-end."
+    },
+    "badges": {
+      "builder": {
+        "name": "10xBuilder",
+        "caption": "Za zbudowanie działającego rozwiązania w toku kursu."
+      },
+      "architect": {
+        "name": "10xArchitect",
+        "caption": "Za projektowanie architektury pod pracę z agentami AI."
+      },
+      "champion": {
+        "name": "10xChampion",
+        "caption": "Wyróżnienie za aktywność i wyniki w całej kohorcie."
+      },
+      "bestProject": {
+        "name": "Best Project",
+        "caption": "Wyróżnienie dla projektu końcowego."
+      }
+    },
+    "areas": {
+      "1": {
+        "title": "Agentic Environment",
+        "desc": "Konfiguracja środowiska pod pracę z agentami AI: narzędzia, uprawnienia i reguły, które trzymają agenta w ryzach projektu."
+      },
+      "2": {
+        "title": "10xDevs Workflow",
+        "desc": "Powtarzalny tor od briefu do działającego kodu — z jasnym podziałem na to, co robi agent, a gdzie decyduje człowiek."
+      },
+      "3": {
+        "title": "AI Development Quality & Maintenance",
+        "desc": "Jakość i utrzymanie kodu tworzonego z AI: testy, przeglądy i standardy, które utrzymują projekt w dobrej formie na lata."
+      },
+      "4": {
+        "title": "Innowacje z generatywnym AI",
+        "desc": "Wykorzystanie generatywnego AI do budowania nowych funkcji i narzędzi, które realnie przyspieszają pracę."
+      },
+      "5": {
+        "title": "Duże i zastane projekty",
+        "desc": "Praca z AI w dużych bazach kodu i projektach zastanych: bezpieczne wprowadzanie zmian tam, gdzie stawka jest wysoka."
+      }
+    },
+    "thumbnail": {
+      "alt": "Certyfikat ukończenia kursu 10xDevs",
+      "openLabel": "Powiększ certyfikat 10xDevs"
+    },
+    "lightbox": {
+      "title": "Certyfikat 10xDevs",
+      "closeLabel": "Zamknij podgląd",
+      "imageAlt": "Certyfikat ukończenia kursu 10xDevs, wystawiony 20 lipca 2026"
     }
   },
   "language": {
@@ -745,6 +807,7 @@
         "contact": "Wyraźne punkty kontaktu: formularz i numer telefonu pod jednym kliknięciem. Klient, który właśnie się zainteresował, odzywa się do Ciebie od razu, zanim jego uwaga zdąży uciec. Każde zapytanie trafia prosto na Twoją skrzynkę.",
         "support": "Opiekę i konsultacje na każdym etapie realizacji. Masz mnie do dyspozycji: pytasz, doradzam, wspólnie podejmujemy decyzje, a Ty przez cały czas wiesz, na czym stoisz. Prowadzę Cię przez proces prostym językiem, żeby każdy wybór był Twój i świadomy.",
         "content": "Spójny, estetyczny wygląd dopasowany do Twojej marki: kolory, typografia i układ, które grają razem. Strona wygląda tak, jak chcesz być odbierany, i od pierwszej sekundy buduje profesjonalny obraz Twojej firmy.",
+        "editing": "Prosty panel do samodzielnej aktualizacji treści: teksty i zdjęcia zmieniasz sam, w dowolnym momencie i tyle razy, ile potrzebujesz. O spójny, dopracowany wygląd dbam ja, więc odświeżasz treść z pełną swobodą, a strona cały czas prezentuje się profesjonalnie.",
         "hosting": "Gotowy do startu hosting na Twoim koncie i podpięcie Twojej domeny. Całą stronę techniczną konfiguruję za Ciebie, żeby wszystko ruszyło od ręki. Hosting działa na darmowym pakiecie, który spokojnie obsługuje stronę-wizytówkę i kilka tysięcy odwiedzin miesięcznie.",
         "security": "Bezpieczne, szyfrowane połączenie (SSL) i hosting na infrastrukturze Google. Dane między Twoją stroną a odwiedzającym płyną zaszyfrowane, a przeglądarka pokazuje kłódkę, która od razu buduje zaufanie. Twoja strona stoi na tym samym, sprawdzonym zapleczu, z którego korzystają duże serwisy.",
         "gdpr": "Zgodność z RODO od pierwszego dnia: baner zgód na cookies i politykę prywatności dopasowaną do Twojej strony. Odwiedzający wie, że jego dane są u Ciebie w dobrych rękach, a Ty masz spokój od strony formalnej."
@@ -772,8 +835,8 @@
       "module": "moduł",
       "basic": {
         "name": "Basic",
-        "basePrice": "1299 zł",
-        "promoPrice": "999 zł",
+        "basePrice": "1999 zł",
+        "promoPrice": "1699 zł",
         "priceTag": "cena promocyjna",
         "audience": "wizytówka lub prosta oferta",
         "pages": "Jedna strona (wizytówka)",
@@ -782,8 +845,8 @@
       },
       "full": {
         "name": "Full",
-        "basePrice": "2499 zł",
-        "promoPrice": "1999 zł",
+        "basePrice": "2999 zł",
+        "promoPrice": "2499 zł",
         "priceTag": "cena promocyjna",
         "audience": "firma, która chce być widoczna i pozyskiwać kontakt",
         "pages": "Strona główna + do 2 podstron",
@@ -821,10 +884,6 @@
         "extraLanguage": {
           "name": "Dodatkowy język",
           "price": "+400 zł / język"
-        },
-        "selfEdit": {
-          "name": "Samodzielna edycja treści, płatna raz",
-          "price": "+700 zł"
         },
         "leads": {
           "name": "Zbieranie leadów (lista mailingowa albo arkusz zgłoszeń)",
@@ -880,7 +939,7 @@
         },
         "selfEdit": {
           "question": "A co z późniejszymi zmianami na stronie?",
-          "answer": "W trakcie pracy nad stroną masz wliczone rundy dopracowania. Zmiany, które wprowadzam później, są już usługą płatną, wycenianą według zakresu. Możesz też jednorazowo dokupić dostęp do panelu CMS, w którym samodzielnie edytujesz wszystkie treści na stronie, w dowolnym momencie."
+          "answer": "W trakcie pracy nad stroną masz wliczone rundy dopracowania. Po publikacji treści — teksty i zdjęcia — aktualizujesz samodzielnie w panelu, który dostajesz w cenie każdej strony, w dowolnym momencie. Większe zmiany wykraczające poza treść, jak nowe podstrony czy funkcje, wyceniam według zakresu."
         },
         "security": {
           "question": "Czy moja strona jest bezpieczna?",

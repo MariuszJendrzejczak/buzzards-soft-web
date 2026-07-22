@@ -15,6 +15,7 @@
     "brandHomeAria": "Buzzards Soft — startsida",
     "items": {
       "howIWork": "Så jobbar jag",
+      "certification": "AI-verkstad",
       "whatIDeliver": "Vad jag levererar",
       "portfolio": "Portfolio",
       "learning": "Utveckling",
@@ -22,6 +23,67 @@
       "education": "Utbildning",
       "contact": "Kontakt",
       "offer": "Webbplatser för företag"
+    }
+  },
+  "certification": {
+    "eyebrow": "Avsnitt 02 · Verkstad",
+    "title": "En AI-verkstad, styrkt med 10xDevs-certifikatet",
+    "intro": "Jag har gått den kohortbaserade 10xDevs-kursen — ett intensivt program om att bygga mjukvara med AI-agenter, lett av Przemek Smyrdek och Marcin Czarkowski. Nedan: certifikatet, de märken jag tog och de fem områden som kursen täckte.",
+    "credential": {
+      "courseName": "10xDevs — kohortkurs",
+      "issuer": "BRAVE / 10xDEVS · Przemek Smyrdek och Marcin Czarkowski",
+      "date": "20 juli 2026",
+      "instructors": "Przemek Smyrdek och Marcin Czarkowski",
+      "facts": "Prework och 25 lektioner i 5 moduler, 6 livesessioner (kick-off, 4× Live Q&A, firande) samt veckovisa office hours. Slutprojekt: en egen AI-agent och interna verktyg byggda end-to-end."
+    },
+    "badges": {
+      "builder": {
+        "name": "10xBuilder",
+        "caption": "För att ha byggt en fungerande lösning under kursen."
+      },
+      "architect": {
+        "name": "10xArchitect",
+        "caption": "För att ha designat arkitektur anpassad för arbete med AI-agenter."
+      },
+      "champion": {
+        "name": "10xChampion",
+        "caption": "En utmärkelse för aktivitet och resultat i hela kohorten."
+      },
+      "bestProject": {
+        "name": "Best Project",
+        "caption": "En utmärkelse för slutprojektet."
+      }
+    },
+    "areas": {
+      "1": {
+        "title": "Agentic Environment",
+        "desc": "Att sätta upp miljön för arbete med AI-agenter: verktyg, behörigheter och regler som håller agenten inom projektets ramar."
+      },
+      "2": {
+        "title": "10xDevs Workflow",
+        "desc": "Ett upprepbart spår från brief till fungerande kod — med en tydlig uppdelning mellan vad agenten gör och var människan beslutar."
+      },
+      "3": {
+        "title": "AI Development Quality & Maintenance",
+        "desc": "Kvalitet och underhåll av AI-byggd kod: tester, granskningar och standarder som håller ett projekt i god form i åratal."
+      },
+      "4": {
+        "title": "Innovation med generativ AI",
+        "desc": "Att använda generativ AI för att bygga nya funktioner och verktyg som verkligen snabbar upp arbetet."
+      },
+      "5": {
+        "title": "Stora och äldre projekt",
+        "desc": "Arbete med AI i stora kodbaser och äldre projekt: att göra ändringar tryggt där insatserna är höga."
+      }
+    },
+    "thumbnail": {
+      "alt": "Kursintyg för 10xDevs",
+      "openLabel": "Förstora 10xDevs-certifikatet"
+    },
+    "lightbox": {
+      "title": "10xDevs-certifikat",
+      "closeLabel": "Stäng förhandsvisning",
+      "imageAlt": "Kursintyg för 10xDevs, utfärdat 20 juli 2026"
     }
   },
   "language": {
@@ -743,6 +805,7 @@
         "mobile": "En snabb webbplats som fungerar på varje mobil — och därifrån kommer de flesta av dina kunder.",
         "contact": "Ett kontaktformulär och ett telefonsamtal med ett tryck, så att kunden hör av sig direkt.",
         "seo": "En teknisk SEO-grund, tack vare vilken Google ser dig från första dagen.",
+        "editing": "En enkel panel där du uppdaterar innehållet — texter och bilder — själv, när som helst, medan jag håller utseendet enhetligt och genomarbetat.",
         "hosting": "Gratis webbhotell, din egen domän och ett SSL-certifikat — allt klart för start.",
         "gdpr": "GDPR-efterlevnad: en cookiebanner och integritetspolicy, så att du kan arbeta i lugn och ro.",
         "content": "Texter förberedda och kontrollerade med min process, om du inte har egna.",
@@ -772,8 +835,8 @@
       "module": "modul",
       "basic": {
         "name": "Basic",
-        "basePrice": "1299 zł",
-        "promoPrice": "999 zł",
+        "basePrice": "1999 zł",
+        "promoPrice": "1699 zł",
         "priceTag": "kampanjpris",
         "audience": "visitkort eller enkelt erbjudande",
         "pages": "1 sida, upp till 5 sektioner",
@@ -782,8 +845,8 @@
       },
       "full": {
         "name": "Full",
-        "basePrice": "2499 zł",
-        "promoPrice": "1999 zł",
+        "basePrice": "2999 zł",
+        "promoPrice": "2499 zł",
         "priceTag": "kampanjpris",
         "audience": "ett företag som vill synas och vinna kontakter",
         "pages": "upp till 8 sektioner och 2 undersidor",
@@ -821,10 +884,6 @@
         "extraLanguage": {
           "name": "Ytterligare språk",
           "price": "+400 zł / språk"
-        },
-        "selfEdit": {
-          "name": "Redigera innehållet själv, betalas en gång",
-          "price": "+700 zł"
         },
         "leads": {
           "name": "Insamling av leads (e-postlista eller ett anmälningsark)",
@@ -880,7 +939,7 @@
         },
         "selfEdit": {
           "question": "Kan jag redigera webbplatsen själv senare?",
-          "answer": "Ja, om du lägger till modulen för egen redigering — betalas en gång, utan månadsabonnemang."
+          "answer": "Under arbetet ingår justeringsrundor. Efter publicering uppdaterar du ditt innehåll — texter och bilder — själv, när som helst, i panelen som ingår i varje webbplats. Större ändringar utöver innehållet, som nya undersidor eller funktioner, prissätter jag efter omfattning."
         },
         "security": {
           "question": "Är min webbplats säker?",

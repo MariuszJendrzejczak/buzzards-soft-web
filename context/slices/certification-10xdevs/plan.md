@@ -417,8 +417,8 @@ restore.
 
 #### Automated
 
-- [ ] 2.1 `npm run build` passes (all three locales resolve `certification.*`)
-- [ ] 2.2 `npm run test` passes, incl. new `i18n-certification-completeness.test.ts`
+- [x] 2.1 `npm run build` passes (all three locales resolve `certification.*`)
+- [x] 2.2 `npm run test` passes, incl. new `i18n-certification-completeness.test.ts`
 
 #### Manual
 
