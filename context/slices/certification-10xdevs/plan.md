@@ -429,9 +429,9 @@ restore.
 
 #### Automated
 
-- [x] 3.1 `npm run test` passes, incl. `certification-section.test.tsx`
-- [x] 3.2 `npm run lint` passes
-- [x] 3.3 `npm run build` passes
+- [x] 3.1 `npm run test` passes, incl. `certification-section.test.tsx` — 0468bf1
+- [x] 3.2 `npm run lint` passes — 0468bf1
+- [x] 3.3 `npm run build` passes — 0468bf1
 
 #### Manual
 
@@ -443,9 +443,9 @@ restore.
 
 #### Automated
 
-- [ ] 4.1 `npm run build` passes
-- [ ] 4.2 `npm run test` passes (unit + SSG)
-- [ ] 4.3 `npm run lint` passes
+- [x] 4.1 `npm run build` passes
+- [x] 4.2 `npm run test` passes (unit + SSG)
+- [x] 4.3 `npm run lint` passes
 
 #### Manual
 

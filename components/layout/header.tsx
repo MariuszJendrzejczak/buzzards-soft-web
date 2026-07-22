@@ -21,7 +21,7 @@ import { Link, usePathname } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 const NAV_KEYS = [
-  { href: "#how-i-work", key: "howIWork" },
+  { href: "#certification", key: "certification" },
   { href: "#what-i-can-deliver", key: "whatIDeliver" },
   { href: "#portfolio", key: "portfolio" },
   // { href: "#currently-learning", key: "learning" }, // temporarily hidden with the "Rozwój" section

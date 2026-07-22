@@ -43,7 +43,7 @@ export async function Hero() {
               variant="ghost"
               size="lg"
               nativeButton={false}
-              render={<a href="#how-i-work" />}
+              render={<a href="#portfolio" />}
               className="h-12 gap-2 px-3 text-base text-foreground hover:bg-surface"
             >
               {t("ctaSecondary")}

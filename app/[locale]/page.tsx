@@ -5,9 +5,13 @@ import { Contact } from "@/components/sections/contact/contact";
 // Temporarily hidden — the "Rozwój" (currently-learning) section is parked while
 // the offer is reworked in another context. Restore this import + its render below.
 // import { CurrentlyLearning } from "@/components/sections/experience/currently-learning";
+import { Certification } from "@/components/sections/certification/certification";
 import { Education } from "@/components/sections/education/education";
 import { Hero } from "@/components/sections/hero/hero";
-import { HowIWork } from "@/components/sections/work/how-i-work";
+// Parked — the "Jak pracuję" (how-i-work) section is a stale duplicate of the
+// portfolio WarsztatFlow diagram; slot 02 now carries <Certification/>. The
+// component + its i18n namespace are kept for an easy restore of the old slot.
+// import { HowIWork } from "@/components/sections/work/how-i-work";
 import { WhatICanDeliver } from "@/components/sections/work/what-i-can-deliver";
 import { PortfolioSection } from "@/components/portfolio/PortfolioSection";
 import { PhotoBand } from "@/components/shared/photo-band";
@@ -58,8 +62,9 @@ export default async function Home({
         <Hero />
       </PhotoBand>
 
-      {/* 02 · Jak pracuję — COVER (opaque bg-surface) */}
-      <HowIWork />
+      {/* 02 · Warsztat AI — COVER (opaque bg-surface). Replaces parked
+          <HowIWork/> (see import note above). */}
+      <Certification />
 
       {/* 03 · Co umiem dowieźć — REVEAL (dark IDE photo: brighter lift so the
           near-black screen brings light into the dark theme; syntax colour on
