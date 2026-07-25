@@ -142,6 +142,7 @@ export async function WhatICanDeliver() {
 
         <ScrollReveal className="mt-12">
         <Accordion
+          multiple
           defaultValue={["3.1"]}
           className="flex w-full flex-col gap-3"
         >

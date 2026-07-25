@@ -415,7 +415,7 @@
     "copyFailed": "Kunde inte kopiera."
   },
   "footer": {
-    "tagline": "Flutter · Unity · AI-Augmented Mobile Developer. Öppen för roller och uppdrag.",
+    "tagline": "Flutter · Unity · AI-Native Mobile Developer. Öppen för roller och uppdrag.",
     "linksHeading": "Sida",
     "registryHeading": "Registeruppgifter",
     "links": {
@@ -659,7 +659,7 @@
     "contactLabel": "Frågor om personuppgifter",
     "tocHeading": "Innehållsförteckning",
     "adminContactHeading": "Kontakt med personuppgiftsansvarig",
-    "adminContactBody": "Buzzards Soft Mariusz Jendrzejczak, Pomorska 14/8, 74-300 Myślibórz, Polen.",
+    "adminContactBody": "Buzzards Soft Mariusz Jendrzejczak, Walecznych 81/1, 70-774 Szczecin, Polen.",
     "sections": {
       "1": {
         "title": "Omfattning av insamlade uppgifter",
@@ -870,49 +870,41 @@
       }
     },
     "modules": {
-      "heading": "Bygg ut din webbplats med det du behöver",
+      "heading": "Exempel på moduler",
       "colModule": "Modul",
       "colPrice": "Pris",
       "items": {
-        "localVisibility": {
-          "name": "Lokal synlighet (Google Business, Kartor, recensioner)",
-          "price": "+250 zł"
-        },
-        "animations": {
-          "name": "Animationer och effekter",
-          "price": "+400 zł"
+        "blog": {
+          "name": "Blogg och nyheter",
+          "price": "+650 zł"
         },
         "themeToggle": {
           "name": "Mörkt och ljust läge (växlare)",
-          "price": "+400 zł"
+          "price": "+500 zł"
+        },
+        "animations": {
+          "name": "Animationer och effekter",
+          "price": "+500 zł"
         },
         "extraLanguage": {
           "name": "Ytterligare språk",
-          "price": "+400 zł / språk"
+          "price": "+450 zł / språk"
         },
         "leads": {
           "name": "Insamling av leads (e-postlista eller ett anmälningsark)",
-          "price": "+400 zł (båda +550)"
+          "price": "+350 zł (båda +500)"
         },
-        "booking": {
-          "name": "Bokningar och kalender",
-          "price": "+350 zł"
+        "localVisibility": {
+          "name": "Lokal synlighet (Google Business, Kartor, recensioner)",
+          "price": "+300 zł"
         },
         "extraPage": {
           "name": "Ytterligare undersida",
           "price": "+300 zł"
         },
-        "blog": {
-          "name": "Blogg och nyheter",
-          "price": "+700 zł"
-        },
-        "conversionTracking": {
-          "name": "Konverteringsspårning för annonser",
-          "price": "+250 zł"
-        },
         "domainEmail": {
           "name": "Konfiguration av domän och företagsmejl",
-          "price": "+150 zł"
+          "price": "+250 zł"
         }
       }
     },
@@ -1222,7 +1214,7 @@
     }
   },
   "rootMetadata": {
-    "title": "Buzzards Soft — AI-Augmented Mobile Developer",
+    "title": "Buzzards Soft — AI-Native Mobile Developer",
     "description": "En utvecklare (Flutter, Unity) som byggde om sitt arbetsflöde kring AI-agenter. Öppen för roller och uppdrag."
   }
 }

@@ -8,9 +8,9 @@ const PERSON_NAME = "Mariusz Jendrzejczak";
 const PHONE = "+48 739 979 116";
 const EMAIL_PRIMARY = "dev.buzzardssoft@gmail.com";
 const ADDRESS = {
-  streetAddress: "Pomorska 14/8",
-  postalCode: "74-300",
-  addressLocality: "Myślibórz",
+  streetAddress: "Walecznych 81/1",
+  postalCode: "70-774",
+  addressLocality: "Szczecin",
   addressCountry: "PL",
 };
 const KNOWS_ABOUT = [
@@ -20,7 +20,7 @@ const KNOWS_ABOUT = [
   "C#",
   "TypeScript",
   "Next.js",
-  "AI-augmented development",
+  "AI-native development",
   "Claude Code",
   "Model Context Protocol",
   "Mobile development",
@@ -40,7 +40,7 @@ export function JsonLd({ locale }: { locale: Locale }) {
       "@type": "Person",
       "@id": PERSON_ID,
       name: PERSON_NAME,
-      jobTitle: "AI-Augmented Mobile Developer",
+      jobTitle: "AI-Native Mobile Developer",
       description:
         "Software developer with 4+ years of commercial experience in Flutter and Unity, working with AI agents (Claude Code, MCP, custom tooling) as part of a daily development workflow.",
       url: homeUrl,
@@ -82,7 +82,7 @@ export function JsonLd({ locale }: { locale: Locale }) {
         "Software development",
         "Mobile application development (Flutter)",
         "Interactive applications and games (Unity)",
-        "AI-augmented development workflow consulting",
+        "AI-native development workflow consulting",
       ],
     },
   ];

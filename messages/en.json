@@ -415,7 +415,7 @@
     "copyFailed": "Failed to copy."
   },
   "footer": {
-    "tagline": "Flutter · Unity · AI-Augmented Mobile Developer. Open to roles and contracts.",
+    "tagline": "Flutter · Unity · AI-Native Mobile Developer. Open to roles and contracts.",
     "linksHeading": "Site",
     "registryHeading": "Registry data",
     "links": {
@@ -659,7 +659,7 @@
     "contactLabel": "Data inquiries",
     "tocHeading": "Table of contents",
     "adminContactHeading": "Contacting the Controller",
-    "adminContactBody": "Buzzards Soft Mariusz Jendrzejczak, Pomorska 14/8, 74-300 Myślibórz, Poland.",
+    "adminContactBody": "Buzzards Soft Mariusz Jendrzejczak, Walecznych 81/1, 70-774 Szczecin, Poland.",
     "sections": {
       "1": {
         "title": "Scope of collected data",
@@ -870,49 +870,41 @@
       }
     },
     "modules": {
-      "heading": "Extend your site with what you need",
+      "heading": "Example modules",
       "colModule": "Module",
       "colPrice": "Price",
       "items": {
-        "localVisibility": {
-          "name": "Local visibility (Google Business, Maps, reviews)",
-          "price": "+250 zł"
-        },
-        "animations": {
-          "name": "Animations and effects",
-          "price": "+400 zł"
+        "blog": {
+          "name": "Blog and news",
+          "price": "+650 zł"
         },
         "themeToggle": {
           "name": "Dark and light mode (toggle)",
-          "price": "+400 zł"
+          "price": "+500 zł"
+        },
+        "animations": {
+          "name": "Animations and effects",
+          "price": "+500 zł"
         },
         "extraLanguage": {
           "name": "Additional language",
-          "price": "+400 zł / language"
+          "price": "+450 zł / language"
         },
         "leads": {
           "name": "Lead capture (mailing list or a submissions sheet)",
-          "price": "+400 zł (both +550)"
+          "price": "+350 zł (both +500)"
         },
-        "booking": {
-          "name": "Bookings and calendar",
-          "price": "+350 zł"
+        "localVisibility": {
+          "name": "Local visibility (Google Business, Maps, reviews)",
+          "price": "+300 zł"
         },
         "extraPage": {
           "name": "Additional subpage",
           "price": "+300 zł"
         },
-        "blog": {
-          "name": "Blog and news",
-          "price": "+700 zł"
-        },
-        "conversionTracking": {
-          "name": "Conversion tracking for ads",
-          "price": "+250 zł"
-        },
         "domainEmail": {
           "name": "Domain and business email setup",
-          "price": "+150 zł"
+          "price": "+250 zł"
         }
       }
     },
@@ -1222,7 +1214,7 @@
     }
   },
   "rootMetadata": {
-    "title": "Buzzards Soft — AI-Augmented Mobile Developer",
+    "title": "Buzzards Soft — AI-Native Mobile Developer",
     "description": "A developer (Flutter, Unity) who rebuilt his workflow around AI agents. Open to roles and contracts."
   }
 }
