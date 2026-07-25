@@ -13,9 +13,20 @@ vi.mock("@/i18n/routing", () => ({
 import sitemap from "@/app/sitemap";
 
 describe("app/sitemap.ts — route set", () => {
-  it("emits exactly N routes × 3 locales (home + /portfolio/honeti + /web-pages-offer + /privacy-policy = 12 entries)", () => {
+  it("emits exactly N routes × 3 locales (home + /portfolio/honeti + /web-pages-offer + /mobile-apps-offer + /privacy-policy = 15 entries)", () => {
     const entries = sitemap();
-    expect(entries).toHaveLength(12);
+    expect(entries).toHaveLength(15);
+  });
+
+  it("includes /mobile-apps-offer at priority 0.8 in all 3 locales", () => {
+    const entries = sitemap();
+    const mobileEntries = entries.filter((e) =>
+      e.url.endsWith("/mobile-apps-offer"),
+    );
+    expect(mobileEntries).toHaveLength(3);
+    for (const entry of mobileEntries) {
+      expect(entry.priority).toBe(0.8);
+    }
   });
 
   it("advertises /portfolio/honeti in all 3 locales (folded-in sprint-002 reviewer MAJOR concern)", () => {

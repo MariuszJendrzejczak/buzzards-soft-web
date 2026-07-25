@@ -961,6 +961,265 @@
       "messagePlaceholder": "krótko o firmie i o tym, czego oczekujesz od strony"
     }
   },
+  "mobileOffer": {
+    "meta": {
+      "title": "Aplikacje mobilne dla firm — iOS + Android na własność",
+      "description": "Buduję aplikacje mobilne dla małych firm i freelancerów — iOS i Android z jednego kodu, publikacja w App Store i Google Play na Twoich kontach. Ekspert wspierający się AI: szybciej i w dostępnej cenie."
+    },
+    "breadcrumbBack": "Wróć na stronę główną",
+    "hero": {
+      "eyebrow": "Aplikacje mobilne dla lokalnych firm i jednoosobowych działalności",
+      "heading": "Twoja aplikacja na iPhone'a i Androida, opublikowana i w całości Twoja",
+      "subheading": "To prawdziwy produkt dla Twojej firmy, gotowy do pracy z Twoimi klientami. Buduję go sam, wspierając się AI, a Ty masz przez cały czas bezpośredni kontakt ze mną. Wszystko zaczyna się od rozmowy o tym, co ma robić Twoja aplikacja.",
+      "ctaPrimary": "Wyceń swoją aplikację",
+      "ctaSecondary": "Zobacz, jak pracuję"
+    },
+    "audience": {
+      "heading": "Aplikacja mobilna w zasięgu małej firmy",
+      "body1": "Ta oferta jest przede wszystkim dla małych firm i freelancerów, którzy chcą dać swoim klientom wygodną aplikację na telefon — do rezerwacji, zamówień albo codziennego kontaktu z Twoją usługą. Taka aplikacja jest dziś realna także dla niewielkiej firmy.",
+      "body2": "Robię to sam i otwarcie sięgam po AI tam, gdzie realnie przyspiesza pracę: przy powtarzalnym kodzie, testach, konfiguracji. Dzięki temu godzin potrzebnych na zbudowanie aplikacji jest mniej — a że płacisz za czas pracy, razem z nim spada cena. To ta sama, staranna robota, doprowadzona do końca szybciej. Właśnie dlatego cena mieści się w budżecie małej firmy.",
+      "body3": "Sama technologia przyspiesza, ale o tym, jak aplikacja działa i wygląda, decyduję ja — i osobiście to sprawdzam, ekran po ekranie. Rozmawiasz z jedną osobą, od pierwszej rozmowy aż po gotową aplikację. To ja odpowiadam za efekt i to mnie pytasz, gdy chcesz coś zmienić."
+    },
+    "examples": {
+      "heading": "Co możesz zbudować",
+      "intro": "Trzy aplikacje, które buduję najczęściej, i to, co robią dla firmy takiej jak Twoja. Twoja może działać zupełnie inaczej — od tego zaczynamy rozmowę.",
+      "items": {
+        "booking": {
+          "name": "Aplikacja rezerwacyjna",
+          "body": "Twój klient otwiera aplikację, przegląda Twoje usługi i wybiera dogodny termin. Każda rezerwacja od razu ląduje u Ciebie, więc wiesz, kto i kiedy chce się umówić."
+        },
+        "flowchart": {
+          "name": "Aplikacja do schematów",
+          "body": "Twój zespół układa procedury w czytelny schemat: kolejne kroki, decyzje i instrukcje krok po kroku. Masz go zawsze pod ręką, wyślesz go klientowi jako obrazek, a otworzysz go także offline."
+        },
+        "organizer": {
+          "name": "Organizer",
+          "body": "Zadania, notatki i przypomnienia trzymasz w jednym miejscu, poukładane w sensowne kategorie. Aplikacja da znać o każdej sprawie we właściwym momencie i pomoże Ci zapanować nad dniem."
+        }
+      }
+    },
+    "guide": {
+      "heading": "Jak powstaje Twoja aplikacja",
+      "intro": "Pięć kroków prowadzi od pomysłu do aplikacji gotowej w sklepach. Publikację uruchamiam już na starcie, żeby zdążyła na czas. Na każdym etapie wiesz, co się dzieje, i masz realny wpływ na to, co powstaje.",
+      "steps": {
+        "conversation": {
+          "title": "Rozmowa",
+          "body": "Zaczynamy od zwykłej, ludzkiej rozmowy prostym językiem. Opowiadasz, czym się zajmujesz, kim są Twoi klienci i jak aplikacja ma im pomóc. Rozmawiasz bezpośrednio ze mną, więc od razu doprecyzowujemy zakres, styl i przybliżony termin. Wychodzisz z tej rozmowy z jasnym obrazem tego, co powstanie."
+        },
+        "design": {
+          "title": "Projekt",
+          "body": "Projektuję aplikację pod Twoją firmę: ekrany, przepływ między nimi i wygląd. Pokazuję Ci to, zanim zacznę budować, żebyś zobaczył realny kształt produktu i wskazał, co dopasować. Uwagi nanoszę na tym etapie, kiedy zmiana kierunku jest jeszcze prosta i szybka. Do budowy wchodzimy z układem, który masz zaakceptowany."
+        },
+        "build": {
+          "title": "Budowa",
+          "body": "Buduję obie wersje naraz, więc powstają razem i działają spójnie. Gotowe fragmenty sam sprawdzam i dopieszczam. Kolejne ekrany testuję na prawdziwych telefonach, żeby reagowały płynnie na dotyk. Dostajesz dopracowaną aplikację gotową do trafienia do sklepów."
+        },
+        "publish": {
+          "title": "Publikacja",
+          "body": "Zakładamy razem Twoje konta w sklepach, a ja publikuję na nich aplikację, w App Store i Google Play. Jak wygląda kalendarz sklepów i co dokładnie sprawdzają, rozpisuję niżej. Efekt jest jeden: Twoja aplikacja trafia do obu sklepów, gotowa do pobrania."
+        },
+        "support": {
+          "title": "Wsparcie",
+          "body": "Po premierze masz 30 dni wsparcia — pierwszy okres na rynku, kiedy aplikacja spotyka się z prawdziwymi użytkownikami. Zgłaszasz, co wymaga poprawki, a ja reaguję i dbam, żeby wszystko działało jak trzeba. Ten czas daje Ci spokojne, dopilnowane wejście aplikacji na rynek."
+        }
+      },
+      "processNote": "Chcesz zobaczyć mój proces pod maską? Tak pracuję z AI →"
+    },
+    "includes": {
+      "heading": "To dostajesz w każdym pakiecie",
+      "intro": "Niezależnie od wielkości projektu, ten sam solidny fundament jest zawsze w cenie. To standard, na którym stawiam każdą aplikację.",
+      "items": {
+        "platforms": "Jedną aplikację na iPhone'a i Androida, zbudowaną z jednego kodu. Docierasz do wszystkich swoich klientów niezależnie od tego, jakiego telefonu używają, a jedno wspólne źródło znaczy, że obie wersje działają tak samo i rozwijają się razem.",
+        "theme": "Tryb jasny i ciemny oraz polski i angielski — w standardzie. Aplikacja dopasowuje się do ustawień telefonu i wygląda dobrze o każdej porze, a dzięki dwóm językom spokojnie obsłużysz też klienta z zagranicy.",
+        "backend": "Zaplecze techniczne, na którym stoi aplikacja: logowanie, baza danych i powiadomienia, postawione na Twoim własnym koncie w chmurze. Dane Twoich klientów należą do Ciebie i są pod Twoją kontrolą.",
+        "publication": "Pełną publikację w sklepach — to ja przeprowadzam aplikację przez cały proces, aż wyląduje na półce. Twoi klienci znajdują ją tak jak każdą inną, na swoim iPhonie i Androidzie.",
+        "accounts": "Pomoc w założeniu firmowych kont w App Store i Google Play oraz w przejściu przez formalności każdego z nich. Prowadzę Cię przez to spokojnie, więc konta zakładasz na siebie, a wymogi masz z głowy.",
+        "ownership": "Gotowy produkt na własność. Płacisz raz za budowę i to Ty decydujesz o wszystkim, co dalej dzieje się z aplikacją.",
+        "support": "30 dni wsparcia po premierze. Kiedy aplikacja jest już w sklepach i trafia do pierwszych klientów, masz mnie pod ręką na bieżące poprawki."
+      }
+    },
+    "pricing": {
+      "heading": "Pakiety i ceny",
+      "promoNote": "cena startowa",
+      "footnote": "Ceny netto. Cena startowa obowiązuje w okresie startu oferty. Opłaty platform (Apple, Google) i zaplecza opłacasz bezpośrednio u dostawców — opisuję to w sekcji „Wszystko jest Twoje”.",
+      "baseReference": "+ cały standard z sekcji „W każdym pakiecie”.",
+      "extrasLabel": "Full dokłada:",
+      "rowLabels": {
+        "audience": "Dla kogo",
+        "scope": "Zakres",
+        "screens": "Ekrany",
+        "timeline": "Czas do publikacji"
+      },
+      "start": {
+        "name": "Start",
+        "basePrice": "12 900 zł",
+        "promoPrice": "9 900 zł",
+        "priceTag": "cena startowa",
+        "audience": "Twoje pierwsze realne wejście na telefony klientów",
+        "scope": "jeden dopracowany scenariusz + lekkie zaplecze",
+        "screens": "~6–7 ekranów",
+        "timeline": "~5–7 tygodni",
+        "cta": "Wyceń Start"
+      },
+      "full": {
+        "name": "Full",
+        "basePrice": "24 900 zł",
+        "promoPrice": "19 900 zł",
+        "priceTag": "cena startowa",
+        "audience": "aplikacja jako narzędzie pracy dla Twojej firmy",
+        "scope": "Start + konta użytkowników i narzędzia do zarządzania firmą",
+        "screens": "~25–31 ekranów",
+        "timeline": "~8–11 tygodni",
+        "extras": "Konta i profile użytkowników, Samodzielne odwołania i zmiany, Program lojalnościowy, Powiadomienia push, Panel właściciela w aplikacji",
+        "cta": "Wyceń Full"
+      },
+      "custom": {
+        "name": "Większy projekt",
+        "price": "Wycena indywidualna",
+        "audience": "płatności, wiele lokalizacji, integracje",
+        "scope": "zakres szyty na miarę, od ~30 000 zł netto",
+        "screens": "wg zakresu",
+        "timeline": "wg zakresu",
+        "cta": "Porozmawiajmy"
+      }
+    },
+    "comparison": {
+      "heading": "Czym różnią się pakiety",
+      "intro": "Największa różnica to konta użytkowników — od nich zaczyna się Full i wszystko, co z nich wynika. Większy projekt idzie dalej, w stronę płatności online i wielu lokalizacji. Szczegóły w tabeli niżej.",
+      "colFeature": "Możliwość",
+      "colStart": "Start",
+      "colFull": "Full",
+      "colCustom": "Większy",
+      "items": {
+        "accounts": {
+          "label": "Konta i logowanie użytkowników",
+          "start": "—",
+          "full": "✓",
+          "custom": "✓"
+        },
+        "push": {
+          "label": "Powiadomienia push do klienta",
+          "start": "—",
+          "full": "✓",
+          "custom": "✓"
+        },
+        "ownerPanel": {
+          "label": "Panel właściciela w aplikacji",
+          "start": "—",
+          "full": "✓",
+          "custom": "✓"
+        },
+        "loyalty": {
+          "label": "Program lojalnościowy",
+          "start": "—",
+          "full": "✓",
+          "custom": "✓"
+        },
+        "payments": {
+          "label": "Płatności online",
+          "start": "—",
+          "full": "—",
+          "custom": "✓"
+        },
+        "multiLocation": {
+          "label": "Wiele lokalizacji, wybór pracownika",
+          "start": "—",
+          "full": "—",
+          "custom": "✓"
+        }
+      }
+    },
+    "publishing": {
+      "heading": "Publikacja i czas — czego się spodziewać",
+      "intro": "Sklepy Apple i Google mają swój kalendarz i swoje wymogi. Mówię o nich wprost i planuję je z Tobą od pierwszego dnia, żeby publikacja szła równo z budową, a start wypadł wtedy, kiedy się umówimy.",
+      "points": {
+        "twoTracks": {
+          "title": "Dwa tory od pierwszego dnia",
+          "body": "Od startu prowadzę równolegle dwie rzeczy: budowę aplikacji i zakładanie kont w sklepach. Część wymogów Apple i Google idzie ich własnym kalendarzem, dłuższym niż sama praca nad kodem — dlatego ruszają pierwszego dnia, równolegle z budową."
+        },
+        "duns": {
+          "title": "Numer D-U-N-S (dla firm)",
+          "body": "Konto firmowe w sklepach wymaga numeru D-U-N-S — bezpłatnego identyfikatora firmy. Apple przyznaje go zwykle w kilka dni, Google potrzebuje na to do 30. Gdy publikujesz jako firma, zaczynam od tego numeru, żeby zdążył na czas."
+        },
+        "googleTest": {
+          "title": "Testy zamknięte Google Play",
+          "body": "Nowe prywatne konto Google Play przechodzi test zamknięty: co najmniej 12 testerów przez 14 dni, zanim aplikacja trafi do sprzedaży. Konta firmowe mają tę drogę otwartą od razu — dlatego typ konta ustalamy z Tobą pierwszego dnia."
+        },
+        "review": {
+          "title": "Czas weryfikacji",
+          "body": "Na końcu każdą aplikację ogląda jeszcze sklep. Apple zatwierdza ponad 90% zgłoszeń w mniej niż dobę, Google odpowiada zwykle w ciągu 7 dni."
+        }
+      }
+    },
+    "ownership": {
+      "heading": "Wszystko jest Twoje",
+      "body": "Kod aplikacji, projekt w chmurze i konta w sklepach zakładam na Twoje nazwisko i przypisuję do Ciebie. Płacisz raz, za gotowy produkt, a aplikacja zostaje Twoją własnością.",
+      "costsHeading": "Bieżące koszty po Twojej stronie",
+      "costs": {
+        "apple": {
+          "label": "Apple Developer",
+          "value": "99 USD rocznie"
+        },
+        "google": {
+          "label": "Google Play",
+          "value": "25 USD jednorazowo"
+        },
+        "backend": {
+          "label": "Zaplecze w chmurze",
+          "value": "≈ 0 zł do realnego ruchu"
+        }
+      },
+      "limitsHeading": "Co ustalamy osobno",
+      "limits": {
+        "graphics": {
+          "lead": "Grafika, logo i ikona to osobna dziedzina.",
+          "body": "Podpowiem, skąd je wziąć: AI, banki grafik albo polecany grafik. Ten wydatek pokrywasz samodzielnie."
+        },
+        "maintenance": {
+          "lead": "Opieka po 30 dniach wsparcia to osobne ustalenie.",
+          "body": "Aktualizacje pod nowe wersje systemów i wymogi sklepów oraz kolejne funkcje wyceniam według zakresu, gdy będziesz ich potrzebować."
+        },
+        "scope": {
+          "lead": "Płatności, wiele lokalizacji i integracje wyceniam indywidualnie.",
+          "body": "To większe wdrożenia z pakietu „Większy projekt”, które buduję pod Twoje wymagania. Ich koszt zależy od zakresu."
+        }
+      }
+    },
+    "faq": {
+      "heading": "Częste pytania",
+      "items": {
+        "duration": {
+          "question": "Ile trwa zbudowanie aplikacji?",
+          "answer": "Start to zwykle 5–7 tygodni do publikacji, Full 8–11. Ten czas obejmuje już formalności sklepów. Konkretny termin dla Twojego projektu podaję na pierwszej rozmowie."
+        },
+        "accounts": {
+          "question": "Muszę mieć konta Apple i Google?",
+          "answer": "Zakładamy je razem na Twoje nazwisko i to na nich publikuję gotową aplikację, więc od startu masz je w pełni pod kontrolą. Całą papierologię biorę na siebie i tłumaczę każdy krok."
+        },
+        "graphics": {
+          "question": "Potrzebuję gotowego logo i grafik?",
+          "answer": "Grafikę, logo i ikonę dostarczasz Ty, bo to osobna dziedzina, którą zajmuje się grafik. Masz tu trzy drogi: projekt z AI, płatne grafiki ze stocka albo zamówienie u polecanego projektanta. Każdą z nich rozliczasz bezpośrednio, a ja pomogę Ci wybrać tę, która pasuje do Twojego budżetu."
+        },
+        "subscription": {
+          "question": "Czy płacę abonament?",
+          "answer": "Za aplikację płacisz raz i jest Twoja na własność. Jedyne stałe wydatki to opłaty platform, które opisuję niżej."
+        },
+        "platformCosts": {
+          "question": "Kto płaci Apple i Google?",
+          "answer": "Te opłaty idą wprost do platform, z Twojego konta: Apple 99 USD rocznie, Google 25 USD jednorazowo. Zaplecze w chmurze do realnego ruchu kosztuje praktycznie zero, a potem rośnie razem z liczbą użytkowników. Dzięki temu konta i aplikacja zostają w całości Twoje."
+        },
+        "afterSupport": {
+          "question": "Co po 30 dniach wsparcia?",
+          "answer": "Po 30 dniach dłuższą opiekę ustalamy osobno — od drobnych poprawek, przez aktualizacje systemów i sklepów, po nowe funkcje. Zakres dobieramy do tego, czego naprawdę potrzebujesz."
+        }
+      }
+    },
+    "quote": {
+      "heading": "Napisz do mnie, czego potrzebujesz.",
+      "intro": "Wystarczy kilka zdań o Twojej firmie i o tym, jak wyobrażasz sobie taką aplikację. Odezwę się, żeby umówić krótką rozmowę telefoniczną albo spotkanie online, poznać Twój pomysł i wspólnie ustalić najlepszy zakres. Wycenę dostaniesz spokojnie, już po tej rozmowie.",
+      "messagePlaceholder": "krótko o firmie i o tym, czego oczekujesz od aplikacji"
+    }
+  },
   "rootMetadata": {
     "title": "Buzzards Soft — AI-Augmented Mobile Developer",
     "description": "Programista (Flutter, Unity), który przebudował swój workflow wokół agentów AI. Otwarty na role i kontrakty."
