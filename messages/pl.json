@@ -1,7 +1,7 @@
 {
   "common": {
     "skipToContent": "Pomiń do głównej treści",
-    "ctaTalk": "Pogadajmy",
+    "ctaTalk": "Porozmawiajmy",
     "back": "Wróć do strony głównej",
     "contactCta": "Skontaktuj się"
   },
@@ -250,12 +250,16 @@
       "32": {
         "title": "Programowanie Agentowe",
         "bullets": {
-          "1": "oceniam i weryfikuję kod generowany przez agenta — wiem, gdzie mu zaufać, a gdzie wymagać dowodu,",
-          "2": "rozbijam problem na specyfikację, którą agent wykonuje — plan jako kontrakt,",
-          "3": "porządkuję kontekst i budżet tokenów, żeby wynik był powtarzalny (context engineering),",
-          "4": "buduję własne narzędzia pod agenta: skille, slash commands, hooki wymuszające standardy,",
-          "5": "integruję LLM API (OpenAI, Anthropic) w aplikacjach: structured output, function calling, tool use,",
-          "6": "integruję realne narzędzia z agentem przez MCP (context7, Playwright, Maestro)."
+          "1": "aplikacje Android i iOS we Flutterze, prowadzone end-to-end,",
+          "2": "frontend stron internetowych w Next.js (TypeScript),",
+          "3": "backend stron internetowych w Firebase,",
+          "4": "zautomatyzowane procesy CI/CD: GitHub Actions, Codemagic,",
+          "5": "ocena i weryfikacja kodu generowanego przez agenta,",
+          "6": "rozbicie problemu na specyfikację wykonywaną przez agenta: plan jako kontrakt,",
+          "7": "porządkowanie kontekstu i budżetu tokenów dla powtarzalnych wyników: context engineering,",
+          "8": "własne narzędzia pod agenta: skille, slash commands, hooki wymuszające standardy,",
+          "9": "integracja LLM API (OpenAI, Anthropic) w aplikacjach: structured output, function calling, tool use,",
+          "10": "integracja realnych narzędzi z agentem przez MCP (context7, Playwright, Maestro)."
         }
       },
       "33": {
@@ -410,7 +414,7 @@
   "portfolio": {
     "eyebrow": "Sekcja 04 · Portfolio",
     "title": "Portfolio",
-    "intro": "Trzy linie kompetencji: komercyjne aplikacje mobilne w Honeti, własne projekty z programowania agentowego oraz warsztat AI — metodologia, którą wnoszę do każdego zespołu.",
+    "intro": "Przegląd mojej pracy: komercyjne aplikacje mobilne na Androida i iOS oraz moje własne projekty tworzone z agentami AI.",
     "breadcrumbBack": "Wróć do strony głównej",
     "role": {
       "od-zera": "E2E",

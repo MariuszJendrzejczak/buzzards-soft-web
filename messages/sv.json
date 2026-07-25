@@ -250,12 +250,16 @@
       "32": {
         "title": "AI-tooling i utvecklarens arbetsflöde",
         "bullets": {
-          "1": "Claude Code: konfiguration, hooks, slash commands, skills, subagenter,",
-          "2": "MCP-servrar — användning av färdiga servrar,",
-          "3": "prompt engineering i ett kodsammanhang (structured output, function calling, tool use),",
-          "4": "arbete med LLM API:er (OpenAI, Anthropic) på applikationsintegrationsnivå,",
-          "5": "prompt caching och kostnadskontroll,",
-          "6": "utvärdering av outputkvalitet (var det är värt att lita på agenten, var verifiering krävs)."
+          "1": "Android- och iOS-appar i Flutter, levererade end-to-end,",
+          "2": "frontend för webbplatser i Next.js (TypeScript),",
+          "3": "backend för webbplatser på Firebase,",
+          "4": "automatiserade CI/CD-processer: GitHub Actions, Codemagic,",
+          "5": "Claude Code: konfiguration, hooks, slash commands, skills, subagenter,",
+          "6": "MCP-servrar — användning av färdiga servrar,",
+          "7": "prompt engineering i ett kodsammanhang (structured output, function calling, tool use),",
+          "8": "arbete med LLM API:er (OpenAI, Anthropic) på applikationsintegrationsnivå,",
+          "9": "prompt caching och kostnadskontroll,",
+          "10": "utvärdering av outputkvalitet."
         },
         "callout": "Jag skriver medvetet inte \"enterprise AI agents at scale\" här — jag jobbar med dessa verktyg dagligen och har konkreta artefakter, men jag låtsas inte att jag har produktionsutrullningar för externa kunder bakom mig."
       },
@@ -427,7 +431,7 @@
   "portfolio": {
     "eyebrow": "Avsnitt 04 · Portfolio",
     "title": "Portfolio",
-    "intro": "Tre kompetensspår: kommersiella mobilappar byggda på Honeti, egna projekt inom agentisk programmering och en AI-verkstad — metodiken jag tar med mig till varje team.",
+    "intro": "En översikt av mitt arbete: kommersiella mobilappar för Android och iOS, och mina egna projekt byggda med AI-agenter.",
     "breadcrumbBack": "Tillbaka till startsidan",
     "role": {
       "od-zera": "E2E",

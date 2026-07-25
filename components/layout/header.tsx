@@ -68,7 +68,7 @@ export function Header() {
 
           <nav
             aria-label={tNav("mainAria")}
-            className="hidden lg:flex lg:items-center lg:gap-1"
+            className="hidden xl:flex xl:items-center xl:gap-1"
           >
             {NAV_KEYS.map((item) =>
               item.key === "offer" ? (
@@ -77,7 +77,7 @@ export function Header() {
                   size="sm"
                   nativeButton={false}
                   render={<Link href={item.href} onClick={hideHeader} />}
-                  className="bg-cta px-3 text-primary-foreground hover:bg-cta-hover"
+                  className="bg-cta px-3 text-white hover:bg-cta-hover"
                 >
                   {tNav(`items.${item.key}`)}
                 </Button>
@@ -100,7 +100,7 @@ export function Header() {
               size="sm"
               nativeButton={false}
               render={<a href="#contact" />}
-              className="hidden bg-cta px-3 text-primary-foreground hover:bg-cta-hover sm:inline-flex"
+              className="hidden bg-cta px-3 text-white hover:bg-cta-hover sm:inline-flex"
             >
               {tCommon("ctaTalk")}
             </Button>
@@ -112,7 +112,7 @@ export function Header() {
                     variant="ghost"
                     size="icon-sm"
                     aria-label={tNav("openMenu")}
-                    className="lg:hidden"
+                    className="xl:hidden"
                   />
                 }
               >
@@ -173,7 +173,7 @@ export function Header() {
                         size="lg"
                         nativeButton={false}
                         render={<a href="#contact" />}
-                        className="h-11 w-full bg-cta text-primary-foreground hover:bg-cta-hover"
+                        className="h-11 w-full bg-cta text-white hover:bg-cta-hover"
                       >
                         {tCommon("ctaTalk")}
                       </Button>
@@ -217,7 +217,7 @@ function FloatingOfferButton({
       tabIndex={visible ? undefined : -1}
       className={cn(
         "fixed right-5 bottom-5 z-40 inline-flex items-center gap-2 rounded-full bg-cta px-5 py-3",
-        "text-sm font-semibold text-primary-foreground shadow-lg outline-none",
+        "text-sm font-semibold text-white shadow-lg outline-none",
         "transition-all duration-300 hover:bg-cta-hover focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         "motion-reduce:transition-none sm:right-8 sm:bottom-8",
         visible
@@ -266,7 +266,7 @@ function NavLink({
   onNavigate?: () => void;
 }) {
   const className =
-    "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring";
+    "rounded-md px-3 py-2 text-sm font-medium whitespace-nowrap text-muted-foreground outline-none transition-colors hover:bg-surface hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring";
 
   if (item.href.startsWith("/")) {
     return (

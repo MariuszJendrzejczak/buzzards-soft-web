@@ -1,6 +1,8 @@
+import { Fragment } from "react";
 import { ArrowRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 export async function Hero() {
@@ -38,7 +40,7 @@ export async function Hero() {
               size="lg"
               nativeButton={false}
               render={<a href="#contact" />}
-              className="h-12 px-6 text-base bg-cta text-primary-foreground hover:bg-cta-hover"
+              className="h-12 px-6 text-base bg-cta text-white hover:bg-cta-hover"
             >
               {t("ctaPrimary")}
             </Button>
@@ -102,6 +104,42 @@ function RoleBadge({ badges, sub }: { badges: string[]; sub: string }) {
   );
 }
 
+/**
+ * Renders a credential line, turning an in-text "·" separator into a real
+ * emerald bullet that matches the tile's leading dot (same colour, size and
+ * glow) instead of a small grey glyph. Lines without a "·" render unchanged.
+ * `dotClassName` carries the per-context bullet size/glow so the separator
+ * matches whichever leading dot sits beside it.
+ */
+function Credential({
+  text,
+  dotClassName,
+}: {
+  text: string;
+  dotClassName: string;
+}) {
+  const parts = text
+    .split("·")
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  return (
+    <>
+      {parts.map((part, index) => (
+        <Fragment key={part}>
+          {index > 0 && (
+            <span
+              aria-hidden
+              className={cn("shrink-0 rounded-full bg-brand", dotClassName)}
+            />
+          )}
+          {part}
+        </Fragment>
+      ))}
+    </>
+  );
+}
+
 function TrustStrip({
   items,
   ariaLabel,
@@ -120,7 +158,9 @@ function TrustStrip({
             aria-hidden
             className="mt-1.5 size-1 shrink-0 rounded-full bg-brand"
           />
-          <span>{item}</span>
+          <span className="inline-flex flex-wrap items-center gap-x-2 gap-y-1">
+            <Credential text={item} dotClassName="size-1" />
+          </span>
         </li>
       ))}
     </ul>
@@ -160,7 +200,12 @@ function WorkbenchPanel({
               aria-hidden
               className="mt-1.5 size-1.5 shrink-0 rounded-full bg-brand shadow-[0_0_8px_var(--brand)]"
             />
-            <span className="text-sm leading-snug text-foreground">{row}</span>
+            <span className="inline-flex flex-wrap items-center gap-x-2 gap-y-1 text-sm leading-snug text-foreground">
+              <Credential
+                text={row}
+                dotClassName="size-1.5 shadow-[0_0_8px_var(--brand)]"
+              />
+            </span>
           </li>
         ))}
       </ul>

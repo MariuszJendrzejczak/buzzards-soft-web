@@ -84,7 +84,7 @@ const SECTION_SPECS: readonly SectionSpec[] = [
     number: "3.2",
     key: "32",
     variant: "core",
-    bulletKeys: ["1", "2", "3", "4", "5", "6"],
+    bulletKeys: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
     chips: [
       "Claude Code",
       "MCP",
@@ -148,8 +148,6 @@ export async function WhatICanDeliver() {
         >
           {SECTION_SPECS.map((spec) => {
             const title = t(`sections.${spec.key}.title`);
-            const variantLabel =
-              spec.variant === "core" ? t("variantCore") : t("variantGrowing");
 
             return (
               <AccordionItem
@@ -167,16 +165,6 @@ export async function WhatICanDeliver() {
                     </span>
                     <span className="font-heading text-base font-semibold text-foreground sm:text-lg">
                       {title}
-                    </span>
-                    <span
-                      className={cn(
-                        "ml-auto font-mono text-[10px] font-medium tracking-[0.2em] uppercase",
-                        spec.variant === "core"
-                          ? "text-brand"
-                          : "text-text-subtle",
-                      )}
-                    >
-                      {variantLabel}
                     </span>
                   </div>
                 </AccordionTrigger>

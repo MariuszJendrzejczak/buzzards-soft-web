@@ -108,15 +108,18 @@ export function HoneticHero({ className }: HoneticHeroProps) {
           ))}
         </div>
 
-        <div className="mt-10 flex">
-          <Link
-            href="/portfolio/honeti"
-            className="inline-flex items-center gap-2 rounded-md font-mono text-sm font-medium text-brand outline-none transition-colors hover:text-brand-soft focus-visible:ring-2 focus-visible:ring-ring"
-          >
+        <Link
+          href="/portfolio/honeti"
+          className="group mt-10 flex w-fit items-center gap-3 rounded-2xl bg-cta px-6 py-4 text-white shadow-sm outline-none transition-colors hover:bg-cta-hover focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        >
+          <span className="font-mono text-sm font-medium">
             {t("cta-full-list")}
-            <ArrowRight aria-hidden className="size-4" />
-          </Link>
-        </div>
+          </span>
+          <ArrowRight
+            aria-hidden
+            className="size-5 shrink-0 transition-transform group-hover:translate-x-0.5"
+          />
+        </Link>
       </div>
     </section>
   );
