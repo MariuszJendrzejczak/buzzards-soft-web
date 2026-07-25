@@ -96,13 +96,13 @@
     "badges": {
       "aiNative": "AI-Native Developer",
       "mobile": "Mobile Developer",
-      "web": "Web Fullstack Developer"
+      "web": "Fullstack Developer"
     },
-    "badgeSub": "4+ års kommersiell utveckling. Jag jobbar med AI-agenter varje dag.",
-    "headingLead": "Jag levererar mjukvara snabbare eftersom ",
-    "headingHighlight": "jag jobbar med AI varje dag",
-    "headingTrail": " — inte bara ibland.",
-    "sub": "Jag programmerar kommersiellt i Flutter och Unity. Det senaste året har jag byggt om mitt arbetsflöde kring AI-agenter — Claude Code med egen konfiguration, hooks och skills sitter i mina projekt varje dag. Jag söker en roll eller ett uppdrag där den här accelerationen spelar roll.",
+    "badgeSub": "4 års kommersiell utveckling av mobilappar för Android och iOS.",
+    "headingLead": "En självständig, komplett utvecklare ",
+    "headingHighlight": "med mitt eget agentiska arbetsflöde",
+    "headingTrail": " — jag levererar end-to-end.",
+    "sub": "Före AI-eran byggde jag kommersiella mobilappar i Flutter och Unity. Idag, med generativa verktyg, har jag lagt till webbplatser och webbappar i den stacken. Jag driver leveransen från idé till lansering och anpassar mig efter vad projektet eller kunden kräver.",
     "ctaPrimary": "Vi pratar om en roll eller ett projekt",
     "ctaSecondary": "Se hur jag jobbar",
     "trustAria": "Sammanfattning av erfarenhet",
@@ -218,20 +218,23 @@
             "title": "Mobil utveckling — Flutter / Dart",
             "bullets": {
               "1": "mobilappar för Android + iOS från grunden och vidareutveckling av befintliga,",
-              "2": "responsivt och skalbart UI, egna widgets, optimering av tillgångar,",
-              "3": "state management med Riverpod, Freezed, Dependency Injection, Clean Architecture,",
-              "4": "integrationer mot REST API och Firebase, autentisering, sessioner, offline-first data,",
-              "5": "debugging på fysiska enheter, publicering på Google Play / App Store."
+              "2": "arkitektur: Clean Architecture, Riverpod, Dependency Injection, SOLID, use-cases, Freezed, json_serializable,",
+              "3": "navigering och codegen: go_router, deep links, build_runner,",
+              "4": "data och backend: REST API, Firebase, offline-first med synkronisering, Hive, shared_preferences,",
+              "5": "autentisering: JWT med token-förnyelse, secure storage, sessioner, social inloggning,",
+              "6": "enhetsintegrationer: kamera, QR- / streckkodsskanning, Google Maps, PDF-generering, POS / skrivare,",
+              "7": "notiser och monetisering: FCM, in_app_purchase, RevenueCat, AdMob,",
+              "8": "UI och animationer: responsivt UI, implicit- / Tween- / Hero-animationer, Lottie,",
+              "9": "kvalitet och leverans: CI/CD på Codemagic, flavors, Git-flow, code review, publicering på Google Play / App Store; testning som standard i processen."
             }
           },
           "unity": {
-            "title": "Interaktiva appar och spel — Unity / C#",
+            "title": "Appar i Unity / C#",
             "bullets": {
-              "1": "spel och interaktiva verktyg, UI Toolkit / Canvas / responsivt UI,",
-              "2": "integrationer med Firebase, REST API, Unity IAP,",
-              "3": "designmönster: State Machine, Pooling, Scriptable Object,",
-              "4": "separation av MonoBehaviour från ren C#-logik, omsorg om läsbarhet och standarder,",
-              "5": "byggande av editor-verktyg och designer-verktyg."
+              "1": "mobil- och interaktiva appar byggda i Unity / C#,",
+              "2": "integrationer: Firebase, REST API, Unity IAP,",
+              "3": "responsivt UI (UI Toolkit / Canvas) och separation av C#-logik från MonoBehaviour,",
+              "4": "designmönster i praktiken och egna editor-verktyg som snabbar upp teamet; fokus på läsbar kod och standarder."
             }
           },
           "common": {
@@ -307,18 +310,16 @@
   "about": {
     "eyebrow": "Avsnitt 06 · Om mig",
     "title": "Om mig",
-    "short": "En utvecklare med 4+ års kommersiell erfarenhet (Flutter, Unity) för vilken AI är en verkstad, inte en kuriositet. Fokuserad på att leverera mjukvara — snabbare och renare tack vare verktyg jag själv konfigurerar. Tidigare 14 år inom tekniska installationer — användbart för projekt som broar mjukvara och hårdvara.",
-    "para1": "Det mesta av mitt kommersiella arbete har varit Flutter-mobilappar (Honeti) — från första kodraden, genom integrationer mot REST API och Firebase, autentisering, datasynkronisering och offline-arbete, hela vägen till butikslanseringar och underhåll. Jag har också jobbat i Unity med spel och interaktiva appar. I båda stackarna lägger jag stark vikt vid kodens läsbarhet, arkitekturens skalbarhet och att projektet ska gå att utveckla även efter flera år.",
-    "para2": "Det senaste året har mitt arbetsflöde gått igenom en märkbar förändring. Jag började behandla AI-agenter som ett verkstadsverktyg, inte en kuriositet. Claude Code blev mitt vardagsverktyg — med konfiguration anpassad till mina projekt. Saker jag förr gjorde för hand (review, utforskning av främmande kodbaser, codemods, scaffold) sker idag snabbare, men fortfarande under min kontroll — agenten mergar inte själv, varje output går genom build och review.",
-    "notSpecialist": "Jag kallar mig inte \"AI Specialist\".",
-    "selfDefinition": "Jag kallar mig en utvecklare som medvetet använder AI i det dagliga arbetet — och som tack vare det levererar mer.",
-    "difference": "Det är skillnaden jag bryr mig om: mitt track record finns i att skriva produktionskod — AI är sättet som koden nu produceras snabbare på.",
-    "para4": "Innan jag började programmera professionellt jobbade jag i 14 år som elektriker och installatör av CCTV-, larm-, brandsäkerhets- och smart home-system. För de flesta mjukvaruprojekt är denna bakgrund neutral. I projekt som broar mjukvara och den fysiska världen — IoT, smarta byggnader, automation — ger den mig ett perspektiv som en ren utvecklare inte har.",
-    "para5": "Jag värderar end-to-end-arbete: från analys av problemet, genom implementation, till underhåll. Jag lämnar inte projekt i \"PoC\"-tillstånd. Jag lovar inte saker jag inte kan leverera."
+    "short": "Jag är en självgående utvecklare som driver projekt end-to-end och har ett eget agentbaserat AI-arbetsflöde. Jag har 4+ års kommersiell erfarenhet av mobilappar i Flutter och Unity, och generativa verktyg har utökat min stack med webbplatser och webbappar. Jag ser AI som en verkstad jag styr medvetet i varje steg — från arkitektur till lansering och underhåll.",
+    "para1": "Kärnan i min kommersiella erfarenhet är mobilappar. I Flutter byggde jag produkter från första kodraden: integrationer mot REST API och Firebase, autentisering, datasynkronisering, offline-läge, butikslanseringar och löpande underhåll. I Unity arbetade jag med interaktiva applikationer. I båda stackarna håller jag koden läsbar och arkitekturen redo att växa även efter flera år.",
+    "para2": "Hjärtat i mitt dagliga arbete är programmering med AI-agenter. Claude Code är mitt vardagsverktyg, konfigurerat för specifika projekt: egna subagenter, hooks, MCP-servrar och skills för återkommande uppgifter. Jag kör agenten i en loop genom review, utforskning av främmande kodbaser, codemods och scaffolding, så att jag hinner mer på samma tid. Kontrollen stannar hos mig — agenten mergar inte själv, och varje output går genom build och min code review.",
+    "para3": "Att arbeta med agenter flyttar var svårigheten ligger. Att formulera uppgiften exakt, designa kontexten och verifiera det som kommer tillbaka väger tyngre — för modellen snabbar på både bra och dåliga beslut. Jag behandlar det som ingenjörsarbete: jag bygger verifierbara loopar där genereringen är snabb och kvalitetsgrinden förblir hård. Det låter mig som en person driva ett projekt i en omfattning som förr krävde ett team, och ta det från analys till underhåll.",
+    "pullquote": "Jag är en utvecklare som medvetet leder AI-agenter — och tack vare det levererar jag mer kvalitet, snabbare, över hela projektets livscykel.",
+    "para4": "Jag kom till programmering efter fjorton år som elektriker och installatör av CCTV-, larm-, brandsäkerhets- och smart home-system. I projekt där mjukvara möter hårdvara — IoT, automation, smarta byggnader — ger den bakgrunden mig ett genuint unikt perspektiv."
   },
   "education": {
     "eyebrow": "Avsnitt 07 · Utbildning",
-    "title": "Utbildning och certifikat",
+    "title": "Utbildning",
     "additionalLabel": "Ytterligare behörigheter",
     "certificatesAria": "Certifikat och behörigheter",
     "fields": {
@@ -959,6 +960,265 @@
       "heading": "Beskriv kort vad du behöver, så hör jag av mig med en offert.",
       "intro": "Utan förbindelser. Skriv några meningar om vad du gör och vad du behöver, så svarar jag med en offert och ett förslag på hur det kan göras.",
       "messagePlaceholder": "vilket företag eller vilken tjänst du har och vad du behöver"
+    }
+  },
+  "mobileOffer": {
+    "meta": {
+      "title": "Mobilappar för företag — iOS + Android som blir dina",
+      "description": "Jag bygger mobilappar för små företag och frilansare — iOS och Android från en och samma kod, publicerade i App Store och Google Play på dina egna konton. Expert som tar hjälp av AI: snabbare och till ett rimligt pris."
+    },
+    "breadcrumbBack": "Tillbaka till startsidan",
+    "hero": {
+      "eyebrow": "Mobilappar för lokala företag och enmansföretag",
+      "heading": "Din app för iPhone och Android, publicerad och helt och hållet din",
+      "subheading": "Det är en riktig produkt för ditt företag, redo att arbeta med dina kunder. Jag bygger den själv med hjälp av AI, och du har hela tiden direktkontakt med mig. Allt börjar med ett samtal om vad din app ska göra.",
+      "ctaPrimary": "Få en offert på din app",
+      "ctaSecondary": "Se hur jag jobbar"
+    },
+    "audience": {
+      "heading": "En mobilapp inom räckhåll för det lilla företaget",
+      "body1": "Det här erbjudandet vänder sig framför allt till små företag och frilansare som vill ge sina kunder en smidig app i telefonen — för bokningar, beställningar eller den dagliga kontakten med din tjänst. En sådan app är i dag fullt möjlig även för ett litet företag.",
+      "body2": "Jag gör det själv och tar öppet hjälp av AI där den verkligen snabbar upp arbetet: vid återkommande kod, tester och konfiguration. Tack vare det behövs färre timmar för att bygga appen — och eftersom du betalar för arbetstiden sjunker priset i takt med den. Det är samma noggranna arbete, färdigställt snabbare. Just därför ryms priset i det lilla företagets budget.",
+      "body3": "Tekniken snabbar upp arbetet, men hur appen fungerar och ser ut bestämmer jag — och jag kontrollerar det personligen, skärm för skärm. Du pratar med en och samma person, från första samtalet ända fram till den färdiga appen. Det är jag som ansvarar för resultatet och det är mig du frågar när du vill ändra något."
+    },
+    "examples": {
+      "heading": "Vad du kan bygga",
+      "intro": "Tre appar som jag bygger oftast, och vad de gör för ett företag som ditt. Din kan fungera på ett helt annat sätt — det är där vårt samtal börjar.",
+      "items": {
+        "booking": {
+          "name": "Bokningsapp",
+          "body": "Din kund öppnar appen, bläddrar bland dina tjänster och väljer en tid som passar. Varje bokning hamnar direkt hos dig, så du vet vem som vill boka och när."
+        },
+        "flowchart": {
+          "name": "App för scheman",
+          "body": "Ditt team lägger upp rutiner i ett tydligt schema: steg för steg, beslut och instruktioner. Du har det alltid nära till hands, kan skicka det till kunden som en bild och öppna det även offline."
+        },
+        "organizer": {
+          "name": "Organizer",
+          "body": "Uppgifter, anteckningar och påminnelser samlar du på ett ställe, ordnade i vettiga kategorier. Appen säger till om varje ärende vid rätt tillfälle och hjälper dig att få grepp om dagen."
+        }
+      }
+    },
+    "guide": {
+      "heading": "Så blir din app till",
+      "intro": "Fem steg leder från idé till en app som är klar i butikerna. Jag drar igång publiceringen redan från start så att den hinner klart i tid. I varje steg vet du vad som händer och har ett verkligt inflytande på det som skapas.",
+      "steps": {
+        "conversation": {
+          "title": "Samtal",
+          "body": "Vi börjar med ett vanligt, mänskligt samtal på ett enkelt språk. Du berättar vad du sysslar med, vilka dina kunder är och hur appen ska hjälpa dem. Du pratar direkt med mig, så vi preciserar omgående omfattning, stil och ungefärlig tidpunkt. Du lämnar samtalet med en tydlig bild av vad som ska skapas."
+        },
+        "design": {
+          "title": "Design",
+          "body": "Jag formger appen för ditt företag: skärmarna, flödet mellan dem och utseendet. Jag visar dig det innan jag börjar bygga, så att du ser produktens verkliga form och kan peka ut vad som ska justeras. Synpunkterna för jag in i det här steget, medan det fortfarande är enkelt och snabbt att byta riktning. Vi går in i bygget med en layout som du har godkänt."
+        },
+        "build": {
+          "title": "Bygge",
+          "body": "Jag bygger båda versionerna samtidigt, så de skapas tillsammans och fungerar enhetligt. Färdiga delar kontrollerar och finslipar jag själv. De nya skärmarna testar jag på riktiga telefoner så att de reagerar mjukt på beröring. Du får en genomarbetad app som är redo att nå butikerna."
+        },
+        "publish": {
+          "title": "Publicering",
+          "body": "Vi skapar tillsammans dina konton i butikerna, och jag publicerar appen på dem, i App Store och Google Play. Hur butikernas kalender ser ut och vad de exakt kontrollerar beskriver jag längre ner. Resultatet är ett: din app hamnar i båda butikerna, redo att laddas ner."
+        },
+        "support": {
+          "title": "Support",
+          "body": "Efter lanseringen har du 30 dagars support — den första tiden på marknaden, när appen möter riktiga användare. Du rapporterar vad som behöver rättas, och jag reagerar och ser till att allt fungerar som det ska. Den här tiden ger dig en lugn och omhändertagen entré för appen på marknaden."
+        }
+      },
+      "processNote": "Vill du se min process under huven? Så här jobbar jag med AI →"
+    },
+    "includes": {
+      "heading": "Det här får du i varje paket",
+      "intro": "Oavsett projektets storlek ingår alltid samma solida grund i priset. Det är standarden som jag bygger varje app på.",
+      "items": {
+        "platforms": "En app för iPhone och Android, byggd från en och samma kod. Du når alla dina kunder oavsett vilken telefon de använder, och en gemensam källa betyder att båda versionerna fungerar likadant och utvecklas tillsammans.",
+        "theme": "Ljust och mörkt läge samt polska och engelska — som standard. Appen anpassar sig efter telefonens inställningar och ser bra ut vid alla tider på dygnet, och tack vare två språk hanterar du även kunder från utlandet med lätthet.",
+        "backend": "Den tekniska grunden som appen står på: inloggning, databas och notiser, uppsatt på ditt eget konto i molnet. Dina kunders data tillhör dig och är under din kontroll.",
+        "publication": "Fullständig publicering i butikerna — det är jag som tar appen genom hela processen tills den hamnar på hyllan. Dina kunder hittar den precis som vilken annan app som helst, på sin iPhone och Android.",
+        "accounts": "Hjälp med att skapa företagskonton i App Store och Google Play samt att ta sig igenom formaliteterna för vart och ett av dem. Jag guidar dig lugnt genom det, så du skapar kontona i ditt eget namn och kraven är avklarade.",
+        "ownership": "En färdig produkt som blir din. Du betalar en gång för bygget och det är du som bestämmer allt som sedan händer med appen.",
+        "support": "30 dagars support efter lanseringen. När appen väl är i butikerna och når de första kunderna har du mig nära till hands för löpande rättelser."
+      }
+    },
+    "pricing": {
+      "heading": "Paket och priser",
+      "promoNote": "startpris",
+      "footnote": "Priser netto. Startpriset gäller under erbjudandets startperiod. Plattformarnas avgifter (Apple, Google) och backend betalar du direkt till leverantörerna — det beskriver jag i avsnittet ”Allt är ditt”.",
+      "baseReference": "+ hela standarden från avsnittet ”I varje paket”.",
+      "extrasLabel": "Full lägger till:",
+      "rowLabels": {
+        "audience": "För vem",
+        "scope": "Omfattning",
+        "screens": "Skärmar",
+        "timeline": "Tid till publicering"
+      },
+      "start": {
+        "name": "Start",
+        "basePrice": "12 900 zł",
+        "promoPrice": "9 900 zł",
+        "priceTag": "startpris",
+        "audience": "Din första riktiga entré på kundernas telefoner",
+        "scope": "ett genomarbetat scenario + en lätt backend",
+        "screens": "~6–7 skärmar",
+        "timeline": "~5–7 veckor",
+        "cta": "Offert Start"
+      },
+      "full": {
+        "name": "Full",
+        "basePrice": "24 900 zł",
+        "promoPrice": "19 900 zł",
+        "priceTag": "startpris",
+        "audience": "appen som arbetsverktyg för ditt företag",
+        "scope": "Start + användarkonton och verktyg för att driva företaget",
+        "screens": "~25–31 skärmar",
+        "timeline": "~8–11 veckor",
+        "extras": "Användarkonton och profiler, Egna avbokningar och ändringar, Lojalitetsprogram, Push-notiser, Ägarpanel i appen",
+        "cta": "Offert Full"
+      },
+      "custom": {
+        "name": "Större projekt",
+        "price": "Individuell offert",
+        "audience": "betalningar, flera platser, integrationer",
+        "scope": "skräddarsydd omfattning, från ~30 000 zł netto",
+        "screens": "enligt omfattning",
+        "timeline": "enligt omfattning",
+        "cta": "Vi tar ett snack"
+      }
+    },
+    "comparison": {
+      "heading": "Så skiljer sig paketen åt",
+      "intro": "Den största skillnaden är användarkontona — det är där Full börjar och allt som följer av dem. Ett större projekt går längre, mot betalningar online och flera platser. Detaljerna finns i tabellen nedan.",
+      "colFeature": "Funktion",
+      "colStart": "Start",
+      "colFull": "Full",
+      "colCustom": "Större",
+      "items": {
+        "accounts": {
+          "label": "Användarkonton och inloggning",
+          "start": "—",
+          "full": "✓",
+          "custom": "✓"
+        },
+        "push": {
+          "label": "Push-notiser till kunden",
+          "start": "—",
+          "full": "✓",
+          "custom": "✓"
+        },
+        "ownerPanel": {
+          "label": "Ägarpanel i appen",
+          "start": "—",
+          "full": "✓",
+          "custom": "✓"
+        },
+        "loyalty": {
+          "label": "Lojalitetsprogram",
+          "start": "—",
+          "full": "✓",
+          "custom": "✓"
+        },
+        "payments": {
+          "label": "Betalningar online",
+          "start": "—",
+          "full": "—",
+          "custom": "✓"
+        },
+        "multiLocation": {
+          "label": "Flera platser, val av personal",
+          "start": "—",
+          "full": "—",
+          "custom": "✓"
+        }
+      }
+    },
+    "publishing": {
+      "heading": "Publicering och tid — vad du kan förvänta dig",
+      "intro": "Apples och Googles butiker har sin egen kalender och sina egna krav. Jag pratar rakt om dem och planerar dem tillsammans med dig från första dagen, så att publiceringen går i takt med bygget och starten infaller när vi kommer överens om.",
+      "points": {
+        "twoTracks": {
+          "title": "Två spår från första dagen",
+          "body": "Från start driver jag två saker parallellt: bygget av appen och skapandet av konton i butikerna. En del av Apples och Googles krav följer deras egen kalender, som är längre än själva arbetet med koden — därför drar de igång första dagen, parallellt med bygget."
+        },
+        "duns": {
+          "title": "D-U-N-S-nummer (för företag)",
+          "body": "Ett företagskonto i butikerna kräver ett D-U-N-S-nummer — en kostnadsfri företagsidentifierare. Apple beviljar det oftast på några dagar, Google behöver upp till 30 för det. När du publicerar som företag börjar jag med det numret så att det hinner i tid."
+        },
+        "googleTest": {
+          "title": "Slutna tester i Google Play",
+          "body": "Ett nytt privat Google Play-konto genomgår ett slutet test: minst 12 testare i 14 dagar, innan appen når försäljning. Företagskonton har den vägen öppen direkt — därför kommer vi överens om kontotyp med dig första dagen."
+        },
+        "review": {
+          "title": "Granskningstid",
+          "body": "Till sist granskar även butiken varje app. Apple godkänner över 90 % av ansökningarna på mindre än ett dygn, Google svarar oftast inom 7 dagar."
+        }
+      }
+    },
+    "ownership": {
+      "heading": "Allt är ditt",
+      "body": "Appens kod, molnprojektet och konton i butikerna skapar jag i ditt namn och tilldelar dig. Du betalar en gång, för en färdig produkt, och appen förblir din egendom.",
+      "costsHeading": "Löpande kostnader på din sida",
+      "costs": {
+        "apple": {
+          "label": "Apple Developer",
+          "value": "99 USD per år"
+        },
+        "google": {
+          "label": "Google Play",
+          "value": "25 USD engångsavgift"
+        },
+        "backend": {
+          "label": "Backend i molnet",
+          "value": "≈ 0 zł fram till verklig trafik"
+        }
+      },
+      "limitsHeading": "Det vi kommer överens om separat",
+      "limits": {
+        "graphics": {
+          "lead": "Grafik, logotyp och ikon är ett eget område.",
+          "body": "Jag tipsar om var du kan hämta dem: AI, bildbanker eller en rekommenderad grafiker. Den utgiften står du själv för."
+        },
+        "maintenance": {
+          "lead": "Skötsel efter 30 dagars support är en separat överenskommelse.",
+          "body": "Uppdateringar för nya systemversioner och butikernas krav samt kommande funktioner offererar jag enligt omfattning, när du behöver dem."
+        },
+        "scope": {
+          "lead": "Betalningar, flera platser och integrationer offererar jag individuellt.",
+          "body": "Det är större implementeringar ur paketet ”Större projekt”, som jag bygger efter dina krav. Deras kostnad beror på omfattningen."
+        }
+      }
+    },
+    "faq": {
+      "heading": "Vanliga frågor",
+      "items": {
+        "duration": {
+          "question": "Hur lång tid tar det att bygga en app?",
+          "answer": "Start tar oftast 5–7 veckor fram till publicering, Full 8–11. Den tiden inkluderar redan butikernas formaliteter. En konkret tidpunkt för ditt projekt anger jag vid det första samtalet."
+        },
+        "accounts": {
+          "question": "Måste jag ha konton hos Apple och Google?",
+          "answer": "Vi skapar dem tillsammans i ditt namn och det är på dem jag publicerar den färdiga appen, så du har dem helt under kontroll redan från start. All pappersexercis tar jag på mig och förklarar varje steg."
+        },
+        "graphics": {
+          "question": "Behöver jag färdig logotyp och grafik?",
+          "answer": "Grafik, logotyp och ikon levererar du, för det är ett eget område som en grafiker sysslar med. Här har du tre vägar: en design gjord med AI, betald grafik från en bildbank eller en beställning hos en rekommenderad formgivare. Var och en av dem betalar du direkt, och jag hjälper dig att välja den som passar din budget."
+        },
+        "subscription": {
+          "question": "Betalar jag en prenumeration?",
+          "answer": "För appen betalar du en gång och den blir din egendom. De enda fasta utgifterna är plattformarnas avgifter, som jag beskriver nedan."
+        },
+        "platformCosts": {
+          "question": "Vem betalar Apple och Google?",
+          "answer": "De avgifterna går direkt till plattformarna, från ditt konto: Apple 99 USD per år, Google 25 USD engångsavgift. Backend i molnet fram till verklig trafik kostar praktiskt taget noll, och växer sedan i takt med antalet användare. Tack vare det förblir kontona och appen helt och hållet dina."
+        },
+        "afterSupport": {
+          "question": "Vad händer efter 30 dagars support?",
+          "answer": "Efter 30 dagar kommer vi överens om längre skötsel separat — från små rättelser, via uppdateringar av system och butiker, till nya funktioner. Omfattningen anpassar vi efter det du verkligen behöver."
+        }
+      }
+    },
+    "quote": {
+      "heading": "Skriv till mig om vad du behöver.",
+      "intro": "Det räcker med några meningar om ditt företag och om hur du föreställer dig en sådan app. Jag hör av mig för att boka ett kort telefonsamtal eller ett möte online, lära känna din idé och tillsammans komma fram till den bästa omfattningen. Offerten får du i lugn och ro, efter det samtalet.",
+      "messagePlaceholder": "kort om företaget och om vad du förväntar dig av appen"
     }
   },
   "rootMetadata": {
