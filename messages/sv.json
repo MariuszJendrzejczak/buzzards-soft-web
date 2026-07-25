@@ -911,17 +911,17 @@
       }
     },
     "ownership": {
-      "heading": "Webbplatsen är din, att äga",
-      "body": "Jag skriver domän, webbhotell, kod, innehåll och konton i ditt namn och på dina konton. Du betalar en gång — den enda löpande kostnaden är din egen domän (omkring 50–90 zł per år, som du betalar till registraren). Om du någon gång vill byta till någon annan tar du med dig alltihop och arbetar vidare.",
-      "limitsHeading": "Jag tar ansvar för allt detta — och säger var gränserna går",
+      "heading": "Ägande och kostnader",
+      "body": "Hela webbplatsen är din: kod, innehåll, konton och konfiguration skriver jag på dig. Du betalar en gång. Den enda löpande kostnaden är domänen, vanligtvis 50 till 200 zł per år beroende på ändelse (.pl, .com och liknande), som du betalar direkt till registraren.",
+      "limitsHeading": "Erbjudandets gränser",
       "limits": {
         "seo": {
-          "lead": "Jag bygger en solid teknisk grund för SEO och lokal synlighet.",
-          "body": "Löpande rankningskampanjer eller garantier om förstaplats på Google gör jag inte — det är en separat, löpande tjänst, som jag ärligt hänvisar dig till vem du bör anlita för."
+          "lead": "Jag bygger din webbplats så att Google ser den från dag ett och förstår vad som finns på den.",
+          "body": "Att klättra högst upp i resultaten och löpande SEO är en separat, kontinuerlig tjänst — utanför det jag åtar mig."
         },
         "commerce": {
-          "lead": "Butiker, komplexa integrationer och ett riktigt CRM-system tar jag som en individuell offert.",
-          "body": "De ryms inte i paketet Basic eller Full, så jag prissätter dem separat, för det specifika projektet."
+          "lead": "Webbutiker, komplexa integrationer och CRM-system prissätter jag individuellt.",
+          "body": "Det är större implementationer som går utöver paketen Basic och Full, så jag bygger dem från grunden efter dina krav. Kostnaden beror på omfattningen: de funktioner som behövs, integrationer och projektets skala."
         }
       }
     },
