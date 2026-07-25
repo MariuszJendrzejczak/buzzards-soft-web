@@ -267,20 +267,20 @@ mirror/getter tests for the static spec.
 
 #### Automated
 
-- [x] 1.1 Copy artifact exists: `context/slices/skills-section-rebuild/copy-pl.md`
+- [x] 1.1 Copy artifact exists: `context/slices/skills-section-rebuild/copy-pl.md` — 60ddcc0
 
 #### Manual
 
-- [x] 1.2 Heading/eyebrow/intro on-voice; no „dowieźć"; Voice-Gap-Test MATCHED
-- [x] 1.3 3.1 Mobile bullets = owner-verified skills only; Unity slimmed; 3.2 reads as skills
-- [x] 1.4 Owner approves the PL copy before it lands
+- [x] 1.2 Heading/eyebrow/intro on-voice; no „dowieźć"; Voice-Gap-Test MATCHED — 60ddcc0
+- [x] 1.3 3.1 Mobile bullets = owner-verified skills only; Unity slimmed; 3.2 reads as skills — 60ddcc0
+- [x] 1.4 Owner approves the PL copy before it lands — 60ddcc0
 
 ### Phase 2: Component refactor + land PL + About trim
 
 #### Automated
 
-- [ ] 2.1 Type-check + static export pass: `npm run build`
-- [ ] 2.2 Linting passes: `npm run lint`
+- [x] 2.1 Type-check + static export pass: `npm run build`
+- [x] 2.2 Linting passes: `npm run lint`
 
 #### Manual
 

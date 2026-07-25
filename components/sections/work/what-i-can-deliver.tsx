@@ -24,7 +24,7 @@ type SubBlockSpec = {
 type SectionSpec = {
   value: string;
   number: string;
-  key: "31" | "32" | "33" | "34" | "35";
+  key: "31" | "32" | "33";
   variant: Variant;
   subBlocks?: readonly SubBlockSpec[];
   bulletKeys?: readonly string[];
@@ -41,15 +41,21 @@ const SECTION_SPECS: readonly SectionSpec[] = [
     subBlocks: [
       {
         key: "mobile",
-        bulletKeys: ["1", "2", "3", "4", "5"],
+        bulletKeys: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
         chips: [
           "Flutter",
           "Dart",
           "Riverpod",
           "Freezed",
+          "DI",
+          "Clean Architecture",
+          "go_router",
           "REST API",
           "Firebase",
-          "Clean Architecture",
+          "Hive",
+          "FCM",
+          "RevenueCat",
+          "AdMob",
           "Android",
           "iOS",
           "Google Play",
@@ -58,17 +64,8 @@ const SECTION_SPECS: readonly SectionSpec[] = [
       },
       {
         key: "unity",
-        bulletKeys: ["1", "2", "3", "4", "5"],
-        chips: [
-          "Unity",
-          "C#",
-          "UI Toolkit",
-          "Firebase",
-          "Unity IAP",
-          "State Machine",
-          "Pooling",
-          "Scriptable Object",
-        ],
+        bulletKeys: ["1"],
+        chips: ["Unity", "C#"],
       },
       {
         key: "common",
@@ -80,19 +77,19 @@ const SECTION_SPECS: readonly SectionSpec[] = [
     value: "3.2",
     number: "3.2",
     key: "32",
-    variant: "growing",
+    variant: "core",
     bulletKeys: ["1", "2", "3", "4", "5", "6"],
     chips: [
       "Claude Code",
       "MCP",
       "OpenAI API",
       "Anthropic API",
+      "context engineering",
       "prompt caching",
       "function calling",
       "tool use",
       "structured output",
     ],
-    hasCallout: true,
   },
   {
     value: "3.3",
@@ -100,29 +97,6 @@ const SECTION_SPECS: readonly SectionSpec[] = [
     key: "33",
     variant: "core",
     bulletKeys: ["1", "2", "3", "4", "5"],
-  },
-  {
-    value: "3.4",
-    number: "3.4",
-    key: "34",
-    variant: "growing",
-    bulletKeys: ["1", "2", "3"],
-    chips: [
-      "n8n",
-      "Make.com",
-      "RAG",
-      "vector DB",
-      "embeddings",
-      "agentic workflows",
-    ],
-  },
-  {
-    value: "3.5",
-    number: "3.5",
-    key: "35",
-    variant: "core",
-    bulletKeys: ["1", "2", "3"],
-    chips: ["SEP E+D", "CCTV", "smart home", "niskoprądowe instalacje"],
   },
 ] as const;
 

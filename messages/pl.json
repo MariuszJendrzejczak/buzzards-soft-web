@@ -204,9 +204,9 @@
     }
   },
   "whatICanDeliver": {
-    "eyebrow": "Sekcja 03 · Co umiem",
-    "title": "Co umiem dowieźć",
-    "intro": "Najpierw to, w czym mam udokumentowane doświadczenie. AI tooling i procesy biznesowe — niżej, jako obszary, które aktywnie poszerzam.",
+    "eyebrow": "Sekcja 03 · Umiejętności",
+    "title": "Moje umiejętności i zalety",
+    "intro": "Zestaw umiejętności, na których stoi moja praca — pogrupowany tak, żeby od razu było widać, gdzie mam mocne, udokumentowane doświadczenie. Rdzeń to programowanie produkcyjne aplikacji mobilnych oraz programowanie agentowe, w którym pracuję na co dzień.",
     "stackAria": "Stack — {section}",
     "variantCore": "core",
     "variantGrowing": "growing",
@@ -218,20 +218,20 @@
             "title": "Mobile development — Flutter / Dart",
             "bullets": {
               "1": "aplikacje mobilne Android + iOS od zera i rozwój istniejących,",
-              "2": "responsywne i skalowalne UI, własne widgety, optymalizacja zasobów,",
-              "3": "zarządzanie stanem w Riverpod, Freezed, Dependency Injection, Clean Architecture,",
-              "4": "integracje REST API, Firebase, autoryzacja, sesje, dane offline-first,",
-              "5": "debugging na fizycznych urządzeniach, publikacja w Google Play / App Store."
+              "2": "architektura: Clean Architecture, Riverpod, Dependency Injection, SOLID, use-cases, Freezed, json_serializable,",
+              "3": "nawigacja i codegen: go_router, deep linki, build_runner,",
+              "4": "dane i backend: REST API, Firebase, offline-first z synchronizacją, Hive, shared_preferences,",
+              "5": "autoryzacja: JWT z odświeżaniem tokenu, secure storage, sesje, logowanie społecznościowe,",
+              "6": "integracje z urządzeniem: aparat, skanowanie QR / kodów kreskowych, Google Maps, generowanie PDF, POS / drukarki,",
+              "7": "powiadomienia i monetyzacja: FCM, in_app_purchase, RevenueCat, AdMob,",
+              "8": "UI i animacje: responsywne UI, animacje implicit / Tween / Hero, Lottie,",
+              "9": "jakość i wdrożenie: CI/CD na Codemagic, flavory, Git-flow, code review, publikacja w Google Play / App Store; testy jako standard w procesie."
             }
           },
           "unity": {
-            "title": "Aplikacje interaktywne i gry — Unity / C#",
+            "title": "Wcześniej — Unity / C#",
             "bullets": {
-              "1": "gry i narzędzia interaktywne, UI Toolkit / Canvas / responsive UI,",
-              "2": "integracje Firebase, REST API, Unity IAP,",
-              "3": "wzorce projektowe: State Machine, Pooling, Scriptable Object,",
-              "4": "separacja MonoBehaviour od czystej logiki C#, dbałość o czytelność i standardy,",
-              "5": "tworzenie edytorów i narzędzi designerskich."
+              "1": "aplikacje interaktywne w Unity / C# — wcześniejszy obszar mojej pracy, dziś skupiam się wyłącznie na mobile."
             }
           },
           "common": {
@@ -245,16 +245,15 @@
         }
       },
       "32": {
-        "title": "AI tooling w workflow developera",
+        "title": "Programowanie Agentowe",
         "bullets": {
-          "1": "Claude Code: konfiguracja, hooki, slash commands, skille, subagenty,",
-          "2": "MCP servers — korzystanie z gotowych serwerów,",
-          "3": "prompt engineering w kontekście kodu (structured output, function calling, tool use),",
-          "4": "praca z LLM API (OpenAI, Anthropic) na poziomie integracji w aplikacji,",
-          "5": "prompt caching i kontrola kosztów,",
-          "6": "ewaluacja jakości outputu (gdzie warto zaufać agentowi, gdzie wymagać weryfikacji)."
-        },
-        "callout": "Świadomie nie wpisuję tu „enterprise AI agents at scale\" — pracuję z tymi narzędziami codziennie i mam konkretne artefakty, ale nie udaję, że mam za sobą wdrożenia produkcyjne dla zewnętrznych klientów."
+          "1": "oceniam i weryfikuję kod generowany przez agenta — wiem, gdzie mu zaufać, a gdzie wymagać dowodu,",
+          "2": "rozbijam problem na specyfikację, którą agent wykonuje — plan jako kontrakt,",
+          "3": "porządkuję kontekst i budżet tokenów, żeby wynik był powtarzalny (context engineering),",
+          "4": "buduję własne narzędzia pod agenta: skille, slash commands, hooki wymuszające standardy,",
+          "5": "integruję LLM API (OpenAI, Anthropic) w aplikacjach: structured output, function calling, tool use,",
+          "6": "integruję realne narzędzia z agentem przez MCP (context7, Playwright, Maestro)."
+        }
       },
       "33": {
         "title": "Soft skills",
@@ -264,22 +263,6 @@
           "3": "praca pod presją czasu i przy wielu projektach równolegle,",
           "4": "diagnoza trudnych problemów (technicznych i programistycznych),",
           "5": "angielski techniczny B2/C1 — meetingi, dokumentacja, code review."
-        }
-      },
-      "34": {
-        "title": "Obszary, w których się aktywnie rozwijam",
-        "bullets": {
-          "1": "automatyzacja procesów biznesowych z warstwą LLM (n8n, Make),",
-          "2": "agentic workflows poza developmentem,",
-          "3": "RAG nad bazami wiedzy, vector DB, embeddingi."
-        }
-      },
-      "35": {
-        "title": "Background techniczny",
-        "bullets": {
-          "1": "14 lat wcześniejszej pracy w instalacjach niskoprądowych, CCTV, alarmach, smart home,",
-          "2": "uprawnienia elektryczne SEP E + D, prawo jazdy kat. B,",
-          "3": "przydatne przy projektach łączących oprogramowanie z czujnikami, sterownikami, instalacjami."
         }
       }
     }
@@ -307,14 +290,12 @@
   "about": {
     "eyebrow": "Sekcja 06 · O mnie",
     "title": "O mnie",
-    "short": "Programista z 4+ letnim doświadczeniem komercyjnym (Flutter, Unity), dla którego AI to warsztat, nie ciekawostka. Skupiony na dostarczaniu software'u — szybciej i czyściej dzięki narzędziom, które sam sobie konfiguruję. Wcześniej 14 lat w branży instalacji technicznych — przydaje się przy projektach łączących software z hardware'em.",
-    "para1": "Większość moich komercyjnych projektów to aplikacje mobilne we Flutterze (Honeti) — od pierwszej linijki kodu, przez integracje z REST API i Firebase, autoryzację, synchronizację danych i pracę offline, po publikację w sklepach i utrzymanie. Pracowałem też w Unity nad grami i aplikacjami interaktywnymi. W obu stackach kładę duży nacisk na czytelność kodu, skalowalność architektury i to, żeby projekt po latach nadal nadawał się do rozwoju.",
-    "para2": "W ostatnim roku mój workflow przeszedł zauważalną zmianę. Zacząłem traktować agenty AI jak narzędzie warsztatowe, a nie ciekawostkę. Claude Code stał się moim daily driverem — z konfiguracją dopasowaną do moich projektów. Część rzeczy, które wcześniej robiłem ręcznie (review, eksploracja obcych baz, codemody, scaffold), dzisiaj dzieje się szybciej, ale nadal pod moją kontrolą — agent nie merguje sam, każdy output przechodzi przez build i review.",
-    "notSpecialist": "Nie określam się jako „AI Specialist\".",
-    "selfDefinition": "Określam się jako programista, który świadomie używa AI w codziennej pracy — i który dzięki temu dostarcza więcej.",
-    "difference": "To jest różnica, na której mi zależy: track record mam w pisaniu produkcyjnego kodu — AI jest sposobem, w jaki ten kod powstaje teraz szybciej.",
-    "para4": "Zanim zacząłem programować zawodowo, przez 14 lat pracowałem jako elektryk i instalator systemów CCTV, alarmowych, p.poż. i smart home. Dla większości projektów programistycznych ten background jest neutralny. W projektach łączących software z fizycznym światem — IoT, smart buildings, automatyka — daje mi perspektywę, której nie ma czysty programista.",
-    "para5": "Cenię sobie pracę kompleksową: od analizy problemu, przez wdrożenie, po utrzymanie. Nie zostawiam projektów w stanie „PoC\". Nie obiecuję rzeczy, których nie umiem dowieźć."
+    "short": "Jestem samodzielnym developerem, który prowadzi projekt end-to-end i ma własny workflow oparty na agentach AI. Komercyjnie od ponad czterech lat piszę aplikacje mobilne we Flutterze i Unity, a generatywne narzędzia rozszerzyły mój stack o strony i aplikacje internetowe. AI traktuję jak warsztat, którym steruję świadomie na każdym etapie — od architektury po wdrożenie i utrzymanie.",
+    "para1": "Trzon mojego doświadczenia komercyjnego to aplikacje mobilne. We Flutterze pisałem produkty od pierwszej linijki kodu: integracje z REST API i Firebase, autoryzację, synchronizację danych, tryb offline, publikację w sklepach i późniejsze utrzymanie. W Unity pracowałem nad aplikacjami interaktywnymi. W obu stackach pilnuję czytelności kodu i architektury, która po latach nadal nadaje się do rozwoju.",
+    "para2": "Sercem mojej codziennej pracy jest programowanie z agentami AI. Claude Code jest moim daily driverem, skonfigurowanym pod konkretne projekty: własne subagenty, hooki, serwery MCP i skille pod powtarzalne zadania. Prowadzę agenta w pętli przez review, eksplorację obcych baz kodu, codemody i scaffold, dzięki czemu domykam więcej w tym samym czasie. Kontrolę trzymam po swojej stronie — agent nie merguje samodzielnie, a każdy output przechodzi przez build i moje code review.",
+    "para3": "Praca z agentami zmienia to, gdzie leży trudność. Rośnie waga precyzyjnego formułowania zadania, projektowania kontekstu i weryfikacji tego, co wraca — bo model przyspiesza zarówno dobre decyzje, jak i błędne. Traktuję to jak inżynierię: buduję sobie sprawdzalne pętle, w których generacja jest szybka, a bramka jakości zostaje twarda. To pozwala mi jako jednej osobie prowadzić projekt na zakresie, który wcześniej wymagał zespołu, i dowozić go od analizy po utrzymanie.",
+    "pullquote": "Jestem programistą, który świadomie prowadzi agenty AI — i dzięki temu dostarczam więcej jakości, szybciej, na całym cyklu projektu.",
+    "para4": "Do programowania przeszedłem po czternastu latach pracy jako elektryk i instalator systemów CCTV, alarmowych, p.poż. i smart home. W projektach na styku software'u i sprzętu — IoT, automatyka, smart buildings — ten background daje mi unikalną perspektywę."
   },
   "education": {
     "eyebrow": "Sekcja 07 · Wykształcenie",

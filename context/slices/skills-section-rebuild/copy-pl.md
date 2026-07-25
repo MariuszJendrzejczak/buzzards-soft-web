@@ -33,7 +33,7 @@ Moje umiejętności i zalety
 ### `whatICanDeliver.intro`
 
 ```
-Zestaw umiejętności, na których stoi moja praca — pogrupowany tak, żeby od razu było widać, gdzie mam mocne, udokumentowane doświadczenie. Rdzeń to programowanie produkcyjne aplikacji mobilnych oraz programowanie agentowe, w którym pracuję na co dzień. Za każdą pozycją stoją realne projekty z portfolio.
+Zestaw umiejętności, na których stoi moja praca — pogrupowany tak, żeby od razu było widać, gdzie mam mocne, udokumentowane doświadczenie. Rdzeń to programowanie produkcyjne aplikacji mobilnych oraz programowanie agentowe, w którym pracuję na co dzień.
 ```
 
 ---
@@ -121,33 +121,31 @@ Wspólne dla obu stacków
 Programowanie Agentowe
 ```
 
-`sections.32.bullets` — **11 bullets** (`"1".."11"`), ordered **osąd → orkiestracja → metoda → integracja**:
+`sections.32.bullets` — **6 bullets** (`"1".."6"`), competency-led (verb-first):
 
 ```
-1: ocena jakości outputu agenta — gdzie mu zaufać, a gdzie wymagać weryfikacji,
-2: review pod kątem intencji, zachowania i długoterminowego utrzymania kodu,
-3: agent pracuje na osobnej gałęzi i nie merguje sam — decyzja zostaje po mojej stronie,
-4: build i testy jako pętla zwrotna agenta — sam sprawdza swoją pracę, zanim ją oddaje,
-5: wyspecjalizowane subagenty (implementer / tester / reviewer) z odseparowanym kontekstem, reviewer w trybie read-only,
-6: spec-driven — plan jest kontraktem, nic nie powstaje przed zaakceptowaną specyfikacją,
-7: context engineering — świadome zarządzanie budżetem tokenów i trwały, wersjonowany kontekst projektu,
-8: Claude Code z własną konfiguracją: hooki, slash commands, skille,
-9: MCP w stacku (context7, Playwright, Maestro) — agent ma realne narzędzia w moim stacku,
-10: praca z LLM API (OpenAI, Anthropic) na poziomie integracji: structured output, function calling, tool use,
-11: prompt caching i kontrola kosztów tokenów.
+1: oceniam i weryfikuję kod generowany przez agenta — wiem, gdzie mu zaufać, a gdzie wymagać dowodu,
+2: rozbijam problem na specyfikację, którą agent wykonuje — plan jako kontrakt,
+3: porządkuję kontekst i budżet tokenów, żeby wynik był powtarzalny (context engineering),
+4: buduję własne narzędzia pod agenta: skille, slash commands, hooki wymuszające standardy,
+5: integruję LLM API (OpenAI, Anthropic) w aplikacjach: structured output, function calling, tool use,
+6: integruję realne narzędzia z agentem przez MCP (context7, Playwright, Maestro).
 ```
 
-**Block count to set in Phase 2:** `sections.32` `bulletKeys` = 11 (`"1".."11"`);
+**Block count to set in Phase 2:** `sections.32` `bulletKeys` = 6 (`"1".."6"`);
 `sections.32.callout` is **removed** (do not produce it — research Revision 2026-07-25b).
 
-Dedup note vs. portfolio `warsztat` (`messages/pl.json:602-643`): 3.2 asserts the *skill*
-in first-person capability register ("oceniam / prowadzę / potrafię"), phrased differently
-from the `warsztat` tiles' third-person *proof* descriptions. No tile description is reused
-verbatim — e.g. `warsztat` tile 4 reads „context7 (żywa dokumentacja libów), Playwright
-(weryfikacja UI w przeglądarce)…"; 3.2 bullet 9 states the *capability* („MCP w stacku …
-realne narzędzia agenta, nie sama wiedza") without re-listing the tile's parenthetical
-gloss. Same for subagents (tile 2 lists the named agents as proof; 3.2 bullet 5 states the
-orchestration skill).
+### Revision (owner, mid-Phase-2) — 3.2 reframed config → competency
+
+Owner rejected the first 3.2 draft: „to nie są skille moje, tylko konfiguracja agenta" — the
+11-bullet version described the *agent's setup* (subagenty implementer/tester/reviewer, „agent
+nie merguje sam", „Claude Code z hookami/skillami", „MCP w stacku") rather than the owner's own
+competencies. That register belongs to the portfolio `warsztat` "AI Native Development" block
+(the *proof* of the running config), not the skills section. Rewritten as **6 competency-led
+bullets** (verb-first: „oceniam / rozbijam / porządkuję / buduję / integruję") = what the owner
+can *do*, not what is *configured*. Dropped the standalone review/orchestration/verification-loop
+config lines; chips trimmed to clean technical tokens (Claude Code, MCP, OpenAI/Anthropic API,
+context engineering, prompt caching, function calling, tool use, structured output).
 
 ---
 
@@ -166,6 +164,6 @@ orchestration skill).
 | `sections.31.subBlocks.mobile.bullets` | `"1".."9"` | 9 |
 | `sections.31.subBlocks.unity.bullets` | `"1"` | 1 |
 | `sections.31.subBlocks.common.bullets` | `"1".."3"` | 3 |
-| `sections.32.bullets` | `"1".."11"` | 11 |
+| `sections.32.bullets` | `"1".."6"` | 6 |
 | `sections.33.bullets` | `"1".."5"` (unchanged) | 5 |
 ```
