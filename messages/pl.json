@@ -804,6 +804,7 @@
     "pricing": {
       "heading": "Cennik",
       "promoNote": "cena ważna do końca sierpnia",
+      "netLabel": "netto",
       "footnote": "Ceny netto. Cena promocyjna obowiązuje do końca sierpnia.",
       "baseReference": "+ cała baza z sekcji „W cenie każdej strony”",
       "extrasLabel": "W cenie dodatkowo",
@@ -856,6 +857,7 @@
       "heading": "Przykładowe moduły",
       "colModule": "Moduł",
       "colPrice": "Cena",
+      "priceNote": "Ceny netto.",
       "items": {
         "blog": {
           "name": "Blog i aktualności",
@@ -893,7 +895,7 @@
     },
     "ownership": {
       "heading": "Własność i koszty",
-      "body": "Cała strona jest Twoją własnością: kod, treści, konta i konfigurację przypisuję do Ciebie. Płacisz raz. Jedyny stały wydatek to domena, zwykle od 50 do 200 zł rocznie zależnie od końcówki (.pl, .com i podobne), którą opłacasz bezpośrednio rejestratorowi.",
+      "body": "Cała strona jest Twoją własnością: kod, treści, konta i konfigurację przypisuję do Ciebie. Płacisz raz. Jedyny cykliczny wydatek to domena, zwykle od 50 do 200 zł rocznie zależnie od końcówki (.pl, .com i podobne), którą opłacasz bezpośrednio rejestratorowi.",
       "limitsHeading": "Granice oferty",
       "limits": {
         "seo": {

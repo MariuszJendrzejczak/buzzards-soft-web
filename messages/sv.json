@@ -821,6 +821,7 @@
     "pricing": {
       "heading": "Enkla paket, öppna priser",
       "promoNote": "priset gäller till slutet av augusti",
+      "netLabel": "exkl. moms",
       "footnote": "Priser exkl. moms. Kampanjpriset gäller till slutet av augusti.",
       "baseReference": "+ allt i ”Det här får du med varje webbplats”",
       "extrasLabel": "Ingår även",
@@ -873,6 +874,7 @@
       "heading": "Exempel på moduler",
       "colModule": "Modul",
       "colPrice": "Pris",
+      "priceNote": "Priser exkl. moms.",
       "items": {
         "blog": {
           "name": "Blogg och nyheter",

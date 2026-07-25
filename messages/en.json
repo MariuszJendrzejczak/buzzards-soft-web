@@ -821,6 +821,7 @@
     "pricing": {
       "heading": "Simple packages, transparent prices",
       "promoNote": "price valid until the end of August",
+      "netLabel": "net",
       "footnote": "Net prices. The promotional price applies until the end of August.",
       "baseReference": "+ everything in “What every site includes”",
       "extrasLabel": "Also included",
@@ -873,6 +874,7 @@
       "heading": "Example modules",
       "colModule": "Module",
       "colPrice": "Price",
+      "priceNote": "Net prices.",
       "items": {
         "blog": {
           "name": "Blog and news",
