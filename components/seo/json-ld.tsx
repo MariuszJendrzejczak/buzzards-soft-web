@@ -8,9 +8,9 @@ const PERSON_NAME = "Mariusz Jendrzejczak";
 const PHONE = "+48 739 979 116";
 const EMAIL_PRIMARY = "dev.buzzardssoft@gmail.com";
 const ADDRESS = {
-  streetAddress: "Pomorska 14/8",
-  postalCode: "74-300",
-  addressLocality: "Myślibórz",
+  streetAddress: "Walecznych 81/1",
+  postalCode: "70-774",
+  addressLocality: "Szczecin",
   addressCountry: "PL",
 };
 const KNOWS_ABOUT = [

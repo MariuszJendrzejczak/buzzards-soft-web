@@ -98,9 +98,9 @@ export function Footer() {
           <address className="mt-6 text-sm not-italic leading-relaxed text-muted-foreground">
             Buzzards Soft Mariusz Jendrzejczak
             <br />
-            Pomorska 14/8
+            Walecznych 81/1
             <br />
-            74-300 Myślibórz
+            70-774 Szczecin
           </address>
         </div>
 
