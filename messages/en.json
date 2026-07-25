@@ -96,13 +96,13 @@
     "badges": {
       "aiNative": "AI-Native Developer",
       "mobile": "Mobile Developer",
-      "web": "Web Fullstack Developer"
+      "web": "Fullstack Developer"
     },
     "badgeSub": "4+ years of commercial development. I work with AI agents every day.",
-    "headingLead": "I ship software faster because ",
-    "headingHighlight": "I work with AI every day",
-    "headingTrail": " — not just on holidays.",
-    "sub": "I ship commercial code in Flutter and Unity. Over the last year I rebuilt my workflow around AI agents — Claude Code with my own configuration, hooks and skills sits in my projects every day. I'm looking for a role or contract where this acceleration matters.",
+    "headingLead": "An independent, complete developer ",
+    "headingHighlight": "with my own agentic workflow",
+    "headingTrail": " — I deliver end-to-end.",
+    "sub": "Before the AI era, I built commercial mobile apps in Flutter and Unity. Today, with generative tools, I've added websites and web apps to that stack. I take a project from idea to launch, adapting to whatever the project or client needs.",
     "ctaPrimary": "Let's talk about a role or project",
     "ctaSecondary": "See how I work",
     "trustAria": "Experience summary",

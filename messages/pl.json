@@ -96,13 +96,13 @@
     "badges": {
       "aiNative": "AI-Native Developer",
       "mobile": "Mobile Developer",
-      "web": "Web Fullstack Developer"
+      "web": "Fullstack Developer"
     },
     "badgeSub": "4+ lata komercyjnego programowania. Pracuję z agentami AI codziennie.",
-    "headingLead": "Dostarczam software szybciej, bo ",
-    "headingHighlight": "pracuję z AI codziennie",
-    "headingTrail": " — nie od święta.",
-    "sub": "Komercyjnie programuję we Flutterze i Unity. W ostatnim roku przebudowałem swój workflow wokół agentów AI — Claude Code z własną konfiguracją, hookami i skillami siedzi w moich projektach na co dzień. Szukam roli lub kontraktu, w którym to przyspieszenie ma znaczenie.",
+    "headingLead": "Samodzielny, kompletny developer ",
+    "headingHighlight": "z własnym workflow agentowym",
+    "headingTrail": " — dostarczam end-to-end.",
+    "sub": "Zanim przyszła era AI, tworzyłem komercyjne aplikacje mobilne we Flutterze i Unity. Dziś, dzięki narzędziom generatywnym, dodałem do tego stacku strony i aplikacje internetowe. Prowadzę projekt od pomysłu po wdrożenie, dostosowując się do wymagań, jakie stawia projekt czy klient.",
     "ctaPrimary": "Porozmawiajmy o roli lub projekcie",
     "ctaSecondary": "Zobacz, jak pracuję",
     "trustAria": "Skrót doświadczenia",
