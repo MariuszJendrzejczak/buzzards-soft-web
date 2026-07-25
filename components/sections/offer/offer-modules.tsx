@@ -67,6 +67,10 @@ export async function OfferModules() {
             </tbody>
           </table>
         </ScrollReveal>
+
+        <p className="mt-4 font-mono text-xs tracking-[0.08em] text-text-subtle">
+          {t("priceNote")}
+        </p>
       </div>
     </section>
   );

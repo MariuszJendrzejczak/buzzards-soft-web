@@ -103,7 +103,7 @@
     "headingHighlight": "with my own agentic workflow",
     "headingTrail": " — I deliver end-to-end.",
     "sub": "Before the AI era, I built commercial mobile apps in Flutter and Unity. Today, with generative tools, I've added websites and web apps to that stack. I run delivery from idea to launch, adapting to whatever the project or client needs.",
-    "ctaPrimary": "Let's talk about a role or project",
+    "ctaPrimary": "Let's talk",
     "ctaSecondary": "See how I work",
     "trustAria": "Experience summary",
     "trust": {
@@ -821,6 +821,7 @@
     "pricing": {
       "heading": "Simple packages, transparent prices",
       "promoNote": "price valid until the end of August",
+      "netLabel": "net",
       "footnote": "Net prices. The promotional price applies until the end of August.",
       "baseReference": "+ everything in “What every site includes”",
       "extrasLabel": "Also included",
@@ -873,6 +874,7 @@
       "heading": "Example modules",
       "colModule": "Module",
       "colPrice": "Price",
+      "priceNote": "Net prices.",
       "items": {
         "blog": {
           "name": "Blog and news",
@@ -909,17 +911,17 @@
       }
     },
     "ownership": {
-      "heading": "The site is yours to own",
-      "body": "I put the domain, hosting, code, content and accounts in your name and on your accounts. You pay once — the only recurring cost is your own domain (around 50–90 zł a year, paid to the registrar). If you ever wanted to move to someone else, you take the whole thing and carry on.",
-      "limitsHeading": "I stand behind all of this — and I tell you where the limits are",
+      "heading": "Ownership and costs",
+      "body": "The whole site is yours: I assign the code, content, accounts and configuration to you. You pay once. The only recurring cost is the domain, usually 50 to 200 zł a year depending on the extension (.pl, .com and similar), which you pay directly to the registrar.",
+      "limitsHeading": "Offer limits",
       "limits": {
         "seo": {
-          "lead": "I build a solid technical foundation for SEO and local visibility.",
-          "body": "I don't run ongoing ranking campaigns or guarantee first place on Google — that's a separate, continuous service, and I'll honestly point you to who to hire for it."
+          "lead": "I build your site so that Google sees it from day one and understands what's on it.",
+          "body": "Climbing to the very top of the results and ongoing SEO is a separate, continuous service — beyond what I take on."
         },
         "commerce": {
-          "lead": "Shops, complex integrations and a real CRM system I handle as a custom quote.",
-          "body": "They don't fit into the Basic or Full package, so I price them separately, for the specific project."
+          "lead": "Online shops, complex integrations and CRM systems I price individually.",
+          "body": "These are larger builds that go beyond the Basic and Full packages, so I build them from scratch to your requirements. Their cost depends on the scope: the features needed, integrations and the scale of the project."
         }
       }
     },
