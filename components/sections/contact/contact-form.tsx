@@ -362,7 +362,7 @@ export function ContactForm({
           size="lg"
           disabled={isSubmitting}
           aria-busy={isSubmitting}
-          className="mt-2 h-12 w-full gap-2 bg-cta px-6 text-base text-primary-foreground hover:bg-cta-hover sm:w-fit"
+          className="mt-2 h-12 w-full gap-2 bg-cta px-6 text-base text-white hover:bg-cta-hover sm:w-fit"
         >
           {isSubmitting ? (
             <>

@@ -250,12 +250,16 @@
       "32": {
         "title": "AI tooling in the developer workflow",
         "bullets": {
-          "1": "Claude Code: configuration, hooks, slash commands, skills, subagents,",
-          "2": "MCP servers — using off-the-shelf servers,",
-          "3": "prompt engineering in a code context (structured output, function calling, tool use),",
-          "4": "working with LLM APIs (OpenAI, Anthropic) at the application integration level,",
-          "5": "prompt caching and cost control,",
-          "6": "evaluating output quality (where to trust the agent, where to require verification)."
+          "1": "Android and iOS apps in Flutter, delivered end-to-end,",
+          "2": "web frontends in Next.js (TypeScript),",
+          "3": "web backends on Firebase,",
+          "4": "automated CI/CD pipelines: GitHub Actions, Codemagic,",
+          "5": "Claude Code: configuration, hooks, slash commands, skills, subagents,",
+          "6": "MCP servers — using off-the-shelf servers,",
+          "7": "prompt engineering in a code context (structured output, function calling, tool use),",
+          "8": "working with LLM APIs (OpenAI, Anthropic) at the application integration level,",
+          "9": "prompt caching and cost control,",
+          "10": "evaluating output quality."
         },
         "callout": "I deliberately don't write \"enterprise AI agents at scale\" here — I work with these tools daily and have concrete artifacts, but I'm not pretending to have production rollouts for external clients behind me."
       },
@@ -427,7 +431,7 @@
   "portfolio": {
     "eyebrow": "Section 04 · Portfolio",
     "title": "Portfolio",
-    "intro": "Three competence tracks: commercial mobile apps built at Honeti, my own agentic-programming projects, and an AI workshop — the methodology I bring to every team.",
+    "intro": "An overview of my work: commercial mobile apps for Android and iOS, and my own projects built with AI agents.",
     "breadcrumbBack": "Back to home",
     "role": {
       "od-zera": "E2E",
