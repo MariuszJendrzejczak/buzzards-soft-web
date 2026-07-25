@@ -22,7 +22,7 @@ export async function Hero() {
 
           <h1
             id="hero-heading"
-            className="mt-6 font-heading text-5xl leading-[1.05] font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl"
+            className="mt-6 font-heading text-4xl leading-[1.08] font-bold tracking-tight text-foreground break-words sm:text-5xl md:text-6xl lg:text-7xl"
           >
             {t("headingLead")}
             <span className="text-brand">{t("headingHighlight")}</span>
