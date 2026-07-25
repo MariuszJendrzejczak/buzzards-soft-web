@@ -13,6 +13,7 @@ const ITEM_KEYS = [
   "contact",
   "support",
   "content",
+  "editing",
   "hosting",
   "security",
   "gdpr",

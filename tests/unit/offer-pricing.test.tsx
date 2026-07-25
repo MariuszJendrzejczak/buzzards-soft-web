@@ -73,14 +73,14 @@ describe("<OfferPricing>", () => {
     const struck = Array.from(container.querySelectorAll(".line-through")).map(
       (el) => el.textContent,
     );
-    expect(struck).toContain(pricing.basic.basePrice); // 1299 zł
-    expect(struck).toContain(pricing.full.basePrice); // 2499 zł
+    expect(struck).toContain(pricing.basic.basePrice); // 1999 zł
+    expect(struck).toContain(pricing.full.basePrice); // 2999 zł
   });
 
   it("renders the promo prices on top for both tiers", async () => {
     const { container } = await renderPricing();
-    expect(container.textContent).toContain(pricing.basic.promoPrice); // 999 zł
-    expect(container.textContent).toContain(pricing.full.promoPrice); // 1999 zł
+    expect(container.textContent).toContain(pricing.basic.promoPrice); // 1699 zł
+    expect(container.textContent).toContain(pricing.full.promoPrice); // 2499 zł
   });
 
   it("renders the promo validity note (cena ważna do końca sierpnia) for each promo tier", async () => {

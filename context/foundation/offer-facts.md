@@ -27,8 +27,8 @@
 
 | Package | Base price | Promo price | For whom | Scope | Revisions |
 |---|---|---|---|---|---|
-| **Basic** | 1299 zł | **999 zł** | wizytówka / prosta oferta | 1 strona, do 5 sekcji | 2 rundy / 7 dni |
-| **Full** | 2499 zł | **1999 zł** | firma, która chce być widoczna i pozyskiwać kontakt | do 8 sekcji + 2 podstrony | 4 rundy / 14 dni |
+| **Basic** | 1999 zł | **1699 zł** | wizytówka / prosta oferta | 1 strona, do 5 sekcji | 2 rundy / 7 dni |
+| **Full** | 2999 zł | **2499 zł** | firma, która chce być widoczna i pozyskiwać kontakt | do 8 sekcji + 2 podstrony | 4 rundy / 14 dni |
 | **Większy projekt** | wycena indywidualna | — | sklep, custom od zera, złożone integracje | wg potrzeb | ustalane |
 
 - **All prices are net (netto).**
@@ -70,7 +70,6 @@
 | Animacje i efekty | +400 zł |
 | Tryb ciemny i jasny (przełącznik) | +400 zł |
 | Dodatkowy język | +400 zł / język |
-| Samodzielna edycja treści (płatna raz, bez abonamentu) | +700 zł |
 | Zbieranie leadów (lista mailingowa albo arkusz zgłoszeń) | +400 zł (oba +550) |
 | Rezerwacje i kalendarz | +350 zł |
 | Dodatkowa podstrona | +300 zł |
@@ -225,3 +224,29 @@ remains. Resolutions folded into the sections above.
     2026-07-21 against the official docs: 10 GB stored + 10 GB/month transfer → *a few
     thousand visits/month* for a wizytówka. Home = `includes.hosting` (Rule of One; hosting
     feature lives there). Raw GB / "Firebase" stay out of copy.
+- **2026-07-22 — package prices raised (owner-approved, pricing-benchmark slice).**
+  - **Basic 1299/999 → `1999 zł` base / `1699 zł` promo. Full 2499/1999 → `2999 zł` base /
+    `2499 zł` promo.** Applied to `messages/{pl,en,sv}.json` (`pricing.basic/full`) + the
+    table above. Rationale: benchmark vs PL market 2026 lifted Basic out of the template tier
+    (500–1500 zł) into the solid-freelancer custom band, tightened the Basic→Full gap to ~+50%
+    (was +100%) to steer toward Full, and stopped fragmenting into thin-margin one-pagers. Full
+    ceiling 2999 zł stays clearly below the agency floor. Modules unchanged (`full.extrasValue`
+    still +1050 zł). Promo mechanic + "do końca sierpnia" end-date unchanged. Full rationale +
+    market sources: `context/slices/offer-pricing-benchmark/research.md`.
+  - **NOT changed here (deferred to the CMS build slice):** the CMS packaging decision
+    (self-edit of content standard in every plan; retire the +700 "selfEdit" gate; design stays
+    non-editable). Reason: the CMS panel does not exist yet — putting "self-edit included" on the
+    live page would be an undeliverable promise. Lands WITH the CMS build, gated on the open
+    hosting/billing posture decision (Blaze-card vs Spark-cardfree). See research.md §CMS.
+- **2026-07-22 (b) — CMS content self-edit moved INTO "W cenie każdej strony" (owner-directed).**
+  - Owner chose to advertise **self-edit of content (texts, images) as included in every plan**:
+    added `offer.includes.items.editing` (PL/EN/SV) + `editing` to `ITEM_KEYS` in `offer-includes.tsx`.
+    The word **"light" is deliberately kept OUT of the copy** (owner's call). Design (colours, layout,
+    spacing) stays non-editable — framed **affirmatively** ("o spójny wygląd dbam ja"), not as a limit.
+  - **Removed the +700 "selfEdit" module** (`modules.items.selfEdit` PL/EN/SV + `MODULE_KEYS` + the
+    table row above): contradictory once self-edit is included. Structural additions stay paid via the
+    existing modules (`extraPage +300`, blog, etc.). `faq.selfEdit` answer rewritten to match.
+  - ⚠ **DELIVERABILITY (unchanged risk, now broader):** the CMS panel still does NOT exist. This copy
+    promises self-edit on EVERY order → every order now carries the CMS build obligation. **Do NOT deploy
+    this copy live until the panel is built** (or you're ready to build it on first order). Gated on the
+    open hosting/billing posture (Blaze vs Spark) — see `research.md` §CMS.

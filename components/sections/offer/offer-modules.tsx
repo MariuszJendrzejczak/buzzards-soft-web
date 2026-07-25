@@ -7,7 +7,6 @@ const MODULE_KEYS = [
   "animations",
   "themeToggle",
   "extraLanguage",
-  "selfEdit",
   "leads",
   "booking",
   "extraPage",
