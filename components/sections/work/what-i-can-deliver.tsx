@@ -64,8 +64,14 @@ const SECTION_SPECS: readonly SectionSpec[] = [
       },
       {
         key: "unity",
-        bulletKeys: ["1"],
-        chips: ["Unity", "C#"],
+        bulletKeys: ["1", "2", "3", "4"],
+        chips: [
+          "Unity",
+          "C#",
+          "State Machine",
+          "Object Pooling",
+          "Scriptable Object",
+        ],
       },
       {
         key: "common",

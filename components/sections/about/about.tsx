@@ -32,18 +32,14 @@ export async function About() {
           <div className="mt-10 flex flex-col gap-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
             <p>{t("para1")}</p>
             <p>{t("para2")}</p>
+            <p>{t("para3")}</p>
 
-            {/* Highlighted "spine" of the section — key positioning sentence. */}
-            <div className="flex flex-col gap-4">
-              <p>{t("notSpecialist")}</p>
-              <p className="border-l-2 border-brand bg-surface py-2 pl-5 font-heading text-lg leading-relaxed text-foreground italic sm:text-xl">
-                {t("selfDefinition")}
-              </p>
-              <p>{t("difference")}</p>
-            </div>
+            {/* Highlighted pull-quote — the section's one emphasized line. */}
+            <p className="border-l-2 border-brand bg-surface py-2 pl-5 font-heading text-lg leading-relaxed text-foreground italic sm:text-xl">
+              {t("pullquote")}
+            </p>
 
             <p>{t("para4")}</p>
-            <p>{t("para5")}</p>
           </div>
         </ScrollReveal>
       </div>

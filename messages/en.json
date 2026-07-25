@@ -98,11 +98,11 @@
       "mobile": "Mobile Developer",
       "web": "Fullstack Developer"
     },
-    "badgeSub": "4+ years of commercial development. I work with AI agents every day.",
+    "badgeSub": "4 years of commercial mobile app development for Android and iOS.",
     "headingLead": "An independent, complete developer ",
     "headingHighlight": "with my own agentic workflow",
     "headingTrail": " — I deliver end-to-end.",
-    "sub": "Before the AI era, I built commercial mobile apps in Flutter and Unity. Today, with generative tools, I've added websites and web apps to that stack. I take a project from idea to launch, adapting to whatever the project or client needs.",
+    "sub": "Before the AI era, I built commercial mobile apps in Flutter and Unity. Today, with generative tools, I've added websites and web apps to that stack. I run delivery from idea to launch, adapting to whatever the project or client needs.",
     "ctaPrimary": "Let's talk about a role or project",
     "ctaSecondary": "See how I work",
     "trustAria": "Experience summary",
@@ -218,20 +218,23 @@
             "title": "Mobile development — Flutter / Dart",
             "bullets": {
               "1": "Android + iOS mobile apps from scratch and growing existing ones,",
-              "2": "responsive and scalable UI, custom widgets, asset optimization,",
-              "3": "state management with Riverpod, Freezed, Dependency Injection, Clean Architecture,",
-              "4": "REST API and Firebase integrations, auth, sessions, offline-first data,",
-              "5": "debugging on physical devices, publishing to Google Play / App Store."
+              "2": "architecture: Clean Architecture, Riverpod, Dependency Injection, SOLID, use-cases, Freezed, json_serializable,",
+              "3": "navigation and codegen: go_router, deep links, build_runner,",
+              "4": "data and backend: REST API, Firebase, offline-first with sync, Hive, shared_preferences,",
+              "5": "authentication: JWT with token refresh, secure storage, sessions, social login,",
+              "6": "device integrations: camera, QR / barcode scanning, Google Maps, PDF generation, POS / printers,",
+              "7": "notifications and monetization: FCM, in_app_purchase, RevenueCat, AdMob,",
+              "8": "UI and animations: responsive UI, implicit / Tween / Hero animations, Lottie,",
+              "9": "quality and delivery: CI/CD on Codemagic, flavors, Git-flow, code review, publishing to Google Play / App Store; testing as a standard part of the process."
             }
           },
           "unity": {
-            "title": "Interactive apps and games — Unity / C#",
+            "title": "Apps in Unity / C#",
             "bullets": {
-              "1": "games and interactive tools, UI Toolkit / Canvas / responsive UI,",
-              "2": "Firebase, REST API, Unity IAP integrations,",
-              "3": "design patterns: State Machine, Pooling, Scriptable Object,",
-              "4": "separating MonoBehaviour from pure C# logic, attention to readability and standards,",
-              "5": "building editor tools and designer-facing tooling."
+              "1": "mobile and interactive apps built in Unity / C#,",
+              "2": "integrations: Firebase, REST API, Unity IAP,",
+              "3": "responsive UI (UI Toolkit / Canvas) and separating C# logic from MonoBehaviour,",
+              "4": "design patterns applied in practice and custom editor tooling that speeds up the team; focus on readable code and standards."
             }
           },
           "common": {
@@ -307,18 +310,16 @@
   "about": {
     "eyebrow": "Section 06 · About",
     "title": "About me",
-    "short": "A developer with 4+ years of commercial experience (Flutter, Unity) for whom AI is a workshop, not a curiosity. Focused on shipping software — faster and cleaner thanks to tools I configure myself. Previously 14 years in technical installations — useful for projects that bridge software and hardware.",
-    "para1": "Most of my commercial work has been Flutter mobile apps (Honeti) — from the first line of code, through REST API and Firebase integrations, auth, data sync and offline work, all the way to store releases and maintenance. I've also worked in Unity on games and interactive apps. In both stacks I put strong emphasis on code readability, architectural scalability, and making sure the project still lends itself to development years in.",
-    "para2": "Over the last year my workflow has gone through a noticeable shift. I started treating AI agents as a workshop tool, not a curiosity. Claude Code became my daily driver — with configuration tailored to my projects. Things I used to do by hand (review, exploring unfamiliar codebases, codemods, scaffold) now happen faster, but still under my control — the agent doesn't merge on its own, every output goes through build and review.",
-    "notSpecialist": "I don't call myself an \"AI Specialist\".",
-    "selfDefinition": "I call myself a developer who deliberately uses AI in daily work — and who, thanks to that, ships more.",
-    "difference": "That's the distinction I care about: my track record is in writing production code — AI is the way that code is now produced faster.",
-    "para4": "Before I started programming professionally, I worked for 14 years as an electrician and installer of CCTV, alarm, fire safety and smart home systems. For most software projects this background is neutral. On projects that bridge software and the physical world — IoT, smart buildings, automation — it gives me a perspective a pure developer doesn't have.",
-    "para5": "I value end-to-end work: from analyzing the problem, through implementation, to maintenance. I don't leave projects in a \"PoC\" state. I don't promise things I can't deliver."
+    "short": "I'm a self-sufficient developer who runs projects end-to-end and has my own agent-based AI workflow. I've spent 4+ years building commercial mobile apps in Flutter and Unity, and generative tools have extended my stack to websites and web apps. I treat AI as a workshop I steer deliberately at every stage — from architecture through release and maintenance.",
+    "para1": "The core of my commercial experience is mobile apps. In Flutter I built products from the first line of code: REST API and Firebase integrations, authentication, data sync, offline mode, store releases and ongoing maintenance. In Unity I worked on interactive applications. In both stacks I keep the code readable and the architecture ready to grow years down the line.",
+    "para2": "The heart of my daily work is programming with AI agents. Claude Code is my daily driver, configured for specific projects: my own subagents, hooks, MCP servers and skills for repeatable tasks. I run the agent in a loop through review, exploring unfamiliar codebases, codemods and scaffolding, so I close more in the same amount of time. Control stays on my side — the agent doesn't merge on its own, and every output goes through build and my code review.",
+    "para3": "Working with agents shifts where the difficulty sits. Framing the task precisely, designing the context and verifying what comes back all matter more — because the model speeds up good decisions and bad ones alike. I treat it as engineering: I build verifiable loops where generation is fast and the quality gate stays hard. That lets me, as one person, run a project at a scope that used to take a team, and carry it from analysis through maintenance.",
+    "pullquote": "I'm a developer who deliberately directs AI agents — and because of that I deliver more quality, faster, across the whole project cycle.",
+    "para4": "I came to programming after fourteen years as an electrician and installer of CCTV, alarm, fire-safety and smart-home systems. On projects where software meets hardware — IoT, automation, smart buildings — that background gives me a genuinely unique perspective."
   },
   "education": {
     "eyebrow": "Section 07 · Education",
-    "title": "Education and certificates",
+    "title": "Education",
     "additionalLabel": "Additional qualifications",
     "certificatesAria": "Certificates and qualifications",
     "fields": {

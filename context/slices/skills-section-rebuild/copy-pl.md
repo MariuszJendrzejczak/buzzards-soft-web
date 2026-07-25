@@ -151,7 +151,7 @@ context engineering, prompt caching, function calling, tool use, structured outp
 
 ## 4. Untouched / removed (for Phase 2 reference)
 
-- `sections.33` (Soft skills) — **UNCHANGED**, keep all 5 existing bullets as-is.
+- `sections.33` — PL title changed to **„Umiejętności miękkie"** (owner, mid-Phase-2: „Soft skills" was an anglicism in PL copy); all 5 bullets **UNCHANGED**. Phase 3: set an EN title (keep „Soft skills") and a native SV title.
 - `sections.34`, `sections.35` — **REMOVED** (delete spec entries + i18n keys, all locales).
 - `whatICanDeliver.variantGrowing` — key may stay (parity-harmless); 3.2 flips to `core`.
 

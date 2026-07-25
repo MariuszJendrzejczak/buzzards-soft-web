@@ -28,6 +28,7 @@ next-intl, deployed to Firebase Hosting. Contact form relays through one Cloud F
 
 - **Conventional Commits** (`fix(build): …`, `feat(offer): …`, `test(portfolio): …`, `chore(deps): …`).
 - **Trunk-based on `main`** — solo repo, commits land on `main` directly; use a `feature/<slug>` branch for larger changes. **Never push to `main` or merge a PR without an explicit user instruction.**
+- **Creating a slice is user-only.** The agent **never** decides on its own to open a new slice (a `context/slices/<change-id>/` folder). It may only **propose** one and stop; a slice is created **only** by the skills that do it (`/new`, and the skills that drive it — `/walker`, `/slice-form-live-feedback`), run **only on the user's explicit, live request** — never self-invoked. A generated prompt / skill hand-off / the agent's own judgment does **not** authorize it. (Global rule: see `~/.claude/CLAUDE.md` "Creating a new slice is user-only".)
 - No formatter is configured — **ESLint is the style authority**. Match the surrounding code.
 
 ## Deploy

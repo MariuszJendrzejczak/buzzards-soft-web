@@ -279,8 +279,8 @@ mirror/getter tests for the static spec.
 
 #### Automated
 
-- [x] 2.1 Type-check + static export pass: `npm run build`
-- [x] 2.2 Linting passes: `npm run lint`
+- [x] 2.1 Type-check + static export pass: `npm run build` — 29453e9
+- [x] 2.2 Linting passes: `npm run lint` — 29453e9
 
 #### Manual
 

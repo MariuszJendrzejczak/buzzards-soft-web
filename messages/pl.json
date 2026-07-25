@@ -98,11 +98,11 @@
       "mobile": "Mobile Developer",
       "web": "Fullstack Developer"
     },
-    "badgeSub": "4+ lata komercyjnego programowania. Pracuję z agentami AI codziennie.",
+    "badgeSub": "4 lata komercyjnego programowania aplikacji mobilnych na Android i iOS.",
     "headingLead": "Samodzielny, kompletny developer ",
     "headingHighlight": "z własnym workflow agentowym",
     "headingTrail": " — dostarczam end-to-end.",
-    "sub": "Zanim przyszła era AI, tworzyłem komercyjne aplikacje mobilne we Flutterze i Unity. Dziś, dzięki narzędziom generatywnym, dodałem do tego stacku strony i aplikacje internetowe. Prowadzę projekt od pomysłu po wdrożenie, dostosowując się do wymagań, jakie stawia projekt czy klient.",
+    "sub": "Zanim przyszła era AI, tworzyłem komercyjne aplikacje mobilne we Flutterze i Unity. Dziś, dzięki narzędziom generatywnym, dodałem do tego stacku strony i aplikacje internetowe. Prowadzę realizację od pomysłu po wdrożenie, dostosowując się do wymagań, jakie stawia projekt czy klient.",
     "ctaPrimary": "Porozmawiajmy o roli lub projekcie",
     "ctaSecondary": "Zobacz, jak pracuję",
     "trustAria": "Skrót doświadczenia",
@@ -229,9 +229,12 @@
             }
           },
           "unity": {
-            "title": "Wcześniej — Unity / C#",
+            "title": "Aplikacje w Unity / C#",
             "bullets": {
-              "1": "aplikacje interaktywne w Unity / C# — wcześniejszy obszar mojej pracy, dziś skupiam się wyłącznie na mobile."
+              "1": "aplikacje mobilne i interaktywne budowane w Unity / C#,",
+              "2": "integracje: Firebase, REST API, Unity IAP,",
+              "3": "responsywne UI (UI Toolkit / Canvas) oraz oddzielanie logiki C# od MonoBehaviour,",
+              "4": "wzorce projektowe w praktyce i własne narzędzia edytorskie usprawniające pracę zespołu; nacisk na czytelność kodu i standardy."
             }
           },
           "common": {
@@ -256,7 +259,7 @@
         }
       },
       "33": {
-        "title": "Soft skills",
+        "title": "Umiejętności miękkie",
         "bullets": {
           "1": "samodzielność i ownership projektu — od briefu do utrzymania,",
           "2": "komunikacja z klientem, zespołem, project managerem,",
@@ -299,7 +302,7 @@
   },
   "education": {
     "eyebrow": "Sekcja 07 · Wykształcenie",
-    "title": "Wykształcenie i certyfikaty",
+    "title": "Wykształcenie",
     "additionalLabel": "Dodatkowe uprawnienia",
     "certificatesAria": "Certyfikaty i uprawnienia",
     "fields": {

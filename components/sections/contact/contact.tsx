@@ -4,7 +4,8 @@ import { ScrollReveal } from "@/components/shared/scroll-reveal";
 
 import { ContactForm } from "./contact-form";
 import { ContactInfo } from "./contact-info";
-import { CvDownloads } from "./cv-downloads";
+// CV downloads temporarily hidden (per request) — restore <CvDownloads /> below when CV is ready.
+// import { CvDownloads } from "./cv-downloads";
 
 export async function Contact() {
   const t = await getTranslations("contact");
@@ -48,7 +49,7 @@ export async function Contact() {
               </div>
             </div>
 
-            <CvDownloads />
+            {/* CV downloads temporarily hidden — <CvDownloads /> */}
           </div>
 
           <div className="order-1 lg:order-2">

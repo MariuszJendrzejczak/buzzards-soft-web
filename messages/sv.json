@@ -98,11 +98,11 @@
       "mobile": "Mobile Developer",
       "web": "Fullstack Developer"
     },
-    "badgeSub": "4+ års kommersiell utveckling. Jag jobbar med AI-agenter varje dag.",
+    "badgeSub": "4 års kommersiell utveckling av mobilappar för Android och iOS.",
     "headingLead": "En självständig, komplett utvecklare ",
     "headingHighlight": "med mitt eget agentiska arbetsflöde",
     "headingTrail": " — jag levererar end-to-end.",
-    "sub": "Före AI-eran byggde jag kommersiella mobilappar i Flutter och Unity. Idag, med generativa verktyg, har jag lagt till webbplatser och webbappar i den stacken. Jag driver ett projekt från idé till lansering och anpassar mig efter vad projektet eller kunden kräver.",
+    "sub": "Före AI-eran byggde jag kommersiella mobilappar i Flutter och Unity. Idag, med generativa verktyg, har jag lagt till webbplatser och webbappar i den stacken. Jag driver leveransen från idé till lansering och anpassar mig efter vad projektet eller kunden kräver.",
     "ctaPrimary": "Vi pratar om en roll eller ett projekt",
     "ctaSecondary": "Se hur jag jobbar",
     "trustAria": "Sammanfattning av erfarenhet",
@@ -218,20 +218,23 @@
             "title": "Mobil utveckling — Flutter / Dart",
             "bullets": {
               "1": "mobilappar för Android + iOS från grunden och vidareutveckling av befintliga,",
-              "2": "responsivt och skalbart UI, egna widgets, optimering av tillgångar,",
-              "3": "state management med Riverpod, Freezed, Dependency Injection, Clean Architecture,",
-              "4": "integrationer mot REST API och Firebase, autentisering, sessioner, offline-first data,",
-              "5": "debugging på fysiska enheter, publicering på Google Play / App Store."
+              "2": "arkitektur: Clean Architecture, Riverpod, Dependency Injection, SOLID, use-cases, Freezed, json_serializable,",
+              "3": "navigering och codegen: go_router, deep links, build_runner,",
+              "4": "data och backend: REST API, Firebase, offline-first med synkronisering, Hive, shared_preferences,",
+              "5": "autentisering: JWT med token-förnyelse, secure storage, sessioner, social inloggning,",
+              "6": "enhetsintegrationer: kamera, QR- / streckkodsskanning, Google Maps, PDF-generering, POS / skrivare,",
+              "7": "notiser och monetisering: FCM, in_app_purchase, RevenueCat, AdMob,",
+              "8": "UI och animationer: responsivt UI, implicit- / Tween- / Hero-animationer, Lottie,",
+              "9": "kvalitet och leverans: CI/CD på Codemagic, flavors, Git-flow, code review, publicering på Google Play / App Store; testning som standard i processen."
             }
           },
           "unity": {
-            "title": "Interaktiva appar och spel — Unity / C#",
+            "title": "Appar i Unity / C#",
             "bullets": {
-              "1": "spel och interaktiva verktyg, UI Toolkit / Canvas / responsivt UI,",
-              "2": "integrationer med Firebase, REST API, Unity IAP,",
-              "3": "designmönster: State Machine, Pooling, Scriptable Object,",
-              "4": "separation av MonoBehaviour från ren C#-logik, omsorg om läsbarhet och standarder,",
-              "5": "byggande av editor-verktyg och designer-verktyg."
+              "1": "mobil- och interaktiva appar byggda i Unity / C#,",
+              "2": "integrationer: Firebase, REST API, Unity IAP,",
+              "3": "responsivt UI (UI Toolkit / Canvas) och separation av C#-logik från MonoBehaviour,",
+              "4": "designmönster i praktiken och egna editor-verktyg som snabbar upp teamet; fokus på läsbar kod och standarder."
             }
           },
           "common": {
@@ -307,18 +310,16 @@
   "about": {
     "eyebrow": "Avsnitt 06 · Om mig",
     "title": "Om mig",
-    "short": "En utvecklare med 4+ års kommersiell erfarenhet (Flutter, Unity) för vilken AI är en verkstad, inte en kuriositet. Fokuserad på att leverera mjukvara — snabbare och renare tack vare verktyg jag själv konfigurerar. Tidigare 14 år inom tekniska installationer — användbart för projekt som broar mjukvara och hårdvara.",
-    "para1": "Det mesta av mitt kommersiella arbete har varit Flutter-mobilappar (Honeti) — från första kodraden, genom integrationer mot REST API och Firebase, autentisering, datasynkronisering och offline-arbete, hela vägen till butikslanseringar och underhåll. Jag har också jobbat i Unity med spel och interaktiva appar. I båda stackarna lägger jag stark vikt vid kodens läsbarhet, arkitekturens skalbarhet och att projektet ska gå att utveckla även efter flera år.",
-    "para2": "Det senaste året har mitt arbetsflöde gått igenom en märkbar förändring. Jag började behandla AI-agenter som ett verkstadsverktyg, inte en kuriositet. Claude Code blev mitt vardagsverktyg — med konfiguration anpassad till mina projekt. Saker jag förr gjorde för hand (review, utforskning av främmande kodbaser, codemods, scaffold) sker idag snabbare, men fortfarande under min kontroll — agenten mergar inte själv, varje output går genom build och review.",
-    "notSpecialist": "Jag kallar mig inte \"AI Specialist\".",
-    "selfDefinition": "Jag kallar mig en utvecklare som medvetet använder AI i det dagliga arbetet — och som tack vare det levererar mer.",
-    "difference": "Det är skillnaden jag bryr mig om: mitt track record finns i att skriva produktionskod — AI är sättet som koden nu produceras snabbare på.",
-    "para4": "Innan jag började programmera professionellt jobbade jag i 14 år som elektriker och installatör av CCTV-, larm-, brandsäkerhets- och smart home-system. För de flesta mjukvaruprojekt är denna bakgrund neutral. I projekt som broar mjukvara och den fysiska världen — IoT, smarta byggnader, automation — ger den mig ett perspektiv som en ren utvecklare inte har.",
-    "para5": "Jag värderar end-to-end-arbete: från analys av problemet, genom implementation, till underhåll. Jag lämnar inte projekt i \"PoC\"-tillstånd. Jag lovar inte saker jag inte kan leverera."
+    "short": "Jag är en självgående utvecklare som driver projekt end-to-end och har ett eget agentbaserat AI-arbetsflöde. Jag har 4+ års kommersiell erfarenhet av mobilappar i Flutter och Unity, och generativa verktyg har utökat min stack med webbplatser och webbappar. Jag ser AI som en verkstad jag styr medvetet i varje steg — från arkitektur till lansering och underhåll.",
+    "para1": "Kärnan i min kommersiella erfarenhet är mobilappar. I Flutter byggde jag produkter från första kodraden: integrationer mot REST API och Firebase, autentisering, datasynkronisering, offline-läge, butikslanseringar och löpande underhåll. I Unity arbetade jag med interaktiva applikationer. I båda stackarna håller jag koden läsbar och arkitekturen redo att växa även efter flera år.",
+    "para2": "Hjärtat i mitt dagliga arbete är programmering med AI-agenter. Claude Code är mitt vardagsverktyg, konfigurerat för specifika projekt: egna subagenter, hooks, MCP-servrar och skills för återkommande uppgifter. Jag kör agenten i en loop genom review, utforskning av främmande kodbaser, codemods och scaffolding, så att jag hinner mer på samma tid. Kontrollen stannar hos mig — agenten mergar inte själv, och varje output går genom build och min code review.",
+    "para3": "Att arbeta med agenter flyttar var svårigheten ligger. Att formulera uppgiften exakt, designa kontexten och verifiera det som kommer tillbaka väger tyngre — för modellen snabbar på både bra och dåliga beslut. Jag behandlar det som ingenjörsarbete: jag bygger verifierbara loopar där genereringen är snabb och kvalitetsgrinden förblir hård. Det låter mig som en person driva ett projekt i en omfattning som förr krävde ett team, och ta det från analys till underhåll.",
+    "pullquote": "Jag är en utvecklare som medvetet leder AI-agenter — och tack vare det levererar jag mer kvalitet, snabbare, över hela projektets livscykel.",
+    "para4": "Jag kom till programmering efter fjorton år som elektriker och installatör av CCTV-, larm-, brandsäkerhets- och smart home-system. I projekt där mjukvara möter hårdvara — IoT, automation, smarta byggnader — ger den bakgrunden mig ett genuint unikt perspektiv."
   },
   "education": {
     "eyebrow": "Avsnitt 07 · Utbildning",
-    "title": "Utbildning och certifikat",
+    "title": "Utbildning",
     "additionalLabel": "Ytterligare behörigheter",
     "certificatesAria": "Certifikat och behörigheter",
     "fields": {
