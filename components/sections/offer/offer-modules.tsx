@@ -3,15 +3,13 @@ import { getTranslations } from "next-intl/server";
 import { ScrollReveal } from "@/components/shared/scroll-reveal";
 
 const MODULE_KEYS = [
-  "localVisibility",
-  "animations",
+  "blog",
   "themeToggle",
+  "animations",
   "extraLanguage",
   "leads",
-  "booking",
+  "localVisibility",
   "extraPage",
-  "blog",
-  "conversionTracking",
   "domainEmail",
 ] as const;
 

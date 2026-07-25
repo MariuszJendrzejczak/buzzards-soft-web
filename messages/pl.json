@@ -398,7 +398,7 @@
     "copyFailed": "Nie udało się skopiować."
   },
   "footer": {
-    "tagline": "Flutter · Unity · AI-Augmented Mobile Developer. Otwarty na role i kontrakty.",
+    "tagline": "Flutter · Unity · AI-Native Mobile Developer. Otwarty na role i kontrakty.",
     "linksHeading": "Strona",
     "registryHeading": "Dane rejestrowe",
     "links": {
@@ -853,49 +853,41 @@
       }
     },
     "modules": {
-      "heading": "Rozbuduj stronę o to, czego potrzebujesz",
+      "heading": "Przykładowe moduły",
       "colModule": "Moduł",
       "colPrice": "Cena",
       "items": {
-        "localVisibility": {
-          "name": "Widoczność lokalna (Google Business, Mapy, opinie)",
-          "price": "+250 zł"
-        },
-        "animations": {
-          "name": "Animacje i efekty",
-          "price": "+400 zł"
+        "blog": {
+          "name": "Blog i aktualności",
+          "price": "+650 zł"
         },
         "themeToggle": {
           "name": "Tryb ciemny i jasny (przełącznik)",
-          "price": "+400 zł"
+          "price": "+500 zł"
+        },
+        "animations": {
+          "name": "Animacje i efekty",
+          "price": "+500 zł"
         },
         "extraLanguage": {
           "name": "Dodatkowy język",
-          "price": "+400 zł / język"
+          "price": "+450 zł / język"
         },
         "leads": {
           "name": "Zbieranie leadów (lista mailingowa albo arkusz zgłoszeń)",
-          "price": "+400 zł (oba +550)"
+          "price": "+350 zł (oba +500)"
         },
-        "booking": {
-          "name": "Rezerwacje i kalendarz",
-          "price": "+350 zł"
+        "localVisibility": {
+          "name": "Widoczność lokalna (Google Business, Mapy, opinie)",
+          "price": "+300 zł"
         },
         "extraPage": {
           "name": "Dodatkowa podstrona",
           "price": "+300 zł"
         },
-        "blog": {
-          "name": "Blog i aktualności",
-          "price": "+700 zł"
-        },
-        "conversionTracking": {
-          "name": "Śledzenie konwersji pod reklamy",
-          "price": "+250 zł"
-        },
         "domainEmail": {
           "name": "Firmowa poczta na Twojej domenie",
-          "price": "+150 zł"
+          "price": "+250 zł"
         }
       }
     },
@@ -1205,7 +1197,7 @@
     }
   },
   "rootMetadata": {
-    "title": "Buzzards Soft — AI-Augmented Mobile Developer",
+    "title": "Buzzards Soft — AI-Native Mobile Developer",
     "description": "Programista (Flutter, Unity), który przebudował swój workflow wokół agentów AI. Otwarty na role i kontrakty."
   }
 }
