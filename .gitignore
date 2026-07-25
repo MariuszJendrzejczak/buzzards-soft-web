@@ -61,3 +61,7 @@ lighthouse-*.html
 /doc-local/
 /sprint-portfolio-integration/
 /.claude/
+
+# local scratch / working images (not part of the repo)
+/scripts/_tmp/
+/docs/photo/
