@@ -7,9 +7,9 @@ repository: buzzards_soft_web
 topic: "Is Basic (1299/999 zł) too low vs the PL market, and how to anchor toward Full"
 tags: [research, pricing, offer, market-benchmark, anchoring, web-pages-offer]
 status: complete
-last_updated: 2026-07-22
+last_updated: 2026-07-25
 last_updated_by: Claude (opus-4-8)
-last_updated_note: "Follow-up — Full analysis, Basic 1999 / Full 2999 scenario, and the CMS/self-edit gap"
+last_updated_note: "Follow-up (d) — per-module market benchmark: are the add-on module prices too low? + definition of 'śledzenie konwersji pod reklamy'"
 ---
 
 # Research: Is Basic too low, and how to anchor toward Full?
@@ -613,6 +613,170 @@ stałych darmowych limitach Google, których strona firmowa nigdy nie dotyka —
 Ustawię alert budżetowy na 1 zł na Twój projekt, żeby od razu przyszedł mail, gdyby cokolwiek się naliczyło.
 Uczciwie: alert powiadamia, nie blokuje — Google nie ma prostego przełącznika „nigdy mnie nie obciążaj" dla
 tych usług; jedyna automatyka, która twardo zatrzymuje koszty, wyłączyłaby też stronę."
+
+---
+
+## Follow-up Research 2026-07-25 (d) — Benchmark cen MODUŁÓW (add-onów): czy nie są za niskie?
+
+Poprzednie rundy benchmarkowały **pakiety** (Basic/Wgląd Full) i architekturę CMS-a. **Nikt dotąd nie
+zbenchmarkował cen samych MODUŁÓW** — a to jest pytanie ownera. Ta runda robi benchmark per-moduł względem
+żywego rynku PL 2026 (3 równoległe pod-agenty, każda cena cytowana z realnego cennika). Wszystkie kwoty netto.
+
+### Zestawienie: cena ownera vs rynek PL (jednorazowo, netto)
+
+| Moduł | Cena ownera | Rynek PL (jednorazowo) | Werdykt | Źródła |
+|---|---|---|---|---|
+| **Śledzenie konwersji pod reklamy** | **+250** | **1000 (sam GTM) – 2800** (pełne GA4+Ads+Pixel+GTM) | 🔴 **drastycznie za nisko** (~10× pod rynkiem) | cenauslug.pl (GTM ~1050, GA4 1800–2800), pawelpiekarski.pl |
+| **Rezerwacje i kalendarz** | **+350** | **1600** standalone / **500–3000** jako integracja (4–10h) | 🔴 **drastycznie za nisko** (~5× pod, najbardziej pracochłonny moduł) | cenauslug.pl (1600), growto.pl (500–3000/4–10h) |
+| **Blog i aktualności** | **+700** | **500–2500** (moduł postów) / **1500–4000** (pełny CMS) | 🟠 za nisko | zdobywcysieci.pl (500–2500), growto.pl (CMS 1500–4000) |
+| **Widoczność lokalna (GBP)** | **+250** | **400–1500** (floor ~300 za gołą konfigurację) | 🟠 za nisko (pod floorem) | kcmobile.pl (od 500), konkurometr.pl (400–700 / 800–1500) |
+| **Firmowa poczta na domenie** | **+150** | **300–430** | 🟠 za nisko (~⅓ stawki specjalisty) | pancaro.pl (430), jakwybrachosting.pl |
+| **Dodatkowy język / język** | **+400** | flat **600** / heurystyka **~30% projektu ≈ 600–900** | 🟠 za nisko | diverto.pl (600), growto.pl (1500–3500 ≈ 30%) |
+| **Animacje i efekty** | **+400** | brak czystego itemu; efort **4–8h ≈ 600–1200**; jedyny item webwave 800–3000 | 🟡 nisko / na krawędzi | webwavecms.com (800–3000, zaszumione) |
+| **Tryb ciemny i jasny** | **+400** | brak itemu na rynku; efort **4–7h ≈ 500–1050** | 🟡 nisko / break-even | brak cennika — tylko poradniki; reasoning po godzinach |
+| **Zbieranie leadów (newsletter)** | **+400** (oba +550) | **200–350** | 🟢 OK / lekko wysoko | thenewlook.pl (350 standalone / 150 z budową) |
+| **Dodatkowa podstrona** | **+300** | **50–400**, klaster **200–260** | 🟢 OK / lekko wysoko | diverto.pl (250), growto.pl (200–400) |
+
+### Werdykt ogólny
+
+**Tak — moduły jako zestaw są za nisko wycenione, a dwa z nich drastycznie.** Z dziesięciu modułów:
+**dwa 🟢 dobrze** (leady, dodatkowa podstrona), **dwa 🟡 na efort-floorze** (animacje, tryb ciemny), **cztery 🟠
+za nisko** (blog, GBP, poczta, język), **dwa 🔴 drastycznie za nisko** (śledzenie konwersji, rezerwacje).
+
+Dwa niezależne dowody „za nisko", tak jak przy pakietach:
+
+1. **Vs. efort ownera (nie tylko vs rynek).** Kluczowe rozróżnienie: solo dev z AI **może świadomie siedzieć
+   poniżej stawek agencyjnych/specjalistycznych** — to spójne z pozycjonowaniem „przystępny custom". ALE
+   **rezerwacje (+350)** i **śledzenie konwersji (+250)** są poniżej **jego własnego floora robocizny**:
+   rezerwacje to 4–10h realnej pracy integracyjnej, a konwersje to GA4+Ads+Pixel+GTM+Consent Mode — kilka
+   godzin konfiguracji, którą specjaliści liczą 1000–2800. Przy +250/+350 to **near-zero-margin albo pod
+   kreską za najbardziej wartościowe moduły** — to nie „tanie pozycjonowanie", to niedoszacowanie.
+2. **Vs. sygnał jakości (spójność z Postawą B).** Runda pakietowa ustawiła Basic 1999 / Full 2999 = „przystępny
+   custom, nie tani szablon". **Moduł konwersji za +250, który specjaliści liczą 1500+, sygnalizuje „hobby",
+   nie „profesjonalista"** — podkopuje to samo pozycjonowanie, które podniesienie pakietów miało zbudować. Cena
+   modułu jest sygnałem tak samo jak cena pakietu.
+
+### Niuans, który broni części niskich cen (marginal cost ownera)
+
+Część modułów jest tania, bo **marginalny koszt na TYM stacku jest realnie niski** — i to jest OK:
+- **Dodatkowa podstrona (+300):** komponenty już są, niska robocizna → cena słusznie w górnym paśmie rynku.
+- **Zbieranie leadów (+400):** formularz kontaktowy już istnieje, dochodzi tylko podpięcie newslettera → dobrze.
+- **Dodatkowy język (+400):** i18n **już wpięte** (strona jest trójjęzyczna: pl/en/sv, `i18n/routing.ts`),
+  transkreacja własnymi skillami → marginalny koszt niski. Ale rynek broni 600, więc jest zapas w górę.
+- **Tryb ciemny (+400):** ⚠ tu jest pułapka — **owner ZNA efort**, bo w tym repo oba motywy są first-class.
+  Dla strony klienta to realna praca projektowa (projekt OBU motywów, nie klasa CSS) → +400 to floor.
+
+Wniosek: „tanie" jest uzasadnione tam, gdzie marginalny koszt jest realnie bliski zera (podstrona, leady,
+język). „Tanie" jest **błędem** tam, gdzie moduł to realne godziny (rezerwacje, konwersje, blog) albo realny
+projekt (tryb ciemny, animacje).
+
+### Twarde sprzężenie z kotwicą Full (nie przeoczyć przy zmianie)
+
+⚠ **Trzy moduły, które chcę podnieść, to dokładnie te wliczone w „+1050 zł modułów" w Full** — `localVisibility
+250 + animations 400 + themeToggle 400 = 1050` = `full.extrasValue` (`messages/pl.json:808-852`, potwierdzone
+w rundzie 1). Podniesienie ich:
+- **Wzmacnia** narrację Full („+1400 zł modułów za +1000 zł dopłaty" jest jeszcze mocniejsze niż „+1050 za +1000") —
+  dobre dla kotwicy.
+- **ALE** wymaga aktualizacji `full.extrasValue` w copy + parytet i18n (`messages/{pl,en,sv}.json`) + test
+  i18n-completeness. Nie można ruszyć samych modułów bez przeliczenia value-story Full.
+
+### Rekomendacja kierunkowa (do decyzji ownera — NIE wdrażać bez zgody)
+
+Priorytet wg dotkliwości niedoszacowania:
+1. **Śledzenie konwersji: +250 → ~600–900.** Wciąż mocno pod specjalistą (1500+), uczciwe dla solo, ale przestaje
+   sygnalizować „hobby". Największa dźwignia.
+2. **Rezerwacje i kalendarz: +350 → ~800–1200.** Najbardziej pracochłonny moduł — powinien być jednym z
+   **najdroższych** add-onów, nie jednym z najtańszych.
+3. **Blog: +700 → ~900–1200.** Realny build; wiąże się z luką CMS/self-edit z rundy (b) — jeśli blog = treść
+   edytowalna, to zależy od panelu, którego jeszcze nie ma.
+4. **Dodatkowy język: +400 → ~600.** Do jedynego flat-comparatora rynku (600) i heurystyki „30% projektu".
+5. **GBP +250 i poczta +150 → ~350–450 każdy.** Oba pod nawet budżetowym floorem konfiguracji.
+6. **Animacje / tryb ciemny: +400 → ~500–600**, jeśli sprzedawane jako dopracowane (nie templatowe).
+7. **Zostawić: leady +400, dodatkowa podstrona +300** — jedyne dwa dobrze wycenione.
+
+Ważne zastrzeżenie (jak w rundzie 1): to **nie** „gonić rynek w górę na siłę". Cel: cena modułu ma
+**odzwierciedlać albo realny efort ownera, albo realną wartość** — a nie zjeżdżać pod jego własny floor
+robocizny (rezerwacje, konwersje) ani sygnalizować amatorstwa przy pakiecie pozycjonowanym jako profesjonalny.
+
+### Co to jest „śledzenie konwersji pod reklamy" (odpowiedź na drugie pytanie ownera)
+
+**Definicja (prostym językiem):** to warstwa pomiarowa, która pozwala płatnym kampaniom (Google Ads,
+Meta/Facebook Ads) wiedzieć, **które kliknięcia w reklamę zamieniły się w realny efekt** — wysłany formularz,
+kliknięcie „zadzwoń", rezerwację, zakup. W praktyce to konfiguracja: **GA4** (Google Analytics 4), **tagów
+konwersji Google Ads**, **Piksela Meta + Conversions API**, zwykle wdrożonych przez **Google Tag Manager
+(GTM)**, plus zdefiniowanie **zdarzeń konwersji**, które się liczą, i **Consent Mode / zgody RODO**.
+
+**Po co to (dwa powody):**
+1. **Bez tego wydajesz budżet reklamowy na ślepo.** Widzisz kliknięcia, ale nie wiesz, **która reklama, słowo
+   kluczowe czy grupa odbiorców** przyniosła realne zapytanie — więc nie umiesz odciąć tego, co przepala pieniądze.
+2. **Automatyczne licytowanie reklam KARMI SIĘ tymi zdarzeniami.** Smart Bidding Google i optymalizacja Meta
+   optymalizują pod konwersje, które im przekażesz — **bez dokładnych sygnałów konwersji algorytm optymalizuje
+   pod nic**, więc ten sam budżet kupuje dużo mniej realnych leadów.
+
+Krótko: **to pomiarowy fundament, dzięki któremu płatna reklama jest mierzalna i optymalizowalna, zamiast być
+loterią.** Dlatego rynek liczy pełne wdrożenie 1000–2800 zł — i dlatego +250 zł to najdotkliwiej niedoszacowany
+moduł w cenniku.
+
+### Code References (nowe / potwierdzone)
+
+- `context/foundation/offer-facts.md` (sekcja „Add-on modules") — kanoniczny cennik modułów, do aktualizacji, jeśli ceny się zmienią.
+- `messages/pl.json:808-852` — `modules.items`: cennik modułów w copy (parytet i18n → en/sv też).
+- `messages/pl.json` — `full.extrasValue` „+1050 zł": suma localVisibility 250 + animations 400 + themeToggle 400; ZMIANA którejkolwiek z tych trzech wymaga przeliczenia tej linii.
+- `tests/unit/offer-pricing.test.tsx` — test spójności cen (sprawdzić, czy asertuje sumę modułów Full).
+- `i18n/routing.ts` — pl/en/sv (dowód, że i18n jest już wpięte → marginalny koszt „dodatkowego języka" niski).
+
+### External Sources (live, 2026-07-25 — benchmark modułów)
+
+Wszystkie netto; pełne cytaty w wynikach pod-agentów.
+
+**Śledzenie konwersji / GA4 / GTM / Piksel:**
+- cenauslug.pl — GTM konfiguracja ~1000–1100 (śr. 1050): https://cenauslug.pl/firma-i-biuro/konfiguracja-google-tag-manager-gtm
+- cenauslug.pl — GA4 wdrożenie 1800–2800 (śr. 2386): https://cenauslug.pl/firma-i-biuro/konfiguracja-analityki-internetowej-google-analytics-4
+- pawelpiekarski.pl — zakres GA4+Pixel+Ads+Consent Mode: https://pawelpiekarski.pl/sledzenie-konwersji-mads/ · kcmobile.pl: https://kcmobile.pl/artykuly/konwersje-google-ads-sledzenie-konfiguracja/
+
+**Rezerwacje / kalendarz:**
+- cenauslug.pl — implementacja systemu rezerwacji ~1600: https://cenauslug.pl/firma-i-biuro/implementacja-systemu-rezerwacji-online-na-stronie
+- growto.pl — integracje +500–3000 / 4–10h każda: https://growto.pl/blog/ile-kosztuje-strona-firmowa-2026
+- projektowaniestroncennik.pl — strona z kalendarzem od 4000: https://projektowaniestroncennik.pl/
+
+**Blog / CMS:**
+- zdobywcysieci.pl — blog 500–2500: https://zdobywcysieci.pl/wiedza/ile-kosztuje-strona-internetowa/
+- growto.pl — CMS +1500–4000: https://growto.pl/blog/ile-kosztuje-strona-firmowa-2026
+
+**Widoczność lokalna (GBP):**
+- kcmobile.pl — optymalizacja od 500 jednorazowo: https://kcmobile.pl/wizytowka-google/
+- konkurometr.pl — tier 400–700 / 800–1500: https://konkurometr.pl/blog/wizytowka-google-ile-kosztuje
+- multisub.pl — od 299: https://www.multisub.pl/pozycjonowanie-wizytowki-google-cena
+
+**Firmowa poczta na domenie:**
+- pancaro.pl — Google Workspace setup 430 (MX/SPF/DKIM/DMARC, do 5 kont): https://pancaro.pl/uslugi/google-workspace/
+- jakwybrachosting.pl: https://jakwybrachosting.pl/google-workspace-domena/ · fotc.com: https://fotc.com/pl/blog/gmail-we-wlasnej-domenie/
+
+**Zbieranie leadów / newsletter:**
+- thenewlook.pl — MailerLite→WP 350 standalone / 150 z budową: https://thenewlook.pl/mailerlite-wordpress-newsletter/
+- icommedia.pl — integracja WP z newsletterem: https://icommedia.pl/jak-zintegrowac-wordpress-z-newsletterem-mailerlite-mailchimp/
+
+**Dodatkowa podstrona:**
+- diverto.pl — 250/podstronę: https://diverto.pl/strony-internetowe-cennik/
+- growto.pl — +200–400 po piątej: https://growto.pl/blog/ile-kosztuje-strona-firmowa-2026
+
+**Dodatkowy język:**
+- diverto.pl — wersja językowa flat 600: https://diverto.pl/strony-internetowe-cennik/
+- growto.pl — wielojęzyczność +1500–3500 ≈ 30% projektu: https://growto.pl/blog/ile-kosztuje-strona-firmowa-2026
+- zdobywcysieci.pl — tłumaczenie ~0,3–0,5 zł/słowo (osobno): https://zdobywcysieci.pl/wiedza/ile-kosztuje-strona-internetowa/
+
+**Animacje / tryb ciemny (rzadko itemizowane) + stawki:**
+- webwavecms.com — animacje/efekty 800–3000 (zaszumione, miesza motion-graphics): https://webwavecms.com/blog/ile-kosztuje-strona-internetowa
+- tryb ciemny — brak publikowanej ceny w PL; tylko poradniki (soluma.pl, krakweb.pl, webgrow.pl) → wycena po godzinach
+- czujowski.pl — stawka PL freelancer mid 80–150/h, senior 150–280/h: https://czujowski.pl/blog/ile-bierze-programista-za-strone-internetowa.html
+- contentninja.pl / yetiweb.pl — moduły funkcjonalne 500–5000 zł (add-on floor ~500): https://contentninja.pl/ile-kosztuze-strona-internetowa/
+
+### Open Questions (runda d)
+
+1. **Decyzja cenowa modułów** — czy podnosić, i o ile (patrz rekomendacja kierunkowa)? Priorytet: konwersje + rezerwacje.
+2. **Sprzężenie z Full** — jeśli ruszasz localVisibility/animations/themeToggle, przelicz `full.extrasValue` i zaktualizuj copy + i18n + test.
+3. **Blog vs CMS** — cena bloga zależy od tego, czy treść jest edytowalna przez klienta (panel z rundy b, którego jeszcze nie ma).
+4. **Realizacja** — każda zmiana ceny to `messages/{pl,en,sv}.json` (parytet) + `offer-facts.md` + `tests/unit/offer-pricing.test.tsx`.
 
 ### Rozstrzygnięcie: karta rozstrzyga architekturę (owner-input 2026-07-22)
 

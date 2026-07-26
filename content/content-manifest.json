@@ -1,0 +1,3590 @@
+{
+  "site": "buzzards-soft",
+  "contractVersion": "1.0.0",
+  "sections": [
+    {
+      "id": "hero",
+      "order": 1,
+      "label": {
+        "pl": "Hero"
+      },
+      "live": true
+    },
+    {
+      "id": "certification",
+      "order": 2,
+      "label": {
+        "pl": "Warsztat AI"
+      },
+      "live": true
+    },
+    {
+      "id": "whatICanDeliver",
+      "order": 3,
+      "label": {
+        "pl": "Umiejętności"
+      },
+      "live": true
+    },
+    {
+      "id": "portfolio",
+      "order": 4,
+      "label": {
+        "pl": "Portfolio"
+      },
+      "live": true
+    },
+    {
+      "id": "about",
+      "order": 6,
+      "label": {
+        "pl": "O mnie"
+      },
+      "live": true
+    },
+    {
+      "id": "education",
+      "order": 7,
+      "label": {
+        "pl": "Wykształcenie"
+      },
+      "live": true
+    },
+    {
+      "id": "contact",
+      "order": 8,
+      "label": {
+        "pl": "Kontakt"
+      },
+      "live": true
+    }
+  ],
+  "elements": [
+    {
+      "keyPath": "hero.badges.aiNative",
+      "section": "hero",
+      "order": 1,
+      "label": {
+        "pl": "aiNative"
+      },
+      "role": "aiNative",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.badges.mobile",
+      "section": "hero",
+      "order": 2,
+      "label": {
+        "pl": "mobile"
+      },
+      "role": "mobile",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.badges.web",
+      "section": "hero",
+      "order": 3,
+      "label": {
+        "pl": "web"
+      },
+      "role": "web",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.badgeSub",
+      "section": "hero",
+      "order": 4,
+      "label": {
+        "pl": "badgeSub"
+      },
+      "role": "badgeSub",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.headingLead",
+      "section": "hero",
+      "order": 5,
+      "label": {
+        "pl": "heading — część 1"
+      },
+      "role": "headingLead",
+      "type": "richText",
+      "editable": true,
+      "icu": [],
+      "group": {
+        "id": "heading",
+        "order": 1
+      }
+    },
+    {
+      "keyPath": "hero.headingHighlight",
+      "section": "hero",
+      "order": 6,
+      "label": {
+        "pl": "heading — część 2"
+      },
+      "role": "headingHighlight",
+      "type": "richText",
+      "editable": true,
+      "icu": [],
+      "group": {
+        "id": "heading",
+        "order": 2
+      }
+    },
+    {
+      "keyPath": "hero.headingTrail",
+      "section": "hero",
+      "order": 7,
+      "label": {
+        "pl": "heading — część 3"
+      },
+      "role": "headingTrail",
+      "type": "richText",
+      "editable": true,
+      "icu": [],
+      "group": {
+        "id": "heading",
+        "order": 3
+      }
+    },
+    {
+      "keyPath": "hero.sub",
+      "section": "hero",
+      "order": 8,
+      "label": {
+        "pl": "Podtytuł"
+      },
+      "role": "sub",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.ctaPrimary",
+      "section": "hero",
+      "order": 9,
+      "label": {
+        "pl": "ctaPrimary"
+      },
+      "role": "ctaPrimary",
+      "type": "cta",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.ctaSecondary",
+      "section": "hero",
+      "order": 10,
+      "label": {
+        "pl": "ctaSecondary"
+      },
+      "role": "ctaSecondary",
+      "type": "cta",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.trustAria",
+      "section": "hero",
+      "order": 11,
+      "label": {
+        "pl": "trustAria"
+      },
+      "role": "trustAria",
+      "type": "aria",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.trust.yearsCode",
+      "section": "hero",
+      "order": 12,
+      "label": {
+        "pl": "yearsCode"
+      },
+      "role": "yearsCode",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.trust.claudeDaily",
+      "section": "hero",
+      "order": 13,
+      "label": {
+        "pl": "claudeDaily"
+      },
+      "role": "claudeDaily",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "hero.trust.engineerEnglish",
+      "section": "hero",
+      "order": 14,
+      "label": {
+        "pl": "engineerEnglish"
+      },
+      "role": "engineerEnglish",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.eyebrow",
+      "section": "certification",
+      "order": 1,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.title",
+      "section": "certification",
+      "order": 2,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.intro",
+      "section": "certification",
+      "order": 3,
+      "label": {
+        "pl": "Wprowadzenie"
+      },
+      "role": "intro",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.credential.courseName",
+      "section": "certification",
+      "order": 4,
+      "label": {
+        "pl": "courseName"
+      },
+      "role": "courseName",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.credential.issuer",
+      "section": "certification",
+      "order": 5,
+      "label": {
+        "pl": "issuer"
+      },
+      "role": "issuer",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.credential.date",
+      "section": "certification",
+      "order": 6,
+      "label": {
+        "pl": "date"
+      },
+      "role": "date",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.credential.instructors",
+      "section": "certification",
+      "order": 7,
+      "label": {
+        "pl": "instructors"
+      },
+      "role": "instructors",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.credential.facts",
+      "section": "certification",
+      "order": 8,
+      "label": {
+        "pl": "facts"
+      },
+      "role": "facts",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.badges.builder.name",
+      "section": "certification",
+      "order": 9,
+      "label": {
+        "pl": "Nazwa"
+      },
+      "role": "name",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.badges.builder.caption",
+      "section": "certification",
+      "order": 10,
+      "label": {
+        "pl": "Podpis"
+      },
+      "role": "caption",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.badges.architect.name",
+      "section": "certification",
+      "order": 11,
+      "label": {
+        "pl": "Nazwa"
+      },
+      "role": "name",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.badges.architect.caption",
+      "section": "certification",
+      "order": 12,
+      "label": {
+        "pl": "Podpis"
+      },
+      "role": "caption",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.badges.champion.name",
+      "section": "certification",
+      "order": 13,
+      "label": {
+        "pl": "Nazwa"
+      },
+      "role": "name",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.badges.champion.caption",
+      "section": "certification",
+      "order": 14,
+      "label": {
+        "pl": "Podpis"
+      },
+      "role": "caption",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.badges.bestProject.name",
+      "section": "certification",
+      "order": 15,
+      "label": {
+        "pl": "Nazwa"
+      },
+      "role": "name",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.badges.bestProject.caption",
+      "section": "certification",
+      "order": 16,
+      "label": {
+        "pl": "Podpis"
+      },
+      "role": "caption",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.1.title",
+      "section": "certification",
+      "order": 17,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.1.desc",
+      "section": "certification",
+      "order": 18,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.2.title",
+      "section": "certification",
+      "order": 19,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.2.desc",
+      "section": "certification",
+      "order": 20,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.3.title",
+      "section": "certification",
+      "order": 21,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.3.desc",
+      "section": "certification",
+      "order": 22,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.4.title",
+      "section": "certification",
+      "order": 23,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.4.desc",
+      "section": "certification",
+      "order": 24,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.5.title",
+      "section": "certification",
+      "order": 25,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.areas.5.desc",
+      "section": "certification",
+      "order": 26,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.thumbnail.alt",
+      "section": "certification",
+      "order": 27,
+      "label": {
+        "pl": "alt"
+      },
+      "role": "alt",
+      "type": "alt",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.thumbnail.openLabel",
+      "section": "certification",
+      "order": 28,
+      "label": {
+        "pl": "openLabel"
+      },
+      "role": "openLabel",
+      "type": "label",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.lightbox.title",
+      "section": "certification",
+      "order": 29,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.lightbox.closeLabel",
+      "section": "certification",
+      "order": 30,
+      "label": {
+        "pl": "closeLabel"
+      },
+      "role": "closeLabel",
+      "type": "label",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "certification.lightbox.imageAlt",
+      "section": "certification",
+      "order": 31,
+      "label": {
+        "pl": "imageAlt"
+      },
+      "role": "imageAlt",
+      "type": "alt",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.eyebrow",
+      "section": "whatICanDeliver",
+      "order": 1,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.title",
+      "section": "whatICanDeliver",
+      "order": 2,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.intro",
+      "section": "whatICanDeliver",
+      "order": 3,
+      "label": {
+        "pl": "Wprowadzenie"
+      },
+      "role": "intro",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.stackAria",
+      "section": "whatICanDeliver",
+      "order": 4,
+      "label": {
+        "pl": "stackAria"
+      },
+      "role": "stackAria",
+      "type": "aria",
+      "editable": false,
+      "icu": [
+        "{section}"
+      ]
+    },
+    {
+      "keyPath": "whatICanDeliver.variantCore",
+      "section": "whatICanDeliver",
+      "order": 5,
+      "label": {
+        "pl": "variantCore"
+      },
+      "role": "variantCore",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.variantGrowing",
+      "section": "whatICanDeliver",
+      "order": 6,
+      "label": {
+        "pl": "variantGrowing"
+      },
+      "role": "variantGrowing",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.title",
+      "section": "whatICanDeliver",
+      "order": 7,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.title",
+      "section": "whatICanDeliver",
+      "order": 8,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.bullets.1",
+      "section": "whatICanDeliver",
+      "order": 9,
+      "label": {
+        "pl": "1"
+      },
+      "role": "1",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.bullets.2",
+      "section": "whatICanDeliver",
+      "order": 10,
+      "label": {
+        "pl": "2"
+      },
+      "role": "2",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.bullets.3",
+      "section": "whatICanDeliver",
+      "order": 11,
+      "label": {
+        "pl": "3"
+      },
+      "role": "3",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.bullets.4",
+      "section": "whatICanDeliver",
+      "order": 12,
+      "label": {
+        "pl": "4"
+      },
+      "role": "4",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.bullets.5",
+      "section": "whatICanDeliver",
+      "order": 13,
+      "label": {
+        "pl": "5"
+      },
+      "role": "5",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.bullets.6",
+      "section": "whatICanDeliver",
+      "order": 14,
+      "label": {
+        "pl": "6"
+      },
+      "role": "6",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.bullets.7",
+      "section": "whatICanDeliver",
+      "order": 15,
+      "label": {
+        "pl": "7"
+      },
+      "role": "7",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.bullets.8",
+      "section": "whatICanDeliver",
+      "order": 16,
+      "label": {
+        "pl": "8"
+      },
+      "role": "8",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.mobile.bullets.9",
+      "section": "whatICanDeliver",
+      "order": 17,
+      "label": {
+        "pl": "9"
+      },
+      "role": "9",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.unity.title",
+      "section": "whatICanDeliver",
+      "order": 18,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.unity.bullets.1",
+      "section": "whatICanDeliver",
+      "order": 19,
+      "label": {
+        "pl": "1"
+      },
+      "role": "1",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.unity.bullets.2",
+      "section": "whatICanDeliver",
+      "order": 20,
+      "label": {
+        "pl": "2"
+      },
+      "role": "2",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.unity.bullets.3",
+      "section": "whatICanDeliver",
+      "order": 21,
+      "label": {
+        "pl": "3"
+      },
+      "role": "3",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.unity.bullets.4",
+      "section": "whatICanDeliver",
+      "order": 22,
+      "label": {
+        "pl": "4"
+      },
+      "role": "4",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.common.title",
+      "section": "whatICanDeliver",
+      "order": 23,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.common.bullets.1",
+      "section": "whatICanDeliver",
+      "order": 24,
+      "label": {
+        "pl": "1"
+      },
+      "role": "1",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.common.bullets.2",
+      "section": "whatICanDeliver",
+      "order": 25,
+      "label": {
+        "pl": "2"
+      },
+      "role": "2",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.31.subBlocks.common.bullets.3",
+      "section": "whatICanDeliver",
+      "order": 26,
+      "label": {
+        "pl": "3"
+      },
+      "role": "3",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.title",
+      "section": "whatICanDeliver",
+      "order": 27,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.1",
+      "section": "whatICanDeliver",
+      "order": 28,
+      "label": {
+        "pl": "1"
+      },
+      "role": "1",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.2",
+      "section": "whatICanDeliver",
+      "order": 29,
+      "label": {
+        "pl": "2"
+      },
+      "role": "2",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.3",
+      "section": "whatICanDeliver",
+      "order": 30,
+      "label": {
+        "pl": "3"
+      },
+      "role": "3",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.4",
+      "section": "whatICanDeliver",
+      "order": 31,
+      "label": {
+        "pl": "4"
+      },
+      "role": "4",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.5",
+      "section": "whatICanDeliver",
+      "order": 32,
+      "label": {
+        "pl": "5"
+      },
+      "role": "5",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.6",
+      "section": "whatICanDeliver",
+      "order": 33,
+      "label": {
+        "pl": "6"
+      },
+      "role": "6",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.7",
+      "section": "whatICanDeliver",
+      "order": 34,
+      "label": {
+        "pl": "7"
+      },
+      "role": "7",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.8",
+      "section": "whatICanDeliver",
+      "order": 35,
+      "label": {
+        "pl": "8"
+      },
+      "role": "8",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.9",
+      "section": "whatICanDeliver",
+      "order": 36,
+      "label": {
+        "pl": "9"
+      },
+      "role": "9",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.32.bullets.10",
+      "section": "whatICanDeliver",
+      "order": 37,
+      "label": {
+        "pl": "10"
+      },
+      "role": "10",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.33.title",
+      "section": "whatICanDeliver",
+      "order": 38,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.33.bullets.1",
+      "section": "whatICanDeliver",
+      "order": 39,
+      "label": {
+        "pl": "1"
+      },
+      "role": "1",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.33.bullets.2",
+      "section": "whatICanDeliver",
+      "order": 40,
+      "label": {
+        "pl": "2"
+      },
+      "role": "2",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.33.bullets.3",
+      "section": "whatICanDeliver",
+      "order": 41,
+      "label": {
+        "pl": "3"
+      },
+      "role": "3",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.33.bullets.4",
+      "section": "whatICanDeliver",
+      "order": 42,
+      "label": {
+        "pl": "4"
+      },
+      "role": "4",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "whatICanDeliver.sections.33.bullets.5",
+      "section": "whatICanDeliver",
+      "order": 43,
+      "label": {
+        "pl": "5"
+      },
+      "role": "5",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.eyebrow",
+      "section": "portfolio",
+      "order": 1,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.title",
+      "section": "portfolio",
+      "order": 2,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.intro",
+      "section": "portfolio",
+      "order": 3,
+      "label": {
+        "pl": "Wprowadzenie"
+      },
+      "role": "intro",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.breadcrumbBack",
+      "section": "portfolio",
+      "order": 4,
+      "label": {
+        "pl": "breadcrumbBack"
+      },
+      "role": "breadcrumbBack",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.role.od-zera",
+      "section": "portfolio",
+      "order": 5,
+      "label": {
+        "pl": "od-zera"
+      },
+      "role": "od-zera",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.role.rozwoj-i-serwis",
+      "section": "portfolio",
+      "order": 6,
+      "label": {
+        "pl": "rozwoj-i-serwis"
+      },
+      "role": "rozwoj-i-serwis",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.storeLink.googlePlay",
+      "section": "portfolio",
+      "order": 7,
+      "label": {
+        "pl": "googlePlay"
+      },
+      "role": "googlePlay",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.storeLink.appStore",
+      "section": "portfolio",
+      "order": 8,
+      "label": {
+        "pl": "appStore"
+      },
+      "role": "appStore",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.storeLink.external",
+      "section": "portfolio",
+      "order": 9,
+      "label": {
+        "pl": "external"
+      },
+      "role": "external",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.projectLink.googlePlay",
+      "section": "portfolio",
+      "order": 10,
+      "label": {
+        "pl": "googlePlay"
+      },
+      "role": "googlePlay",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.projectLink.appStore",
+      "section": "portfolio",
+      "order": 11,
+      "label": {
+        "pl": "appStore"
+      },
+      "role": "appStore",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.projectLink.github",
+      "section": "portfolio",
+      "order": 12,
+      "label": {
+        "pl": "github"
+      },
+      "role": "github",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.projectLink.homepage",
+      "section": "portfolio",
+      "order": 13,
+      "label": {
+        "pl": "homepage"
+      },
+      "role": "homepage",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.title",
+      "section": "portfolio",
+      "order": 14,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.honetiLinkAria",
+      "section": "portfolio",
+      "order": 15,
+      "label": {
+        "pl": "honetiLinkAria"
+      },
+      "role": "honetiLinkAria",
+      "type": "aria",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.role-line",
+      "section": "portfolio",
+      "order": 16,
+      "label": {
+        "pl": "role-line"
+      },
+      "role": "role-line",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.stack-aria",
+      "section": "portfolio",
+      "order": 17,
+      "label": {
+        "pl": "stack-aria"
+      },
+      "role": "stack-aria",
+      "type": "aria",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.cta-full-list",
+      "section": "portfolio",
+      "order": 18,
+      "label": {
+        "pl": "cta-full-list"
+      },
+      "role": "cta-full-list",
+      "type": "cta",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.subpage-title",
+      "section": "portfolio",
+      "order": 19,
+      "label": {
+        "pl": "subpage-title"
+      },
+      "role": "subpage-title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.h1Main",
+      "section": "portfolio",
+      "order": 20,
+      "label": {
+        "pl": "h1Main"
+      },
+      "role": "h1Main",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.h1Connector",
+      "section": "portfolio",
+      "order": 21,
+      "label": {
+        "pl": "h1Connector"
+      },
+      "role": "h1Connector",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.subpage-lead",
+      "section": "portfolio",
+      "order": 22,
+      "label": {
+        "pl": "subpage-lead"
+      },
+      "role": "subpage-lead",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.group.flutter",
+      "section": "portfolio",
+      "order": 23,
+      "label": {
+        "pl": "flutter"
+      },
+      "role": "flutter",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.group.unity",
+      "section": "portfolio",
+      "order": 24,
+      "label": {
+        "pl": "unity"
+      },
+      "role": "unity",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.title",
+      "section": "portfolio",
+      "order": 25,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.description",
+      "section": "portfolio",
+      "order": 26,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.appsLabel",
+      "section": "portfolio",
+      "order": 27,
+      "label": {
+        "pl": "appsLabel"
+      },
+      "role": "appsLabel",
+      "type": "label",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.cleanArch",
+      "section": "portfolio",
+      "order": 28,
+      "label": {
+        "pl": "cleanArch"
+      },
+      "role": "cleanArch",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.mvc",
+      "section": "portfolio",
+      "order": 29,
+      "label": {
+        "pl": "mvc"
+      },
+      "role": "mvc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.riverpod",
+      "section": "portfolio",
+      "order": 30,
+      "label": {
+        "pl": "riverpod"
+      },
+      "role": "riverpod",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.freezed",
+      "section": "portfolio",
+      "order": 31,
+      "label": {
+        "pl": "freezed"
+      },
+      "role": "freezed",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.restApi",
+      "section": "portfolio",
+      "order": 32,
+      "label": {
+        "pl": "restApi"
+      },
+      "role": "restApi",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.firebase",
+      "section": "portfolio",
+      "order": 33,
+      "label": {
+        "pl": "firebase"
+      },
+      "role": "firebase",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.offline",
+      "section": "portfolio",
+      "order": 34,
+      "label": {
+        "pl": "offline"
+      },
+      "role": "offline",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.qr",
+      "section": "portfolio",
+      "order": 35,
+      "label": {
+        "pl": "qr"
+      },
+      "role": "qr",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.signIn",
+      "section": "portfolio",
+      "order": 36,
+      "label": {
+        "pl": "signIn"
+      },
+      "role": "signIn",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.pdf",
+      "section": "portfolio",
+      "order": 37,
+      "label": {
+        "pl": "pdf"
+      },
+      "role": "pdf",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.pos",
+      "section": "portfolio",
+      "order": 38,
+      "label": {
+        "pl": "pos"
+      },
+      "role": "pos",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.flutterSeries.contribution.maps",
+      "section": "portfolio",
+      "order": 39,
+      "label": {
+        "pl": "maps"
+      },
+      "role": "maps",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.educationalSeries.title",
+      "section": "portfolio",
+      "order": 40,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.educationalSeries.description",
+      "section": "portfolio",
+      "order": 41,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.educationalSeries.appsLabel",
+      "section": "portfolio",
+      "order": 42,
+      "label": {
+        "pl": "appsLabel"
+      },
+      "role": "appsLabel",
+      "type": "label",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.educationalSeries.contribution.engine",
+      "section": "portfolio",
+      "order": 43,
+      "label": {
+        "pl": "engine"
+      },
+      "role": "engine",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.educationalSeries.contribution.iap",
+      "section": "portfolio",
+      "order": 44,
+      "label": {
+        "pl": "iap"
+      },
+      "role": "iap",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.educationalSeries.contribution.ads",
+      "section": "portfolio",
+      "order": 45,
+      "label": {
+        "pl": "ads"
+      },
+      "role": "ads",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.educationalSeries.contribution.pooling",
+      "section": "portfolio",
+      "order": 46,
+      "label": {
+        "pl": "pooling"
+      },
+      "role": "pooling",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.educationalSeries.contribution.firebaseDb",
+      "section": "portfolio",
+      "order": 47,
+      "label": {
+        "pl": "firebaseDb"
+      },
+      "role": "firebaseDb",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.honeti.educationalSeries.contribution.analytics",
+      "section": "portfolio",
+      "order": 48,
+      "label": {
+        "pl": "analytics"
+      },
+      "role": "analytics",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.title",
+      "section": "portfolio",
+      "order": 49,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.intro",
+      "section": "portfolio",
+      "order": 50,
+      "label": {
+        "pl": "Wprowadzenie"
+      },
+      "role": "intro",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.homeStorage.title",
+      "section": "portfolio",
+      "order": 51,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.homeStorage.description",
+      "section": "portfolio",
+      "order": 52,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.neatuDashboard.title",
+      "section": "portfolio",
+      "order": 53,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.neatuDashboard.description",
+      "section": "portfolio",
+      "order": 54,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.polilocale.title",
+      "section": "portfolio",
+      "order": 55,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.polilocale.description",
+      "section": "portfolio",
+      "order": 56,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.buzzards.title",
+      "section": "portfolio",
+      "order": 57,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.agent.buzzards.description",
+      "section": "portfolio",
+      "order": 58,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.eyebrow",
+      "section": "portfolio",
+      "order": 59,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.title",
+      "section": "portfolio",
+      "order": 60,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.intro",
+      "section": "portfolio",
+      "order": 61,
+      "label": {
+        "pl": "Wprowadzenie"
+      },
+      "role": "intro",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.flowLabel",
+      "section": "portfolio",
+      "order": 62,
+      "label": {
+        "pl": "flowLabel"
+      },
+      "role": "flowLabel",
+      "type": "label",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.legend.both",
+      "section": "portfolio",
+      "order": 63,
+      "label": {
+        "pl": "both"
+      },
+      "role": "both",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.legend.human",
+      "section": "portfolio",
+      "order": 64,
+      "label": {
+        "pl": "human"
+      },
+      "role": "human",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.legend.agent",
+      "section": "portfolio",
+      "order": 65,
+      "label": {
+        "pl": "agent"
+      },
+      "role": "agent",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.start",
+      "section": "portfolio",
+      "order": 66,
+      "label": {
+        "pl": "start"
+      },
+      "role": "start",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.done",
+      "section": "portfolio",
+      "order": 67,
+      "label": {
+        "pl": "done"
+      },
+      "role": "done",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.loopback",
+      "section": "portfolio",
+      "order": 68,
+      "label": {
+        "pl": "loopback"
+      },
+      "role": "loopback",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.owner.human",
+      "section": "portfolio",
+      "order": 69,
+      "label": {
+        "pl": "human"
+      },
+      "role": "human",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.owner.both",
+      "section": "portfolio",
+      "order": 70,
+      "label": {
+        "pl": "both"
+      },
+      "role": "both",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.plan.title",
+      "section": "portfolio",
+      "order": 71,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.plan.desc",
+      "section": "portfolio",
+      "order": 72,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.accept.title",
+      "section": "portfolio",
+      "order": 73,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.accept.desc",
+      "section": "portfolio",
+      "order": 74,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.agent.label",
+      "section": "portfolio",
+      "order": 75,
+      "label": {
+        "pl": "label"
+      },
+      "role": "label",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.agent.loop",
+      "section": "portfolio",
+      "order": 76,
+      "label": {
+        "pl": "loop"
+      },
+      "role": "loop",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.agent.build.title",
+      "section": "portfolio",
+      "order": 77,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.agent.build.desc",
+      "section": "portfolio",
+      "order": 78,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.agent.test.title",
+      "section": "portfolio",
+      "order": 79,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.agent.test.desc",
+      "section": "portfolio",
+      "order": 80,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.agent.review.title",
+      "section": "portfolio",
+      "order": 81,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.agent.review.desc",
+      "section": "portfolio",
+      "order": 82,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.humanReview.title",
+      "section": "portfolio",
+      "order": 83,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.humanReview.desc",
+      "section": "portfolio",
+      "order": 84,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.live.title",
+      "section": "portfolio",
+      "order": 85,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.live.desc",
+      "section": "portfolio",
+      "order": 86,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.deploy.title",
+      "section": "portfolio",
+      "order": 87,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.flow.stage.deploy.desc",
+      "section": "portfolio",
+      "order": 88,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.eyebrow",
+      "section": "portfolio",
+      "order": 89,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.lead",
+      "section": "portfolio",
+      "order": 90,
+      "label": {
+        "pl": "Wstęp"
+      },
+      "role": "lead",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.pillar.spec.title",
+      "section": "portfolio",
+      "order": 91,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.pillar.spec.desc",
+      "section": "portfolio",
+      "order": 92,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.pillar.context.title",
+      "section": "portfolio",
+      "order": 93,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.pillar.context.desc",
+      "section": "portfolio",
+      "order": 94,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.enabler.sessions.title",
+      "section": "portfolio",
+      "order": 95,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.enabler.sessions.desc",
+      "section": "portfolio",
+      "order": 96,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.enabler.tools.title",
+      "section": "portfolio",
+      "order": 97,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.enabler.tools.desc",
+      "section": "portfolio",
+      "order": 98,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.enabler.commands.title",
+      "section": "portfolio",
+      "order": 99,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.enabler.commands.desc",
+      "section": "portfolio",
+      "order": 100,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.enabler.git.title",
+      "section": "portfolio",
+      "order": 101,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.toolkit.enabler.git.desc",
+      "section": "portfolio",
+      "order": 102,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "desc",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.hero.title",
+      "section": "portfolio",
+      "order": 103,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.hero.description",
+      "section": "portfolio",
+      "order": 104,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.hero.chipsAria",
+      "section": "portfolio",
+      "order": 105,
+      "label": {
+        "pl": "chipsAria"
+      },
+      "role": "chipsAria",
+      "type": "aria",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.hero.chip.brief",
+      "section": "portfolio",
+      "order": 106,
+      "label": {
+        "pl": "brief"
+      },
+      "role": "brief",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.hero.chip.claudeMd",
+      "section": "portfolio",
+      "order": 107,
+      "label": {
+        "pl": "claudeMd"
+      },
+      "role": "claudeMd",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.hero.chip.rules",
+      "section": "portfolio",
+      "order": 108,
+      "label": {
+        "pl": "rules"
+      },
+      "role": "rules",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.1.title",
+      "section": "portfolio",
+      "order": 109,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.1.description",
+      "section": "portfolio",
+      "order": 110,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.1.example",
+      "section": "portfolio",
+      "order": 111,
+      "label": {
+        "pl": "example"
+      },
+      "role": "example",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.2.title",
+      "section": "portfolio",
+      "order": 112,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.2.description",
+      "section": "portfolio",
+      "order": 113,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.2.example",
+      "section": "portfolio",
+      "order": 114,
+      "label": {
+        "pl": "example"
+      },
+      "role": "example",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.3.title",
+      "section": "portfolio",
+      "order": 115,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.3.description",
+      "section": "portfolio",
+      "order": 116,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.3.example",
+      "section": "portfolio",
+      "order": 117,
+      "label": {
+        "pl": "example"
+      },
+      "role": "example",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.4.title",
+      "section": "portfolio",
+      "order": 118,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.4.description",
+      "section": "portfolio",
+      "order": 119,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.4.example",
+      "section": "portfolio",
+      "order": 120,
+      "label": {
+        "pl": "example"
+      },
+      "role": "example",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.5.title",
+      "section": "portfolio",
+      "order": 121,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.5.description",
+      "section": "portfolio",
+      "order": 122,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.5.example",
+      "section": "portfolio",
+      "order": 123,
+      "label": {
+        "pl": "example"
+      },
+      "role": "example",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.6.title",
+      "section": "portfolio",
+      "order": 124,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.6.description",
+      "section": "portfolio",
+      "order": 125,
+      "label": {
+        "pl": "Opis"
+      },
+      "role": "description",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "portfolio.warsztat.tile.6.example",
+      "section": "portfolio",
+      "order": 126,
+      "label": {
+        "pl": "example"
+      },
+      "role": "example",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "about.eyebrow",
+      "section": "about",
+      "order": 1,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "about.title",
+      "section": "about",
+      "order": 2,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "about.short",
+      "section": "about",
+      "order": 3,
+      "label": {
+        "pl": "Krótki opis"
+      },
+      "role": "short",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "about.para1",
+      "section": "about",
+      "order": 4,
+      "label": {
+        "pl": "para1"
+      },
+      "role": "para1",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "about.para2",
+      "section": "about",
+      "order": 5,
+      "label": {
+        "pl": "para2"
+      },
+      "role": "para2",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "about.para3",
+      "section": "about",
+      "order": 6,
+      "label": {
+        "pl": "para3"
+      },
+      "role": "para3",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "about.pullquote",
+      "section": "about",
+      "order": 7,
+      "label": {
+        "pl": "pullquote"
+      },
+      "role": "pullquote",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "about.para4",
+      "section": "about",
+      "order": 8,
+      "label": {
+        "pl": "para4"
+      },
+      "role": "para4",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.eyebrow",
+      "section": "education",
+      "order": 1,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.title",
+      "section": "education",
+      "order": 2,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.additionalLabel",
+      "section": "education",
+      "order": 3,
+      "label": {
+        "pl": "additionalLabel"
+      },
+      "role": "additionalLabel",
+      "type": "label",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "education.certificatesAria",
+      "section": "education",
+      "order": 4,
+      "label": {
+        "pl": "certificatesAria"
+      },
+      "role": "certificatesAria",
+      "type": "aria",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "education.fields.title",
+      "section": "education",
+      "order": 5,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.fields.field",
+      "section": "education",
+      "order": 6,
+      "label": {
+        "pl": "field"
+      },
+      "role": "field",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.fields.specialization",
+      "section": "education",
+      "order": 7,
+      "label": {
+        "pl": "specialization"
+      },
+      "role": "specialization",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.wsb.eyebrow",
+      "section": "education",
+      "order": 8,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.wsb.name",
+      "section": "education",
+      "order": 9,
+      "label": {
+        "pl": "Nazwa"
+      },
+      "role": "name",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.wsb.title",
+      "section": "education",
+      "order": 10,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.wsb.field",
+      "section": "education",
+      "order": 11,
+      "label": {
+        "pl": "field"
+      },
+      "role": "field",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.wsb.specialization",
+      "section": "education",
+      "order": 12,
+      "label": {
+        "pl": "specialization"
+      },
+      "role": "specialization",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.zsee.eyebrow",
+      "section": "education",
+      "order": 13,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.zsee.name",
+      "section": "education",
+      "order": 14,
+      "label": {
+        "pl": "Nazwa"
+      },
+      "role": "name",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.zsee.title",
+      "section": "education",
+      "order": 15,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.zsee.field",
+      "section": "education",
+      "order": 16,
+      "label": {
+        "pl": "field"
+      },
+      "role": "field",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.zsee.specialization",
+      "section": "education",
+      "order": 17,
+      "label": {
+        "pl": "specialization"
+      },
+      "role": "specialization",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.certificates.sep",
+      "section": "education",
+      "order": 18,
+      "label": {
+        "pl": "sep"
+      },
+      "role": "sep",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.certificates.drivingLicense",
+      "section": "education",
+      "order": 19,
+      "label": {
+        "pl": "drivingLicense"
+      },
+      "role": "drivingLicense",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "education.certificates.sailing",
+      "section": "education",
+      "order": 20,
+      "label": {
+        "pl": "sailing"
+      },
+      "role": "sailing",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contact.eyebrow",
+      "section": "contact",
+      "order": 1,
+      "label": {
+        "pl": "Etykieta sekcji"
+      },
+      "role": "eyebrow",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contact.title",
+      "section": "contact",
+      "order": 2,
+      "label": {
+        "pl": "Tytuł"
+      },
+      "role": "title",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contact.introLead",
+      "section": "contact",
+      "order": 3,
+      "label": {
+        "pl": "intro — część 1"
+      },
+      "role": "introLead",
+      "type": "richText",
+      "editable": true,
+      "icu": [],
+      "group": {
+        "id": "intro",
+        "order": 1
+      }
+    },
+    {
+      "keyPath": "contact.introHighlight",
+      "section": "contact",
+      "order": 4,
+      "label": {
+        "pl": "intro — część 2"
+      },
+      "role": "introHighlight",
+      "type": "richText",
+      "editable": true,
+      "icu": [],
+      "group": {
+        "id": "intro",
+        "order": 2
+      }
+    },
+    {
+      "keyPath": "contact.introTrail",
+      "section": "contact",
+      "order": 5,
+      "label": {
+        "pl": "intro — część 3"
+      },
+      "role": "introTrail",
+      "type": "richText",
+      "editable": true,
+      "icu": [],
+      "group": {
+        "id": "intro",
+        "order": 3
+      }
+    },
+    {
+      "keyPath": "contact.directLabel",
+      "section": "contact",
+      "order": 6,
+      "label": {
+        "pl": "directLabel"
+      },
+      "role": "directLabel",
+      "type": "label",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "contact.downloadsLabel",
+      "section": "contact",
+      "order": 7,
+      "label": {
+        "pl": "downloadsLabel"
+      },
+      "role": "downloadsLabel",
+      "type": "label",
+      "editable": false,
+      "icu": []
+    },
+    {
+      "keyPath": "contact.cvPolish",
+      "section": "contact",
+      "order": 8,
+      "label": {
+        "pl": "cvPolish"
+      },
+      "role": "cvPolish",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contact.cvEnglish",
+      "section": "contact",
+      "order": 9,
+      "label": {
+        "pl": "cvEnglish"
+      },
+      "role": "cvEnglish",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.orderPrefill",
+      "section": "contact",
+      "order": 10,
+      "label": {
+        "pl": "orderPrefill"
+      },
+      "role": "orderPrefill",
+      "type": "text",
+      "editable": true,
+      "icu": [
+        "{package}"
+      ]
+    },
+    {
+      "keyPath": "contactForm.requiredHintPrefix",
+      "section": "contact",
+      "order": 11,
+      "label": {
+        "pl": "requiredHintPrefix"
+      },
+      "role": "requiredHintPrefix",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.requiredHintSuffix",
+      "section": "contact",
+      "order": 12,
+      "label": {
+        "pl": "requiredHintSuffix"
+      },
+      "role": "requiredHintSuffix",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.labels.name",
+      "section": "contact",
+      "order": 13,
+      "label": {
+        "pl": "Nazwa"
+      },
+      "role": "name",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.labels.email",
+      "section": "contact",
+      "order": 14,
+      "label": {
+        "pl": "email"
+      },
+      "role": "email",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.labels.company",
+      "section": "contact",
+      "order": 15,
+      "label": {
+        "pl": "company"
+      },
+      "role": "company",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.labels.message",
+      "section": "contact",
+      "order": 16,
+      "label": {
+        "pl": "message"
+      },
+      "role": "message",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.labels.source",
+      "section": "contact",
+      "order": 17,
+      "label": {
+        "pl": "source"
+      },
+      "role": "source",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.optional",
+      "section": "contact",
+      "order": 18,
+      "label": {
+        "pl": "optional"
+      },
+      "role": "optional",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.placeholders.name",
+      "section": "contact",
+      "order": 19,
+      "label": {
+        "pl": "Nazwa"
+      },
+      "role": "name",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.placeholders.email",
+      "section": "contact",
+      "order": 20,
+      "label": {
+        "pl": "email"
+      },
+      "role": "email",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.placeholders.company",
+      "section": "contact",
+      "order": 21,
+      "label": {
+        "pl": "company"
+      },
+      "role": "company",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.placeholders.message",
+      "section": "contact",
+      "order": 22,
+      "label": {
+        "pl": "message"
+      },
+      "role": "message",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.placeholders.source",
+      "section": "contact",
+      "order": 23,
+      "label": {
+        "pl": "source"
+      },
+      "role": "source",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.sources.linkedin",
+      "section": "contact",
+      "order": 24,
+      "label": {
+        "pl": "linkedin"
+      },
+      "role": "linkedin",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.sources.referral",
+      "section": "contact",
+      "order": 25,
+      "label": {
+        "pl": "referral"
+      },
+      "role": "referral",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.sources.google",
+      "section": "contact",
+      "order": 26,
+      "label": {
+        "pl": "google"
+      },
+      "role": "google",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.sources.other",
+      "section": "contact",
+      "order": 27,
+      "label": {
+        "pl": "other"
+      },
+      "role": "other",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.submit",
+      "section": "contact",
+      "order": 28,
+      "label": {
+        "pl": "submit"
+      },
+      "role": "submit",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.submitting",
+      "section": "contact",
+      "order": 29,
+      "label": {
+        "pl": "submitting"
+      },
+      "role": "submitting",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.validation.required",
+      "section": "contact",
+      "order": 30,
+      "label": {
+        "pl": "required"
+      },
+      "role": "required",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.validation.minName",
+      "section": "contact",
+      "order": 31,
+      "label": {
+        "pl": "minName"
+      },
+      "role": "minName",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.validation.maxName",
+      "section": "contact",
+      "order": 32,
+      "label": {
+        "pl": "maxName"
+      },
+      "role": "maxName",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.validation.invalidEmail",
+      "section": "contact",
+      "order": 33,
+      "label": {
+        "pl": "invalidEmail"
+      },
+      "role": "invalidEmail",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.validation.maxEmail",
+      "section": "contact",
+      "order": 34,
+      "label": {
+        "pl": "maxEmail"
+      },
+      "role": "maxEmail",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.validation.maxCompany",
+      "section": "contact",
+      "order": 35,
+      "label": {
+        "pl": "maxCompany"
+      },
+      "role": "maxCompany",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.validation.minMessage",
+      "section": "contact",
+      "order": 36,
+      "label": {
+        "pl": "minMessage"
+      },
+      "role": "minMessage",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.validation.maxMessage",
+      "section": "contact",
+      "order": 37,
+      "label": {
+        "pl": "maxMessage"
+      },
+      "role": "maxMessage",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.toast.success",
+      "section": "contact",
+      "order": 38,
+      "label": {
+        "pl": "success"
+      },
+      "role": "success",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.toast.error",
+      "section": "contact",
+      "order": 39,
+      "label": {
+        "pl": "error"
+      },
+      "role": "error",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactForm.toast.rateLimited",
+      "section": "contact",
+      "order": 40,
+      "label": {
+        "pl": "rateLimited"
+      },
+      "role": "rateLimited",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactInfo.labels.email",
+      "section": "contact",
+      "order": 41,
+      "label": {
+        "pl": "email"
+      },
+      "role": "email",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactInfo.labels.phone",
+      "section": "contact",
+      "order": 42,
+      "label": {
+        "pl": "phone"
+      },
+      "role": "phone",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactInfo.labels.linkedin",
+      "section": "contact",
+      "order": 43,
+      "label": {
+        "pl": "linkedin"
+      },
+      "role": "linkedin",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactInfo.labels.github",
+      "section": "contact",
+      "order": 44,
+      "label": {
+        "pl": "github"
+      },
+      "role": "github",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactInfo.copyAria",
+      "section": "contact",
+      "order": 45,
+      "label": {
+        "pl": "copyAria"
+      },
+      "role": "copyAria",
+      "type": "aria",
+      "editable": false,
+      "icu": [
+        "{label}"
+      ]
+    },
+    {
+      "keyPath": "contactInfo.copiedAria",
+      "section": "contact",
+      "order": 46,
+      "label": {
+        "pl": "copiedAria"
+      },
+      "role": "copiedAria",
+      "type": "aria",
+      "editable": false,
+      "icu": [
+        "{label}"
+      ]
+    },
+    {
+      "keyPath": "contactInfo.copyToast",
+      "section": "contact",
+      "order": 47,
+      "label": {
+        "pl": "copyToast"
+      },
+      "role": "copyToast",
+      "type": "label",
+      "editable": false,
+      "icu": [
+        "{label}"
+      ]
+    },
+    {
+      "keyPath": "contactInfo.copyUnsupported",
+      "section": "contact",
+      "order": 48,
+      "label": {
+        "pl": "copyUnsupported"
+      },
+      "role": "copyUnsupported",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    },
+    {
+      "keyPath": "contactInfo.copyFailed",
+      "section": "contact",
+      "order": 49,
+      "label": {
+        "pl": "copyFailed"
+      },
+      "role": "copyFailed",
+      "type": "text",
+      "editable": true,
+      "icu": []
+    }
+  ]
+}
