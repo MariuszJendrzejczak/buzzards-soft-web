@@ -849,7 +849,7 @@
         "promoPrice": "1699 zł",
         "priceTag": "kampanjpris",
         "audience": "visitkort eller enkelt erbjudande",
-        "pages": "1 sida, upp till 5 sektioner",
+        "pages": "1 sida, upp till 6 sektioner",
         "revisions": "2 omgångar / 7 dagar",
         "cta": "Offert Basic"
       },
@@ -905,7 +905,7 @@
           "price": "+300 zł"
         },
         "extraPage": {
-          "name": "Ytterligare undersida",
+          "name": "Ytterligare undersida (upp till 4 sektioner)",
           "price": "+300 zł"
         },
         "domainEmail": {

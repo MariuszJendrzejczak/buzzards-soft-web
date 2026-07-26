@@ -27,7 +27,7 @@
 
 | Package | Base price | Promo price | For whom | Scope | Revisions |
 |---|---|---|---|---|---|
-| **Basic** | 1999 zł | **1699 zł** | wizytówka / prosta oferta | 1 strona, do 5 sekcji | 2 rundy / 7 dni |
+| **Basic** | 1999 zł | **1699 zł** | wizytówka / prosta oferta | 1 strona, do 6 sekcji | 2 rundy / 7 dni |
 | **Full** | 2999 zł | **2499 zł** | firma, która chce być widoczna i pozyskiwać kontakt | do 8 sekcji + 2 podstrony | 4 rundy / 14 dni |
 | **Większy projekt** | wycena indywidualna | — | sklep, custom od zera, złożone integracje | wg potrzeb | ustalane |
 
@@ -72,7 +72,7 @@
 | Dodatkowy język | +400 zł / język |
 | Zbieranie leadów (lista mailingowa albo arkusz zgłoszeń) | +400 zł (oba +550) |
 | Rezerwacje i kalendarz | +350 zł |
-| Dodatkowa podstrona | +300 zł |
+| Dodatkowa podstrona (do 4 sekcji) | +300 zł |
 | Blog i aktualności | +700 zł |
 | Śledzenie konwersji pod reklamy | +250 zł |
 | Konfiguracja domeny i firmowej poczty | +150 zł |
