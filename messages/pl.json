@@ -832,7 +832,7 @@
         "promoPrice": "1699 zł",
         "priceTag": "cena promocyjna",
         "audience": "wizytówka lub prosta oferta",
-        "pages": "Jedna strona (wizytówka)",
+        "pages": "Jedna strona, do 6 sekcji",
         "revisions": "2 rundy / 7 dni",
         "cta": "Zamów Basic"
       },
@@ -842,7 +842,7 @@
         "promoPrice": "2499 zł",
         "priceTag": "cena promocyjna",
         "audience": "firma, która chce być widoczna i pozyskiwać kontakt",
-        "pages": "Strona główna + do 2 podstron",
+        "pages": "Do 8 sekcji + 2 podstrony",
         "revisions": "4 rundy / 14 dni",
         "extras": "Widoczność lokalna (Google Business), Animacje, Tryb ciemny i jasny",
         "extrasValue": "Osobno te moduły to +1050 zł",
@@ -888,7 +888,7 @@
           "price": "+300 zł"
         },
         "extraPage": {
-          "name": "Dodatkowa podstrona",
+          "name": "Dodatkowa podstrona (do 4 sekcji)",
           "price": "+300 zł"
         },
         "domainEmail": {

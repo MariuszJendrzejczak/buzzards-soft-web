@@ -849,7 +849,7 @@
         "promoPrice": "1699 zł",
         "priceTag": "promotional price",
         "audience": "business card or simple offer",
-        "pages": "1 page, up to 5 sections",
+        "pages": "1 page, up to 6 sections",
         "revisions": "2 rounds / 7 days",
         "cta": "Quote Basic"
       },
@@ -905,7 +905,7 @@
           "price": "+300 zł"
         },
         "extraPage": {
-          "name": "Additional subpage",
+          "name": "Additional subpage (up to 4 sections)",
           "price": "+300 zł"
         },
         "domainEmail": {
