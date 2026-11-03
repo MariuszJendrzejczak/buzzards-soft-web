@@ -1,0 +1,5 @@
+# Vendored framework trees — hashed byte-for-byte in docs/canon/.framework.
+# /canon-update reads a hash mismatch as an in-project edit, so a checkout must
+# never rewrite their line endings. Keep this block last: later rules win.
+.claude/**    text=auto eol=lf
+docs/canon/** text=auto eol=lf

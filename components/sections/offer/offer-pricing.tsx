@@ -145,34 +145,17 @@ function PriceBlock({
   tier: (typeof TIERS)[number];
   t: Awaited<ReturnType<typeof getTranslations>>;
 }) {
-  if (tier === "custom") {
-    return (
-      <p className="font-heading text-2xl font-semibold text-foreground">
-        {t("custom.price")}{" "}
-        <span className="text-sm font-normal text-text-subtle">
-          {t("netLabel")}
-        </span>
-      </p>
-    );
-  }
-
   return (
-    <div className="flex flex-col gap-1">
-      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-        <span className="text-sm text-text-subtle line-through">
-          {t(`${tier}.basePrice`)}
-        </span>
-        <span className="font-heading text-2xl font-semibold text-brand">
-          {t(`${tier}.promoPrice`)}
-        </span>
-        <span className="text-xs text-text-subtle">{t("netLabel")}</span>
-        <span className="text-xs text-muted-foreground">
-          ({t(`${tier}.priceTag`)})
-        </span>
-      </div>
-      <span className="font-mono text-[11px] tracking-[0.08em] text-text-subtle uppercase">
-        {t("promoNote")}
+    <p
+      className={cn(
+        "font-heading text-2xl font-semibold",
+        tier === "custom" ? "text-foreground" : "text-brand",
+      )}
+    >
+      {t(`${tier}.price`)}{" "}
+      <span className="text-sm font-normal text-text-subtle">
+        {t("netLabel")}
       </span>
-    </div>
+    </p>
   );
 }

@@ -12,6 +12,17 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local-only / generated trees (gitignored, not part of the web app):
+    "coverage/**",
+    "v1_flutter/**",
+    "doc-local/**",
+    "sprint-portfolio-integration/**",
+    "ds-bundle/**",
+    ".ds-sync/**",
+    ".design-sync/**",
+    "scripts/_tmp/**",
+    // Vendored framework toolchain (managed by /canon-update, not app code):
+    ".claude/**",
   ]),
 ]);
 

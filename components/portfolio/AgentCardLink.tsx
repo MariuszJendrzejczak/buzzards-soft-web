@@ -1,22 +1,11 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 import type { AgentProjectLink } from "@/lib/portfolio/types";
 import { cn } from "@/lib/utils";
 
-type Platform = "ios" | "android" | "macos" | "windows" | "linux" | "unknown";
-
-function detectPlatform(): Platform {
-  if (typeof navigator === "undefined") return "unknown";
-  const ua = navigator.userAgent.toLowerCase();
-  if (/iphone|ipad|ipod/.test(ua)) return "ios";
-  if (/android/.test(ua)) return "android";
-  if (/macintosh|mac os x/.test(ua)) return "macos";
-  if (/windows/.test(ua)) return "windows";
-  if (/linux/.test(ua)) return "linux";
-  return "unknown";
-}
+import { type Platform, usePlatform } from "./use-platform";
 
 function urlOfKind(
   links: readonly AgentProjectLink[],
@@ -27,6 +16,7 @@ function urlOfKind(
 
 // Whole-card primary link — mirrors CardDeviceLink: a device-appropriate store
 // when the project ships apps, otherwise the first available link (homepage / repo).
+// For `"unknown"` (build time / hydration) this is Google → Apple → first link.
 function pickUrl(
   links: readonly AgentProjectLink[],
   platform: Platform,
@@ -40,10 +30,6 @@ function pickUrl(
   return links[0]?.url;
 }
 
-function fallbackUrl(links: readonly AgentProjectLink[]): string | undefined {
-  return urlOfKind(links, "google") ?? urlOfKind(links, "apple") ?? links[0]?.url;
-}
-
 export type AgentCardLinkProps = {
   links: readonly AgentProjectLink[];
   children: ReactNode;
@@ -51,12 +37,7 @@ export type AgentCardLinkProps = {
 };
 
 export function AgentCardLink({ links, children, className }: AgentCardLinkProps) {
-  const [url, setUrl] = useState<string | undefined>(() => fallbackUrl(links));
-
-  useEffect(() => {
-    const next = pickUrl(links, detectPlatform());
-    if (next) setUrl(next);
-  }, [links]);
+  const url = pickUrl(links, usePlatform());
 
   if (!url) {
     return <>{children}</>;

@@ -824,9 +824,8 @@
     },
     "pricing": {
       "heading": "Simple packages, transparent prices",
-      "promoNote": "price valid until the end of August",
       "netLabel": "net",
-      "footnote": "Net prices. The promotional price applies until the end of August.",
+      "footnote": "Net prices.",
       "baseReference": "+ everything in “What every site includes”",
       "extrasLabel": "Also included",
       "rowLabels": {
@@ -845,9 +844,7 @@
       "module": "module",
       "basic": {
         "name": "Basic",
-        "basePrice": "1999 zł",
-        "promoPrice": "1699 zł",
-        "priceTag": "promotional price",
+        "price": "1999 zł",
         "audience": "business card or simple offer",
         "pages": "1 page, up to 6 sections",
         "revisions": "2 rounds / 7 days",
@@ -855,9 +852,7 @@
       },
       "full": {
         "name": "Full",
-        "basePrice": "2999 zł",
-        "promoPrice": "2499 zł",
-        "priceTag": "promotional price",
+        "price": "2999 zł",
         "audience": "a business that wants to be visible and win leads",
         "pages": "up to 8 sections and 2 subpages",
         "revisions": "4 rounds / 14 days",

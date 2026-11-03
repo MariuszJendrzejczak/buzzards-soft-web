@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "validation": {
+    "commands": [
+      "npm run lint",
+      "npm run build",
+      "npm test",
+      "python .claude/framework/scripts/check-slice-status.py ."
+    ]
+  },
+  "userOnly": [],
+  "baseBranch": "develop",
+  "ci": {
+    "maxWaitMinutes": 15
+  },
+  "maxIterations": 2,
+  "preflight": {
+    "maxMinutes": 5
+  },
+  "review": {
+    "lenses": ["world", "security", "plan"],
+    "adjudicator": true
+  },
+  "hooks": {
+    "onEdit": [
+      { "match": ["*.ts", "*.tsx", "*.js", "*.jsx", "*.mjs"], "command": "npx --no-install eslint --quiet {file}" }
+    ],
+    "onFinish": []
+  }
+}
