@@ -62,41 +62,32 @@ describe("<OfferPricing>", () => {
     }
   });
 
-  it("renders both promo tier names (Basic + Full)", async () => {
+  it("renders both fixed-price tier names (Basic + Full)", async () => {
     const { container } = await renderPricing();
     expect(container.textContent).toContain(pricing.basic.name);
     expect(container.textContent).toContain(pricing.full.name);
   });
 
-  it("renders the struck-through base prices for both promo tiers", async () => {
+  it("renders the target price in each fixed-price tier", async () => {
     const { container } = await renderPricing();
-    const struck = Array.from(container.querySelectorAll(".line-through")).map(
-      (el) => el.textContent,
-    );
-    expect(struck).toContain(pricing.basic.basePrice); // 1999 zł
-    expect(struck).toContain(pricing.full.basePrice); // 2999 zł
+    const basic = container.querySelector('[data-pricing-tier="basic"]');
+    const full = container.querySelector('[data-pricing-tier="full"]');
+    expect(pricing.basic.price).toBe("1999 zł");
+    expect(pricing.full.price).toBe("2999 zł");
+    expect(basic?.textContent).toContain(pricing.basic.price);
+    expect(full?.textContent).toContain(pricing.full.price);
   });
 
-  it("renders the promo prices on top for both tiers", async () => {
+  it("shows no expired promotion: no struck-through price, no dated promo copy", async () => {
     const { container } = await renderPricing();
-    expect(container.textContent).toContain(pricing.basic.promoPrice); // 1699 zł
-    expect(container.textContent).toContain(pricing.full.promoPrice); // 2499 zł
+    expect(container.querySelector(".line-through")).toBeNull();
+    expect(container.textContent).not.toMatch(/sierp|promocyj/i);
+    expect(pricing).not.toHaveProperty("promoNote");
   });
 
-  it("renders the promo validity note (cena ważna do końca sierpnia) for each promo tier", async () => {
-    const { container } = await renderPricing();
-    const notes = Array.from(container.querySelectorAll("*")).filter(
-      (el) => el.childElementCount === 0 && el.textContent === pricing.promoNote,
-    );
-    // one note under Basic, one under Full — custom tier has no promo note.
-    expect(notes.length).toBe(2);
-    expect(pricing.promoNote).toContain("końca sierpnia");
-  });
-
-  it("renders the individual-quote price for the custom tier (no promo)", async () => {
+  it("renders the individual-quote price for the custom tier", async () => {
     const { container } = await renderPricing();
     const custom = container.querySelector('[data-pricing-tier="custom"]');
     expect(custom?.textContent).toContain(pricing.custom.price);
-    expect(custom?.querySelector(".line-through")).toBeNull();
   });
 });

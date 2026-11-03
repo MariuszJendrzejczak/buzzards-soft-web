@@ -824,9 +824,8 @@
     },
     "pricing": {
       "heading": "Enkla paket, öppna priser",
-      "promoNote": "priset gäller till slutet av augusti",
       "netLabel": "exkl. moms",
-      "footnote": "Priser exkl. moms. Kampanjpriset gäller till slutet av augusti.",
+      "footnote": "Priser exkl. moms.",
       "baseReference": "+ allt i ”Det här får du med varje webbplats”",
       "extrasLabel": "Ingår även",
       "rowLabels": {
@@ -845,9 +844,7 @@
       "module": "modul",
       "basic": {
         "name": "Basic",
-        "basePrice": "1999 zł",
-        "promoPrice": "1699 zł",
-        "priceTag": "kampanjpris",
+        "price": "1999 zł",
         "audience": "visitkort eller enkelt erbjudande",
         "pages": "1 sida, upp till 6 sektioner",
         "revisions": "2 omgångar / 7 dagar",
@@ -855,9 +852,7 @@
       },
       "full": {
         "name": "Full",
-        "basePrice": "2999 zł",
-        "promoPrice": "2499 zł",
-        "priceTag": "kampanjpris",
+        "price": "2999 zł",
         "audience": "ett företag som vill synas och vinna kontakter",
         "pages": "upp till 8 sektioner och 2 undersidor",
         "revisions": "4 omgångar / 14 dagar",
