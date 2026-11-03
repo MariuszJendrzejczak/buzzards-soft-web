@@ -1,0 +1,54 @@
+/* design-sync stylesheet entry, compiled by .design-sync/build-pkg.mjs with
+ * @tailwindcss/postcss. It reuses the site's real globals.css (tokens, light +
+ * .dark themes, base layer), and source detection scans the whole repo, so
+ * every class the site uses ships. The @source inline() safelist below adds the
+ * layout and token vocabulary the claude.ai/design agent builds with. */
+@import "../../app/globals.css";
+
+/* next/font sets these on <html> inside the Next app; outside it, point them at
+ * the @font-face families shipped in fonts/fonts.css. */
+:root {
+  --font-geist-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-geist-mono: "Geist Mono", ui-monospace, monospace;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* the authored preview cards — the agent imitates them, so their classes ship */
+@source "../previews";
+
+/* token colours */
+@source inline("{hover:,}{bg,text,border,ring,fill,stroke,from,via,to,outline,decoration}-{background,foreground,card,card-foreground,popover,popover-foreground,primary,primary-foreground,secondary,secondary-foreground,muted,muted-foreground,accent,accent-foreground,destructive,border,input,ring,brand,brand-soft,cta,cta-hover,surface,surface-elevated,text-subtle}");
+@source inline("{hover:,}{bg,text,border}-{background,card,primary,secondary,muted,accent,destructive,brand,brand-soft,cta,surface,surface-elevated,foreground}/{5,10,15,20,30,40,50,60,70,80,90}");
+
+/* layout */
+@source inline("{sm:,md:,lg:,xl:,}{flex,inline-flex,grid,block,inline-block,hidden,contents}");
+@source inline("{sm:,md:,lg:,xl:,}{flex-row,flex-col,flex-wrap,flex-1,flex-none,shrink-0,grow,items-start,items-center,items-end,items-stretch,items-baseline,justify-start,justify-center,justify-end,justify-between,justify-around,self-start,self-center,self-end,place-items-center}");
+@source inline("{sm:,md:,lg:,xl:,}grid-cols-{1..12}");
+@source inline("{sm:,md:,lg:,xl:,}col-span-{1..12}");
+@source inline("{sm:,md:,lg:,xl:,}{gap,gap-x,gap-y,space-y,space-x}-{0,0.5,1,1.5,2,2.5,3,4,5,6,8,10,12,16,20,24}");
+
+/* spacing */
+@source inline("{sm:,md:,lg:,}{p,px,py,pt,pb,pl,pr,m,mx,my,mt,mb,ml,mr}-{0,0.5,1,1.5,2,2.5,3,4,5,6,8,10,12,16,20,24,32}");
+@source inline("{mx-auto,my-auto,ml-auto,mr-auto}");
+
+/* sizing */
+@source inline("{w,h}-{full,auto,screen,fit,px}");
+@source inline("{size,w,h}-{3,3.5,4,5,6,8,10,12,14,16,20,24,32,40,48,64}");
+@source inline("{min-h-screen,min-h-0,min-w-0,h-dvh,min-h-dvh}");
+@source inline("max-w-{xs,sm,md,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl,prose,full,none}");
+
+/* typography */
+@source inline("{sm:,md:,lg:,}text-{xs,sm,base,lg,xl,2xl,3xl,4xl,5xl,6xl,7xl}");
+@source inline("font-{sans,mono,heading,normal,medium,semibold,bold}");
+@source inline("tracking-{tighter,tight,normal,wide,wider,widest}");
+@source inline("leading-{none,tight,snug,normal,relaxed,loose}");
+@source inline("{uppercase,lowercase,capitalize,italic,underline,truncate,text-left,text-center,text-right,text-balance,text-pretty,whitespace-nowrap,break-words,line-clamp-2,line-clamp-3,tabular-nums}");
+
+/* surfaces */
+@source inline("rounded-{none,sm,md,lg,xl,2xl,3xl,full}");
+@source inline("{border,border-0,border-2,border-t,border-b,border-l,border-r,border-dashed}");
+@source inline("{hover:,}shadow-{none,xs,sm,md,lg,xl,2xl}");
+@source inline("{relative,absolute,fixed,sticky,inset-0,top-0,bottom-0,left-0,right-0,z-0,z-10,z-20,z-50,overflow-hidden,overflow-auto,overflow-x-auto,isolate}");
+@source inline("{transition,transition-colors,transition-all,duration-150,duration-200,duration-300,ease-out,cursor-pointer,select-none,backdrop-blur,backdrop-blur-sm}");
+@source inline("opacity-{0,50,60,70,80,90,100}");
+@source inline("{aspect-square,aspect-video,object-cover,object-contain}");

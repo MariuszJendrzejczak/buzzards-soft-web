@@ -65,3 +65,10 @@ lighthouse-*.html
 # local scratch / working images (not part of the repo)
 /scripts/_tmp/
 /docs/photo/
+
+# design-sync (claude.ai/design) — staged scripts, build output, machine state
+/.ds-sync/
+/ds-bundle/
+/.design-sync/.cache/
+/.design-sync/learnings/
+/.design-sync/node_modules
